@@ -291,7 +291,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .audience__card p{font-size:.875rem;color:#68778d;line-height:1.65}
 
 /* ===== STEPS ===== */
-.steps{position:relative;padding:100px 0;background:#0a2540;overflow:hidden;margin-top:-40px;z-index:2}
+.steps{position:relative;padding:100px 0;background:#0a2540;overflow:hidden;z-index:2}
 .steps__mesh{position:absolute;inset:0;background:
   radial-gradient(ellipse 70% 50% at 15% 50%,rgba(99,91,255,.12) 0%,transparent 60%),
   radial-gradient(ellipse 60% 40% at 85% 40%,rgba(0,209,178,.08) 0%,transparent 55%);
@@ -453,7 +453,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .footer__center a:hover{color:rgba(255,255,255,.7)}
 
 /* ===== STATS ===== */
-.stats{padding:64px 0;background:#fff;border-bottom:1px solid #edf0f4}
+.stats{padding:100px 0;background:#fff;border-bottom:1px solid #edf0f4}
 .stats__grid{display:flex;justify-content:center;align-items:center;gap:0}
 .stats__item{flex:1;text-align:center;padding:24px 16px;transition:transform .3s ease, background .3s ease;border-radius:16px}
 .stats__item:hover{transform:translateY(-5px);background:rgba(99,91,255,.03)}
@@ -463,7 +463,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .stats__divider{width:1px;height:60px;background:linear-gradient(to bottom, transparent, #e3e8ee, transparent);flex-shrink:0}
 
 /* ===== MARQUEE ===== */
-.marquee{padding:20px 0;background:#f6f9fc;border-bottom:1px solid #edf0f4;overflow:hidden;display:flex;align-items:center;gap:32px}
+.marquee{padding:40px 0;background:#f6f9fc;border-bottom:1px solid #edf0f4;overflow:hidden;display:flex;align-items:center;gap:32px}
 .marquee__label{flex-shrink:0;font-size:.72rem;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:#8898aa;padding-left:24px}
 .marquee__track{overflow:hidden;flex:1;mask-image:linear-gradient(90deg,transparent,#000 80px,#000 calc(100% - 80px),transparent)}
 .marquee__inner{display:flex;gap:12px;animation:marqueeScroll 30s linear infinite;width:max-content}
@@ -515,7 +515,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 /* ===== BENTO GRID ===== */
 .districts {
   background: var(--stripe-dark);
-  padding: 100px 0 40px;
+  padding: 100px 0;
 }
 .districts .section-header__label { color: rgba(255,255,255,.45); }
 .districts .section-header__title { color: #fff; }
@@ -787,7 +787,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
   .hero__listing-price{font-size:1rem}
 
   /* --- STATS --- */
-  .stats{padding:48px 0}
+  .stats{padding:100px 0}
   .stats__grid{flex-wrap:wrap}
   .stats__divider{display:none}
   .stats__item{flex:0 0 50%;padding:20px 0;border-bottom:1px solid #edf0f4}
