@@ -79,7 +79,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .nav__burger span{display:block;width:18px;height:1.5px;background:#0a2540;border-radius:2px;transition:.3s}
 
 /* ===== HERO ===== */
-.hero{position:relative;padding:160px 0 130px;overflow:hidden;background:#0a2540}
+.hero{position:relative;padding:20px 0;min-height:calc(100vh - 80px);display:flex;align-items:center;overflow:hidden;background:#0a2540}
 .hero__mesh{position:absolute;inset:0;background:
   radial-gradient(ellipse 80% 60% at 65% 25%,rgba(99,91,255,.35) 0%,transparent 60%),
   radial-gradient(ellipse 60% 50% at 25% 75%,rgba(0,209,178,.2) 0%,transparent 55%),
@@ -87,16 +87,16 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
   radial-gradient(ellipse 40% 30% at 10% 20%,rgba(162,89,255,.12) 0%,transparent 50%);
   filter:blur(40px);animation:meshDrift 20s ease-in-out infinite alternate}
 @keyframes meshDrift{0%{transform:scale(1) translate(0,0)}50%{transform:scale(1.03) translate(10px,-8px)}100%{transform:scale(1.06) translate(-5px,5px)}}
-.hero h1{font-size:4.5rem;font-weight:700;color:#fff;line-height:1.05;letter-spacing:-.045em;margin-bottom:24px;text-align:left}
+.hero h1{font-size:3.5rem;font-weight:700;color:#fff;line-height:1.05;letter-spacing:-.04em;margin-bottom:16px;text-align:left}
 .hero__gradient-text{background:linear-gradient(100deg,#80e9ff 0%,#a78bfa 40%,#ff7eb3 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero__sub{font-size:1.25rem;color:rgba(255,255,255,.6);max-width:580px;margin:0 0 40px;line-height:1.6;font-weight:400;text-align:left}
+.hero__sub{font-size:1.1rem;color:rgba(255,255,255,.7);max-width:540px;margin:0 0 24px;line-height:1.55;font-weight:400;text-align:left}
 .hero__actions{display:flex;gap:12px;justify-content:flex-start;flex-wrap:wrap;position:relative;z-index:10}
 
 /* ===== HERO SPLIT LAYOUT ===== */
 .hero__layout {
   display: flex;
   align-items: center;
-  gap: 64px;
+  gap:48px;
   position: relative;
   z-index: 5;
 }
