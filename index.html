@@ -401,14 +401,26 @@
         </div>
         <div class="contacts__right">
           <form class="contacts__form" id="contactForm">
-            <input type="email" placeholder="Your Email" required>
-            <input type="text" placeholder="Your Full Name" required>
-            <textarea placeholder="Your comments" rows="4"></textarea>
+            <div class="form-grid">
+              <input type="text" placeholder="Ваше ім'я" required>
+              <input type="email" placeholder="Email" required>
+              <input type="number" placeholder="Бюджет (PLN)" required>
+              <select required>
+                <option value="" disabled selected>Кількість кімнат</option>
+                <option value="1">1 (Студія)</option>
+                <option value="2">2 кімнати</option>
+                <option value="3">3 кімнати</option>
+                <option value="4+">4+ кімнати</option>
+              </select>
+              <input type="text" placeholder="Бажаний район">
+              <input type="date" placeholder="Дата заїзду" required>
+            </div>
+            <textarea placeholder="Ваші коментарі та побажання" rows="4"></textarea>
             <label class="contacts__checkbox">
               <input type="checkbox" required>
               <span>Натискаючи на кнопку, ви даєте згоду на обробку персональних даних і погоджуєтесь з <a href="privacy.html">Політикою конфіденційності</a>.</span>
             </label>
-            <button type="submit" class="btn btn--primary btn--full">Відправити →</button>
+            <button type="submit" class="btn btn--primary btn--full">Отримати пропозиції →</button>
           </form>
         </div>
       </div>
