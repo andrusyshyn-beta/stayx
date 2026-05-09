@@ -402,8 +402,8 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .faq__item.active .faq__icon{transform:rotate(45deg);color:#635bff}
 
 /* ===== CONTACTS ===== */
-.contacts{padding:0}
-.contacts__wrapper{display:flex;min-height:580px;border-radius:24px;overflow:hidden;margin:0 24px 0 24px;box-shadow:0 24px 64px rgba(0,0,0,.08)}
+.contacts{padding:0 24px}
+.contacts__wrapper{display:flex;min-height:580px;border-radius:24px;overflow:hidden;max-width:1240px;margin:0 auto;box-shadow:0 24px 64px rgba(0,0,0,.08)}
 .contacts__left{flex:0 0 44%;background:linear-gradient(160deg,#0a2540 0%,#163a5f 50%,#1a5276 100%);padding:80px 60px;display:flex;flex-direction:column;justify-content:center;color:#fff;position:relative;overflow:hidden}
 .contacts__left::before{content:'';position:absolute;top:-40%;right:-30%;width:80%;height:80%;border-radius:50%;background:radial-gradient(circle,rgba(99,91,255,.15) 0%,transparent 60%);filter:blur(60px);pointer-events:none}
 .section-header__label--light{color:rgba(255,255,255,.4)}
