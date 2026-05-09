@@ -393,12 +393,12 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .faq__right{flex:1}
 .faq__item{border-bottom:1px solid #d8dee6}
 .faq__item:first-child{border-top:1px solid #d8dee6}
-.faq__question{width:100%;background:none;border:none;color:#0a2540;padding:26px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;font-size:1.05rem;font-family:inherit;font-weight:600;text-align:left;gap:24px;transition:all .25s}
+.faq__question{width:100%;background:none;border:none;color:#0a2540;padding:26px 0;display:flex;justify-content:space-between;align-items:flex-start;cursor:pointer;font-size:1.05rem;font-family:inherit;font-weight:600;text-align:left;gap:24px;transition:all .25s}
 .faq__question:hover{color:#635bff}
 .faq__answer{max-height:0;overflow:hidden;transition:all .35s cubic-bezier(.4,0,.2,1);opacity:0}
 .faq__item.active .faq__answer{max-height:500px;opacity:1;padding-bottom:26px}
 .faq__answer p{color:#526076;font-size:1rem;line-height:1.7}
-.faq__icon{font-size:1.4rem;color:#93a3b5;transition:transform .3s;width:24px;text-align:center}
+.faq__icon{font-size:1.4rem;color:#93a3b5;transition:transform .3s;width:24px;text-align:center;padding-top:2px;flex-shrink:0}
 .faq__item.active .faq__icon{transform:rotate(45deg);color:#635bff}
 
 /* ===== CONTACTS ===== */
