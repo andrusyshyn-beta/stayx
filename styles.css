@@ -282,7 +282,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 }
 
 /* ===== AUDIENCE ===== */
-.audience{padding:120px 0;background:#f6f9fc}
+.audience{padding:160px 0;background:#f6f9fc}
 .audience__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .audience__card{background:#fff;border-radius:14px;padding:36px 28px;border:1px solid transparent;transition:box-shadow .3s cubic-bezier(.16,1,.3,1),transform .3s cubic-bezier(.16,1,.3,1),border-color .3s}
 .audience__card:hover{box-shadow:0 20px 48px rgba(0,0,0,.06),0 1px 3px rgba(0,0,0,.04);transform:translateY(-6px);border-color:#e3e8ee}
@@ -291,7 +291,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .audience__card p{font-size:.875rem;color:#68778d;line-height:1.65}
 
 /* ===== STEPS ===== */
-.steps{position:relative;padding:120px 0 100px;background:#0a2540;overflow:hidden;margin-top:-40px;z-index:2}
+.steps{position:relative;padding:160px 0 140px;background:#0a2540;overflow:hidden;margin-top:-40px;z-index:2}
 .steps__mesh{position:absolute;inset:0;background:
   radial-gradient(ellipse 70% 50% at 15% 50%,rgba(99,91,255,.12) 0%,transparent 60%),
   radial-gradient(ellipse 60% 40% at 85% 40%,rgba(0,209,178,.08) 0%,transparent 55%);
@@ -352,7 +352,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 }
 
 /* ===== ABOUT ===== */
-.about{padding:120px 0;border-bottom:1px solid #edf0f4}
+.about{padding:160px 0;border-bottom:1px solid #edf0f4}
 .about__layout{display:flex;gap:100px;align-items:flex-start;padding:0 24px}
 .about__left{flex:1;position:sticky;top:100px}
 .about__left h2{font-size:2.3rem;font-weight:700;color:#0a2540;line-height:1.18;letter-spacing:-.035em;margin-top:16px}
@@ -386,7 +386,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .services__item p{color:#68778d;font-size:.82rem;line-height:1.65}
 
 /* --- FAQ --- */
-.faq{padding:80px 0;background:#f6f9fc}
+.faq{padding:160px 0;background:#f6f9fc}
 .faq__layout{display:flex;gap:60px;align-items:flex-start;padding:0 24px}
 .faq__left{flex:0 0 340px}
 .faq__left h2{font-size:2.4rem;font-weight:700;color:#0a2540;line-height:1.15;letter-spacing:-.03em;margin-top:16px;margin-bottom:20px}
@@ -403,7 +403,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .faq__item.active .faq__icon{transform:rotate(45deg);color:#635bff}
 
 /* ===== CONTACTS ===== */
-.contacts{padding:0}
+.contacts{padding:160px 0 80px;background:#f6f9fc}
 .contacts__wrapper{display:flex;min-height:580px;border-radius:24px;overflow:hidden;margin:0;box-shadow:0 24px 64px rgba(0,0,0,.08)}
 .contacts__left{flex:0 0 44%;background:linear-gradient(160deg,#0a2540 0%,#163a5f 50%,#1a5276 100%);padding:80px 24px;display:flex;flex-direction:column;justify-content:center;color:#fff;position:relative;overflow:hidden}
 .contacts__left::before{content:'';position:absolute;top:-40%;right:-30%;width:80%;height:80%;border-radius:50%;background:radial-gradient(circle,rgba(99,91,255,.15) 0%,transparent 60%);filter:blur(60px);pointer-events:none}
@@ -471,7 +471,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 @keyframes marqueeScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
 /* ===== CTA BANNER ===== */
-.cta-banner{position:relative;padding:100px 0;background:#0a2540;overflow:hidden;text-align:center}
+.cta-banner{position:relative;padding:160px 0;background:#0a2540;overflow:hidden;text-align:center}
 .cta-banner__mesh{position:absolute;inset:0;background:
   radial-gradient(ellipse 70% 50% at 50% 50%,rgba(99,91,255,.25) 0%,transparent 60%),
   radial-gradient(ellipse 40% 30% at 20% 80%,rgba(0,209,178,.12) 0%,transparent 50%),
@@ -798,7 +798,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
   .marquee__label{display:none}
 
   /* --- FEATURES --- */
-  .features,.audience,.steps,.about,.testimonials,.services,.faq{padding:72px 0}
+  .features,.audience,.steps,.about,.testimonials,.services,.faq{padding:120px 0}
   .features__card{flex-direction:column;padding:32px 24px;min-height:auto;gap:28px;text-align:center}
   .features__card p{margin:0 auto 28px}
   .features__card h2{font-size:1.55rem}
