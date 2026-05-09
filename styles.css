@@ -147,6 +147,51 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 }
 @keyframes nebulaPulse { 0% { transform: scale(1) rotate(0deg); opacity: 0.5; } 100% { transform: scale(1.4) rotate(20deg); opacity: 1; } }
 
+/* Spiral Galaxy Core */
+.galaxy-spiral {
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  width: 600px;
+  height: 600px;
+  transform: rotateX(60deg) rotateZ(0deg);
+  animation: galaxyRotate 60s linear infinite;
+  opacity: 0.6;
+}
+.galaxy-core {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 40px #fff, 0 0 80px #635bff, 0 0 120px rgba(99,91,255,0.4);
+  filter: blur(5px);
+}
+.spiral-arm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 40px solid transparent;
+  border-top-color: rgba(99,91,255,0.2);
+  border-bottom-color: rgba(0,209,178,0.15);
+  filter: blur(25px);
+}
+.arm-1 { transform: translate(-50%, -50%) rotate(45deg) scale(1.2); }
+.arm-2 { transform: translate(-50%, -50%) rotate(225deg) scale(0.8); }
+
+@keyframes galaxyRotate {
+  from { transform: rotateX(60deg) rotateZ(0deg); }
+  to { transform: rotateX(60deg) rotateZ(360deg); }
+}
+
+
 /* Meteors Animation Enhanced */
 .meteor {
   position: absolute;
