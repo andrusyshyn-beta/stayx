@@ -404,7 +404,7 @@
             <div class="form-grid">
               <input type="text" placeholder="Ваше ім'я" required>
               <input type="email" placeholder="Email" required>
-              <input type="number" placeholder="Бюджет (PLN)" required>
+              <input type="number" placeholder="Бюджет (PLN)" step="100" min="500" required>
               <select required>
                 <option value="" disabled selected>Кількість кімнат</option>
                 <option value="1">1 (Студія)</option>
@@ -412,7 +412,28 @@
                 <option value="3">3 кімнати</option>
                 <option value="4+">4+ кімнати</option>
               </select>
-              <input type="text" placeholder="Бажаний район">
+              <select required>
+                <option value="" disabled selected>Бажаний район</option>
+                <option value="all">Всі райони</option>
+                <option value="Bemowo">Bemowo</option>
+                <option value="Białołęka">Białołęka</option>
+                <option value="Bielany">Bielany</option>
+                <option value="Mokotów">Mokotów</option>
+                <option value="Ochota">Ochota</option>
+                <option value="Praga-Południe">Praga-Południe</option>
+                <option value="Praga-Północ">Praga-Północ</option>
+                <option value="Rembertów">Rembertów</option>
+                <option value="Śródmieście">Śródmieście</option>
+                <option value="Targówek">Targówek</option>
+                <option value="Ursus">Ursus</option>
+                <option value="Ursynów">Ursynów</option>
+                <option value="Wawer">Wawer</option>
+                <option value="Wesoła">Wesoła</option>
+                <option value="Wilanów">Wilanów</option>
+                <option value="Włochy">Włochy</option>
+                <option value="Wola">Wola</option>
+                <option value="Żoliborz">Żoliborz</option>
+              </select>
               <input type="date" placeholder="Дата заїзду" required>
             </div>
             <textarea placeholder="Ваші коментарі та побажання" rows="4"></textarea>
