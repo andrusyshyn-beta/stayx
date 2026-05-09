@@ -79,7 +79,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .nav__burger span{display:block;width:18px;height:1.5px;background:#0a2540;border-radius:2px;transition:.3s}
 
 /* ===== HERO ===== */
-.hero{position:relative;padding:80px 0 40px;min-height:calc(100vh - 80px);display:flex;align-items:flex-start;overflow:hidden;background:#0a2540}
+.hero{position:relative;padding:120px 0 60px;min-height:calc(100vh - 80px);display:flex;align-items:flex-start;overflow:hidden;background:#0a2540}
 .hero__mesh{position:absolute;inset:0;background:
   radial-gradient(ellipse 80% 60% at 65% 25%,rgba(99,91,255,.35) 0%,transparent 60%),
   radial-gradient(ellipse 60% 50% at 25% 75%,rgba(0,209,178,.2) 0%,transparent 55%),
