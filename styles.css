@@ -111,6 +111,17 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
   radial-gradient(ellipse 40% 30% at 10% 20%,rgba(162,89,255,.12) 0%,transparent 50%);
   filter:blur(40px);animation:meshDrift 20s ease-in-out infinite alternate}
 @keyframes meshDrift{0%{transform:scale(1) translate(0,0)}50%{transform:scale(1.03) translate(10px,-8px)}100%{transform:scale(1.06) translate(-5px,5px)}}
+
+/* Galaxy Animation */
+.hero__galaxy { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+.stars-layer-1, .stars-layer-2, .stars-layer-3 { position: absolute; top: 0; left: 0; width: 200%; height: 200%; }
+.stars-layer-1 { background: transparent; box-shadow: 10vw 20vh #fff, 50vw 80vh #fff, 90vw 10vh #fff, 20vw 40vh #fff, 70vw 60vh #fff, 40vw 90vh #fff, 80vw 30vh #fff, 15vw 75vh #fff, 55vw 25vh #fff, 95vw 85vh #fff; width: 2px; height: 2px; opacity: 0.5; animation: starMove 100s linear infinite; }
+.stars-layer-2 { background: transparent; box-shadow: 5vw 15vh #fff, 45vw 75vh #fff, 85vw 5vh #fff, 25vw 35vh #fff, 75vw 55vh #fff, 35vw 85vh #fff, 10vw 45vh #fff, 60vw 15vh #fff, 30vw 65vh #fff, 90vw 40vh #fff; width: 1.5px; height: 1.5px; opacity: 0.3; animation: starMove 150s linear infinite; }
+.stars-layer-3 { background: transparent; box-shadow: 15vw 5vh #fff, 55vw 65vh #fff, 75vw 15vh #fff, 35vw 25vh #fff, 65vw 45vh #fff, 25vw 95vh #fff, 85vw 75vh #fff, 45vw 35vh #fff, 5vw 85vh #fff, 95vw 15vh #fff; width: 1px; height: 1px; opacity: 0.2; animation: starMove 200s linear infinite; }
+@keyframes starMove { from { transform: translate(0, 0); } to { transform: translate(-50%, -50%); } }
+.nebula-glow { position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(99,91,255,0.15) 0%, transparent 70%); top: 10%; right: 5%; filter: blur(60px); animation: nebulaPulse 10s ease-in-out infinite alternate; }
+@keyframes nebulaPulse { 0% { transform: scale(1) translate(0,0); opacity: 0.5; } 100% { transform: scale(1.2) translate(20px, 10px); opacity: 0.8; } }
+
 .hero h1{font-size:3.5rem;font-weight:700;color:#fff;line-height:1.05;letter-spacing:-.04em;margin-bottom:16px;text-align:left}
 .hero__gradient-text{background:linear-gradient(100deg,#80e9ff 0%,#a78bfa 40%,#ff7eb3 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .hero__sub{font-size:1.1rem;color:rgba(255,255,255,.7);max-width:540px;margin:0 0 24px;line-height:1.55;font-weight:400;text-align:left}
