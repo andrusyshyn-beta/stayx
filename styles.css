@@ -147,31 +147,39 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 }
 @keyframes nebulaPulse { 0% { transform: scale(1) rotate(0deg); opacity: 0.5; } 100% { transform: scale(1.4) rotate(20deg); opacity: 1; } }
 
-/* Shooting Stars Multiple */
-.hero__galaxy::before, .hero__galaxy::after {
-  content: '';
+/* Meteors Animation Enhanced */
+.meteor {
   position: absolute;
-  width: 150px;
+  width: 2px;
   height: 2px;
-  background: linear-gradient(90deg, #fff, transparent);
-  transform: rotate(-45deg);
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255,255,255,0.1), 0 0 0 8px rgba(255,255,255,0.1), 0 0 20px #fff;
   opacity: 0;
 }
-.hero__galaxy::before {
-  top: 10%; left: 80%;
-  animation: shootingStar 6s linear infinite 2s;
-}
-.hero__galaxy::after {
-  top: 40%; left: 90%;
-  animation: shootingStar 9s linear infinite;
+.meteor::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, #fff, transparent);
 }
 
-@keyframes shootingStar {
-  0% { transform: translateX(0) translateY(0) rotate(-45deg); opacity: 0; }
-  5% { opacity: 1; }
-  15% { transform: translateX(-600px) translateY(600px) rotate(-45deg); opacity: 0; }
-  100% { transform: translateX(-600px) translateY(600px) rotate(-45deg); opacity: 0; }
+.meteor-1 { top: -10%; right: 10%; animation: meteorAnim 4s linear infinite 1s; }
+.meteor-2 { top: 10%; right: 40%; animation: meteorAnim 7s linear infinite 4s; }
+.meteor-3 { top: -5%; right: 70%; animation: meteorAnim 5s linear infinite 2s; }
+.meteor-4 { top: 20%; right: -5%; animation: meteorAnim 8s linear infinite 0.5s; }
+.meteor-5 { top: 30%; right: 20%; animation: meteorAnim 6s linear infinite 3.5s; }
+
+@keyframes meteorAnim {
+  0% { transform: rotate(-45deg) translateX(0); opacity: 0; }
+  10% { opacity: 1; }
+  25% { transform: rotate(-45deg) translateX(-800px); opacity: 0; }
+  100% { transform: rotate(-45deg) translateX(-800px); opacity: 0; }
 }
+
 
 
 
