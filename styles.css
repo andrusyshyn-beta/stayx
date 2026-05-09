@@ -111,6 +111,14 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
   flex: 1;
 }
 
+.hero__right {
+  flex: 0 0 42%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 5;
+}
+
 .hero__collage {
   position: relative;
   width: 100%;
