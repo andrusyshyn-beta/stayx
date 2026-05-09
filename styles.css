@@ -267,34 +267,34 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 /* Listing Card on Main Image */
 .hero__listing-card {
   position: absolute;
-  bottom: 16px;
-  left: 16px;
-  right: 16px;
-  background: rgba(255, 255, 255, 0.94);
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.96);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-radius: 14px;
-  padding: 14px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
-  border: 1px solid rgba(255,255,255,0.5);
+  border-radius: 12px;
+  padding: 10px 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  border: 1px solid rgba(255,255,255,0.6);
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 4px;
 }
 
 .hero__listing-badge {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 3px;
   background: #00d4aa;
   color: #fff;
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 800;
   text-transform: uppercase;
-  padding: 4px 10px;
-  border-radius: 6px;
+  padding: 3px 8px;
+  border-radius: 5px;
   width: fit-content;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
 }
 
 .hero__listing-info {
@@ -304,33 +304,39 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 
 .hero__listing-price {
   color: #0a2540;
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .hero__listing-location {
   color: #526076;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 
-
-.hero__mini-badge {
-  position: absolute;
-  top: 12px;
-  right: 12px;
-  background: rgba(255,255,255,0.9);
-  backdrop-filter: blur(8px);
-  padding: 4px 10px;
-  border-radius: 99px;
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: #00d4aa;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+/* Mini Listing Card */
+.hero__listing-card--mini {
+  bottom: 8px;
+  left: 8px;
+  right: 8px;
+  padding: 6px 8px;
+  border-radius: 10px;
 }
+
+.hero__listing-card--mini .hero__listing-badge {
+  font-size: 0.55rem;
+  padding: 2px 6px;
+}
+
+.hero__listing-card--mini .hero__listing-price {
+  font-size: 0.85rem;
+}
+
+
 
 /* ===== FLOATING HERO ELEMENTS ===== */
 .hero__floating {
+
   position: absolute;
   top: 0;
   left: 0;
