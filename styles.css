@@ -419,12 +419,16 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .contacts__socials a{width:40px;height:40px;border:1px solid rgba(255,255,255,.12);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.9rem;color:rgba(255,255,255,.6);transition:all .25s}
 .contacts__socials a:hover{border-color:#80e9ff;color:#80e9ff;background:rgba(128,233,255,.06)}
 .contacts__right{flex:1;padding:72px 24px;display:flex;align-items:center;background:#fff}
-.contacts__form{width:100%;display:flex;flex-direction:column;gap:16px}
 .form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.form-group{width:100%;display:flex;flex-direction:column;gap:6px}
 .contacts__form input:not([type="checkbox"]),.contacts__form select,.contacts__form textarea{background:#f6f9fc;border:1.5px solid #e3e8ee;border-radius:12px;padding:14px 18px;font-size:.95rem;font-family:inherit;color:#0a2540;outline:none;transition:all .25s;width:100%;min-height:54px}
-.contacts__form input[type="date"]{color:#93a3b5}
-.contacts__form input[type="date"]:focus{color:#0a2540}
-.contacts__form select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2393a3b5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'%3E%3C/path%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 18px center;background-size:16px}
+.iti{width:100%}
+.iti__country-list{border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.1);border:1px solid #e3e8ee;padding:8px}
+.budget-group{position:relative;display:flex;align-items:center;background:#f6f9fc;border:1.5px solid #e3e8ee;border-radius:12px;overflow:hidden}
+.budget-group input{border:none !important;background:transparent !important;text-align:center;box-shadow:none !important}
+.budget-btn{width:54px;height:54px;background:none;border:none;color:#635bff;font-size:1.5rem;font-weight:600;cursor:pointer;transition:background .2s;display:flex;align-items:center;justify-content:center}
+.budget-btn:hover{background:rgba(99,91,255,.05)}
+.date-group label{font-size:.75rem;font-weight:700;color:#8898aa;text-transform:uppercase;letter-spacing:.5px;padding-left:4px}
 .contacts__form input:focus,.contacts__form select:focus,.contacts__form textarea:focus{border-color:#635bff;box-shadow:0 0 0 4px rgba(99,91,255,.08);background:#fff}
 @media(max-width:768px){
   .contacts__wrapper{flex-direction:column;min-height:auto}

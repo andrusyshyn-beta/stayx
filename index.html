@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/css/intlTelInput.css">
 </head>
 <body>
 
@@ -402,39 +403,57 @@
         <div class="contacts__right">
           <form class="contacts__form" id="contactForm">
             <div class="form-grid">
-              <input type="text" placeholder="Ваше ім'я" required>
-              <input type="email" placeholder="Email" required>
-              <input type="number" placeholder="Бюджет (PLN)" step="100" min="500" required>
-              <select required>
-                <option value="" disabled selected>Кількість кімнат</option>
-                <option value="1">1 (Студія)</option>
-                <option value="2">2 кімнати</option>
-                <option value="3">3 кімнати</option>
-                <option value="4+">4+ кімнати</option>
-              </select>
-              <select required>
-                <option value="" disabled selected>Бажаний район</option>
-                <option value="all">Всі райони</option>
-                <option value="Bemowo">Bemowo</option>
-                <option value="Białołęka">Białołęka</option>
-                <option value="Bielany">Bielany</option>
-                <option value="Mokotów">Mokotów</option>
-                <option value="Ochota">Ochota</option>
-                <option value="Praga-Południe">Praga-Południe</option>
-                <option value="Praga-Północ">Praga-Północ</option>
-                <option value="Rembertów">Rembertów</option>
-                <option value="Śródmieście">Śródmieście</option>
-                <option value="Targówek">Targówek</option>
-                <option value="Ursus">Ursus</option>
-                <option value="Ursynów">Ursynów</option>
-                <option value="Wawer">Wawer</option>
-                <option value="Wesoła">Wesoła</option>
-                <option value="Wilanów">Wilanów</option>
-                <option value="Włochy">Włochy</option>
-                <option value="Wola">Wola</option>
-                <option value="Żoliborz">Żoliborz</option>
-              </select>
-              <input type="date" placeholder="Дата заїзду" required>
+              <div class="form-group">
+                <input type="text" placeholder="Ваше ім'я" required>
+              </div>
+              <div class="form-group">
+                <input type="email" placeholder="Email" required>
+              </div>
+              <div class="form-group">
+                <input type="tel" id="phone" required>
+              </div>
+              <div class="form-group budget-group">
+                <button type="button" class="budget-btn minus" onclick="stepBudget(-100)">-</button>
+                <input type="number" id="budget" placeholder="Бюджет (PLN)" step="100" min="500" value="3000" required>
+                <button type="button" class="budget-btn plus" onclick="stepBudget(100)">+</button>
+              </div>
+              <div class="form-group">
+                <select required>
+                  <option value="" disabled selected>Кількість кімнат</option>
+                  <option value="1">1 (Студія)</option>
+                  <option value="2">2 кімнати</option>
+                  <option value="3">3 кімнати</option>
+                  <option value="4+">4+ кімнати</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <select required>
+                  <option value="" disabled selected>Бажаний район</option>
+                  <option value="all">Всі райони</option>
+                  <option value="Bemowo">Bemowo</option>
+                  <option value="Białołęka">Białołęka</option>
+                  <option value="Bielany">Bielany</option>
+                  <option value="Mokotów">Mokotów</option>
+                  <option value="Ochota">Ochota</option>
+                  <option value="Praga-Południe">Praga-Południe</option>
+                  <option value="Praga-Północ">Praga-Północ</option>
+                  <option value="Rembertów">Rembertów</option>
+                  <option value="Śródmieście">Śródmieście</option>
+                  <option value="Targówek">Targówek</option>
+                  <option value="Ursus">Ursus</option>
+                  <option value="Ursynów">Ursynów</option>
+                  <option value="Wawer">Wawer</option>
+                  <option value="Wesoła">Wesoła</option>
+                  <option value="Wilanów">Wilanów</option>
+                  <option value="Włochy">Włochy</option>
+                  <option value="Wola">Wola</option>
+                  <option value="Żoliborz">Żoliborz</option>
+                </select>
+              </div>
+              <div class="form-group date-group">
+                <label for="moveInDate">Дата заїзду:</label>
+                <input type="date" id="moveInDate" required>
+              </div>
             </div>
             <textarea placeholder="Ваші коментарі та побажання" rows="4"></textarea>
             <label class="contacts__checkbox">
@@ -470,5 +489,20 @@
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm5.891 7.021l-2.035 9.598c-.153.676-.554.843-1.121.525l-3.101-2.285-1.497 1.441c-.165.165-.305.305-.625.305l.222-3.161 5.753-5.2c.251-.223-.054-.347-.389-.125l-7.11 4.476-3.061-.957c-.665-.208-.679-.665.139-.984l11.966-4.611c.554-.208 1.039.125.86.878z"/></svg>
   </a>
   <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/intlTelInput.min.js"></script>
+  <script>
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      initialCountry: "pl",
+      preferredCountries: ["pl", "ua", "us", "gb"],
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/utils.js",
+    });
+
+    function stepBudget(amount) {
+      const budgetInput = document.getElementById('budget');
+      let current = parseInt(budgetInput.value) || 0;
+      budgetInput.value = Math.max(500, current + amount);
+    }
+  </script>
 </body>
 </html>
