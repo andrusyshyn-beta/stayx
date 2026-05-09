@@ -229,7 +229,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .features__link{color:#80e9ff;font-weight:500;font-size:.95rem;display:inline-flex;align-items:center;gap:4px;transition:gap .25s,color .2s}
 .features__link:hover{color:#fff;gap:8px}
 .features__card-visual{flex:0 0 38%;position:relative;z-index:1}
-.features__card-visual img{border-radius:14px;box-shadow:0 24px 48px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.06)}
+.features__card-visual img{width:100%;height:auto;display:block;border-radius:14px;box-shadow:0 24px 48px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.06)}
 
 /* ===== AUDIENCE ===== */
 .audience{padding:120px 0;background:#f6f9fc}
@@ -587,9 +587,10 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 
   /* --- FEATURES --- */
   .features,.audience,.steps,.about,.testimonials,.services,.faq{padding:72px 0}
-  .features__card{flex-direction:column;padding:32px 24px;min-height:auto;gap:28px}
+  .features__card{flex-direction:column;padding:32px 24px;min-height:auto;gap:28px;text-align:center}
+  .features__card p{margin:0 auto 28px}
   .features__card h2{font-size:1.55rem}
-  .features__card-visual{flex:auto;width:100%}
+  .features__card-visual{flex:auto;width:100%;max-width:400px;margin:0 auto}
 
   /* --- AUDIENCE --- */
   .audience__grid{grid-template-columns:1fr;gap:12px}
@@ -611,6 +612,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 
   /* --- SERVICES --- */
   .services__grid{grid-template-columns:1fr}
+  .services__hero{height:250px;margin-bottom:48px}
   .services__item{padding:24px 20px}
 
   /* --- CTA --- */
