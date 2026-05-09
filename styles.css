@@ -591,15 +591,16 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
     font-weight: 600;
     color: #0a2540;
     padding: 12px 0;
-    border-bottom: 1px solid rgba(0,0,0,0.03);
+    border-bottom: none;
   }
 
   .header.open .nav__lang {
     justify-content: flex-start;
-    background: rgba(0,0,0,0.03);
+    background: #f0f2f5;
     padding: 6px;
     border-radius: 12px;
     width: fit-content;
+    border: 1px solid rgba(0,0,0,0.05);
   }
 
   .header.open .nav__lang a {
