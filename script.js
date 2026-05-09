@@ -65,27 +65,3 @@ const counterObserver = new IntersectionObserver((entries) => {
 const statsSection = document.querySelector('.stats');
 if (statsSection) counterObserver.observe(statsSection);
 
-// ===== SCROLL REVEAL =====
-const revealObs = new IntersectionObserver((entries) => {
-  entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('revealed'); revealObs.unobserve(e.target); } });
-}, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
-document.querySelectorAll('section').forEach(el => { el.classList.add('reveal'); revealObs.observe(el); });
-
-// ===== STAGGERED GRID REVEAL =====
-const staggerObs = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      Array.from(entry.target.children).forEach((child, i) => {
-        child.style.opacity = '0';
-        child.style.transform = 'translateY(24px)';
-        child.style.transition = `opacity .6s cubic-bezier(.16,1,.3,1) ${i * 80}ms, transform .6s cubic-bezier(.16,1,.3,1) ${i * 80}ms`;
-        requestAnimationFrame(() => requestAnimationFrame(() => {
-          child.style.opacity = '1';
-          child.style.transform = 'translateY(0)';
-        }));
-      });
-      staggerObs.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1 });
-document.querySelectorAll('.audience__grid,.steps__grid,.testimonials__grid,.services__grid,.features__grid,.stats__grid,.bento-grid').forEach(g => staggerObs.observe(g));
