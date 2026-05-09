@@ -920,6 +920,16 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
   mix-blend-mode: overlay;
 }
 
+.cta-banner__dot-grid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: radial-gradient(circle at 50% 50%, black 30%, transparent 80%);
+  pointer-events: none;
+}
+
+
 .cta-banner__content {
   position: relative;
   z-index: 1;
@@ -931,7 +941,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
   font-size: 2.8rem;
   font-weight: 800;
   color: #fff;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.01em;
   line-height: 1.1;
   margin-bottom: 20px;
 }
