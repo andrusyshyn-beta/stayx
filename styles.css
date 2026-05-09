@@ -103,17 +103,25 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .header.open .nav__burger span{background:#0a2540}
 
 /* ===== HERO ===== */
-.hero{position:relative;padding:140px 0 60px;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:#0a2540}
-.hero__mesh{position:absolute;inset:0;background:
-  radial-gradient(ellipse 80% 60% at 65% 25%,rgba(99,91,255,.35) 0%,transparent 60%),
-  radial-gradient(ellipse 60% 50% at 25% 75%,rgba(0,209,178,.2) 0%,transparent 55%),
-  radial-gradient(ellipse 50% 40% at 85% 80%,rgba(255,99,132,.15) 0%,transparent 50%),
-  radial-gradient(ellipse 40% 30% at 10% 20%,rgba(162,89,255,.12) 0%,transparent 50%);
+.hero{position:relative;padding:140px 0 60px;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:#0a2540 url('images/galaxy-bg.png') center/cover no-repeat}
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 50%, transparent 0%, rgba(10, 37, 64, 0.4) 100%);
+  z-index: 1;
+}
+.hero__mesh{position:absolute;inset:0;z-index: 2; background:
+  radial-gradient(ellipse 80% 60% at 65% 25%,rgba(99,91,255,.25) 0%,transparent 60%),
+  radial-gradient(ellipse 60% 50% at 25% 75%,rgba(0,209,178,.15) 0%,transparent 55%),
+  radial-gradient(ellipse 50% 40% at 85% 80%,rgba(255,99,132,.1) 0%,transparent 50%),
+  radial-gradient(ellipse 40% 30% at 10% 20%,rgba(162,89,255,.08) 0%,transparent 50%);
   filter:blur(40px);animation:meshDrift 20s ease-in-out infinite alternate}
 @keyframes meshDrift{0%{transform:scale(1) translate(0,0)}50%{transform:scale(1.03) translate(10px,-8px)}100%{transform:scale(1.06) translate(-5px,5px)}}
 
 /* Galaxy Animation Ultra Enhanced */
-.hero__galaxy { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 1; }
+.hero__galaxy { position: absolute; inset: 0; pointer-events: none; overflow: hidden; z-index: 3; }
+
 .stars-layer-1, .stars-layer-2, .stars-layer-3, .stars-layer-4 { position: absolute; top: 0; left: 0; width: 200%; height: 200%; }
 
 .stars-layer-1 { 
@@ -139,58 +147,6 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 
 @keyframes starMove { from { transform: translate(0, 0); } to { transform: translate(-50%, -50%); } }
 @keyframes starTwinkle { 0% { opacity: 0.4; transform: scale(0.8); } 100% { opacity: 1; transform: scale(1.3); } }
-
-.nebula-glow { 
-  position: absolute; width: 1000px; height: 1000px; 
-  background: radial-gradient(circle, rgba(99,91,255,0.3) 0%, rgba(0,209,178,0.15) 30%, rgba(255,126,179,0.05) 60%, transparent 80%); 
-  top: -20%; right: -10%; filter: blur(100px); animation: nebulaPulse 15s ease-in-out infinite alternate; 
-}
-@keyframes nebulaPulse { 0% { transform: scale(1) rotate(0deg); opacity: 0.5; } 100% { transform: scale(1.4) rotate(20deg); opacity: 1; } }
-
-/* Spiral Galaxy Core */
-.galaxy-spiral {
-  position: absolute;
-  top: 10%;
-  right: -5%;
-  width: 600px;
-  height: 600px;
-  transform: rotateX(60deg) rotateZ(0deg);
-  animation: galaxyRotate 60s linear infinite;
-  opacity: 0.6;
-}
-.galaxy-core {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 60px;
-  height: 60px;
-  background: #fff;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  box-shadow: 0 0 40px #fff, 0 0 80px #635bff, 0 0 120px rgba(99,91,255,0.4);
-  filter: blur(5px);
-}
-.spiral-arm {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  border: 40px solid transparent;
-  border-top-color: rgba(99,91,255,0.2);
-  border-bottom-color: rgba(0,209,178,0.15);
-  filter: blur(25px);
-}
-.arm-1 { transform: translate(-50%, -50%) rotate(45deg) scale(1.2); }
-.arm-2 { transform: translate(-50%, -50%) rotate(225deg) scale(0.8); }
-
-@keyframes galaxyRotate {
-  from { transform: rotateX(60deg) rotateZ(0deg); }
-  to { transform: rotateX(60deg) rotateZ(360deg); }
-}
-
 
 /* Meteors Animation Enhanced */
 .meteor {
