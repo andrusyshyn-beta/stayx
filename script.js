@@ -27,7 +27,11 @@ document.querySelectorAll('.faq__question').forEach(btn => {
 
 // ===== HEADER SCROLL =====
 window.addEventListener('scroll', () => {
-  header.style.boxShadow = scrollY > 10 ? '0 1px 4px rgba(0,0,0,.05)' : 'none';
+  if (window.scrollY > 20) {
+    header.classList.add('header--scrolled');
+  } else {
+    header.classList.remove('header--scrolled');
+  }
 });
 
 // ===== CONTACT FORM =====
