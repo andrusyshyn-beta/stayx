@@ -235,6 +235,46 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .features__card-visual{flex:0 0 38%;position:relative;z-index:1}
 .features__card-visual img{width:100%;height:auto;display:block;border-radius:14px;box-shadow:0 24px 48px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.06)}
 
+/* ===== GUARANTEE FEATURE CARD ===== */
+.features__guarantee {
+  background: #fff;
+  border: 1px solid #edf2f7;
+  border-radius: 20px;
+  padding: 60px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+}
+.features__guarantee-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(99,91,255,0.08);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  flex-shrink: 0;
+}
+.features__guarantee-content {
+  flex: 1;
+}
+.features__guarantee h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0a2540;
+  margin-bottom: 12px;
+  letter-spacing: -0.02em;
+}
+.features__guarantee p {
+  color: #526076;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  max-width: 500px;
+}
+
 /* ===== AUDIENCE ===== */
 .audience{padding:120px 0;background:#f6f9fc}
 .audience__grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
@@ -361,12 +401,16 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .marquee__inner span{flex-shrink:0;padding:6px 18px;border-radius:9999px;background:#fff;border:1px solid #e3e8ee;font-size:.82rem;font-weight:500;color:#425466;white-space:nowrap}
 @keyframes marqueeScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
-.cta-banner{position:relative;padding:100px 0;background:#fff;overflow:hidden}
-.cta-banner__card{background:#f6f9fc;border:1px solid #edf2f7;border-radius:32px;padding:80px 40px;position:relative;z-index:1;max-width:1000px;margin:0 auto;text-align:center;box-shadow:0 20px 48px rgba(0,0,0,0.03)}
-.cta-banner__content{max-width:700px;margin:0 auto}
-.cta-banner__icon{width:64px;height:64px;background:rgba(99,91,255,0.1);border-radius:16px;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:2rem}
-.cta-banner__content h2{font-size:2.6rem;font-weight:700;color:#0a2540;letter-spacing:-.04em;line-height:1.15;margin-bottom:16px}
-.cta-banner__content>p{color:#526076;font-size:1.1rem;margin:0 auto 36px;line-height:1.6;max-width:600px}
+/* ===== CTA BANNER ===== */
+.cta-banner{position:relative;padding:100px 0;background:#0a2540;overflow:hidden;text-align:center}
+.cta-banner__mesh{position:absolute;inset:0;background:
+  radial-gradient(ellipse 70% 50% at 50% 50%,rgba(99,91,255,.25) 0%,transparent 60%),
+  radial-gradient(ellipse 40% 30% at 20% 80%,rgba(0,209,178,.12) 0%,transparent 50%),
+  radial-gradient(ellipse 40% 30% at 80% 20%,rgba(255,99,132,.1) 0%,transparent 50%);
+  filter:blur(50px);pointer-events:none}
+.cta-banner__content{position:relative;z-index:1;max-width:800px;margin:0 auto;text-align:center}
+.cta-banner__content h2{font-size:2.6rem;font-weight:700;color:#fff;letter-spacing:-.04em;line-height:1.15;margin-bottom:16px}
+.cta-banner__content>p{color:rgba(255,255,255,.7);font-size:1.1rem;margin:0 auto 36px;line-height:1.6;max-width:600px}
 .cta-banner__actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 .btn--ghost-white{background:transparent;color:rgba(255,255,255,.7);border:1.5px solid rgba(255,255,255,.15)}
 .btn--ghost-white:hover{color:#fff;border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.06)}
@@ -714,6 +758,11 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
   .services__hero-overlay{padding:32px 20px;display:flex;align-items:center;justify-content:center;text-align:center}
   .services__hero-overlay h2{font-size:1.6rem;line-height:1.2}
   .services__item{padding:24px 20px}
+
+  /* --- FEATURES --- */
+  .features__guarantee{flex-direction:column;padding:44px 32px;text-align:center;gap:24px}
+  .features__guarantee-icon{width:64px;height:64px;font-size:2rem}
+  .features__guarantee h2{font-size:1.6rem}
 
   /* --- CTA --- */
   .cta-banner{padding:72px 0}
