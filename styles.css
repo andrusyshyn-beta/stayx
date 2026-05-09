@@ -612,7 +612,9 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 
   /* --- SERVICES --- */
   .services__grid{grid-template-columns:1fr}
-  .services__hero{height:250px;margin-bottom:48px}
+  .services__hero{height:auto;min-height:300px;margin-bottom:48px}
+  .services__hero-overlay{padding:32px 20px;display:flex;align-items:center;justify-content:center;text-align:center}
+  .services__hero-overlay h2{font-size:1.6rem;line-height:1.2}
   .services__item{padding:24px 20px}
 
   /* --- CTA --- */
