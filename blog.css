@@ -100,3 +100,26 @@
   font-size: 0.9rem;
   gap: 8px;
 }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .blog-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-preview {
+    padding: 60px 0;
+  }
+  .blog-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  .blog-card h3 {
+    font-size: 1.15rem;
+  }
+}
+
