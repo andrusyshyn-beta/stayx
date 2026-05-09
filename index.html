@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STAYX — Довгострокова оренда у Варшаві онлайн</title>
+  <meta name="description" content="Знайдіть, огляньте та забронюйте квартиру у Варшаві онлайн. Довгострокова оренда з юридичною підтримкою від STAYX.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <span class="logo-text">stay<span class="x-accent">x</span></span>
+      </a>
+      <div class="nav__left">
+        <a href="#services" class="nav__link">Послуги</a>
+        <a href="#how-it-works" class="nav__link">Як це працює</a>
+        <a href="#about" class="nav__link">Про нас</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+      </div>
+      <div class="nav__right">
+        <div class="nav__lang">
+          <a href="#" class="active">Ua</a>
+          <a href="#">EN</a>
+        </div>
+        <a href="#contacts" class="btn btn--primary btn--sm">Зв'язатись →</a>
+      </div>
+      <button class="nav__burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__mesh"></div>
+    <div class="hero__grid-bg"></div>
+    <div class="hero__floating">
+      <div class="hero__card-float hero__card-float--1">🔑 Ключі передано</div>
+      <div class="hero__card-float hero__card-float--2">✨ Огляд завершено</div>
+      <div class="hero__card-float hero__card-float--3">📄 Договір підписано</div>
+    </div>
+    <div class="container hero__content">
+      <div class="hero__badge">🏠 #1 Сервіс онлайн-оренди у Варшаві</div>
+      <h1>Довгострокова оренда у Варшаві —<br><span class="hero__gradient-text">бронюйте онлайн</span></h1>
+      <p class="hero__sub">Знаходитесь в іншому місті або країні? Ми знайдемо, покажемо та забронюємо квартиру для вас дистанційно — від онлайн-огляду до підписання договору.</p>
+      <div class="hero__actions">
+        <a href="#contacts" class="btn btn--primary btn--lg">Забронювати квартиру</a>
+        <a href="#how-it-works" class="btn btn--ghost btn--lg">Як це працює →</a>
+      </div>
+    </div>
+    <!-- Gradient divider line -->
+    <div class="hero__gradient-line"></div>
+  </section>
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stats__item">
+          <span class="stats__number" data-target="500">0</span><span class="stats__plus">+</span>
+          <span class="stats__label">Клієнтів обслуговано</span>
+        </div>
+        <div class="stats__divider"></div>
+        <div class="stats__item">
+          <span class="stats__number" data-target="98">0</span><span class="stats__plus">%</span>
+          <span class="stats__label">Задоволених клієнтів</span>
+        </div>
+        <div class="stats__divider"></div>
+        <div class="stats__item">
+          <span class="stats__number" data-target="24">0</span><span class="stats__plus">год</span>
+          <span class="stats__label">Середній час підбору</span>
+        </div>
+        <div class="stats__divider"></div>
+        <div class="stats__item">
+          <span class="stats__number" data-target="5">0</span><span class="stats__plus">+</span>
+          <span class="stats__label">Років на ринку</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE TRUST BAR ===== -->
+  <div class="marquee">
+    <div class="marquee__label">Де ми шукаємо</div>
+    <div class="marquee__track">
+      <div class="marquee__inner">
+        <span>Mokotów</span><span>Śródmieście</span><span>Wola</span><span>Wilanów</span><span>Żoliborz</span><span>Praga Południe</span><span>Ursynów</span><span>Ochota</span><span>Bemowo</span><span>Bielany</span>
+        <span>Mokotów</span><span>Śródmieście</span><span>Wola</span><span>Wilanów</span><span>Żoliborz</span><span>Praga Południe</span><span>Ursynów</span><span>Ochota</span><span>Bemowo</span><span>Bielany</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FEATURE CARDS ===== -->
+  <section class="features" id="moving">
+    <div class="container">
+      <div class="features__grid">
+        <div class="features__card features__card--blue">
+          <div class="features__card-content">
+            <p class="features__label">Переїзд</p>
+            <h2>Переїжджаєте у Варшаву і хочете щоб все було готово до вашого приїзду?</h2>
+            <p>Ми знайдемо квартиру, організуємо онлайн огляд, перевіримо та підготуємо договір оренди.</p>
+            <a href="#how-it-works" class="features__link">Як знайти та забронювати квартиру онлайн? →</a>
+          </div>
+          <div class="features__card-visual">
+            <img src="images/moving-collage.png" alt="Переїзд у Варшаву" loading="lazy">
+          </div>
+        </div>
+        <div class="features__card features__card--purple">
+          <div class="features__card-content">
+            <p class="features__label">Гарантія</p>
+            <h2>Заміна квартири без втрати кауції</h2>
+            <p>Якщо змінилися плани або хочете іншу квартиру — ми допоможемо замінити житло без втрати застави</p>
+            <a href="#contacts" class="btn btn--white">Дізнатись більше</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AUDIENCE ===== -->
+  <section class="audience" id="audience">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__label">Для кого</p>
+        <h2 class="section-header__title">Наша послуга особливо підходить зайнятим людям, яким важливо швидко знайти якісне та надійне житло</h2>
+      </div>
+      <div class="audience__grid">
+        <div class="audience__card">
+          <div class="audience__icon">🌍</div>
+          <h3>Іноземні спеціалісти</h3>
+          <p>Які приїжджають до Варшави на роботу та довгострокове проживання і шукають комфортне та сучасне житло з готовою інфраструктурою</p>
+        </div>
+        <div class="audience__card">
+          <div class="audience__icon">💻</div>
+          <h3>Професіонали та молоді спеціалісти</h3>
+          <p>В сферах IT, фінансів, медицини, медіа та інших галузях, які цінують швидкість, зручність, та хочуть мінімізувати час на пошук житла через онлайн-бронювання</p>
+        </div>
+        <div class="audience__card">
+          <div class="audience__icon">🏢</div>
+          <h3>Підприємці та бізнес-власники</h3>
+          <p>Шукають комфортні варіанти житла, часто орендують довгостроково для себе або для співробітників, які потребують зручного місця проживання в столиці з доступом до бізнес-центрів</p>
+        </div>
+        <div class="audience__card">
+          <div class="audience__icon">👨‍👩‍👧</div>
+          <h3>Молоді сім'ї</h3>
+          <p>Які шукають сучасні квартири в популярних районах Варшави з розвиненою інфраструктурою, готові орендувати житло на тривалий термін</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DISTRICTS BENTO GRID ===== -->
+  <section class="districts section-skew" id="districts">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__label">Локації</p>
+        <h2 class="section-header__title">Найпопулярніші райони Варшави для життя</h2>
+      </div>
+      <div class="bento-grid">
+        <div class="bento-card bento-card--large bento-card--mokotow">
+          <img class="bento-card__img" src="images/mokotow.png" alt="Mokotów район Варшави" loading="lazy">
+          <div class="bento-card__overlay"></div>
+          <div class="bento-card__content">
+            <h3>Mokotów</h3>
+            <p>Зелений та престижний район для сімей та професіоналів.</p>
+          </div>
+          <div class="bento-card__badge">Топ вибір</div>
+        </div>
+        <div class="bento-card bento-card--srodmiescie">
+          <img class="bento-card__img" src="images/srodmiescie.png" alt="Śródmieście центр Варшави" loading="lazy">
+          <div class="bento-card__overlay"></div>
+          <div class="bento-card__content">
+            <h3>Śródmieście</h3>
+            <p>Центр подій, бізнесу та культури.</p>
+          </div>
+        </div>
+        <div class="bento-card bento-card--wola">
+          <img class="bento-card__img" src="images/wola.png" alt="Wola район Варшави" loading="lazy">
+          <div class="bento-card__overlay"></div>
+          <div class="bento-card__content">
+            <h3>Wola</h3>
+            <p>Сучасний бізнес-центр з хмарочосами.</p>
+          </div>
+        </div>
+        <div class="bento-card bento-card--wilanow">
+          <img class="bento-card__img" src="images/wilanow.png" alt="Wilanów район Варшави" loading="lazy">
+          <div class="bento-card__overlay"></div>
+          <div class="bento-card__content">
+            <h3>Wilanów</h3>
+            <p>Елітний та безпечний район з королівським парком.</p>
+          </div>
+        </div>
+        <div class="bento-card bento-card--small bento-card--ochota">
+          <img class="bento-card__img" src="images/ochota.png" alt="Ochota район Варшави" loading="lazy">
+          <div class="bento-card__overlay"></div>
+          <div class="bento-card__content">
+            <h3>Ochota</h3>
+            <p>Затишок поруч із центром.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="steps" id="how-it-works">
+    <div class="steps__mesh"></div>
+    <div class="container">
+      <div class="section-header section-header--light">
+        <p class="section-header__label">Як це працює</p>
+        <h2 class="section-header__title">Переваги віддаленого орендування квартири, користуючись послугою — Онлайн оренда</h2>
+      </div>
+      <div class="steps__grid">
+        <div class="steps__card">
+          <div class="steps__num">01</div>
+          <h3>Онлайн огляди</h3>
+          <p>Вам більше не потрібно фізично відвідувати Варшаву, щоб оглядати квартири. Наш сервіс дозволяє знайти житло, що відповідає вашим вимогам, не покидаючи дому. Наші спеціалісти підготують онлайн екскурсії обраними квартирами, де ви побачите не тільки інтер'єр, а й важливі деталі, як-от планування, освітлення та стан меблів.</p>
+        </div>
+        <div class="steps__card">
+          <div class="steps__num">02</div>
+          <h3>Юридична підтримка</h3>
+          <p>Після обрання квартири наша команда подбає про всі юридичні аспекти, що значно спрощує процес. Ми надаємо всі необхідні документи для ознайомлення онлайн, детально пояснюємо умови, що дозволяє вам прийняти обґрунтоване рішення.</p>
+        </div>
+        <div class="steps__card">
+          <div class="steps__num">03</div>
+          <h3>Підписання договору оренди онлайн</h3>
+          <p>Ви маєте можливість підписати угоду в онлайн-форматі, що позбавляє вас необхідності організовувати особисту зустріч і дозволяє заощадити час.</p>
+        </div>
+        <div class="steps__card">
+          <div class="steps__num">04</div>
+          <h3>Готова квартира до вашого приїзду</h3>
+          <p>Завдяки нашому сервісу ви можете бути впевнені: коли ви приїдете до Варшави, обране житло вже чекатиме на вас. Вам не потрібно шукати тимчасовий готель чи витрачати час на організацію — ми підготуємо квартиру до вашого приїзду, щоб у той же день ви могли заселитися та почуватися як вдома.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__layout">
+        <div class="about__left">
+          <p class="section-header__label">Про нас</p>
+          <h2>STAYX – це компанія яка прагне зробити пошук квартири в оренду легкою, як натиснення кнопки</h2>
+        </div>
+        <div class="about__right">
+          <p>Ми — агенція нерухомості, яка спеціалізується на допомозі людям з усього світу, що переїжджають до Варшави які шукають просте, безпечне, та гнучке рішення для довгострокової оренди житла.</p>
+          <p>Ми створили зручну послугу бронювання житла онлайн, де ви можете знайти, вибрати та орендувати квартиру ще до приїзду у Варшаву. Це рішення дозволяє обирати перевірені варіанти квартир, повністю віддалено оформити оренду та розраховувати на підтримку досвідчених агентів на кожному етапі.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__label">Відгуки</p>
+        <h2 class="section-header__title">Що кажуть наші клієнти</h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonials__card">
+          <div class="testimonials__stars">★★★★★</div>
+          <p class="testimonials__text">Добрий вечір! З приводу від'їзду! Мені все сподобалось! І процес, і результат. Професіоналізм та серйозний підхід, відмінна комунікація, пунктуальність. Однозначно буду радити вас при нагоді. Велике дякую! Квартирою та районом дуже задоволений.</p>
+          <div class="testimonials__author">
+            <div class="testimonials__avatar">Y</div>
+            <div><strong>Yevhen</strong><span>Задоволений клієнт</span></div>
+          </div>
+        </div>
+        <div class="testimonials__card">
+          <div class="testimonials__stars">★★★★★</div>
+          <p class="testimonials__text">Мой опыт сотрудничества с Юлией был очень положительным, она оперативно решила все вопросы по поиску квартиры в аренду в Варшаве. Всегда на связи, готова выслушать все пожелания и предлагать оптимальные варианты. Спасибо👍</p>
+          <div class="testimonials__author">
+            <div class="testimonials__avatar">A</div>
+            <div><strong>Alex</strong><span>Знайшов квартиру за 1 день</span></div>
+          </div>
+        </div>
+        <div class="testimonials__card">
+          <div class="testimonials__stars">★★★★★</div>
+          <p class="testimonials__text">Як сім'ї з собакою нам непросто було знайти підходящий варіант!!! Дякуємо компанії STAYX та вам Юліє за відмінний сервіс у пошуку житла. Ви дуже професійні та віддані своїй справі. Рекомендуємо 👍</p>
+          <div class="testimonials__author">
+            <div class="testimonials__avatar">V</div>
+            <div><strong>Viktor</strong><span>Щаслива сім'я в новому домі</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-header__label">Послуги</p>
+        <h2 class="section-header__title">Онлайн-оренда для комфортного переїзду</h2>
+      </div>
+
+      <div class="services__hero reveal">
+        <img src="images/services-hero.jpg" alt="Сучасна квартира у Варшаві" loading="lazy">
+        <div class="services__hero-overlay">
+          <h2>Ми беремо на себе весь клопіт <br>з пошуку та оренди</h2>
+          <a href="#contacts" class="btn btn--primary btn--lg">Почати пошук</a>
+        </div>
+      </div>
+
+      <div class="services__grid">
+        <div class="services__item"><div class="services__item-icon">🔍</div><h3>Пошук серед усіх доступних варіантів на ринку</h3><p>Ми перевіряємо всі доступні варіанти на ринку нерухомості, щоб ви мали максимальний вибір.</p></div>
+        <div class="services__item"><div class="services__item-icon">📹</div><h3>Можливість онлайн-огляду</h3><p>Ми організуємо для вас детальний відео-тур нерухомістю, де ви можете побачити усі деталі.</p></div>
+        <div class="services__item"><div class="services__item-icon">📝</div><h3>Віддалене підписання договору</h3><p>Ми пропонуємо можливість підписати договір онлайн через безпечні платформи.</p></div>
+        <div class="services__item"><div class="services__item-icon">🎯</div><h3>Персоналізований підбір квартири</h3><p>Ми оперативно підберемо варіанти житла, що відповідатимуть вашому бюджету та стилю життя.</p></div>
+        <div class="services__item"><div class="services__item-icon">🛡️</div><h3>Юридичний захист та перевірка документів</h3><p>Наша команда ретельно перевірює правовий статус нерухомості та готує договір оренди.</p></div>
+        <div class="services__item"><div class="services__item-icon">🌐</div><h3>Підтримка на всіх етапах</h3><p>Наші агенти забезпечать мовну підтримку, щоб ви розуміли кожен етап процесу оренди.</p></div>
+        <div class="services__item"><div class="services__item-icon">📋</div><h3>Адміністративна допомога</h3><p>Допомагаємо з оформленням адреси проживання для довгострокового договору оренди в Польщі.</p></div>
+        <div class="services__item"><div class="services__item-icon">💳</div><h3>Зручна онлайн-оплата</h3><p>Безпечна система онлайн-оплати для внесення депозиту або повної оплати дистанційно.</p></div>
+      </div>
+      <div class="services__cta">
+        <a href="#contacts" class="btn btn--primary btn--lg">Отримати варіанти квартир →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="cta-banner__mesh"></div>
+    <div class="container cta-banner__content">
+      <h2>Готові знайти ідеальну квартиру у Варшаві?</h2>
+      <p>Залиште заявку і отримайте перші варіанти вже сьогодні</p>
+      <div class="cta-banner__actions">
+        <a href="#contacts" class="btn btn--white btn--lg">Почати зараз →</a>
+        <a href="tel:+48793248212" class="btn btn--ghost-white btn--lg">📞 +48 793 248 212</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="faq__layout">
+        <div class="faq__left">
+          <p class="section-header__label">FAQ</p>
+          <h2>У вас залишилися питання?</h2>
+          <p>Знайдіть відповіді нижче або зв'яжіться з нами напряму.</p>
+          <a href="#contacts" class="btn btn--primary">Задати питання →</a>
+        </div>
+        <div class="faq__right">
+          <div class="faq__list">
+            <div class="faq__item active">
+              <button class="faq__question"><span>Як я можу бути впевненим, що опис квартири відповідає реальності?</span><span class="faq__icon">×</span></button>
+              <div class="faq__answer"><p>Усі наші квартири перевіряються агентами на відповідність опису та фотографій. Ми також надаємо відеоогляди, щоб ви могли побачити реальний стан житла.</p></div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__question"><span>Що робити, якщо під час онлайн-огляду я помічу щось, що мені не подобається?</span><span class="faq__icon">+</span></button>
+              <div class="faq__answer"><p>Ви можете одразу повідомити нашого агента, і ми запропонуємо інші варіанти, що краще відповідають вашим вимогам. Ваш комфорт — наш пріоритет.</p></div>
+            </div>
+            <div class="faq__item">
+              <button class="faq__question"><span>Як відбувається організація онлайн-огляду?</span><span class="faq__icon">+</span></button>
+              <div class="faq__answer"><p>Онлайн-огляд проводиться через відеозв'язок у зручний для вас час. Наш агент особисто відвідує квартиру і показує всі деталі в реальному часі. Ви можете задавати будь-які питання протягом огляду.</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTS ===== -->
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="contacts__wrapper">
+        <div class="contacts__left">
+          <p class="section-header__label section-header__label--light">Контакт</p>
+          <h2>Зв'яжіться з нами</h2>
+          <p class="contacts__desc">Зв'яжіться з нами зручним для вас способом</p>
+          <a href="tel:+48793248212" class="contacts__phone">+48 793 248 212</a>
+          <a href="mailto:info@stayx.pl" class="contacts__email">info@stayx.pl</a>
+          <p class="contacts__nip">NIP: 7011182095</p>
+          <div class="contacts__socials">
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">◎</a>
+            <a href="#" aria-label="TikTok">♪</a>
+          </div>
+        </div>
+        <div class="contacts__right">
+          <form class="contacts__form" id="contactForm">
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Your Full Name" required>
+            <textarea placeholder="Your comments" rows="4"></textarea>
+            <label class="contacts__checkbox">
+              <input type="checkbox" required>
+              <span>Натискаючи на кнопку, ви даєте згоду на обробку персональних даних і погоджуєтесь з <a href="#">Політикою конфіденційності</a>.</span>
+            </label>
+            <button type="submit" class="btn btn--primary btn--full">Відправити →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="footer__logo"><span class="logo-text">stay<span class="x-accent">x</span></span></a>
+      <div class="footer__links">
+        <a href="#services">Послуги</a>
+        <a href="#how-it-works">Як це працює</a>
+        <a href="#about">Про нас</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacts">Контакти</a>
+      </div>
+      <div class="footer__bottom">
+        <p>2023© STAYX. All rights reserved</p>
+        <a href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#contacts" class="chat-widget" aria-label="Чат">💬</a>
+  <script src="script.js"></script>
+</body>
+</html>
