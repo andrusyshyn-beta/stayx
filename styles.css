@@ -787,18 +787,87 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 @keyframes marqueeScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 
 /* ===== CTA BANNER ===== */
-.cta-banner{position:relative;padding:100px 0;background:#0a2540;overflow:hidden;text-align:center}
-.cta-banner__mesh{position:absolute;inset:0;background:
-  radial-gradient(ellipse 70% 50% at 50% 50%,rgba(99,91,255,.25) 0%,transparent 60%),
-  radial-gradient(ellipse 40% 30% at 20% 80%,rgba(0,209,178,.12) 0%,transparent 50%),
-  radial-gradient(ellipse 40% 30% at 80% 20%,rgba(255,99,132,.1) 0%,transparent 50%);
-  filter:blur(50px);pointer-events:none}
-.cta-banner__content{position:relative;z-index:1;max-width:800px;margin:0 auto;text-align:center}
-.cta-banner__content h2{font-size:2.6rem;font-weight:700;color:#fff;letter-spacing:-.04em;line-height:1.15;margin-bottom:16px}
-.cta-banner__content>p{color:rgba(255,255,255,.7);font-size:1.1rem;margin:0 auto 36px;line-height:1.6;max-width:600px}
-.cta-banner__actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn--ghost-white{background:transparent;color:rgba(255,255,255,.7);border:1.5px solid rgba(255,255,255,.15)}
-.btn--ghost-white:hover{color:#fff;border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.06)}
+.cta-banner {
+  position: relative;
+  padding: 120px 0;
+  background: #0a2540;
+  overflow: hidden;
+  text-align: center;
+}
+
+.cta-banner__mesh {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.cta-banner__orb {
+  position: absolute;
+  width: 800px;
+  height: 800px;
+  border-radius: 50%;
+  filter: blur(120px);
+  opacity: 0.35;
+}
+
+.cta-banner__orb-1 {
+  background: radial-gradient(circle, #635bff 0%, transparent 70%);
+  top: -300px;
+  left: -200px;
+  animation: orbFloat 25s infinite alternate;
+}
+
+.cta-banner__orb-2 {
+  background: radial-gradient(circle, #00d4aa 0%, transparent 70%);
+  bottom: -300px;
+  right: -200px;
+  animation: orbFloat 30s infinite alternate-reverse;
+}
+
+@keyframes orbFloat {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(50px, 100px) scale(1.1); }
+  100% { transform: translate(-50px, 50px) scale(1); }
+}
+
+.cta-banner__noise {
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3F%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.04;
+  mix-blend-mode: overlay;
+}
+
+.cta-banner__content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-banner__content h2 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.cta-banner__content p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.15rem;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.cta-banner__actions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
 
 /* ===== SERVICES CTA ===== */
 .services__cta{text-align:center;margin-top:48px}
