@@ -798,12 +798,64 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 /* ===== CONTACTS ===== */
 .contacts{padding:var(--section-padding) 0 100px;background:#f6f9fc}
 .contacts__wrapper{display:flex;min-height:580px;border-radius:24px;overflow:hidden;margin:0;box-shadow:0 24px 64px rgba(0,0,0,.08)}
-.contacts__left{flex:0 0 44%;background:linear-gradient(160deg,#0a2540 0%,#163a5f 50%,#1a5276 100%);padding:80px 24px;display:flex;flex-direction:column;justify-content:center;color:#fff;position:relative;overflow:hidden}
-.contacts__left::before{content:'';position:absolute;top:-40%;right:-30%;width:80%;height:80%;border-radius:50%;background:radial-gradient(circle,rgba(99,91,255,.15) 0%,transparent 60%);filter:blur(60px);pointer-events:none}
-.section-header__label--light{color:rgba(255,255,255,.4)}
-.contacts__left h2{font-size:2.2rem;font-weight:700;margin-bottom:10px;letter-spacing:-.035em;margin-top:14px;line-height:1.2;position:relative}
-.contacts__desc{color:rgba(255,255,255,.45);margin-bottom:40px;font-size:1rem;line-height:1.6;position:relative}
-.contacts__phone{display:block;font-size:1.6rem;font-weight:700;margin-bottom:10px;color:#fff;transition:color .2s;position:relative;letter-spacing:-.02em}
+.contacts__left{flex:0 0 44%;background:linear-gradient(160deg,#0a2540 0%,#163a5f 100%);padding:80px 48px;display:flex;flex-direction:column;justify-content:center;color:#fff;position:relative;overflow:hidden}
+
+.contacts__bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.contacts__left .orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.5;
+}
+
+.contacts__left .orb-1 {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(99,91,255,0.3) 0%, transparent 70%);
+  top: -150px;
+  right: -150px;
+  animation: orbFloat 20s infinite alternate;
+}
+
+.contacts__left .orb-2 {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(0,212,255,0.2) 0%, transparent 70%);
+  bottom: -100px;
+  left: -100px;
+  animation: orbFloat 25s infinite alternate-reverse;
+}
+
+.contacts__left .orb-3 {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(124,58,237,0.15) 0%, transparent 70%);
+  top: 20%;
+  left: 10%;
+  animation: orbFloat 30s infinite linear;
+}
+
+.contacts__left::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3F%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.section-header__label--light{color:rgba(255,255,255,.4);position:relative;z-index:1}
+.contacts__left h2{font-size:2.5rem;font-weight:800;margin-bottom:12px;letter-spacing:-.04em;margin-top:14px;line-height:1.1;position:relative;z-index:1}
+.contacts__desc{color:rgba(255,255,255,.5);margin-bottom:48px;font-size:1.1rem;line-height:1.6;position:relative;z-index:1}
+.contacts__phone{display:block;font-size:1.8rem;font-weight:800;margin-bottom:12px;color:#fff;transition:color .2s;position:relative;z-index:1;letter-spacing:-.03em}
+
 .contacts__phone:hover{color:#80e9ff}
 .contacts__email{display:block;font-size:1.05rem;margin-bottom:10px;color:#80e9ff;font-weight:500;position:relative}
 .contacts__email:hover{color:#fff}
