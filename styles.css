@@ -264,6 +264,57 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .hero__collage:hover .hero__collage-item--top { transform: translate(15px, -15px) rotate(6deg); }
 .hero__collage:hover .hero__collage-item--bottom { transform: translate(-15px, 15px) rotate(-8deg); }
 
+/* Listing Card on Main Image */
+.hero__listing-card {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  right: 16px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+  border: 1px solid rgba(255,255,255,0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hero__listing-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #00d4aa;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+  width: fit-content;
+  letter-spacing: 0.5px;
+}
+
+.hero__listing-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__listing-price {
+  color: #0a2540;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.hero__listing-location {
+  color: #526076;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+
 .hero__mini-badge {
   position: absolute;
   top: 12px;
