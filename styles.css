@@ -133,14 +133,15 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 
 .stars-static { 
   background: transparent; 
-  box-shadow: 10vw 20vh #fff, 50vw 80vh #fff, 90vw 10vh #fff, 20vw 40vh #fff, 70vw 60vh #fff, 40vw 90vh #fff, 80vw 30vh #fff, 15vw 75vh #fff, 55vw 25vh #fff, 95vw 85vh #fff, 5vw 35vh #fff, 25vw 85vh #fff, 45vw 15vh #fff, 65vw 75vh #fff, 85vw 55vh #fff, 35vw 10vh #fff, 75vw 90vh #fff; 
-  width: 1px; height: 1px; opacity: 0.35; 
+  box-shadow: 10vw 20vh #fff, 50vw 80vh #fff, 90vw 10vh #fff, 20vw 40vh #fff, 70vw 60vh #fff, 40vw 90vh #fff, 80vw 30vh #fff, 15vw 75vh #fff, 55vw 25vh #fff, 95vw 85vh #fff, 5vw 35vh #fff, 25vw 85vh #fff, 45vw 15vh #fff, 65vw 75vh #fff, 85vw 55vh #fff, 35vw 10vh #fff, 75vw 90vh #fff, 30vw 40vh #fff, 60vw 20vh #fff, 10vw 80vh #fff, 90vw 60vh #fff; 
+  width: 2px; height: 2px; opacity: 0.6; 
 }
 .stars-animated { 
   background: transparent; 
-  box-shadow: 15vw 55vh #fff, 35vw 25vh #fff, 55vw 75vh #fff, 75vw 15vh #fff, 95vw 45vh #fff, 25vw 10vh #fff, 65vw 90vh #fff, 45vw 5vh #fff; 
-  width: 1.5px; height: 1.5px; opacity: 0.5; animation: starTwinkle 4s ease-in-out infinite alternate; 
+  box-shadow: 15vw 55vh #fff, 35vw 25vh #fff, 55vw 75vh #fff, 75vw 15vh #fff, 95vw 45vh #fff, 25vw 10vh #fff, 65vw 90vh #fff, 45vw 5vh #fff, 10vw 30vh #fff, 80vw 70vh #fff; 
+  width: 2.5px; height: 2.5px; opacity: 0.8; animation: starTwinkle 3s ease-in-out infinite alternate; 
 }
+
 
 @keyframes starTwinkle { 
   0% { opacity: 0.2; transform: scale(0.8); } 
