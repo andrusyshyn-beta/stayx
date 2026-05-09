@@ -286,7 +286,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .audience__card p{font-size:.875rem;color:#68778d;line-height:1.65}
 
 /* ===== STEPS ===== */
-.steps{position:relative;padding:120px 0;background:#0a2540;overflow:hidden}
+.steps{position:relative;padding:60px 0 100px;background:#0a2540;overflow:hidden}
 .steps__mesh{position:absolute;inset:0;background:
   radial-gradient(ellipse 70% 50% at 15% 50%,rgba(99,91,255,.12) 0%,transparent 60%),
   radial-gradient(ellipse 60% 40% at 85% 40%,rgba(0,209,178,.08) 0%,transparent 55%);
@@ -446,7 +446,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 /* ===== BENTO GRID ===== */
 .districts {
   background: var(--stripe-dark);
-  padding: 140px 0;
+  padding: 100px 0 40px;
 }
 .districts .section-header__label { color: rgba(255,255,255,.45); }
 .districts .section-header__title { color: #fff; }
