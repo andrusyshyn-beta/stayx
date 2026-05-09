@@ -1163,4 +1163,35 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 
   /* --- CHAT WIDGET --- */
   .chat-widget{bottom:20px;right:20px;width:50px;height:50px;font-size:1.1rem}
+
+  /* --- HERO LISTING CARDS MOBILE --- */
+  .hero__listing-card {
+    padding: 5px 8px;
+    border-radius: 8px;
+    bottom: 8px;
+    left: 8px;
+    gap: 1px;
+    max-width: 90%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  .hero__listing-badge {
+    font-size: 0.5rem;
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+  .hero__listing-price {
+    font-size: 0.75rem;
+  }
+  .hero__listing-location {
+    display: none; /* Hide on mobile to save space */
+  }
+  .hero__listing-card--mini {
+    padding: 4px 6px;
+    bottom: 6px;
+    left: 6px;
+  }
+  .hero__listing-card--mini .hero__listing-price {
+    font-size: 0.65rem;
+  }
 }
+
