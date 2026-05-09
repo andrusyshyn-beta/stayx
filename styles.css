@@ -921,8 +921,9 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 /* ===== MARQUEE ===== */
 .marquee{padding:32px 0;background:linear-gradient(90deg,#f8faff 0%,#f0f4ff 50%,#f8faff 100%);border-top:1px solid #e3e8ee;border-bottom:1px solid #e3e8ee;overflow:hidden;display:flex;align-items:center;gap:32px;position:relative}
 .marquee::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 20% 50%,rgba(99,91,255,0.05) 0%,transparent 50%)}
-.marquee__label{flex-shrink:0;font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#635bff;padding-left:24px;position:relative;z-index:1;display:flex;align-items:center;gap:8px}
-.marquee__label::before{content:'';font-size:1rem}
+.marquee__label{flex-shrink:0;font-size:.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#635bff;padding-left:16px;position:relative;z-index:1;display:flex;align-items:center}
+.marquee__label::before{content:none}
+
 
 .marquee__track{overflow:hidden;flex:1;mask-image:linear-gradient(90deg,transparent,#000 80px,#000 calc(100% - 80px),transparent)}
 .marquee__inner{display:flex;gap:12px;animation:marqueeScroll 30s linear infinite;width:max-content}
