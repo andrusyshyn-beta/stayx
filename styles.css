@@ -54,8 +54,8 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .btn--primary{background:#635bff;color:#fff}
 .btn--primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(99,91,255,.3)}
 .btn--primary:active{transform:translateY(0);box-shadow:0 2px 8px rgba(99,91,255,.2)}
-.btn--ghost{background:transparent;color:#635bff;border:1.5px solid transparent}
-.btn--ghost:hover{color:#0a2540}
+.btn--ghost{background:transparent;color:#0a2540;border:1.5px solid #0a2540}
+.btn--ghost:hover{background:rgba(10,37,64,0.05);transform:translateY(-2px)}
 .btn--white{background:#fff;color:#0a2540}
 .btn--white:hover{background:rgba(255,255,255,.92);transform:translateY(-2px);box-shadow:0 8px 24px rgba(0,0,0,.12)}
 .btn--lg{padding:16px 36px;font-size:1rem}
@@ -305,11 +305,11 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
   font-weight: 700;
   margin-bottom: 12px;
   line-height: 1.3;
-  color: #fff;
+  color: #fff !important;
 }
 .tg-card p {
   font-size: 0.9rem;
-  color: rgba(255,255,255,0.95);
+  color: rgba(255,255,255,0.95) !important;
   line-height: 1.5;
   margin-bottom: 24px;
 }
