@@ -404,22 +404,29 @@
           <form class="contacts__form" id="contactForm">
             <div class="form-grid">
               <div class="form-group">
-                <input type="text" placeholder="Ваше ім'я" required>
+                <label>Ваше ім'я</label>
+                <input type="text" placeholder="Введіть ім'я" required>
               </div>
               <div class="form-group">
-                <input type="email" placeholder="Email" required>
+                <label>Email</label>
+                <input type="email" placeholder="example@mail.com" required>
               </div>
               <div class="form-group">
+                <label>Телефон</label>
                 <input type="tel" id="phone" required>
               </div>
-              <div class="form-group budget-group">
-                <button type="button" class="budget-btn minus" onclick="stepBudget(-100)">-</button>
-                <input type="number" id="budget" placeholder="Бюджет (PLN)" step="100" min="500" value="3000" required>
-                <button type="button" class="budget-btn plus" onclick="stepBudget(100)">+</button>
+              <div class="form-group">
+                <label>Ваш бюджет (PLN)</label>
+                <div class="budget-group">
+                  <button type="button" class="budget-btn minus" onclick="stepBudget(-100)">-</button>
+                  <input type="number" id="budget" step="100" min="500" value="3000" required>
+                  <button type="button" class="budget-btn plus" onclick="stepBudget(100)">+</button>
+                </div>
               </div>
               <div class="form-group">
+                <label>Кількість кімнат</label>
                 <select required>
-                  <option value="" disabled selected>Кількість кімнат</option>
+                  <option value="" disabled selected>Виберіть варіант</option>
                   <option value="1">1 (Студія)</option>
                   <option value="2">2 кімнати</option>
                   <option value="3">3 кімнати</option>
@@ -427,8 +434,9 @@
                 </select>
               </div>
               <div class="form-group">
+                <label>Бажаний район</label>
                 <select required>
-                  <option value="" disabled selected>Бажаний район</option>
+                  <option value="" disabled selected>Виберіть район</option>
                   <option value="all">Всі райони</option>
                   <option value="Bemowo">Bemowo</option>
                   <option value="Białołęka">Białołęka</option>
@@ -450,17 +458,20 @@
                   <option value="Żoliborz">Żoliborz</option>
                 </select>
               </div>
-              <div class="form-group date-group">
-                <label for="moveInDate">Дата заїзду:</label>
+              <div class="form-group">
+                <label>Дата заїзду</label>
                 <input type="date" id="moveInDate" required>
               </div>
             </div>
-            <textarea placeholder="Ваші коментарі та побажання" rows="4"></textarea>
+            <div class="form-group" style="margin-top: 10px;">
+              <label>Ваші коментарі</label>
+              <textarea placeholder="Опишіть ваші побажання..." rows="4"></textarea>
+            </div>
             <label class="contacts__checkbox">
               <input type="checkbox" required>
               <span>Натискаючи на кнопку, ви даєте згоду на обробку персональних даних і погоджуєтесь з <a href="privacy.html">Політикою конфіденційності</a>.</span>
             </label>
-            <button type="submit" class="btn btn--primary btn--full">Отримати пропозиції →</button>
+            <button type="submit" class="btn btn--primary btn--full" style="margin-top: 10px;">Отримати пропозиції →</button>
           </form>
         </div>
       </div>
