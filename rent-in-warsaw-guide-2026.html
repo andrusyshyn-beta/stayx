@@ -83,21 +83,22 @@ html body .btn--primary { background: #635bff !important; color: #ffffff !import
 html body .nav__social-mobile { display: none !important; }
 html body .nav__burger { display: none !important; }
 
-/* Open state - must override base .header height */
-html body .header.open { height: 100vh !important; background: #fff !important; overflow: auto !important; position: fixed !important; }
-html body .header.open .nav { height: 100vh !important; flex-direction: column !important; justify-content: center !important; padding: 40px 24px !important; gap: 40px !important; }
-html body .header.open .nav__left, html body .header.open .nav__right { display: flex !important; flex-direction: column !important; width: 100% !important; position: static !important; }
-html body .header.open .nav__left { gap: 10px !important; }
-html body .header.open .nav__link { font-size: 1.6rem !important; font-weight: 700 !important; color: #0a2540 !important; padding: 10px 0 !important; text-align: center !important; text-decoration: none !important; }
-html body .header.open .nav__right { gap: 30px !important; align-items: center !important; }
-html body .header.open .nav__lang { background: #f6f9fc !important; padding: 8px !important; border-radius: 12px !important; width: fit-content !important; border: 1px solid #edf2f7 !important; }
-html body .header.open .nav__lang a { padding: 10px 20px !important; font-size: 0.95rem !important; }
-html body .header.open .nav__lang a.active { background: #fff !important; box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important; color: #0a2540 !important; }
-html body .header.open .btn--primary { width: 100% !important; max-width: 280px !important; padding: 16px !important; font-size: 1.1rem !important; justify-content: center !important; }
-html body .header.open .nav__social-mobile { display: flex !important; gap: 20px !important; justify-content: center !important; }
-html body .header.open .nav__social-mobile a { color: #425466 !important; }
-html body .header.open .logo-text { color: #0a2540 !important; }
-html body .header.open .nav__burger span { background: #0a2540 !important; }
+/* Open state - higher specificity to override base .header */
+html body .header.header.open { height: 100vh !important; background: #fff !important; overflow: auto !important; position: fixed !important; }
+html body .header.header.open .nav { height: 100vh !important; flex-direction: column !important; justify-content: center !important; padding: 40px 24px !important; gap: 40px !important; }
+html body .header.header.open .nav__left, html body .header.header.open .nav__right { display: flex !important; flex-direction: column !important; width: 100% !important; position: static !important; }
+html body .header.header.open .nav__left { gap: 10px !important; }
+html body .header.header.open .nav__link { font-size: 1.6rem !important; font-weight: 700 !important; color: #0a2540 !important; padding: 10px 0 !important; text-align: center !important; text-decoration: none !important; }
+html body .header.header.open .nav__right { gap: 30px !important; align-items: center !important; }
+html body .header.header.open .nav__lang { background: #f6f9fc !important; padding: 8px !important; border-radius: 12px !important; width: fit-content !important; border: 1px solid #edf2f7 !important; }
+html body .header.header.open .nav__lang a { padding: 10px 20px !important; font-size: 0.95rem !important; }
+html body .header.header.open .nav__lang a.active { background: #fff !important; box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important; color: #0a2540 !important; }
+html body .header.header.open .btn--primary { width: 100% !important; max-width: 280px !important; padding: 16px !important; font-size: 1.1rem !important; justify-content: center !important; }
+html body .header.header.open .nav__social-mobile { display: flex !important; gap: 20px !important; justify-content: center !important; }
+html body .header.header.open .nav__social-mobile a { color: #425466 !important; }
+html body .header.header.open .logo-text { color: #0a2540 !important; }
+html body .header.header.open .nav__burger { display: flex !important; }
+html body .header.header.open .nav__burger span { background: #0a2540 !important; }
 
 @media (max-width: 991px) {
   html body .nav__left, html body .nav__right { display: none !important; }
