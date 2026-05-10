@@ -42,28 +42,56 @@ window.addEventListener('scroll', () => {
 // ===== CONTACT FORM =====
 const form = document.getElementById('contactForm');
 if (form) {
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
     const lang = document.documentElement.lang || 'uk';
     
-    const messages = {
-      uk: { success: '✓ Надіслано!', original: 'Відправити →' },
-      pl: { success: '✓ Wysłano!', original: 'Pobierz oferty →' },
-      en: { success: '✓ Sent!', original: 'Get offers →' }
+    // Collect data
+    const formData = {
+      name: document.getElementById('userName').value,
+      email: document.getElementById('userEmail').value,
+      phone: document.getElementById('phone').value,
+      budget: document.getElementById('budget').value,
+      rooms: document.getElementById('rooms').value,
+      district: document.getElementById('district').value,
+      date: document.getElementById('moveInDate').value,
+      comments: document.getElementById('comments').value,
+      lang: lang
     };
-    
-    const msg = messages[lang] || messages.uk;
-    
-    btn.textContent = msg.success;
-    btn.style.background = '#00d4aa';
+
+    const originalText = btn.textContent;
+    btn.textContent = '...';
+    btn.style.opacity = '0.7';
     btn.style.pointerEvents = 'none';
-    setTimeout(() => { 
-      btn.textContent = msg.original; 
-      btn.style.background = ''; 
-      btn.style.pointerEvents = ''; 
-      form.reset(); 
-    }, 3000);
+
+    try {
+      const response = await fetch('/api/send-telegram', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        btn.textContent = '✓';
+        btn.style.background = '#00d4aa';
+        form.reset();
+        // Redirect to thank you page
+        setTimeout(() => {
+          window.location.href = lang === 'uk' ? 'thank-you.html' : `/${lang}/thank-you.html`;
+        }, 1500);
+      } else {
+        throw new Error('Failed to send');
+      }
+    } catch (error) {
+      btn.textContent = 'Error';
+      btn.style.background = '#ff4d4d';
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.opacity = '1';
+        btn.style.pointerEvents = 'all';
+      }, 3000);
+    }
   });
 }
 
