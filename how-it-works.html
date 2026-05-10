@@ -20,44 +20,52 @@
 
     body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text-sub); margin: 0; overflow-x: hidden; }
     
-    /* Overriding header for subpage to be visible on white bg */
-    .header:not(.header--scrolled) {
-      background: rgba(255, 255, 255, 0.8);
-      backdrop-filter: blur(20px);
-      border-bottom: 1px solid rgba(0,0,0,0.05);
-    }
+    /* Header transparency for dark hero */
     .header:not(.header--scrolled) .nav__link, 
     .header:not(.header--scrolled) .logo-text,
     .header:not(.header--scrolled) .nav__lang a,
     .header:not(.header--scrolled) .nav__social a {
-      color: var(--text-main) !important;
+      color: #fff !important;
     }
     .header:not(.header--scrolled) .nav__burger span { 
-      background-color: var(--text-main) !important; 
+      background-color: #fff !important; 
     }
-
     .header:not(.header--scrolled) .nav__lang a.active {
-      background: rgba(0,0,0,0.05) !important;
-      color: var(--primary) !important;
+      background: rgba(255,255,255,0.15) !important;
+      color: #fff !important;
     }
 
-
-
-    .hero-section { padding: 160px 0 80px; text-align: center; position: relative; overflow: hidden; background: #fff; }
-    .hero-section::before {
-      content: '';
-      position: absolute;
-      top: -20%;
-      left: 50%;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 50% 50%, rgba(99, 91, 255, 0.08) 0%, transparent 70%);
-      transform: translateX(-50%);
-      z-index: 0;
+    .hero-section { 
+      padding: 180px 0 100px; 
+      text-align: center; 
+      position: relative; 
+      overflow: hidden; 
+      background: #0a2540; 
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-
-    .hero-section h1 { font-size: 3.5rem; font-weight: 800; color: var(--text-main); letter-spacing: -0.05em; line-height: 1.1; margin-bottom: 24px; position: relative; z-index: 1; }
-    .hero-section p { font-size: 1.3rem; color: var(--text-sub); max-width: 750px; margin: 0 auto; line-height: 1.6; position: relative; z-index: 1; }
+    
+    .hero-section h1 { 
+      font-size: 3.5rem; 
+      font-weight: 800; 
+      color: #fff; 
+      letter-spacing: -0.05em; 
+      line-height: 1.1; 
+      margin-bottom: 24px; 
+      position: relative; 
+      z-index: 10; 
+    }
+    .hero-section p { 
+      font-size: 1.3rem; 
+      color: rgba(255,255,255,0.7); 
+      max-width: 750px; 
+      margin: 0 auto; 
+      line-height: 1.6; 
+      position: relative; 
+      z-index: 10; 
+    }
 
     .process-visual { padding: 80px 0 120px; background: var(--bg); position: relative; }
     
@@ -70,6 +78,7 @@
       position: relative; 
       z-index: 2; 
     }
+
 
     .step-card {
       background: #fff;
@@ -188,11 +197,21 @@
 
   <main>
     <section class="hero-section">
+      <div class="hero__galaxy-img"></div>
+      <div class="hero__mesh"></div>
+      <div class="hero__galaxy">
+        <div class="stars-static"></div>
+        <div class="stars-animated"></div>
+        <div class="meteor meteor-1"></div>
+        <div class="meteor meteor-2"></div>
+        <div class="meteor meteor-3"></div>
+      </div>
       <div class="container">
         <h1>Ваш ідеальний дім <br>за 8 простих кроків</h1>
         <p>Ми перетворили складний процес оренди житла у Варшаві на прозору та безпечну онлайн-подорож.</p>
       </div>
     </section>
+
 
     <section class="process-visual">
       <div class="orb orb-purple"></div>
