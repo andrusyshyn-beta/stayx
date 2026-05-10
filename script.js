@@ -112,6 +112,30 @@ if (contactForm) {
   });
 }
 
+// ===== FORM ENHANCEMENTS (Digits only & Date Picker) =====
+function initFormEnhancements() {
+  // 1. Phone: Digits only
+  const phoneInput = document.getElementById('phone');
+  if (phoneInput) {
+    phoneInput.addEventListener('input', (e) => {
+      e.target.value = e.target.value.replace(/\D/g, '');
+    });
+  }
+
+  // 2. Date: Open picker on click
+  const dateInput = document.getElementById('moveInDate');
+  if (dateInput) {
+    dateInput.addEventListener('click', function() {
+      if (this.showPicker) {
+        this.showPicker();
+      }
+    });
+  }
+}
+
+// Initialize on load
+initFormEnhancements();
+
 // ===== ANIMATED COUNTER =====
 function animateCounter(el) {
   const target = +el.dataset.target;
