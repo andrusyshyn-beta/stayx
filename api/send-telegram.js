@@ -24,12 +24,13 @@ module.exports = async (req, res) => {
 ──────────────────
   `;
 
-  const data = JSON.stringify({
+  const postData = JSON.stringify({
     chat_id: chatId,
     text: text,
     parse_mode: 'Markdown'
   });
 
+  // CRITICAL: Use Buffer.byteLength for UTF-8 characters (Cyrillic/Emoji)
   const options = {
     hostname: 'api.telegram.org',
     port: 443,
@@ -37,7 +38,7 @@ module.exports = async (req, res) => {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
-      'Content-Length': data.length
+      'Content-Length': Buffer.byteLength(postData)
     }
   };
 
@@ -49,6 +50,7 @@ module.exports = async (req, res) => {
         if (response.statusCode === 200) {
           res.status(200).json({ success: true });
         } else {
+          console.error('Telegram API Error:', responseData);
           res.status(500).json({ error: 'Telegram Error', details: responseData });
         }
         resolve();
@@ -56,11 +58,12 @@ module.exports = async (req, res) => {
     });
 
     request.on('error', (error) => {
+      console.error('Connection Error:', error);
       res.status(500).json({ error: 'Connection Error', details: error.message });
       resolve();
     });
 
-    request.write(data);
+    request.write(postData);
     request.end();
   });
 };
