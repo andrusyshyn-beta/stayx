@@ -13,7 +13,7 @@
 /* ===== RESET ===== */
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--stripe-gray);line-height:1.6;background:#fff;-webkit-font-smoothing:antialiased;letter-spacing:-0.01em;overflow-x:hidden}
+body{font-family:'Inter',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:var(--stripe-gray);line-height:1.6;background:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;letter-spacing:-0.022em;overflow-x:hidden}
 a{text-decoration:none;color:inherit;transition:all .2s ease}
 .container{max-width:1240px;margin:0 auto;width:100%}
 .container-padding{padding:0 24px}
