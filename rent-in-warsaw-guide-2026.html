@@ -33,27 +33,75 @@ a:hover{text-decoration:underline}
 /* Progress bar */
 #pb{position:fixed;top:0;left:0;z-index:300;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),#8b85ff);transition:width .1s linear}
 
-/* Nav Override for Consistency */
+/* --- FORCED HEADER SYNC --- */
 .header {
-  background: rgba(250, 249, 247, 0.96);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--border);
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 72px !important;
+  background: #fff !important;
+  z-index: 1000 !important;
+  border-bottom: 1px solid var(--border) !important;
+  display: block !important;
 }
-.header--scrolled {
-  background: rgba(255, 255, 255, 0.9);
-}
-.nav__link {
-  color: var(--ink2) !important;
+.nav {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  height: 100% !important;
+  max-width: 1240px !important;
+  margin: 0 auto !important;
+  padding: 0 24px !important;
 }
 .logo-text {
+  font-weight: 800 !important;
+  font-size: 1.35rem !important;
   color: var(--ink) !important;
+  letter-spacing: -0.04em !important;
 }
-.nav__lang a {
-  color: var(--muted) !important;
+.nav__burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
 }
-.nav__lang a.active {
-  color: var(--ink) !important;
-  background: var(--surface2) !important;
+.nav__burger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--ink);
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .nav__left, .nav__right { display: none !important; }
+  .nav__burger { display: flex !important; }
+  
+  .header.open {
+    height: 100vh !important;
+    background: #fff !important;
+    overflow: hidden !important;
+  }
+  .header.open .nav__left, 
+  .header.open .nav__right {
+    display: flex !important;
+    flex-direction: column !important;
+    position: fixed !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: #fff !important;
+    padding: 20px !important;
+    text-align: center !important;
+  }
+  .header.open .nav__left { top: 72px !important; }
+  .header.open .nav__right { top: 300px !important; border-top: 1px solid var(--border) !important; }
+  .header.open .nav__link {
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    padding: 15px 0 !important;
+    color: var(--ink) !important;
+  }
 }
 
 /* Hero */
