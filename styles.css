@@ -1,7 +1,7 @@
 :root {
   --stripe-blue: #635bff;
   --stripe-dark: #0a2540;
-  --stripe-gray: #425466;
+  --stripe-gray: #324155; /* Darker for better contrast */
   --stripe-light-gray: #f6f9fc;
   --stripe-border: #e3e8ee;
   --stripe-cyan: #00d4ff;

@@ -1,19 +1,25 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+Disallow: /private/
 
-User-agent: Googlebot
-Allow: /
-
+# Allow AI Crawlers for GEO/AEO optimization
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: ClaudeBot
+User-agent: PerplexityBot
 Allow: /
 
-User-agent: PerplexityBot
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Google-Extended
 Allow: /
 
 Sitemap: https://stayx-eight.vercel.app/sitemap.xml

@@ -8,10 +8,29 @@
   <link rel="stylesheet" href="../blog.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" title="STAYX Blog RSS" href="https://stayx-eight.vercel.app/rss.xml">
+  <style>
+    .blog-search { max-width: 600px; margin: 0 auto 60px; }
+    .blog-search form { display: flex; gap: 10px; background: #fff; padding: 6px; border-radius: 99px; border: 1px solid #e3e8ee; }
+    .blog-search input { border: none; padding: 12px 24px; flex: 1; border-radius: 99px; font-family: inherit; font-size: 1rem; outline: none; }
+    .blog-search button { background: #635bff; color: #fff; border: none; padding: 12px 24px; border-radius: 99px; font-weight: 600; cursor: pointer; }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "STAYX Blog",
+    "description": "Expert advice on renting apartments in Warsaw.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "STAYX"
+    }
+  }
+  </script>
 </head>
 <body>
-  <header class="header header--scrolled" id="header">
+  <header class="header header--scrolled" id="header" data-keep-scrolled="true">
     <nav class="nav container container-padding">
       <a href="../index.html" class="nav__logo">
         <span class="logo-text">stay<span class="x-accent">x</span></span>
@@ -43,6 +62,13 @@
         <div class="section-header">
           <p class="section-header__label">Блог StayX</p>
           <h2 class="section-header__title">Ваш путівник у світі нерухомості Варшави</h2>
+        </div>
+
+        <div class="blog-search">
+          <form action="#" method="GET">
+            <input type="text" name="q" placeholder="Пошук статтей (наприклад: 'райони' або 'договір')..." aria-label="Пошук по блогу">
+            <button type="submit">Шукати</button>
+          </form>
         </div>
         
         <div class="blog-grid">

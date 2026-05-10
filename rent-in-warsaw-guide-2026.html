@@ -97,6 +97,17 @@
     .header--scrolled .nav__lang a, .header--scrolled .nav__social a { color: var(--text-sub) !important; }
     .header--scrolled .nav__burger span { background-color: var(--text-main) !important; }
     .header--scrolled .nav__lang a.active { background: var(--bg) !important; color: var(--text-main) !important; }
+    .breadcrumb { font-size: 0.9rem; color: rgba(255,255,255,0.5); margin-bottom: 24px; }
+    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
+    .breadcrumb a:hover { color: #fff; }
+
+    .tldr-section { padding: 40px 0; background: var(--bg); }
+    .tldr-card { background: #fff; border-radius: 24px; padding: 40px; border: 1px solid var(--primary); box-shadow: 0 20px 40px rgba(99, 91, 255, 0.1); }
+    .tldr-card h4 { margin-top: 0; color: var(--primary); font-size: 1.4rem; margin-bottom: 20px; }
+    .tldr-card ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .tldr-card li { font-size: 1.1rem; line-height: 1.5; padding-left: 20px; position: relative; }
+    .tldr-card li::before { content: '•'; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
+    @media (max-width: 768px) { .tldr-card ul { grid-template-columns: 1fr; } }
   </style>
 
   <!-- Schema.org Article -->
@@ -121,6 +132,29 @@
     },
     "datePublished": "2026-05-10",
     "dateModified": "2026-05-10"
+  }
+  </script>
+
+  <!-- Schema.org FAQ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Яка середня вартість оренди у Варшаві 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Середня ціна 2-кімнатної квартири становить 4500-5500 PLN залежно від району та стандарту."
+      }
+    }, {
+      "@type": "Question",
+      "name": "Що таке Najem Okazjonalny?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Це тип договору оренди, який вимагає нотаріального підтвердження та забезпечує кращий юридичний захист для орендодавця."
+      }
+    }]
   }
   </script>
 </head>

@@ -1,19 +1,27 @@
-# STAYX - Real Estate Agency in Warsaw
+# STAYX | Premium Online Rental Platform in Warsaw
 
-## About STAYX
-STAYX is a modern real estate agency specializing in long-term rentals in Warsaw for international clients. We offer an end-to-end online booking process, legal support, and remote apartment viewings.
+STAYX is a real estate agency specializing in remote long-term apartment rentals for expats and professionals moving to Warsaw. We offer online viewings, legal support, and remote contract signing.
 
 ## Core Services
-- Online Apartment Search & Selection
-- Remote Video Viewings
-- Legal Audit of Rental Agreements
-- Remote Contract Signing (DocuSign)
-- Support for International Clients (PESEL, Address registration)
+- **Remote Search:** Finding apartments based on client criteria.
+- **Online Viewings:** Live video tours of verified apartments.
+- **Legal Audit:** Verification of owners and rental contracts.
+- **STAYX Guarantee:** Apartment replacement without loss of deposit.
 
-## Useful Links
-- [Main Page](https://stayx-eight.vercel.app/) - Overview of services and contact form.
-- [How it Works](https://stayx-eight.vercel.app/how-it-works.html) - Detailed 8-step process of renting online.
-- [Privacy Policy](https://stayx-eight.vercel.app/privacy.html) - Data protection and terms.
+## Key Resources
+- [How it Works](https://stayx-eight.vercel.app/how-it-works.html) - Step-by-step process of online renting.
+- [Warsaw Rental Guide 2026](https://stayx-eight.vercel.app/rent-in-warsaw-guide-2026.html) - Comprehensive guide for tenants.
+- [Blog](https://stayx-eight.vercel.app/blog/index.html) - Market insights and legal advice.
+- [Privacy Policy](https://stayx-eight.vercel.app/privacy.html) - Data protection terms.
 
-## FAQ
-Comprehensive guide on rental guarantees, legal requirements, and post-move-in support available on the main page.
+## Contact Information
+- **Website:** https://stayx-eight.vercel.app/
+- **Email:** info@stayx.pl
+- **Phone:** +48 793 248 212
+- **Telegram:** @stayX_pl
+- **NIP:** 7011182095
+
+## Technical Details
+- **Localization:** UA (root), EN (/en/), PL (/pl/).
+- **Sitemap:** https://stayx-eight.vercel.app/sitemap.xml
+- **RSS Feed:** https://stayx-eight.vercel.app/rss.xml

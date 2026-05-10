@@ -33,9 +33,37 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="stylesheet" href="../blog.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/css/intlTelInput.css">
+  
+  <!-- Optimization: Critical Path CSS -->
+  <style>
+    :root { --stripe-blue: #635bff; --stripe-dark: #0a2540; --stripe-gray: #425466; }
+    body { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; background: #fff; margin: 0; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+    .container { max-width: 1240px; margin: 0 auto; width: 100%; padding: 0 24px; }
+    .header { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; height: 72px; transition: all .3s ease; }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 100%; }
+    .hero { position: relative; padding: 140px 0 60px; min-height: 100vh; display: flex; align-items: center; background: #0a2540; overflow: hidden; }
+    .hero h1 { font-size: 3.5rem; font-weight: 700; color: #fff; line-height: 1.05; letter-spacing: -.04em; margin-bottom: 16px; }
+    .hero__sub { font-size: 1.1rem; color: rgba(255,255,255,.8); max-width: 540px; margin-bottom: 24px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; border-radius: 9999px; font-weight: 600; text-decoration: none; transition: transform .2s; }
+    .btn--primary { background: #635bff; color: #fff; }
+    .hero__collage { position: relative; width: 100%; height: 440px; display: flex; align-items: center; justify-content: center; }
+    .hero__main-img { border-radius: 20px; box-shadow: 0 30px 60px rgba(0,0,0,0.3); width: 75%; height: 75%; object-fit: cover; }
+    @media (max-width: 768px) {
+      .hero { padding: 120px 0 40px; text-align: center; }
+      .hero h1 { font-size: 2.2rem; text-align: center; }
+      .hero__sub { text-align: center; margin: 0 auto 24px; }
+      .hero__layout { flex-direction: column; gap: 40px; }
+    }
+  </style>
+
+  <!-- Optimization: Preload Critical Assets -->
+  <link rel="preload" href="../styles.css" as="style">
+  <link rel="preload" href="../images/galaxy-bg.png" as="image" fetchpriority="high">
+  <link rel="preload" href="../images/collage-main.png" as="image" fetchpriority="high">
+
+  <link rel="stylesheet" href="../styles.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../blog.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/css/intlTelInput.css" media="print" onload="this.media='all'">
 
 </head>
 <body>
@@ -100,7 +128,7 @@
       <div class="hero__right">
         <div class="hero__collage">
           <div class="hero__collage-item hero__collage-item--main">
-            <img src="../images/collage-main.png" alt="Verified Apartment Main" class="hero__main-img">
+            <img src="../images/collage-main.png" alt="Verified Apartment Main" class="hero__main-img" width="480" height="600" fetchpriority="high">
             <div class="hero__listing-card">
               <div class="hero__listing-badge">Zweryfikowano</div>
               <div class="hero__listing-info">
@@ -110,7 +138,7 @@
             </div>
           </div>
           <div class="hero__collage-item hero__collage-item--top">
-            <img src="../images/collage-2.png" alt="Verified Apartment 2">
+            <img src="../images/collage-2.png" alt="Verified Apartment 2" width="280" height="200">
             <div class="hero__listing-card hero__listing-card--mini">
               <div class="hero__listing-badge">Zweryfikowano</div>
               <div class="hero__listing-info">
@@ -119,7 +147,7 @@
             </div>
           </div>
           <div class="hero__collage-item hero__collage-item--bottom">
-            <img src="../images/collage-3.png" alt="Verified Apartment 3">
+            <img src="../images/collage-3.png" alt="Verified Apartment 3" width="280" height="200">
             <div class="hero__listing-card hero__listing-card--mini">
               <div class="hero__listing-badge">Zweryfikowano</div>
               <div class="hero__listing-info">
@@ -183,7 +211,7 @@
             <a href="how-it-works.html" class="features__link">Jak znaleźć i zarezerwować mieszkanie online? →</a>
           </div>
           <div class="features__card-visual">
-            <img src="../images/moving-collage.png" alt="Przeprowadzka do Warszawy" loading="lazy">
+            <img src="../images/moving-collage.png" alt="Przeprowadzka do Warszawy" loading="lazy" width="500" height="400">
           </div>
         </div>
         <div class="features__guarantee">
@@ -273,7 +301,7 @@
       </div>
       <div class="bento-grid">
         <div class="bento-card bento-card--large bento-card--mokotow">
-          <img class="bento-card__img" src="../images/mokotow.png" alt="Mokotów dzielnica Warszawy" loading="lazy">
+          <img class="bento-card__img" src="../images/mokotow.png" alt="Mokotów dzielnica Warszawy" loading="lazy" width="800" height="600">
           <div class="bento-card__overlay"></div>
           <div class="bento-card__content">
             <h3>Mokotów</h3>
@@ -282,7 +310,7 @@
           <div class="bento-card__badge">Top wybór</div>
         </div>
         <div class="bento-card bento-card--srodmiescie">
-          <img class="bento-card__img" src="../images/srodmiescie.png" alt="Śródmieście centrum Warszawy" loading="lazy">
+          <img class="bento-card__img" src="../images/srodmiescie.png" alt="Śródmieście centrum Warszawy" loading="lazy" width="400" height="300">
           <div class="bento-card__overlay"></div>
           <div class="bento-card__content">
             <h3>Śródmieście</h3>
@@ -290,7 +318,7 @@
           </div>
         </div>
         <div class="bento-card bento-card--wola">
-          <img class="bento-card__img" src="../images/wola.png" alt="Wola dzielnica Warszawy" loading="lazy">
+          <img class="bento-card__img" src="../images/wola.png" alt="Wola dzielnica Warszawy" loading="lazy" width="400" height="300">
           <div class="bento-card__overlay"></div>
           <div class="bento-card__content">
             <h3>Wola</h3>
@@ -298,7 +326,7 @@
           </div>
         </div>
         <div class="bento-card bento-card--wilanow">
-          <img class="bento-card__img" src="../images/wilanow.png" alt="Wilanów dzielnica Warszawy" loading="lazy">
+          <img class="bento-card__img" src="../images/wilanow.png" alt="Wilanów dzielnica Warszawy" loading="lazy" width="400" height="300">
           <div class="bento-card__overlay"></div>
           <div class="bento-card__content">
             <h3>Wilanów</h3>
@@ -562,28 +590,28 @@
           <form class="contacts__form" id="contactForm">
             <div class="form-grid">
               <div class="form-group">
-                <label>Twoje imię</label>
-                <input type="text" placeholder="Wpisz imię" required>
+                <label for="userName">Twoje imię</label>
+                <input type="text" id="userName" placeholder="Wpisz imię" required>
               </div>
               <div class="form-group">
-                <label>Email</label>
-                <input type="email" placeholder="example@mail.com" required>
+                <label for="userEmail">Email</label>
+                <input type="email" id="userEmail" placeholder="example@mail.com" required>
               </div>
               <div class="form-group">
-                <label>Telefon</label>
+                <label for="phone">Telefon</label>
                 <input type="tel" id="phone" required>
               </div>
               <div class="form-group">
-                <label>Twój budżet (PLN)</label>
+                <label for="budget">Twój budżet (PLN)</label>
                 <div class="budget-group">
-                  <button type="button" class="budget-btn minus" onclick="stepBudget(-100)">-</button>
+                  <button type="button" class="budget-btn minus" aria-label="Zmniejsz budżet" onclick="stepBudget(-100)">-</button>
                   <input type="number" id="budget" step="100" min="500" value="3000" required>
-                  <button type="button" class="budget-btn plus" onclick="stepBudget(100)">+</button>
+                  <button type="button" class="budget-btn plus" aria-label="Zwiększ budżet" onclick="stepBudget(100)">+</button>
                 </div>
               </div>
               <div class="form-group">
-                <label>Liczba pokoi</label>
-                <select required>
+                <label for="rooms">Liczba pokoi</label>
+                <select id="rooms" required>
                   <option value="" disabled selected>Wybierz opcję</option>
                   <option value="1">1 (Studio)</option>
                   <option value="2">2 pokoje</option>
@@ -592,8 +620,8 @@
                 </select>
               </div>
               <div class="form-group">
-                <label>Wybrana dzielnica</label>
-                <select required>
+                <label for="district">Wybrana dzielnica</label>
+                <select id="district" required>
                   <option value="" disabled selected>Wybierz dzielnicę</option>
                   <option value="all">Wszystkie</option>
                   <option value="Mokotów">Mokotów</option>
@@ -604,13 +632,13 @@
                 </select>
               </div>
               <div class="form-group">
-                <label>Data wprowadzenia</label>
-                <input type="date" required>
+                <label for="moveInDate">Data wprowadzenia</label>
+                <input type="date" id="moveInDate" required>
               </div>
             </div>
             <div class="form-group" style="margin-top: 10px;">
-              <label>Komentarze</label>
-              <textarea placeholder="Twoje oczekiwania..." rows="4"></textarea>
+              <label for="comments">Komentarze</label>
+              <textarea id="comments" placeholder="Twoje oczekiwania..." rows="4"></textarea>
             </div>
             <label class="contacts__checkbox">
               <input type="checkbox" required>

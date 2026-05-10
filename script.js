@@ -32,7 +32,10 @@ window.addEventListener('scroll', () => {
   if (window.scrollY > 20) {
     header.classList.add('header--scrolled');
   } else {
-    header.classList.remove('header--scrolled');
+    // Only remove if the header isn't forced to stay scrolled (e.g., on white pages)
+    if (header.getAttribute('data-keep-scrolled') !== 'true') {
+      header.classList.remove('header--scrolled');
+    }
   }
 });
 

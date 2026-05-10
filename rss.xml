@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>STAYX Blog | Warsaw Real Estate Insights</title>
+  <link>https://stayx-eight.vercel.app/blog/</link>
+  <description>Expert advice on renting apartments in Warsaw, legal tips, and market trends.</description>
+  <language>uk</language>
+  <lastBuildDate>Sun, 10 May 2026 12:00:00 GMT</lastBuildDate>
+  <atom:link href="https://stayx-eight.vercel.app/rss.xml" rel="self" type="application/rss+xml" />
+  
+  <item>
+    <title>Гід по оренді квартир у Варшаві 2026</title>
+    <link>https://stayx-eight.vercel.app/rent-in-warsaw-guide-2026.html</link>
+    <guid>https://stayx-eight.vercel.app/rent-in-warsaw-guide-2026.html</guid>
+    <pubDate>Sun, 10 May 2026 10:00:00 GMT</pubDate>
+    <description>Повний посібник для тих, хто планує орендувати житло у Варшаві: від вибору району до підписання договору.</description>
+  </item>
+  
+  <item>
+    <title>Юридичні нюанси договору оренди в Польщі</title>
+    <link>https://stayx-eight.vercel.app/blog/index.html#legal</link>
+    <guid>https://stayx-eight.vercel.app/blog/index.html#legal</guid>
+    <pubDate>Tue, 05 May 2026 12:00:00 GMT</pubDate>
+    <description>Najem okazjonalny чи стандартний договір? Розповідаємо про основні типи угод.</description>
+  </item>
+</channel>
+</rss>
