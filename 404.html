@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Сторінку не знайдено | STAYX</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
+    .error-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 24px;
+      background: #f6f9fc;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .error-card {
+      max-width: 540px;
+      width: 100%;
+    }
+    .error-code {
+      font-size: 8rem;
+      font-weight: 800;
+      line-height: 1;
+      margin-bottom: 24px;
+      background: linear-gradient(135deg, #635bff 0%, #00d4ff 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.05em;
+    }
+    .error-page h1 {
+      font-size: 2rem;
+      color: #0a2540;
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+    .error-page p {
+      font-size: 1.1rem;
+      color: #425466;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+    .error-actions {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+    }
+    @media (max-width: 600px) {
+      .error-code { font-size: 6rem; }
+      .error-actions { flex-direction: column; }
+      .error-actions .btn { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <section class="error-page">
+    <div class="error-card">
+      <div class="error-code">404</div>
+      <h1>Упс! Сторінку не знайдено</h1>
+      <p>Ми не змогли знайти те, що ви шукали. Можливо, посилання застаріло або сталася помилка в адресі. Але ми точно допоможемо вам знайти ідеальну квартиру у Варшаві.</p>
+      
+      <div class="error-actions">
+        <a href="index.html" class="btn btn--primary btn--lg">На головну</a>
+        <a href="https://t.me/stayX_pl" class="btn btn--ghost btn--lg">Написати в Telegram</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
