@@ -305,9 +305,9 @@ footer a{color:var(--subtle)}
       </div>
       <div class="nav__right">
         <div class="nav__lang">
-          <a href="/blog/index.html" class="active">Ua</a>
-          <a href="/en/blog/index.html">EN</a>
-          <a href="/pl/blog/index.html">PL</a>
+          <a href="/rent-in-warsaw-guide-2026.html" class="active">Ua</a>
+          <a href="/en/rent-in-warsaw-guide-2026.html">EN</a>
+          <a href="/pl/rent-in-warsaw-guide-2026.html">PL</a>
         </div>
         <a href="https://t.me/stayX_pl" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Зв'язатись →</a>
         <div class="nav__social nav__social-mobile">
@@ -899,22 +899,7 @@ function calcUpdate() {
 calcUpdate();
 
 <script>
-// Fallback for mobile menu if external script.js fails
-(function() {
-  const b = document.getElementById('burger');
-  const h = document.getElementById('header');
-  if (b && h) {
-    b.addEventListener('click', function(e) {
-      e.stopPropagation();
-      h.classList.toggle('open');
-    });
-    document.addEventListener('click', function(e) {
-      if (!h.contains(e.target)) h.classList.remove('open');
-    });
-  }
-})();
-
-// FAQ accordion logic sync
+// FAQ accordion logic
 document.querySelectorAll('.faq-q').forEach(q => {
   q.addEventListener('click', () => {
     const item = q.parentElement;
