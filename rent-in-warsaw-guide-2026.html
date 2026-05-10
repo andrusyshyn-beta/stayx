@@ -84,6 +84,19 @@
       h2 { font-size: 2.2rem; }
       .article-container { padding: 60px 20px; }
     }
+
+    /* Header transparency & Scrolled behavior */
+    .header:not(.header--scrolled) .nav__link, 
+    .header:not(.header--scrolled) .logo-text,
+    .header:not(.header--scrolled) .nav__lang a,
+    .header:not(.header--scrolled) .nav__social a { color: #fff !important; }
+    .header:not(.header--scrolled) .nav__burger span { background-color: #fff !important; }
+
+    .header--scrolled .nav__link { color: var(--text-sub) !important; }
+    .header--scrolled .logo-text { color: var(--text-main) !important; }
+    .header--scrolled .nav__lang a, .header--scrolled .nav__social a { color: var(--text-sub) !important; }
+    .header--scrolled .nav__burger span { background-color: var(--text-main) !important; }
+    .header--scrolled .nav__lang a.active { background: var(--bg) !important; color: var(--text-main) !important; }
   </style>
 
   <!-- Schema.org Article -->
