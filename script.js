@@ -28,16 +28,19 @@ document.querySelectorAll('.faq__question').forEach(btn => {
 });
 
 // ===== HEADER SCROLL =====
-window.addEventListener('scroll', () => {
+function updateHeader() {
   if (window.scrollY > 20) {
     header.classList.add('header--scrolled');
   } else {
-    // Only remove if the header isn't forced to stay scrolled (e.g., on white pages)
     if (header.getAttribute('data-keep-scrolled') !== 'true') {
       header.classList.remove('header--scrolled');
     }
   }
-});
+}
+
+window.addEventListener('scroll', updateHeader);
+window.addEventListener('load', updateHeader); // Fix on reload
+updateHeader(); // Initial check
 
 // ===== CONTACT FORM =====
 const contactForm = document.getElementById('contactForm');
