@@ -29,6 +29,7 @@ document.querySelectorAll('.faq__question').forEach(btn => {
 
 // ===== HEADER SCROLL =====
 function updateHeader() {
+  if (!header) return; // Safety check
   if (window.scrollY > 20) {
     header.classList.add('header--scrolled');
   } else {

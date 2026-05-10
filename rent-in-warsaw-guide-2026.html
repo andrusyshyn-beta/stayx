@@ -881,7 +881,23 @@ function calcUpdate() {
 });
 calcUpdate();
 
-// ── FAQ accordion ──────────────────────────────────────────
+<script>
+// Fallback for mobile menu if external script.js fails
+(function() {
+  const b = document.getElementById('burger');
+  const h = document.getElementById('header');
+  if (b && h) {
+    b.addEventListener('click', function(e) {
+      e.stopPropagation();
+      h.classList.toggle('open');
+    });
+    document.addEventListener('click', function(e) {
+      if (!h.contains(e.target)) h.classList.remove('open');
+    });
+  }
+})();
+
+// FAQ accordion logic sync
 document.querySelectorAll('.faq-q').forEach(q => {
   q.addEventListener('click', () => {
     const item = q.parentElement;
