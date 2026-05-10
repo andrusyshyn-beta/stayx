@@ -36,14 +36,21 @@ window.addEventListener('scroll', () => {
 
 // ===== CONTACT FORM =====
 const form = document.getElementById('contactForm');
-form.addEventListener('submit', (e) => {
-  e.preventDefault();
-  const btn = form.querySelector('button[type="submit"]');
-  btn.textContent = '✓ Надіслано!';
-  btn.style.background = '#00d4aa';
-  btn.style.pointerEvents = 'none';
-  setTimeout(() => { btn.textContent = 'Відправити →'; btn.style.background = ''; btn.style.pointerEvents = ''; form.reset(); }, 3000);
-});
+if (form) {
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('button[type="submit"]');
+    btn.textContent = '✓ Надіслано!';
+    btn.style.background = '#00d4aa';
+    btn.style.pointerEvents = 'none';
+    setTimeout(() => { 
+      btn.textContent = 'Відправити →'; 
+      btn.style.background = ''; 
+      btn.style.pointerEvents = ''; 
+      form.reset(); 
+    }, 3000);
+  });
+}
 
 // ===== ANIMATED COUNTER =====
 function animateCounter(el) {
@@ -58,14 +65,17 @@ function animateCounter(el) {
   }
   requestAnimationFrame(tick);
 }
-const counterObserver = new IntersectionObserver((entries) => {
-  entries.forEach(e => {
-    if (e.isIntersecting) {
-      e.target.querySelectorAll('.stats__number').forEach(animateCounter);
-      counterObserver.unobserve(e.target);
-    }
-  });
-}, { threshold: 0.3 });
+
 const statsSection = document.querySelector('.stats');
-if (statsSection) counterObserver.observe(statsSection);
+if (statsSection) {
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.querySelectorAll('.stats__number').forEach(animateCounter);
+        counterObserver.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  counterObserver.observe(statsSection);
+}
 

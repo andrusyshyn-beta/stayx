@@ -29,12 +29,22 @@
     .header:not(.header--scrolled) .nav__link, 
     .header:not(.header--scrolled) .logo-text,
     .header:not(.header--scrolled) .nav__lang a,
-    .header:not(.header--scrolled) .nav__social a {
+    .header:not(.header--scrolled) .nav__social a,
+    .header:not(.header--scrolled) .nav__burger span {
       color: var(--text-main);
+      background-color: var(--text-main); /* For burger spans */
     }
+    .header:not(.header--scrolled) .nav__burger span { background: var(--text-main); }
+    .header:not(.header--scrolled) .nav__link { color: var(--text-main); }
+    .header:not(.header--scrolled) .logo-text { color: var(--text-main); }
+    .header:not(.header--scrolled) .nav__lang a { color: var(--text-main); }
+    .header:not(.header--scrolled) .nav__social a { color: var(--text-main); }
+
     .header:not(.header--scrolled) .nav__lang a.active {
-      background: #f6f9fc;
+      background: rgba(0,0,0,0.05);
+      color: var(--primary);
     }
+
 
     .hero-section { padding: 160px 0 80px; text-align: center; position: relative; overflow: hidden; background: #fff; }
     .hero-section::before {
