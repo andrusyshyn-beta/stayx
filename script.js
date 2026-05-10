@@ -50,21 +50,37 @@ if (contactForm) {
     const lang = document.documentElement.lang || 'uk';
     const originalText = btn.textContent;
 
+    // Reset previous errors
+    contactForm.querySelectorAll('.error').forEach(el => el.classList.remove('error'));
+
     try {
       // Safe helper to get value
       const getVal = (id) => {
         const el = document.getElementById(id);
-        if (!el) {
-          console.warn(`STAYX: Element #${id} not found`);
-          return '—';
-        }
+        if (!el) return '—';
         return el.value;
       };
 
+      const email = getVal('userEmail');
+      const phone = getVal('phone');
+      
+      // 1. Validate Email
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        document.getElementById('userEmail').classList.add('error');
+        throw new Error('Invalid Email');
+      }
+
+      // 2. Validate Phone (using global iti instance)
+      if (window.iti && !window.iti.isValidNumber()) {
+        document.getElementById('phone').classList.add('error');
+        throw new Error('Invalid Phone');
+      }
+
       const formData = {
         name: getVal('userName'),
-        email: getVal('userEmail'),
-        phone: getVal('phone'),
+        email: email,
+        phone: phone,
         budget: getVal('budget'),
         rooms: getVal('rooms'),
         district: getVal('district'),

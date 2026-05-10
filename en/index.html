@@ -721,8 +721,9 @@
   <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/intlTelInput.min.js"></script>
   <script>
     const input = document.querySelector("#phone");
-    window.intlTelInput(input, {
+    window.iti = window.intlTelInput(input, {
       initialCountry: "pl",
+      preferredCountries: ["pl", "ua", "us", "gb"],
       utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/utils.js",
     });
     function stepBudget(amount) {
