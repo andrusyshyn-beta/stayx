@@ -9,101 +9,106 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f6f9fc; color: #425466; margin: 0; }
-    .page-header { background: #fff; padding: 30px 0; border-bottom: 1px solid #edf2f7; position: sticky; top: 0; z-index: 100; }
-    .page-header .nav__logo { justify-content: center; text-decoration: none; }
-    .page-header .logo-text { color: #0a2540; }
-    
-    .process-hero { padding: 100px 0 60px; text-align: center; background: #fff; }
-    .process-hero h1 { font-size: 3rem; color: #0a2540; font-weight: 800; letter-spacing: -0.04em; margin-bottom: 20px; }
-    .process-hero p { font-size: 1.25rem; color: #68778d; max-width: 700px; margin: 0 auto; line-height: 1.6; }
+    :root {
+      --primary: #635bff;
+      --primary-dark: #4338ca;
+      --accent: #00d4ff;
+      --bg: #f6f9fc;
+      --text-main: #0a2540;
+      --text-sub: #425466;
+    }
 
-    .steps-container { max-width: 1000px; margin: 80px auto; padding: 0 24px; position: relative; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text-sub); margin: 0; overflow-x: hidden; }
     
-    /* Timeline Line */
-    .steps-container::before {
+    .page-header { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); padding: 20px 0; border-bottom: 1px solid rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 1000; }
+    .page-header .nav__logo { text-decoration: none; display: flex; justify-content: center; }
+    .page-header .logo-text { color: var(--text-main); font-size: 1.5rem; font-weight: 800; letter-spacing: -0.04em; }
+    
+    .hero-section { padding: 120px 0 80px; text-align: center; position: relative; overflow: hidden; background: #fff; }
+    .hero-section::before {
       content: '';
       position: absolute;
+      top: -20%;
       left: 50%;
-      top: 0;
-      bottom: 0;
-      width: 2px;
-      background: linear-gradient(to bottom, #635bff, #00d4ff);
-      transform: translateX(-50%);
-      opacity: 0.2;
-    }
-
-    .step-item {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 100px;
-      position: relative;
       width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at 50% 50%, rgba(99, 91, 255, 0.08) 0%, transparent 70%);
+      transform: translateX(-50%);
+      z-index: 0;
     }
 
-    .step-item:nth-child(even) { flex-direction: row-reverse; }
+    .hero-section h1 { font-size: 3.5rem; font-weight: 800; color: var(--text-main); letter-spacing: -0.05em; line-height: 1.1; margin-bottom: 24px; position: relative; z-index: 1; }
+    .hero-section p { font-size: 1.3rem; color: var(--text-sub); max-width: 750px; margin: 0 auto; line-height: 1.6; position: relative; z-index: 1; }
 
-    .step-content {
-      width: 45%;
-      background: #fff;
-      padding: 40px;
-      border-radius: 24px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.03);
-      border: 1px solid #f0f4f8;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+    .process-visual { padding: 100px 0; background: var(--bg); position: relative; }
     
-    .step-content:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 40px rgba(99,91,255,0.08);
-      border-color: rgba(99,91,255,0.2);
+    .steps-grid { display: grid; grid-template-columns: 1fr; gap: 40px; max-width: 900px; margin: 0 auto; position: relative; z-index: 2; }
+
+    .step-card {
+      display: flex;
+      gap: 40px;
+      background: #fff;
+      padding: 50px;
+      border-radius: 32px;
+      border: 1px solid rgba(0,0,0,0.03);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.02);
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
     }
 
-    .step-number {
+    .step-card:hover {
+      transform: translateY(-8px) scale(1.01);
+      box-shadow: 0 30px 60px rgba(99, 91, 255, 0.1);
+      border-color: rgba(99, 91, 255, 0.2);
+    }
+
+    .step-card::after {
+      content: '';
       position: absolute;
-      left: 50%;
-      top: 50%;
-      transform: translate(-50%, -50%);
-      width: 50px;
-      height: 50px;
-      background: #635bff;
-      color: #fff;
-      border-radius: 50%;
+      top: 0;
+      right: 0;
+      width: 150px;
+      height: 150px;
+      background: radial-gradient(circle at 100% 0%, rgba(99, 91, 255, 0.05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+
+    .step-icon-box {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #f8faff 0%, #eff6ff 100%);
+      border-radius: 20px;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-weight: 800;
-      font-size: 1.2rem;
-      z-index: 2;
-      box-shadow: 0 0 0 8px #f6f9fc;
+      font-size: 2rem;
+      color: var(--primary);
+      box-shadow: inset 0 0 0 1px rgba(99, 91, 255, 0.1);
     }
 
-    .step-content h3 { color: #0a2540; font-size: 1.5rem; margin-bottom: 16px; font-weight: 700; letter-spacing: -0.02em; }
-    .step-content p { font-size: 1.05rem; line-height: 1.7; color: #425466; margin: 0; }
-    
-    .step-badge {
-      display: inline-block;
-      background: #eef2ff;
-      color: #635bff;
-      padding: 4px 12px;
-      border-radius: 99px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      margin-bottom: 16px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
+    .step-info { flex: 1; }
+    .step-num { font-size: 0.85rem; font-weight: 800; color: var(--primary); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; display: block; }
+    .step-info h2 { font-size: 1.8rem; font-weight: 800; color: var(--text-main); margin-bottom: 16px; letter-spacing: -0.03em; }
+    .step-info p { font-size: 1.1rem; line-height: 1.7; color: var(--text-sub); margin: 0; }
 
-    .cta-section { padding: 100px 0; text-align: center; background: #fff; }
-    .cta-section h2 { font-size: 2.2rem; color: #0a2540; margin-bottom: 32px; font-weight: 800; }
+    /* Floating Orbs for extra premium look */
+    .orb { position: absolute; border-radius: 50%; filter: blur(100px); z-index: 1; pointer-events: none; opacity: 0.4; }
+    .orb-purple { width: 600px; height: 600px; background: rgba(99, 91, 255, 0.15); top: 10%; right: -10%; }
+    .orb-cyan { width: 500px; height: 500px; background: rgba(0, 212, 255, 0.1); bottom: 10%; left: -5%; }
+
+    .final-cta { padding: 120px 0; text-align: center; background: #fff; border-top: 1px solid rgba(0,0,0,0.05); }
+    .final-cta h2 { font-size: 2.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 40px; letter-spacing: -0.04em; }
+
+    .footer { background: var(--text-main); padding: 80px 0; color: #fff; text-align: center; }
+    .footer p { opacity: 0.5; font-size: 0.9rem; }
 
     @media (max-width: 768px) {
-      .steps-container::before { left: 30px; }
-      .step-item { flex-direction: row !important; justify-content: flex-start; margin-bottom: 60px; }
-      .step-content { width: calc(100% - 80px); margin-left: 80px; padding: 30px; }
-      .step-number { left: 30px; transform: translate(-50%, -50%); }
-      .process-hero h1 { font-size: 2.2rem; }
+      .hero-section h1 { font-size: 2.5rem; }
+      .step-card { flex-direction: column; padding: 32px; gap: 24px; }
+      .step-icon-box { width: 64px; height: 64px; font-size: 1.5rem; }
+      .step-info h2 { font-size: 1.5rem; }
     }
   </style>
 </head>
@@ -118,106 +123,119 @@
   </header>
 
   <main>
-    <section class="process-hero">
+    <section class="hero-section">
       <div class="container">
-        <h1>Простий шлях до вашого <br>нового дому у Варшаві</h1>
-        <p>Ми беремо на себе весь процес — від першої заявки до моменту, коли ключі опиняться у ваших руках.</p>
+        <h1>Ваш ідеальний дім <br>за 8 простих кроків</h1>
+        <p>Ми перетворили складний процес оренди житла у Варшаві на прозору та безпечну онлайн-подорож.</p>
       </div>
     </section>
 
-    <div class="steps-container">
-      <!-- Step 1 -->
-      <div class="step-item">
-        <div class="step-number">1</div>
-        <div class="step-content">
-          <div class="step-badge">Початок</div>
-          <h3>Заявка</h3>
-          <p>Ви залишаєте заявку на послугу "Онлайн оренда" через форму на сайті або в Telegram. Наш менеджер зв'яжеться з вами протягом 15 хвилин.</p>
-        </div>
-      </div>
+    <section class="process-visual">
+      <div class="orb orb-purple"></div>
+      <div class="orb orb-cyan"></div>
 
-      <!-- Step 2 -->
-      <div class="step-item">
-        <div class="step-number">2</div>
-        <div class="step-content">
-          <div class="step-badge">Уточнення</div>
-          <h3>Анкета</h3>
-          <p>Ви даєте короткі відповіді на основні питання (бюджет, район, кількість кімнат). Це необхідно для того, щоб ми найточніше сформували ваш запит та не витрачали ваш час на невідповідні варіанти.</p>
-        </div>
-      </div>
-
-      <!-- Step 3 -->
-      <div class="step-item">
-        <div class="step-number">3</div>
-        <div class="step-content">
-          <div class="step-badge">Активна фаза</div>
-          <h3>Пошук квартири</h3>
-          <p>Ми починаємо пошук найбільш підходящих варіантів квартири для вас, використовуючи наші внутрішні бази та партнерські мережі, які недоступні на публічних ресурсах.</p>
-        </div>
-      </div>
-
-      <!-- Step 4 -->
-      <div class="step-item">
-        <div class="step-number">4</div>
-        <div class="step-content">
-          <div class="step-badge">Віртуальний тур</div>
-          <h3>Онлайн перегляд</h3>
-          <p>Ми домовляємось з власником і виїжджаємо за адресою обраної квартири. В онлайн-режимі показуємо вам все: від стану сантехніки до паркінгу. Якщо ви не володієте польською, наш агент виступить перекладачем у розмові з власником.</p>
-        </div>
-      </div>
-
-      <!-- Step 5 -->
-      <div class="step-item">
-        <div class="step-number">5</div>
-        <div class="step-content">
-          <div class="step-badge">Безпека</div>
-          <h3>Підготовка договору</h3>
-          <p>Агент STAYX ретельно перевіряє договір оренди на наявність "підводних каменів", захищаючи ваші інтереси, та вносить необхідні правки для вашої юридичної безпеки.</p>
-        </div>
-      </div>
-
-      <!-- Step 6 -->
-      <div class="step-item">
-        <div class="step-number">6</div>
-        <div class="step-content">
-          <div class="step-badge">Технології</div>
-          <h3>Підписання онлайн (DocuSign)</h3>
-          <p>Підписати договір можна швидко та безпечно за допомогою сервісу DocuSign. Це сучасний спосіб зафіксувати домовленості онлайн, заощаджуючи ваш час та зусилля.</p>
-        </div>
-      </div>
-
-      <!-- Step 7 -->
-      <div class="step-item">
-        <div class="step-number">7</div>
-        <div class="step-content">
-          <div class="step-badge">Гарантія</div>
-          <h3>Оплата резервації</h3>
-          <p>Після підписання договору ви сплачуєте резерваційний внесок у розмірі 20% від орендної плати. Це гарантує, що власник закріпить квартиру саме за вами до моменту вашого приїзду.</p>
-        </div>
-      </div>
-
-      <!-- Step 8 -->
-      <div class="step-item">
-        <div class="step-number">8</div>
-        <div class="step-content">
-          <div class="step-badge">Фінал</div>
-          <h3>Передача ключів та заселення</h3>
-          <p>У день заселення наш агент зустрічає вас разом із власником. Ви підписуєте акт прийому-передачі, перевіряєте стан квартири, отримуєте ключі та здійснюєте решту оплати. Вітаємо у новому домі!</p>
-        </div>
-      </div>
-    </div>
-
-    <section class="cta-section">
       <div class="container">
-        <h2>Готові почати перший крок?</h2>
-        <a href="index.html#contacts" class="btn btn--primary btn--lg">Залишити заявку →</a>
+        <div class="steps-grid">
+          <!-- Step 1 -->
+          <div class="step-card">
+            <div class="step-icon-box">✉️</div>
+            <div class="step-info">
+              <span class="step-num">Крок 01</span>
+              <h2>Заявка</h2>
+              <p>Ви залишаєте заявку на послугу "Онлайн оренда" через форму на сайті або в Telegram. Наш менеджер зв'яжеться з вами протягом 15 хвилин для первинної консультації.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="step-card">
+            <div class="step-icon-box">📋</div>
+            <div class="step-info">
+              <span class="step-num">Крок 02</span>
+              <h2>Анкета</h2>
+              <p>Ви даєте короткі відповіді на основні питання (бюджет, район, кількість кімнат). Це необхідно для того, щоб ми найточніше сформували ваш запит та не витрачали ваш час на невідповідні варіанти.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="step-card">
+            <div class="step-icon-box">🔍</div>
+            <div class="step-info">
+              <span class="step-num">Крок 03</span>
+              <h2>Пошук квартири</h2>
+              <p>Ми починаємо пошук найбільш підходящих варіантів квартири для вас, використовуючи наші внутрішні бази та партнерські мережі, які недоступні на публічних ресурсах.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="step-card">
+            <div class="step-icon-box">📹</div>
+            <div class="step-info">
+              <span class="step-num">Крок 04</span>
+              <h2>Онлайн перегляд</h2>
+              <p>Ми домовляємось з власником і виїжджаємо за адресою обраної квартири. В онлайн-режимі показуємо вам все: від стану сантехніки до паркінгу. Якщо ви не володієте польською, наш агент виступить перекладачем у розмові з власником.</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="step-card">
+            <div class="step-icon-box">⚖️</div>
+            <div class="step-info">
+              <span class="step-num">Крок 05</span>
+              <h2>Підготовка договору</h2>
+              <p>Агент STAYX ретельно перевіряє договір оренди на наявність "підводних каменів", захищаючи ваші інтереси, та вносить необхідні правки для вашої юридичної безпеки.</p>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="step-card">
+            <div class="step-icon-box">✍️</div>
+            <div class="step-info">
+              <span class="step-num">Крок 06</span>
+              <h2>Підписання договору (DocuSign)</h2>
+              <p>Підписати договір можна швидко та безпечно за допомогою сервісу DocuSign. Це сучасний спосіб зафіксувати домовленості онлайн, заощаджуючи ваш час та зусилля.</p>
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="step-item">
+            <!-- Content included in cards now, keeping grid logic simple -->
+          </div>
+
+          <div class="step-card">
+            <div class="step-icon-box">💳</div>
+            <div class="step-info">
+              <span class="step-num">Крок 07</span>
+              <h2>Оплата резервації</h2>
+              <p>Після підписання договору ви сплачуєте резерваційний внесок у розмірі 20% від орендної плати. Це гарантує, що власник закріпить квартиру саме за вами до моменту вашого приїзду.</p>
+            </div>
+          </div>
+
+          <!-- Step 8 -->
+          <div class="step-card">
+            <div class="step-icon-box">🔑</div>
+            <div class="step-info">
+              <span class="step-num">Крок 08</span>
+              <h2>Передача ключів та заселення</h2>
+              <p>У день заселення наш агент зустрічає вас разом із власником. Ви підписуєте акт прийому-передачі, перевіряєте стан квартири, отримуєте ключі та здійснюєте решту оплати. Вітаємо у новому домі!</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container">
+        <h2>Почніть свій переїзд сьогодні</h2>
+        <a href="index.html#contacts" class="btn btn--primary btn--lg">Забронювати квартиру</a>
       </div>
     </section>
   </main>
 
-  <footer style="text-align: center; padding: 60px 0; background: #fff; border-top: 1px solid #edf2f7; color: #8898aa; font-size: 0.9rem;">
+  <footer class="footer">
     <div class="container">
-      &copy; 2026 STAYX. Зроблено з любов'ю до Варшави.
+      <div class="logo-text" style="color: #fff; margin-bottom: 20px;">stay<span class="x-accent">x</span></div>
+      <p>&copy; 2026 STAYX. Усі права захищені.</p>
     </div>
   </footer>
 
