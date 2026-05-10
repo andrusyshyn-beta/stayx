@@ -8,7 +8,7 @@ module.exports = async (req, res) => {
   const { name, email, phone, budget, rooms, district, date, comments, lang } = req.body;
 
   const token = '8122501292:AAEY-uetoXadg2aCszu8AyP5_uN2jdJOptA';
-  const chatId = '-1003792821849';
+  const chatId = '-1003994760098';
 
   const text = `
 🔥 *Нова заявка STAYX (${lang || 'UA'})*
