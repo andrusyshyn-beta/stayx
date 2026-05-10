@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STAYX | Wynajem długoterminowy mieszkań w Warszawie online</title>
+  <meta name="description" content="Znajdź i zarezerwuj idealne mieszkanie w Warszawie zdalnie. STAYX — luksusowa agencja nieruchomości z prezentacjami online i wsparciem prawnym.">
+  <link rel="canonical" href="https://stayx-eight.vercel.app/pl/">
+  <link rel="alternate" hreflang="uk" href="https://stayx-eight.vercel.app/">
+  <link rel="alternate" hreflang="en" href="https://stayx-eight.vercel.app/en/">
+  <link rel="alternate" hreflang="pl" href="https://stayx-eight.vercel.app/pl/">
+  <link rel="alternate" hreflang="x-default" href="https://stayx-eight.vercel.app/">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "STAYX",
+    "image": "https://stayx-eight.vercel.app/images/logo-og.png",
+    "description": "Premium real estate agency in Warsaw specializing in remote long-term rentals.",
+    "url": "https://stayx-eight.vercel.app/pl/",
+    "telephone": "+48793248212",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Warsaw",
+      "addressCountry": "PL"
+    },
+    "priceRange": "$$$"
+  }
+  </script>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../blog.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/css/intlTelInput.css">
+
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <nav class="nav container container-padding">
+      <a href="index.html" class="nav__logo">
+        <span class="logo-text">stay<span class="x-accent">x</span></span>
+      </a>
+      <div class="nav__left">
+        <a href="#services" class="nav__link">Usługi</a>
+        <a href="how-it-works.html" class="nav__link">Jak to działa</a>
+        <a href="#blog" class="nav__link">Blog</a>
+        <a href="#about" class="nav__link">O nas</a>
+        <a href="#faq" class="nav__link">FAQ</a>
+      </div>
+      <div class="nav__right">
+        <div class="nav__lang">
+          <a href="../index.html">Ua</a>
+          <a href="#">EN</a>
+          <a href="index.html" class="active">PL</a>
+        </div>
+        <a href="https://t.me/stayX_pl" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Kontakt →</a>
+        <div class="nav__social">
+          <a href="https://www.instagram.com/stayx_pl?igsh=MWt5enF2b3hoN29rMA%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@stayx_realestate?_r=1&_t=ZN-96DXaC2rZbT" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.53 1.53-.3 2.7-1.67 2.82-3.18.05-3.68-.01-7.36.03-11.03.01-.11 0-.22.01-.33z"/></svg>
+          </a>
+        </div>
+      </div>
+      <button class="nav__burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__galaxy-img"></div>
+      <div class="hero__mesh"></div>
+      <div class="hero__galaxy">
+        <div class="stars-static"></div>
+        <div class="stars-animated"></div>
+        <div class="meteor meteor-1"></div>
+        <div class="meteor meteor-2"></div>
+        <div class="meteor meteor-3"></div>
+      </div>
+      <div class="hero__grid-bg"></div>
+    <div class="container container-padding hero__layout">
+      <div class="hero__left">
+        <div class="hero__badge">#1 Serwis wynajmu online w Warszawie</div>
+        <h1>Wynajem długoterminowy w Warszawie<br><span class="hero__gradient-text">rezerwuj online</span></h1>
+        <p class="hero__sub">Znajdziemy, pokażemy i zarezerwujemy dla Ciebie mieszkanie zdalnie — od prezentacji online po podpisanie umowy.</p>
+        <div class="hero__actions">
+          <a href="#contactForm" class="btn btn--primary btn--lg">Zarezerwuj mieszkanie</a>
+          <a href="how-it-works.html" class="btn btn--ghost btn--lg">Jak to działa →</a>
+        </div>
+      </div>
+      <div class="hero__right">
+        <div class="hero__collage">
+          <div class="hero__collage-item hero__collage-item--main">
+            <img src="../images/collage-main.png" alt="Verified Apartment Main" class="hero__main-img">
+            <div class="hero__listing-card">
+              <div class="hero__listing-badge">Zweryfikowano</div>
+              <div class="hero__listing-info">
+                <span class="hero__listing-price">4 500 PLN</span>
+                <span class="hero__listing-location">Mokotów, Warszawa</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero__collage-item hero__collage-item--top">
+            <img src="../images/collage-2.png" alt="Verified Apartment 2">
+            <div class="hero__listing-card hero__listing-card--mini">
+              <div class="hero__listing-badge">Zweryfikowano</div>
+              <div class="hero__listing-info">
+                <span class="hero__listing-price">3 800 PLN</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero__collage-item hero__collage-item--bottom">
+            <img src="../images/collage-3.png" alt="Verified Apartment 3">
+            <div class="hero__listing-card hero__listing-card--mini">
+              <div class="hero__listing-badge">Zweryfikowano</div>
+              <div class="hero__listing-info">
+                <span class="hero__listing-price">5 200 PLN</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__gradient-line"></div>
+  </section>
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="stats">
+    <div class="container container-padding">
+      <div class="stats__grid">
+        <div class="stats__item">
+          <span class="stats__number" data-target="150">0</span><span class="stats__plus">+</span>
+          <span class="stats__label">Obsłużonych klientów</span>
+        </div>
+        <div class="stats__divider"></div>
+        <div class="stats__item">
+          <span class="stats__number" data-target="98">0</span><span class="stats__plus">%</span>
+          <span class="stats__label">Zadowolonych klientów</span>
+        </div>
+        <div class="stats__divider"></div>
+        <div class="stats__item">
+          <span class="stats__number" data-target="24">0</span><span class="stats__plus">h</span>
+          <span class="stats__label">Średni czas wyboru</span>
+        </div>
+        <div class="stats__divider"></div>
+        <div class="stats__item">
+          <span class="stats__number" data-target="2">0</span><span class="stats__plus">+</span>
+          <span class="stats__label">Lat na rynku</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE TRUST BAR ===== -->
+  <div class="marquee">
+    <div class="marquee__label">Gdzie szukamy</div>
+    <div class="marquee__track">
+      <div class="marquee__inner">
+        <span>Mokotów</span><span>Śródmieście</span><span>Wola</span><span>Wilanów</span><span>Żoliborz</span><span>Praga Południe</span><span>Ursynów</span><span>Ochota</span><span>Bemowo</span><span>Bielany</span>
+        <span>Mokotów</span><span>Śródmieście</span><span>Wola</span><span>Wilanów</span><span>Żoliborz</span><span>Praga Południe</span><span>Ursynów</span><span>Ochota</span><span>Bemowo</span><span>Bielany</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== FEATURE CARDS ===== -->
+  <section class="features" id="moving">
+    <div class="container container-padding">
+      <div class="features__grid">
+        <div class="features__card features__card--blue">
+          <div class="features__card-content">
+            <p class="features__label">Przeprowadzka</p>
+            <h2>Przeprowadzasz się do Warszawy i chcesz, aby wszystko było gotowe na Twój przyjazd?</h2>
+            <p>Znajdziemy mieszkanie, zorganizujemy prezentację online, sprawdzimy i przygotujemy umowę najmu.</p>
+            <a href="how-it-works.html" class="features__link">Jak znaleźć i zarezerwować mieszkanie online? →</a>
+          </div>
+          <div class="features__card-visual">
+            <img src="../images/moving-collage.png" alt="Przeprowadzka do Warszawy" loading="lazy">
+          </div>
+        </div>
+        <div class="features__guarantee">
+          <div class="features__guarantee-left">
+            <div class="guarantee-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              STAYX Guarantee
+            </div>
+            <h2>Wymiana mieszkania <br>bez utraty kaucji</h2>
+            <p>Jeśli Twoje plany uległy zmianie lub chcesz inne mieszkanie — pomożemy Ci wymienić lokal i przefasonować dokumenty bez utraty kaucji.</p>
+            
+            <div class="guarantee-list">
+              <div class="guarantee-item">
+                <div class="guarantee-item__check">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span>Pełne zachowanie depozytu</span>
+              </div>
+              <div class="guarantee-item">
+                <div class="guarantee-item__check">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <span>Priorytetowy wybór nowego lokum</span>
+              </div>
+            </div>
+
+            <div class="features__guarantee-actions">
+              <a href="#contactForm" class="btn btn--ghost">Dowiedz się więcej</a>
+            </div>
+          </div>
+          <div class="features__guarantee-right">
+            <div class="tg-card">
+              <div class="tg-card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+              </div>
+              <h3>Dołącz do naszego kanału na Telegramie</h3>
+              <p>Gdzie codziennie publikujemy sprawdzone oferty mieszkań, które właśnie pojawiły się na rynku.</p>
+              <a href="https://t.me/stay_x_pl" target="_blank" class="btn btn--tg">
+                Przejdź do Telegrama
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== AUDIENCE ===== -->
+  <section class="audience" id="audience">
+    <div class="container container-padding">
+      <div class="section-header">
+        <p class="section-header__label">Dla kogo</p>
+        <h2 class="section-header__title">Nasza usługa jest idealna dla osób zajętych, dla których ważne jest szybkie znalezienie wysokiej jakości i bezpiecznego lokum</h2>
+      </div>
+      <div class="audience__grid">
+        <div class="audience__card">
+          <div class="audience__icon">🌍</div>
+          <h3>Specjaliści z zagranicy</h3>
+          <p>Przyjeżdżający do Warszawy do pracy i szukający komfortowego, nowoczesnego mieszkania z gotową infrastrukturą</p>
+        </div>
+        <div class="audience__card">
+          <div class="audience__icon">💻</div>
+          <h3>Profesjonaliści i specjaliści</h3>
+          <p>W branżach IT, finansach, medycynie i innych, którzy cenią szybkość i wygodę rezerwacji online</p>
+        </div>
+        <div class="audience__card">
+          <div class="audience__icon">🏢</div>
+          <h3>Przedsiębiorcy i właściciele firm</h3>
+          <p>Szukający komfortowych opcji wynajmu dla siebie lub pracowników w kluczowych lokalizacjach biznesowych</p>
+        </div>
+        <div class="audience__card">
+          <div class="audience__icon">👨‍👩‍👧</div>
+          <h3>Młode rodziny</h3>
+          <p>Szukające nowoczesnych mieszkań w popularnych dzielnicach Warszawy z pełną infrastrukturą dla dzieci</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DISTRICTS BENTO GRID ===== -->
+  <section class="districts section-skew" id="districts">
+    <div class="container container-padding">
+      <div class="section-header">
+        <p class="section-header__label">Lokalizacje</p>
+        <h2 class="section-header__title">Najpopularniejsze dzielnice Warszawy do życia</h2>
+      </div>
+      <div class="bento-grid">
+        <div class="bento-card bento-card--large bento-card--mokotow">
+          <img class="bento-card__img" src="../images/mokotow.png" alt="Mokotów dzielnica Warszawy" loading="lazy">
+          <div class="bento-card__overlay"></div>
+          <div class="bento-card__content">
+            <h3>Mokotów</h3>
+            <p>Zielona i prestiżowa dzielnica dla rodzin i profesjonalistów.</p>
+          </div>
+          <div class="bento-card__badge">Top wybór</div>
+        </div>
+        <div class="bento-card bento-card--srodmiescie">
+          <img class="bento-card__img" src="../images/srodmiescie.png" alt="Śródmieście centrum Warszawy" loading="lazy">
+          <div class="bento-card__overlay"></div>
+          <div class="bento-card__content">
+            <h3>Śródmieście</h3>
+            <p>Centrum wydarzeń, biznesu i kultury.</p>
+          </div>
+        </div>
+        <div class="bento-card bento-card--wola">
+          <img class="bento-card__img" src="../images/wola.png" alt="Wola dzielnica Warszawy" loading="lazy">
+          <div class="bento-card__overlay"></div>
+          <div class="bento-card__content">
+            <h3>Wola</h3>
+            <p>Nowoczesne centrum biznesowe z wieżowcami.</p>
+          </div>
+        </div>
+        <div class="bento-card bento-card--wilanow">
+          <img class="bento-card__img" src="../images/wilanow.png" alt="Wilanów dzielnica Warszawy" loading="lazy">
+          <div class="bento-card__overlay"></div>
+          <div class="bento-card__content">
+            <h3>Wilanów</h3>
+            <p>Elitarna i bezpieczna dzielnica z parkiem królewskim.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="steps" id="how-it-works">
+    <div class="steps__dot-grid"></div>
+    <div class="container container-padding">
+      <div class="section-header section-header--light">
+        <p class="section-header__label">Jak to działa</p>
+        <h2 class="section-header__title">Pełny cykl wynajmu online w jednym systemie</h2>
+      </div>
+      
+      <div class="ecosystem">
+        <div class="ecosystem__center">
+          <div class="node node--main">
+            <span class="logo-text">stay<span class="x-accent">x</span></span>
+          </div>
+        </div>
+
+        <svg class="ecosystem__lines" viewBox="0 0 800 500" preserveAspectRatio="none">
+          <path class="line line-1" d="M400 250 L200 120" />
+          <path class="line line-2" d="M400 250 L600 120" />
+          <path class="line line-3" d="M400 250 L150 250" />
+          <path class="line line-4" d="M400 250 L650 250" />
+          <path class="line line-5" d="M400 250 L200 380" />
+          <path class="line line-6" d="M400 250 L600 380" />
+        </svg>
+
+        <div class="ecosystem__nodes">
+          <div class="node node--top-left">
+            <div class="node__icon">🔍</div>
+            <span>Dobór online</span>
+          </div>
+          <div class="node node--top-right">
+            <div class="node__icon">📹</div>
+            <span>Prezentacje wideo</span>
+          </div>
+          <div class="node node--mid-left">
+            <div class="node__icon">⚖️</div>
+            <span>Audyt prawny</span>
+          </div>
+          <div class="node node--mid-right">
+            <div class="node__icon">✍️</div>
+            <span>Umowa zdalna</span>
+          </div>
+          <div class="node node--bottom-left">
+            <div class="node__icon">🔑</div>
+            <span>Przekazanie kluczy</span>
+          </div>
+          <div class="node node--bottom-right">
+            <div class="node__icon">🛡️</div>
+            <span>Gwarancja STAYX</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ecosystem__mobile-list">
+         <div class="ecosystem__mobile-item">
+           <div class="node__icon">🔍</div>
+           <div>
+             <h4>Dobór online</h4>
+             <p>Znajdujemy najlepsze opcje według Twoich kryteriów przed Twoim przyjazdem.</p>
+           </div>
+         </div>
+         <div class="ecosystem__mobile-item">
+           <div class="node__icon">📹</div>
+           <div>
+             <h4>Prezentacje wideo</h4>
+             <p>Przeprowadzamy szczegółowe transmisje online z obiektów w czasie rzeczywistym.</p>
+           </div>
+         </div>
+         <div class="ecosystem__mobile-item">
+           <div class="node__icon">⚖️</div>
+           <div>
+             <h4>Audyt prawny</h4>
+             <p>Sprawdzamy właścicieli i umowy pod kątem zgodności z polskim prawem.</p>
+           </div>
+         </div>
+         <div class="ecosystem__mobile-item">
+           <div class="node__icon">✍️</div>
+           <div>
+             <h4>Umowa zdalna</h4>
+             <p>Podpisuj dokumenty online z dowolnego miejsca na świecie.</p>
+           </div>
+         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about">
+    <div class="container container-padding">
+      <div class="about__layout">
+        <div class="about__left">
+          <p class="section-header__label">O nas</p>
+          <h2>STAYX – to firma, która dąży do tego, aby szukanie mieszkania było tak proste jak kliknięcie przycisku</h2>
+        </div>
+        <div class="about__right">
+          <p>Jesteśmy agencją nieruchomości specjalizującą się w pomocy osobom z całego świata przeprowadzającym się do Warszawy, które szukają prostego, bezpiecznego i elastycznego rozwiązania wynajmu długoterminowego.</p>
+          <p>Stworzyliśmy wygodną usługę rezerwacji online, dzięki której możesz znaleźć, wybrać i wynająć mieszkanie jeszcze przed przyjazdem do Warszawy. Nasze rozwiązanie pozwala wybierać sprawdzone oferty, w pełni zdalnie dopełnić formalności i liczyć na wsparcie doświadczonych agentów na każdym etapie.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials" id="testimonials">
+    <div class="container container-padding">
+      <div class="section-header">
+        <p class="section-header__label">Opinie</p>
+        <h2 class="section-header__title">Co mówią nasi klienci</h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonials__card">
+          <div class="testimonials__stars">★★★★★</div>
+          <p class="testimonials__text">Dobry wieczór! Wszystko mi się podobało! Zarówno proces, jak i wynik. Profesjonalizm, poważne podejście i świetna komunikacja. Zdecydowanie będę Was polecać. Bardzo dziękuję! Jestem bardzo zadowolony z mieszkania i dzielnicy.</p>
+          <div class="testimonials__author">
+            <div class="testimonials__avatar">Y</div>
+            <div><strong>Yevhen</strong><span>Zadowolony klient</span></div>
+          </div>
+        </div>
+        <div class="testimonials__card">
+          <div class="testimonials__stars">★★★★★</div>
+          <p class="testimonials__text">Moja współpraca z Julią była bardzo pozytywna, szybko rozwiązała wszystkie kwestie związane z poszukiwaniem mieszkania w Warszawie. Zawsze w kontakcie, gotowa wysłuchać sugestii. Dziękuję! 👍</p>
+          <div class="testimonials__author">
+            <div class="testimonials__avatar">A</div>
+            <div><strong>Alex</strong><span>Znalazł mieszkanie w 1 dzień</span></div>
+          </div>
+        </div>
+        <div class="testimonials__card">
+          <div class="testimonials__stars">★★★★★</div>
+          <p class="testimonials__text">Jako rodzinie z psem nie było nam łatwo znaleźć odpowiednią opcję! Dziękujemy STAYX i Julii za świetny serwis. Jesteście bardzo profesjonalni. Polecamy! 👍</p>
+          <div class="testimonials__author">
+            <div class="testimonials__avatar">V</div>
+            <div><strong>Viktor</strong><span>Szczęśliwa rodzina w nowym domu</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="container container-padding">
+      <div class="section-header">
+        <p class="section-header__label">Usługi</p>
+        <h2 class="section-header__title">Wynajem online dla komfortowej przeprowadzki</h2>
+      </div>
+
+      <div class="services__hero">
+        <img src="../images/services-hero.jpg" alt="Nowoczesne mieszkanie w Warszawie" loading="lazy">
+        <div class="services__hero-overlay">
+          <h2>My przejmujemy cały trud <br>związany z poszukiwaniem i wynajmem</h2>
+          <a href="#contactForm" class="btn btn--primary btn--lg">Zacznij szukać</a>
+        </div>
+      </div>
+
+      <div class="services__grid">
+        <div class="services__item"><div class="services__item-icon">🔍</div><h3>Wyszukiwanie wśród wszystkich ofert</h3><p>Sprawdzamy każdą dostępną opcję na rynku, abyś miał maksymalny wybór.</p></div>
+        <div class="services__item"><div class="services__item-icon">📹</div><h3>Prezentacje online</h3><p>Organizujemy szczegółowe wideo-oprowadzanie, gdzie zobaczysz każdy detal.</p></div>
+        <div class="services__item"><div class="services__item-icon">📝</div><h3>Zdalne podpisanie umowy</h3><p>Oferujemy możliwość podpisania umowy online przez bezpieczne platformy.</p></div>
+        <div class="services__item"><div class="services__item-icon">🎯</div><h3>Personalizowany dobór</h3><p>Szybko dopasujemy mieszkanie do Twojego budżetu i stylu życia.</p></div>
+        <div class="services__item"><div class="services__item-icon">🛡️</div><h3>Ochrona prawna</h3><p>Nasz zespół weryfikuje status prawny nieruchomości i przygotowuje umowę.</p></div>
+        <div class="services__item"><div class="services__item-icon">🌐</div><h3>Wsparcie na każdym etapie</h3><p>Zapewniamy wsparcie językowe, abyś rozumiał każdy krok procesu.</p></div>
+        <div class="services__item"><div class="services__item-icon">📋</div><h3>Pomoc administracyjna</h3><p>Pomagamy w uzyskaniu adresu do zameldowania przy umowie najmu okazjonalnego.</p></div>
+        <div class="services__item"><div class="services__item-icon">💳</div><h3>Wygodne płatności online</h3><p>Bezpieczny system płatności za depozyt lub usługi agencji.</p></div>
+      </div>
+      <div class="services__cta">
+        <a href="#contacts" class="btn btn--primary btn--lg">Otrzymaj oferty mieszkań →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG PREVIEW ===== -->
+  <section class="blog-preview" id="blog">
+    <div class="container container-padding">
+      <div class="section-header">
+        <p class="section-header__label">Blog</p>
+        <h2 class="section-header__title">Przydatne artykuły o nieruchomościach</h2>
+      </div>
+      
+      <div class="blog-grid">
+        <a href="rent-in-warsaw-guide-2026.html" class="blog-card">
+          <div class="blog-card__image">
+            <img src="../images/blog-1.jpg" alt="Wynajem mieszkania w Warszawie 2026" loading="lazy">
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category">Encyklopedia</span>
+              <span class="blog-card__date">10 Maja, 2026</span>
+            </div>
+            <h3>Wynajem mieszkania w Warszawie 2026: Wielka Encyklopedia</h3>
+            <p>Wszystko o tym, jak zbudować komfortowe życie w polskiej stolicy bez ryzyka i przepłacania.</p>
+            <div class="blog-card__footer">Czytaj encyklopedię →</div>
+          </div>
+        </a>
+
+        <a href="../blog/warsaw-districts-guide.html" class="blog-card">
+          <div class="blog-card__image">
+            <img src="../images/blog-2.jpg" alt="Dzielnice Warszawy" loading="lazy">
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category">Przegląd</span>
+              <span class="blog-card__date">07 Maja, 2026</span>
+            </div>
+            <h3>Najlepsze dzielnice Warszawy do życia: co wybrać?</h3>
+            <p>Przeanalizowaliśmy każdą dzielnicę pod kątem bezpieczeństwa, infrastruktury i cen.</p>
+            <div class="blog-card__footer">Czytaj więcej →</div>
+          </div>
+        </a>
+
+        <a href="../blog/rental-contracts-legal.html" class="blog-card">
+          <div class="blog-card__image">
+            <img src="../images/blog-3.jpg" alt="Umowa najmu" loading="lazy">
+          </div>
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category">Prawo</span>
+              <span class="blog-card__date">05 Maja, 2026</span>
+            </div>
+            <h3>Prawne aspekty umowy najmu w Polsce</h3>
+            <p>Najem okazjonalny czy standardowy? Wyjaśniamy różnice i rodzaje umów.</p>
+            <div class="blog-card__footer">Czytaj więcej →</div>
+          </div>
+        </a>
+      </div>
+
+      <div style="text-align: center; margin-top: 56px;">
+        <a href="../blog/index.html" class="btn btn--ghost btn--lg">Wszystkie artykuły</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTS ===== -->
+  <section class="contacts" id="contacts">
+    <div class="container">
+      <div class="contacts__wrapper">
+        <div class="contacts__left">
+          <div class="contacts__bg">
+            <div class="contacts__dot-grid"></div>
+            <div class="orb orb-1"></div>
+            <div class="orb orb-2"></div>
+            <div class="orb orb-3"></div>
+          </div>
+          <p class="section-header__label section-header__label--light">Kontakt</p>
+          <h2>Skontaktuj się z nami</h2>
+          <p class="contacts__desc">Wybierz dogodną formę kontaktu</p>
+          <a href="tel:+48793248212" class="contacts__phone">+48 793 248 212</a>
+          <a href="mailto:info@stayx.pl" class="contacts__email">info@stayx.pl</a>
+          <p class="contacts__nip">NIP: 7011182095</p>
+        </div>
+        <div class="contacts__right">
+          <form class="contacts__form" id="contactForm">
+            <div class="form-grid">
+              <div class="form-group">
+                <label>Twoje imię</label>
+                <input type="text" placeholder="Wpisz imię" required>
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="example@mail.com" required>
+              </div>
+              <div class="form-group">
+                <label>Telefon</label>
+                <input type="tel" id="phone" required>
+              </div>
+              <div class="form-group">
+                <label>Twój budżet (PLN)</label>
+                <div class="budget-group">
+                  <button type="button" class="budget-btn minus" onclick="stepBudget(-100)">-</button>
+                  <input type="number" id="budget" step="100" min="500" value="3000" required>
+                  <button type="button" class="budget-btn plus" onclick="stepBudget(100)">+</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Liczba pokoi</label>
+                <select required>
+                  <option value="" disabled selected>Wybierz opcję</option>
+                  <option value="1">1 (Studio)</option>
+                  <option value="2">2 pokoje</option>
+                  <option value="3">3 pokoje</option>
+                  <option value="4+">4+ pokoje</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Wybrana dzielnica</label>
+                <select required>
+                  <option value="" disabled selected>Wybierz dzielnicę</option>
+                  <option value="all">Wszystkie</option>
+                  <option value="Mokotów">Mokotów</option>
+                  <option value="Śródmieście">Śródmieście</option>
+                  <option value="Wola">Wola</option>
+                  <option value="Wilanów">Wilanów</option>
+                  <option value="Żoliborz">Żoliborz</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Data wprowadzenia</label>
+                <input type="date" required>
+              </div>
+            </div>
+            <div class="form-group" style="margin-top: 10px;">
+              <label>Komentarze</label>
+              <textarea placeholder="Twoje oczekiwania..." rows="4"></textarea>
+            </div>
+            <label class="contacts__checkbox">
+              <input type="checkbox" required>
+              <span>Zgadzam się na przetwarzanie danych osobowych zgodnie z <a href="privacy.html">Polityką prywatności</a>.</span>
+            </label>
+            <button type="submit" class="btn btn--primary btn--full" style="margin-top: 10px;">Otrzymaj oferty →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="index.html" class="footer__logo"><span class="logo-text">stay<span class="x-accent">x</span></span></a>
+      <div class="footer__links">
+        <a href="#services">Usługi</a>
+        <a href="how-it-works.html">Jak to działa</a>
+        <a href="rent-in-warsaw-guide-2026.html">Przewodnik 2026</a>
+        <a href="#about">O nas</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contacts">Kontakt</a>
+      </div>
+      <div class="footer__bottom">
+        <p>2026© STAYX. All rights reserved</p>
+        <a href="privacy.html">Polityka prywatności</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/intlTelInput.min.js"></script>
+  <script>
+    const input = document.querySelector("#phone");
+    window.intlTelInput(input, {
+      initialCountry: "pl",
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/utils.js",
+    });
+    function stepBudget(amount) {
+      const budgetInput = document.getElementById('budget');
+      budgetInput.value = Math.max(500, (parseInt(budgetInput.value) || 0) + amount);
+    }
+  </script>
+</body>
+</html>

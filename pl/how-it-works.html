@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Як це працює | STAYX — Покроковий процес онлайн оренди у Варшаві</title>
-  <meta name="description" content="Дізнайтеся, як орендувати квартиру у Варшаві за 8 простих кроків. Від онлайн-заявки до отримання ключів — повний гайд від STAYX.">
-  <link rel="canonical" href="https://stayx-eight.vercel.app/how-it-works.html">
+  <title>Jak to działa | STAYX — Proces wynajmu online w Warszawie krok po kroku</title>
+  <meta name="description" content="Dowiedz się, jak wynająć mieszkanie w Warszawie w 8 prostych krokach. Od zgłoszenia online po odbiór kluczy — kompletny przewodnik od STAYX.">
+  <link rel="canonical" href="https://stayx-eight.vercel.app/pl/how-it-works.html">
   <link rel="alternate" hreflang="uk" href="https://stayx-eight.vercel.app/how-it-works.html">
+  <link rel="alternate" hreflang="pl" href="https://stayx-eight.vercel.app/pl/how-it-works.html">
   
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -25,7 +26,6 @@
 
     body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--bg); color: var(--text-sub); margin: 0; overflow-x: hidden; }
     
-    /* Header transparency for dark hero */
     .header:not(.header--scrolled) .nav__link, 
     .header:not(.header--scrolled) .logo-text,
     .header:not(.header--scrolled) .nav__lang a,
@@ -83,7 +83,6 @@
       position: relative; 
       z-index: 2; 
     }
-
 
     .step-card {
       background: #fff;
@@ -157,49 +156,37 @@
       .step-num { top: 24px; right: 24px; font-size: 2rem; }
     }
 
-
     .orb { position: absolute; border-radius: 50%; filter: blur(100px); z-index: 1; pointer-events: none; opacity: 0.4; }
     .orb-purple { width: 600px; height: 600px; background: rgba(99, 91, 255, 0.15); top: 10%; right: -10%; }
     .orb-cyan { width: 500px; height: 500px; background: rgba(0, 212, 255, 0.1); bottom: 10%; left: -5%; }
 
     .final-cta { padding: 120px 0; text-align: center; background: #fff; border-top: 1px solid rgba(0,0,0,0.05); }
     .final-cta h2 { font-size: 2.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 40px; letter-spacing: -0.04em; }
-
-
   </style>
 </head>
 <body>
 
-  <!-- ===== HEADER (Identical to index.html) ===== -->
   <header class="header" id="header">
     <nav class="nav container container-padding">
       <a href="index.html" class="nav__logo">
         <span class="logo-text">stay<span class="x-accent">x</span></span>
       </a>
       <div class="nav__left">
-        <a href="index.html#services" class="nav__link">Послуги</a>
-        <a href="how-it-works.html" class="nav__link">Як це працює</a>
-        <a href="index.html#blog" class="nav__link">Блог</a>
-        <a href="index.html#about" class="nav__link">Про нас</a>
+        <a href="index.html#services" class="nav__link">Usługi</a>
+        <a href="how-it-works.html" class="nav__link">Jak to działa</a>
+        <a href="index.html#blog" class="nav__link">Blog</a>
+        <a href="index.html#about" class="nav__link">O nas</a>
         <a href="index.html#faq" class="nav__link">FAQ</a>
       </div>
       <div class="nav__right">
         <div class="nav__lang">
-          <a href="#" class="active">Ua</a>
+          <a href="../how-it-works.html">Ua</a>
           <a href="#">EN</a>
-          <a href="pl/how-it-works.html">PL</a>
+          <a href="how-it-works.html" class="active">PL</a>
         </div>
-        <a href="https://t.me/stayX_pl" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Зв'язатись →</a>
-        <div class="nav__social">
-          <a href="https://www.instagram.com/stayx_pl" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="https://www.tiktok.com/@stayx_realestate" target="_blank" rel="noopener" aria-label="TikTok">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.53 1.53-.3 2.7-1.67 2.82-3.18.05-3.68-.01-7.36.03-11.03.01-.11 0-.22.01-.33z"/></svg>
-          </a>
-        </div>
+        <a href="https://t.me/stayX_pl" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Kontakt →</a>
       </div>
-      <button class="nav__burger" id="burger" aria-label="Меню">
+      <button class="nav__burger" id="burger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </nav>
@@ -217,11 +204,10 @@
         <div class="meteor meteor-3"></div>
       </div>
       <div class="container">
-        <h1>Ваш ідеальний дім <br>за 8 простих кроків</h1>
-        <p>Ми перетворили складний процес оренди житла у Варшаві на прозору та безпечну онлайн-подорож.</p>
+        <h1>Twój idealny dom <br>w 8 prostych krokach</h1>
+        <p>Zmieniliśmy skomplikowany proces wynajmu mieszkań w Warszawie w przejrzystą i bezpieczną podróż online.</p>
       </div>
     </section>
-
 
     <section class="process-visual">
       <div class="orb orb-purple"></div>
@@ -232,65 +218,65 @@
           <div class="step-card">
             <div class="step-icon-box">✉️</div>
             <div class="step-info">
-              <span class="step-num">Крок 01</span>
-              <h2>Заявка</h2>
-              <p>Ви залишаєте заявку на послугу "Онлайн оренда" через форму на сайті або в Telegram. Наш менеджер зв'яжеться з вами протягом 15 хвилин для первинної консультації.</p>
+              <span class="step-num">Krok 01</span>
+              <h2>Zgłoszenie</h2>
+              <p>Zostawiasz zgłoszenie na usługę "Wynajem online" przez formularz na stronie lub w Telegramie. Nasz menedżer skontaktuje się z Tobą w ciągu 15 minut.</p>
             </div>
           </div>
           <div class="step-card">
             <div class="step-icon-box">📋</div>
             <div class="step-info">
-              <span class="step-num">Крок 02</span>
-              <h2>Анкета</h2>
-              <p>Ви даєте короткі відповіді на основні питання (бюджет, район, кількість кімнат). Це необхідно для того, щоб ми найточніше сформували ваш запит.</p>
+              <span class="step-num">Krok 02</span>
+              <h2>Ankieta</h2>
+              <p>Odpowiadasz na kilka podstawowych pytań (budżet, dzielnica, liczba pokoi). Pozwala nam to precyzyjnie dopasować oferty do Twoich potrzeb.</p>
             </div>
           </div>
           <div class="step-card">
             <div class="step-icon-box">🔍</div>
             <div class="step-info">
-              <span class="step-num">Крок 03</span>
-              <h2>Пошук квартири</h2>
-              <p>Ми починаємо пошук найбільш підходящих варіантів квартири для вас, використовуючи наші внутрішні бази та партнерські мережі.</p>
+              <span class="step-num">Krok 03</span>
+              <h2>Wyszukiwanie</h2>
+              <p>Rozpoczynamy poszukiwania najlepszych ofert, korzystając z naszych wewnętrznych baz danych oraz szerokiej sieci kontaktów partnerskich.</p>
             </div>
           </div>
           <div class="step-card">
             <div class="step-icon-box">📹</div>
             <div class="step-info">
-              <span class="step-num">Крок 04</span>
-              <h2>Онлайн перегляд</h2>
-              <p>Ми домовляємось з власником і виїжджаємо за адресою. В онлайн-режимі показуємо вам все: від стану сантехніки до паркінгу.</p>
+              <span class="step-num">Krok 04</span>
+              <h2>Prezentacja online</h2>
+              <p>Umawiamy się z właścicielem i przeprowadzamy transmisję na żywo. Pokazujemy wszystko: od stanu instalacji po widok z okna i parking.</p>
             </div>
           </div>
           <div class="step-card">
             <div class="step-icon-box">⚖️</div>
             <div class="step-info">
-              <span class="step-num">Крок 05</span>
-              <h2>Підготовка договору</h2>
-              <p>Агент STAYX ретельно перевіряє договір оренди на наявність "підводних каменів", захищаючи ваші інтереси.</p>
+              <span class="step-num">Krok 05</span>
+              <h2>Audyt prawny</h2>
+              <p>Agent STAYX dokładnie weryfikuje umowę najmu, dbając o Twoje bezpieczeństwo i eliminując niekorzystne zapisy.</p>
             </div>
           </div>
           <div class="step-card">
             <div class="step-icon-box">✍️</div>
             <div class="step-info">
-              <span class="step-num">Крок 06</span>
-              <h2>Підписання договору (DocuSign)</h2>
-              <p>Підписати договір можна швидко та безпечно за допомогою сервісу DocuSign. Це сучасний спосіб зафіксувати домовленості онлайн.</p>
+              <span class="step-num">Krok 06</span>
+              <h2>Umowa zdalna</h2>
+              <p>Podpisanie umowy odbywa się szybko i bezpiecznie za pomocą DocuSign. Możesz to zrobić z dowolnego miejsca na świecie.</p>
             </div>
           </div>
           <div class="step-card">
             <div class="step-icon-box">💳</div>
             <div class="step-info">
-              <span class="step-num">Крок 07</span>
-              <h2>Оплата резервації</h2>
-              <p>Після підписання договору ви сплачуєте резерваційний внесок у розмірі 20%. Це гарантує, що власник закріпить квартиру за вами.</p>
+              <span class="step-num">Krok 07</span>
+              <h2>Opłata rezerwacyjna</h2>
+              <p>Po podpisaniu umowy wpłacasz opłatę rezerwacyjną (20%). To gwarantuje, że oferta zostanie wycofana z rynku specjalnie dla Ciebie.</p>
             </div>
           </div>
           <div class="step-card">
             <div class="step-icon-box">🔑</div>
             <div class="step-info">
-              <span class="step-num">Крок 08</span>
-              <h2>Передача ключів та заселення</h2>
-              <p>У день заселення наш агент зустрічає вас разом із власником. Ви підписуєте акт прийому-передачі, перевіряєте стан квартири та отримуєте ключі.</p>
+              <span class="step-num">Krok 08</span>
+              <h2>Odbiór kluczy</h2>
+              <p>W dniu zamieszkania nasz agent spotyka się z Tobą na miejscu. Podpisujecie protokół zdawczo-odbiorczy i otrzymujesz klucze do nowego domu.</p>
             </div>
           </div>
         </div>
@@ -299,33 +285,30 @@
 
     <section class="final-cta">
       <div class="container">
-        <h2>Почніть свій переїзд сьогодні</h2>
-        <a href="index.html#contactForm" class="btn btn--primary btn--lg">Забронювати квартиру</a>
+        <h2>Zacznij swoją przeprowadzkę już dziś</h2>
+        <a href="index.html#contactForm" class="btn btn--primary btn--lg">Zarezerwuj mieszkanie</a>
       </div>
     </section>
-
   </main>
 
-  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container footer__inner">
       <a href="index.html" class="footer__logo"><span class="logo-text">stay<span class="x-accent">x</span></span></a>
       <div class="footer__links">
-        <a href="index.html#services">Послуги</a>
-        <a href="how-it-works.html">Як це працює</a>
-        <a href="rent-in-warsaw-guide-2026.html">Гід по Варшаві 2026</a>
-        <a href="index.html#about">Про нас</a>
+        <a href="index.html#services">Usługi</a>
+        <a href="how-it-works.html">Jak to działa</a>
+        <a href="rent-in-warsaw-guide-2026.html">Przewodnik 2026</a>
+        <a href="index.html#about">O nas</a>
         <a href="index.html#faq">FAQ</a>
-        <a href="index.html#contacts">Контакти</a>
+        <a href="index.html#contacts">Kontakt</a>
       </div>
       <div class="footer__bottom">
         <p>2026© STAYX. All rights reserved</p>
-        <a href="privacy.html">Політика конфіденційності</a>
+        <a href="privacy.html">Polityka prywatności</a>
       </div>
     </div>
   </footer>
 
-
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>
