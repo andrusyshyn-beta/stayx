@@ -140,10 +140,18 @@
     }
 
     @media (max-width: 768px) {
-      .hero-section h1 { font-size: 2.5rem; }
-      .step-card { padding: 32px; }
-      .step-num { top: 32px; right: 32px; }
+      .hero-section { padding: 140px 0 80px; min-height: auto; }
+      .hero-section h1 { 
+        font-size: 2.2rem; 
+        line-height: 1.2; 
+        padding: 0 20px;
+        margin-bottom: 16px;
+      }
+      .hero-section p { font-size: 1.1rem; padding: 0 20px; }
+      .step-card { padding: 32px; flex-direction: column; gap: 24px; }
+      .step-num { top: 24px; right: 24px; font-size: 2rem; }
     }
+
 
     .orb { position: absolute; border-radius: 50%; filter: blur(100px); z-index: 1; pointer-events: none; opacity: 0.4; }
     .orb-purple { width: 600px; height: 600px; background: rgba(99, 91, 255, 0.15); top: 10%; right: -10%; }
@@ -152,10 +160,7 @@
     .final-cta { padding: 120px 0; text-align: center; background: #fff; border-top: 1px solid rgba(0,0,0,0.05); }
     .final-cta h2 { font-size: 2.5rem; font-weight: 800; color: var(--text-main); margin-bottom: 40px; letter-spacing: -0.04em; }
 
-    @media (max-width: 768px) {
-      .hero-section h1 { font-size: 2.5rem; }
-      .step-card { flex-direction: column; padding: 32px; gap: 24px; }
-    }
+
   </style>
 </head>
 <body>
@@ -290,9 +295,10 @@
     <section class="final-cta">
       <div class="container">
         <h2>Почніть свій переїзд сьогодні</h2>
-        <a href="index.html#contacts" class="btn btn--primary btn--lg">Забронювати квартиру</a>
+        <a href="index.html#contactForm" class="btn btn--primary btn--lg">Забронювати квартиру</a>
       </div>
     </section>
+
   </main>
 
   <!-- ===== FOOTER ===== -->
