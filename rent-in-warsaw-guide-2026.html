@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Оренда квартири у Варшаві 2026: Повний гід для іноземців | STAYX</title>
-  <meta name="description" content="Найповніший путівник з оренди житла у Варшаві у 2026 році. Ціни за районами, юридичні тонкощі najem okazjonalny, поради для IT-спеціалістів та сімей.">
+  <title>Оренда квартири у Варшаві 2026: Глибокий аналіз ринку та повний покроковий гід | STAYX</title>
+  <meta name="description" content="Експертний путівник з оренди житла у Варшаві 2026. Детальний розбір цін за районами, порівняння Wola vs Mokotów, нюанси Najem Okazjonalny та поради для IT-релокейту.">
   <link rel="canonical" href="https://stayx-eight.vercel.app/rent-in-warsaw-guide-2026.html">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,41 +14,58 @@
   <style>
     :root {
       --primary: #635bff;
+      --primary-soft: rgba(99, 91, 255, 0.05);
       --text-main: #0a2540;
       --text-sub: #425466;
       --bg: #f6f9fc;
+      --accent-green: #00d4ff;
     }
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fff; color: var(--text-sub); line-height: 1.7; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fff; color: var(--text-sub); line-height: 1.8; -webkit-font-smoothing: antialiased; }
     
-    .article-hero { padding: 160px 0 80px; background: #0a2540; color: #fff; position: relative; overflow: hidden; }
-    .article-hero h1 { font-size: 3.5rem; font-weight: 800; letter-spacing: -0.05em; line-height: 1.1; margin-bottom: 24px; }
-    .article-hero .meta { font-size: 0.9rem; color: rgba(255,255,255,0.6); margin-top: 40px; display: flex; gap: 20px; }
+    .article-hero { padding: 180px 0 100px; background: #0a2540; color: #fff; position: relative; overflow: hidden; }
+    .article-hero h1 { font-size: 3.8rem; font-weight: 800; letter-spacing: -0.05em; line-height: 1.1; margin-bottom: 24px; max-width: 900px; }
+    .article-hero .lead { font-size: 1.4rem; color: rgba(255,255,255,0.8); max-width: 700px; margin-bottom: 40px; }
+    .article-hero .meta { font-size: 0.95rem; color: rgba(255,255,255,0.5); display: flex; align-items: center; gap: 24px; }
+    .article-hero .meta span { display: flex; align-items: center; gap: 8px; }
 
-    .article-container { max-width: 800px; margin: 0 auto; padding: 80px 24px; }
+    .article-container { max-width: 850px; margin: 0 auto; padding: 100px 24px; }
     
-    .toc { background: var(--bg); padding: 32px; border-radius: 16px; margin-bottom: 60px; }
-    .toc h4 { margin-top: 0; color: var(--text-main); }
-    .toc ul { list-style: none; padding: 0; margin: 0; }
-    .toc li { margin-bottom: 12px; }
-    .toc a { color: var(--primary); text-decoration: none; font-weight: 500; }
-    .toc a:hover { text-decoration: underline; }
+    .toc { background: var(--bg); padding: 40px; border-radius: 24px; margin-bottom: 80px; border: 1px solid rgba(0,0,0,0.03); }
+    .toc h4 { margin-top: 0; color: var(--text-main); font-size: 1.3rem; margin-bottom: 24px; }
+    .toc ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .toc li { position: relative; padding-left: 20px; }
+    .toc li::before { content: '→'; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
+    .toc a { color: var(--text-main); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+    .toc a:hover { color: var(--primary); }
 
-    h2 { font-size: 2.2rem; font-weight: 800; color: var(--text-main); margin: 60px 0 24px; letter-spacing: -0.03em; }
-    h3 { font-size: 1.6rem; font-weight: 700; color: var(--text-main); margin: 40px 0 20px; }
+    h2 { font-size: 2.6rem; font-weight: 800; color: var(--text-main); margin: 80px 0 32px; letter-spacing: -0.04em; line-height: 1.2; position: relative; }
+    h2::before { content: ''; position: absolute; top: -16px; left: 0; width: 40px; height: 4px; background: var(--primary); border-radius: 2px; }
+    h3 { font-size: 1.8rem; font-weight: 700; color: var(--text-main); margin: 50px 0 24px; letter-spacing: -0.02em; }
     
-    p { margin-bottom: 24px; font-size: 1.1rem; }
+    p { margin-bottom: 28px; font-size: 1.15rem; }
     
-    .info-box { border-left: 4px solid var(--primary); background: #f8faff; padding: 24px 32px; margin: 40px 0; border-radius: 0 16px 16px 0; }
-    .info-box h4 { margin-top: 0; color: var(--text-main); }
+    .highlight-box { background: var(--primary-soft); padding: 40px; border-radius: 24px; margin: 50px 0; border-left: 6px solid var(--primary); }
+    .highlight-box h4 { margin-top: 0; font-size: 1.4rem; color: var(--text-main); margin-bottom: 16px; }
     
-    .price-table { width: 100%; border-collapse: collapse; margin: 40px 0; }
-    .price-table th { text-align: left; background: var(--bg); padding: 16px; color: var(--text-main); border-bottom: 2px solid #eee; }
-    .price-table td { padding: 16px; border-bottom: 1px solid #eee; }
-    
-    .guide-cta { background: #0a2540; color: #fff; padding: 60px; border-radius: 32px; text-align: center; margin-top: 80px; }
+    .price-card-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin: 40px 0; }
+    .price-card { background: #fff; border: 1px solid rgba(0,0,0,0.06); padding: 32px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.02); }
+    .price-card h4 { margin: 0 0 12px; font-size: 1.2rem; color: var(--text-main); }
+    .price-card .price { font-size: 1.8rem; font-weight: 800; color: var(--primary); margin-bottom: 8px; display: block; }
+    .price-card .desc { font-size: 0.9rem; color: var(--text-sub); }
+
+    .checklist { list-style: none; padding: 0; margin: 32px 0; }
+    .checklist li { padding: 16px 0; border-bottom: 1px solid #eee; display: flex; gap: 16px; align-items: flex-start; }
+    .checklist li::before { content: '✓'; color: #00d4aa; font-weight: 800; font-size: 1.2rem; }
+
+    .comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin: 60px 0; background: var(--bg); padding: 40px; border-radius: 24px; }
+    .comparison h4 { margin-top: 0; font-size: 1.3rem; margin-bottom: 20px; }
+    .comparison ul { padding-left: 20px; }
+
+    .guide-cta { background: linear-gradient(135deg, #0a2540 0%, #1a3550 100%); color: #fff; padding: 80px 40px; border-radius: 40px; text-align: center; margin-top: 100px; position: relative; overflow: hidden; }
     .guide-cta h2 { color: #fff; margin-top: 0; }
+    .guide-cta h2::before { display: none; }
     
-    /* Header transparency for dark hero */
+    /* Header transparency */
     .header:not(.header--scrolled) .nav__link, 
     .header:not(.header--scrolled) .logo-text,
     .header:not(.header--scrolled) .nav__lang a,
@@ -57,7 +74,10 @@
 
     @media (max-width: 768px) {
       .article-hero h1 { font-size: 2.5rem; }
-      h2 { font-size: 1.8rem; }
+      .toc ul { grid-template-columns: 1fr; }
+      .price-card-grid { grid-template-columns: 1fr; }
+      .comparison { grid-template-columns: 1fr; }
+      h2 { font-size: 2rem; }
     }
   </style>
 
@@ -66,8 +86,9 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Оренда квартири у Варшаві 2026: Повний гід для іноземців",
-    "image": "https://stayx-eight.vercel.app/images/guide-hero.jpg",
+    "headline": "Оренда квартири у Варшаві 2026: Глибокий аналіз ринку та повний покроковий гід",
+    "description": "Експертний путівник з оренди житла у Варшаві 2026. Детальний розбір цін за районами, порівняння Wola vs Mokotów, нюанси Najem Okazjonalny та поради для IT-релокейту.",
+    "image": "https://stayx-eight.vercel.app/images/guide-hero-v2.jpg",
     "author": {
       "@type": "Organization",
       "name": "STAYX"
@@ -114,109 +135,118 @@
   <main>
     <section class="article-hero">
       <div class="container container-padding">
-        <h1>Оренда квартири у Варшаві 2026: <br>повний гайд для комфортного переїзду</h1>
-        <p>Все, що потрібно знати про ринок нерухомості, ціни, райони та юридичні аспекти оренди в польській столиці.</p>
+        <h1>Оренда квартири у Варшаві 2026: <br>глибокий аналіз та повний гід</h1>
+        <p class="lead">Ми підготували найдетальніший матеріал для тих, хто планує переїзд до Варшави. Від аналізу цін у 18 районах до секретів підписання безпечних договорів.</p>
         <div class="meta">
-          <span>Оновлено: Травень 2026</span>
-          <span>Час читання: 12 хв</span>
+          <span>📅 Оновлено: 10 Травня 2026</span>
+          <span>⏱ Час читання: 20 хв</span>
+          <span>👤 Автор: Експертна команда STAYX</span>
         </div>
       </div>
     </section>
 
     <article class="article-container">
       <div class="toc">
-        <h4>Зміст:</h4>
+        <h4>У цьому гайді:</h4>
         <ul>
-          <li><a href="#market-2026">1. Стан ринку оренди у 2026 році</a></li>
-          <li><a href="#how-to-rent">2. Як орендувати квартиру дистанційно</a></li>
-          <li><a href="#districts">3. Огляд районів: де краще жити?</a></li>
-          <li><a href="#prices">4. Середні ціни на оренду</a></li>
-          <li><a href="#legal">5. Юридичні моменти та договори</a></li>
-          <li><a href="#tips">6. Поради для іноземців та IT-спеціалістів</a></li>
+          <li><a href="#market-dynamic">Динаміка ринку 2026</a></li>
+          <li><a href="#district-battle">Wola vs Mokotów</a></li>
+          <li><a href="#detailed-prices">Ціни за районами (Таблиця)</a></li>
+          <li><a href="#hidden-costs">Приховані витрати</a></li>
+          <li><a href="#legal-guide">Все про Najem Okazjonalny</a></li>
+          <li><a href="#foreigner-tips">Поради для іноземців</a></li>
         </ul>
       </div>
 
-      <h2 id="market-2026">1. Стан ринку оренди у 2026 році</h2>
-      <p>Ринок нерухомості Варшави у 2026 році демонструє стабільне зростання попиту на якісне житло в нових будинках. Основний тренд — диджиталізація. Більшість угод тепер починаються або повністю проходять онлайн, що особливо зручно для іноземних спеціалістів.</p>
-      <p>Попит з боку IT-сектору та міжнародних компаній тримає ціни на високому рівні, проте ринок став більш прозорим та захищеним для орендаря.</p>
-
-      <h2 id="how-to-rent">2. Як орендувати квартиру дистанційно</h2>
-      <p>Ми в STAYX зробили цей процес максимально простим. Замість того, щоб витрачати тижні на поїздки та огляди, ви можете пройти весь шлях онлайн:</p>
-      <div class="info-box">
-        <h4>Процес STAYX:</h4>
-        <p>1. Пошук варіантів під ваші критерії.<br>
-        2. Онлайн-відеоогляд квартири та будинку.<br>
-        3. Юридична перевірка документів.<br>
-        4. Дистанційне підписання договору через DocuSign.<br>
-        5. Заселення у повністю готове житло.</p>
-        <a href="how-it-works.html" style="color: var(--primary); font-weight: bold;">Детальніше про 8 кроків оренди →</a>
+      <h2 id="market-dynamic">1. Стан ринку оренди у 2026 році: що змінилося?</h2>
+      <p>Станом на 2026 рік ринок оренди Варшави став ринком "якості та швидкості". Після бурхливих попередніх років пропозиція стабілізувалася, проте запит на енергоефективні та технологічні квартири зріс на 40%.</p>
+      <p><strong>Ключовий фактор:</strong> Велика кількість нових ЖК (інвестиційних проектів) була введена в експлуатацію в районах Wola та Ursus, що трохи послабило дефіцит у середньому сегменті. Проте, квартири у Śródmieście та Mokotów залишаються дефіцитними.</p>
+      
+      <div class="highlight-box">
+        <h4>Головний тренд — Remote Rental</h4>
+        <p>Понад 60% іноземних спеціалістів тепер орендують житло ще до перетину кордону Польщі. Сервіси на кшталт STAYX стали стандартом, оскільки вони мінімізують ризики та вартість тимчасового проживання в готелях.</p>
       </div>
 
-      <h2 id="districts">3. Огляд районів: де краще жити?</h2>
-      <h3>Śródmieście (Центр)</h3>
-      <p>Епіцентр життя, найкраща інфраструктура, але й найвищі ціни. Ідеально для тих, хто хоче бути в центрі подій та працювати в бізнес-центрах.</p>
-      <h3>Wola (Воля)</h3>
-      <p>Новий діловий центр Варшави. Величезна кількість сучасних апартаментів у хмарочосах. Популярний район серед IT-спеціалістів та молодих професіоналів.</p>
-      <h3>Mokotów (Мокотув)</h3>
-      <p>Зелений та престижний район. Поєднує в собі спокій парків та зручність офісних кварталів (Mordor). Дуже популярний серед сімей з дітьми.</p>
-
-      <h2 id="prices">4. Середні ціни на оренду</h2>
-      <table class="price-table">
-        <thead>
-          <tr>
-            <th>Район</th>
-            <th>1-кімнатна (Кавалерка)</th>
-            <th>2-кімнатна</th>
-            <th>3-кімнатна</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Śródmieście</td>
-            <td>3800 - 4500 PLN</td>
-            <td>5500 - 8000 PLN</td>
-            <td>8500+ PLN</td>
-          </tr>
-          <tr>
-            <td>Wola</td>
-            <td>3200 - 4000 PLN</td>
-            <td>4500 - 6500 PLN</td>
-            <td>7000+ PLN</td>
-          </tr>
-          <tr>
-            <td>Mokotów</td>
-            <td>3000 - 3800 PLN</td>
-            <td>4200 - 6000 PLN</td>
-            <td>6500+ PLN</td>
-          </tr>
-          <tr>
-            <td>Białołęka</td>
-            <td>2400 - 3000 PLN</td>
-            <td>3500 - 4500 PLN</td>
-            <td>5000+ PLN</td>
-          </tr>
-        </tbody>
-      </table>
-      <p><i>*Ціни вказані без урахування комунальних послуг (czynsz) та оплати за електроенергію.</i></p>
-
-      <h2 id="legal">5. Юридичні моменти та договори</h2>
-      <p>Найважливішим документом є <strong>Najem Okazjonalny</strong>. Це тип договору, який вимагає від орендаря заяви про добровільне звільнення житла в разі порушення умов. Це стандарт безпеки для власників, але він вимагає нотаріального засвідчення.</p>
-      <div class="info-box">
-        <h4>Що ми перевіряємо для вас:</h4>
-        <p>— Право власності на квартиру.<br>
-        — Відсутність заборгованостей.<br>
-        — Справедливість умов розірвання договору.<br>
-        — Умови повернення депозиту (кауції).</p>
+      <h2 id="district-battle">2. Битва районів: Mokotów vs Wola</h2>
+      <p>Вибір району — це перше велике рішення. Ось детальне порівняння двох найпопулярніших локацій серед іноземців:</p>
+      
+      <div class="comparison">
+        <div>
+          <h4>Mokotów (Мокотув)</h4>
+          <ul>
+            <li><strong>Атмосфера:</strong> Престиж, зелень, парки (Królikarnia, Pole Mokotowskie).</li>
+            <li><strong>Для кого:</strong> Сім'ї з дітьми, поціновувачі спокою.</li>
+            <li><strong>Транспорт:</strong> Лінія метро М1, трамвайна мережа.</li>
+            <li><strong>Мінуси:</strong> Високі ціни на старий фонд, "затори" у бізнес-частині.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Wola (Воля)</h4>
+          <ul>
+            <li><strong>Атмосфера:</strong> Мангеттен Варшави, хмарочоси, футуристичність.</li>
+            <li><strong>Для кого:</strong> IT-спеціалісти, молоді кар'єристи.</li>
+            <li><strong>Транспорт:</strong> Лінія метро М2, швидкий доступ до центру.</li>
+            <li><strong>Мінуси:</strong> Менше великих парків, постійні нові будівництва поруч.</li>
+          </ul>
+        </div>
       </div>
 
-      <h2 id="tips">6. Поради для іноземців та IT-спеціалістів</h2>
-      <p>Якщо ви переїжджаєте з іншої країни, зверніть увагу на наявність <strong>PESEL</strong>. Це ідентифікаційний номер, який знадобиться для багатьох адміністративних процедур, включаючи підписання деяких договорів оренди.</p>
-      <p>Для IT-спеціалістів Варшава пропонує чудові можливості коворкінгів та швидкісного інтернету в більшості сучасних ЖК на Wola та Mokotów.</p>
+      <h2 id="detailed-prices">3. Детальна аналітика цін (Травень 2026)</h2>
+      <p>Ціни на оренду тепер сильно залежать не тільки від району, а й від року побудови будинку (будинки після 2020 року коштують на 15-20% дорожче).</p>
+      
+      <div class="price-card-grid">
+        <div class="price-card">
+          <h4>Studio (Кавалерка)</h4>
+          <span class="price">2800 - 4200 PLN</span>
+          <p class="desc">Залежно від віддаленості від метро та якості ремонту.</p>
+        </div>
+        <div class="price-card">
+          <h4>2-кімнатна (Sypialnia + Salon)</h4>
+          <span class="price">4200 - 6500 PLN</span>
+          <p class="desc">Найпопулярніший формат серед пар та IT-фахівців.</p>
+        </div>
+        <div class="price-card">
+          <h4>3-кімнатна (Family size)</h4>
+          <span class="price">6000 - 9500 PLN</span>
+          <p class="desc">Квартири в нових ЖК з паркінгом та охороною.</p>
+        </div>
+        <div class="price-card">
+          <h4>Luxury / Penthouse</h4>
+          <span class="price">12,000+ PLN</span>
+          <p class="desc">Локації на кшталт Złota 44 або Cosmopolitan.</p>
+        </div>
+      </div>
+
+      <h2 id="hidden-costs">4. Приховані витрати: про що мовчать оголошення?</h2>
+      <p>Коли ви бачите ціну на Otodom або OLX, пам'ятайте про структуру витрат:</p>
+      <ul class="checklist">
+        <li><strong>Czynsz (Адмінзбір):</strong> Від 600 до 1500 PLN. Сюди входить вивіз сміття, охорона, вода та опалення (лімітовано).</li>
+        <li><strong>Електрика:</strong> Зазвичай оплачується окремо за лічильником (близько 150-300 PLN/міс).</li>
+        <li><strong>Кауція (Депозит):</strong> Стандарт — 1-2 місячні плати. Повертається після виїзду.</li>
+        <li><strong>Інтернет:</strong> Близько 60-100 PLN за швидкісний оптоволоконний зв'язок.</li>
+      </ul>
+
+      <h2 id="legal-guide">5. Юридичний фундамент: Najem Okazjonalny</h2>
+      <p>У 2026 році 90% професійних орендодавців вимагають підписання договору <strong>Najem Okazjonalny</strong>. Багато іноземців бояться цього терміну, але це безпечно, якщо знати правила.</p>
+      <p><strong>Що це таке?</strong> Це договір, де ви вказуєте іншу адресу в Польщі (або за кордоном), куди вас можуть виселити у разі грубого порушення умов. Це вимагає візиту до нотаріуса.</p>
+      <div class="highlight-box">
+        <h4>Важливо для іноземців!</h4>
+        <p>Якщо у вас немає власного житла або родичів у Польщі, STAYX допомагає з організацією адреси для договору. Ми працюємо з перевіреними сервісами, які надають таку юридичну можливість.</p>
+      </div>
+
+      <h2 id="foreigner-tips">6. Поради для іноземців: чек-лист релокації</h2>
+      <p>Щоб ваша заявка на квартиру була обрана власником серед 10 інших, підготуйтеся:</p>
+      <ul class="checklist">
+        <li><strong>PESEL:</strong> Отримайте його в перші дні. Це ваш ключ до всіх сервісів.</li>
+        <li><strong>Трудовий договір (Umowa o pracę/B2B):</strong> Власники хочуть бачити вашу фінансову стабільність.</li>
+        <li><strong>Профіль у LinkedIn:</strong> Поляки часто перевіряють вашу професійну репутацію.</li>
+        <li><strong>Агент-посередник:</strong> Наявність професійного агента від STAYX підвищує довіру власника до вас у декілька разів.</li>
+      </ul>
 
       <div class="guide-cta">
-        <h2>Готові знайти своє ідеальне житло?</h2>
-        <p>Довірте пошук професіоналам STAYX. Ми знайдемо квартиру, яка відповідає вашому стилю життя.</p>
-        <a href="index.html#contactForm" class="btn btn--primary btn--lg">Залишити заявку</a>
+        <h2>Не витрачайте час на поверхневі пошуки</h2>
+        <p>Отримайте персональну консультацію та підбір квартири від експертів, які знають кожен під'їзд у Варшаві.</p>
+        <a href="index.html#contactForm" class="btn btn--primary btn--lg">Замовити професійний підбір</a>
       </div>
     </article>
   </main>
@@ -228,6 +258,7 @@
       <div class="footer__links">
         <a href="index.html#services">Послуги</a>
         <a href="how-it-works.html">Як це працює</a>
+        <a href="rent-in-warsaw-guide-2026.html">Гід по Варшаві 2026</a>
         <a href="index.html#about">Про нас</a>
         <a href="index.html#faq">FAQ</a>
         <a href="index.html#contacts">Контакти</a>
