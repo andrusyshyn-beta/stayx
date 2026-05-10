@@ -1,378 +1,812 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Оренда квартири у Варшаві 2026: Повний Покроковий Гід (5000+ слів) | STAYX</title>
-  <meta name="description" content="Найбільший в Україні експертний путівник з оренди житла у Варшаві 2026. 5000+ слів аналітики: ціни у 18 районах, юридичний захист, чек-листи та стратегії релокейту.">
-  <link rel="canonical" href="https://stayx-eight.vercel.app/rent-in-warsaw-guide-2026.html">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <style>
-    :root {
-      --primary: #635bff;
-      --primary-soft: rgba(99, 91, 255, 0.05);
-      --text-main: #0a2540;
-      --text-sub: #425466;
-      --bg: #f6f9fc;
-      --accent-green: #00d4ff;
-    }
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fff; color: var(--text-sub); line-height: 1.8; -webkit-font-smoothing: antialiased; }
-    
-    .article-hero { padding: 200px 0 120px; background: #0a2540; color: #fff; position: relative; overflow: hidden; }
-    .article-hero h1 { font-size: 4rem; font-weight: 800; letter-spacing: -0.05em; line-height: 1.1; margin-bottom: 24px; max-width: 1000px; }
-    .article-hero .lead { font-size: 1.5rem; color: rgba(255,255,255,0.8); max-width: 800px; margin-bottom: 40px; }
-    .article-hero .meta { font-size: 1rem; color: rgba(255,255,255,0.5); display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Оренда квартири у Варшаві 2026: Енциклопедія Переїзду | STAYX</title>
+<meta name="description" content="Найбільший гід з оренди житла у Варшаві. Аналіз 18 районів, юридика, ціни, калькулятор витрат, чек-листи та поради для релокейту 2026.">
+<meta property="og:title" content="Оренда квартири у Варшаві 2026 | STAYX">
+<meta property="og:description" content="Найповніший гід для тих, хто переїжджає до польської столиці. 17 розділів, 18 районів, калькулятор витрат.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1a1a1a;--ink2:#3d3d3d;--muted:#6b6b6b;--subtle:#aaa;
+  --bg:#faf9f7;--surface:#fff;--surface2:#f5f3ef;
+  --border:#e8e4dc;--border2:#d0cbc0;
+  --accent:#635bff; /* Unified with Stripe purple */
+  --accent-soft:#f5f4ff;
+  --accent2:#2a5fc8;--accent2-soft:#e6ecf5;
+  --green:#1a7040;--green-soft:#e4f2eb;
+  --amber:#956000;--amber-soft:#fdf2d8;
+  --red:#9e2a2a;--red-soft:#fce8e4;
+  --r:10px;--r-sm:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Inter', -apple-system, system-ui, sans-serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.75;overflow-x:hidden;-webkit-font-smoothing: antialiased;letter-spacing: -0.011em;}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
 
-    .article-layout { display: grid; grid-template-columns: 320px 1fr; gap: 80px; max-width: 1400px; margin: 0 auto; padding: 100px 24px; }
-    
-    .sidebar { position: sticky; top: 120px; height: calc(100vh - 150px); overflow-y: auto; padding-right: 20px; border-right: 1px solid #eee; }
-    .sidebar::-webkit-scrollbar { width: 4px; }
-    .sidebar::-webkit-scrollbar-thumb { background: #eee; border-radius: 10px; }
-    
-    .toc-title { font-size: 1rem; font-weight: 800; color: var(--text-main); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 24px; }
-    .toc-list { list-style: none; padding: 0; margin: 0; }
-    .toc-list li { margin-bottom: 14px; }
-    .toc-list a { color: var(--text-sub); text-decoration: none; font-size: 0.95rem; transition: all 0.2s; display: block; }
-    .toc-list a:hover { color: var(--primary); padding-left: 5px; }
+/* Progress bar */
+#pb{position:fixed;top:0;left:0;z-index:300;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),#8b85ff);transition:width .1s linear}
 
-    .content-area { max-width: 900px; }
-    
-    h2 { font-size: 3rem; font-weight: 800; color: var(--text-main); margin: 120px 0 48px; letter-spacing: -0.04em; line-height: 1.2; position: relative; }
-    h2::after { content: ''; position: absolute; bottom: -15px; left: 0; width: 80px; height: 6px; background: var(--primary); border-radius: 3px; }
-    h3 { font-size: 2.2rem; font-weight: 700; color: var(--text-main); margin: 80px 0 32px; letter-spacing: -0.02em; }
-    h4 { font-size: 1.6rem; font-weight: 700; color: var(--text-main); margin: 40px 0 20px; }
-    
-    p { margin-bottom: 32px; font-size: 1.25rem; }
-    
-    .highlight-box { background: var(--primary-soft); padding: 48px; border-radius: 32px; margin: 60px 0; border-left: 8px solid var(--primary); }
-    .highlight-box--warning { background: #fffcf0; border-left-color: #f59e0b; }
-    .highlight-box h4 { margin-top: 0; font-size: 1.5rem; margin-bottom: 16px; }
-    
-    .district-card { background: #fff; border: 1px solid rgba(0,0,0,0.06); border-radius: 32px; padding: 48px; margin-bottom: 48px; box-shadow: 0 10px 40px rgba(0,0,0,0.03); }
-    .district-card h4 { margin-top: 0; font-size: 1.8rem; }
-    .district-card .stats { display: flex; flex-wrap: wrap; gap: 32px; margin: 24px 0; font-size: 1rem; color: var(--text-sub); border-top: 1px solid #eee; padding-top: 24px; }
-    .district-card .stats b { color: var(--text-main); }
+/* Nav */
+nav.topnav{position:sticky;top:0;z-index:100;background:rgba(250,249,247,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:0 2rem;height:62px;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.nav-logo{font-family:'Inter', sans-serif;font-size:21px;font-weight:800;color:var(--ink);letter-spacing:-.03em}
+.nav-logo span{color:var(--accent)}
+.nav-right{display:flex;align-items:center;gap:1rem}
+.nav-meta{font-size:12px;color:var(--subtle);display:flex;gap:.75rem}
+.nav-meta span{display:flex;align-items:center;gap:4px}
+.nav-cta{background:var(--accent);color:#fff;font-size:13px;font-weight:500;padding:8px 18px;border-radius:var(--r-sm);transition:opacity .2s;white-space:nowrap}
+.nav-cta:hover{opacity:.85;text-decoration:none}
 
-    .checklist { list-style: none; padding: 0; margin: 40px 0; }
-    .checklist li { padding: 20px 0; border-bottom: 1px solid #eee; display: flex; gap: 20px; align-items: flex-start; font-size: 1.2rem; }
-    .checklist li::before { content: '✓'; color: #00d4aa; font-weight: 900; font-size: 1.5rem; line-height: 1; }
+/* Hero */
+.hero{max-width:860px;margin:0 auto;padding:5.5rem 2rem 3rem;text-align:center}
+.hero-tag{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 16px;border-radius:20px;margin-bottom:1.5rem}
+h1{font-family:'Inter', sans-serif;font-size:clamp(2rem,5.5vw,3.4rem);font-weight:800;line-height:1.15;color:var(--ink);margin-bottom:1.25rem;letter-spacing:-.04em}
+h1 em{font-style:italic;color:var(--accent);font-family:'Playfair Display',serif;font-weight:600;}
+.hero-lead{font-size:1.1rem;color:var(--muted);max-width:600px;margin:0 auto 2.25rem;line-height:1.65}
+.hero-stats{display:flex;align-items:stretch;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;max-width:580px;margin:0 auto;background:#fff;}
+.hero-stat{flex:1;padding:.85rem .5rem;text-align:center;border-right:1px solid var(--border);transition:background .2s}
+.hero-stat:last-child{border-right:none}
+.hero-stat:hover{background:var(--surface2)}
+.hs-n{font-size:1.15rem;font-weight:600;color:var(--ink)}
+.hs-l{font-size:11px;color:var(--subtle);margin-top:1px}
+hr.hdiv{max-width:900px;margin:0 auto;border:none;border-top:1px solid var(--border)}
 
-    .price-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin: 60px 0; }
-    .price-item { background: var(--bg); padding: 32px; border-radius: 24px; text-align: center; border: 1px solid rgba(0,0,0,0.03); }
-    .price-item .label { font-size: 1rem; color: var(--text-sub); display: block; margin-bottom: 12px; }
-    .price-item .val { font-size: 1.8rem; font-weight: 800; color: var(--text-main); }
+/* Layout */
+.page-wrap{max-width:1160px;margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:216px 1fr;gap:3rem;align-items:start}
+.main{min-width:0;padding:0 0 4rem}
+.sidebar{position:sticky;top:80px;padding:1.5rem 0}
+.sidebar h3{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--subtle);margin-bottom:.75rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.sidebar a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);padding:.38rem .55rem;border-radius:6px;transition:all .15s;line-height:1.4}
+.sidebar a:hover{color:var(--ink);background:var(--surface2);text-decoration:none}
+.sidebar a.active{color:var(--accent);background:var(--accent-soft);font-weight:600}
+.sn{font-size:10px;color:var(--subtle);min-width:16px;flex-shrink:0}
 
-    .faq-block { margin: 80px 0; }
-    .faq-item { margin-bottom: 48px; border-bottom: 1px solid #eee; padding-bottom: 32px; }
-    .faq-item h5 { font-size: 1.4rem; margin: 0 0 16px; color: var(--text-main); }
+/* TOC card */
+.toc-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.75rem 2rem;margin:2rem 0;box-shadow: 0 2px 10px rgba(0,0,0,0.02);}
+.toc-card h2{font-family:'Inter', sans-serif;font-weight:700;font-size:1rem;color:var(--ink);margin-bottom:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--border)}
+.toc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem 2rem}
+.toc-grid a{font-size:13.5px;color:var(--ink2);display:flex;align-items:baseline;gap:7px;padding:4px 0;transition:color .15s}
+.toc-grid a:hover{color:var(--accent);text-decoration:none}
+.tn{color:var(--subtle);font-size:11px;min-width:18px}
 
-    .guide-cta { background: linear-gradient(135deg, #0a2540 0%, #1a3550 100%); color: #fff; padding: 100px 60px; border-radius: 48px; text-align: center; margin-top: 150px; }
-    .guide-cta h2 { color: #fff; margin-top: 0; font-size: 2.5rem; }
-    .guide-cta p { font-size: 1.3rem; opacity: 0.9; margin-bottom: 40px; }
+/* Sections */
+.section{padding:3.5rem 0 2rem}
+.section+.section{border-top:1px solid var(--border)}
+h2.st{font-family:'Inter', sans-serif;font-weight:800;font-size:clamp(1.5rem,3vw,2.1rem);color:var(--ink);margin-bottom:.4rem;letter-spacing:-.03em;line-height:1.2}
+.ss{font-size:15px;color:var(--muted);margin-bottom:2rem;line-height:1.5}
+h3{font-size:1.05rem;font-weight:700;color:var(--ink);margin:2rem 0 .65rem;letter-spacing:-.01em}
+h3:first-child{margin-top:0}
+p{margin-bottom:1rem;color:var(--ink2);line-height:1.75}
+p:last-child{margin-bottom:0}
 
-    @media (max-width: 1100px) {
-      .article-layout { grid-template-columns: 1fr; }
-      .sidebar { display: none; }
-    }
-    @media (max-width: 768px) {
-      .article-hero h1 { font-size: 2.8rem; }
-      .price-grid { grid-template-columns: 1fr; }
-      h2 { font-size: 2.2rem; }
-      .article-container { padding: 60px 20px; }
-    }
+/* Boxes */
+.box{border-radius:var(--r);padding:1.25rem 1.5rem;margin:1.5rem 0;border-left:3px solid}
+.box.blue{background:var(--accent2-soft);border-color:var(--accent2)}
+.box.orange{background:var(--accent-soft);border-color:var(--accent)}
+.box.green{background:var(--green-soft);border-color:var(--green)}
+.box.amber{background:var(--amber-soft);border-color:var(--amber)}
+.box.red{background:var(--red-soft);border-color:var(--red)}
+.box p{font-size:14px;color:var(--ink2);margin-bottom:.5rem}
+.box p:last-child{margin-bottom:0}
+.box strong{color:var(--ink);font-weight:600}
 
-    /* Header transparency & Scrolled behavior */
-    .header:not(.header--scrolled) .nav__link, 
-    .header:not(.header--scrolled) .logo-text,
-    .header:not(.header--scrolled) .nav__lang a,
-    .header:not(.header--scrolled) .nav__social a { color: #fff !important; }
-    .header:not(.header--scrolled) .nav__burger span { background-color: #fff !important; }
+/* District filter */
+.filter-bar{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem;align-items:center}
+.filter-label{font-size:12px;color:var(--subtle);font-weight:500;text-transform:uppercase;letter-spacing:.06em;margin-right:.25rem}
+.fbtn{font-size:12.5px;font-weight:600;color:var(--ink2);background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:6px 14px;cursor:pointer;transition:all .15s;user-select:none}
+.fbtn:hover{border-color:var(--border2);background:var(--surface2)}
+.fbtn.active{background:var(--ink);color:#fff;border-color:var(--ink)}
 
-    .header--scrolled .nav__link { color: var(--text-sub) !important; }
-    .header--scrolled .logo-text { color: var(--text-main) !important; }
-    .header--scrolled .nav__lang a, .header--scrolled .nav__social a { color: var(--text-sub) !important; }
-    .header--scrolled .nav__burger span { background-color: var(--text-main) !important; }
-    .header--scrolled .nav__lang a.active { background: var(--bg) !important; color: var(--text-main) !important; }
-    .breadcrumb { font-size: 0.9rem; color: rgba(255,255,255,0.5); margin-bottom: 24px; }
-    .breadcrumb a { color: rgba(255,255,255,0.7); text-decoration: none; }
-    .breadcrumb a:hover { color: #fff; }
+/* District cards */
+.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(276px,1fr));gap:1rem}
+.dc{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem 1.4rem;transition:border-color .2s,box-shadow .2s;animation:fi .3s ease both}
+@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.dc:hover{border-color:var(--border2);box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.dc.hidden{display:none}
+.dh{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:.65rem}
+.dn2{font-size:.95rem;font-weight:700;color:var(--ink)}
+.dn2 small{display:block;font-size:11.5px;font-weight:400;color:var(--muted);margin-top:1px}
+.badge{font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+.bp{background:#f0eafe;color:#5232b5}
+.bb{background:var(--accent2-soft);color:#1a4898}
+.bf{background:var(--green-soft);color:#1a6038}
+.bu{background:var(--amber-soft);color:#7a4a00}
+.bv{background:#fce8f5;color:#8a1a6a}
+.dprice{font-size:1.05rem;font-weight:700;color:var(--accent);margin-bottom:.55rem}
+.ddesc{font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:.65rem}
+.dtags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:.65rem}
+.tag{font-size:11px;background:var(--bg);color:var(--ink2);border:1px solid var(--border);border-radius:4px;padding:2px 7px}
+.dpc{display:grid;grid-template-columns:1fr 1fr;gap:4px;font-size:12px;border-top:1px solid var(--border);padding-top:.7rem;margin-top:.7rem}
+.pro{color:var(--green);display:flex;gap:4px;align-items:baseline}
+.pro::before{content:"\2713";font-weight:700;flex-shrink:0}
+.con{color:var(--red);display:flex;gap:4px;align-items:baseline}
+.con::before{content:"\2717";font-weight:700;flex-shrink:0}
 
-    .tldr-section { padding: 40px 0; background: var(--bg); }
-    .tldr-card { background: #fff; border-radius: 24px; padding: 40px; border: 1px solid var(--primary); box-shadow: 0 20px 40px rgba(99, 91, 255, 0.1); }
-    .tldr-card h4 { margin-top: 0; color: var(--primary); font-size: 1.4rem; margin-bottom: 20px; }
-    .tldr-card ul { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
-    .tldr-card li { font-size: 1.1rem; line-height: 1.5; padding-left: 20px; position: relative; }
-    .tldr-card li::before { content: '•'; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
-    @media (max-width: 768px) { .tldr-card ul { grid-template-columns: 1fr; } }
-  </style>
+/* Tables */
+.tw{overflow-x:auto;margin:1.5rem 0;border:1px solid var(--border);border-radius:var(--r)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+thead{background:var(--surface2)}
+th{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);padding:11px 14px;text-align:left;white-space:nowrap;border-bottom:1px solid var(--border)}
+td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--ink2);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#faf8f5}
+td.tdn{font-weight:600;color:var(--ink)}
+td.tp{font-weight:700;color:var(--ink);white-space:nowrap;font-size:13px}
 
-  <!-- Schema.org Article -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Оренда квартири у Варшаві 2026: Повний Покроковий Гід (5000+ слів)",
-    "description": "Вичерпна енциклопедія з оренди житла у Варшаві 2026. 18 районів, юридичні тонкощі, ціни, перевірки та стратегії релокації.",
-    "image": "https://stayx-eight.vercel.app/images/mega-guide-2026.jpg",
-    "author": {
-      "@type": "Organization",
-      "name": "STAYX"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "STAYX",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://stayx-eight.vercel.app/images/logo.png"
-      }
-    },
-    "datePublished": "2026-05-10",
-    "dateModified": "2026-05-10"
-  }
-  </script>
+/* Steps */
+.steps{margin:1.5rem 0}
+.step{display:flex;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid var(--border)}
+.step:last-child{border-bottom:none}
+.snum{width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.sbody h4{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:.3rem;margin-top:0}
+.sbody p{font-size:14px;color:var(--muted);margin:0}
 
-  <!-- Schema.org FAQ -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [{
-      "@type": "Question",
-      "name": "Яка середня вартість оренди у Варшаві 2026?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Середня ціна 2-кімнатної квартири становить 4500-5500 PLN залежно від району та стандарту."
-      }
-    }, {
-      "@type": "Question",
-      "name": "Що таке Najem Okazjonalny?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Це тип договору оренди, який вимагає нотаріального підтвердження та забезпечує кращий юридичний захист для орендодавця."
-      }
-    }]
-  }
-  </script>
+/* Checklist */
+.cl{list-style:none;margin:1rem 0}
+.cl li{display:flex;align-items:flex-start;gap:10px;padding:.65rem 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--ink2)}
+.cl li:last-child{border-bottom:none}
+.ci{width:22px;height:22px;border-radius:50%;background:var(--green-soft);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px}
+.cl strong{color:var(--ink);font-weight:600}
+
+/* Static calc box */
+.calc-box{background:var(--ink);color:#fff;border-radius:var(--r);padding:2rem;margin:1.5rem 0}
+.calc-box h3{color:#fff;font-size:.95rem;margin:0 0 1.25rem;letter-spacing:0;font-weight:700;}
+.cr{display:flex;justify-content:space-between;align-items:center;padding:.45rem 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:14px}
+.cr .lb{color:rgba(255,255,255,.6)}
+.cr .vl{color:#fff;font-weight:500}
+.ctot{display:flex;justify-content:space-between;align-items:center;padding:.75rem 0 0;margin-top:.5rem;border-top:1px solid rgba(255,255,255,.2);font-size:1rem;font-weight:700}
+.ctot .vl{color:#f7c97e;font-size:1.1rem}
+.cnote{font-size:12px;color:rgba(255,255,255,.45);margin-top:1rem;line-height:1.55;border-top:1px solid rgba(255,255,255,.1);padding-top:.75rem}
+
+/* Interactive calc */
+.calc-inter{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:2rem;margin:1.5rem 0;box-shadow: 0 4px 20px rgba(0,0,0,0.03);}
+.calc-inter h3{font-size:1rem;margin:0 0 1.25rem;font-weight:700;}
+.cri{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:.85rem;flex-wrap:wrap}
+.cri label{font-size:14px;color:var(--ink2);flex:1;min-width:160px}
+.cri input,.cri select{padding:8px 12px;border:1px solid var(--border);border-radius:var(--r-sm);font-size:14px;font-family:'Inter',sans-serif;color:var(--ink);background:var(--bg);width:160px;outline:none;transition:border-color .2s}
+.cri input:focus,.cri select:focus{border-color:var(--accent)}
+.cres{background:var(--ink);color:#fff;border-radius:var(--r-sm);padding:1.25rem 1.5rem;margin-top:1rem;display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;text-align:center}
+.cres-n{font-size:1.4rem;font-weight:700;color:#f7c97e}
+.cres-l{font-size:12px;color:rgba(255,255,255,.55);margin-top:2px}
+
+/* Red flags */
+.flags-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:.85rem;margin-top:1.25rem}
+.flag-card{background:var(--red-soft);border:1px solid #f0cac4;border-radius:var(--r);padding:1.1rem 1.3rem;display:flex;gap:.75rem;align-items:flex-start}
+.fi2{font-size:1.3rem;flex-shrink:0;margin-top:.1rem}
+.ftitle{font-size:14px;font-weight:700;color:var(--red);margin-bottom:.3rem}
+.fdesc{font-size:13px;color:#6a2020;line-height:1.5}
+
+/* Timeline */
+.timeline{position:relative;margin:1.5rem 0;padding-left:2rem}
+.timeline::before{content:'';position:absolute;left:9px;top:0;bottom:0;width:2px;background:var(--border)}
+.tli{position:relative;margin-bottom:1.5rem}
+.tli:last-child{margin-bottom:0}
+.tldot{position:absolute;left:-2rem;top:4px;width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;z-index:1}
+.tlday{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:.25rem}
+.tltitle{font-size:.95rem;font-weight:700;color:var(--ink);margin-bottom:.3rem}
+.tlbody{font-size:13.5px;color:var(--muted);line-height:1.6}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:last-child{border-bottom:none}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;cursor:pointer;gap:1rem;font-size:15px;font-weight:600;color:var(--ink);transition:color .15s;user-select:none}
+.faq-q:hover{color:var(--accent)}
+.faq-icon{color:var(--subtle);font-size:20px;flex-shrink:0;transition:transform .3s;font-weight:300;line-height:1}
+.faq-item.open .faq-a{max-height:600px;padding-bottom:1rem}
+.faq-item.open .faq-icon{transform:rotate(45deg);color:var(--accent)}
+
+/* Glossary */
+.gloss-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.7rem;margin-top:1.25rem}
+.gi{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm);padding:.9rem 1.1rem}
+.gterm{font-size:13px;font-weight:700;color:var(--accent);margin-bottom:.3rem}
+.gdef{font-size:13px;color:var(--muted);line-height:1.5}
+
+/* CTA */
+.cta-block{background:var(--ink);color:#fff;border-radius:var(--r);padding:3.5rem 2rem;text-align:center;margin:3rem 0;box-shadow: 0 10px 40px rgba(0,0,0,0.15);}
+.cta-block h2{font-family:'Inter', sans-serif;font-weight:800;color:#fff;font-size:clamp(1.4rem,3vw,2rem);margin-bottom:.75rem;letter-spacing:-.03em;}
+.cta-block p{color:rgba(255,255,255,.6);font-size:15px;max-width:460px;margin:0 auto 1.75rem}
+.cta-btn{display:inline-block;background:var(--accent);color:#fff;font-size:15px;font-weight:600;padding:14px 32px;border-radius:var(--r-sm);transition:opacity .2s}
+.cta-btn:hover{opacity:.85;text-decoration:none}
+.cta-sub{display:flex;justify-content:center;gap:1.5rem;margin-top:1.25rem;flex-wrap:wrap}
+.cta-sub span{font-size:12.5px;color:rgba(255,255,255,.45);display:flex;align-items:center;gap:5px}
+
+footer{border-top:1px solid var(--border);padding:2.5rem 2rem;text-align:center;font-size:13px;color:var(--subtle)}
+footer a{color:var(--subtle)}
+
+@media(max-width:900px){.page-wrap{grid-template-columns:1fr}.sidebar{display:none}}
+@media(max-width:620px){.dgrid,.flags-grid{grid-template-columns:1fr}.hero-stats{flex-wrap:wrap}.nav-meta{display:none}h1{font-size:1.8rem}.hero{padding:3.5rem 1.25rem 2rem}.cres{grid-template-columns:1fr}.dpc{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
+<div id="pb"></div>
 
-  <!-- ===== HEADER ===== -->
-  <header class="header" id="header">
-    <nav class="nav container container-padding">
-      <a href="index.html" class="nav__logo">
-        <span class="logo-text">stay<span class="x-accent">x</span></span>
-      </a>
-      <div class="nav__left">
-        <a href="index.html#services" class="nav__link">Послуги</a>
-        <a href="how-it-works.html" class="nav__link">Як це працює</a>
-        <a href="index.html#blog" class="nav__link">Блог</a>
-        <a href="index.html#about" class="nav__link">Про нас</a>
-        <a href="index.html#faq" class="nav__link">FAQ</a>
-      </div>
-      <div class="nav__right">
-        <div class="nav__lang">
-          <a href="#" class="active">Ua</a>
-          <a href="en/rent-in-warsaw-guide-2026.html">EN</a>
-          <a href="pl/rent-in-warsaw-guide-2026.html">PL</a>
-        </div>
-        <a href="https://t.me/stayX_pl" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Зв'язатись →</a>
-        <div class="nav__social">
-          <a href="https://www.instagram.com/stayx_pl?igsh=MWt5enF2b3hoN29rMA%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="https://www.tiktok.com/@stayx_realestate?_r=1&_t=ZN-96DXaC2rZbT" target="_blank" rel="noopener" aria-label="TikTok">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.53 1.53-.3 2.7-1.67 2.82-3.18.05-3.68-.01-7.36.03-11.03.01-.11 0-.22.01-.33z"/></svg>
-          </a>
-        </div>
-      </div>
-      <button class="nav__burger" id="burger" aria-label="Меню">
-        <span></span><span></span><span></span>
-      </button>
-    </nav>
-  </header>
-
-  <main>
-    <section class="article-hero">
-      <div class="container container-padding">
-        <h1>Оренда квартири у Варшаві 2026: <br>Глобальна Енциклопедія</h1>
-        <p class="lead">Все про те, як не просто знайти дах над головою, а побудувати комфортне життя у польській столиці без ризиків та переплат.</p>
-        <div class="meta">
-          <span>📅 Травень 2026 (Версія 3.0)</span>
-          <span>📊 База даних: NBP / Investropa / STAYX Analytics</span>
-          <span>📚 Обсяг: 5000+ слів</span>
-        </div>
-      </div>
-    </section>
-
-    <div class="article-layout">
-      <aside class="sidebar">
-        <div class="toc-title">Мапи та Розділи</div>
-        <ul class="toc-list">
-          <li><a href="#intro">1. Філософія ринку 2026</a></li>
-          <li><a href="#prep">2. Підготовка: "Портфоліо орендаря"</a></li>
-          <li><a href="#districts-mega">3. Гранд-тур 18 районами</a></li>
-          <li><a href="#sqm-benchmarks">4. Бенчмарки цін за кв.м</a></li>
-          <li><a href="#building-types">5. Типологія забудови: Від Каменіц до PRS</a></li>
-          <li><a href="#technical-audit">6. Технічний аудит: Чек-лист 50 пунктів</a></li>
-          <li><a href="#finance-math">7. Математика: Czynsz, Media, Kaucja</a></li>
-          <li><a href="#legal-encyclopedia">8. Юридична Енциклопедія</a></li>
-          <li><a href="#segments-deep">9. Гіди за сегментами (IT, Сім'ї, Студенти)</a></li>
-          <li><a href="#pet-survival">10. Pet-friendly: Як орендувати з тваринами</a></li>
-          <li><a href="#seasonality-logic">11. Логіка сезонів та торгу</a></li>
-          <li><a href="#admin-post-move">12. Життя після договору: Meldunek, PESEL</a></li>
-          <li><a href="#utilities-management">13. Управління комунікаціями та сміттям</a></li>
-          <li><a href="#moving-logistics">14. Логістика переїзду та меблі</a></li>
-          <li><a href="#glossary-full">15. Повний словник термінів</a></li>
-        </ul>
-      </aside>
-
-      <section class="content-area">
-        <h2 id="intro">1. Філософія ринку Варшави 2026</h2>
-        <p>Варшава 2026 року — це вже не той хаотичний ринок, який ми бачили у 2022 році. Сьогодні це зріла, висококонкурентна екосистема. Оренда квартири тут — це не просто транзакція, а справжнє мистецтво самопрезентації та стратегічного планування.</p>
-        <p>Ключова зміна 2026 року: <strong>Енергетична прозорість</strong>. Тепер кожне оголошення містить детальний енергетичний паспорт об'єкта. Орендарі більше не дивляться тільки на базову ставку (odstępne), вони рахують Total Cost of Living. У цьому гіді ми навчимо вас мислити як професійний інвестор, щоб ваш переїзд був не стресом, а початком нової історії.</p>
-        <p>Ринок Варшави зараз ділиться на три чіткі сегменти: <em>Private Institutional (PRS)</em>, <em>Professional Agency-Managed</em> та <em>Private Landlord</em>. Кожен має свої правила гри, які ми детально розберемо нижче.</p>
-
-        <h2 id="prep">2. Підготовка: Створення вашого "Портфоліо орендаря"</h2>
-        <p>Чому одному орендарю відмовляють 10 разів поспіль, а інший отримує ключі від ідеальної квартири на Волі за один вечір? Відповідь у підготовці. У 2026 році власники (особливо в преміум-сегменті) проводять справжній "скоринг" кандидатів.</p>
-        <div class="highlight-box">
-          <h4>Ваш Checklist ідеального кандидата:</h4>
-          <p>— <strong>Employment Verification:</strong> Підготуйте довідку про доходи або Umowa o pracę. Якщо ви на B2B — виписку з реєстру CEIDG.<br>
-          — <strong>LinkedIn Profile:</strong> Так, у Варшаві власники часто дивляться ваш професійний профіль. Це ваша візитна картка адекватності.<br>
-          — <strong>Financial Buffer:</strong> Будьте готові внести кауцію та перший місяць оренди миттєво. На ринку, де на квартиру 15 претендентів, перемагає найшвидший.</p>
-        </div>
-
-        <h2 id="districts-mega">3. Гранд-тур 18 районами: Детальний розбір</h2>
-        
-        <h3 id="dist-srodmiescie">Śródmieście (Центр): Для тих, хто не йде на компроміси</h3>
-        <p>Центр Варшави — це мікс ділового ритму та історичного шарму. Район ділиться на Північне (Muranów, район метро Ratusz Arsenał) та Південне (район площі Спасителя та Уяздовських алей). </p>
-        <p><strong>Ціни:</strong> Орієнтуйтесь на 120-140 PLN за кв.м у нових будинках. Квартири в каменіцах можуть бути дешевші за метр, але дорожчі в утриманні через високі стелі та специфічне опалення.</p>
-        
-        <h3 id="dist-wola">Wola (Воля): Фінансове серце та "Supply Shock"</h3>
-        <p>Воля переживає унікальний період. Це район хмарочосів та нових ЖК. Проте, саме тут у 2026 році спостерігається найбільша кількість нових квартир, що вийшли на ринок одночасно. </p>
-        <p><strong>Порада експерта:</strong> Через велику пропозицію (Supply Shock), власники на Волі зараз більш схильні до переговорів. Якщо квартира пустує більше 3 тижнів, сміливо просіть знижку 10% або безкоштовне місце в паркінгу.</p>
-
-        <h3 id="dist-mokotow">Mokotów (Мокотув): Район-фаворит екпатів</h3>
-        <p>Мокотув — це легенда. Старий Мокотув (Górny) — це вілли, посольства та затишні кав'ярні. Нижній Мокотув (Dolny) — це сучасні ЖК біля офісного хабу Służewiec (колишній "Mordor").</p>
-        <p><strong>Ціни:</strong> 2-кімнатна квартира тут коштуватиме від 4800 до 6500 PLN залежно від близькості до метро Pole Mokotowskie або Wilanowska.</p>
-
-        <h3 id="dist-zoliborz">Żoliborz (Жолібож): Інтелігентна розкіш</h3>
-        <p>Найменший район Варшави. Тут майже немає місця для нової забудови, тому пропозиція дуже обмежена. Жолібож — це про спокій, парки та сусідство з польською інтелігенцією.</p>
-        <p><strong>Ціни:</strong> Дуже високі. 2-кімнатна квартира може легко досягати 7000 PLN через дефіцит пропозиції.</p>
-
-        <h3 id="dist-ursynow">Ursynów (Урсинув): Дитячий рай</h3>
-        <p>Урсинув ідеальний для сімей. Тут найбільша кількість шкіл та садочків на душу населення. Пряма гілка метро М1 до центру за 15-20 хвилин. Поруч — Кабацький ліс.</p>
-        <p><strong>Ціни:</strong> 4200 - 5500 PLN за середній стандарт.</p>
-
-        <h3 id="dist-others">Інші райони: Короткий огляд</h3>
-        <p>— <strong>Białołęка:</strong> Найдешевші ціни, але довгий доїзд до центру (крім районів біля метро Kondratowicza).<br>
-        — <strong>Wilanów:</strong> Місто в місті. Престижно, безпечно, багато матусь з візочками, але немає метро (рятує нова трамвайна лінія).<br>
-        — <strong>Praga-Południe (Saska Kępa):</strong> Один із найкрасивіших районів з довоєнною забудовою та духом старого Парижа.<br>
-        — <strong>Ochota:</strong> Дуже близько до центру, багато парків, чудовий транспорт.</p>
-
-        <h2 id="sqm-benchmarks">4. Бенчмарки цін за кв.м у 2026 році</h2>
-        <p>Щоб не переплачувати, використовуйте ці цифри для перевірки оголошень (дані Investropa/NBP):</p>
-        <div class="price-grid">
-          <div class="price-item"><span class="label">Śródmieście</span><span class="val">120-140 PLN/м²</span></div>
-          <div class="price-item"><span class="label">Wola / Mokotów</span><span class="val">90-110 PLN/м²</span></div>
-          <div class="price-item"><span class="label">Ochota / Żoliborz</span><span class="val">100-120 PLN/м²</span></div>
-          <div class="price-item"><span class="label">Białołęka / Ursus</span><span class="val">65-75 PLN/м²</span></div>
-        </div>
-
-        <h2 id="building-types">5. Типологія забудови: Де краще жити?</h2>
-        <p>У Варшаві тип будинку визначає не тільки естетику, а й ваші рахунки за опалення.</p>
-        <h4>Каменіці (До 1945 року)</h4>
-        <p>Високі стелі (3м+), товсті цегляні стіни. <strong>Нюанс:</strong> Часто мають старі системи водопостачання та високі витрати на опалення взимку.</p>
-        <h4>Блоки (1960-1980 роки)</h4>
-        <p>Панельні будинки. Плюси: великі відстані між будинками, багато зелені. Мінуси: маленькі кухні, погана звукоізоляція ("картонні стіни").</p>
-        <h4>Нові ЖК (Після 2015 року)</h4>
-        <p>Сучасні стандарти. Підземний паркінг, ліфт, системи рекуперації повітря. Це найдорожчий, але й найкомфортніший сегмент.</p>
-        <h4>PRS (Institutional Rental)</h4>
-        <p>Будинки, які належать корпораціям (наприклад, Resi4Rent, Heimstaden). Це професійна оренда. Ви не спілкуєтесь з власником, а тільки з менеджером. <strong>Плюс:</strong> Можливість оренди без адреси для Najem Okazjonalny.</p>
-
-        <h2 id="technical-audit">6. Технічний аудит: Чек-лист перевірки квартири</h2>
-        <p>Під час перегляду квартири ваші емоції — ваш ворог. Використовуйте цей чек-лист:</p>
-        <ul class="checklist">
-          <li><strong>Вікна:</strong> Відкрийте та закрийте кожне вікно. Перевірте ущільнювачі. Погана ізоляція = великі рахунки за газ.</li>
-          <li><strong>Кухня:</strong> Перевірте тиск води та роботу витяжки. Спробуйте увімкнути плиту.</li>
-          <li><strong>Стіни:</strong> Чи немає за меблями слідів плісняви? У Польщі це поширена проблема через погану вентиляцію.</li>
-          <li><strong>Зберігання:</strong> Чи є в будинку комірка (komórka lokatorska)? Це врятує ваш простір від велосипедів та валіз.</li>
-          <li><strong>Світло:</strong> Чи достатньо сонячного світла? Взимку у Варшаві сонце заходить о 15:30, тому це критично для психічного здоров'я.</li>
-        </ul>
-
-        <h2 id="finance-math">7. Математика: Czynsz, Media, Kaucja</h2>
-        <p>Ціна в оголошенні (Odstępne) — це тільки верхівка айсберга.</p>
-        <h3>Що таке Czynsz administracyjny?</h3>
-        <p>Це плата за управління будинком. Вона включає: вивіз сміття, прибирання території, охорону, фонд ремонту, а також аванси за воду та опалення. У 2026 році нормальний чинш за 2-кімнатну квартиру — <strong>900-1200 PLN</strong>.</p>
-        <h3>Медіа (Utilities)</h3>
-        <p>Електрика та інтернет. У 2026 році рахунок за електрику для 2 людей — це близько 200-300 PLN. Обов'язково запитайте, чи є в квартирі швидкісний інтернет (світловод).</p>
-
-        <h2 id="legal-encyclopedia">8. Юридична Енциклопедія: Najem Okazjonalny</h2>
-        <p>Це договір, який захищає власника від недобросовісних орендарів. Для вас це означає візит до нотаріуса.</p>
-        <p><strong>Скільки це коштує?</strong> Закон обмежує таксу нотаріуса сумою в 1/10 від мінімальної зарплати. У 2026 році повна вартість з ПДВ та копіями складає <strong>630-750 PLN</strong>.</p>
-        <p><strong>Головна складність:</strong> Ви повинні надати адресу в Польщі, куди ви виїдете у разі проблем. <strong>STAYX надає таку адресу для своїх клієнтів-іноземців.</strong></p>
-
-        <h2 id="segments-deep">9. Гіди за сегментами: IT, Сім'ї, Студенти</h2>
-        <h3>Для IT-спеціалістів:</h3>
-        <p>Обирайте райони Wola та Mokotów. Перевірте наявність 1 Gbps інтернету (Orange/Netia). Просіть власника надати фактуру (якщо ви на B2B), щоб включити оренду у витрати вашої фірми.</p>
-        <h3>Для сімей з дітьми:</h3>
-        <p>Зверніть увагу на Wilanów та Ursynów. Перевірте близькість державних та приватних садочків (Przedszkola). Пам'ятайте, що прописка (Meldunek) дає вам пріоритет у черзі до школи.</p>
-
-        <h2 id="pet-survival">10. Pet-friendly: Як орендувати з тваринами</h2>
-        <p>Орендувати квартиру з собакою чи котом у Варшаві 2026 року стало простіше, але дорожче. Власники часто просять подвійну кауцію (депозит) або обов'язкове страхування OC Najemcy з розширеним покриттям на тварин.</p>
-        <p><strong>Порада:</strong> Завжди додавайте фото вашого улюбленця до вашого "портфоліо орендаря". Це додає людяності та довіри.</p>
-
-        <h2 id="seasonality-logic">11. Логіка сезонів: Коли орендувати найвигідніше?</h2>
-        <p>— <strong>Вересень (Пік):</strong> Квартири біля університетів розлітаються за години. Ціни на 15% вищі за середньорічні.<br>
-        — <strong>Січень (Low Season):</strong> Найкращий час для торгу. Власники бояться простою квартири взимку через високі рахунки за опалення, тому вони дуже поступливі.</p>
-
-        <h2 id="admin-post-move">12. Життя після договору: Meldunek та PESEL</h2>
-        <p>Після отримання ключів у вас є 30 днів на прописку (Meldunek). Це безкоштовно. Зробивши мелдунек, ви автоматично отримуєте PESEL (якщо його не було). Це відкриває двері до медицини, банків та державних послуг.</p>
-
-        <h2 id="utilities-management">13. Управління комунікаціями та сміттям</h2>
-        <p>У Польщі діє жорстка система сортування сміття (5 категорій). Неправильне сортування може призвести до штрафів для всього будинку, які потім "повісять" на вас через Czynsz. Будьте відповідальними!</p>
-
-        <h2 id="moving-logistics">14. Логістика переїзду та меблі</h2>
-        <p>Якщо ви орендуєте квартиру без меблів (unfurnished), ваші друзі — IKEA та Allegro. Доставка та збірка меблів у Варшаві працює дуже швидко. Переїзд (przeprowadzki) з однієї квартири в іншу коштуватиме близько 500-1000 PLN.</p>
-
-        <h2 id="glossary-full">15. Повний словник термінів</h2>
-        <p>— <strong>Odstępne:</strong> Базова сума оренди власнику.<br>
-        — <strong>Czynsz:</strong> Адмінзбір за обслуговування будинку.<br>
-        — <strong>Media:</strong> Комунальні (світло, вода, тепло).<br>
-        — <strong>Kaucja:</strong> Поворотна застава.<br>
-        — <strong>Lokal zastępczy:</strong> Адреса для виселення у договорі Najem Okazjonalny.</p>
-
-        <div class="guide-cta">
-          <h2>Ми допоможемо вам побудувати дім у Варшаві</h2>
-          <p>STAYX — це не просто пошук. Це повний супровід від ідеї переїзду до отримання прописки. Довіртесь професіоналам.</p>
-          <a href="index.html#contactForm" class="btn btn--primary btn--lg">Почати безпечну оренду</a>
-        </div>
-      </section>
+<nav class="topnav">
+  <a href="/" class="nav-logo">STAY<span>X</span></a>
+  <div class="nav-right">
+    <div class="nav-meta">
+      <span>📅 Травень 2026</span>
+      <span>⏱ ~55 хв</span>
+      <span>🏘 18 районів</span>
     </div>
-  </main>
+    <a href="https://t.me/stayX_pl" class="nav-cta">Зв'язатись →</a>
+  </div>
+</nav>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <a href="index.html" class="footer__logo"><span class="logo-text">stay<span class="x-accent">x</span></span></a>
-      <div class="footer__links">
-        <a href="index.html#services">Послуги</a>
-        <a href="how-it-works.html">Як це працює</a>
-        <a href="rent-in-warsaw-guide-2026.html">Гід по Варшаві 2026</a>
-        <a href="index.html#about">Про нас</a>
-        <a href="index.html#faq">FAQ</a>
-        <a href="index.html#contacts">Контакти</a>
-      </div>
-      <div class="footer__bottom">
-        <p>2026© STAYX. All rights reserved</p>
-        <a href="privacy.html">Політика конфіденційності</a>
-      </div>
-    </div>
-  </footer>
+<div class="hero">
+  <span class="hero-tag">Енциклопедія переїзду · 2026</span>
+  <h1>Оренда квартири<br>у <em>Варшаві</em> 2026</h1>
+  <p class="hero-lead">Найповніший гід для тих, хто переїжджає до польської столиці. Від вибору району до першого тижня в новому домі — без ризиків і переплат.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="hs-n">18</div><div class="hs-l">районів</div></div>
+    <div class="hero-stat"><div class="hs-n">25+</div><div class="hs-l">термінів</div></div>
+    <div class="hero-stat"><div class="hs-n">85 PLN</div><div class="hs-l">сер. / м²</div></div>
+    <div class="hero-stat"><div class="hs-n">12</div><div class="hs-l">прапорців</div></div>
+    <div class="hero-stat"><div class="hs-n">2026</div><div class="hs-l">актуально</div></div>
+  </div>
+</div>
+<hr class="hdiv">
 
-  <script src="script.js"></script>
+<div class="page-wrap">
+<aside class="sidebar">
+  <nav>
+    <h3>Зміст</h3>
+    <a href="#intro"><span class="sn">01</span>Ринок 2026</a>
+    <a href="#strategy"><span class="sn">02</span>Стратегія пошуку</a>
+    <a href="#districts"><span class="sn">03</span>18 районів</a>
+    <a href="#types"><span class="sn">04</span>Типи будинків</a>
+    <a href="#checklist"><span class="sn">05</span>Технічний огляд</a>
+    <a href="#prices"><span class="sn">06</span>Таблиця цін</a>
+    <a href="#finance"><span class="sn">07</span>Фінанси</a>
+    <a href="#calculator"><span class="sn">08</span>Калькулятор</a>
+    <a href="#legal"><span class="sn">09</span>Юридика</a>
+    <a href="#redflags"><span class="sn">10</span>Червоні прапорці</a>
+    <a href="#segments"><span class="sn">11</span>Сім'ї, IT, студенти</a>
+    <a href="#admin"><span class="sn">12</span>PESEL і мелдунек</a>
+    <a href="#culture"><span class="sn">13</span>Спілкування</a>
+    <a href="#season"><span class="sn">14</span>Сезонність</a>
+    <a href="#firstweek"><span class="sn">15</span>Перший тиждень</a>
+    <a href="#faq"><span class="sn">16</span>FAQ</a>
+    <a href="#glossary"><span class="sn">17</span>Словник</a>
+  </nav>
+</aside>
+
+<main class="main">
+
+<div class="toc-card">
+  <h2>📋 Повний зміст</h2>
+  <div class="toc-grid">
+    <a href="#intro"><span class="tn">01</span>Ринок 2026: що змінилось</a>
+    <a href="#strategy"><span class="tn">02</span>Стратегія пошуку</a>
+    <a href="#districts"><span class="tn">03</span>Аналіз усіх 18 районів</a>
+    <a href="#types"><span class="tn">04</span>Типи будинків</a>
+    <a href="#checklist"><span class="tn">05</span>Чек-лист технічного огляду</a>
+    <a href="#prices"><span class="tn">06</span>Повна таблиця цін</a>
+    <a href="#finance"><span class="tn">07</span>Фінанси: Czynsz та Media</a>
+    <a href="#calculator"><span class="tn">08</span>Калькулятор витрат</a>
+    <a href="#legal"><span class="tn">09</span>Юридичний майстер-клас</a>
+    <a href="#redflags"><span class="tn">10</span>12 червоних прапорців</a>
+    <a href="#segments"><span class="tn">11</span>Сім'ї, IT, студенти</a>
+    <a href="#admin"><span class="tn">12</span>PESEL і мелдунек</a>
+    <a href="#culture"><span class="tn">13</span>Культура спілкування</a>
+    <a href="#season"><span class="tn">14</span>Сезонність ринку</a>
+    <a href="#firstweek"><span class="tn">15</span>Перший тиждень</a>
+    <a href="#faq"><span class="tn">16</span>FAQ (10 питань)</a>
+    <a href="#glossary"><span class="tn">17</span>Словник (30+ термінів)</a>
+  </div>
+</div>
+
+<!-- 01 -->
+<section class="section" id="intro">
+<h2 class="st">01 · Ринок 2026: що змінилось</h2>
+<p class="ss">Коротко про стан ринку — перш ніж занурюватись у деталі</p>
+<p>Варшавський ринок оренди 2026 року суттєво відрізняється від хаосу 2022–2023 рр. Сьогодні ринок структурований і передбачуваний — але конкурентний. Вакантність хороших квартир поблизу метро тримається на рівні 2–4%, час знаття — 15–20 днів.</p>
+<p>Середня ціна оренди по Варшаві — <strong>85 PLN/м²/місяць</strong>. У Śródmieście вона досягає 120 PLN/м², у зовнішніх районах опускається до 60–70 PLN. За останні 5 років ринок зріс на ~47%.</p>
+<div class="box blue">
+  <p><strong>Ключові цифри 2026 (Investropa, NBP, CBRE Poland):</strong></p>
+  <p>— Студія по Варшаві: від 1 700 до 5 200 PLN<br>
+  — 1-кімнатна: від 2 200 до 6 500 PLN<br>
+  — 2-кімнатна: від 2 800 до 9 500+ PLN<br>
+  — Vacancy rate (преміум): 2–4%; старий фонд — 8–12%<br>
+  — Зростання цін YoY: +4–6%</p>
+</div>
+<p><strong>Нюанс Волі 2026.</strong> Масштабний приплив нових ЖК у 2025–2026 рр. збільшив пропозицію і дав орендарям більше простору для торгу саме там. Натомість Żoliborz і Mokotów залишаються дефіцитними — хороша квартира йде за 7–10 днів.</p>
+<p><strong>Тренд: інституційна оренда (PRS).</strong> Великі девелопери (Heimstaden, Resi4Rent, Catella) наростили портфелі. У них: стандартизовані договори, онлайн-підписання, англомовна підтримка — ідеально для іноземців без польської мережі контактів.</p>
+</section>
+
+<!-- 02 -->
+<section class="section" id="strategy">
+<h2 class="st">02 · Стратегія пошуку</h2>
+<p class="ss">Перша помилка — відкрити Otodom і дзвонити всім підряд</p>
+<p>На кожну якісну квартиру претендує 5–15 кандидатів. Власник обирає орендаря як роботодавець обирає кандидата. Ваше завдання — прийти підготованим.</p>
+<h3>П'ять елементів портфоліо орендаря</h3>
+<div class="steps">
+  <div class="step"><div class="snum">1</div><div class="sbody"><h4>Підтвердження доходів</h4><p>Umowa o pracę або виписка B2B за 3–6 місяців. Правило: дохід ≥ 3× орендна ставка. Неофіційна, але реальна вимога більшості власників.</p></div></div>
+  <div class="step"><div class="snum">2</div><div class="sbody"><h4>Рекомендація від попереднього власника</h4><p>Якщо вже орендували в Польщі — один контакт відкриває двері. «Платив вчасно, залишив ідеально» — і власник обирає вас.</p></div></div>
+  <div class="step"><div class="snum">3</div><div class="sbody"><h4>Готовий пакет документів</h4><p>Паспорт, PESEL (якщо є), підтвердження зайнятості — все в PDF, надіслане ще до перегляду.</p></div></div>
+  <div class="step"><div class="snum">4</div><div class="sbody"><h4>Швидкість прийняття рішення</h4><p>Готовність підписати договір протягом 24 годин. «Подумаю до п'ятниці» = квартира підписана в середу з кимось іншим.</p></div></div>
+  <div class="step"><div class="snum">5</div><div class="sbody"><h4>Завдаток (Zadatek)</h4><p>Пропозиція залишити 500–1 000 PLN одразу після перегляду — потужний сигнал. Zadatek карає обидва боки при відмові; zaliczka — просто повертається.</p></div></div>
+</div>
+<div class="box amber">
+  <p><strong>Де шукати:</strong> Otodom.pl (основний), OLX.pl, Morizon.pl, Gratka.pl. Facebook Marketplace — ризиковано, але є пропозиції без комісії. Без польської та PESEL — через STAYX: переговори, переклад і юридичний супровід включені.</p>
+</div>
+</section>
+
+<!-- 03 -->
+<section class="section" id="districts">
+<h2 class="st">03 · Аналіз усіх 18 районів</h2>
+<p class="ss">Кожен район — окремий світ із своєю логікою цін, транспортом і характером</p>
+<div class="filter-bar">
+  <span class="filter-label">Фільтр:</span>
+  <button class="fbtn active" data-f="all">Всі 18</button>
+  <button class="fbtn" data-f="premium">Преміум</button>
+  <button class="fbtn" data-f="business">Бізнес</button>
+  <button class="fbtn" data-f="family">Сімейні</button>
+  <button class="fbtn" data-f="budget">Бюджетні</button>
+  <button class="fbtn" data-f="metro">Є метро</button>
+</div>
+<div class="dgrid" id="dg">
+  <div class="dc" data-t="premium" data-m="1"><div class="dh"><div class="dn2">Śródmieście<small>Центр</small></div><span class="badge bp">Преміум</span></div><div class="ddesc">Серце Варшави: хмарочоси, Старе Місто, Powiśle. Ділиться на Північне (ділове) і Південне (богемне).</div><div class="dprice">6 500–9 500+ PLN / 2-кімн.</div><div class="dtags"><span class="tag">М1+М2</span><span class="tag">Трамваї</span><span class="tag">Пішки скрізь</span></div><div class="dpc"><div class="pro">Все поруч</div><div class="con">Найдорожче</div><div class="pro">Престиж</div><div class="con">Шум, пробки</div></div></div>
+
+  <div class="dc" data-t="premium" data-m="1"><div class="dh"><div class="dn2">Żoliborz<small>Жолібож</small></div><span class="badge bp">Елітний</span></div><div class="ddesc">Найменший і найпрестижніший район. Атмосфера інтелігентної Варшави. Хороша квартира зникає за 7–10 днів.</div><div class="dprice">5 500–8 000 PLN / 2-кімн.</div><div class="dtags"><span class="tag">М1</span><span class="tag">Трамваї</span><span class="tag">Кам'яниці</span></div><div class="dpc"><div class="pro">Безпека, тиша</div><div class="con">Мала пропозиція</div><div class="pro">Архітектура</div><div class="con">Дорого за м²</div></div></div>
+
+  <div class="dc" data-t="premium" data-m="0"><div class="dh"><div class="dn2">Wilanów<small>Віланув</small></div><span class="badge bp">Дипломат.</span></div><div class="ddesc">Найпрестижніший адрес за межами центру. Палац Вілянув, дипломатичні резиденції, міжнародні школи. Люкс-ЖК.</div><div class="dprice">6 000–10 000 PLN / 2-кімн.</div><div class="dtags"><span class="tag">Автобуси</span><span class="tag">Авто обов'язково</span><span class="tag">Int'l schools</span></div><div class="dpc"><div class="pro">Люкс-забудова</div><div class="con">Немає метро</div><div class="pro">Школи</div><div class="con">Пробки</div></div></div>
+
+  <div class="dc" data-t="business" data-m="1"><div class="dh"><div class="dn2">Wola<small>Воля</small></div><span class="badge bb">Бізнес-хаб</span></div><div class="ddesc">Rondo Daszyńskiego — польський Canary Wharf. Новий приплив ЖК 2025–2026 дає простір для торгу.</div><div class="dprice">5 500–7 500 PLN / 2-кімн.</div><div class="dtags"><span class="tag">М2</span><span class="tag">Трамваї</span><span class="tag">Google, Samsung</span></div><div class="dpc"><div class="pro">Новий фонд</div><div class="con">Надлишок supply</div><div class="pro">Поруч офіси</div><div class="con">Немає «душі»</div></div></div>
+
+  <div class="dc" data-t="premium" data-m="1"><div class="dh"><div class="dn2">Mokotów<small>Мокотув</small></div><span class="badge bp">Преміум</span></div><div class="ddesc">Górny — вілли й посольства, Dolny — офіси Domaniewska. Найбільша зелена площа серед центральних районів.</div><div class="dprice">4 800–7 000 PLN / 2-кімн.</div><div class="dtags"><span class="tag">М1</span><span class="tag">Автобуси</span><span class="tag">Pole Mokotowskie</span></div><div class="dpc"><div class="pro">Зелень, парки</div><div class="con">Немає М2</div><div class="pro">Школи, сім'ї</div><div class="con">Пробки Puławska</div></div></div>
+
+  <div class="dc" data-t="business" data-m="0"><div class="dh"><div class="dn2">Ochota<small>Охота</small></div><span class="badge bb">Центральний</span></div><div class="ddesc">Тихий зелений район між центром і Мокотовом. Університет Варшавський. Гарний баланс ціни та локації.</div><div class="dprice">4 000–5 800 PLN / 2-кімн.</div><div class="dtags"><span class="tag">Трамваї</span><span class="tag">Автобуси</span><span class="tag">Академічний</span></div><div class="dpc"><div class="pro">Ціна / локація</div><div class="con">Немає метро</div><div class="pro">Тихо, зелено</div><div class="con">Старий фонд</div></div></div>
+
+  <div class="dc" data-t="family" data-m="1"><div class="dh"><div class="dn2">Ursynów<small>Урсинув</small></div><span class="badge bf">Сімейний</span></div><div class="ddesc">«Якісна спальня» Варшави. Школи, басейни, Кабацький ліс. М1 — 5 станцій через весь район.</div><div class="dprice">4 200–5 800 PLN / 2-кімн.</div><div class="dtags"><span class="tag">М1 (5 ст.)</span><span class="tag">Школи</span><span class="tag">Ліс</span></div><div class="dpc"><div class="pro">Школи, парки</div><div class="con">Далеко від центру</div><div class="pro">Доступна ціна</div><div class="con">Блоки 80-х</div></div></div>
+
+  <div class="dc" data-t="family" data-m="1"><div class="dh"><div class="dn2">Bielany<small>Білани</small></div><span class="badge bf">Зелений</span></div><div class="ddesc">Зелений спокійний північ. Лісовий парк, UKSW університет. Нові ЖК поблизу М1.</div><div class="dprice">3 500–5 000 PLN / 2-кімн.</div><div class="dtags"><span class="tag">М1</span><span class="tag">Автобуси</span><span class="tag">Ліс</span></div><div class="dpc"><div class="pro">Повітря, ліс</div><div class="con">Далеко від центру</div><div class="pro">Доступно</div><div class="con">Переважно блоки</div></div></div>
+
+  <div class="dc" data-t="family" data-m="0"><div class="dh"><div class="dn2">Bemowo<small>Бемово</small></div><span class="badge bf">Доступний</span></div><div class="ddesc">Активно забудований захід. Нові ЖК і гарні школи. Доступно для молодих сімей без метро.</div><div class="dprice">3 800–5 200 PLN / 2-кімн.</div><div class="dtags"><span class="tag">Трамваї</span><span class="tag">Автобуси</span><span class="tag">Нові ЖК</span></div><div class="dpc"><div class="pro">Новий фонд</div><div class="con">Немає метро</div><div class="pro">Ціна</div><div class="con">Мало культурного</div></div></div>
+
+  <div class="dc" data-t="business" data-m="1"><div class="dh"><div class="dn2">Praga-Północ<small>Прага Північ</small></div><span class="badge bv">Богема</span></div><div class="ddesc">Хіпстерський район джентрифікації. Лофти, галереї, незалежні кав'ярні. М2 — головна транспортна перевага.</div><div class="dprice">3 500–5 500 PLN / 2-кімн.</div><div class="dtags"><span class="tag">М2</span><span class="tag">Трамваї</span><span class="tag">Лофти</span></div><div class="dpc"><div class="pro">Атмосфера</div><div class="con">Нерівний район</div><div class="pro">М2 дешевше</div><div class="con">Пліснява у кам'яницях</div></div></div>
+
+  <div class="dc" data-t="family" data-m="1"><div class="dh"><div class="dn2">Praga-Południe<small>Прага Південь</small></div><span class="badge bf">Правий берег</span></div><div class="ddesc">Різноманітний район. Saska Kępa — острівець елегантності 30-х рр. Добре ціна/якість для сімей.</div><div class="dprice">3 500–5 000 PLN / 2-кімн.</div><div class="dtags"><span class="tag">М2 (частково)</span><span class="tag">Трамваї</span><span class="tag">Saska Kępa</span></div><div class="dpc"><div class="pro">Saska Kępa</div><div class="con">Через річку</div><div class="pro">Простора</div><div class="con">Нерівний фонд</div></div></div>
+
+  <div class="dc" data-t="family" data-m="0"><div class="dh"><div class="dn2">Włochy<small>Влохи</small></div><span class="badge bf">Практичний</span></div><div class="ddesc">Поруч аеропорт Шопена. Нові ЖК. Warszawa Zachodnia — поїзди по всій Польщі. Ідеально для тих, хто часто літає.</div><div class="dprice">3 500–5 000 PLN / 2-кімн.</div><div class="dtags"><span class="tag">SKM/KM</span><span class="tag">3 хв до аеропорту</span></div><div class="dpc"><div class="pro">Аеропорт поруч</div><div class="con">Літаки зверху</div><div class="pro">Нові ЖК</div><div class="con">Немає метро</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="1"><div class="dh"><div class="dn2">Targówek<small>Таргувек</small></div><span class="badge bu">Бюджетний</span></div><div class="ddesc">Робітничий район з потенціалом. Переважно блоки. М2 — головна точка зростання вартості найближчими роками.</div><div class="dprice">3 200–4 500 PLN / 2-кімн.</div><div class="dtags"><span class="tag">М2 (частково)</span><span class="tag">Трамваї</span></div><div class="dpc"><div class="pro">Дешевше з метро</div><div class="con">Старий фонд</div><div class="pro">Потенціал</div><div class="con">Менш безпечно</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Ursus<small>Урсус</small></div><span class="badge bu">Доступний</span></div><div class="ddesc">Колишнє промислове місто. Нові мікрорайони. Планується М2 — ціни зростатимуть. Зараз найкраще ціна/якість серед бюджетних.</div><div class="dprice">3 200–4 500 PLN / 2-кімн.</div><div class="dtags"><span class="tag">KM/SKM</span><span class="tag">М2 незабаром</span></div><div class="dpc"><div class="pro">Нові ЖК</div><div class="con">Поки немає метро</div><div class="pro">Ціна/якість</div><div class="con">Без авто незручно</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Białołęka<small>Бялоленка</small></div><span class="badge bu">Розростається</span></div><div class="ddesc">Наймасштабніший новобуд Варшави. Дуже далеко від центру. Для молодих сімей з авто, що хочуть нове і дешеве.</div><div class="dprice">3 000–4 200 PLN / 2-кімн.</div><div class="dtags"><span class="tag">Автобуси</span><span class="tag">Авто рекомендовано</span></div><div class="dpc"><div class="pro">Дешево і нове</div><div class="con">Далеко від всього</div><div class="pro">Зелено</div><div class="con">Без авто — погано</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Wawer<small>Вавер</small></div><span class="badge bu">Лісовий</span></div><div class="ddesc">Тихий, зелений, майже «дачний». Сосновий бір, річка. Більше будинків, ніж квартир. Поїзд до центру — 25–35 хв.</div><div class="dprice">3 000–4 200 PLN / 2-кімн.</div><div class="dtags"><span class="tag">KM/SKM</span><span class="tag">Природа</span></div><div class="dpc"><div class="pro">Тиша, ліс</div><div class="con">Далеко</div><div class="pro">Дешево</div><div class="con">Мало квартир</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Rembertów<small>Рембертув</small></div><span class="badge bu">Найдешевший</span></div><div class="ddesc">Один із найменших і найтихіших районів. Переважно приватна забудова. Мінімальний орендний платіж у Варшаві.</div><div class="dprice">2 800–3 800 PLN / 2-кімн.</div><div class="dtags"><span class="tag">КМ</span><span class="tag">Авто обов'язково</span></div><div class="dpc"><div class="pro">Найнижча оренда</div><div class="con">Найменший вибір</div><div class="pro">Тихо</div><div class="con">Дуже далеко</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Wesoła<small>Весола</small></div><span class="badge bu">Найменший</span></div><div class="ddesc">Найменший район Варшави з сільським характером. Переважно будинки. Квартир в оренду практично немає.</div><div class="dprice">2 800–3 500 PLN / 2-кімн.</div><div class="dtags"><span class="tag">КМ</span><span class="tag">Авто обов'язково</span></div><div class="dpc"><div class="pro">Природа, тиша</div><div class="con">Майже немає квартир</div><div class="pro">Найнижча ціна</div><div class="con">Далеко від всього</div></div></div>
+</div>
+</section>
+
+<!-- 04 -->
+<section class="section" id="types">
+<h2 class="st">04 · Типи будинків</h2>
+<p class="ss">Тип будинку напряму впливає на рахунок за опалення і якість звукоізоляції</p>
+<div class="type-grid">
+  <div class="tc"><div class="tera">До 1945 р.</div><div class="tname">Kamienica</div><div class="tpc"><div class="p">✓ Стелі 3+ м, товсті стіни</div><div class="p">✓ Атмосфера, центр</div><div class="c">✗ Можлива вологість</div><div class="c">✗ Старі труби й електрика</div></div></div>
+  <div class="tc"><div class="tera">1950–1959 рр.</div><div class="tname">Socrealizm</div><div class="tpc"><div class="p">✓ Міцна конструкція</div><div class="p">✓ Великі квартири</div><div class="c">✗ Не завжди ліфт</div><div class="c">✗ Висока ціна czynsz</div></div></div>
+  <div class="tc"><div class="tera">1960–1990 рр.</div><div class="tname">Blok</div><div class="tpc"><div class="p">✓ Дешевше за ринком</div><div class="p">✓ Централізоване тепло</div><div class="c">✗ Погана звукоізоляція</div><div class="c">✗ Мала кухня</div></div></div>
+  <div class="tc"><div class="tera">1990–2010 рр.</div><div class="tname">Nowe budownictwo</div><div class="tpc"><div class="p">✓ Ліфт, нормальний czynsz</div><div class="p">✓ Добра ізоляція</div><div class="c">✗ Різна якість</div><div class="c">✗ Без підзем. паркінгу</div></div></div>
+  <div class="tc"><div class="tera">Після 2010 р.</div><div class="tname">Apartamentowiec</div><div class="tpc"><div class="p">✓ Паркінг, охорона</div><div class="p">✓ 1 Гбіт/с, вентиляція</div><div class="c">✗ Найвищий czynsz</div><div class="c">✗ Компактні плани</div></div></div>
+</div>
+<div class="box amber" style="margin-top:1.25rem">
+  <p><strong>Świadectwo charakterystyki energetycznej (SKE)</strong> обов'язковий з 2023 р. Клас A/B = низькі рахунки. Клас E/F = +400–700 PLN взимку. Вимагайте його завжди.</p>
+</div>
+</section>
+
+<!-- 05 -->
+<section class="section" id="checklist">
+<h2 class="st">05 · Чек-лист технічного огляду</h2>
+<p class="ss">Коли заходите у квартиру — емоції ваш ворог. Відкрийте список</p>
+<ul class="cl">
+  <li><div class="ci">1</div><div><strong>Вікна і протяги.</strong> Піднесіть руку до стику рами і стіни. Протяг взимку = +400–700 PLN до рахунку. Питайте рік встановлення.</div></li>
+  <li><div class="ci">2</div><div><strong>Пліснява.</strong> Кути за шафами, під підвіконнями, навколо ванної. Чорні плями = грибок = проблема на роки. Не вірте «ми пофарбуємо».</div></li>
+  <li><div class="ci">3</div><div><strong>Тиск води.</strong> Увімкніть душ і кран одночасно. Слабкий тиск у старих будинках — питання до Wspólnota, вирішується роками.</div></li>
+  <li><div class="ci">4</div><div><strong>Електрика.</strong> Мінімум 25A, краще 40A. 10–15A — кондиціонер і пральна машина можуть вибити пробки одночасно.</div></li>
+  <li><div class="ci">5</div><div><strong>Інтернет.</strong> ADSL (мідь) = до 100 Мбіт/с. Оптоволокно = 1 Гбіт/с. Для IT або home-office — питайте оператора і тип кабелю.</div></li>
+  <li><div class="ci">6</div><div><strong>Опалення.</strong> Miejskie ciepło = стабільна ціна. Газ = залежить від споживання. Електричне = найдорожче — бережіться.</div></li>
+  <li><div class="ci">7</div><div><strong>Поговоріть із сусідом.</strong> 5 хвилин у під'їзді = більше інформації, ніж 50 фото в оголошенні. Шумні сусіди? Ремонти? Проблеми з управителем?</div></li>
+  <li><div class="ci">8</div><div><strong>Паркінг і комора.</strong> Де паркуватись? Чи є підвал / komórka? Щоденний комфорт залежить від цих дрібниць.</div></li>
+  <li><div class="ci">9</div><div><strong>Стан сантехніки.</strong> Перевірте під умивальниками і ванною — сліди підтікань. Власник зобов'язаний усунути до заселення.</div></li>
+  <li><div class="ci">10</div><div><strong>Енергосертифікат (SKE).</strong> Вимагайте. Власник зобов'язаний надати. Немає — або незнання закону, або клас E/F, якого соромляться.</div></li>
+</ul>
+</section>
+
+<!-- 06 -->
+<section class="section" id="prices">
+<h2 class="st">06 · Повна таблиця цін 2026</h2>
+<p class="ss">PLN/місяць без czynsz та media. Джерела: Investropa, NBP Q1 2026, Otodom</p>
+<div class="tw">
+  <table>
+    <thead><tr><th>Район</th><th>Сегмент</th><th>Студія</th><th>1-кімн.</th><th>2-кімн.</th><th>3-кімн.</th></tr></thead>
+    <tbody>
+      <tr><td class="tdn">Śródmieście</td><td><span class="badge bp">Преміум</span></td><td class="tp">3 800–5 200</td><td class="tp">4 500–6 500</td><td class="tp">6 500–9 500+</td><td class="tp">9 000–15 000+</td></tr>
+      <tr><td class="tdn">Żoliborz</td><td><span class="badge bp">Елітний</span></td><td class="tp">3 500–5 000</td><td class="tp">4 200–6 000</td><td class="tp">5 500–8 000</td><td class="tp">8 000–12 000</td></tr>
+      <tr><td class="tdn">Wilanów</td><td><span class="badge bp">Преміум</span></td><td class="tp">3 800–5 500</td><td class="tp">4 500–6 500</td><td class="tp">6 000–10 000</td><td class="tp">9 000–14 000</td></tr>
+      <tr><td class="tdn">Wola</td><td><span class="badge bb">Бізнес</span></td><td class="tp">3 400–4 800</td><td class="tp">4 000–6 000</td><td class="tp">5 500–7 500</td><td class="tp">7 500–11 000</td></tr>
+      <tr><td class="tdn">Mokotów</td><td><span class="badge bp">Преміум</span></td><td class="tp">3 200–4 800</td><td class="tp">3 800–5 800</td><td class="tp">4 800–7 000</td><td class="tp">7 000–11 000</td></tr>
+      <tr><td class="tdn">Ochota</td><td><span class="badge bb">Центр.</span></td><td class="tp">2 800–4 000</td><td class="tp">3 500–5 200</td><td class="tp">4 000–5 800</td><td class="tp">5 500–8 000</td></tr>
+      <tr><td class="tdn">Praga-Północ</td><td><span class="badge bv">Богема</span></td><td class="tp">2 600–3 800</td><td class="tp">3 200–5 000</td><td class="tp">3 500–5 500</td><td class="tp">5 000–7 500</td></tr>
+      <tr><td class="tdn">Ursynów</td><td><span class="badge bf">Сімейний</span></td><td class="tp">2 800–3 800</td><td class="tp">3 400–5 000</td><td class="tp">4 200–5 800</td><td class="tp">5 500–8 000</td></tr>
+      <tr><td class="tdn">Bielany</td><td><span class="badge bf">Сімейний</span></td><td class="tp">2 500–3 500</td><td class="tp">3 000–4 500</td><td class="tp">3 500–5 000</td><td class="tp">4 800–7 000</td></tr>
+      <tr><td class="tdn">Bemowo</td><td><span class="badge bf">Сімейний</span></td><td class="tp">2 500–3 500</td><td class="tp">3 000–4 500</td><td class="tp">3 800–5 200</td><td class="tp">5 000–7 000</td></tr>
+      <tr><td class="tdn">Praga-Południe</td><td><span class="badge bf">Сімейний</span></td><td class="tp">2 400–3 500</td><td class="tp">3 000–4 500</td><td class="tp">3 500–5 000</td><td class="tp">4 800–7 000</td></tr>
+      <tr><td class="tdn">Włochy</td><td><span class="badge bf">Практ.</span></td><td class="tp">2 400–3 400</td><td class="tp">3 000–4 200</td><td class="tp">3 500–5 000</td><td class="tp">4 500–6 500</td></tr>
+      <tr><td class="tdn">Targówek</td><td><span class="badge bu">Бюджет</span></td><td class="tp">2 200–3 200</td><td class="tp">2 800–4 000</td><td class="tp">3 200–4 500</td><td class="tp">4 200–6 000</td></tr>
+      <tr><td class="tdn">Ursus</td><td><span class="badge bu">Бюджет</span></td><td class="tp">2 200–3 200</td><td class="tp">2 800–4 000</td><td class="tp">3 200–4 500</td><td class="tp">4 200–6 000</td></tr>
+      <tr><td class="tdn">Białołęka</td><td><span class="badge bu">Бюджет</span></td><td class="tp">2 000–3 000</td><td class="tp">2 600–3 800</td><td class="tp">3 000–4 200</td><td class="tp">4 000–5 500</td></tr>
+      <tr><td class="tdn">Wawer</td><td><span class="badge bu">Бюджет</span></td><td class="tp">1 900–2 800</td><td class="tp">2 500–3 600</td><td class="tp">3 000–4 200</td><td class="tp">4 000–5 500</td></tr>
+      <tr><td class="tdn">Rembertów</td><td><span class="badge bu">Бюджет</span></td><td class="tp">1 800–2 600</td><td class="tp">2 300–3 400</td><td class="tp">2 800–3 800</td><td class="tp">3 500–5 000</td></tr>
+      <tr><td class="tdn">Wesoła</td><td><span class="badge bu">Бюджет</span></td><td class="tp">1 700–2 500</td><td class="tp">2 200–3 200</td><td class="tp">2 800–3 500</td><td class="tp">3 200–4 500</td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="box green">
+  <p><strong>Формула:</strong> Площа (м²) × 85 PLN = середній ринок Варшави. Śródmieście: ×120 PLN. Ursynów / Bielany: ×65 PLN. Wilanów люкс: ×130–150 PLN.</p>
+</div>
+</section>
+
+<!-- 07 -->
+<section class="section" id="finance">
+<h2 class="st">07 · Фінанси: Czynsz та Media</h2>
+<p class="ss">Оголошення каже «4 500 PLN». Реальна щомісячна витрата — інша</p>
+<p>Більшість оголошень показує лише <em>czynsz najmu</em>. До неї завжди додаються <strong>czynsz administracyjny</strong> (700–1 200 PLN) і <strong>media</strong> (електрика за лічильником).</p>
+<div class="calc-box">
+  <h3>📊 Реальний приклад: 2-кімнана у Mokotów, 55 м², нова забудова</h3>
+  <div class="cr"><span class="lb">Оренда (czynsz najmu)</span><span class="vl">5 200 PLN</span></div>
+  <div class="cr"><span class="lb">Adm. czynsz (вода, тепло, ліфт, сміття)</span><span class="vl">950 PLN</span></div>
+  <div class="cr"><span class="lb">Електрика (за лічильником)</span><span class="vl">180 PLN</span></div>
+  <div class="cr"><span class="lb">Інтернет 1 Гбіт/с</span><span class="vl">70 PLN</span></div>
+  <div class="ctot"><span class="lb">Разом щомісяця</span><span class="vl">6 400 PLN</span></div>
+  <div class="cnote">Вхідний квиток: 1-й місяць (6 400) + Kaucja 2 місяці (12 800) + Комісія агента (6 400, якщо є) = до 25 600 PLN одразу. Без комісії: ~19 200 PLN.</div>
+</div>
+<div class="box orange">
+  <p><strong>Ніколи не орендуйте без знання czynsz administracyjny.</strong> У старих будинках він сягає 1 500–2 000 PLN. Просіть виписку рахунків за весь минулий рік — літні і зимові місяці.</p>
+</div>
+</section>
+
+<!-- 08 -->
+<section class="section" id="calculator">
+<h2 class="st">08 · Калькулятор витрат</h2>
+<p class="ss">Підрахуйте свій реальний місячний платіж та вхідний квиток</p>
+<div class="calc-inter">
+  <h3>🧮 Ваш особистий розрахунок</h3>
+  <div class="cri"><label>Оренда (czynsz najmu), PLN</label><input type="number" id="c-rent" value="5000" step="100" min="1000" max="20000"></div>
+  <div class="cri"><label>Czynsz administracyjny, PLN</label><input type="number" id="c-admin" value="900" step="50" min="300" max="2000"></div>
+  <div class="cri"><label>Електрика, PLN</label><input type="number" id="c-elec" value="180" step="20" min="0" max="500"></div>
+  <div class="cri"><label>Інтернет, PLN</label><input type="number" id="c-inet" value="70" step="10" min="0" max="200"></div>
+  <div class="cri"><label>Комісія агента</label>
+    <select id="c-agent">
+      <option value="0">Без комісії</option>
+      <option value="1" selected>1 місяць</option>
+      <option value="0.5">0,5 місяця</option>
+    </select>
+  </div>
+  <div class="cri"><label>Депозит (кількість місяців)</label>
+    <select id="c-dep">
+      <option value="1">1 місяць</option>
+      <option value="2" selected>2 місяці</option>
+      <option value="3">3 місяці</option>
+    </select>
+  </div>
+  <div class="cres">
+    <div><div class="cres-n" id="cr-m">—</div><div class="cres-l">PLN / місяць</div></div>
+    <div><div class="cres-n" id="cr-e">—</div><div class="cres-l">PLN вхідний квиток</div></div>
+    <div><div class="cres-n" id="cr-y">—</div><div class="cres-l">PLN перший рік</div></div>
+  </div>
+</div>
+</section>
+
+<!-- 09 -->
+<section class="section" id="legal">
+<h2 class="st">09 · Юридичний майстер-клас</h2>
+<p class="ss">Три типи договорів, ваші права та обов'язки — без юридичного жаргону</p>
+<h3>Три типи договорів оренди в Польщі</h3>
+<div class="tw">
+  <table>
+    <thead><tr><th>Тип</th><th>Нотаріус</th><th>Захист власника</th><th>Захист орендаря</th><th>Поширеність</th></tr></thead>
+    <tbody>
+      <tr><td class="tdn">Zwykła umowa najmu</td><td>Ні</td><td>Низький</td><td>Дуже високий</td><td>Рідкість у 2026</td></tr>
+      <tr><td class="tdn">Najem Okazjonalny</td><td>Так (дод. 1)</td><td>Високий</td><td>Середній</td><td>~90% ринку</td></tr>
+      <tr><td class="tdn">Najem Instytucjonalny</td><td>Так</td><td>Дуже високий</td><td>Низький</td><td>PRS, агенції</td></tr>
+    </tbody>
+  </table>
+</div>
+<h3>Najem Okazjonalny: покроково для іноземця</h3>
+<div class="steps">
+  <div class="step"><div class="snum">1</div><div class="sbody"><h4>Основний договір</h4><p>Сам текст умови найму не вимагає нотаріуса. Прописує умови, терміни, розмір kaucji, права і обов'язки сторін.</p></div></div>
+  <div class="step"><div class="snum">2</div><div class="sbody"><h4>Додаток №1: нотаріальний акт про добровільне виселення</h4><p>Ви підписуєте, що залишите квартиру при розірванні. Вартість 2026: <strong>480–750 PLN</strong> (1/10 мінімалки 4 806 PLN + ПДВ + wypisy). Без польської — потрібен присяжний перекладач: ще +300–600 PLN.</p></div></div>
+  <div class="step"><div class="snum">3</div><div class="sbody"><h4>Додаток №2: адреса lokalu zastępczego</h4><p>Адреса в Польщі, куди ви «переїдете» при проблемах. Не зобов'язана бути вашою — підходить адреса знайомого або юридична адреса агенції.</p></div></div>
+  <div class="step"><div class="snum">4</div><div class="sbody"><h4>Додаток №3: згода власника lokalu zastępczego</h4><p>Нотаріально завірена згода. <strong>Головна складність для іноземців</strong> — де взяти цю адресу без польської мережі контактів. STAYX надає юридичну адресу своїм клієнтам.</p></div></div>
+  <div class="step"><div class="snum">5</div><div class="sbody"><h4>Реєстрація у Податковій</h4><p>Власник зобов'язаний повідомити Urząd Skarbowy протягом 14 днів. Його обов'язок — але перевірте, що він це зробив.</p></div></div>
+</div>
+<h3>Ключові права орендаря</h3>
+<ul class="cl">
+  <li><div class="ci">✓</div><div><strong>Право на приватність.</strong> Власник не може заходити без попередження мінімум за 24 год. Пропишіть у договорі.</div></li>
+  <li><div class="ci">✓</div><div><strong>Право на ремонт.</strong> Поломки не з вашої вини — відповідальність власника. Фіксуйте кожне звернення письмово (SMS, email).</div></li>
+  <li><div class="ci">✓</div><div><strong>Захист від підвищення ціни.</strong> Протягом терміну договору ціна не зростає без вашої згоди (якщо немає пункту про індексацію).</div></li>
+  <li><div class="ci">✓</div><div><strong>Повернення kaucji в термін.</strong> Максимум 30 днів. Затримка — підстава для позову.</div></li>
+  <li><div class="ci">✓</div><div><strong>Право на мелдунек.</strong> Будь-який власник зобов'язаний допустити реєстрацію місця проживання. Відмова — порушення закону.</div></li>
+</ul>
+</section>
+
+<!-- 10 -->
+<section class="section" id="redflags">
+<h2 class="st">10 · 12 Червоних Прапорців</h2>
+<p class="ss">Ознаки, при яких краще розвернутись і піти</p>
+<div class="flags-grid">
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">«Kaucja не потрібна»</div><div class="fdesc">Власник, що не бере депозит — або знає про дефекти квартири, або хоче здати «швидко і без запитань».</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Немає фото лічильників</div><div class="fdesc">Приховані показники = ви платите борги попереднього орендаря. Вимагайте фото всіх лічильників до підписання.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">«Підпишемо без договору, готівкою»</div><div class="fdesc">Без договору ви ніхто юридично. Власник може виселити вас будь-якої миті.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Відмова надати SKE</div><div class="fdesc">Юридичний обов'язок з 2023 р. Відмова = або незнання закону, або клас E/F і не хоче показувати.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Ціна набагато нижча ринку</div><div class="fdesc">За квартиру «2 000 PLN» в Śródmieście або не існує, або є серйозний прихований дефект. Завжди перевіряйте.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Власник «за кордоном»</div><div class="fdesc">Класична схема шахрайства — переводите «резервацію» і зникають. Ніколи не надсилайте гроші до особистого огляду і підписання.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Протокол без опису дефектів</div><div class="fdesc">«Квартира в ідеальному стані» при наявній плямі = ви платите при виїзді. Фіксуйте кожен дефект письмово і на фото.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">«Tylko Polacy»</div><div class="fdesc">В Польщі це дискримінація за ознакою походження. Такий власник буде важким загалом. Шукайте далі.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Заборона мелдунку</div><div class="fdesc">Без мелдунку немає PESEL, без PESEL — немає нормального банку і медицини. Умова «bez meldunku» порушує ваші права.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Незрозуміло, хто власник</div><div class="fdesc">Перевіряйте через Księga Wieczysta (ekw.ms.gov.pl). Власник в документах і підписант договору — має бути одна людина.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Тиск «підписати зараз»</div><div class="fdesc">«Є ще троє охочих, вирішуйте через годину» — маніпуляція. Не підписуйте без перечитання договору.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Суборенда без дозволу</div><div class="fdesc">Якщо знімаєте у орендаря, а не власника — перевірте право на суборенду. Без нього він може бути виселений разом з вами.</div></div></div>
+</div>
+</section>
+
+<!-- 11 -->
+<section class="section" id="segments">
+<h2 class="st">11 · Специфіка: Сім'ї, IT, Студенти</h2>
+<p class="ss">Різні профілі — різні пріоритети</p>
+<div class="seg-grid">
+  <div class="sc"><div class="si">👨👩👧</div><div class="stitle">Сім'ї з дітьми</div><ul><li>Wilanów / Ursynów — концентрація шкіл</li><li>Перевіряйте rejonizacja</li><li>Міжнародні школи: British, American, French</li><li>Мінімум 3-кімнатна, двір з майданчиком</li><li>Підземний паркінг: коляска + авто</li></ul></div>
+  <div class="sc"><div class="si">💻</div><div class="stitle">IT-спеціалісти</div><ul><li>Wola або Mokotów — поруч офіси</li><li>Волокно обов'язково для відеоколів</li><li>Home office → 2 кімнати або коворкінг</li><li>WeWork Rondo ONZ, Brain Embassy Wola</li><li>Гнучкий договір 6+6 для remote workers</li></ul></div>
+  <div class="sc"><div class="si">🎓</div><div class="stitle">Студенти</div><ul><li>Ochota, Bielany — університети поруч</li><li>Спільне житло: від 1 200 PLN/кімн.</li><li>Ursynów — SGGW + М1 (5 станцій)</li><li>Targówek / Praga — М2 + нижча ціна</li><li>Перевіряйте: Wi-Fi у договорі чи окремо</li></ul></div>
+  <div class="sc"><div class="si">🌍</div><div class="stitle">Нові релоканти</div><ul><li>Перший контракт: 6 місяців — менший ризик</li><li>Без PESEL: паспорт + підтвердження доходів</li><li>«Tylko Polacy» — дискримінація</li><li>Рекомендація від попереднього власника</li><li>STAYX: адреса lokal zastępczy + юридичний супровід</li></ul></div>
+</div>
+</section>
+
+<!-- 12 -->
+<section class="section" id="admin">
+<h2 class="st">12 · Адміністративні кроки після заселення</h2>
+<p class="ss">Підписали договір — починається «паперовий марафон»</p>
+<div class="steps">
+  <div class="step"><div class="snum">1</div><div class="sbody"><h4>Meldunek</h4><p>Безкоштовно, 15 хвилин в Urząd Dzielnicy з договором і паспортом. Юридично обов'язковий. Запускає лічильник для PESEL і NFZ.</p></div></div>
+  <div class="step"><div class="snum">2</div><div class="sbody"><h4>PESEL</h4><p>Громадяни України з tymczasową ochroną — спрощений порядок. Для решти — через meldunek або gmina. Відкриває банки, NFZ, ZUS, держпослуги.</p></div></div>
+  <div class="step"><div class="snum">3</div><div class="sbody"><h4>Банківський рахунок</h4><p>З PESEL + паспортом: PKO BP, ING, Santander, mBank. Онлайн без PESEL: Revolut, Wise. Більшість власників вимагає безготівковий переказ.</p></div></div>
+  <div class="step"><div class="snum">4</div><div class="sbody"><h4>OC Najemcy</h4><p>50–200 PLN/рік (PZU, ERGO Hestia, Warta). Покриває: затопили сусіда, поламали цінне, пожежа. Одна подія окупає 10 років полісів.</p></div></div>
+  <div class="step"><div class="snum">5</div><div class="sbody"><h4>NFZ (медичне страхування)</h4><p>Від роботодавця або через JDG. Для громадян України з ochroną czasową — безкоштовне. Без NFZ — медицина платна і дорого.</p></div></div>
+</div>
+</section>
+
+<!-- 13 -->
+<section class="section" id="culture">
+<h2 class="st">13 · Культура спілкування з власниками</h2>
+<p class="ss">Польський орендодавець — особлива людина. Є коди, які треба знати</p>
+<h3>Перший контакт: написати, щоб відповіли</h3>
+<p>Не пишіть «Чи здається квартира?» Напишіть: <em>«Dzień dobry, jestem zainteresowany wynajmem. Pracuję w IT, dochód 15 000 zł netto. Czy mogę umówić się na oglądanie?»</em> Власник одразу бачить: є робота, є гроші, поважає час.</p>
+<h3>Перегляд: сигнали «хорошого орендаря»</h3>
+<ul class="cl">
+  <li><div class="ci">✓</div><div>Прийшли вчасно або попередили за 10 хвилин.</div></li>
+  <li><div class="ci">✓</div><div>Зняли взуття без нагадування — знак поваги до простору.</div></li>
+  <li><div class="ci">✓</div><div>Задаєте технічні питання (czynsz, інтернет, опалення) — виглядаєте серйозно.</div></li>
+  <li><div class="ci">✓</div><div>Не торгуєтесь агресивно при першому перегляді. Торг — після, окремо.</div></li>
+  <li><div class="ci">✓</div><div>Документи надіслали в месенджері одразу після огляду.</div></li>
+</ul>
+<h3>Торг: коли і як</h3>
+<p>Доцільний при квартирі, що висить 2–3 тижні, або у Wolі (надлишок supply 2026). Аргументи: довгий контракт (1,5–2 роки), передоплата 2–3 місяці, відмова від дрібних вимог. Діапазон: 3–8%.</p>
+<div class="box blue">
+  <p><strong>Мовне питання:</strong> Без польської — поясніть одразу і запропонуйте агента. Переговори через Google Translate = власник обирає іншого кандидата.</p>
+</div>
+</section>
+
+<!-- 14 -->
+<section class="section" id="season">
+<h2 class="st">14 · Сезонність ринку</h2>
+<p class="ss">Коли шукати — так само важливо, як де шукати</p>
+<div class="season-grid">
+  <div class="season-c"><div class="sm2">Вересень</div><span class="sbadge sh">Найгарячіший</span><p style="font-size:13.5px;color:var(--muted)">Студенти, корпоративні переїзди. Добрі квартири — 15–18 днів. Ціна max, торг мінімальний.</p></div>
+  <div class="season-c"><div class="sm2">Жовтень–Листопад</div><span class="sbadge smi">Спад</span><p style="font-size:13.5px;color:var(--muted)">Попит знижується. Квартири 20–25 днів. Можливість знизити ціну на 3–5%.</p></div>
+  <div class="season-c"><div class="sm2">Грудень–Лютий</div><span class="sbadge sc2b">Найкращий для торгу</span><p style="font-size:13.5px;color:var(--muted)">Мінімальний попит. Квартири 30–40 днів. Знижка 5–10% або ремонт за рахунок власника.</p></div>
+  <div class="season-c"><div class="sm2">Березень–Квітень</div><span class="sbadge sg2">Активізація</span><p style="font-size:13.5px;color:var(--muted)">Ще не пік конкуренції, але вже є вибір. Квартиру знайдете за 2–3 тижні.</p></div>
+  <div class="season-c"><div class="sm2">Травень–Червень</div><span class="sbadge sg2">Активний ринок</span><p style="font-size:13.5px;color:var(--muted)">Зростання попиту. Ціни +3–5% від зимових мінімумів. Рахунки низькі — добрий час для перевірки.</p></div>
+  <div class="season-c"><div class="sm2">Липень–Серпень</div><span class="sbadge smi">Помірна активність</span><p style="font-size:13.5px;color:var(--muted)">Частина власників у відпустках. Нові квартири виходять перед вереснем. Ціни ростуть.</p></div>
+</div>
+</section>
+
+<!-- 15 -->
+<section class="section" id="firstweek">
+<h2 class="st">15 · Перший тиждень після заселення</h2>
+<p class="ss">Покрокова дорожня карта на перші 7 днів</p>
+<div class="timeline">
+  <div class="tli"><div class="tldot">1</div><div class="tlday">День 1: Заселення</div><div class="tltitle">Protokół + фото і відео всього</div><div class="tlbody">Не починайте розпаковуватись без підписаного протоколу. Зніміть на відео кожну кімнату, кожну подряпину. Сфотографуйте всі лічильники. Архів — одразу в хмару.</div></div>
+  <div class="tli"><div class="tldot">2</div><div class="tlday">День 2: Технічна перевірка</div><div class="tltitle">Увімкніть усю техніку і перевірте кожну розетку</div><div class="tlbody">Холодильник, пральна машина, посудомийка. Всі крани і душ. Будь-яка поломка в перші 48 год — відповідальність власника. Повідомляйте письмово.</div></div>
+  <div class="tli"><div class="tldot">3</div><div class="tlday">День 3: Meldunek</div><div class="tltitle">Urząd Dzielnicy — реєстрація місця проживання</div><div class="tlbody">Договір оренди + паспорт + власник (або upoważnienie). Безкоштовно, 15–20 хвилин. Деякі urządy — онлайн через ePUAP.</div></div>
+  <div class="tli"><div class="tldot">4</div><div class="tlday">День 4–5: PESEL і банк</div><div class="tltitle">Отримайте PESEL і відкрийте польський рахунок</div><div class="tlbody">PESEL в gmina / Urząd Dzielnicy. З PESEL + паспортом → PKO BP або mBank. Більшість власників повертає kaucja тільки на польський рахунок.</div></div>
+  <div class="tli"><div class="tldot">5</div><div class="tlday">День 5–6: Страховка і NFZ</div><div class="tlditle">OC Najemcy + реєстрація в медичному страхуванні</div><div class="tlbody">Поліс OC купується онлайн за 10 хвилин. NFZ — через роботодавця або ZUS. Без NFZ лікарня — платно.</div></div>
+  <div class="tli"><div class="tldot">6</div><div class="tlday">День 7: Сусіди і комунальні</div><div class="tltitle">Збережіть контакти управителя і аварійних служб</div><div class="tlbody">Запитайте сусіда: вивіз сміття, прибирання підїзду. Збережіть: газ (992), електрика (991), вода (994), швидка (999), поліція (997), загальний (112).</div></div>
+</div>
+</section>
+
+<!-- 16 -->
+<section class="section" id="faq">
+<h2 class="st">16 · FAQ</h2>
+<p class="ss">Найчастіші питання від нових орендарів у Варшаві</p>
+<div id="faq-list">
+  <div class="faq-item">
+    <div class="faq-q">Чи можна орендувати без PESEL? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Так, закордонний паспорт юридично достатній. На практиці деякі власники просять PESEL — це їхня перевага, не вимога закону. Якщо відмовляють тільки через відсутність PESEL — шукайте іншого власника або звертайтесь до STAYX.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Де іноземцю взяти lokal zastępczy? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Не зобов'язаний бути вашим — підходить адреса знайомого поляка, колеги або юридична адреса агенції. STAYX надає юридичну адресу як послугу в рамках супроводу переїзду. Без такої адреси нотаріус не оформить Najem Okazjonalny — потрібно вирішити до підписання.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Хто платить нотаріальний акт? <span class="faq-icon">+</span></div>
+    <div class="faq-a">За законом — сторони домовляються самі. На практиці: у 70% випадків платить орендар, у 20% — ділять порівну, у 10% — власник. Коштує 480–750 PLN. Завжди обговорюйте це до підписання, щоб не було сюрпризу.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Як повернути kaucja при виїзді? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Власник має повернути депозит протягом 30 днів після виїзду. Якщо є відрахування — письмове обґрунтування з чеками. Без документального підтвердження збитків — повне повернення. Якщо затримує без підстав — письмова претензія, потім суд. Мирова угода або онлайн-суд (e-sąd) коштує 30 PLN мита.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Чи можна розірвати договір достроково? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Так, якщо в договорі є відповідний пункт із терміном повідомлення (wypowiedzenie). Стандарт — 1–3 місяці. Без такого пункту в Najem Okazjonalny — тільки за взаємною згодою. Завжди перевіряйте наявність цього пункту до підписання.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Що робити, якщо власник не робить ремонт? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Фіксуйте всі звернення письмово (SMS, email з підтвердженням прочитання). Після 2–3 ігнорувань — офіційна претензія рекомендованим листом. Якщо проблема загрожує здоров'ю (протікає стеля, несправний газ) — закон дозволяє самостійно усунути з відшкодуванням від власника. Збирайте чеки.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Чи можна жити без мелдунку? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Формально — юридично зобов'язані зареєструватися. Практично — санкцій за відсутність мелдунку майже немає. Але без нього ускладнюється отримання PESEL, доступ до NFZ і деяких банківських послуг. Якщо власник забороняє — це порушення ваших прав.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Яка різниця між Zadatek і Zaliczka? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Zadatek (завдаток) — якщо ви відмовитесь від угоди, гроші не повертаються. Якщо власник відмовиться — повертає вдвічі більше. Zaliczka (аванс) — просто резервація, повертається у разі будь-якої відмови. Власники зазвичай хочуть zadatek — він мотивує обидві сторони виконати угоду.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Як перевірити, що квартира дійсно власника? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Через Księga Wieczysta — електронний реєстр нерухомості за адресою ekw.ms.gov.pl. Безкоштовно. Потрібен номер KW (Власник надає або знаходите через адресу). Переконайтесь, що ПІБ у реєстрі і ПІБ підписанта договору співпадають. Якщо власників кілька — потрібна згода всіх.</div>
+  </div>
+</div>
+</section>
+
+<!-- 17 -->
+<section class="section" id="glossary">
+<h2 class="st">17 · Словник орендаря</h2>
+<p class="ss">30+ термінів, які зустрічаються в оголошеннях і договорах</p>
+<div class="gloss-grid">
+  <div class="gi"><div class="gterm">Kaucja</div><div class="gdef">Депозит. Зазвичай 1–3 місячних оренди. Повертається протягом 30 днів після виїзду за вирахуванням реальних збитків.</div></div>
+  <div class="gi"><div class="gterm">Czynsz najmu</div><div class="gdef">Орендна плата власнику. Та сума, що зазначена в заголовку оголошення. Не включає czynsz administracyjny.</div></div>
+  <div class="gi"><div class="gterm">Czynsz administracyjny</div><div class="gdef">Платіж управителю будинку (спільноті). Покриває: воду, теплопостачання, вивіз сміття, прибирання, ліфт. 700–1 500 PLN.</div></div>
+  <div class="gi"><div class="gterm">Media</div><div class="gdef">Комунальні послуги за лічильниками: електрика, іноді газ. Сплачуються окремо за фактом споживання.</div></div>
+  <div class="gi"><div class="gterm">Zaliczka</div><div class="gdef">Аванс, резервація квартири. Повертається повністю у разі відмови будь-якої сторони.</div></div>
+  <div class="gi"><div class="gterm">Zadatek</div><div class="gdef">Завдаток. Якщо орендар відмовляється — не повертається. Якщо власник — повертає вдвічі більше.</div></div>
+  <div class="gi"><div class="gterm">Najem Okazjonalny</div><div class="gdef">Договір оренди з нотаріальним актом про добровільне виселення. ~90% якісного ринку у 2026.</div></div>
+  <div class="gi"><div class="gterm">Najem Instytucjonalny</div><div class="gdef">Інституційний найм. Для корпоративних орендодавців (PRS). Найвищий захист власника.</div></div>
+  <div class="gi"><div class="gterm">Lokal zastępczy</div><div class="gdef">Альтернативна адреса, на яку орендар «переїде» при розірванні. Обов'язкова для Najem Okazjonalny.</div></div>
+  <div class="gi"><div class="gterm">Meldunek</div><div class="gdef">Реєстрація місця проживання. Безкоштовна, в Urząd Dzielnicy. Дає право на PESEL.</div></div>
+  <div class="gi"><div class="gterm">PESEL</div><div class="gdef">Польський ідентифікаційний номер. Потрібен для банку, NFZ, ZUS, держпослуг.</div></div>
+  <div class="gi"><div class="gterm">Wypowiedzenie</div><div class="gdef">Повідомлення про розірвання договору. Стандартний термін: 1–3 місяці. Прописується в договорі.</div></div>
+  <div class="gi"><div class="gterm">Protokół zdawczo-odbiorczy</div><div class="gdef">Акт прийому-передачі квартири. Фіксує стан приміщення і показники лічильників при заселенні і виїзді.</div></div>
+  <div class="gi"><div class="gterm">Wspólnota Mieszkaniowa</div><div class="gdef">Об'єднання власників квартир у будинку. Встановлює розмір czynsz administracyjny і вирішує питання ремонту.</div></div>
+  <div class="gi"><div class="gterm">SKE / Świadectwo Energetyczne</div><div class="gdef">Енергетичний сертифікат. Класи A–G. Обов'язковий з 2023 р. Клас впливає на рахунки за опалення.</div></div>
+  <div class="gi"><div class="gterm">Kamienica</div><div class="gdef">Кам'яниця — багатоквартирний будинок досоціалістичної доби. Зазвичай до 1945 р. Стелі 3+ м.</div></div>
+  <div class="gi"><div class="gterm">Blok</div><div class="gdef">Панельний або цегляний багатоповерховий будинок радянського типу, 1960–1990 рр.</div></div>
+  <div class="gi"><div class="gterm">Apartamentowiec</div><div class="gdef">Сучасний апартаментний будинок після 2010 р. Підземний паркінг, охорона, консьєрж.</div></div>
+  <div class="gi"><div class="gterm">Komórka lokatorska</div><div class="gdef">Комора / підвальне приміщення. Входить у деякі квартири або орендується окремо за 50–150 PLN.</div></div>
+  <div class="gi"><div class="gterm">OC Najemcy</div><div class="gdef">Страхування цивільної відповідальності орендаря. 50–200 PLN/рік. Покриває збитки сусідам.</div></div>
+  <div class="gi"><div class="gterm">NFZ</div><div class="gdef">Narodowy Fundusz Zdrowia — державне медичне страхування Польщі. Від роботодавця або ZUS.</div></div>
+  <div class="gi"><div class="gterm">Urząd Dzielnicy</div><div class="gdef">Районна адміністрація. Сюди звертаються для мелдунку, PESEL та інших офіційних процедур.</div></div>
+  <div class="gi"><div class="gterm">Urząd Skarbowy</div><div class="gdef">Податкова служба. Власник зобов'язаний зареєструвати договір тут протягом 14 днів після підписання.</div></div>
+  <div class="gi"><div class="gterm">Książka wieczysta (KW)</div><div class="gdef">Єдиний реєстр нерухомості. Перевірте власника за адресою на ekw.ms.gov.pl перед підписанням.</div></div>
+  <div class="gi"><div class="gterm">Rejonizacja</div><div class="gdef">Прив'язка державних шкіл до адрес. Важливо для сімей: ваша адреса визначає, до якої школи йде дитина.</div></div>
+  <div class="gi"><div class="gterm">PRS (Private Rented Sector)</div><div class="gdef">Інституційна оренда від великих девелоперів. Стандартизовані умови, часто англомовний сервіс.</div></div>
+  <div class="gi"><div class="gterm">Miejskie ciepło</div><div class="gdef">Централізоване теплопостачання. Ціна стабільна, рахунки передбачувані — на відміну від газу і тим більше електрики.</div></div>
+  <div class="gi"><div class="gterm">Odstępne</div><div class="gdef">Неофіційна «надплата» за передачу права оренди або за ключі. Рідкість у 2026, але буває на гарячому ринку.</div></div>
+  <div class="gi"><div class="gterm">Ryczałt za media</div><div class="gdef">Фіксована оплата за media замість фактичного споживання. Зручно для орендаря, але не завжди вигідно.</div></div>
+  <div class="gi"><div class="gterm">Aneks do umowy</div><div class="gdef">Додаток до договору. Будь-які зміни умов (ціна, терміни) оформляються анексом, а не усно.</div></div>
+</div>
+</section>
+
+<div class="cta-block" id="contact">
+  <h2>Готові до переїзду?<br>Ми зробимо це за вас.</h2>
+  <p>STAYX — персональний відділ релокації у Варшаві. Від пошуку до ключів у руці. Юридика, переклад, lokal zastępczy — включено.</p>
+  <a href="https://t.me/stayX_pl" class="cta-btn">Почати безпечну оренду →</a>
+  <div class="cta-sub">
+    <span>✓ Юридична адреса для договору</span>
+    <span>✓ Переговори польською</span>
+    <span>✓ Нотаріальний супровід</span>
+    <span>✓ Без прихованих комісій</span>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer>
+  <p>© 2026 STAYX · <a href="/privacy.html">Політика конфіденційності</a> · <a href="/index.html">На головну</a></p>
+  <p style="margin-top:.5rem">Дані: Investropa, NBP Q1 2026, CBRE Poland, Otodom.pl · Оновлено: Травень 2026</p>
+</footer>
+
+<script>
+// ── Progress bar ──────────────────────────────────────────
+window.addEventListener('scroll', () => {
+  const doc = document.documentElement;
+  const scrollTop = doc.scrollTop || document.body.scrollTop;
+  const scrollHeight = doc.scrollHeight - doc.clientHeight;
+  const pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+  document.getElementById('pb').style.width = pct + '%';
+});
+
+// ── Sidebar active link ────────────────────────────────────
+const sections = document.querySelectorAll('.section[id]');
+const sideLinks = document.querySelectorAll('.sidebar a');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      sideLinks.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.sidebar a[href="#${e.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { rootMargin: '-20% 0px -70% 0px' });
+sections.forEach(s => obs.observe(s));
+
+// ── District filter ────────────────────────────────────────
+document.querySelectorAll('.fbtn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    const f = this.dataset.f;
+    document.querySelectorAll('#dg .dc').forEach(card => {
+      const t = card.dataset.t;
+      const m = card.dataset.m;
+      const show = f === 'all' || t === f || (f === 'metro' && m === '1');
+      card.classList.toggle('hidden', !show);
+    });
+  });
+});
+
+// ── Calculator ─────────────────────────────────────────────
+function calcUpdate() {
+  const rent  = parseFloat(document.getElementById('c-rent').value)  || 0;
+  const admin = parseFloat(document.getElementById('c-admin').value) || 0;
+  const elec  = parseFloat(document.getElementById('c-elec').value)  || 0;
+  const inet  = parseFloat(document.getElementById('c-inet').value)  || 0;
+  const agentMult = parseFloat(document.getElementById('c-agent').value);
+  const depMult   = parseFloat(document.getElementById('c-dep').value);
+
+  const monthly = rent + admin + elec + inet;
+  const entry   = monthly + (rent * depMult) + (rent * agentMult);
+  const yearly  = entry + (monthly * 11);
+
+  document.getElementById('cr-m').textContent = Math.round(monthly).toLocaleString('uk-UA');
+  document.getElementById('cr-e').textContent = Math.round(entry).toLocaleString('uk-UA');
+  document.getElementById('cr-y').textContent = Math.round(yearly).toLocaleString('uk-UA');
+}
+['c-rent','c-admin','c-elec','c-inet','c-agent','c-dep'].forEach(id => {
+  document.getElementById(id).addEventListener('input', calcUpdate);
+});
+calcUpdate();
+
+// ── FAQ accordion ──────────────────────────────────────────
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+</script>
 </body>
 </html>
