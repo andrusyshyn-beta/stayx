@@ -67,7 +67,7 @@ html body .nav__link {
   text-decoration: none !important;
   transition: color 0.2s !important;
 }
-html body .nav__link:hover { color: #0a2540 !important; }
+html body .nav__link:hover { color: #0a2540 !important; text-decoration: none !important; }
 html body .nav__lang { display: flex !important; gap: 4px !important; align-items: center !important; }
 html body .nav__lang a {
   color: #8898aa !important;
@@ -80,25 +80,29 @@ html body .nav__lang a {
 }
 html body .nav__lang a.active { color: #0a2540 !important; background: #f6f9fc !important; }
 html body .btn--primary { background: #635bff !important; color: #ffffff !important; border-radius: 9999px !important; padding: 10px 22px !important; font-weight: 700 !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; font-size: 0.85rem !important; }
+html body .nav__social-mobile { display: none !important; }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   html body .nav__left, html body .nav__right { display: none !important; }
-  html body .nav__burger { display: flex !important; flex-direction: column !important; gap: 5px !important; background: none !important; border: none !important; z-index: 10001 !important; }
-  html body .nav__burger span { display: block !important; width: 22px !important; height: 2px !important; background: #0a2540 !important; border-radius: 2px !important; }
+  html body .nav__burger { display: flex !important; flex-direction: column !important; gap: 5px !important; background: none !important; border: none !important; cursor: pointer !important; z-index: 10001 !important; padding: 10px !important; }
+  html body .nav__burger span { display: block !important; width: 22px !important; height: 2px !important; background: #0a2540 !important; border-radius: 2px !important; transition: .3s !important; }
   
   html body .header.open { height: 100vh !important; background: #fff !important; overflow: auto !important; position: fixed !important; }
   html body .header.open .nav { height: 100vh !important; flex-direction: column !important; justify-content: center !important; padding: 40px 24px !important; gap: 40px !important; }
   html body .header.open .nav__left, html body .header.open .nav__right { display: flex !important; flex-direction: column !important; width: 100% !important; position: static !important; }
   
   html body .header.open .nav__left { gap: 10px !important; }
-  html body .header.open .nav__link { font-size: 1.6rem !important; font-weight: 700 !important; color: #0a2540 !important; padding: 10px 0 !important; text-align: center !important; }
+  html body .header.open .nav__link { font-size: 1.6rem !important; font-weight: 700 !important; color: #0a2540 !important; padding: 10px 0 !important; text-align: center !important; text-decoration: none !important; }
   
   html body .header.open .nav__right { gap: 30px !important; align-items: center !important; }
   html body .header.open .nav__lang { background: #f6f9fc !important; padding: 8px !important; border-radius: 12px !important; width: fit-content !important; border: 1px solid #edf2f7 !important; }
   html body .header.open .nav__lang a { padding: 10px 20px !important; font-size: 0.95rem !important; }
   html body .header.open .nav__lang a.active { background: #fff !important; box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important; color: #0a2540 !important; }
   html body .header.open .btn--primary { width: 100% !important; max-width: 280px !important; padding: 16px !important; font-size: 1.1rem !important; justify-content: center !important; }
-  html body .header.open .nav__social { display: flex !important; gap: 20px !important; margin-top: 20px !important; }
+  html body .header.open .nav__social-mobile { display: flex !important; gap: 20px !important; justify-content: center !important; }
+  html body .header.open .nav__social-mobile a { color: #425466 !important; }
+  html body .header.open .logo-text { color: #0a2540 !important; }
+  html body .header.open .nav__burger span { background: #0a2540 !important; }
 }
 
 /* Progress bar */
