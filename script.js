@@ -147,6 +147,28 @@ function initFormEnhancements() {
       }
     });
   }
+
+  // 3. Real-time validation for email & phone
+  const emailInp = document.getElementById('userEmail');
+  if (emailInp) {
+    emailInp.addEventListener('blur', () => {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (emailInp.value && !emailRegex.test(emailInp.value)) {
+        emailInp.classList.add('error');
+      }
+    });
+    emailInp.addEventListener('input', () => emailInp.classList.remove('error'));
+  }
+
+  const phoneInp = document.getElementById('phone');
+  if (phoneInp) {
+    phoneInp.addEventListener('blur', () => {
+      if (phoneInp.value && window.iti && !window.iti.isValidNumber()) {
+        phoneInp.classList.add('error');
+      }
+    });
+    phoneInp.addEventListener('input', () => phoneInp.classList.remove('error'));
+  }
 }
 
 // Initialize on load
