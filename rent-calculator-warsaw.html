@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Калькулятор оренди квартири у Варшаві 2026 | Розрахунок бюджету | STAYX</title>
+<meta name="description" content="Безкоштовний інструмент для розрахунку повних витрат на оренду житла у Варшаві. Враховує оренду, чинш, світло, інтернет, депозит та комісію. Плануйте бюджет переїзду точно.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+:root {
+  --accent: #635bff;
+  --accent-dark: #4b44d1;
+  --bg-light: #f6f9fc;
+  --text-main: #0a2540;
+  --text-muted: #425466;
+  --border-light: #e3e8ee;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-main);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Header Adjustments */
+.header { background: #fff; border-bottom: 1px solid var(--border-light); }
+
+/* Main Section */
+.calc-page {
+  padding: 140px 24px 80px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.calc-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.calc-header h1 {
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  margin-bottom: 16px;
+  color: var(--text-main);
+}
+.calc-header p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Calculator Grid */
+.calc-grid {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 40px;
+  background: #fff;
+  padding: 40px;
+  border-radius: 24px;
+  box-shadow: 0 50px 100px -20px rgba(50,50,93,.1), 0 30px 60px -30px rgba(0,0,0,.15);
+}
+
+.inputs-section h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.input-group {
+  margin-bottom: 24px;
+}
+.input-group label {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-main);
+}
+.input-wrapper {
+  position: relative;
+}
+.input-wrapper span {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  font-weight: 500;
+  pointer-events: none;
+}
+.input-group input, .input-group select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid var(--border-light);
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.2s;
+  background: #fcfdfe;
+}
+.input-group input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px rgba(99,91,255,0.1);
+}
+
+/* Results Section */
+.results-card {
+  background: var(--text-main);
+  border-radius: 20px;
+  padding: 40px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.results-card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 32px;
+  opacity: 0.8;
+}
+.result-item {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.result-item:last-of-type {
+  border-bottom: none;
+  margin-bottom: 32px;
+}
+.result-label {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  margin-bottom: 4px;
+}
+.result-value {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #fff;
+}
+.result-value span { font-size: 1.2rem; font-weight: 500; margin-left: 4px; }
+.result-total {
+  background: rgba(255,255,255,0.05);
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 32px;
+}
+.result-total .result-value {
+  color: #00d4ff; /* Bright accent for total */
+}
+
+/* CTA */
+.calc-cta {
+  margin-top: auto;
+}
+.btn-calc {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  transition: all 0.2s;
+}
+.btn-calc-primary { background: var(--accent); color: #fff; }
+.btn-calc-primary:hover { background: var(--accent-dark); transform: translateY(-2px); }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .calc-grid { grid-template-columns: 1fr; padding: 24px; }
+  .calc-page { padding-top: 100px; }
+  .results-card { order: -1; }
+}
+</style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header header--scrolled" id="header" data-keep-scrolled="true">
+    <nav class="nav container container-padding">
+      <a href="/" class="nav__logo">
+        <span class="logo-text">stay<span class="x-accent">x</span></span>
+      </a>
+      <div class="nav__left">
+        <a href="/#services" class="nav__link">Послуги</a>
+        <a href="/how-it-works.html" class="nav__link">Як це працює</a>
+        <a href="/rent-calculator-warsaw.html" class="nav__link">Калькулятор</a>
+        <a href="/rent-in-warsaw-guide-2026.html" class="nav__link">Блог</a>
+        <a href="/#about" class="nav__link">Про нас</a>
+      </div>
+      <div class="nav__right">
+        <div class="nav__lang">
+          <a href="#" class="active">Ua</a>
+          <a href="/en/index.html">EN</a>
+          <a href="/pl/index.html">PL</a>
+        </div>
+        <a href="https://t.me/stayX_pl" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Зв'язатись →</a>
+        <button class="nav__burger" id="burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="calc-page">
+    <div class="calc-header">
+      <span class="section-header__label">Інструменти для релокейту</span>
+      <h1>Розрахунок вартості оренди</h1>
+      <p>Дізнайтеся точну суму, яка знадобиться для першого внеску та щомісячного проживання у Варшаві 2026.</p>
+    </div>
+
+    <div class="calc-grid">
+      <section class="inputs-section">
+        <h2>📊 Параметри житла</h2>
+        
+        <div class="input-group">
+          <label for="rent">Орендна плата (Koszt najmu)</label>
+          <div class="input-wrapper">
+            <input type="number" id="rent" value="3500" step="100">
+            <span>PLN</span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="admin">Адмін-збір (Czynsz administracyjny)</label>
+          <div class="input-wrapper">
+            <input type="number" id="admin" value="700" step="50">
+            <span>PLN</span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="media">Комунальні послуги (Світло, вода)</label>
+          <div class="input-wrapper">
+            <input type="number" id="media" value="300" step="50">
+            <span>PLN</span>
+          </div>
+        </div>
+
+        <div class="input-group">
+          <label for="deposit">Застава (Kaucja)</label>
+          <select id="deposit">
+            <option value="1">1 місяць оренди</option>
+            <option value="1.5">1.5 місяці оренди</option>
+            <option value="2">2 місяці оренди</option>
+            <option value="0">Без застави</option>
+          </select>
+        </div>
+
+        <div class="input-group">
+          <label for="commission">Комісія агентства</label>
+          <select id="commission">
+            <option value="1">100% від оренди</option>
+            <option value="0.5">50% від оренди</option>
+            <option value="0">Без комісії</option>
+          </select>
+        </div>
+      </section>
+
+      <aside class="results-card">
+        <h3>Ваш бюджетний план</h3>
+        
+        <div class="result-item">
+          <div class="result-label">Перший платіж (Вхід в квартиру)</div>
+          <div class="result-value" id="entry-cost">0 <span>PLN</span></div>
+        </div>
+
+        <div class="result-item">
+          <div class="result-label">Щомісячні витрати</div>
+          <div class="result-value" id="monthly-cost">0 <span>PLN</span></div>
+        </div>
+
+        <div class="result-total">
+          <div class="result-label">Витрати за перший рік</div>
+          <div class="result-value" id="yearly-cost">0 <span>PLN</span></div>
+        </div>
+
+        <div class="calc-cta">
+          <a href="https://t.me/stayX_pl" target="_blank" class="btn-calc btn-calc-primary">Замовити підбір житла →</a>
+          <p style="font-size: 12px; opacity: 0.5; margin-top: 16px; text-align: center;">Розрахунок є приблизним і залежить від конкретних умов договору.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <script>
+    const inputs = ['rent', 'admin', 'media', 'deposit', 'commission'];
+    
+    function calculate() {
+      const v = {};
+      inputs.forEach(id => v[id] = parseFloat(document.getElementById(id).value) || 0);
+
+      const monthly = v.rent + v.admin + v.media;
+      const entry = monthly + (v.rent * v.deposit) + (v.rent * v.commission);
+      const yearly = entry + (monthly * 11);
+
+      document.getElementById('monthly-cost').innerHTML = Math.round(monthly).toLocaleString('uk-UA') + ' <span>PLN</span>';
+      document.getElementById('entry-cost').innerHTML = Math.round(entry).toLocaleString('uk-UA') + ' <span>PLN</span>';
+      document.getElementById('yearly-cost').innerHTML = Math.round(yearly).toLocaleString('uk-UA') + ' <span>PLN</span>';
+    }
+
+    inputs.forEach(id => {
+      document.getElementById(id).addEventListener('input', calculate);
+    });
+
+    calculate();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
