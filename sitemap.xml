@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- UA VERSION -->
   <url>
     <loc>https://stayx-eight.vercel.app/</loc>
     <lastmod>2026-05-10</lastmod>
@@ -16,17 +17,69 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://stayx-eight.vercel.app/how-it-works.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayx-eight.vercel.app/en/how-it-works.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stayx-eight.vercel.app/pl/how-it-works.html"/>
   </url>
   <url>
     <loc>https://stayx-eight.vercel.app/rent-in-warsaw-guide-2026.html</loc>
     <lastmod>2026-05-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stayx-eight.vercel.app/rent-in-warsaw-guide-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayx-eight.vercel.app/en/rent-in-warsaw-guide-2026.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stayx-eight.vercel.app/pl/rent-in-warsaw-guide-2026.html"/>
   </url>
   <url>
-    <loc>https://stayx-eight.vercel.app/privacy.html</loc>
+    <loc>https://stayx-eight.vercel.app/blog/index.html</loc>
     <lastmod>2026-05-10</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stayx-eight.vercel.app/blog/index.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayx-eight.vercel.app/en/blog/index.html"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stayx-eight.vercel.app/pl/blog/index.html"/>
+  </url>
+
+  <!-- EN VERSION -->
+  <url>
+    <loc>https://stayx-eight.vercel.app/en/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://stayx-eight.vercel.app/en/how-it-works.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stayx-eight.vercel.app/en/rent-in-warsaw-guide-2026.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://stayx-eight.vercel.app/en/blog/index.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- PL VERSION -->
+  <url>
+    <loc>https://stayx-eight.vercel.app/pl/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://stayx-eight.vercel.app/pl/how-it-works.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stayx-eight.vercel.app/pl/rent-in-warsaw-guide-2026.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://stayx-eight.vercel.app/pl/blog/index.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <priority>0.7</priority>
   </url>
 </urlset>

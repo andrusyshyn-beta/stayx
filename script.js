@@ -42,11 +42,21 @@ if (form) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
     const btn = form.querySelector('button[type="submit"]');
-    btn.textContent = '✓ Надіслано!';
+    const lang = document.documentElement.lang || 'uk';
+    
+    const messages = {
+      uk: { success: '✓ Надіслано!', original: 'Відправити →' },
+      pl: { success: '✓ Wysłano!', original: 'Pobierz oferty →' },
+      en: { success: '✓ Sent!', original: 'Get offers →' }
+    };
+    
+    const msg = messages[lang] || messages.uk;
+    
+    btn.textContent = msg.success;
     btn.style.background = '#00d4aa';
     btn.style.pointerEvents = 'none';
     setTimeout(() => { 
-      btn.textContent = 'Відправити →'; 
+      btn.textContent = msg.original; 
       btn.style.background = ''; 
       btn.style.pointerEvents = ''; 
       form.reset(); 
