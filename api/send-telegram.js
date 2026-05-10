@@ -1,11 +1,12 @@
-export default async function handler(req, res) {
+const https = require('https');
+
+module.exports = async (req, res) => {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
   }
 
   const { name, email, phone, budget, rooms, district, date, comments, lang } = req.body;
 
-  // Use environment variables or hardcoded (for immediate test)
   const token = '8122501292:AAEY-uetoXadg2aCszu8AyP5_uN2jdJOptA';
   const chatId = '-1003792821849';
 
@@ -23,24 +24,43 @@ export default async function handler(req, res) {
 ──────────────────
   `;
 
-  try {
-    const response = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        chat_id: chatId,
-        text: text,
-        parse_mode: 'Markdown'
-      })
+  const data = JSON.stringify({
+    chat_id: chatId,
+    text: text,
+    parse_mode: 'Markdown'
+  });
+
+  const options = {
+    hostname: 'api.telegram.org',
+    port: 443,
+    path: `/bot${token}/sendMessage`,
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Content-Length': data.length
+    }
+  };
+
+  return new Promise((resolve) => {
+    const request = https.request(options, (response) => {
+      let responseData = '';
+      response.on('data', (chunk) => { responseData += chunk; });
+      response.on('end', () => {
+        if (response.statusCode === 200) {
+          res.status(200).json({ success: true });
+        } else {
+          res.status(500).json({ error: 'Telegram Error', details: responseData });
+        }
+        resolve();
+      });
     });
 
-    if (response.ok) {
-      return res.status(200).json({ success: true });
-    } else {
-      const errorData = await response.json();
-      return res.status(500).json({ error: 'Telegram API error', details: errorData });
-    }
-  } catch (error) {
-    return res.status(500).json({ error: 'Server error' });
-  }
-}
+    request.on('error', (error) => {
+      res.status(500).json({ error: 'Connection Error', details: error.message });
+      resolve();
+    });
+
+    request.write(data);
+    request.end();
+  });
+};
