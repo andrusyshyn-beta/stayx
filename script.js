@@ -40,52 +40,67 @@ window.addEventListener('scroll', () => {
 });
 
 // ===== CONTACT FORM =====
-const form = document.getElementById('contactForm');
-if (form) {
-  form.addEventListener('submit', async (e) => {
+const contactForm = document.getElementById('contactForm');
+if (contactForm) {
+  contactForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const btn = form.querySelector('button[type="submit"]');
-    const lang = document.documentElement.lang || 'uk';
+    console.log('STAYX: Form submission started');
     
-    // Collect data
-    const formData = {
-      name: document.getElementById('userName').value,
-      email: document.getElementById('userEmail').value,
-      phone: document.getElementById('phone').value,
-      budget: document.getElementById('budget').value,
-      rooms: document.getElementById('rooms').value,
-      district: document.getElementById('district').value,
-      date: document.getElementById('moveInDate').value,
-      comments: document.getElementById('comments').value,
-      lang: lang
-    };
-
+    const btn = contactForm.querySelector('button[type="submit"]');
+    const lang = document.documentElement.lang || 'uk';
     const originalText = btn.textContent;
-    btn.textContent = '...';
-    btn.style.opacity = '0.7';
-    btn.style.pointerEvents = 'none';
 
     try {
+      // Safe helper to get value
+      const getVal = (id) => {
+        const el = document.getElementById(id);
+        if (!el) {
+          console.warn(`STAYX: Element #${id} not found`);
+          return '—';
+        }
+        return el.value;
+      };
+
+      const formData = {
+        name: getVal('userName'),
+        email: getVal('userEmail'),
+        phone: getVal('phone'),
+        budget: getVal('budget'),
+        rooms: getVal('rooms'),
+        district: getVal('district'),
+        date: getVal('moveInDate'),
+        comments: getVal('comments'),
+        lang: lang
+      };
+
+      console.log('STAYX: Data collected', formData);
+
+      btn.textContent = '...';
+      btn.style.opacity = '0.7';
+      btn.style.pointerEvents = 'none';
+
+      console.log('STAYX: Sending to API...');
       const response = await fetch('/api/send-telegram', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
 
+      const result = await response.json();
+      console.log('STAYX: Server response', result);
+
       if (response.ok) {
         btn.textContent = '✓';
         btn.style.background = '#00d4aa';
-        form.reset();
+        contactForm.reset();
         setTimeout(() => {
           window.location.href = lang === 'uk' ? 'thank-you.html' : `/${lang}/thank-you.html`;
         }, 1500);
       } else {
-        const errorData = await response.json();
-        console.error('Submission error:', errorData);
-        throw new Error('Failed to send');
+        throw new Error(result.error || 'Server error');
       }
     } catch (error) {
-      console.error('Form error:', error);
+      console.error('STAYX: Final form error', error);
       btn.textContent = 'Error';
       btn.style.background = '#ff4d4d';
       setTimeout(() => {
