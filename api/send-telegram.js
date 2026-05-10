@@ -11,12 +11,29 @@ module.exports = async (req, res) => {
     const token = '8122501292:AAEY-uetoXadg2aCszu8AyP5_uN2jdJOptA';
     const chatId = '-1003994760098';
 
-    // Simple text for debugging
-    const text = `STAYX Lead: ${name} | ${phone} | ${budget} PLN | ${district} | ${lang}`;
+    // Full formatted message
+    const text = `
+🔥 *НОВА ЗАЯВКА STAYX*
+──────────────────
+🌍 *Мова:* ${lang.toUpperCase()}
+👤 *Ім'я:* ${name}
+📞 *Телефон:* \`${phone}\`
+📧 *Email:* ${email}
+──────────────────
+💰 *Бюджет:* ${budget} PLN
+🏠 *Кімнат:* ${rooms}
+📍 *Район:* ${district}
+📅 *Дата заїзду:* ${date}
+──────────────────
+💬 *Коментар:* 
+${comments || '—'}
+──────────────────
+    `;
 
     const postData = JSON.stringify({
       chat_id: chatId,
-      text: text
+      text: text,
+      parse_mode: 'Markdown'
     });
 
     const options = {
@@ -37,18 +54,13 @@ module.exports = async (req, res) => {
         if (response.statusCode === 200) {
           res.status(200).json({ success: true });
         } else {
-          // Send back the EXACT error from Telegram to help debugging
-          res.status(response.statusCode).json({ 
-            error: 'Telegram API Rejected Request', 
-            status: response.statusCode,
-            details: responseData 
-          });
+          res.status(response.statusCode).json({ error: 'Telegram API Error', details: responseData });
         }
       });
     });
 
     request.on('error', (error) => {
-      res.status(500).json({ error: 'Network Connection Error', details: error.message });
+      res.status(500).json({ error: 'Network Error', details: error.message });
     });
 
     request.write(postData);
