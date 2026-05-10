@@ -655,10 +655,10 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 }
 
 .node:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: #635bff;
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(99, 91, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.4);
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.1);
 }
 
 .node--main {
