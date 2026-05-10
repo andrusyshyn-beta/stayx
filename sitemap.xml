@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://stayx-eight.vercel.app/</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stayx-eight.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://stayx-eight.vercel.app/en/"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://stayx-eight.vercel.app/pl/"/>
+  </url>
+  <url>
+    <loc>https://stayx-eight.vercel.app/how-it-works.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="uk" href="https://stayx-eight.vercel.app/how-it-works.html"/>
+  </url>
+  <url>
+    <loc>https://stayx-eight.vercel.app/privacy.html</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>

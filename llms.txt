@@ -1,0 +1,19 @@
+# STAYX - Real Estate Agency in Warsaw
+
+## About STAYX
+STAYX is a modern real estate agency specializing in long-term rentals in Warsaw for international clients. We offer an end-to-end online booking process, legal support, and remote apartment viewings.
+
+## Core Services
+- Online Apartment Search & Selection
+- Remote Video Viewings
+- Legal Audit of Rental Agreements
+- Remote Contract Signing (DocuSign)
+- Support for International Clients (PESEL, Address registration)
+
+## Useful Links
+- [Main Page](https://stayx-eight.vercel.app/) - Overview of services and contact form.
+- [How it Works](https://stayx-eight.vercel.app/how-it-works.html) - Detailed 8-step process of renting online.
+- [Privacy Policy](https://stayx-eight.vercel.app/privacy.html) - Data protection and terms.
+
+## FAQ
+Comprehensive guide on rental guarantees, legal requirements, and post-move-in support available on the main page.
