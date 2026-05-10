@@ -1,13 +1,15 @@
-// ===== MOBILE MENU =====
 const burger = document.getElementById('burger');
 const header = document.getElementById('header');
-burger.addEventListener('click', () => header.classList.toggle('open'));
-// Close on any nav link or button inside nav
-document.querySelectorAll('.nav__link, .nav .btn').forEach(l => l.addEventListener('click', () => header.classList.remove('open')));
-// Close when clicking outside header
-document.addEventListener('click', (e) => {
-  if (!header.contains(e.target)) header.classList.remove('open');
-});
+
+if (burger && header) {
+  burger.addEventListener('click', () => header.classList.toggle('open'));
+  // Close on any nav link or button inside nav
+  document.querySelectorAll('.nav__link, .nav .btn').forEach(l => l.addEventListener('click', () => header.classList.remove('open')));
+  // Close when clicking outside header
+  document.addEventListener('click', (e) => {
+    if (!header.contains(e.target)) header.classList.remove('open');
+  });
+}
 
 // ===== FAQ ACCORDION =====
 document.querySelectorAll('.faq__question').forEach(btn => {
