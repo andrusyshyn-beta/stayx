@@ -76,14 +76,16 @@ if (form) {
         btn.textContent = '✓';
         btn.style.background = '#00d4aa';
         form.reset();
-        // Redirect to thank you page
         setTimeout(() => {
           window.location.href = lang === 'uk' ? 'thank-you.html' : `/${lang}/thank-you.html`;
         }, 1500);
       } else {
+        const errorData = await response.json();
+        console.error('Submission error:', errorData);
         throw new Error('Failed to send');
       }
     } catch (error) {
+      console.error('Form error:', error);
       btn.textContent = 'Error';
       btn.style.background = '#ff4d4d';
       setTimeout(() => {
