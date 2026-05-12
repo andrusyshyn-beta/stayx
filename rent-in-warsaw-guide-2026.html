@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 <style>
 :root{
   --ink:#1a1a1a;--ink2:#3d3d3d;--muted:#6b6b6b;--subtle:#aaa;
@@ -33,77 +34,83 @@ a:hover{text-decoration:underline}
 /* Progress bar */
 #pb{position:fixed;top:0;left:0;z-index:300;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),#8b85ff);transition:width .1s linear}
 
-/* --- HEADER SYNC (DIRECT INJECTION) --- */
-/* --- HEADER & MOBILE MENU (1:1 HOME SYNC) --- */
-html body .header {
-  position: fixed !important;
-  top: 0 !important;
-  left: 0 !important;
-  width: 100% !important;
-  z-index: 9999 !important;
-  background: #ffffff !important;
-  border-bottom: 1px solid #e3e8ee !important;
-  height: 72px !important;
-  display: flex !important;
-  align-items: center !important;
-}
-html body .nav {
-  width: 100% !important;
-  max-width: 1240px !important;
-  margin: 0 auto !important;
-  padding: 0 24px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  height: 72px !important;
-}
-html body .logo-text { color: #0a2540 !important; font-weight: 800 !important; font-size: 1.35rem !important; letter-spacing: -0.04em !important; text-decoration: none !important; }
-html body .x-accent { color: #635bff !important; }
-html body .nav__left, html body .nav__right { display: flex !important; align-items: center !important; gap: 32px !important; }
-html body .nav__link {
-  color: #425466 !important;
-  font-size: 0.875rem !important;
-  font-weight: 600 !important;
-  text-decoration: none !important;
-  transition: color 0.2s !important;
-}
-html body .nav__link:hover { color: #0a2540 !important; text-decoration: none !important; }
-html body .nav__lang { display: flex !important; gap: 4px !important; align-items: center !important; }
-html body .nav__lang a {
-  color: #8898aa !important;
-  font-size: 0.8rem !important;
-  padding: 6px 10px !important;
-  border-radius: 6px !important;
-  text-transform: uppercase !important;
-  font-weight: 600 !important;
-  text-decoration: none !important;
-}
-html body .nav__lang a.active { color: #0a2540 !important; background: #f6f9fc !important; }
-html body .btn--primary { background: #635bff !important; color: #ffffff !important; border-radius: 9999px !important; padding: 10px 22px !important; font-weight: 700 !important; text-decoration: none !important; display: inline-flex !important; align-items: center !important; font-size: 0.85rem !important; }
-html body .nav__social-mobile { display: none !important; }
-html body .nav__burger { display: none !important; }
-
-/* Open state - higher specificity to override base .header */
-html body .header.header.open { height: 100vh !important; background: #fff !important; overflow: auto !important; position: fixed !important; }
-html body .header.header.open .nav { height: 100vh !important; flex-direction: column !important; justify-content: center !important; padding: 40px 24px !important; gap: 40px !important; }
-html body .header.header.open .nav__left, html body .header.header.open .nav__right { display: flex !important; flex-direction: column !important; width: 100% !important; position: static !important; }
-html body .header.header.open .nav__left { gap: 10px !important; }
-html body .header.header.open .nav__link { font-size: 1.6rem !important; font-weight: 700 !important; color: #0a2540 !important; padding: 10px 0 !important; text-align: center !important; text-decoration: none !important; }
-html body .header.header.open .nav__right { gap: 30px !important; align-items: center !important; }
-html body .header.header.open .nav__lang { background: #f6f9fc !important; padding: 8px !important; border-radius: 12px !important; width: fit-content !important; border: 1px solid #edf2f7 !important; }
-html body .header.header.open .nav__lang a { padding: 10px 20px !important; font-size: 0.95rem !important; }
-html body .header.header.open .nav__lang a.active { background: #fff !important; box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important; color: #0a2540 !important; }
-html body .header.header.open .btn--primary { width: 100% !important; max-width: 280px !important; padding: 16px !important; font-size: 1.1rem !important; justify-content: center !important; }
-html body .header.header.open .nav__social-mobile { display: flex !important; gap: 20px !important; justify-content: center !important; }
-html body .header.header.open .nav__social-mobile a { color: #425466 !important; }
-html body .header.header.open .logo-text { color: #0a2540 !important; }
-html body .header.header.open .nav__burger { display: flex !important; }
-html body .header.header.open .nav__burger span { background: #0a2540 !important; }
-
+/* --- HEADER SYNC (STAYX STANDARD) --- */
 @media (max-width: 991px) {
-  html body .nav__left, html body .nav__right { display: none !important; }
-  html body .nav__burger { display: flex !important; flex-direction: column !important; gap: 5px !important; background: none !important; border: none !important; cursor: pointer !important; z-index: 10001 !important; padding: 10px !important; }
-  html body .nav__burger span { display: block !important; width: 22px !important; height: 2px !important; background: #0a2540 !important; border-radius: 2px !important; transition: .3s !important; }
+  .nav__left, .nav__right { display: none; }
+  .nav__burger { display: flex !important; margin-left: auto !important; z-index: 101 !important; }
+  
+  .header.open {
+    background: #fff !important;
+    height: 100vh !important;
+    overflow: auto !important;
+    position: fixed !important;
+  }
+  .header.open .nav__left,
+  .header.open .nav__right {
+    display: flex !important;
+    flex-direction: column !important;
+    position: fixed !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: #fff !important;
+    z-index: 100 !important;
+  }
+  .header.open .nav__left {
+    top: 60px !important;
+    padding: 24px 24px 8px !important;
+    gap: 0 !important;
+  }
+  .header.open .nav__right {
+    top: calc(60px + 300px) !important;
+    padding: 8px 24px 40px !important;
+    gap: 20px !important;
+    align-items: center !important;
+  }
+  .header.open .nav__link {
+    text-align: center !important;
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    color: #0a2540 !important;
+    padding: 10px 0 !important;
+  }
+  .header.open .nav__lang {
+    justify-content: center !important;
+    background: #f6f9fc !important;
+    padding: 8px !important;
+    border-radius: 12px !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+    border: 1px solid #edf2f7 !important;
+  }
+  .header.open .nav__lang a {
+    color: #425466 !important;
+    padding: 8px 16px !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+  }
+  .header.open .nav__lang a.active {
+    color: #0a2540 !important;
+    background: #fff !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+  }
+}
+
+/* --- HERO MOBILE FIXES --- */
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem !important; line-height: 1.2 !important; margin-top: 20px !important; }
+  .g-hero { padding: 120px 0 60px !important; display: block !important; }
+  .hero-stats { flex-direction: row !important; max-width: 340px !important; margin: 0 auto !important; border-radius: 12px !important; overflow: hidden !important; }
+  .hero-stat { border-right: 1px solid var(--border) !important; border-bottom: none !important; padding: 10px 4px !important; flex: 1 !important; }
+  .hero-stat:last-child { border-right: none !important; }
+  .hs-n { font-size: 1rem !important; }
+  .hs-l { font-size: 9.5px !important; }
+  .page-wrap { padding: 0 24px !important; }
+  .main { padding: 0 !important; }
+  ul, ol { padding-left: 20px !important; }
+  .section { padding: 40px 0 !important; }
+  .cta-block { padding: 40px 24px !important; margin: 2rem 0 !important; }
+  .cta-block h2 { font-size: 1.5rem !important; }
+  .cta-btn { padding: 12px 24px !important; font-size: 14px !important; }
 }
 
 /* Progress bar */
@@ -111,9 +118,9 @@ html body .header.header.open .nav__burger span { background: #0a2540 !important
 #main-content { margin-top: 72px; }
 
 /* Hero */
-.hero{max-width:860px;margin:0 auto;padding:5.5rem 2rem 3rem;text-align:center}
+.g-hero{max-width:860px;margin:0 auto;padding:5.5rem 2rem 3rem;text-align:center}
 .hero-tag{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 16px;border-radius:20px;margin-bottom:1.5rem}
-h1{font-family:'Plus Jakarta Sans', sans-serif;font-size:clamp(2rem,5.5vw,3.4rem);font-weight:800;line-height:1.15;color:var(--ink);margin-bottom:1.25rem;letter-spacing:-.04em}
+h1{font-family:'Plus Jakarta Sans', sans-serif;font-size:clamp(1.8rem,5vw,3rem);font-weight:800;line-height:1.2;color:var(--ink);margin-bottom:1.25rem;letter-spacing:-.04em}
 h1 em{font-style:italic;color:var(--accent);font-family:'Playfair Display',serif;font-weight:600;}
 .hero-lead{font-size:1.1rem;color:var(--muted);max-width:600px;margin:0 auto 2.25rem;line-height:1.65}
 .hero-stats{display:flex;align-items:stretch;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;max-width:580px;margin:0 auto;background:#fff;}
@@ -207,12 +214,12 @@ td.tdn{font-weight:600;color:var(--ink)}
 td.tp{font-weight:700;color:var(--ink);white-space:nowrap;font-size:13px}
 
 /* Steps */
-.steps{margin:1.5rem 0}
-.step{display:flex;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid var(--border)}
+.steps{margin:1.5rem 0; background:#0a2540; border-radius:12px; padding:2rem !important; color:#fff}
+.step{display:flex;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1)}
 .step:last-child{border-bottom:none}
-.snum{width:36px;height:36px;border-radius:50%;background:var(--ink);color:#fff;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
-.sbody h4{font-size:15px;font-weight:700;color:var(--ink);margin-bottom:.3rem;margin-top:0}
-.sbody p{font-size:14px;color:var(--muted);margin:0}
+.snum{width:36px;height:36px;border-radius:50%;background:#80e9ff;color:#0a2540;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.sbody h4{font-size:15px;font-weight:700;color:#fff;margin-bottom:.3rem;margin-top:0}
+.sbody p{font-size:14px;color:rgba(255,255,255,0.7);margin:0}
 
 /* Checklist */
 .cl{list-style:none;margin:1rem 0}
@@ -227,20 +234,39 @@ td.tp{font-weight:700;color:var(--ink);white-space:nowrap;font-size:13px}
 .cr{display:flex;justify-content:space-between;align-items:center;padding:.45rem 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:14px}
 .cr .lb{color:rgba(255,255,255,.6)}
 .cr .vl{color:#fff;font-weight:500}
-.ctot{display:flex;justify-content:space-between;align-items:center;padding:.75rem 0 0;margin-top:.5rem;border-top:1px solid rgba(255,255,255,.2);font-size:1rem;font-weight:700}
-.ctot .vl{color:#f7c97e;font-size:1.1rem}
-.cnote{font-size:12px;color:rgba(255,255,255,.45);margin-top:1rem;line-height:1.55;border-top:1px solid rgba(255,255,255,.1);padding-top:.75rem}
 
-/* Interactive calc */
-.calc-inter{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:2rem;margin:1.5rem 0;box-shadow: 0 4px 20px rgba(0,0,0,0.03);}
-.calc-inter h3{font-size:1rem;margin:0 0 1.25rem;font-weight:700;}
-.cri{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:.85rem;flex-wrap:wrap}
-.cri label{font-size:14px;color:var(--ink2);flex:1;min-width:160px}
-.cri input,.cri select{padding:8px 12px;border:1px solid var(--border);border-radius:9999px;font-size:14px;font-family:'Plus Jakarta Sans',sans-serif;color:var(--ink);background:var(--bg);width:160px;outline:none;transition:border-color .2s}
-.cri input:focus,.cri select:focus{border-color:var(--accent)}
-.cres{background:var(--ink);color:#fff;border-radius:var(--r-sm);padding:1.25rem 1.5rem;margin-top:1rem;display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;text-align:center}
-.cres-n{font-size:1.4rem;font-weight:700;color:#f7c97e}
-.cres-l{font-size:12px;color:rgba(255,255,255,.55);margin-top:2px}
+/* Interactive calc (Advanced) */
+.calc-inter { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; display: grid; grid-template-columns: 1fr 340px; margin: 2rem 0; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.calc-inputs { padding: 32px; }
+.calc-sidebar { background: #0a2540; color: #fff; padding: 32px; display: flex; flex-direction: column; }
+.calc-row { margin-bottom: 20px; }
+.calc-row label { display: block; font-size: 13px; font-weight: 600; color: var(--muted); margin-bottom: 8px; }
+.calc-row select, .calc-row input { width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px; font-family: inherit; font-size: 14px; outline: none; transition: border-color .2s; background: var(--bg); color: var(--ink); }
+.calc-row input:focus, .calc-row select:focus { border-color: var(--accent); }
+.calc-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; }
+.c-box { display: flex; align-items: center; gap: 8px; font-size: 11px; padding: 10px; background: var(--surface2); border-radius: 8px; cursor: pointer; color: var(--ink2); transition: all 0.2s; }
+.c-box:hover { border-color: var(--accent); background: var(--accent-soft); }
+.c-box input { width: auto; }
+.chart-wrap { position: relative; width: 140px; height: 140px; margin: 0 auto 24px; }
+.donut-chart { transform: rotate(-90deg); width: 100%; height: 100%; }
+.donut-segment { fill: none; stroke-width: 6; transition: stroke-dasharray 0.5s ease; }
+.chart-info { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+.chart-info span { display: block; font-size: 10px; opacity: 0.6; }
+.chart-info strong { font-size: 1.1rem; font-weight: 800; display: block; color: #fff; }
+.res-item { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.res-item:last-child { border: none; }
+.res-lb { font-size: 12px; opacity: 0.6; margin-bottom: 4px; }
+.res-vl { font-size: 1.5rem; font-weight: 800; color: #fff; }
+.res-vl span { font-size: 0.9rem; font-weight: 400; opacity: 0.8; margin-left: 4px; }
+.curr-switch { display: flex; gap: 4px; margin-bottom: 24px; justify-content: center; }
+.curr-btn { padding: 6px 12px; border: 1px solid var(--border); background: #fff; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer; color: var(--ink); transition: all 0.2s; }
+.curr-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.calc-footer-msg { font-size: 11px; opacity: 0.5; text-align: center; margin-top: auto; line-height: 1.4; }
+@media (max-width: 850px) {
+  .calc-inter { grid-template-columns: 1fr; }
+  .calc-sidebar { order: -1; }
+  .calc-flex { grid-template-columns: 1fr; }
+}
 
 /* Red flags */
 .flags-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:.85rem;margin-top:1.25rem}
@@ -285,9 +311,21 @@ td.tp{font-weight:700;color:var(--ink);white-space:nowrap;font-size:13px}
 
 footer{border-top:1px solid var(--border);padding:2.5rem 2rem;text-align:center;font-size:13px;color:var(--subtle)}
 footer a{color:var(--subtle)}
+/* Sources Section */
+.sources-section { border-top: 1px solid var(--border); margin-top: 2rem; }
+.sources-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; margin-top: 2rem; }
+.source-group h4 { font-size: 13px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
+.source-group ul { list-style: none; padding: 0 !important; margin: 0 !important; }
+.source-group li { font-size: 13px; color: var(--muted); margin-bottom: 0.75rem; line-height: 1.5; border-bottom: 1px solid var(--surface); padding-bottom: 0.75rem; }
+.source-group li strong { color: var(--ink); }
+.source-operational { background: var(--surface); padding: 1.5rem; border-radius: var(--r-sm); margin-top: 2.5rem; border: 1px solid var(--border); }
+.source-operational p { margin-bottom: 0; font-size: 13px; }
+@media (max-width: 768px) {
+  .sources-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+}
 
 @media(max-width:900px){.page-wrap{grid-template-columns:1fr}.sidebar{display:none}}
-@media(max-width:620px){.dgrid,.flags-grid{grid-template-columns:1fr}.hero-stats{flex-wrap:wrap}.nav-meta{display:none}h1{font-size:1.8rem}.hero{padding:3.5rem 1.25rem 2rem}.cres{grid-template-columns:1fr}.dpc{grid-template-columns:1fr}}
+
 </style>
 </head>
 <body>
@@ -312,11 +350,11 @@ footer a{color:var(--subtle)}
         </div>
         <a href="https://t.me/stayX_pl" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Зв'язатись →</a>
         <div class="nav__social nav__social-mobile">
-          <a href="https://www.instagram.com/stayx_pl?igsh=MWt5enF2b3hoN29rMA%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.98 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          <a href="https://www.instagram.com/stayx_pl?igsh=MWt5enF2b3hoN29rMA%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265 .069 1.645 .069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266 .058-1.644 .07-4.85 .07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204 .013-3.583 .07-4.849 .149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667 .014-4.947 .072-4.358 .2-6.78 2.618-6.98 6.98-.059 1.281 -.073 1.689 -.073 4.948 0 3.259 .014 3.668 .072 4.948 .2 4.358 2.618 6.98 6.98 6.98 1.281 .058 1.689 .072 4.948 .072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98 .059-1.28 .073-1.689 .073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           </a>
-          <a href="https://www.tiktok.com/@stayx_realestate?_r=1&_t=ZN-96DXaC2rZbT" target="_blank" rel="noopener" aria-label="TikTok">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.53 1.53-.3 2.7-1.67 2.82-3.18.05-3.68-.01-7.36.03-11.03.01-.11 0-.22.01-.33z"/></svg>
+          <a href="https://www.tiktok.com/@stayx_realestate?_r=1&amp;_t=ZN-96DXaC2rZbT" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02 .08 1.53 .63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79 v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92 .01 5.84 -.02 8.75 -.08 1.4 -.54 2.79 -1.35 3.94 -1.31 1.92 -3.58 3.17 -5.91 3.21 -1.43 .08 -2.86 -.31 -4.08 -1.03 -2.02 -1.19 -3.44 -3.37 -3.65 -5.71 -.02 -.5 -.03 -1 -.01 -1.49 .18 -1.9 1.12 -3.72 2.58 -4.96 1.66 -1.44 3.98 -2.13 6.15 -1.72 .02 1.48 -.04 2.96 -.04 4.44 -.99 -.32 -2.15 -.23 -3.02 .37 -.63 .41 -1.11 1.04 -1.36 1.75 -.21 .51 -.15 1.07 -.14 1.61 .24 1.64 1.82 2.89 3.5 2.53 1.53 -.3 2.7 -1.67 2.82 -3.18 .05 -3.68 -.01 -7.36 .03 -11.03 .01 -.11 0 -.22 .01 -.33z"/></svg>
           </a>
         </div>
       </div>
@@ -327,7 +365,7 @@ footer a{color:var(--subtle)}
   </header>
   <div id="main-content">
 
-<div class="hero">
+<div class="g-hero">
   <span class="hero-tag">Енциклопедія переїзду · 2026</span>
   <h1>Оренда квартири<br>у <em>Варшаві</em> 2026</h1>
   <p class="hero-lead">Найповніший гід для тих, хто переїжджає до польської столиці. Від вибору району до першого тижня в новому домі — без ризиків і переплат.</p>
@@ -335,7 +373,6 @@ footer a{color:var(--subtle)}
     <div class="hero-stat"><div class="hs-n">18</div><div class="hs-l">районів</div></div>
     <div class="hero-stat"><div class="hs-n">25+</div><div class="hs-l">термінів</div></div>
     <div class="hero-stat"><div class="hs-n">85 PLN</div><div class="hs-l">сер. / м²</div></div>
-    <div class="hero-stat"><div class="hs-n">12</div><div class="hs-l">прапорців</div></div>
     <div class="hero-stat"><div class="hs-n">2026</div><div class="hs-l">актуально</div></div>
   </div>
 </div>
@@ -569,30 +606,117 @@ footer a{color:var(--subtle)}
 <section class="section" id="calculator">
 <h2 class="st">08 · Калькулятор витрат</h2>
 <p class="ss">Підрахуйте свій реальний місячний платіж та вхідний квиток</p>
+
 <div class="calc-inter">
-  <h3>🧮 Ваш особистий розрахунок</h3>
-  <div class="cri"><label>Оренда (czynsz najmu), PLN</label><input type="number" id="c-rent" value="5000" step="100" min="1000" max="20000"></div>
-  <div class="cri"><label>Czynsz administracyjny, PLN</label><input type="number" id="c-admin" value="900" step="50" min="300" max="2000"></div>
-  <div class="cri"><label>Електрика, PLN</label><input type="number" id="c-elec" value="180" step="20" min="0" max="500"></div>
-  <div class="cri"><label>Інтернет, PLN</label><input type="number" id="c-inet" value="70" step="10" min="0" max="200"></div>
-  <div class="cri"><label>Комісія агента</label>
-    <select id="c-agent">
-      <option value="0">Без комісії</option>
-      <option value="1" selected>1 місяць</option>
-      <option value="0.5">0,5 місяця</option>
-    </select>
+  <div class="calc-inputs">
+    <div class="calc-row">
+      <label>Район Варшави</label>
+      <select id="district">
+        <option value="custom">— Свій варіант —</option>
+        <optgroup label="Преміум">
+          <option value="srodmiescie">Śródmieście</option>
+          <option value="wilanow">Wilanów</option>
+          <option value="zoliborz">Żoliborz</option>
+          <option value="mokotow">Mokotów</option>
+        </optgroup>
+        <optgroup label="Стандарт">
+          <option value="wola" selected>Wola</option>
+          <option value="ochota">Ochota</option>
+          <option value="bielany">Bielany</option>
+          <option value="ursynow">Ursynów</option>
+          <option value="pragapld">Praga-Południe</option>
+          <option value="wlochy">Włochy</option>
+          <option value="bemowo">Bemowo</option>
+        </optgroup>
+        <optgroup label="Бюджет">
+          <option value="bialoleka">Białołęka</option>
+          <option value="targowek">Targówek</option>
+          <option value="ursus">Ursus</option>
+          <option value="wawer">Wawer</option>
+          <option value="pragapln">Praga-Północ</option>
+          <option value="rembertow">Rembertów</option>
+          <option value="wesola">Wesoła</option>
+        </optgroup>
+      </select>
+    </div>
+
+    <div class="calc-row">
+      <label>Тип квартири</label>
+      <select id="room-type">
+        <option value="studio">Студія (Kawalerka)</option>
+        <option value="1bed" selected>1-спальня (2 pokoje)</option>
+        <option value="2bed">2-спальні (3 pokoje)</option>
+        <option value="3bed">3+ спальні (4+ pokoje)</option>
+      </select>
+    </div>
+
+    <div class="calc-row">
+      <label>Орендна плата (PLN)</label>
+      <input type="number" id="rent" value="4000" step="100">
+    </div>
+
+    <div class="calc-flex">
+      <div class="calc-row">
+        <label>Чинш (PLN)</label>
+        <input type="number" id="admin" value="700">
+      </div>
+      <div class="calc-row">
+        <label>Комунальні (PLN)</label>
+        <input type="number" id="media" value="300">
+      </div>
+    </div>
+
+    <div class="calc-flex">
+      <div class="calc-row">
+        <label>Депозит (міс)</label>
+        <input type="number" id="deposit" value="2" step="1">
+      </div>
+      <div class="calc-row">
+        <label>Комісія (міс)</label>
+        <input type="number" id="commission" value="1" step="0.5">
+      </div>
+    </div>
+
+    <div class="calc-flex">
+      <label class="c-box"><input type="checkbox" id="opt_internet" data-cost="60"> Інтернет</label>
+      <label class="c-box"><input type="checkbox" id="opt_parking" data-cost="250"> Паркінг</label>
+      <label class="c-box"><input type="checkbox" id="opt_notary" data-cost="500" class="onetime"> Нотаріус</label>
+      <label class="c-box"><input type="checkbox" id="opt_alt_address" data-cost="400" class="onetime"> Довідка</label>
+    </div>
   </div>
-  <div class="cri"><label>Депозит (кількість місяців)</label>
-    <select id="c-dep">
-      <option value="1">1 місяць</option>
-      <option value="2" selected>2 місяці</option>
-      <option value="3">3 місяці</option>
-    </select>
-  </div>
-  <div class="cres">
-    <div><div class="cres-n" id="cr-m">—</div><div class="cres-l">PLN / місяць</div></div>
-    <div><div class="cres-n" id="cr-e">—</div><div class="cres-l">PLN вхідний квиток</div></div>
-    <div><div class="cres-n" id="cr-y">—</div><div class="cres-l">PLN перший рік</div></div>
+
+  <div class="calc-sidebar">
+    <div class="curr-switch">
+      <button class="curr-btn active" data-curr="PLN">PLN</button>
+      <button class="curr-btn" data-curr="USD">USD</button>
+      <button class="curr-btn" data-curr="EUR">EUR</button>
+    </div>
+
+    <div class="chart-wrap">
+      <svg class="donut-chart" viewBox="0 0 36 36">
+        <circle class="donut-segment" cx="18" cy="18" r="15.9" stroke="#635bff" id="seg-rent"></circle>
+        <circle class="donut-segment" cx="18" cy="18" r="15.9" stroke="#80e9ff" id="seg-admin"></circle>
+        <circle class="donut-segment" cx="18" cy="18" r="15.9" stroke="#f7c97e" id="seg-media"></circle>
+        <circle class="donut-segment" cx="18" cy="18" r="15.9" stroke="#a3aed0" id="seg-other"></circle>
+      </svg>
+      <div class="chart-info">
+        <span id="curr-label">PLN</span>
+        <strong id="total-monthly">0</strong>
+      </div>
+    </div>
+
+    <div class="res-item">
+      <div class="res-lb">Перший платіж (Entry cost)</div>
+      <div class="res-vl" id="res-entry">0 <span>PLN</span></div>
+    </div>
+    <div class="res-item">
+      <div class="res-lb">Витрати за 12 місяців</div>
+      <div class="res-vl" id="res-yearly">0 <span>PLN</span></div>
+    </div>
+
+    <a href="/rent-calculator-warsaw.html" class="curr-btn" style="text-align: center; margin-bottom: 20px; display: block; background: rgba(255,255,255,0.1); color: #fff; border: none;">Повна версія</a>
+
+    <p class="calc-footer-msg">Дані на 2026 рік. <br> Результат є приблизним.</p>
   </div>
 </div>
 </section>
@@ -818,12 +942,47 @@ footer a{color:var(--subtle)}
   </div>
 </div>
 
+<section class="section sources-section" id="sources">
+  <h2 class="st">Джерела та методологія</h2>
+  <p class="ss">Дані в цьому гіді зібрані та перевірені за станом на травень 2026 року.</p>
+  
+  <div class="sources-grid">
+    <div class="source-group">
+      <h4>Ринкова статистика та ціни:</h4>
+      <ul>
+        <li><strong>Investropa — Warsaw Rents 2026</strong> — середня ціна 85 PLN/м², динаміка +4–6% YoY, час знаття квартир</li>
+        <li><strong>Investropa — Best Areas in Warsaw</strong> — порівняння районів, vacancy rate, прибутковість</li>
+        <li><strong>NBP — Raport o rynku nieruchomości</strong> — офіційні квартальні звіти Національного банку Польщі</li>
+        <li><strong>CBRE Poland — Warsaw Living Figures</strong> — інституційний ринок, PRS-сегмент, бізнес-квартали</li>
+        <li><strong>Cushman & Wakefield Poland</strong> — leasing days, вакантність, нові ЖК</li>
+        <li><strong>Otodom Analytics</strong> — цінові діапазони по районах, сезонна динаміка</li>
+      </ul>
+    </div>
+    
+    <div class="source-group">
+      <h4>Юридична база:</h4>
+      <ul>
+        <li><strong>Ustawa o ochronie praw lokatorów</strong> — права орендаря, kaucja, wypowiedzenie</li>
+        <li><strong>Kodeks cywilny — art. 394 (Zadatek)</strong> — різниця між задатком а заличкою</li>
+        <li><strong>Ustawa o Najem Okazjonalny</strong> — процедура нотаріального акту, lokal zastępczy</li>
+        <li><strong>Rozporządzenie o świadectwie energetycznym</strong> — обов'язок SKE з 2023 р.</li>
+        <li><strong>Ustawa o ewidencji ludności</strong> — meldunek і PESEL</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="source-operational">
+    <p><strong>Практичні дані</strong> (вартість нотаріуса, реальні ставки czynsz administracyjny, поведінка власників на переговорах) — власна операційна база <strong>STAYX</strong> на основі угод 2024–2026 рр.</p>
+  </div>
+</section>
+
 </main>
 </div>
 
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <a href="/index.html" class="footer__logo"><span class="logo-text">stay<span class="x-accent">x</span></span></a>
+      <a href="/" class="footer__logo"><span class="logo-text">stay<span class="x-accent">x</span></span></a>
       <div class="footer__links">
         <a href="/#services">Послуги</a>
         <a href="/how-it-works.html">Як це працює</a>
@@ -877,27 +1036,116 @@ document.querySelectorAll('.fbtn').forEach(btn => {
   });
 });
 
-// ── Calculator ─────────────────────────────────────────────
-function calcUpdate() {
-  const rent  = parseFloat(document.getElementById('c-rent').value)  || 0;
-  const admin = parseFloat(document.getElementById('c-admin').value) || 0;
-  const elec  = parseFloat(document.getElementById('c-elec').value)  || 0;
-  const inet  = parseFloat(document.getElementById('c-inet').value)  || 0;
-  const agentMult = parseFloat(document.getElementById('c-agent').value);
-  const depMult   = parseFloat(document.getElementById('c-dep').value);
+// ── Advanced Calculator Logic ──────────────────────────────
+const calcState = {
+  inputs: ['rent', 'admin', 'media', 'deposit', 'commission'],
+  districts: {
+    srodmiescie: { rent: 5500, admin: 950, media: 450, parking: 400 },
+    wilanow: { rent: 4800, admin: 900, media: 400, parking: 300 },
+    zoliborz: { rent: 4500, admin: 850, media: 350, parking: 300 },
+    mokotow: { rent: 4200, admin: 800, media: 400, parking: 300 },
+    wola: { rent: 4300, admin: 750, media: 350, parking: 300 },
+    ochota: { rent: 4000, admin: 700, media: 350, parking: 250 },
+    bielany: { rent: 3800, admin: 700, media: 300, parking: 250 },
+    ursynow: { rent: 3900, admin: 750, media: 350, parking: 250 },
+    pragapld: { rent: 3700, admin: 700, media: 350, parking: 250 },
+    wlochy: { rent: 3600, admin: 650, media: 300, parking: 250 },
+    bemowo: { rent: 3500, admin: 650, media: 300, parking: 200 },
+    bialoleka: { rent: 2900, admin: 550, media: 250, parking: 200 },
+    targowek: { rent: 3100, admin: 600, media: 250, parking: 200 },
+    ursus: { rent: 3000, admin: 550, media: 250, parking: 200 },
+    wawer: { rent: 2800, admin: 500, media: 300, parking: 150 },
+    pragapln: { rent: 3400, admin: 650, media: 300, parking: 200 },
+    rembertow: { rent: 2700, admin: 500, media: 250, parking: 150 },
+    wesola: { rent: 2700, admin: 500, media: 250, parking: 150 }
+  },
+  multipliers: {
+    studio: { rent: 0.75, admin: 0.8, media: 0.8 },
+    '1bed': { rent: 1.0, admin: 1.0, media: 1.0 },
+    '2bed': { rent: 1.45, admin: 1.3, media: 1.3 },
+    '3bed': { rent: 1.9, admin: 1.6, media: 1.6 }
+  },
+  rates: { PLN: 1, USD: 0.25, EUR: 0.23 },
+  currentCurrency: 'PLN'
+};
 
-  const monthly = rent + admin + elec + inet;
-  const entry   = monthly + (rent * depMult) + (rent * agentMult);
-  const yearly  = entry + (monthly * 11);
-
-  document.getElementById('cr-m').textContent = Math.round(monthly).toLocaleString('uk-UA');
-  document.getElementById('cr-e').textContent = Math.round(entry).toLocaleString('uk-UA');
-  document.getElementById('cr-y').textContent = Math.round(yearly).toLocaleString('uk-UA');
+function format(num) {
+  const r = calcState.rates[calcState.currentCurrency];
+  return (num * r).toLocaleString('en-US', { maximumFractionDigits: 0 });
 }
-['c-rent','c-admin','c-elec','c-inet','c-agent','c-dep'].forEach(id => {
-  document.getElementById(id).addEventListener('input', calcUpdate);
+
+function updateChart(rent, admin, media, other) {
+  const total = rent + admin + media + other;
+  if (total === 0) return;
+  const segments = [
+    { id: 'seg-rent', val: rent },
+    { id: 'seg-admin', val: admin },
+    { id: 'seg-media', val: media },
+    { id: 'seg-other', val: other }
+  ];
+  let offset = 0;
+  segments.forEach(s => {
+    const el = document.getElementById(s.id);
+    const p = (s.val / total) * 100;
+    el.style.strokeDasharray = `${p} ${100 - p}`;
+    el.style.strokeDashoffset = -offset;
+    offset += p;
+  });
+}
+
+function calculate() {
+  const v = {};
+  calcState.inputs.forEach(id => v[id] = parseFloat(document.getElementById(id).value) || 0);
+  
+  let otherMonthly = 0;
+  document.querySelectorAll('.c-box input:checked:not(.onetime)').forEach(cb => {
+    otherMonthly += parseFloat(cb.getAttribute('data-cost'));
+  });
+
+  let oneTimeExtra = 0;
+  document.querySelectorAll('.c-box input.onetime:checked').forEach(cb => {
+    oneTimeExtra += parseFloat(cb.getAttribute('data-cost'));
+  });
+
+  const monthlyPLN = v.rent + v.admin + v.media + otherMonthly;
+  const entryPLN = monthlyPLN + (v.rent * v.deposit) + (v.rent * v.commission) + oneTimeExtra;
+  const yearlyPLN = entryPLN + (monthlyPLN * 11);
+
+  document.getElementById('total-monthly').textContent = format(monthlyPLN);
+  document.getElementById('res-entry').innerHTML = format(entryPLN) + ` <span>${calcState.currentCurrency}</span>`;
+  document.getElementById('res-yearly').innerHTML = format(yearlyPLN) + ` <span>${calcState.currentCurrency}</span>`;
+  
+  updateChart(v.rent, v.admin, v.media, otherMonthly);
+}
+
+function applyPresets() {
+  const d = calcState.districts[document.getElementById('district').value];
+  const m = calcState.multipliers[document.getElementById('room-type').value];
+  if (d && m) {
+    document.getElementById('rent').value = Math.round(d.rent * m.rent / 50) * 50;
+    document.getElementById('admin').value = Math.round(d.admin * m.admin / 10) * 10;
+    document.getElementById('media').value = Math.round(d.media * m.media / 10) * 10;
+    calculate();
+  }
+}
+
+// Initial Events
+calcState.inputs.forEach(id => document.getElementById(id).addEventListener('input', calculate));
+document.querySelectorAll('.c-box input').forEach(cb => cb.addEventListener('change', calculate));
+document.getElementById('district').addEventListener('change', applyPresets);
+document.getElementById('room-type').addEventListener('change', applyPresets);
+
+document.querySelectorAll('.curr-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    document.querySelectorAll('.curr-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    calcState.currentCurrency = btn.dataset.curr;
+    document.getElementById('curr-label').textContent = calcState.currentCurrency;
+    calculate();
+  });
 });
-calcUpdate();
+
+calculate();
 </script>
 
 <script>

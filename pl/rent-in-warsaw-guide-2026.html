@@ -1,90 +1,334 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wynajem mieszkania w Warszawie 2026: Kompletny Przewodnik Krok po Kroku | STAYX</title>
-  <meta name="description" content="Największa encyklopedia wynajmu mieszkań w Warszawie 2026. Analiza 18 dzielnic, prawo, ceny, checklisty i strategie relokacji. Ponad 5000 słów eksperckiej wiedzy.">
-  <link rel="canonical" href="https://stayx-eight.vercel.app/pl/rent-in-warsaw-guide-2026.html">
-  <link rel="alternate" hreflang="uk" href="https://stayx-eight.vercel.app/rent-in-warsaw-guide-2026.html">
-  <link rel="alternate" hreflang="pl" href="https://stayx-eight.vercel.app/pl/rent-in-warsaw-guide-2026.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wynajem mieszkania w Warszawie 2026: Encyklopedia Przeprowadzki | STAYX</title>
+<meta name="description" content="Największy przewodnik po wynajmie mieszkań w Warszawie. Analiza 18 dzielnic, prawo, ceny, kalkulator kosztów, checklisty i porady na rok 2026.">
+<meta property="og:title" content="Wynajem mieszkania w Warszawie 2026 | STAYX">
+<meta property="og:description" content="Najpełniejszy przewodnik dla osób przeprowadzających się do polskiej stolicy. 17 rozdziałów, 18 dzielnic, kalkulator kosztów.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<style>
+:root{
+  --ink:#1a1a1a;--ink2:#3d3d3d;--muted:#6b6b6b;--subtle:#aaa;
+  --bg:#faf9f7;--surface:#fff;--surface2:#f5f3ef;
+  --border:#e8e4dc;--border2:#d0cbc0;
+  --accent:#635bff; /* Unified with Stripe purple */
+  --accent-soft:#f5f4ff;
+  --accent2:#2a5fc8;--accent2-soft:#e6ecf5;
+  --green:#1a7040;--green-soft:#e4f2eb;
+  --amber:#956000;--amber-soft:#fdf2d8;
+  --red:#9e2a2a;--red-soft:#fce8e4;
+  --r:10px;--r-sm:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans', -apple-system, system-ui, sans-serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.75;overflow-x:hidden;-webkit-font-smoothing: antialiased;letter-spacing: -0.011em;}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Progress bar */
+#pb{position:fixed;top:0;left:0;z-index:10000;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),#8b85ff);transition:width .1s linear}
+#main-content { margin-top: 72px; }
+
+/* --- HEADER SYNC (STAYX STANDARD) --- */
+@media (max-width: 991px) {
+  .nav__left, .nav__right { display: none; }
+  .nav__burger { display: flex !important; margin-left: auto !important; z-index: 101 !important; }
   
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <style>
-    :root {
-      --primary: #635bff;
-      --primary-soft: rgba(99, 91, 255, 0.05);
-      --text-main: #0a2540;
-      --text-sub: #425466;
-      --bg: #f6f9fc;
-      --accent-green: #00d4ff;
-    }
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fff; color: var(--text-sub); line-height: 1.8; -webkit-font-smoothing: antialiased; }
-    
-    .article-hero { padding: 200px 0 120px; background: #0a2540; color: #fff; position: relative; overflow: hidden; }
-    .article-hero h1 { font-size: 4rem; font-weight: 800; letter-spacing: -0.05em; line-height: 1.1; margin-bottom: 24px; max-width: 1000px; }
-    .article-hero .lead { font-size: 1.5rem; color: rgba(255,255,255,0.8); max-width: 800px; margin-bottom: 40px; }
-    .article-hero .meta { font-size: 1rem; color: rgba(255,255,255,0.5); display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+  .header.open {
+    background: #fff !important;
+    height: 100vh !important;
+    overflow: auto !important;
+    position: fixed !important;
+  }
+  .header.open .nav__left,
+  .header.open .nav__right {
+    display: flex !important;
+    flex-direction: column !important;
+    position: fixed !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: #fff !important;
+    z-index: 100 !important;
+  }
+  .header.open .nav__left {
+    top: 60px !important;
+    padding: 24px 24px 8px !important;
+    gap: 0 !important;
+  }
+  .header.open .nav__right {
+    top: calc(60px + 300px) !important;
+    padding: 8px 24px 40px !important;
+    gap: 20px !important;
+    align-items: center !important;
+  }
+  .header.open .nav__link {
+    text-align: center !important;
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    color: #0a2540 !important;
+    padding: 10px 0 !important;
+  }
+  .header.open .nav__lang {
+    justify-content: center !important;
+    background: #f6f9fc !important;
+    padding: 8px !important;
+    border-radius: 12px !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+    border: 1px solid #edf2f7 !important;
+  }
+  .header.open .nav__lang a {
+    color: #425466 !important;
+    padding: 8px 16px !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+  }
+  .header.open .nav__lang a.active {
+    color: #0a2540 !important;
+    background: #fff !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+  }
+}
 
-    .article-layout { display: grid; grid-template-columns: 320px 1fr; gap: 80px; max-width: 1400px; margin: 0 auto; padding: 100px 24px; }
-    
-    .sidebar { position: sticky; top: 120px; height: calc(100vh - 150px); overflow-y: auto; padding-right: 20px; border-right: 1px solid #eee; }
-    .sidebar::-webkit-scrollbar { width: 4px; }
-    .sidebar::-webkit-scrollbar-thumb { background: #eee; border-radius: 10px; }
-    
-    .toc-title { font-size: 1rem; font-weight: 800; color: var(--text-main); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 24px; }
-    .toc-list { list-style: none; padding: 0; margin: 0; }
-    .toc-list li { margin-bottom: 14px; }
-    .toc-list a { color: var(--text-sub); text-decoration: none; font-size: 0.95rem; transition: all 0.2s; display: block; }
-    .toc-list a:hover { color: var(--primary); padding-left: 5px; }
+/* --- HERO MOBILE FIXES --- */
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem !important; line-height: 1.2 !important; margin-top: 20px !important; }
+  .g-hero { padding: 120px 0 60px !important; display: block !important; }
+  .hero-stats { flex-direction: row !important; max-width: 340px !important; margin: 0 auto !important; border-radius: 12px !important; overflow: hidden !important; }
+  .hero-stat { border-right: 1px solid var(--border) !important; border-bottom: none !important; padding: 10px 4px !important; flex: 1 !important; }
+  .hero-stat:last-child { border-right: none !important; }
+  .hs-n { font-size: 1rem !important; }
+  .hs-l { font-size: 9.5px !important; }
+  .page-wrap { padding: 0 24px !important; }
+  .main { padding: 0 !important; }
+  ul, ol { padding-left: 20px !important; }
+  .section { padding: 40px 0 !important; }
+  .cta-block { padding: 40px 24px !important; margin: 2rem 0 !important; }
+  .cta-block h2 { font-size: 1.5rem !important; }
+  .cta-btn { padding: 12px 24px !important; font-size: 14px !important; }
+}
 
-    .content-area { max-width: 900px; }
-    
-    h2 { font-size: 3rem; font-weight: 800; color: var(--text-main); margin: 120px 0 48px; letter-spacing: -0.04em; line-height: 1.2; position: relative; }
-    h2::after { content: ''; position: absolute; bottom: -15px; left: 0; width: 80px; height: 6px; background: var(--primary); border-radius: 3px; }
-    h3 { font-size: 2.2rem; font-weight: 700; color: var(--text-main); margin: 80px 0 32px; letter-spacing: -0.02em; }
-    h4 { font-size: 1.6rem; font-weight: 700; color: var(--text-main); margin: 40px 0 20px; }
-    
-    p { margin-bottom: 32px; font-size: 1.25rem; }
-    
-    .highlight-box { background: var(--primary-soft); padding: 48px; border-radius: 32px; margin: 60px 0; border-left: 8px solid var(--primary); }
-    .highlight-box--warning { background: #fffcf0; border-left-color: #f59e0b; }
-    .highlight-box h4 { margin-top: 0; font-size: 1.5rem; margin-bottom: 16px; }
-    
-    .district-card { background: #fff; border: 1px solid rgba(0,0,0,0.06); border-radius: 32px; padding: 48px; margin-bottom: 48px; box-shadow: 0 10px 40px rgba(0,0,0,0.03); }
-    .district-card h4 { margin-top: 0; font-size: 1.8rem; }
-    .district-card .stats { display: flex; flex-wrap: wrap; gap: 32px; margin: 24px 0; font-size: 1rem; color: var(--text-sub); border-top: 1px solid #eee; padding-top: 24px; }
-    .district-card .stats b { color: var(--text-main); }
+/* Hero */
+.g-hero{max-width:860px;margin:0 auto;padding:5.5rem 2rem 3rem;text-align:center}
+.hero-tag{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 16px;border-radius:20px;margin-bottom:1.5rem}
+h1{font-family:'Plus Jakarta Sans', sans-serif;font-size:clamp(1.8rem,5vw,3rem);font-weight:800;line-height:1.2;color:var(--ink);margin-bottom:1.25rem;letter-spacing:-.04em}
+h1 em{font-style:italic;color:var(--accent);font-family:'Playfair Display',serif;font-weight:600;}
+.hero-lead{font-size:1.1rem;color:var(--muted);max-width:600px;margin:0 auto 2.25rem;line-height:1.65}
+.hero-stats{display:flex;align-items:stretch;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;max-width:580px;margin:0 auto;background:#fff;}
+.hero-stat{flex:1;padding:.85rem .5rem;text-align:center;border-right:1px solid var(--border);transition:background .2s}
+.hero-stat:last-child{border-right:none}
+.hero-stat:hover{background:var(--surface2)}
+.hs-n{font-size:1.15rem;font-weight:600;color:var(--ink)}
+.hs-l{font-size:11px;color:var(--subtle);margin-top:1px}
+hr.hdiv{max-width:900px;margin:0 auto;border:none;border-top:1px solid var(--border)}
 
-    .checklist { list-style: none; padding: 0; margin: 40px 0; }
-    .checklist li { padding: 20px 0; border-bottom: 1px solid #eee; display: flex; gap: 20px; align-items: flex-start; font-size: 1.2rem; }
-    .checklist li::before { content: '✓'; color: #00d4aa; font-weight: 900; font-size: 1.5rem; line-height: 1; }
+/* Layout */
+.page-wrap{max-width:1160px;margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:216px 1fr;gap:3rem;align-items:start}
+.main{min-width:0;padding:0 0 4rem}
+.sidebar{position:sticky;top:80px;padding:1.5rem 0}
+.sidebar h3{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--subtle);margin-bottom:.75rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.sidebar a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);padding:.38rem .55rem;border-radius:6px;transition:all .15s;line-height:1.4}
+.sidebar a:hover{color:var(--ink);background:var(--surface2);text-decoration:none}
+.sidebar a.active{color:var(--accent);background:var(--accent-soft);font-weight:600}
+.sn{font-size:10px;color:var(--subtle);min-width:16px;flex-shrink:0}
 
-    .price-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin: 60px 0; }
-    .price-item { background: var(--bg); padding: 32px; border-radius: 24px; text-align: center; border: 1px solid rgba(0,0,0,0.03); }
-    .price-item .label { font-size: 1rem; color: var(--text-sub); display: block; margin-bottom: 12px; }
-    .price-item .val { font-size: 1.8rem; font-weight: 800; color: var(--text-main); }
+/* TOC card */
+.toc-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.75rem 2rem;margin:2rem 0;box-shadow: 0 2px 10px rgba(0,0,0,0.02);}
+.toc-card h2{font-family:'Plus Jakarta Sans', sans-serif;font-weight:700;font-size:1rem;color:var(--ink);margin-bottom:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--border)}
+.toc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem 2rem}
+.toc-grid a{font-size:13.5px;color:var(--ink2);display:flex;align-items:baseline;gap:7px;padding:4px 0;transition:color .15s}
+.toc-grid a:hover{color:var(--accent);text-decoration:none}
+.tn{color:var(--subtle);font-size:11px;min-width:18px}
 
-    .guide-cta { background: linear-gradient(135deg, #0a2540 0%, #1a3550 100%); color: #fff; padding: 100px 60px; border-radius: 48px; text-align: center; margin-top: 150px; }
-    .guide-cta h2 { color: #fff; margin-top: 0; font-size: 2.5rem; }
-    .guide-cta p { font-size: 1.3rem; opacity: 0.9; margin-bottom: 40px; }
+/* Sections */
+.section{padding:3.5rem 0 2rem}
+.section+.section{border-top:1px solid var(--border)}
+h2.st{font-family:'Plus Jakarta Sans', sans-serif;font-weight:800;font-size:clamp(1.5rem,3vw,2.1rem);color:var(--ink);margin-bottom:.4rem;letter-spacing:-.03em;line-height:1.2}
+.ss{font-size:15px;color:var(--muted);margin-bottom:2rem;line-height:1.5}
+h3{font-size:1.05rem;font-weight:700;color:var(--ink);margin:2rem 0 .65rem;letter-spacing:-.01em}
+h3:first-child{margin-top:0}
+p{margin-bottom:1rem;color:var(--ink2);line-height:1.75}
+p:last-child{margin-bottom:0}
 
-    @media (max-width: 1100px) {
-      .article-layout { grid-template-columns: 1fr; }
-      .sidebar { display: none; }
-    }
-    @media (max-width: 768px) {
-      .article-hero h1 { font-size: 2.8rem; }
-      .price-grid { grid-template-columns: 1fr; }
-      h2 { font-size: 2.2rem; }
-    }
-  </style>
+/* Boxes */
+.box{border-radius:var(--r);padding:1.25rem 1.5rem;margin:1.5rem 0;border-left:3px solid}
+.box.blue{background:var(--accent2-soft);border-color:var(--accent2)}
+.box.orange{background:var(--accent-soft);border-color:var(--accent)}
+.box.green{background:var(--green-soft);border-color:var(--green)}
+.box.amber{background:var(--amber-soft);border-color:var(--amber)}
+.box.red{background:var(--red-soft);border-color:var(--red)}
+.box p{font-size:14px;color:var(--ink2);margin-bottom:.5rem}
+.box p:last-child{margin-bottom:0}
+.box strong{color:var(--ink);font-weight:600}
+
+/* District filter */
+.filter-bar{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem;align-items:center}
+.filter-label{font-size:12px;color:var(--subtle);font-weight:500;text-transform:uppercase;letter-spacing:.06em;margin-right:.25rem}
+.fbtn{font-size:12.5px;font-weight:600;color:var(--ink2);background:var(--surface);border:1px solid var(--border);border-radius:9999px;padding:6px 18px;cursor:pointer;transition:all .15s;user-select:none}
+.fbtn:hover{border-color:var(--border2);background:var(--surface2)}
+.fbtn.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* District cards */
+.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(276px,1fr));gap:1rem}
+.dc{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem 1.4rem;transition:border-color .2s,box-shadow .2s;animation:fi .3s ease both}
+@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.dc:hover{border-color:var(--border2);box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.dc.hidden{display:none}
+.dh{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:.65rem}
+.dn2{font-size:.95rem;font-weight:700;color:var(--ink)}
+.dn2 small{display:block;font-size:11.5px;font-weight:400;color:var(--muted);margin-top:1px}
+.badge{font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+.bp{background:#f0eafe;color:#5232b5}
+.bb{background:var(--accent2-soft);color:#1a4898}
+.bf{background:var(--green-soft);color:#1a6038}
+.bu{background:var(--amber-soft);color:#7a4a00}
+.bv{background:#fce8f5;color:#8a1a6a}
+.dprice{font-size:1.05rem;font-weight:700;color:var(--accent);margin-bottom:.55rem}
+.ddesc{font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:.65rem}
+.dtags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:.65rem}
+.tag{font-size:11px;background:var(--bg);color:var(--ink2);border:1px solid var(--border);border-radius:4px;padding:2px 7px}
+.dpc{display:grid;grid-template-columns:1fr 1fr;gap:4px;font-size:12px;border-top:1px solid var(--border);padding-top:.7rem;margin-top:.7rem}
+.pro{color:var(--green);display:flex;gap:4px;align-items:baseline}
+.pro::before{content:"\2713";font-weight:700;flex-shrink:0}
+.con{color:var(--red);display:flex;gap:4px;align-items:baseline}
+.con::before{content:"\2717";font-weight:700;flex-shrink:0}
+
+/* Tables */
+.tw{overflow-x:auto;margin:1.5rem 0;border:1px solid var(--border);border-radius:var(--r)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+thead{background:var(--surface2)}
+th{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);padding:11px 14px;text-align:left;white-space:nowrap;border-bottom:1px solid var(--border)}
+td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--ink2);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#faf8f5}
+td.tdn{font-weight:600;color:var(--ink)}
+td.tp{font-weight:700;color:var(--ink);white-space:nowrap;font-size:13px}
+
+/* Steps */
+.steps{margin:1.5rem 0; background:#0a2540; border-radius:12px; padding:2rem !important; color:#fff}
+.step{display:flex;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1)}
+.step:last-child{border-bottom:none}
+.snum{width:36px;height:36px;border-radius:50%;background:#80e9ff;color:#0a2540;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.sbody h4{font-size:15px;font-weight:700;color:#fff;margin-bottom:.3rem;margin-top:0}
+.sbody p{font-size:14px;color:rgba(255,255,255,0.7);margin:0}
+
+/* Checklist */
+.cl{list-style:none;margin:1rem 0}
+.cl li{display:flex;align-items:flex-start;gap:10px;padding:.65rem 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--ink2)}
+.cl li:last-child{border-bottom:none}
+.ci{width:22px;height:22px;border-radius:50%;background:var(--green-soft);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px}
+.cl strong{color:var(--ink);font-weight:600}
+
+/* Static calc box */
+.calc-box{background:var(--ink);color:#fff;border-radius:var(--r);padding:2rem;margin:1.5rem 0}
+.calc-box h3{color:#fff;font-size:.95rem;margin:0 0 1.25rem;letter-spacing:0;font-weight:700;}
+.cr{display:flex;justify-content:space-between;align-items:center;padding:.45rem 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:14px}
+.cr .lb{color:rgba(255,255,255,.6)}
+.cr .vl{color:#fff;font-weight:500}
+.ctot{display:flex;justify-content:space-between;align-items:center;padding:.75rem 0 0;margin-top:.5rem;border-top:1px solid rgba(255,255,255,.2);font-size:1rem;font-weight:700}
+.ctot .vl{color:#f7c97e;font-size:1.1rem}
+.cnote{font-size:12px;color:rgba(255,255,255,.45);margin-top:1rem;line-height:1.55;border-top:1px solid rgba(255,255,255,.1);padding-top:.75rem}
+
+/* Interactive calc (Advanced) */
+.calc-inter { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; display: grid; grid-template-columns: 1fr 340px; margin: 2rem 0; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.calc-inputs { padding: 32px; }
+.calc-sidebar { background: #0a2540; color: #fff; padding: 32px; display: flex; flex-direction: column; }
+.calc-row { margin-bottom: 20px; }
+.calc-row label { display: block; font-size: 13px; font-weight: 600; color: var(--muted); margin-bottom: 8px; }
+.calc-row select, .calc-row input { width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px; font-family: inherit; font-size: 14px; outline: none; transition: border-color .2s; background: var(--bg); color: var(--ink); }
+.calc-row input:focus, .calc-row select:focus { border-color: var(--accent); }
+.calc-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; }
+.c-box { display: flex; align-items: center; gap: 8px; font-size: 11px; padding: 10px; background: var(--surface2); border-radius: 8px; cursor: pointer; color: var(--ink2); transition: all 0.2s; }
+.c-box:hover { border-color: var(--accent); background: var(--accent-soft); }
+.c-box input { width: auto; }
+.chart-wrap { position: relative; width: 140px; height: 140px; margin: 0 auto 24px; }
+.donut-chart { transform: rotate(-90deg); width: 100%; height: 100%; }
+.donut-segment { fill: none; stroke-width: 6; transition: stroke-dasharray 0.5s ease; }
+.chart-info { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+.chart-info span { display: block; font-size: 10px; opacity: 0.6; }
+.chart-info strong { font-size: 1.1rem; font-weight: 800; display: block; color: #fff; }
+.res-item { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.res-item:last-child { border: none; }
+.res-lb { font-size: 12px; opacity: 0.6; margin-bottom: 4px; }
+.res-vl { font-size: 1.5rem; font-weight: 800; color: #fff; }
+.res-vl span { font-size: 0.9rem; font-weight: 400; opacity: 0.8; margin-left: 4px; }
+.curr-switch { display: flex; gap: 4px; margin-bottom: 24px; justify-content: center; }
+.curr-btn { padding: 6px 12px; border: 1px solid var(--border); background: #fff; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer; color: var(--ink); transition: all 0.2s; }
+.curr-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.calc-footer-msg { font-size: 11px; opacity: 0.5; text-align: center; margin-top: auto; line-height: 1.4; }
+@media (max-width: 850px) {
+  .calc-inter { grid-template-columns: 1fr; }
+  .calc-sidebar { order: -1; }
+  .calc-flex { grid-template-columns: 1fr; }
+}
+
+/* Red flags */
+.flags-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:.85rem;margin-top:1.25rem}
+.flag-card{background:var(--red-soft);border:1px solid #f0cac4;border-radius:var(--r);padding:1.1rem 1.3rem;display:flex;gap:.75rem;align-items:flex-start}
+.fi2{font-size:1.3rem;flex-shrink:0;margin-top:.1rem}
+.ftitle{font-size:14px;font-weight:700;color:var(--red);margin-bottom:.3rem}
+.fdesc{font-size:13px;color:#6a2020;line-height:1.5}
+
+/* Timeline */
+.timeline{position:relative;margin:1.5rem 0;padding-left:2rem}
+.timeline::before{content:'';position:absolute;left:9px;top:0;bottom:0;width:2px;background:var(--border)}
+.tli{position:relative;margin-bottom:1.5rem}
+.tli:last-child{margin-bottom:0}
+.tldot{position:absolute;left:-2rem;top:4px;width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;z-index:1}
+.tlday{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:.25rem}
+.tltitle{font-size:.95rem;font-weight:700;color:var(--ink);margin-bottom:.3rem}
+.tlbody{font-size:13.5px;color:var(--muted);line-height:1.6}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:last-child{border-bottom:none}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;cursor:pointer;gap:1rem;font-size:15px;font-weight:600;color:var(--ink);transition:color .15s;user-select:none}
+.faq-icon{color:var(--subtle);font-size:20px;flex-shrink:0;transition:transform .3s;font-weight:300;line-height:1}
+.faq-item.open .faq-a{max-height:600px;padding-bottom:1rem}
+.faq-item.open .faq-icon{transform:rotate(45deg);color:var(--accent)}
+
+/* Glossary */
+.gloss-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.7rem;margin-top:1.25rem}
+.gi{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm);padding:.9rem 1.1rem}
+.gterm{font-size:13px;font-weight:700;color:var(--accent);margin-bottom:.3rem}
+.gdef{font-size:13px;color:var(--muted);line-height:1.5}
+
+/* CTA */
+.cta-block{background:var(--ink);color:#fff;border-radius:var(--r);padding:3.5rem 2rem;text-align:center;margin:3rem 0;box-shadow: 0 10px 40px rgba(0,0,0,0.15);}
+.cta-block h2{font-family:'Plus Jakarta Sans', sans-serif;font-weight:800;color:#fff;font-size:clamp(1.4rem,3vw,2rem);margin-bottom:.75rem;letter-spacing:-.03em;}
+.cta-block p{color:rgba(255,255,255,.6);font-size:15px;max-width:460px;margin:0 auto 1.75rem}
+.cta-btn{display:inline-block;background:var(--accent);color:#fff;font-size:15px;font-weight:600;padding:14px 32px;border-radius:9999px;transition:opacity .2s}
+.cta-btn:hover{opacity:.85;text-decoration:none}
+.cta-sub{display:flex;justify-content:center;gap:1.5rem;margin-top:1.25rem;flex-wrap:wrap}
+.cta-sub span{font-size:12.5px;color:rgba(255,255,255,.45);display:flex;align-items:center;gap:5px}
+
+footer{border-top:1px solid var(--border);padding:2.5rem 2rem;text-align:center;font-size:13px;color:var(--subtle)}
+footer a{color:var(--subtle)}
+/* Sources Section */
+.sources-section { border-top: 1px solid var(--border); margin-top: 2rem; }
+.sources-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; margin-top: 2rem; }
+.source-group h4 { font-size: 13px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
+.source-group ul { list-style: none; padding: 0 !important; margin: 0 !important; }
+.source-group li { font-size: 13px; color: var(--muted); margin-bottom: 0.75rem; line-height: 1.5; border-bottom: 1px solid var(--surface); padding-bottom: 0.75rem; }
+.source-group li strong { color: var(--ink); }
+.source-operational { background: var(--surface); padding: 1.5rem; border-radius: var(--r-sm); margin-top: 2.5rem; border: 1px solid var(--border); }
+.source-operational p { margin-bottom: 0; font-size: 13px; }
+@media (max-width: 768px) {
+  .sources-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
+@media(max-width:900px){.page-wrap{grid-template-columns:1fr}.sidebar{display:none}}
+
+</style>
 </head>
 <body>
+  <!-- ===== HEADER ===== -->
   <header class="header header--scrolled" id="header" data-keep-scrolled="true">
     <nav class="nav container container-padding">
       <a href="/pl/index.html" class="nav__logo">
@@ -93,23 +337,20 @@
       <div class="nav__left">
         <a href="/pl/index.html#services" class="nav__link">Usługi</a>
         <a href="/pl/how-it-works.html" class="nav__link">Jak to działa</a>
-        <a href="/rent-calculator-warsaw.html" class="nav__link">Oblicz koszty</a>
+        <a href="/rent-calculator-warsaw.html" class="nav__link">Kalkulator kosztów</a>
         <a href="/pl/blog/index.html" class="nav__link">Blog</a>
         <a href="/pl/index.html#faq" class="nav__link">FAQ</a>
       </div>
       <div class="nav__right">
         <div class="nav__lang">
-          <a href="/blog/index.html">Ua</a>
-          <a href="/en/blog/index.html">EN</a>
-          <a href="/pl/blog/index.html" class="active">PL</a>
+          <a href="/rent-in-warsaw-guide-2026.html">Ua</a>
+          <a href="/en/rent-in-warsaw-guide-2026.html">EN</a>
+          <a href="/pl/rent-in-warsaw-guide-2026.html" class="active">PL</a>
         </div>
         <a href="https://t.me/stayX_pl" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Kontakt →</a>
         <div class="nav__social nav__social-mobile">
-          <a href="https://www.instagram.com/stayx_pl?igsh=MWt5enF2b3hoN29rMA%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.98 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="https://www.tiktok.com/@stayx_realestate?_r=1&_t=ZN-96DXaC2rZbT" target="_blank" rel="noopener" aria-label="TikTok">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.53 1.53-.3 2.7-1.67 2.82-3.18.05-3.68-.01-7.36.03-11.03.01-.11 0-.22.01-.33z"/></svg>
+          <a href="https://www.instagram.com/stayx_pl" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265 .069 1.645 .069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266 .058-1.644 .07-4.85 .07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204 .013-3.583 .07-4.849 .149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667 .014-4.947 .072-4.358 .2-6.78 2.618-6.98 6.98-.059 1.281 -.073 1.689 -.073 4.948 0 3.259 .014 3.668 .072 4.948 .2 4.358 2.618 6.98 6.98 6.98 1.281 .058 1.689 .072 4.948 .072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98 .059-1.28 .073-1.689 .073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           </a>
         </div>
       </div>
@@ -118,95 +359,614 @@
       </button>
     </nav>
   </header>
+  <div id="main-content">
 
-  <main>
-    <section class="article-hero">
-      <div class="container container-padding">
-        <h1>Wynajem mieszkania w Warszawie 2026: <br>Wielka Encyklopedia</h1>
-        <p class="lead">Wszystko o tym, jak nie tylko znaleźć dach nad głową, ale zbudować komfortowe życie w polskiej stolicy bez ryzyka i przepłacania.</p>
-        <div class="meta">
-          <span>📅 Maj 2026 (Wersja 3.0)</span>
-          <span>📊 Baza danych: NBP / Investropa / STAYX Analytics</span>
-          <span>📚 Objętość: 5000+ słów</span>
-        </div>
-      </div>
-    </section>
+<div class="g-hero">
+  <span class="hero-tag">Encyklopedia przeprowadzki · 2026</span>
+  <h1>Wynajem mieszkania<br>w <em>Warszawie</em> 2026</h1>
+  <p class="hero-lead">Najpełniejszy przewodnik dla osób przeprowadzających się do polskiej stolicy. Od wyboru dzielnicy do pierwszego tygodnia w nowym domu — bez ryzyka i przepłacania.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="hs-n">18</div><div class="hs-l">dzielnic</div></div>
+    <div class="hero-stat"><div class="hs-n">25+</div><div class="hs-l">terminów</div></div>
+    <div class="hero-stat"><div class="hs-n">85 PLN</div><div class="hs-l">śr. / m²</div></div>
+    <div class="hero-stat"><div class="hs-n">2026</div><div class="hs-l">aktualne</div></div>
+  </div>
+</div>
+<hr class="hdiv">
 
-    <div class="article-layout">
-      <aside class="sidebar">
-        <div class="toc-title">Sekcje</div>
-        <ul class="toc-list">
-          <li><a href="#intro">1. Filozofia rynku 2026</a></li>
-          <li><a href="#prep">2. Przygotowanie: "Portfolio najemcy"</a></li>
-          <li><a href="#districts-mega">3. Grand-tour po 18 dzielnicach</a></li>
-          <li><a href="#sqm-benchmarks">4. Benchmarki cen za m²</a></li>
-          <li><a href="#building-types">5. Typologia zabudowy</a></li>
-          <li><a href="#technical-audit">6. Audyt techniczny: Checklista</a></li>
-          <li><a href="#finance-math">7. Matematyka: Czynsz i Media</a></li>
-          <li><a href="#legal-encyclopedia">8. Encyklopedia Prawna</a></li>
-          <li><a href="#pet-survival">9. Wynajem ze zwierzętami</a></li>
-          <li><a href="#seasonality-logic">10. Sezony i negocjacje</a></li>
-          <li><a href="#admin-post-move">11. Życie po umowie: Meldunek</a></li>
-          <li><a href="#glossary-full">12. Słownik terminów</a></li>
-        </ul>
-      </aside>
+<div class="page-wrap">
+<aside class="sidebar">
+  <nav>
+    <h3>Spis treści</h3>
+    <a href="#intro"><span class="sn">01</span>Rynek 2026</a>
+    <a href="#strategy"><span class="sn">02</span>Strategia szukania</a>
+    <a href="#districts"><span class="sn">03</span>18 dzielnic</a>
+    <a href="#types"><span class="sn">04</span>Typy budynków</a>
+    <a href="#checklist"><span class="sn">05</span>Przegląd techniczny</a>
+    <a href="#prices"><span class="sn">06</span>Tabela cen</a>
+    <a href="#finance"><span class="sn">07</span>Finanse</a>
+    <a href="#calculator"><span class="sn">08</span>Kalkulator</a>
+    <a href="#legal"><span class="sn">09</span>Kwestie prawne</a>
+    <a href="#redflags"><span class="sn">10</span>Czerwone flagi</a>
+    <a href="#segments"><span class="sn">11</span>Rodziny, IT, studenci</a>
+    <a href="#admin"><span class="sn">12</span>PESEL i meldunek</a>
+    <a href="#culture"><span class="sn">13</span>Komunikacja</a>
+    <a href="#season"><span class="sn">14</span>Sezonowość</a>
+    <a href="#firstweek"><span class="sn">15</span>Pierwszy tydzień</a>
+    <a href="#faq"><span class="sn">16</span>FAQ</a>
+    <a href="#glossary"><span class="sn">17</span>Słownik</a>
+  </nav>
+</aside>
 
-      <section class="content-area">
-        <h2 id="intro">1. Filozofia rynku Warszawy 2026</h2>
-        <p>Warszawa 2026 roku to już nie ten chaotyczny rynek, który widzieliśmy w 2022 roku. Dziś to dojrzały, wysoce konkurencyjny ekosystem. Wynajem mieszkania tutaj to nie tylko transakcja, ale prawdziwa sztuka autoprezentacji i strategicznego planowania.</p>
-        <p>Kluczowa zmiana 2026: <strong>Transparentność energetyczna</strong>. Teraz każde ogłoszenie zawiera szczegółowy paszport energetyczny obiektu. Najemcy liczą Total Cost of Living, a nie tylko podstawowy czynsz najmu.</p>
+<main class="main">
 
-        <h2 id="prep">2. Przygotowanie: Twoje "Portfolio najemcy"</h2>
-        <p>Dlaczego jeden najemca dostaje 10 odmów z rzędu, a inny odbiera klucze do idealnego mieszkania na Woli w jeden wieczór? Odpowiedź tkwi w przygotowaniu. W 2026 roku właściciele przeprowadzają prawdziwy "scoring" kandydatów.</p>
-        <div class="highlight-box">
-          <h4>Checklista idealnego kandydata:</h4>
-          <p>— <strong>Weryfikacja zatrudnienia:</strong> Umowa o pracę lub CEIDG.<br>
-          — <strong>Profil LinkedIn:</strong> Właściciele często sprawdzają Twój profil zawodowy.<br>
-          — <strong>Bufor finansowy:</strong> Bądź gotów wpłacić kaucję natychmiast.</p>
-        </div>
+<div class="toc-card">
+  <h2>📋 Pełny spis treści</h2>
+  <div class="toc-grid">
+    <a href="#intro"><span class="tn">01</span>Rynek 2026: co się zmieniło</a>
+    <a href="#strategy"><span class="tn">02</span>Strategia szukania</a>
+    <a href="#districts"><span class="tn">03</span>Analiza wszystkich 18 dzielnic</a>
+    <a href="#types"><span class="tn">04</span>Typy budynków</a>
+    <a href="#checklist"><span class="tn">05</span>Checklista przeglądu technicznego</a>
+    <a href="#prices"><span class="tn">06</span>Pełna tabela cen</a>
+    <a href="#finance"><span class="tn">07</span>Finanse: Czynsz i Media</a>
+    <a href="#calculator"><span class="tn">08</span>Kalkulator kosztów</a>
+    <a href="#legal"><span class="tn">09</span>Masterclass prawny</a>
+    <a href="#redflags"><span class="tn">10</span>12 czerwonych flag</a>
+    <a href="#segments"><span class="tn">11</span>Rodziny, IT, studenci</a>
+    <a href="#admin"><span class="tn">12</span>PESEL i meldunek</a>
+    <a href="#culture"><span class="tn">13</span>Kultura komunikacji</a>
+    <a href="#season"><span class="tn">14</span>Sezonowość rynku</a>
+    <a href="#firstweek"><span class="tn">15</span>Pierwszy tydzień</a>
+    <a href="#faq"><span class="tn">16</span>FAQ (10 pytań)</a>
+    <a href="#glossary"><span class="tn">17</span>Słownik (30+ terminów)</a>
+  </div>
+</div>
 
-        <h2 id="districts-mega">3. Grand-tour po 18 dzielnicach</h2>
-        <h3 id="dist-srodmiescie">Śródmieście: Bez kompromisów</h3>
-        <p>Centrum Warszawy to miks biznesu i historii. Ceny: 120-140 PLN za m² w nowym budownictwie.</p>
-        <h3 id="dist-wola">Wola: Serce finansowe</h3>
-        <p>Dzielnica wieżowców. Z powodu dużej podaży nowych mieszkań, właściciele na Woli są obecnie bardziej skłonni do negocjacji cenowych.</p>
-        <h3 id="dist-mokotow">Mokotów: Faworyt ekspatów</h3>
-        <p>Prestiż, zieleń i świetna komunikacja. Ceny za 2 pokoje: 4800 - 6500 PLN.</p>
+<!-- 01 -->
+<section class="section" id="intro">
+<h2 class="st">01 · Rynek 2026: co się zmieniło</h2>
+<p class="ss">Krótko o stanie rynku — zanim zagłębimy się w szczegóły</p>
+<p>Warszawski rynek wynajmu w 2026 roku znacząco różni się od chaosu z lat 2022–2023. Dziś rynek jest ustrukturyzowany i przewidywalny — ale bardzo konkurencyjny. Dostępność dobrych mieszkań w pobliżu metra utrzymuje się na poziomie 2–4%, a czas na wynajęcie mieszkania to zwykle 15–20 dni.</p>
+<p>Średnia cena wynajmu w Warszawie to <strong>85 PLN/m²/miesiąc</strong>. W Śródmieściu osiąga ona 120 PLN/m², natomiast w dzielnicach zewnętrznych spada do 60–70 PLN. W ciągu ostatnich 5 lat rynek urósł o ~47%.</p>
+<div class="box blue">
+  <p><strong>Kluczowe liczby 2026 (Investropa, NBP, CBRE Poland):</strong></p>
+  <p>— Studio w Warszawie: od 1 700 do 5 200 PLN<br>
+  — 1-pokojowe: od 2 200 do 6 500 PLN<br>
+  — 2-pokojowe: od 2 800 do 9 500+ PLN<br>
+  — Vacancy rate (premium): 2–4%; stary zasób — 8–12%<br>
+  — Wzrost cen YoY: +4–6%</p>
+</div>
+<p><strong>Niuanse Woli 2026.</strong> Duży napływ nowych inwestycji w latach 2025–2026 zwiększył podaż i dał najemcom więcej przestrzeni do negocjacji właśnie tam. Z kolei Żoliborz i Mokotów pozostają deficytowe — dobre mieszkanie znika w 7–10 dni.</p>
+<p><strong>Trend: najem instytucjonalny (PRS).</strong> Wielcy deweloperzy (Heimstaden, Resi4Rent, Catella) powiększyli swoje portfele. Oferują: ustandaryzowane umowy, podpisywanie online, wsparcie w języku angielskim — idealne dla obcokrajowców bez sieci kontaktów w Polsce.</p>
+</section>
 
-        <h2 id="sqm-benchmarks">4. Benchmarki cen za m² (Maj 2026)</h2>
-        <div class="price-grid">
-          <div class="price-item"><span class="label">Śródmieście</span><span class="val">120-140 PLN/m²</span></div>
-          <div class="price-item"><span class="label">Wola / Mokotów</span><span class="val">90-110 PLN/m²</span></div>
-          <div class="price-item"><span class="label">Białołęka / Ursus</span><span class="val">65-75 PLN/m²</span></div>
-        </div>
+<!-- 02 -->
+<section class="section" id="strategy">
+<h2 class="st">02 · Strategia szukania</h2>
+<p class="ss">Pierwszy błąd — otwarcie Otodom i dzwonienie do wszystkich po kolei</p>
+<p>Na każde wysokiej jakości mieszkanie przypada 5–15 chętnych. Właściciel wybiera najemcę tak, jak pracodawca wybiera kandydata. Twoim zadaniem jest przyjść przygotowanym.</p>
+<h3>Pięć elementów portfolio najemcy</h3>
+<div class="steps">
+  <div class="step"><div class="snum">1</div><div class="sbody"><h4>Potwierdzenie dochodów</h4><p>Umowa o pracę lub wyciąg B2B z 3–6 miesięcy. Zasada: dochód ≥ 3× stawka najmu. Nieoficjalny, ale realny wymóg większości właścicieli.</p></div></div>
+  <div class="step"><div class="snum">2</div><div class="sbody"><h4>Referencje od poprzedniego właściciela</h4><p>Jeśli już wynajmowałeś w Polsce — jeden kontakt otwiera drzwi. „Płacił terminowo, zostawił mieszkanie w idealnym stanie” — i właściciel wybiera Ciebie.</p></div></div>
+  <div class="step"><div class="snum">3</div><div class="sbody"><h4>Gotowy pakiet dokumentów</h4><p>Paszport, PESEL (jeśli posiadasz), potwierdzenie zatrudnienia — wszystko w PDF, wysłane jeszcze przed oglądaniem.</p></div></div>
+  <div class="step"><div class="snum">4</div><div class="sbody"><h4>Szybkość podejmowania decyzji</h4><p>Gotowość do podpisania umowy w ciągu 24 godzin. „Pomyślę do piątku” = mieszkanie podpisane w środę z kimś innym.</p></div></div>
+  <div class="step"><div class="snum">5</div><div class="sbody"><h4>Zadatek</h4><p>Propozycja zostawienia 500–1 000 PLN od razu po oglądaniu — to potężny sygnał. Zadatek dyscyplinuje obie strony w przypadku rezygnacji; zaliczka jest po prostu zwracana.</p></div></div>
+</div>
+<div class="box amber">
+  <p><strong>Gdzie szukać:</strong> Otodom.pl (główny), OLX.pl, Morizon.pl, Gratka.pl. Facebook Marketplace — ryzykowne, ale zdarzają się oferty bez prowizji. Bez znajomości języka polskiego i numeru PESEL — zapraszamy do STAYX: negocjacje, tłumaczenia i wsparcie prawne w cenie.</p>
+</div>
+</section>
 
-        <h2 id="finance-math">7. Matematyka: Czynsz i Media</h2>
-        <p>Cena w ogłoszeniu to tylko wierzchołek góry lodowej. Pamiętaj o czynszu administracyjnym, który w 2026 roku wynosi średnio 900-1200 PLN za 2 pokoje.</p>
+<!-- 03 -->
+<section class="section" id="districts">
+<h2 class="st">03 · Analiza wszystkich 18 dzielnic</h2>
+<p class="ss">Każda dzielnica to osobny świat z własną logiką cen, transportem i charakterem</p>
+<div class="filter-bar">
+  <span class="filter-label">Filtr:</span>
+  <button class="fbtn active" data-f="all">Wszystkie 18</button>
+  <button class="fbtn" data-f="premium">Premium</button>
+  <button class="fbtn" data-f="business">Biznes</button>
+  <button class="fbtn" data-f="family">Rodzinne</button>
+  <button class="fbtn" data-f="budget">Budżetowe</button>
+  <button class="fbtn" data-f="metro">Jest metro</button>
+</div>
+<div class="dgrid" id="dg">
+  <div class="dc" data-t="premium" data-m="1"><div class="dh"><div class="dn2">Śródmieście<small>Centrum</small></div><span class="badge bp">Premium</span></div><div class="ddesc">Serce Warszawy: wieżowce, Stare Miasto, Powiśle. Dzieli się na Północne (biznesowe) i Południowe (bohemistyczne).</div><div class="dprice">6 500–9 500+ PLN / 2-pok.</div><div class="dtags"><span class="tag">M1+M2</span><span class="tag">Tramwaje</span><span class="tag">Wszędzie pieszo</span></div><div class="dpc"><div class="pro">Wszystko blisko</div><div class="con">Najdrożej</div><div class="pro">Prestiż</div><div class="con">Hałas, korki</div></div></div>
 
-        <h2 id="legal-encyclopedia">8. Encyklopedia Prawna: Najem Okazjonalny</h2>
-        <p>To standard rynkowy. Wymaga wizyty u notariusza. Koszt w 2026 roku to ok. 630-750 PLN. <strong>STAYX zapewnia adres do zameldowania dla swoich klientów zagranicznych.</strong></p>
+  <div class="dc" data-t="premium" data-m="1"><div class="dh"><div class="dn2">Żoliborz<small>Żoliborz</small></div><span class="badge bp">Elitarny</span></div><div class="ddesc">Najmniejsza i najbardziej prestiżowa dzielnica. Atmosfera inteligentnej Warszawy. Dobre mieszkanie znika w 7–10 dni.</div><div class="dprice">5 500–8 000 PLN / 2-pok.</div><div class="dtags"><span class="tag">M1</span><span class="tag">Tramwaje</span><span class="tag">Kamienice</span></div><div class="dpc"><div class="pro">Bezpieczeństwo, cisza</div><div class="con">Mała podaż</div><div class="pro">Architektura</div><div class="con">Drogo za m²</div></div></div>
 
-        <h2 id="glossary-full">12. Słownik terminów</h2>
-        <p>— <strong>Odstępne:</strong> Kwota dla właściciela.<br>
-        — <strong>Czynsz administracyjny:</strong> Opłata dla wspólnoty/spółdzielni.<br>
-        — <strong>Kaucja:</strong> Depozyt zwrotny.</p>
+  <div class="dc" data-t="premium" data-m="0"><div class="dh"><div class="dn2">Wilanów<small>Wilanów</small></div><span class="badge bp">Dyplomat.</span></div><div class="ddesc">Najbardziej prestiżowy adres poza centrum. Pałac w Wilanowie, rezydencje dyplomatyczne, szkoły międzynarodowe. Luksusowe osiedla.</div><div class="dprice">6 000–10 000 PLN / 2-pok.</div><div class="dtags"><span class="tag">Autobusy</span><span class="tag">Auto niezbędne</span><span class="tag">Int'l schools</span></div><div class="dpc"><div class="pro">Luksusowa zabudowa</div><div class="con">Brak metra</div><div class="pro">Szkoły</div><div class="con">Korki</div></div></div>
 
-        <div class="guide-cta">
-          <h2>Pomożemy Ci zbudować dom w Warszawie</h2>
-          <p>STAYX to pełne wsparcie od pomysłu do zameldowania.</p>
-          <a href="index.html#contactForm" class="btn btn--primary btn--lg">Zacznij bezpieczny wynajem</a>
-        </div>
-      </section>
+  <div class="dc" data-t="business" data-m="1"><div class="dh"><div class="dn2">Wola<small>Wola</small></div><span class="badge bb">Business-hub</span></div><div class="ddesc">Rondo Daszyńskiego — polskie Canary Wharf. Nowy napływ mieszkań 2025–2026 daje przestrzeń do negocjacji.</div><div class="dprice">5 500–7 500 PLN / 2-pok.</div><div class="dtags"><span class="tag">M2</span><span class="tag">Tramwaje</span><span class="tag">Google, Samsung</span></div><div class="dpc"><div class="pro">Nowy zasób</div><div class="con">Nadmiar podaży</div><div class="pro">Blisko biur</div><div class="con">Brak „duszy”</div></div></div>
+
+  <div class="dc" data-t="premium" data-m="1"><div class="dh"><div class="dn2">Mokotów<small>Mokotów</small></div><span class="badge bp">Premium</span></div><div class="ddesc">Górny — wille i ambasady, Dolny — biura na Domaniewskiej. Największa powierzchnia zielona wśród centralnych dzielnic.</div><div class="dprice">4 800–7 000 PLN / 2-pok.</div><div class="dtags"><span class="tag">M1</span><span class="tag">Autobusy</span><span class="tag">Pole Mokotowskie</span></div><div class="dpc"><div class="pro">Zieleń, parki</div><div class="con">Brak M2</div><div class="pro">Szkoły, rodziny</div><div class="con">Korki na Puławskiej</div></div></div>
+
+  <div class="dc" data-t="business" data-m="0"><div class="dh"><div class="dn2">Ochota<small>Ochota</small></div><span class="badge bb">Centralny</span></div><div class="ddesc">Cicha, zielona dzielnica między Centrum a Mokotowem. Uniwersytet Warszawski. Dobry balans ceny i lokalizacji.</div><div class="dprice">4 000–5 800 PLN / 2-pok.</div><div class="dtags"><span class="tag">Tramwaje</span><span class="tag">Autobusy</span><span class="tag">Akademicki</span></div><div class="dpc"><div class="pro">Cena / lokalizacja</div><div class="con">Brak metra</div><div class="pro">Cisza, zieleń</div><div class="con">Stary zasób</div></div></div>
+
+  <div class="dc" data-t="family" data-m="1"><div class="dh"><div class="dn2">Ursynów<small>Ursynów</small></div><span class="badge bf">Rodzinny</span></div><div class="ddesc">„Wysokiej jakości sypialnia” Warszawy. Szkoły, baseny, Las Kabacki. M1 — 5 stacji przez całą dzielnicę.</div><div class="dprice">4 200–5 800 PLN / 2-pok.</div><div class="dtags"><span class="tag">M1 (5 st.)</span><span class="tag">Szkoły</span><span class="tag">Las</span></div><div class="dpc"><div class="pro">Szkoły, parki</div><div class="con">Daleko od centrum</div><div class="pro">Dostępna cena</div><div class="con">Bloki z lat 80.</div></div></div>
+
+  <div class="dc" data-t="family" data-m="1"><div class="dh"><div class="dn2">Bielany<small>Bielany</small></div><span class="badge bf">Zielony</span></div><div class="ddesc">Zielona, spokojna północ. Las Bielański, UKSW. Nowe inwestycje w pobliżu M1.</div><div class="dprice">3 500–5 000 PLN / 2-pok.</div><div class="dtags"><span class="tag">M1</span><span class="tag">Autobusy</span><span class="tag">Las</span></div><div class="dpc"><div class="pro">Powietrze, las</div><div class="con">Daleko od centrum</div><div class="pro">Dostępnie</div><div class="con">Głównie bloki</div></div></div>
+
+  <div class="dc" data-t="family" data-m="0"><div class="dh"><div class="dn2">Bemowo<small>Bemowo</small></div><span class="badge bf">Dostępny</span></div><div class="ddesc">Aktywnie zabudowywany zachód. Nowe osiedla i dobre szkoły. Dostępne dla młodych rodzin bez metra.</div><div class="dprice">3 800–5 200 PLN / 2-pok.</div><div class="dtags"><span class="tag">Tramwaje</span><span class="tag">Autobusy</span><span class="tag">Nowe osiedla</span></div><div class="dpc"><div class="pro">Nowy zasób</div><div class="con">Brak metra</div><div class="pro">Cena</div><div class="con">Mało kultury</div></div></div>
+
+  <div class="dc" data-t="business" data-m="1"><div class="dh"><div class="dn2">Praga-Północ<small>Praga Północ</small></div><span class="badge bv">Bohema</span></div><div class="ddesc">Hipsterska dzielnica gentryfikacji. Lofty, galerie, niezależne kawiarnie. M2 — główna zaleta transportowa.</div><div class="dprice">3 500–5 500 PLN / 2-pok.</div><div class="dtags"><span class="tag">M2</span><span class="tag">Tramwaje</span><span class="tag">Lofty</span></div><div class="dpc"><div class="pro">Atmosfera</div><div class="con">Nierówna dzielnica</div><div class="pro">M2 taniej</div><div class="con">Wilgoć w kamienicach</div></div></div>
+
+  <div class="dc" data-t="family" data-m="1"><div class="dh"><div class="dn2">Praga-Południe<small>Praga Południe</small></div><span class="badge bf">Prawy brzeg</span></div><div class="ddesc">Różnorodna dzielnica. Saska Kępa — wyspa elegancji z lat 30. Dobra relacja cena/jakość dla rodzin.</div><div class="dprice">3 500–5 000 PLN / 2-pok.</div><div class="dtags"><span class="tag">M2 (częściowo)</span><span class="tag">Tramwaje</span><span class="tag">Saska Kępa</span></div><div class="dpc"><div class="pro">Saska Kępa</div><div class="con">Za rzeką</div><div class="pro">Przestrzeń</div><div class="con">Nierówny zasób</div></div></div>
+
+  <div class="dc" data-t="family" data-m="0"><div class="dh"><div class="dn2">Włochy<small>Włochy</small></div><span class="badge bf">Praktyczny</span></div><div class="ddesc">Blisko lotniska Chopina. Nowe osiedla. Warszawa Zachodnia — pociągi w całą Polskę. Idealne dla często latających.</div><div class="dprice">3 500–5 000 PLN / 2-pok.</div><div class="dtags"><span class="tag">SKM/KM</span><span class="tag">3 min do lotniska</span></div><div class="dpc"><div class="pro">Lotnisko blisko</div><div class="con">Samoloty nad głową</div><div class="pro">Nowe osiedla</div><div class="con">Brak metra</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="1"><div class="dh"><div class="dn2">Targówek<small>Targówek</small></div><span class="badge bu">Budżetowy</span></div><div class="ddesc">Dzielnica z potencjałem. Przeważnie bloki. M2 — główny punkt wzrostu wartości w nadchodzących latach.</div><div class="dprice">3 200–4 500 PLN / 2-pok.</div><div class="dtags"><span class="tag">M2 (częściowo)</span><span class="tag">Tramwaje</span></div><div class="dpc"><div class="pro">Taniej z metrem</div><div class="con">Stary zasób</div><div class="pro">Potencjał</div><div class="con">Mniej bezpiecznie</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Ursus<small>Ursus</small></div><span class="badge bu">Dostępny</span></div><div class="ddesc">Dawne miasto przemysłowe. Nowe mikrodzielnice. Planowane M2 — ceny będą rosły. Teraz najlepsza relacja cena/jakość.</div><div class="dprice">3 200–4 500 PLN / 2-pok.</div><div class="dtags"><span class="tag">KM/SKM</span><span class="tag">M2 wkrótce</span></div><div class="dpc"><div class="pro">Nowe osiedla</div><div class="con">Póki co brak metra</div><div class="pro">Cena/jakość</div><div class="con">Bez auta niewygodnie</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Białołęka<small>Białołęka</small></div><span class="badge bu">Rozwojowa</span></div><div class="ddesc">Największe nowe budownictwo w Warszawie. Bardzo daleko od centrum. Dla młodych rodzin z autem, chcących nowe i tanie.</div><div class="dprice">3 000–4 200 PLN / 2-pok.</div><div class="dtags"><span class="tag">Autobusy</span><span class="tag">Auto zalecane</span></div><div class="dpc"><div class="pro">Tanio i nowe</div><div class="con">Daleko od wszystkiego</div><div class="pro">Zielono</div><div class="con">Bez auta — słabo</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Wawer<small>Wawer</small></div><span class="badge bu">Leśny</span></div><div class="ddesc">Cichy, zielony, prawie „letniskowy”. Bor sosnowy, rzeka. Więcej domów niż mieszkań. Pociąg do centrum — 25–35 min.</div><div class="dprice">3 000–4 200 PLN / 2-pok.</div><div class="dtags"><span class="tag">KM/SKM</span><span class="tag">Przyroda</span></div><div class="dpc"><div class="pro">Cisza, las</div><div class="con">Daleko</div><div class="pro">Tanio</div><div class="con">Mało mieszkań</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Rembertów<small>Rembertów</small></div><span class="badge bu">Najtańszy</span></div><div class="ddesc">Jedna z najmniejszych i najcichszych dzielnic. Przeważnie niska zabudowa. Minimalny czynsz najmu w Warszawie.</div><div class="dprice">2 800–3 800 PLN / 2-pok.</div><div class="dtags"><span class="tag">KM</span><span class="tag">Auto niezbędne</span></div><div class="dpc"><div class="pro">Najniższy najem</div><div class="con">Najmniejszy wybór</div><div class="pro">Cisza</div><div class="con">Bardzo daleko</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Wesoła<small>Wesoła</small></div><span class="badge bu">Najmniejszy</span></div><div class="ddesc">Najmniejsza dzielnica Warszawy o wiejskim charakterze. Przeważnie domy. Mieszkań na wynajem praktycznie brak.</div><div class="dprice">2 800–3 500 PLN / 2-pok.</div><div class="dtags"><span class="tag">KM</span><span class="tag">Auto niezbędne</span></div><div class="dpc"><div class="pro">Przyroda, cisza</div><div class="con">Prawie brak mieszkań</div><div class="pro">Najniższa cena</div><div class="con">Daleko od wszystkiego</div></div></div>
+</div>
+</section>
+
+<!-- 04 -->
+<section class="section" id="types">
+<h2 class="st">04 · Typy budynków</h2>
+<p class="ss">Typ budynku ma bezpośredni wpływ na rachunki za ogrzewanie i jakość izolacji akustycznej</p>
+<div class="type-grid">
+  <div class="tc"><div class="tera">Do 1945 r.</div><div class="tname">Kamienica</div><div class="tpc"><div class="p">✓ Sufity 3+ m, grube ściany</div><div class="p">✓ Atmosfera, centrum</div><div class="c">✗ Możliwa wilgoć</div><div class="c">✗ Stare rury i elektryka</div></div></div>
+  <div class="tc"><div class="tera">1950–1959 r.</div><div class="tname">Socrealizm</div><div class="tpc"><div class="p">✓ Solidna konstrukcja</div><div class="p">✓ Duże mieszkania</div><div class="c">✗ Nie zawsze jest winda</div><div class="c">✗ Wysoki czynsz adm.</div></div></div>
+  <div class="tc"><div class="tera">1960–1990 r.</div><div class="tname">Blok</div><div class="tpc"><div class="p">✓ Taniej niż rynkowo</div><div class="p">✓ Ciepło miejskie</div><div class="c">✗ Słaba izolacja akustyczna</div><div class="c">✗ Mała kuchnia</div></div></div>
+  <div class="tc"><div class="tera">1990–2010 r.</div><div class="tname">Nowe budownictwo</div><div class="tpc"><div class="p">✓ Winda, normalny czynsz</div><div class="p">✓ Dobra izolacja</div><div class="c">✗ Różna jakość</div><div class="c">✗ Często brak garażu</div></div></div>
+  <div class="tc"><div class="tera">Po 2010 r.</div><div class="tname">Apartamentowiec</div><div class="tpc"><div class="p">✓ Garaż, ochrona</div><div class="p">✓ 1 Gbit/s, wentylacja</div><div class="c">✗ Najwyższy czynsz adm.</div><div class="c">✗ Kompaktowe plany</div></div></div>
+</div>
+<div class="box amber" style="margin-top:1.25rem">
+  <p><strong>Świadectwo charakterystyki energetycznej (SKE)</strong> jest obowiązkowe od 2023 r. Klasa A/B = niskie rachunki. Klasa E/F = +400–700 PLN zimą. Zawsze o nie pytaj.</p>
+</div>
+</section>
+
+<!-- 05 -->
+<section class="section" id="checklist">
+<h2 class="st">05 · Checklista przeglądu technicznego</h2>
+<p class="ss">Gdy wchodzisz do mieszkania — emocje są Twoim wrogiem. Otwórz listę</p>
+<ul class="cl">
+  <li><div class="ci">1</div><div><strong>Okna i przeciągi.</strong> Przystaw rękę do styku ramy ze ścianą. Przeciąg zimą = +400–700 PLN do rachunku. Pytaj o rok montażu.</div></li>
+  <li><div class="ci">2</div><div><strong>Wilgoć i pleśń.</strong> Kąty za szafami, pod parapetami, wokół wanny. Czarne plamy = grzyb = problem na lata. Nie wierz w „pomalujemy”.</div></li>
+  <li><div class="ci">3</div><div><strong>Ciśnienie wody.</strong> Włącz prysznic i kran jednocześnie. Słabe ciśnienie w starych domach — kwestia Wspólnoty, rozwiązuje się latami.</div></li>
+  <li><div class="ci">4</div><div><strong>Elektryka.</strong> Minimum 25A, lepiej 40A. 10–15A — klimatyzacja i pralka mogą jednocześnie wyrzucić korki.</div></li>
+  <li><div class="ci">5</div><div><strong>Internet.</strong> ADSL (miedź) = do 100 Mbit/s. Światłowód = 1 Gbit/s. Dla IT lub home-office — pytaj o operatora i typ kabla.</div></li>
+  <li><div class="ci">6</div><div><strong>Ogrzewanie.</strong> Miejskie ciepło = stabilna cena. Gaz = zależy od zużycia. Elektryczne = najdroższe — uważaj.</div></li>
+  <li><div class="ci">7</div><div><strong>Porozmawiaj z sąsiadem.</strong> 5 minut na klatce = więcej informacji niż 50 zdjęć w ogłoszeniu. Głośni sąsiedzi? Remonty? Problemy z zarządcą?</div></li>
+  <li><div class="ci">8</div><div><strong>Garaż i komórka lokatorska.</strong> Gdzie parkować? Czy jest piwnica / komórka? Codzienny komfort zależy od tych szczegółów.</div></li>
+  <li><div class="ci">9</div><div><strong>Stan instalacji.</strong> Sprawdź pod zlewami i wanną — ślady zacieków. Właściciel ma obowiązek usunąć usterki przed wprowadzką.</div></li>
+  <li><div class="ci">10</div><div><strong>Świadectwo energetyczne (SKE).</strong> Wymagaj go. Właściciel ma obowiązek okazać. Brak = nieznajomość prawa lub klasa E/F, której się wstydzą.</div></li>
+</ul>
+</section>
+
+<!-- 06 -->
+<section class="section" id="prices">
+<h2 class="st">06 · Pełna tabela cen 2026</h2>
+<p class="ss">PLN/miesiąc bez czynszu adm. i mediów. Źródła: Investropa, NBP Q1 2026, Otodom</p>
+<div class="tw">
+  <table>
+    <thead><tr><th>Dzielnica</th><th>Segment</th><th>Studio</th><th>1-pok.</th><th>2-pok.</th><th>3-pok.</th></tr></thead>
+    <tbody>
+      <tr><td class="tdn">Śródmieście</td><td><span class="badge bp">Premium</span></td><td class="tp">3 800–5 200</td><td class="tp">4 500–6 500</td><td class="tp">6 500–9 500+</td><td class="tp">9 000–15 000+</td></tr>
+      <tr><td class="tdn">Żoliborz</td><td><span class="badge bp">Elitarny</span></td><td class="tp">3 500–5 000</td><td class="tp">4 200–6 000</td><td class="tp">5 500–8 000</td><td class="tp">8 000–12 000</td></tr>
+      <tr><td class="tdn">Wilanów</td><td><span class="badge bp">Premium</span></td><td class="tp">3 800–5 500</td><td class="tp">4 500–6 500</td><td class="tp">6 000–10 000</td><td class="tp">9 000–14 000</td></tr>
+      <tr><td class="tdn">Wola</td><td><span class="badge bb">Biznes</span></td><td class="tp">3 400–4 800</td><td class="tp">4 000–6 000</td><td class="tp">5 500–7 500</td><td class="tp">7 500–11 000</td></tr>
+      <tr><td class="tdn">Mokotów</td><td><span class="badge bp">Premium</span></td><td class="tp">3 200–4 800</td><td class="tp">3 800–5 800</td><td class="tp">4 800–7 000</td><td class="tp">7 000–11 000</td></tr>
+      <tr><td class="tdn">Ochota</td><td><span class="badge bb">Centr.</span></td><td class="tp">2 800–4 000</td><td class="tp">3 500–5 200</td><td class="tp">4 000–5 800</td><td class="tp">5 500–8 000</td></tr>
+      <tr><td class="tdn">Praga-Północ</td><td><span class="badge bv">Bohema</span></td><td class="tp">2 600–3 800</td><td class="tp">3 200–5 000</td><td class="tp">3 500–5 500</td><td class="tp">5 000–7 500</td></tr>
+      <tr><td class="tdn">Ursynów</td><td><span class="badge bf">Rodzinny</span></td><td class="tp">2 800–3 800</td><td class="tp">3 400–5 000</td><td class="tp">4 200–5 800</td><td class="tp">5 500–8 000</td></tr>
+      <tr><td class="tdn">Bielany</td><td><span class="badge bf">Rodzinny</span></td><td class="tp">2 500–3 500</td><td class="tp">3 000–4 500</td><td class="tp">3 500–5 000</td><td class="tp">4 800–7 000</td></tr>
+      <tr><td class="tdn">Bemowo</td><td><span class="badge bf">Rodzinny</span></td><td class="tp">2 500–3 500</td><td class="tp">3 000–4 500</td><td class="tp">3 800–5 200</td><td class="tp">5 000–7 000</td></tr>
+      <tr><td class="tdn">Praga-Południe</td><td><span class="badge bf">Rodzinny</span></td><td class="tp">2 400–3 500</td><td class="tp">3 000–4 500</td><td class="tp">3 500–5 000</td><td class="tp">4 800–7 000</td></tr>
+      <tr><td class="tdn">Włochy</td><td><span class="badge bf">Praktycz.</span></td><td class="tp">2 400–3 400</td><td class="tp">3 000–4 200</td><td class="tp">3 500–5 000</td><td class="tp">4 500–6 500</td></tr>
+      <tr><td class="tdn">Targówek</td><td><span class="badge bu">Budżet</span></td><td class="tp">2 200–3 200</td><td class="tp">2 800–4 000</td><td class="tp">3 200–4 500</td><td class="tp">4 200–6 000</td></tr>
+      <tr><td class="tdn">Ursus</td><td><span class="badge bu">Budżet</span></td><td class="tp">2 200–3 200</td><td class="tp">2 800–4 000</td><td class="tp">3 200–4 500</td><td class="tp">4 200–6 000</td></tr>
+      <tr><td class="tdn">Białołęka</td><td><span class="badge bu">Budżet</span></td><td class="tp">2 000–3 000</td><td class="tp">2 600–3 800</td><td class="tp">3 000–4 200</td><td class="tp">4 000–5 500</td></tr>
+      <tr><td class="tdn">Wawer</td><td><span class="badge bu">Budżet</span></td><td class="tp">1 900–2 800</td><td class="tp">2 500–3 600</td><td class="tp">3 000–4 200</td><td class="tp">4 000–5 500</td></tr>
+      <tr><td class="tdn">Rembertów</td><td><span class="badge bu">Budżet</span></td><td class="tp">1 800–2 600</td><td class="tp">2 300–3 400</td><td class="tp">2 800–3 800</td><td class="tp">3 500–5 000</td></tr>
+      <tr><td class="tdn">Wesoła</td><td><span class="badge bu">Budżet</span></td><td class="tp">1 700–2 500</td><td class="tp">2 200–3 200</td><td class="tp">2 800–3 500</td><td class="tp">3 200–4 500</td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="box green">
+  <p><strong>Formuła:</strong> Powierzchnia (m²) × 85 PLN = średnia rynkowa w Warszawie. Śródmieście: ×120 PLN. Ursynów / Bielany: ×65 PLN. Wilanów luksus: ×130–150 PLN.</p>
+</div>
+</section>
+
+<!-- 07 -->
+<section class="section" id="finance">
+<h2 class="st">07 · Finanse: Czynsz i Media</h2>
+<p class="ss">Ogłoszenie mówi „4 500 PLN”. Realny miesięczny koszt jest inny</p>
+<p>Większość ogłoszeń podaje tylko <em>czynsz najmu</em>. Do tego zawsze dochodzi <strong>czynsz administracyjny</strong> (700–1 200 PLN) i <strong>media</strong> (prąd wg licznika).</p>
+<div class="calc-box">
+  <h3>📊 Realny przykład: 2-pokojowe na Mokotowie, 55 m², nowe budownictwo</h3>
+  <div class="cr"><span class="lb">Najem (czynsz najmu)</span><span class="vl">5 200 PLN</span></div>
+  <div class="cr"><span class="lb">Czynsz adm. (woda, ciepło, winda, śmieci)</span><span class="vl">950 PLN</span></div>
+  <div class="cr"><span class="lb">Prąd (wg licznika)</span><span class="vl">180 PLN</span></div>
+  <div class="cr"><span class="lb">Internet 1 Gbit/s</span><span class="vl">70 PLN</span></div>
+  <div class="ctot"><span class="lb">Razem miesięcznie</span><span class="vl">6 400 PLN</span></div>
+  <div class="cnote">Bilet wstępu: 1. miesiąc (6 400) + Kaucja 2 miesiące (12 800) + Prowizja agenta (6 400, jeśli występuje) = do 25 600 PLN na start. Bez prowizji: ~19 200 PLN.</div>
+</div>
+<div class="box orange">
+  <p><strong>Nigdy nie wynajmuj bez znajomości czynszu administracyjnego.</strong> W starych domach może on wynosić 1 500–2 000 PLN. Proś o wyciąg z opłat za cały ubiegły rok — miesiące letnie i zimowe.</p>
+</div>
+</section>
+
+<!-- 08 -->
+<section class="section" id="calculator">
+<h2 class="st">08 · Kalkulator kosztów</h2>
+<p class="ss">Oblicz swój realny miesięczny koszt i bilet wstępu</p>
+
+<div class="calc-inter">
+  <div class="calc-inputs">
+    <div class="calc-row">
+      <label>Dzielnica Warszawy</label>
+      <select id="district">
+        <option value="custom">— Własny wariant —</option>
+        <optgroup label="Premium">
+          <option value="srodmiescie">Śródmieście</option>
+          <option value="wilanow">Wilanów</option>
+          <option value="zoliborz">Żoliborz</option>
+          <option value="mokotow">Mokotów</option>
+        </optgroup>
+        <optgroup label="Standard">
+          <option value="wola" selected>Wola</option>
+          <option value="ochota">Ochota</option>
+          <option value="bielany">Bielany</option>
+          <option value="ursynow">Ursynów</option>
+          <option value="pragapld">Praga-Południe</option>
+          <option value="wlochy">Włochy</option>
+          <option value="bemowo">Bemowo</option>
+        </optgroup>
+        <optgroup label="Budżet">
+          <option value="bialoleka">Białołęka</option>
+          <option value="targowek">Targówek</option>
+          <option value="ursus">Ursus</option>
+          <option value="wawer">Wawer</option>
+          <option value="pragapln">Praga-Północ</option>
+          <option value="rembertow">Rembertów</option>
+          <option value="wesola">Wesoła</option>
+        </optgroup>
+      </select>
     </div>
-  </main>
 
+    <div class="calc-row">
+      <label>Typ mieszkania</label>
+      <select id="room-type">
+        <option value="studio">Kawalerka (Studio)</option>
+        <option value="1bed" selected>2 pokoje (1 sypialnia)</option>
+        <option value="2bed">3 pokoje (2 sypialnie)</option>
+        <option value="3bed">4+ pokoi (3+ sypialnie)</option>
+      </select>
+    </div>
+
+    <div class="calc-row">
+      <label>Czynsz najmu (PLN)</label>
+      <input type="number" id="rent" value="4000" step="100">
+    </div>
+
+    <div class="calc-flex">
+      <div class="calc-row">
+        <label>Czynsz admin. (PLN)</label>
+        <input type="number" id="admin" value="700">
+      </div>
+      <div class="calc-row">
+        <label>Media (PLN)</label>
+        <input type="number" id="media" value="300">
+      </div>
+    </div>
+
+    <div class="calc-flex">
+      <div class="calc-row">
+        <label>Kaucja (mies.)</label>
+        <input type="number" id="deposit" value="2" step="1">
+      </div>
+      <div class="calc-row">
+        <label>Prowizja (mies.)</label>
+        <input type="number" id="commission" value="1" step="0.5">
+      </div>
+    </div>
+
+    <div class="calc-flex">
+      <label class="c-box"><input type="checkbox" id="opt_internet" data-cost="60"> Internet</label>
+      <label class="c-box"><input type="checkbox" id="opt_parking" data-cost="250"> Parking</label>
+      <label class="c-box"><input type="checkbox" id="opt_notary" data-cost="500" class="onetime"> Notariusz</label>
+      <label class="c-box"><input type="checkbox" id="opt_alt_address" data-cost="400" class="onetime"> Oświadczenie</label>
+    </div>
+  </div>
+
+  <div class="calc-sidebar">
+    <div class="curr-switch">
+      <button class="curr-btn active" data-curr="PLN">PLN</button>
+      <button class="curr-btn" data-curr="USD">USD</button>
+      <button class="curr-btn" data-curr="EUR">EUR</button>
+    </div>
+
+    <div class="chart-wrap">
+      <svg class="donut-chart" viewBox="0 0 36 36">
+        <circle class="donut-segment" cx="18" cy="18" r="15.9" stroke="#635bff" id="seg-rent"></circle>
+        <circle class="donut-segment" cx="18" cy="18" r="15.9" stroke="#80e9ff" id="seg-admin"></circle>
+        <circle class="donut-segment" cx="18" cy="18" r="15.9" stroke="#f7c97e" id="seg-media"></circle>
+        <circle class="donut-segment" cx="18" cy="18" r="15.9" stroke="#a3aed0" id="seg-other"></circle>
+      </svg>
+      <div class="chart-info">
+        <span id="curr-label">PLN</span>
+        <strong id="total-monthly">0</strong>
+      </div>
+    </div>
+
+    <div class="res-item">
+      <div class="res-lb">Koszt wejścia (1. płatność)</div>
+      <div class="res-vl" id="res-entry">0 <span>PLN</span></div>
+    </div>
+    <div class="res-item">
+      <div class="res-lb">Suma za 12 miesięcy</div>
+      <div class="res-vl" id="res-yearly">0 <span>PLN</span></div>
+    </div>
+
+    <a href="/pl/rent-calculator-warsaw.html" class="curr-btn" style="text-align: center; margin-bottom: 20px; display: block; background: rgba(255,255,255,0.1); color: #fff; border: none;">Pełna wersja</a>
+
+    <p class="calc-footer-msg">Dane na rok 2026. <br> Wynik jest orientacyjny.</p>
+  </div>
+</div>
+</section>
+
+<!-- 09 -->
+<section class="section" id="legal">
+<h2 class="st">09 · Masterclass prawny</h2>
+<p class="ss">Trzy typy umów, Twoje prawa i obowiązki — bez żargonu prawniczego</p>
+<h3>Trzy typy umów najmu w Polsce</h3>
+<div class="tw">
+  <table>
+    <thead><tr><th>Typ</th><th>Notariusz</th><th>Ochrona właściciela</th><th>Ochrona najemcy</th><th>Popularność</th></tr></thead>
+    <tbody>
+      <tr><td class="tdn">Zwykła umowa najmu</td><td>Nie</td><td>Niska</td><td>Bardzo wysoka</td><td>Rzadkość w 2026</td></tr>
+      <tr><td class="tdn">Najem Okazjonalny</td><td>Tak (zał. 1)</td><td>Wysoka</td><td>Średnia</td><td>~90% rynku</td></tr>
+      <tr><td class="tdn">Najem Instytucjonalny</td><td>Tak</td><td>Bardzo wysoka</td><td>Niska</td><td>PRS, agencje</td></tr>
+    </tbody>
+  </table>
+</div>
+<h3>Najem Okazjonalny: krok po kroku dla obcokrajowca</h3>
+<div class="steps">
+  <div class="step"><div class="snum">1</div><div class="sbody"><h4>Umowa główna</h4><p>Sam tekst umowy najmu nie wymaga notariusza. Określa warunki, terminy, wysokość kaucji, prawa i obowiązki stron.</p></div></div>
+  <div class="step"><div class="snum">2</div><div class="sbody"><h4>Załącznik nr 1: akt notarialny o dobrowolnym poddaniu się egzekucji</h4><p>Podpisujesz, że opuścisz mieszkanie w przypadku rozwiązania umowy. Koszt 2026: <strong>480–750 PLN</strong>. Bez znajomości polskiego — potrzebny tłumacz przysięgły: dodatkowo +300–600 PLN.</p></div></div>
+  <div class="step"><div class="snum">3</div><div class="sbody"><h4>Załącznik nr 2: adres lokalu zastępczego</h4><p>Adres w Polsce, pod który się „przeprowadzisz” w razie problemów. Nie musi być Twój — może to być adres znajomego lub adres oferowany przez agencję.</p></div></div>
+  <div class="step"><div class="snum">4</div><div class="sbody"><h4>Załącznik nr 3: zgoda właściciela lokalu zastępczego</h4><p>Notarialnie poświadczona zgoda. <strong>Główna trudność dla obcokrajowców</strong> — skąd wziąć ten adres bez sieci kontaktów w Polsce. STAYX zapewnia adres lokalu zastępczego swoim klientom.</p></div></div>
+  <div class="step"><div class="snum">5</div><div class="sbody"><h4>Zgłoszenie do Urzędu Skarbowego</h4><p>Właściciel ma obowiązek zgłosić umowę w ciągu 14 dni. To jego obowiązek, ale warto sprawdzić, czy to zrobił.</p></div></div>
+</div>
+<h3>Kluczowe prawa najemcy</h3>
+<ul class="cl">
+  <li><div class="ci">✓</div><div><strong>Prawo do prywatności.</strong> Właściciel nie może wchodzić bez uprzedzenia (min. 24h). Warto to zapisać w umowie.</div></li>
+  <li><div class="ci">✓</div><div><strong>Prawo do napraw.</strong> Usterki nie z Twojej winy — to odpowiedzialność właściciela. Dokumentuj każde zgłoszenie (SMS, email).</div></li>
+  <li><div class="ci">✓</div><div><strong>Ochrona przed podwyżką.</strong> W trakcie trwania umowy cena nie wzrasta bez Twojej zgody (chyba że jest zapis o waloryzacji).</div></li>
+  <li><div class="ci">✓</div><div><strong>Zwrot kaucji w terminie.</strong> Maksymalnie 30 dni. Opóźnienie to podstawa do roszczeń.</div></li>
+  <li><div class="ci">✓</div><div><strong>Prawo do meldunku.</strong> Każdy właściciel ma obowiązek umożliwić zameldowanie. Odmowa jest naruszeniem prawa.</div></li>
+</ul>
+</section>
+
+<!-- 10 -->
+<section class="section" id="redflags">
+<h2 class="st">10 · 12 Czerwonych Flag</h2>
+<p class="ss">Oznaki, przy których lepiej zawrócić i odejść</p>
+<div class="flags-grid">
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">„Kaucja niepotrzebna”</div><div class="fdesc">Właściciel niebiorący depozytu — albo wie o wadach, albo chce wynająć „szybko i bez pytań”.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Brak zdjęć liczników</div><div class="fdesc">Ukryte stany = płacisz długi poprzednika. Wymagaj zdjęć liczników przed podpisaniem.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">„Podpiszemy bez umowy, gotówką”</div><div class="fdesc">Bez umowy prawnie nie istniejesz. Właściciel może Cię wyrzucić w każdej chwili.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Odmowa okazania SKE</div><div class="fdesc">Prawny obowiązek od 2023 r. Odmowa = nieznajomość prawa lub ukrywanie niskiej klasy energetycznej.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Cena dużo niższa niż rynkowa</div><div class="fdesc">Mieszkanie za „2 000 PLN” w Śródmieściu albo nie istnieje, albo ma poważną ukrytą wadę. Zawsze sprawdzaj.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Właściciel „za granicą”</div><div class="fdesc">Klasyczny schemat oszustwa — przelewasz „rezerwację” i kontakt się urywa. Nigdy nie płać przed oględzinami i umową.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Protokół bez opisu wad</div><div class="fdesc">„Mieszkanie w stanie idealnym” przy widocznej plamie = Ty płacisz przy wyprowadzce. Dokumentuj wszystko na zdjęciach.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">„Tylko Polacy”</div><div class="fdesc">W Polsce to dyskryminacja ze względu na pochodzenie. Taki właściciel ogólnie będzie trudny. Szukaj dalej.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Zakaz meldunku</div><div class="fdesc">Bez meldunku nie ma numeru PESEL, a bez niego — normalnego konta w banku i medycyny. Zapis „bez meldunku” łamie Twoje prawa.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Niejasne, kto jest właścicielem</div><div class="fdesc">Sprawdzaj przez Księgę Wieczystą (ekw.ms.gov.pl). Właściciel w dokumentach i na umowie musi być tą samą osobą.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Presja „podpisz teraz”</div><div class="fdesc">„Mam trzech innych chętnych, decyduj w godzinę” — manipulacja. Nie podpisuj bez przeczytania umowy.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Podnajem bez zgody</div><div class="fdesc">Jeśli wynajmujesz od najemcy, a nie właściciela — sprawdź prawo do podnajmu. Inaczej możesz zostać usunięty razem z nim.</div></div></div>
+</div>
+</section>
+
+<!-- 11 -->
+<section class="section" id="segments">
+<h2 class="st">11 · Specyfika: Rodziny, IT, Studenci</h2>
+<p class="ss">Różne profile — różne priorytety</p>
+<div class="seg-grid">
+  <div class="sc"><div class="si">👨‍👩‍👧</div><div class="stitle">Rodziny z dziećmi</div><ul><li>Wilanów / Ursynów — koncentracja szkół</li><li>Sprawdzaj rejonizację</li><li>Szkoły int.: British, American, French</li><li>Minimum 3-pokojowe, plac zabaw</li><li>Garaż podziemny: wózek + auto</li></ul></div>
+  <div class="sc"><div class="si">💻</div><div class="stitle">Specjaliści IT</div><ul><li>Wola lub Mokotów — blisko biur</li><li>Światłowód niezbędny do videocalli</li><li>Home office → 2 pokoje lub coworking</li><li>WeWork Rondo ONZ, Brain Embassy Wola</li><li>Elastyczna umowa 6+6 dla remote</li></ul></div>
+  <div class="sc"><div class="si">🎓</div><div class="stitle">Studenci</div><ul><li>Ochota, Bielany — uniwersytety blisko</li><li>Wspólne mieszkanie: od 1 200 PLN/pok.</li><li>Ursynów — SGGW + M1 (5 stacji)</li><li>Targówek / Praga — M2 + niższa cena</li><li>Sprawdzaj: Wi-Fi w umowie czy osobno</li></ul></div>
+  <div class="sc"><div class="si">🌍</div><div class="stitle">Nowi relokanci</div><ul><li>Pierwszy kontrakt: 6 m-cy — mniejsze ryzyko</li><li>Bez PESEL: paszport + dochody</li><li>„Tylko Polacy” — dyskryminacja</li><li>Referencje od poprzedniego właściciela</li><li>STAYX: adres lokalu zastępczego + wsparcie</li></ul></div>
+</div>
+</section>
+
+<!-- 12 -->
+<section class="section" id="admin">
+<h2 class="st">12 · Kroki administracyjne po wprowadzeniu się</h2>
+<p class="ss">Podpisałeś umowę — zaczyna się „maraton papierkowy”</p>
+<div class="steps">
+  <div class="step"><div class="snum">1</div><div class="sbody"><h4>Meldunek</h4><p>Bezpłatnie, 15 minut w Urzędzie Dzielnicy z umową i paszportem. Prawnie obowiązkowy. Umożliwia uzyskanie numeru PESEL.</p></div></div>
+  <div class="step"><div class="snum">2</div><div class="sbody"><h4>PESEL</h4><p>Obywatele Ukrainy z ochroną tymczasową — tryb uproszczony. Reszta — przez meldunek lub gminę. Otwiera banki, NFZ, ZUS, e-usługi.</p></div></div>
+  <div class="step"><div class="snum">3</div><div class="sbody"><h4>Konto w banku</h4><p>Z PESEL + paszportem: PKO BP, ING, Santander, mBank. Online bez PESEL: Revolut, Wise. Większość właścicieli wymaga przelewu.</p></div></div>
+  <div class="step"><div class="snum">4</div><div class="sbody"><h4>OC Najemcy</h4><p>50–200 PLN/rok (PZU, ERGO Hestia, Warta). Pokrywa: zalanie sąsiada, szkody w mieniu, pożar. Jedno zdarzenie zwraca koszt 10 lat polisy.</p></div></div>
+  <div class="step"><div class="snum">5</div><div class="sbody"><h4>NFZ (ubezpieczenie zdrowotne)</h4><p>Przez pracodawcę lub JDG. Obywatele Ukrainy z ochroną — bezpłatnie. Bez NFZ medycyna jest droga i płatna.</p></div></div>
+</div>
+</section>
+
+<!-- 13 -->
+<section class="section" id="culture">
+<h2 class="st">13 · Kultura komunikacji z właścicielami</h2>
+<p class="ss">Polski wynajmujący — specyficzna osoba. Są kody, które warto znać</p>
+<h3>Pierwszy kontakt: napisz tak, by odpowiedzieli</h3>
+<p>Nie pytaj „Czy mieszkanie aktualne?”. Napisz: <em>„Dzień dobry, jestem zainteresowany wynajmem. Pracuję w IT, dochód 15 000 zł netto. Czy mogę umówić się na oglądanie?”</em> Właściciel widzi: jest praca, są pieniądze, szanuje czas.</p>
+<h3>Oględziny: sygnały „dobrego najemcy”</h3>
+<ul class="cl">
+  <li><div class="ci">✓</div><div>Przyjdź punktualnie lub uprzedź o spóźnieniu.</div></li>
+  <li><div class="ci">✓</div><div>Zdejmij buty bez przypominania — znak szacunku do przestrzeni.</div></li>
+  <li><div class="ci">✓</div><div>Zadawaj techniczne pytania (czynsz, internet, ogrzewanie) — wyglądasz poważnie.</div></li>
+  <li><div class="ci">✓</div><div>Nie negocjuj agresywnie przy pierwszym spotkaniu. Negocjacje — potem, osobno.</div></li>
+  <li><div class="ci">✓</div><div>Wyślij dokumenty od razu po oględzinach.</div></li>
+</ul>
+<h3>Negocjacje: kiedy i jak</h3>
+<p>Możliwe przy mieszkaniu wiszącym 2–3 tygodnie lub na Woli (nadmiar podaży 2026). Argumenty: długi kontrakt (1,5–2 lata), przedpłata za 2–3 miesiące. Zakres: 3–8%.</p>
+<div class="box blue">
+  <p><strong>Kwestia językowa:</strong> Bez polskiego — wyjaśnij od razu i zaproponuj agenta. Negocjacje przez Google Translate = właściciel wybierze innego kandydata.</p>
+</div>
+</section>
+
+<!-- 14 -->
+<section class="section" id="season">
+<h2 class="st">14 · Sezonowość rynku</h2>
+<p class="ss">Kiedy szukać — tak samo ważne jak gdzie szukać</p>
+<div class="season-grid">
+  <div class="season-c"><div class="sm2">Wrzesień</div><span class="sbadge sh">Najgorętszy</span><p style="font-size:13.5px;color:var(--muted)">Studenci, przeprowadzki korpo. Dobre mieszkania znikają w 15–18 dni. Cena max, negocjacje trudne.</p></div>
+  <div class="season-c"><div class="sm2">Październik–Listopad</div><span class="sbadge smi">Spadek</span><p style="font-size:13.5px;color:var(--muted)">Popyt maleje. Mieszkania wiszą 20–25 dni. Możliwość obniżenia ceny o 3–5%.</p></div>
+  <div class="season-c"><div class="sm2">Grudzień–Luty</div><span class="sbadge sc2b">Najlepszy czas na negocjacje</span><p style="font-size:13.5px;color:var(--muted)">Minimalny popyt. Mieszkania 30–40 dni. Zniżki 5–10% lub doposażenie przez właściciela.</p></div>
+  <div class="season-c"><div class="sm2">Marzec–Kwiecień</div><span class="sbadge sg2">Aktywizacja</span><p style="font-size:13.5px;color:var(--muted)">Jeszcze nie szczyt, ale jest już wybór. Mieszkanie znajdziesz w 2–3 tygodnie.</p></div>
+  <div class="season-c"><div class="sm2">Maj–Czerwiec</div><span class="sbadge sg2">Aktywny rynek</span><p style="font-size:13.5px;color:var(--muted)">Wzrost popytu. Ceny +3–5% od zimowych minimów. Rachunki niskie — dobry czas na testy.</p></div>
+  <div class="season-c"><div class="sm2">Lipiec–Sierpień</div><span class="sbadge smi">Umiarkowana aktywność</span><p style="font-size:13.5px;color:var(--muted)">Część właścicieli na urlopach. Nowe mieszkania pojawiają się przed wrześniem. Ceny rosną.</p></div>
+</div>
+</section>
+
+<!-- 15 -->
+<section class="section" id="firstweek">
+<h2 class="st">15 · Pierwszy tydzień po wprowadzeniu</h2>
+<p class="ss">Krok po kroku przez pierwsze 7 dni</p>
+<div class="timeline">
+  <div class="tli"><div class="tldot">1</div><div class="tlday">Dzień 1: Wprowadzka</div><div class="tltitle">Protokół + zdjęcia i wideo wszystkiego</div><div class="tlbody">Nie rozpakowuj się bez podpisanego protokołu. Nagraj wideo w każdym pokoju, każdą rysę. Sfotografuj wszystkie liczniki. Archiwum — od razu do chmury.</div></div>
+  <div class="tli"><div class="tldot">2</div><div class="tlday">Dzień 2: Test techniczny</div><div class="tltitle">Włącz wszystkie sprzęty i sprawdź gniazdka</div><div class="tlbody">Lodówka, pralka, zmywarka. Krany i prysznic. Każda usterka w pierwsze 48h to odpowiedzialność właściciela. Zgłaszaj pisemnie.</div></div>
+  <div class="tli"><div class="tldot">3</div><div class="tlday">Dzień 3: Meldunek</div><div class="tltitle">Urząd Dzielnicy — meldunek</div><div class="tlbody">Umowa najmu + paszport. Bezpłatnie, 15–20 minut. Niektóre urzędy — online przez ePUAP.</div></div>
+  <div class="tli"><div class="tldot">4</div><div class="tlday">Dzień 4–5: PESEL i bank</div><div class="tltitle">Uzyskaj PESEL i otwórz konto</div><div class="tlbody">PESEL w gminie / urzędzie. Z PESEL + paszportem → PKO BP lub mBank. Większość właścicieli zwraca kaucję tylko na polskie konto.</div></div>
+  <div class="tli"><div class="tldot">5</div><div class="tlday">Dzień 5–6: Ubezpieczenie i NFZ</div><div class="tltitle">OC Najemcy + rejestracja w NFZ</div><div class="tlbody">Polisę OC kupisz online w 10 minut. NFZ — przez pracodawcę. Bez NFZ szpital jest bardzo drogi.</div></div>
+  <div class="tli"><div class="tldot">6</div><div class="tlday">Dzień 7: Sąsiedzi i media</div><div class="tltitle">Zapisz kontakty do zarządcy i awaryjne</div><div class="tlbody">Zapytaj sąsiada o śmieci i sprzątanie. Zapisz: Gaz (992), Prąd (991), Woda (994), Pogotowie (999), Policja (997), Ogólny (112).</div></div>
+</div>
+</section>
+
+<!-- 16 -->
+<section class="section" id="faq">
+<h2 class="st">16 · FAQ</h2>
+<p class="ss">Najczęstsze pytania od nowych najemców w Warszawie</p>
+<div id="faq-list">
+  <div class="faq-item">
+    <div class="faq-q">Czy można wynająć bez numeru PESEL? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Tak, paszport zagraniczny prawnie wystarcza. W praktyce niektórzy właściciele proszą o PESEL — to ich preferencja, nie wymóg prawa. Jeśli odmawiają tylko przez brak PESEL — szukaj innego właściciela lub skontaktuj się ze STAYX.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Skąd obcokrajowiec ma wziąć lokal zastępczy? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Nie musi to być Twoje własne mieszkanie — wystarczy adres znajomego Polaka, kolegi lub adres oferowany przez agencję. STAYX zapewnia adres lokalu zastępczego w ramach wsparcia relokacji. Bez tego adresu notariusz nie przygotuje aktu do najmu okazjonalnego.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Kto płaci za akt notarialny? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Prawnie — strony umawiają się same. W praktyce: w 70% przypadków płaci najemca, w 20% koszty są dzielone, w 10% płaci właściciel. Koszt to 480–750 PLN. Zawsze omawiaj to przed podpisaniem.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Jak odzyskać kaucję przy wyprowadzce? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Właściciel ma 30 dni na zwrot depozytu. Jeśli potrąca kwoty — musi przedstawić pisemne uzasadnienie z rachunkami. Bez dokumentacji szkód — należy się pełny zwrot. W razie bezzasadnych opóźnień — wezwanie do zapłaty, potem sąd (e-sąd kosztuje 30 PLN).</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Czy można rozwiązać umowę przedterminowo? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Tak, jeśli w umowie jest zapis o okresie wypowiedzenia. Standard to 1–3 miesiące. Bez takiego zapisu w najmie okazjonalnym — tylko za porozumieniem stron. Zawsze sprawdzaj to przed podpisaniem.</div>
+  </div>
+</div>
+</section>
+
+<!-- 17 -->
+<section class="section" id="glossary">
+<h2 class="st">17 · Słownik najemcy</h2>
+<p class="ss">30+ terminów, które spotkasz w ogłoszeniach i umowach</p>
+<div class="gloss-grid">
+  <div class="gi"><div class="gterm">Kaucja</div><div class="gdef">Depozyt. Zwykle 1–3 miesięczne czynsze. Zwracana w ciągu 30 dni po wyprowadzce po potrąceniu realnych szkód.</div></div>
+  <div class="gi"><div class="gterm">Czynsz najmu</div><div class="gdef">Opłata dla właściciela. Kwota podana w tytule ogłoszenia. Nie zawiera czynszu administracyjnego.</div></div>
+  <div class="gi"><div class="gterm">Czynsz administracyjny</div><div class="gdef">Opłata do zarządcy/wspólnoty. Pokrywa: wodę, ciepło, śmieci, sprzątanie, windę. 700–1 500 PLN.</div></div>
+  <div class="gi"><div class="gterm">Media</div><div class="gdef">Usługi licznikowe: prąd, czasami gaz. Płatne osobno wg zużycia.</div></div>
+  <div class="gi"><div class="gterm">Zaliczka</div><div class="gdef">Zaliczka, rezerwacja mieszkania. Zwracana w całości przy rezygnacji którejkolwiek ze stron.</div></div>
+  <div class="gi"><div class="gterm">Zadatek</div><div class="gdef">Zadatek. Jeśli najemca zrezygnuje — przepada. Jeśli właściciel — zwraca podwójnie.</div></div>
+  <div class="gi"><div class="gterm">Najem Okazjonalny</div><div class="gdef">Umowa najmu z aktem notarialnym o dobrowolnej egzekucji. ~90% rynku premium w 2026.</div></div>
+  <div class="gi"><div class="gterm">Najem Instytucjonalny</div><div class="gdef">Najem od firm (PRS). Najwyższa ochrona właściciela, ustandaryzowane warunki.</div></div>
+  <div class="gi"><div class="gterm">Lokal zastępczy</div><div class="gdef">Adres alternatywny, pod który najemca się „wyprowadzi”. Wymagany do najmu okazjonalnego.</div></div>
+  <div class="gi"><div class="gterm">Meldunek</div><div class="gdef">Rejestracja miejsca pobytu. Bezpłatna, w Urzędzie Dzielnicy. Umożliwia uzyskanie numeru PESEL.</div></div>
+  <div class="gi"><div class="gterm">PESEL</div><div class="gdef">Powszechny Elektroniczny System Ewidencji Ludności. Niezbędny do banku, NFZ, ZUS.</div></div>
+  <div class="gi"><div class="gterm">Wypowiedzenie</div><div class="gdef">Powiadomienie o rozwiązaniu umowy. Standardowy termin: 1–3 miesiące.</div></div>
+  <div class="gi"><div class="gterm">Protokół zdawczo-odbiorczy</div><div class="gdef">Akt przekazania mieszkania. Dokumentuje stan lokalu i liczników przy wprowadzeniu i zdaniu kluczy.</div></div>
+  <div class="gi"><div class="gterm">Wspólnota Mieszkaniowa</div><div class="gdef">Ogół właścicieli mieszkań w budynku. Ustala wysokość czynszu adm. i decyduje o remontach.</div></div>
+  <div class="gi"><div class="gterm">SKE / Świadectwo Energetyczne</div><div class="gdef">Świadectwo energetyczne. Klasy A–G. Obowiązkowe od 2023 r. Klasa wpływa na rachunki.</div></div>
+  <div class="gi"><div class="gterm">Kamienica</div><div class="gdef">Dom wielorodzinny sprzed wojny (zwykle do 1945 r.). Wysokie sufity 3+ m.</div></div>
+  <div class="gi"><div class="gterm">Blok</div><div class="gdef">Budynek z wielkiej płyty lub cegły, lata 1960–1990.</div></div>
+  <div class="gi"><div class="gterm">Apartamentowiec</div><div class="gdef">Nowoczesny budynek po 2010 r. Garaż, ochrona, często concierge.</div></div>
+  <div class="gi"><div class="gterm">Komórka lokatorska</div><div class="gdef">Piwnica / schowek. Przynależna do mieszkania lub wynajmowana osobno za 50–150 PLN.</div></div>
+  <div class="gi"><div class="gterm">OC Najemcy</div><div class="gdef">Ubezpieczenie odpowiedzialności cywilnej najemcy. 50–200 PLN/rok. Pokrywa szkody u sąsiadów.</div></div>
+  <div class="gi"><div class="gterm">NFZ</div><div class="gdef">Narodowy Fundusz Zdrowia — publiczna opieka zdrowotna w Polsce.</div></div>
+  <div class="gi"><div class="gterm">Urząd Dzielnicy</div><div class="gdef">Administracja dzielnicowa. Tu załatwia się meldunek, PESEL i inne sprawy oficjalne.</div></div>
+  <div class="gi"><div class="gterm">Urząd Skarbowy</div><div class="gdef">Urząd Skarbowy. Właściciel ma obowiązek zgłosić tu umowę najmu okazjonalnego w ciągu 14 dni.</div></div>
+  <div class="gi"><div class="gterm">Książka wieczysta (KW)</div><div class="gdef">Rejestr nieruchomości. Sprawdź właściciela na ekw.ms.gov.pl przed podpisaniem umowy.</div></div>
+  <div class="gi"><div class="gterm">Rejonizacja</div><div class="gdef">Przypisanie szkół publicznych do adresów. Ważne dla rodzin: Twój adres określa szkołę dziecka.</div></div>
+  <div class="gi"><div class="gterm">PRS (Private Rented Sector)</div><div class="gdef">Najem od deweloperów/firm. Ustandaryzowane warunki, obsługa w j. angielskim.</div></div>
+  <div class="gi"><div class="gterm">Miejskie ciepło</div><div class="gdef">Ogrzewanie centralne. Stabilna cena, przewidywalne rachunki w przeciwieństwie do gazu/prądu.</div></div>
+  <div class="gi"><div class="gterm">Odstępne</div><div class="gdef">Rzadka opłata za „odstąpienie” prawa do najmu. Praktycznie niespotykana legalnie w 2026.</div></div>
+  <div class="gi"><div class="gterm">Ryczałt za media</div><div class="gdef">Zryczałtowana opłata za media zamiast licznika. Wygodna, ale nie zawsze opłacalna.</div></div>
+  <div class="gi"><div class="gterm">Aneks do umowy</div><div class="gdef">Dodatek do umowy. Każda zmiana warunków musi być potwierdzona aneksem pisemnym.</div></div>
+</div>
+</section>
+
+<div class="cta-block" id="contact">
+  <h2>Gotowy na przeprowadzkę?<br>Zrobimy to za Ciebie.</h2>
+  <p>STAYX — Twój osobisty dział relokacji w Warszawie. Od poszukiwań do kluczy w dłoni. Prawo, tłumaczenia, lokal zastępczy — w cenie.</p>
+  <a href="https://t.me/stayX_pl" class="cta-btn">Zacznij bezpieczny najem →</a>
+  <div class="cta-sub">
+    <span>✓ Adres prawny do umowy</span>
+    <span>✓ Negocjacje po polsku</span>
+    <span>✓ Wsparcie notarialne</span>
+    <span>✓ Bez ukrytych prowizji</span>
+  </div>
+</div>
+
+<section class="section sources-section" id="sources">
+  <h2 class="st">Źródła i metodologia</h2>
+  <p class="ss">Dane w tym przewodniku zostały zebrane i zweryfikowane na stan maj 2026 r.</p>
+  
+  <div class="sources-grid">
+    <div class="source-group">
+      <h4>Statystyki rynkowe i ceny:</h4>
+      <ul>
+        <li><strong>Investropa — Warsaw Rents 2026</strong> — średnia cena 85 PLN/m², dynamika +4–6% YoY, czas najmu</li>
+        <li><strong>Investropa — Best Areas in Warsaw</strong> — porównanie dzielnic, vacancy rate, rentowność</li>
+        <li><strong>NBP — Raport o rynku nieruchomości</strong> — oficjalne raporty kwartalne Narodowego Banku Polskiego</li>
+        <li><strong>CBRE Poland — Warsaw Living Figures</strong> — rynek instytucjonalny, segment PRS, dzielnice biznesowe</li>
+        <li><strong>Cushman & Wakefield Poland</strong> — leasing days, pustostany, nowe inwestycje</li>
+        <li><strong>Otodom Analytics</strong> — zakresy cenowe wg dzielnic, dynamika sezonowa</li>
+      </ul>
+    </div>
+    
+    <div class="source-group">
+      <h4>Podstawa prawna:</h4>
+      <ul>
+        <li><strong>Ustawa o ochronie praw lokatorów</strong> — prawa najemcy, kaucja, wypowiedzenie</li>
+        <li><strong>Kodeks cywilny — art. 394 (Zadatek)</strong> — różnica między zadatkiem a zaliczką</li>
+        <li><strong>Ustawa o Najem Okazjonalny</strong> — procedura aktu notarialnego, lokal zastępczy</li>
+        <li><strong>Rozporządzenie o świadectwie energetycznym</strong> — obowiązek SKE od 2023 r.</li>
+        <li><strong>Ustawa o ewidencji ludności</strong> — meldunek i PESEL</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="source-operational">
+    <p><strong>Dane praktyczne</strong> (koszty notariusza, realne stawki czynszu adm., zachowanie właścicieli podczas negocjacji) — własna baza operacyjna <strong>STAYX</strong> na podstawie umów z lat 2024–2026.</p>
+  </div>
+</section>
+
+</main>
+</div>
+
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container footer__inner">
       <a href="/pl/index.html" class="footer__logo"><span class="logo-text">stay<span class="x-accent">x</span></span></a>
       <div class="footer__links">
         <a href="/pl/index.html#services">Usługi</a>
         <a href="/pl/how-it-works.html">Jak to działa</a>
-        <a href="/rent-calculator-warsaw.html">Oblicz koszty</a>
+        <a href="/rent-calculator-warsaw.html">Kalkulator kosztów</a>
         <a href="/pl/blog/index.html">Blog</a>
         <a href="/pl/index.html#faq">FAQ</a>
       </div>
@@ -217,6 +977,172 @@
     </div>
   </footer>
 
-  <script src="../script.js"></script>
+<script>
+// ── Progress bar ──────────────────────────────────────────
+window.addEventListener('scroll', () => {
+  const doc = document.documentElement;
+  const scrollTop = doc.scrollTop || document.body.scrollTop;
+  const scrollHeight = doc.scrollHeight - doc.clientHeight;
+  const pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+  document.getElementById('pb').style.width = pct + '%';
+});
+
+// ── Sidebar active link ────────────────────────────────────
+const sections = document.querySelectorAll('.section[id]');
+const sideLinks = document.querySelectorAll('.sidebar a');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      sideLinks.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.sidebar a[href="#${e.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { rootMargin: '-20% 0px -70% 0px' });
+sections.forEach(s => obs.observe(s));
+
+// ── District filter ────────────────────────────────────────
+document.querySelectorAll('.fbtn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    const f = this.dataset.f;
+    document.querySelectorAll('#dg .dc').forEach(card => {
+      const t = card.dataset.t;
+      const m = card.dataset.m;
+      const show = f === 'all' || t === f || (f === 'metro' && m === '1');
+      card.classList.toggle('hidden', !show);
+    });
+  });
+});
+
+// ── Advanced Calculator Logic ──────────────────────────────
+const calcState = {
+  inputs: ['rent', 'admin', 'media', 'deposit', 'commission'],
+  districts: {
+    srodmiescie: { rent: 5500, admin: 950, media: 450, parking: 400 },
+    wilanow: { rent: 4800, admin: 900, media: 400, parking: 300 },
+    zoliborz: { rent: 4500, admin: 850, media: 350, parking: 300 },
+    mokotow: { rent: 4200, admin: 800, media: 400, parking: 300 },
+    wola: { rent: 4300, admin: 750, media: 350, parking: 300 },
+    ochota: { rent: 4000, admin: 700, media: 350, parking: 250 },
+    bielany: { rent: 3800, admin: 700, media: 300, parking: 250 },
+    ursynow: { rent: 3900, admin: 750, media: 350, parking: 250 },
+    pragapld: { rent: 3700, admin: 700, media: 350, parking: 250 },
+    wlochy: { rent: 3600, admin: 650, media: 300, parking: 250 },
+    bemowo: { rent: 3500, admin: 650, media: 300, parking: 200 },
+    bialoleka: { rent: 2900, admin: 550, media: 250, parking: 200 },
+    targowek: { rent: 3100, admin: 600, media: 250, parking: 200 },
+    ursus: { rent: 3000, admin: 550, media: 250, parking: 200 },
+    wawer: { rent: 2800, admin: 500, media: 300, parking: 150 },
+    pragapln: { rent: 3400, admin: 650, media: 300, parking: 200 },
+    rembertow: { rent: 2700, admin: 500, media: 250, parking: 150 },
+    wesola: { rent: 2700, admin: 500, media: 250, parking: 150 }
+  },
+  multipliers: {
+    studio: { rent: 0.75, admin: 0.8, media: 0.8 },
+    '1bed': { rent: 1.0, admin: 1.0, media: 1.0 },
+    '2bed': { rent: 1.45, admin: 1.3, media: 1.3 },
+    '3bed': { rent: 1.9, admin: 1.6, media: 1.6 }
+  },
+  rates: { PLN: 1, USD: 0.25, EUR: 0.23 },
+  currentCurrency: 'PLN'
+};
+
+function format(num) {
+  const r = calcState.rates[calcState.currentCurrency];
+  return (num * r).toLocaleString('en-US', { maximumFractionDigits: 0 });
+}
+
+function updateChart(rent, admin, media, other) {
+  const total = rent + admin + media + other;
+  if (total === 0) return;
+  const segments = [
+    { id: 'seg-rent', val: rent },
+    { id: 'seg-admin', val: admin },
+    { id: 'seg-media', val: media },
+    { id: 'seg-other', val: other }
+  ];
+  let offset = 0;
+  segments.forEach(s => {
+    const el = document.getElementById(s.id);
+    const p = (s.val / total) * 100;
+    el.style.strokeDasharray = `${p} ${100 - p}`;
+    el.style.strokeDashoffset = -offset;
+    offset += p;
+  });
+}
+
+function calculate() {
+  const v = {};
+  calcState.inputs.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) v[id] = parseFloat(el.value) || 0;
+  });
+  
+  let otherMonthly = 0;
+  document.querySelectorAll('.c-box input:checked:not(.onetime)').forEach(cb => {
+    otherMonthly += parseFloat(cb.getAttribute('data-cost'));
+  });
+
+  let oneTimeExtra = 0;
+  document.querySelectorAll('.c-box input.onetime:checked').forEach(cb => {
+    oneTimeExtra += parseFloat(cb.getAttribute('data-cost'));
+  });
+
+  const monthlyPLN = v.rent + v.admin + v.media + otherMonthly;
+  const entryPLN = monthlyPLN + (v.rent * v.deposit) + (v.rent * v.commission) + oneTimeExtra;
+  const yearlyPLN = entryPLN + (monthlyPLN * 11);
+
+  document.getElementById('total-monthly').textContent = format(monthlyPLN);
+  document.getElementById('res-entry').innerHTML = format(entryPLN) + ` <span>${calcState.currentCurrency}</span>`;
+  document.getElementById('res-yearly').innerHTML = format(yearlyPLN) + ` <span>${calcState.currentCurrency}</span>`;
+  
+  updateChart(v.rent, v.admin, v.media, otherMonthly);
+}
+
+function applyPresets() {
+  const d = calcState.districts[document.getElementById('district').value];
+  const m = calcState.multipliers[document.getElementById('room-type').value];
+  if (d && m) {
+    document.getElementById('rent').value = Math.round(d.rent * m.rent / 50) * 50;
+    document.getElementById('admin').value = Math.round(d.admin * m.admin / 10) * 10;
+    document.getElementById('media').value = Math.round(d.media * m.media / 10) * 10;
+    calculate();
+  }
+}
+
+// Initial Events
+calcState.inputs.forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('input', calculate);
+});
+document.querySelectorAll('.c-box input').forEach(cb => cb.addEventListener('change', calculate));
+document.getElementById('district').addEventListener('change', applyPresets);
+document.getElementById('room-type').addEventListener('change', applyPresets);
+
+document.querySelectorAll('.curr-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    document.querySelectorAll('.curr-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    calcState.currentCurrency = btn.dataset.curr;
+    document.getElementById('curr-label').textContent = calcState.currentCurrency;
+    calculate();
+  });
+});
+
+calculate();
+
+// FAQ accordion logic
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+</script>
+<script src="../script.js"></script>
 </body>
 </html>

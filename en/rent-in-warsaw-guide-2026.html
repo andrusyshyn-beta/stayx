@@ -1,91 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Renting an Apartment in Warsaw 2026: Complete Step-by-Step Guide (5000+ words) | STAYX</title>
-  <meta name="description" content="The ultimate expert guide to renting in Warsaw 2026. 5000+ words of analytics: prices in 18 districts, legal protection, checklists, and relocation strategies.">
-  <link rel="canonical" href="https://stayx-eight.vercel.app/en/rent-in-warsaw-guide-2026.html">
-  <link rel="alternate" hreflang="uk" href="https://stayx-eight.vercel.app/rent-in-warsaw-guide-2026.html">
-  <link rel="alternate" hreflang="pl" href="https://stayx-eight.vercel.app/pl/rent-in-warsaw-guide-2026.html">
-  <link rel="alternate" hreflang="en" href="https://stayx-eight.vercel.app/en/rent-in-warsaw-guide-2026.html">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Renting an Apartment in Warsaw 2026: Relocation Encyclopedia | STAYX</title>
+<meta name="description" content="The ultimate guide to renting an apartment in Warsaw. Analysis of 18 districts, legal rules, prices, expense calculator, checklists, and tips for 2026.">
+<meta property="og:title" content="Renting an Apartment in Warsaw 2026 | STAYX">
+<meta property="og:description" content="Most comprehensive guide for those moving to the Polish capital. 17 sections, 18 districts, expense calculator.">
+<meta property="og:type" content="article">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles.css">
+<style>
+:root{
+  --ink:#1a1a1a;--ink2:#3d3d3d;--muted:#6b6b6b;--subtle:#aaa;
+  --bg:#faf9f7;--surface:#fff;--surface2:#f5f3ef;
+  --border:#e8e4dc;--border2:#d0cbc0;
+  --accent:#635bff; /* Unified with Stripe purple */
+  --accent-soft:#f5f4ff;
+  --accent2:#2a5fc8;--accent2-soft:#e6ecf5;
+  --green:#1a7040;--green-soft:#e4f2eb;
+  --amber:#956000;--amber-soft:#fdf2d8;
+  --red:#9e2a2a;--red-soft:#fce8e4;
+  --r:10px;--r-sm:6px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans', -apple-system, system-ui, sans-serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.75;overflow-x:hidden;-webkit-font-smoothing: antialiased;letter-spacing: -0.011em;}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+/* Progress bar */
+#pb{position:fixed;top:0;left:0;z-index:10000;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),#8b85ff);transition:width .1s linear}
+#main-content { margin-top: 72px; }
+
+/* --- HEADER SYNC (STAYX STANDARD) --- */
+@media (max-width: 991px) {
+  .nav__left, .nav__right { display: none; }
+  .nav__burger { display: flex !important; margin-left: auto !important; z-index: 101 !important; }
   
-  <link rel="stylesheet" href="../styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <style>
-    :root {
-      --primary: #635bff;
-      --primary-soft: rgba(99, 91, 255, 0.05);
-      --text-main: #0a2540;
-      --text-sub: #425466;
-      --bg: #f6f9fc;
-      --accent-green: #00d4ff;
-    }
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #fff; color: var(--text-sub); line-height: 1.8; -webkit-font-smoothing: antialiased; }
-    
-    .article-hero { padding: 200px 0 120px; background: #0a2540; color: #fff; position: relative; overflow: hidden; }
-    .article-hero h1 { font-size: 4rem; font-weight: 800; letter-spacing: -0.05em; line-height: 1.1; margin-bottom: 24px; max-width: 1000px; }
-    .article-hero .lead { font-size: 1.5rem; color: rgba(255,255,255,0.8); max-width: 800px; margin-bottom: 40px; }
-    .article-hero .meta { font-size: 1rem; color: rgba(255,255,255,0.5); display: flex; align-items: center; gap: 32px; flex-wrap: wrap; }
+  .header.open {
+    background: #fff !important;
+    height: 100vh !important;
+    overflow: auto !important;
+    position: fixed !important;
+  }
+  .header.open .nav__left,
+  .header.open .nav__right {
+    display: flex !important;
+    flex-direction: column !important;
+    position: fixed !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: #fff !important;
+    z-index: 100 !important;
+  }
+  .header.open .nav__left {
+    top: 60px !important;
+    padding: 24px 24px 8px !important;
+    gap: 0 !important;
+  }
+  .header.open .nav__right {
+    top: calc(60px + 300px) !important;
+    padding: 8px 24px 40px !important;
+    gap: 20px !important;
+    align-items: center !important;
+  }
+  .header.open .nav__link {
+    text-align: center !important;
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    color: #0a2540 !important;
+    padding: 10px 0 !important;
+  }
+  .header.open .nav__lang {
+    justify-content: center !important;
+    background: #f6f9fc !important;
+    padding: 8px !important;
+    border-radius: 12px !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+    border: 1px solid #edf2f7 !important;
+  }
+  .header.open .nav__lang a {
+    color: #425466 !important;
+    padding: 8px 16px !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+  }
+  .header.open .nav__lang a.active {
+    color: #0a2540 !important;
+    background: #fff !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+  }
+}
 
-    .article-layout { display: grid; grid-template-columns: 320px 1fr; gap: 80px; max-width: 1400px; margin: 0 auto; padding: 100px 24px; }
-    
-    .sidebar { position: sticky; top: 120px; height: calc(100vh - 150px); overflow-y: auto; padding-right: 20px; border-right: 1px solid #eee; }
-    .sidebar::-webkit-scrollbar { width: 4px; }
-    .sidebar::-webkit-scrollbar-thumb { background: #eee; border-radius: 10px; }
-    
-    .toc-title { font-size: 1rem; font-weight: 800; color: var(--text-main); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: 24px; }
-    .toc-list { list-style: none; padding: 0; margin: 0; }
-    .toc-list li { margin-bottom: 14px; }
-    .toc-list a { color: var(--text-sub); text-decoration: none; font-size: 0.95rem; transition: all 0.2s; display: block; }
-    .toc-list a:hover { color: var(--primary); padding-left: 5px; }
+/* --- HERO MOBILE FIXES --- */
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem !important; line-height: 1.2 !important; margin-top: 20px !important; }
+  .g-hero { padding: 120px 0 60px !important; display: block !important; }
+  .hero-stats { flex-direction: row !important; max-width: 340px !important; margin: 0 auto !important; border-radius: 12px !important; overflow: hidden !important; }
+  .hero-stat { border-right: 1px solid var(--border) !important; border-bottom: none !important; padding: 10px 4px !important; flex: 1 !important; }
+  .hero-stat:last-child { border-right: none !important; }
+  .hs-n { font-size: 1rem !important; }
+  .hs-l { font-size: 9.5px !important; }
+  .page-wrap { padding: 0 24px !important; }
+  .main { padding: 0 !important; }
+  ul, ol { padding-left: 20px !important; }
+  .section { padding: 40px 0 !important; }
+  .cta-block { padding: 40px 24px !important; margin: 2rem 0 !important; }
+  .cta-block h2 { font-size: 1.5rem !important; }
+  .cta-btn { padding: 12px 24px !important; font-size: 14px !important; }
+}
 
-    .content-area { max-width: 900px; }
-    
-    h2 { font-size: 3rem; font-weight: 800; color: var(--text-main); margin: 120px 0 48px; letter-spacing: -0.04em; line-height: 1.2; position: relative; }
-    h2::after { content: ''; position: absolute; bottom: -15px; left: 0; width: 80px; height: 6px; background: var(--primary); border-radius: 3px; }
-    h3 { font-size: 2.2rem; font-weight: 700; color: var(--text-main); margin: 80px 0 32px; letter-spacing: -0.02em; }
-    h4 { font-size: 1.6rem; font-weight: 700; color: var(--text-main); margin: 40px 0 20px; }
-    
-    p { margin-bottom: 32px; font-size: 1.25rem; }
-    
-    .highlight-box { background: var(--primary-soft); padding: 48px; border-radius: 32px; margin: 60px 0; border-left: 8px solid var(--primary); }
-    .highlight-box--warning { background: #fffcf0; border-left-color: #f59e0b; }
-    .highlight-box h4 { margin-top: 0; font-size: 1.5rem; margin-bottom: 16px; }
-    
-    .district-card { background: #fff; border: 1px solid rgba(0,0,0,0.06); border-radius: 32px; padding: 48px; margin-bottom: 48px; box-shadow: 0 10px 40px rgba(0,0,0,0.03); }
-    .district-card h4 { margin-top: 0; font-size: 1.8rem; }
-    .district-card .stats { display: flex; flex-wrap: wrap; gap: 32px; margin: 24px 0; font-size: 1rem; color: var(--text-sub); border-top: 1px solid #eee; padding-top: 24px; }
-    .district-card .stats b { color: var(--text-main); }
+/* Hero */
+.g-hero{max-width:860px;margin:0 auto;padding:5.5rem 2rem 3rem;text-align:center}
+.hero-tag{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 16px;border-radius:20px;margin-bottom:1.5rem}
+h1{font-family:'Plus Jakarta Sans', sans-serif;font-size:clamp(1.8rem,5vw,3rem);font-weight:800;line-height:1.2;color:var(--ink);margin-bottom:1.25rem;letter-spacing:-.04em}
+h1 em{font-style:italic;color:var(--accent);font-family:'Playfair Display',serif;font-weight:600;}
+.hero-lead{font-size:1.1rem;color:var(--muted);max-width:600px;margin:0 auto 2.25rem;line-height:1.65}
+.hero-stats{display:flex;align-items:stretch;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;max-width:580px;margin:0 auto;background:#fff;}
+.hero-stat{flex:1;padding:.85rem .5rem;text-align:center;border-right:1px solid var(--border);transition:background .2s}
+.hero-stat:last-child{border-right:none}
+.hero-stat:hover{background:var(--surface2)}
+.hs-n{font-size:1.15rem;font-weight:600;color:var(--ink)}
+.hs-l{font-size:11px;color:var(--subtle);margin-top:1px}
+hr.hdiv{max-width:900px;margin:0 auto;border:none;border-top:1px solid var(--border)}
 
-    .checklist { list-style: none; padding: 0; margin: 40px 0; }
-    .checklist li { padding: 20px 0; border-bottom: 1px solid #eee; display: flex; gap: 20px; align-items: flex-start; font-size: 1.2rem; }
-    .checklist li::before { content: '✓'; color: #00d4aa; font-weight: 900; font-size: 1.5rem; line-height: 1; }
+/* Layout */
+.page-wrap{max-width:1160px;margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:216px 1fr;gap:3rem;align-items:start}
+.main{min-width:0;padding:0 0 4rem}
+.sidebar{position:sticky;top:80px;padding:1.5rem 0}
+.sidebar h3{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--subtle);margin-bottom:.75rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.sidebar a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);padding:.38rem .55rem;border-radius:6px;transition:all .15s;line-height:1.4}
+.sidebar a:hover{color:var(--ink);background:var(--surface2);text-decoration:none}
+.sidebar a.active{color:var(--accent);background:var(--accent-soft);font-weight:600}
+.sn{font-size:10px;color:var(--subtle);min-width:16px;flex-shrink:0}
 
-    .price-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin: 60px 0; }
-    .price-item { background: var(--bg); padding: 32px; border-radius: 24px; text-align: center; border: 1px solid rgba(0,0,0,0.03); }
-    .price-item .label { font-size: 1rem; color: var(--text-sub); display: block; margin-bottom: 12px; }
-    .price-item .val { font-size: 1.8rem; font-weight: 800; color: var(--text-main); }
+/* TOC card */
+.toc-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.75rem 2rem;margin:2rem 0;box-shadow: 0 2px 10px rgba(0,0,0,0.02);}
+/* Interactive calc (Advanced) */
+.calc-inter { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; display: grid; grid-template-columns: 1fr 340px; margin: 2rem 0; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.calc-inputs { padding: 32px; }
+.calc-sidebar { background: #0a2540; color: #fff; padding: 32px; display: flex; flex-direction: column; }
+.calc-row { margin-bottom: 20px; }
+.calc-row label { display: block; font-size: 13px; font-weight: 600; color: var(--muted); margin-bottom: 8px; }
+.calc-row select, .calc-row input { width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px; font-family: inherit; font-size: 14px; outline: none; transition: border-color .2s; background: var(--bg); color: var(--ink); }
+.calc-row input:focus, .calc-row select:focus { border-color: var(--accent); }
+.calc-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; }
+.c-box { display: flex; align-items: center; gap: 8px; font-size: 11px; padding: 10px; background: var(--surface2); border-radius: 8px; cursor: pointer; color: var(--ink2); transition: all 0.2s; }
+.c-box:hover { border-color: var(--accent); background: var(--accent-soft); }
+.c-box input { width: auto; }
+.chart-wrap { position: relative; width: 140px; height: 140px; margin: 0 auto 24px; }
+.donut-chart { transform: rotate(-90deg); }
+.donut-segment { fill: none; stroke-width: 6; transition: stroke-dasharray 0.5s ease; }
+.chart-info { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+.chart-info span { display: block; font-size: 10px; opacity: 0.6; }
+.chart-info strong { font-size: 1.1rem; font-weight: 800; display: block; color: #fff; }
+.res-item { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.res-item:last-child { border: none; }
+.res-lb { font-size: 12px; opacity: 0.6; margin-bottom: 4px; }
+.res-vl { font-size: 1.5rem; font-weight: 800; color: #fff; }
+.res-vl span { font-size: 0.9rem; font-weight: 400; opacity: 0.8; margin-left: 4px; }
+.curr-switch { display: flex; gap: 4px; margin-bottom: 24px; justify-content: center; }
+.curr-btn { padding: 6px 12px; border: 1px solid var(--border); background: #fff; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer; color: var(--ink); transition: all 0.2s; }
+.curr-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.calc-footer-msg { font-size: 11px; opacity: 0.5; text-align: center; margin-top: auto; line-height: 1.4; }
+@media (max-width: 850px) {
+  .calc-inter { grid-template-columns: 1fr; }
+  .calc-sidebar { order: -1; }
+  .calc-flex { grid-template-columns: 1fr; }
+}
+.toc-card h2{font-family:'Plus Jakarta Sans', sans-serif;font-weight:700;font-size:1rem;color:var(--ink);margin-bottom:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--border)}
+.toc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem 2rem}
+.toc-grid a{font-size:13.5px;color:var(--ink2);display:flex;align-items:baseline;gap:7px;padding:4px 0;transition:color .15s}
+.toc-grid a:hover{color:var(--accent);text-decoration:none}
+.tn{color:var(--subtle);font-size:11px;min-width:18px}
 
-    .guide-cta { background: linear-gradient(135deg, #0a2540 0%, #1a3550 100%); color: #fff; padding: 100px 60px; border-radius: 48px; text-align: center; margin-top: 150px; }
-    .guide-cta h2 { color: #fff; margin-top: 0; font-size: 2.5rem; }
-    .guide-cta p { font-size: 1.3rem; opacity: 0.9; margin-bottom: 40px; }
+/* Sections */
+.section{padding:3.5rem 0 2rem}
+.section+.section{border-top:1px solid var(--border)}
+h2.st{font-family:'Plus Jakarta Sans', sans-serif;font-weight:800;font-size:clamp(1.5rem,3vw,2.1rem);color:var(--ink);margin-bottom:.4rem;letter-spacing:-.03em;line-height:1.2}
+.ss{font-size:15px;color:var(--muted);margin-bottom:2rem;line-height:1.5}
+h3{font-size:1.05rem;font-weight:700;color:var(--ink);margin:2rem 0 .65rem;letter-spacing:-.01em}
+h3:first-child{margin-top:0}
+p{margin-bottom:1rem;color:var(--ink2);line-height:1.75}
+p:last-child{margin-bottom:0}
 
-    @media (max-width: 1100px) {
-      .article-layout { grid-template-columns: 1fr; }
-      .sidebar { display: none; }
-    }
-    @media (max-width: 768px) {
-      .article-hero h1 { font-size: 2.8rem; }
-      .price-grid { grid-template-columns: 1fr; }
-      h2 { font-size: 2.2rem; }
-    }
-  </style>
+/* Boxes */
+.box{border-radius:var(--r);padding:1.25rem 1.5rem;margin:1.5rem 0;border-left:3px solid}
+.box.blue{background:var(--accent2-soft);border-color:var(--accent2)}
+.box.orange{background:var(--accent-soft);border-color:var(--accent)}
+.box.green{background:var(--green-soft);border-color:var(--green)}
+.box.amber{background:var(--amber-soft);border-color:var(--amber)}
+.box.red{background:var(--red-soft);border-color:var(--red)}
+.box p{font-size:14px;color:var(--ink2);margin-bottom:.5rem}
+.box p:last-child{margin-bottom:0}
+.box strong{color:var(--ink);font-weight:600}
+
+/* District filter */
+.filter-bar{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1.5rem;align-items:center}
+.filter-label{font-size:12px;color:var(--subtle);font-weight:500;text-transform:uppercase;letter-spacing:.06em;margin-right:.25rem}
+.fbtn{font-size:12.5px;font-weight:600;color:var(--ink2);background:var(--surface);border:1px solid var(--border);border-radius:9999px;padding:6px 18px;cursor:pointer;transition:all .15s;user-select:none}
+.fbtn:hover{border-color:var(--border2);background:var(--surface2)}
+.fbtn.active{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+/* District cards */
+.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(276px,1fr));gap:1rem}
+.dc{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.25rem 1.4rem;transition:border-color .2s,box-shadow .2s;animation:fi .3s ease both}
+@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.dc:hover{border-color:var(--border2);box-shadow:0 4px 16px rgba(0,0,0,.06)}
+.dc.hidden{display:none}
+.dh{display:flex;align-items:flex-start;justify-content:space-between;gap:8px;margin-bottom:.65rem}
+.dn2{font-size:.95rem;font-weight:700;color:var(--ink)}
+.dn2 small{display:block;font-size:11.5px;font-weight:400;color:var(--muted);margin-top:1px}
+.badge{font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:3px 8px;border-radius:4px;white-space:nowrap;flex-shrink:0;margin-top:2px}
+.bp{background:#f0eafe;color:#5232b5}
+.bb{background:var(--accent2-soft);color:#1a4898}
+.bf{background:var(--green-soft);color:#1a6038}
+.bu{background:var(--amber-soft);color:#7a4a00}
+.bv{background:#fce8f5;color:#8a1a6a}
+.dprice{font-size:1.05rem;font-weight:700;color:var(--accent);margin-bottom:.55rem}
+.ddesc{font-size:13px;color:var(--muted);line-height:1.55;margin-bottom:.65rem}
+.dtags{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:.65rem}
+.tag{font-size:11px;background:var(--bg);color:var(--ink2);border:1px solid var(--border);border-radius:4px;padding:2px 7px}
+.dpc{display:grid;grid-template-columns:1fr 1fr;gap:4px;font-size:12px;border-top:1px solid var(--border);padding-top:.7rem;margin-top:.7rem}
+.pro{color:var(--green);display:flex;gap:4px;align-items:baseline}
+.pro::before{content:"\2713";font-weight:700;flex-shrink:0}
+.con{color:var(--red);display:flex;gap:4px;align-items:baseline}
+.con::before{content:"\2717";font-weight:700;flex-shrink:0}
+
+/* Tables */
+.tw{overflow-x:auto;margin:1.5rem 0;border:1px solid var(--border);border-radius:var(--r)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+thead{background:var(--surface2)}
+th{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);padding:11px 14px;text-align:left;white-space:nowrap;border-bottom:1px solid var(--border)}
+td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--ink2);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#faf8f5}
+td.tdn{font-weight:600;color:var(--ink)}
+td.tp{font-weight:700;color:var(--ink);white-space:nowrap;font-size:13px}
+
+/* Steps */
+.steps{margin:1.5rem 0; background:#0a2540; border-radius:12px; padding:2rem !important; color:#fff}
+.step{display:flex;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1)}
+.step:last-child{border-bottom:none}
+.snum{width:36px;height:36px;border-radius:50%;background:#80e9ff;color:#0a2540;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.sbody h4{font-size:15px;font-weight:700;color:#fff;margin-bottom:.3rem;margin-top:0}
+.sbody p{font-size:14px;color:rgba(255,255,255,0.7);margin:0}
+
+/* Checklist */
+.cl{list-style:none;margin:1rem 0}
+.cl li{display:flex;align-items:flex-start;gap:10px;padding:.65rem 0;border-bottom:1px solid var(--border);font-size:14px;color:var(--ink2)}
+.cl li:last-child{border-bottom:none}
+.ci{width:22px;height:22px;border-radius:50%;background:var(--green-soft);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px}
+.cl strong{color:var(--ink);font-weight:600}
+
+/* Static calc box */
+.calc-box{background:var(--ink);color:#fff;border-radius:var(--r);padding:2rem;margin:1.5rem 0}
+.calc-box h3{color:#fff;font-size:.95rem;margin:0 0 1.25rem;letter-spacing:0;font-weight:700;}
+.cr{display:flex;justify-content:space-between;align-items:center;padding:.45rem 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:14px}
+.cr .lb{color:rgba(255,255,255,.6)}
+.cr .vl{color:#fff;font-weight:500}
+.ctot{display:flex;justify-content:space-between;align-items:center;padding:.75rem 0 0;margin-top:.5rem;border-top:1px solid rgba(255,255,255,.2);font-size:1rem;font-weight:700}
+.ctot .vl{color:#f7c97e;font-size:1.1rem}
+.cnote{font-size:12px;color:rgba(255,255,255,.45);margin-top:1rem;line-height:1.55;border-top:1px solid rgba(255,255,255,.1);padding-top:.75rem}
+
+/* Interactive calc (Advanced) */
+.calc-inter { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; display: grid; grid-template-columns: 1fr 340px; margin: 2rem 0; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.calc-inputs { padding: 32px; }
+.calc-sidebar { background: #0a2540; color: #fff; padding: 32px; display: flex; flex-direction: column; }
+.calc-row { margin-bottom: 20px; }
+.calc-row label { display: block; font-size: 13px; font-weight: 600; color: var(--muted); margin-bottom: 8px; }
+.calc-row select, .calc-row input { width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px; font-family: inherit; font-size: 14px; outline: none; transition: border-color .2s; background: var(--bg); color: var(--ink); }
+.calc-row input:focus, .calc-row select:focus { border-color: var(--accent); }
+.calc-flex { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 24px; }
+.c-box { display: flex; align-items: center; gap: 8px; font-size: 11px; padding: 10px; background: var(--surface2); border-radius: 8px; cursor: pointer; color: var(--ink2); transition: all 0.2s; }
+.c-box:hover { border-color: var(--accent); background: var(--accent-soft); }
+.c-box input { width: auto; }
+.chart-wrap { position: relative; width: 140px; height: 140px; margin: 0 auto 24px; }
+.donut-chart { transform: rotate(-90deg); }
+.donut-segment { fill: none; stroke-width: 6; transition: stroke-dasharray 0.5s ease; }
+.chart-info { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; }
+.chart-info span { display: block; font-size: 10px; opacity: 0.6; }
+.chart-info strong { font-size: 1.1rem; font-weight: 800; display: block; color: #fff; }
+.res-item { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+.res-item:last-child { border: none; }
+.res-lb { font-size: 12px; opacity: 0.6; margin-bottom: 4px; }
+.res-vl { font-size: 1.5rem; font-weight: 800; color: #fff; }
+.res-vl span { font-size: 0.9rem; font-weight: 400; opacity: 0.8; margin-left: 4px; }
+.curr-switch { display: flex; gap: 4px; margin-bottom: 24px; justify-content: center; }
+.curr-btn { padding: 6px 12px; border: 1px solid var(--border); background: #fff; border-radius: 6px; font-size: 11px; font-weight: 700; cursor: pointer; color: var(--ink); transition: all 0.2s; }
+.curr-btn.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.calc-footer-msg { font-size: 11px; opacity: 0.5; text-align: center; margin-top: auto; line-height: 1.4; }
+@media (max-width: 850px) {
+  .calc-inter { grid-template-columns: 1fr; }
+  .calc-sidebar { order: -1; }
+  .calc-flex { grid-template-columns: 1fr; }
+}
+
+/* Red flags */
+.flags-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:.85rem;margin-top:1.25rem}
+.flag-card{background:var(--red-soft);border:1px solid #f0cac4;border-radius:var(--r);padding:1.1rem 1.3rem;display:flex;gap:.75rem;align-items:flex-start}
+.fi2{font-size:1.3rem;flex-shrink:0;margin-top:.1rem}
+.ftitle{font-size:14px;font-weight:700;color:var(--red);margin-bottom:.3rem}
+.fdesc{font-size:13px;color:#6a2020;line-height:1.5}
+
+/* Timeline */
+.timeline{position:relative;margin:1.5rem 0;padding-left:2rem}
+.timeline::before{content:'';position:absolute;left:9px;top:0;bottom:0;width:2px;background:var(--border)}
+.tli{position:relative;margin-bottom:1.5rem}
+.tli:last-child{margin-bottom:0}
+.tldot{position:absolute;left:-2rem;top:4px;width:20px;height:20px;border-radius:50%;background:var(--accent);color:#fff;font-size:10px;font-weight:700;display:flex;align-items:center;justify-content:center;z-index:1}
+.tlday{font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:.25rem}
+.tltitle{font-size:.95rem;font-weight:700;color:var(--ink);margin-bottom:.3rem}
+.tlbody{font-size:13.5px;color:var(--muted);line-height:1.6}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:last-child{border-bottom:none}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;cursor:pointer;gap:1rem;font-size:15px;font-weight:600;color:var(--ink);transition:color .15s;user-select:none}
+.faq-icon{color:var(--subtle);font-size:20px;flex-shrink:0;transition:transform .3s;font-weight:300;line-height:1}
+.faq-item.open .faq-a{max-height:600px;padding-bottom:1rem}
+.faq-item.open .faq-icon{transform:rotate(45deg);color:var(--accent)}
+
+/* Glossary */
+.gloss-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:.7rem;margin-top:1.25rem}
+.gi{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-sm);padding:.9rem 1.1rem}
+.gterm{font-size:13px;font-weight:700;color:var(--accent);margin-bottom:.3rem}
+.gdef{font-size:13px;color:var(--muted);line-height:1.5}
+
+/* CTA */
+.cta-block{background:var(--ink);color:#fff;border-radius:var(--r);padding:3.5rem 2rem;text-align:center;margin:3rem 0;box-shadow: 0 10px 40px rgba(0,0,0,0.15);}
+.cta-block h2{font-family:'Plus Jakarta Sans', sans-serif;font-weight:800;color:#fff;font-size:clamp(1.4rem,3vw,2rem);margin-bottom:.75rem;letter-spacing:-.03em;}
+.cta-block p{color:rgba(255,255,255,.6);font-size:15px;max-width:460px;margin:0 auto 1.75rem}
+.cta-btn{display:inline-block;background:var(--accent);color:#fff;font-size:15px;font-weight:600;padding:14px 32px;border-radius:9999px;transition:opacity .2s}
+.cta-btn:hover{opacity:.85;text-decoration:none}
+.cta-sub{display:flex;justify-content:center;gap:1.5rem;margin-top:1.25rem;flex-wrap:wrap}
+.cta-sub span{font-size:12.5px;color:rgba(255,255,255,.45);display:flex;align-items:center;gap:5px}
+
+footer{border-top:1px solid var(--border);padding:2.5rem 2rem;text-align:center;font-size:13px;color:var(--subtle)}
+footer a{color:var(--subtle)}
+/* Sources Section */
+.sources-section { border-top: 1px solid var(--border); margin-top: 2rem; }
+.sources-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; margin-top: 2rem; }
+.source-group h4 { font-size: 13px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 1rem; }
+.source-group ul { list-style: none; padding: 0 !important; margin: 0 !important; }
+.source-group li { font-size: 13px; color: var(--muted); margin-bottom: 0.75rem; line-height: 1.5; border-bottom: 1px solid var(--surface); padding-bottom: 0.75rem; }
+.source-group li strong { color: var(--ink); }
+.source-operational { background: var(--surface); padding: 1.5rem; border-radius: var(--r-sm); margin-top: 2.5rem; border: 1px solid var(--border); }
+.source-operational p { margin-bottom: 0; font-size: 13px; }
+@media (max-width: 768px) {
+  .sources-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
+@media(max-width:900px){.page-wrap{grid-template-columns:1fr}.sidebar{display:none}}
+
+</style>
 </head>
 <body>
+  <!-- ===== HEADER ===== -->
   <header class="header header--scrolled" id="header" data-keep-scrolled="true">
     <nav class="nav container container-padding">
       <a href="/en/index.html" class="nav__logo">
@@ -100,17 +375,14 @@
       </div>
       <div class="nav__right">
         <div class="nav__lang">
-          <a href="/blog/index.html">Ua</a>
-          <a href="/en/blog/index.html" class="active">EN</a>
-          <a href="/pl/blog/index.html">PL</a>
+          <a href="/rent-in-warsaw-guide-2026.html">Ua</a>
+          <a href="/en/rent-in-warsaw-guide-2026.html" class="active">EN</a>
+          <a href="/pl/rent-in-warsaw-guide-2026.html">PL</a>
         </div>
         <a href="https://t.me/stayX_pl" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Contact →</a>
         <div class="nav__social nav__social-mobile">
-          <a href="https://www.instagram.com/stayx_pl?igsh=MWt5enF2b3hoN29rMA%3D%3D&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.98 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="https://www.tiktok.com/@stayx_realestate?_r=1&_t=ZN-96DXaC2rZbT" target="_blank" rel="noopener" aria-label="TikTok">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 2.89 3.5 2.53 1.53-.3 2.7-1.67 2.82-3.18.05-3.68-.01-7.36.03-11.03.01-.11 0-.22.01-.33z"/></svg>
+          <a href="https://www.instagram.com/stayx_pl" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265 .069 1.645 .069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266 .058-1.644 .07-4.85 .07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204 .013-3.583 .07-4.849 .149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667 .014-4.947 .072-4.358 .2-6.78 2.618-6.98 6.98-.059 1.281 -.073 1.689 -.073 4.948 0 3.259 .014 3.668 .072 4.948 .2 4.358 2.618 6.98 6.98 6.98 1.281 .058 1.689 .072 4.948 .072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98 .059-1.28 .073-1.689 .073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
           </a>
         </div>
       </div>
@@ -119,88 +391,607 @@
       </button>
     </nav>
   </header>
+  <div id="main-content">
 
-  <main>
-    <section class="article-hero">
-      <div class="container container-padding">
-        <h1>Renting an Apartment in Warsaw 2026: <br>The Global Encyclopedia</h1>
-        <p class="lead">Everything about how to build a comfortable life in the Polish capital without risk and overpaying.</p>
-        <div class="meta">
-          <span>📅 May 2026 (Version 3.0)</span>
-          <span>📊 Database: NBP / Investropa / STAYX Analytics</span>
-          <span>📚 Volume: 5000+ words</span>
-        </div>
-      </div>
-    </section>
+<div class="g-hero">
+  <span class="hero-tag">Relocation Encyclopedia · 2026</span>
+  <h1>Renting an Apartment<br>in <em>Warsaw</em> 2026</h1>
+  <p class="hero-lead">The most comprehensive guide for those moving to the Polish capital. From choosing a district to the first week in your new home — without risks and overpayments.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="hs-n">18</div><div class="hs-l">districts</div></div>
+    <div class="hero-stat"><div class="hs-n">25+</div><div class="hs-l">terms</div></div>
+    <div class="hero-stat"><div class="hs-n">85 PLN</div><div class="hs-l">avg. / m²</div></div>
+    <div class="hero-stat"><div class="hs-n">2026</div><div class="hs-l">updated</div></div>
+  </div>
+</div>
+<hr class="hdiv">
 
-    <div class="article-layout">
-      <aside class="sidebar">
-        <div class="toc-title">Sections</div>
-        <ul class="toc-list">
-          <li><a href="#intro">1. Market Philosophy 2026</a></li>
-          <li><a href="#prep">2. Preparation: "Tenant Portfolio"</a></li>
-          <li><a href="#districts-mega">3. Grand-tour of 18 Districts</a></li>
-          <li><a href="#sqm-benchmarks">4. Price Benchmarks per m²</a></li>
-          <li><a href="#building-types">5. Building Typology</a></li>
-          <li><a href="#technical-audit">6. Technical Audit: Checklist</a></li>
-          <li><a href="#finance-math">7. Math: Czynsz and Utilities</a></li>
-          <li><a href="#legal-encyclopedia">8. Legal Encyclopedia</a></li>
-          <li><a href="#pet-survival">9. Renting with Pets</a></li>
-          <li><a href="#seasonality-logic">10. Seasons and Negotiation</a></li>
-          <li><a href="#admin-post-move">11. Post-move Life: Meldunek</a></li>
-          <li><a href="#glossary-full">12. Full Glossary of Terms</a></li>
-        </ul>
-      </aside>
+<div class="page-wrap">
+<aside class="sidebar">
+  <nav>
+    <h3>Contents</h3>
+    <a href="#intro"><span class="sn">01</span>Market 2026</a>
+    <a href="#strategy"><span class="sn">02</span>Search Strategy</a>
+    <a href="#districts"><span class="sn">03</span>18 Districts</a>
+    <a href="#types"><span class="sn">04</span>Building Types</a>
+    <a href="#checklist"><span class="sn">05</span>Technical Audit</a>
+    <a href="#prices"><span class="sn">06</span>Price Table</a>
+    <a href="#finance"><span class="sn">07</span>Finances</a>
+    <a href="#calculator"><span class="sn">08</span>Calculator</a>
+    <a href="#legal"><span class="sn">09</span>Legal Matters</a>
+    <a href="#redflags"><span class="sn">10</span>Red Flags</a>
+    <a href="#segments"><span class="sn">11</span>Families, IT, Students</a>
+    <a href="#admin"><span class="sn">12</span>PESEL & Meldunek</a>
+    <a href="#culture"><span class="sn">13</span>Communication</a>
+    <a href="#season"><span class="sn">14</span>Seasonality</a>
+    <a href="#firstweek"><span class="sn">15</span>First Week</a>
+    <a href="#faq"><span class="sn">16</span>FAQ</a>
+    <a href="#glossary"><span class="sn">17</span>Glossary</a>
+  </nav>
+</aside>
 
-      <section class="content-area">
-        <h2 id="intro">1. Warsaw Market Philosophy 2026</h2>
-        <p>Warsaw in 2026 is no longer the chaotic market we saw in 2022. Today it is a mature, highly competitive ecosystem. Renting an apartment here is not just a transaction, but a real art of self-presentation and strategic planning.</p>
-        <p>Key change in 2026: <strong>Energy Transparency</strong>. Every listing now contains a detailed energy certificate of the object. Tenants count the Total Cost of Living, not just the base rent.</p>
+<main class="main">
 
-        <h2 id="prep">2. Preparation: Creating your "Tenant Portfolio"</h2>
-        <p>Why does one tenant get 10 rejections in a row while another picks up the keys to an ideal apartment in Wola in one evening? The answer lies in preparation. In 2026, owners conduct real candidate "scoring."</p>
-        <div class="highlight-box">
-          <h4>Ideal Candidate Checklist:</h4>
-          <p>— <strong>Employment Verification:</strong> Prepare proof of income or Umowa o pracę. If on B2B — register excerpt.<br>
-          — <strong>LinkedIn Profile:</strong> Owners often check your professional profile as a mark of reliability.<br>
-          — <strong>Financial Buffer:</strong> Be ready to pay the deposit immediately.</p>
-        </div>
+<div class="toc-card">
+  <h2>📋 Full Contents</h2>
+  <div class="toc-grid">
+    <a href="#intro"><span class="tn">01</span>Market 2026: What Changed</a>
+    <a href="#strategy"><span class="tn">02</span>Search Strategy</a>
+    <a href="#districts"><span class="tn">03</span>Analysis of all 18 Districts</a>
+    <a href="#types"><span class="tn">04</span>Building Types</a>
+    <a href="#checklist"><span class="tn">05</span>Technical Audit Checklist</a>
+    <a href="#prices"><span class="tn">06</span>Full Price Table</a>
+    <a href="#finance"><span class="tn">07</span>Finances: Czynsz & Utilities</a>
+    <a href="#calculator"><span class="tn">08</span>Expense Calculator</a>
+    <a href="#legal"><span class="tn">09</span>Legal Masterclass</a>
+    <a href="#redflags"><span class="tn">10</span>12 Red Flags</a>
+    <a href="#segments"><span class="tn">11</span>Families, IT, Students</a>
+    <a href="#admin"><span class="tn">12</span>PESEL and Meldunek</a>
+    <a href="#culture"><span class="tn">13</span>Communication Culture</a>
+    <a href="#season"><span class="tn">14</span>Market Seasonality</a>
+    <a href="#firstweek"><span class="tn">15</span>First Week</a>
+    <a href="#faq"><span class="tn">16</span>FAQ (10 questions)</a>
+    <a href="#glossary"><span class="tn">17</span>Glossary (30+ terms)</a>
+  </div>
+</div>
 
-        <h2 id="districts-mega">3. Grand-tour of 18 Districts</h2>
-        <h3 id="dist-srodmiescie">Śródmieście: No Compromises</h3>
-        <p>The center of Warsaw is a mix of business rhythm and historical charm. Prices: 120-140 PLN per m² in new buildings.</p>
-        <h3 id="dist-wola">Wola: Financial Heart</h3>
-        <p>District of skyscrapers. Due to the large supply of new apartments, owners in Wola are currently more inclined to negotiate.</p>
-        <h3 id="dist-mokotow">Mokotów: Expat Favorite</h3>
-        <p>Prestigious, green, and great transport. Prices for 2-bedroom: 4800 - 6500 PLN.</p>
+<!-- 01 -->
+<section class="section" id="intro">
+<h2 class="st">01 · Market 2026: What Changed</h2>
+<p class="ss">A brief overview of the market — before diving into details</p>
+<p>The Warsaw rental market in 2026 is significantly different from the chaos of 2022–2023. Today the market is structured and predictable — but highly competitive. Vacancy of good apartments near the metro stays at 2–4%, and the typical time to rent is 15–20 days.</p>
+<p>The average rent in Warsaw is <strong>85 PLN/m²/month</strong>. In Śródmieście it reaches 120 PLN/m², while in outer districts it drops to 60–70 PLN. Over the last 5 years, the market has grown by ~47%.</p>
+<div class="box blue">
+  <p><strong>Key Figures 2026 (Investropa, NBP, CBRE Poland):</strong></p>
+  <p>— Studio in Warsaw: 1,700 to 5,200 PLN<br>
+  — 1-bedroom: 2,200 to 6,500 PLN<br>
+  — 2-bedroom: 2,800 to 9,500+ PLN<br>
+  — Vacancy rate (premium): 2–4%; old stock — 8–12%<br>
+  — Price growth YoY: +4–6%</p>
+</div>
+<p><strong>Wola Nuances 2026.</strong> A large influx of new developments in 2025–2026 increased supply and gave tenants more room for negotiation there. Conversely, Żoliborz and Mokotów remain in deficit — a good apartment is gone in 7–10 days.</p>
+<p><strong>Trend: Institutional Rental (PRS).</strong> Large developers (Heimstaden, Resi4Rent, Catella) have increased their portfolios. They offer: standardized contracts, online signing, English support — ideal for foreigners without a contact network in Poland.</p>
+</section>
 
-        <h2 id="#sqm-benchmarks">4. Price Benchmarks per m² (May 2026)</h2>
-        <div class="price-grid">
-          <div class="price-item"><span class="label">Śródmieście</span><span class="val">120-140 PLN/m²</span></div>
-          <div class="price-item"><span class="label">Wola / Mokotów</span><span class="val">90-110 PLN/m²</span></div>
-          <div class="price-item"><span class="label">Białołęka / Ursus</span><span class="val">65-75 PLN/m²</span></div>
-        </div>
+<!-- 02 -->
+<section class="section" id="strategy">
+<h2 class="st">02 · Search Strategy</h2>
+<p class="ss">The first mistake — opening Otodom and calling everyone blindly</p>
+<p>For every high-quality apartment, there are 5–15 candidates. The owner chooses a tenant like an employer chooses a candidate. Your task is to come prepared.</p>
+<h3>Five Elements of a Tenant Portfolio</h3>
+<div class="steps">
+  <div class="step"><div class="snum">1</div><div class="sbody"><h4>Income Verification</h4><p>Employment contract (Umowa o pracę) or B2B statement for 3–6 months. Rule: income ≥ 3× rent. An unofficial but real requirement of most owners.</p></div></div>
+  <div class="step"><div class="snum">2</div><div class="sbody"><h4>Recommendation from previous owner</h4><p>If you've already rented in Poland — one contact opens doors. "Paid on time, left in perfect condition" — and the owner chooses you.</p></div></div>
+  <div class="step"><div class="snum">3</div><div class="sbody"><h4>Ready Document Package</h4><p>Passport, PESEL (if available), proof of employment — all in PDF, sent even before viewing.</p></div></div>
+  <div class="step"><div class="snum">4</div><div class="sbody"><h4>Speed of Decision</h4><p>Readiness to sign the contract within 24 hours. "I'll think until Friday" = apartment signed on Wednesday with someone else.</p></div></div>
+  <div class="step"><div class="snum">5</div><div class="sbody"><h4>Zadatek (Down payment)</h4><p>Proposing to leave 500–1,000 PLN immediately after viewing — a powerful signal. Zadatek penalizes both sides for withdrawal; zaliczka is simply returned.</p></div></div>
+</div>
+<div class="box amber">
+  <p><strong>Where to look:</strong> Otodom.pl (main), OLX.pl, Morizon.pl, Gratka.pl. Facebook Marketplace — risky but offers commission-free listings. Without Polish or PESEL — go with STAYX: negotiations, translation, and legal support included.</p>
+</div>
+</section>
 
-        <h2 id="finance-math">7. Math: Czynsz, Media, Deposit</h2>
-        <p>The price in the ad is just the tip of the iceberg. Remember the "Czynsz administracyjny" (service charge), which in 2026 averages 900-1200 PLN for a 2-room apartment.</p>
+<!-- 03 -->
+<section class="section" id="districts">
+<h2 class="st">03 · Analysis of all 18 Districts</h2>
+<p class="ss">Each district is a separate world with its own price logic, transport, and character</p>
+<div class="filter-bar">
+  <span class="filter-label">Filter:</span>
+  <button class="fbtn active" data-f="all">All 18</button>
+  <button class="fbtn" data-f="premium">Premium</button>
+  <button class="fbtn" data-f="business">Business</button>
+  <button class="fbtn" data-f="family">Family</button>
+  <button class="fbtn" data-f="budget">Budget</button>
+  <button class="fbtn" data-f="metro">Has Metro</button>
+</div>
+<div class="dgrid" id="dg">
+  <div class="dc" data-t="premium" data-m="1"><div class="dh"><div class="dn2">Śródmieście<small>Center</small></div><span class="badge bp">Premium</span></div><div class="ddesc">Heart of Warsaw: skyscrapers, Old Town, Powiśle. Divided into North (business) and South (bohemian).</div><div class="dprice">6,500–9,500+ PLN / 2-rm</div><div class="dtags"><span class="tag">M1+M2</span><span class="tag">Trams</span><span class="tag">Walkable</span></div><div class="dpc"><div class="pro">Everything close</div><div class="con">Most expensive</div><div class="pro">Prestige</div><div class="con">Noise, traffic</div></div></div>
 
-        <h2 id="legal-encyclopedia">8. Legal Encyclopedia: Najem Okazjonalny</h2>
-        <p>This is the market standard. Requires a notary visit. Cost in 2026 is approx. 630-750 PLN. <strong>STAYX provides a registered address for its international clients.</strong></p>
+  <div class="dc" data-t="premium" data-m="1"><div class="dh"><div class="dn2">Żoliborz<small>Żoliborz</small></div><span class="badge bp">Elite</span></div><div class="ddesc">Smallest and most prestigious district. Atmosphere of intellectual Warsaw. Good apartment gone in 7–10 days.</div><div class="dprice">5,500–8,000 PLN / 2-rm</div><div class="dtags"><span class="tag">M1</span><span class="tag">Trams</span><span class="tag">Kamienice</span></div><div class="dpc"><div class="pro">Safety, quiet</div><div class="con">Low supply</div><div class="pro">Architecture</div><div class="con">Expensive / m²</div></div></div>
 
-        <h2 id="glossary-full">12. Full Glossary of Terms</h2>
-        <p>— <strong>Odstępne:</strong> Base rent for the owner.<br>
-        — <strong>Czynsz:</strong> Service charge for the building.<br>
-        — <strong>Kaucja:</strong> Refundable security deposit.</p>
+  <div class="dc" data-t="premium" data-m="0"><div class="dh"><div class="dn2">Wilanów<small>Wilanów</small></div><span class="badge bp">Diplomatic</span></div><div class="ddesc">Most prestigious address outside center. Wilanów Palace, diplomatic residences, international schools. Luxury condos.</div><div class="dprice">6,000–10,000 PLN / 2-rm</div><div class="dtags"><span class="tag">Buses</span><span class="tag">Car needed</span><span class="tag">Int'l schools</span></div><div class="dpc"><div class="pro">Luxury builds</div><div class="con">No metro</div><div class="pro">Schools</div><div class="con">Traffic</div></div></div>
 
-        <div class="guide-cta">
-          <h2>We will help you build a home in Warsaw</h2>
-          <p>STAYX is full support from the idea of moving to obtaining residence registration.</p>
-          <a href="index.html#contactForm" class="btn btn--primary btn--lg">Start Safe Rental</a>
-        </div>
-      </section>
+  <div class="dc" data-t="business" data-m="1"><div class="dh"><div class="dn2">Wola<small>Wola</small></div><span class="badge bb">Business Hub</span></div><div class="ddesc">Rondo Daszyńskiego — Polish Canary Wharf. New influx of apartments 2025–2026 gives room for negotiation.</div><div class="dprice">5,500–7,500 PLN / 2-rm</div><div class="dtags"><span class="tag">M2</span><span class="tag">Trams</span><span class="tag">Google, Samsung</span></div><div class="dpc"><div class="pro">New stock</div><div class="con">Oversupply</div><div class="pro">Near offices</div><div class="con">No "soul"</div></div></div>
+
+  <div class="dc" data-t="premium" data-m="1"><div class="dh"><div class="dn2">Mokotów<small>Mokotów</small></div><span class="badge bp">Premium</span></div><div class="ddesc">Górny — villas & embassies, Dolny — offices. Largest green area among central districts.</div><div class="dprice">4,800–7,000 PLN / 2-rm</div><div class="dtags"><span class="tag">M1</span><span class="tag">Buses</span><span class="tag">Pole Mokotowskie</span></div><div class="dpc"><div class="pro">Greenery, parks</div><div class="con">No M2</div><div class="pro">Schools, family</div><div class="con">Puławska traffic</div></div></div>
+
+  <div class="dc" data-t="business" data-m="0"><div class="dh"><div class="dn2">Ochota<small>Ochota</small></div><span class="badge bb">Central</span></div><div class="ddesc">Quiet green district between center and Mokotów. Warsaw University. Good balance of price and location.</div><div class="dprice">4,000–5,800 PLN / 2-rm</div><div class="dtags"><span class="tag">Trams</span><span class="tag">Buses</span><span class="tag">Academic</span></div><div class="dpc"><div class="pro">Price / location</div><div class="con">No metro</div><div class="pro">Quiet, green</div><div class="con">Old stock</div></div></div>
+
+  <div class="dc" data-t="family" data-m="1"><div class="dh"><div class="dn2">Ursynów<small>Ursynów</small></div><span class="badge bf">Family</span></div><div class="ddesc">"High-quality bedroom" of Warsaw. Schools, pools, Kabaty Forest. M1 — 5 stations through the district.</div><div class="dprice">4,200–5,800 PLN / 2-rm</div><div class="dtags"><span class="tag">M1 (5 st.)</span><span class="tag">Schools</span><span class="tag">Forest</span></div><div class="dpc"><div class="pro">Schools, parks</div><div class="con">Far from center</div><div class="pro">Affordable</div><div class="con">80s blocks</div></div></div>
+
+  <div class="dc" data-t="family" data-m="1"><div class="dh"><div class="dn2">Bielany<small>Bielany</small></div><span class="badge bf">Green</span></div><div class="ddesc">Green, calm north. Forest park, UKSW university. New condos near M1.</div><div class="dprice">3,500–5,000 PLN / 2-rm</div><div class="dtags"><span class="tag">M1</span><span class="tag">Buses</span><span class="tag">Forest</span></div><div class="dpc"><div class="pro">Air, forest</div><div class="con">Far from center</div><div class="pro">Affordable</div><div class="con">Mostly blocks</div></div></div>
+
+  <div class="dc" data-t="family" data-m="0"><div class="dh"><div class="dn2">Bemowo<small>Bemowo</small></div><span class="badge bf">Affordable</span></div><div class="ddesc">Actively built-up west. New estates and good schools. Accessible for young families without metro.</div><div class="dprice">3,800–5,200 PLN / 2-rm</div><div class="dtags"><span class="tag">Trams</span><span class="tag">Buses</span><span class="tag">New estates</span></div><div class="dpc"><div class="pro">New stock</div><div class="con">No metro</div><div class="pro">Price</div><div class="con">Little culture</div></div></div>
+
+  <div class="dc" data-t="business" data-m="1"><div class="dh"><div class="dn2">Praga-Północ<small>Praga North</small></div><span class="badge bv">Bohemian</span></div><div class="ddesc">Hipster gentrification district. Lofts, galleries, independent cafes. M2 — main transport advantage.</div><div class="dprice">3,500–5,500 PLN / 2-rm</div><div class="dtags"><span class="tag">M2</span><span class="tag">Trams</span><span class="tag">Lofts</span></div><div class="dpc"><div class="pro">Atmosphere</div><div class="con">Uneven district</div><div class="pro">M2 cheaper</div><div class="con">Old building issues</div></div></div>
+
+  <div class="dc" data-t="family" data-m="1"><div class="dh"><div class="dn2">Praga-Południe<small>Praga South</small></div><span class="badge bf">Right Bank</span></div><div class="ddesc">Diverse district. Saska Kępa — island of 30s elegance. Good price/quality for families.</div><div class="dprice">3,500–5,000 PLN / 2-rm</div><div class="dtags"><span class="tag">M2 (partly)</span><span class="tag">Trams</span><span class="tag">Saska Kępa</span></div><div class="dpc"><div class="pro">Saska Kępa</div><div class="con">Across river</div><div class="pro">Spacious</div><div class="con">Uneven stock</div></div></div>
+
+  <div class="dc" data-t="family" data-m="0"><div class="dh"><div class="dn2">Włochy<small>Włochy</small></div><span class="badge bf">Practical</span></div><div class="ddesc">Near Chopin airport. New condos. Warszawa Zachodnia — trains to all of Poland. Ideal for frequent flyers.</div><div class="dprice">3,500–5,000 PLN / 2-rm</div><div class="dtags"><span class="tag">SKM/KM</span><span class="tag">3 min to airport</span></div><div class="dpc"><div class="pro">Airport close</div><div class="con">Planes above</div><div class="pro">New condos</div><div class="con">No metro</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="1"><div class="dh"><div class="dn2">Targówek<small>Targówek</small></div><span class="badge bu">Budget</span></div><div class="ddesc">Working-class district with potential. Mostly blocks. M2 — main growth point in coming years.</div><div class="dprice">3,200–4,500 PLN / 2-rm</div><div class="dtags"><span class="tag">M2 (partly)</span><span class="tag">Trams</span></div><div class="dpc"><div class="pro">Cheaper with metro</div><div class="con">Old stock</div><div class="pro">Potential</div><div class="con">Less safe</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Ursus<small>Ursus</small></div><span class="badge bu">Accessible</span></div><div class="ddesc">Former industrial town. New micro-districts. Planned M2 — prices will rise. Best price/quality now.</div><div class="dprice">3,200–4,500 PLN / 2-rm</div><div class="dtags"><span class="tag">KM/SKM</span><span class="tag">M2 soon</span></div><div class="dpc"><div class="pro">New condos</div><div class="con">No metro yet</div><div class="pro">Price/quality</div><div class="con">Hard without car</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Białołęka<small>Białołęka</small></div><span class="badge bu">Growing</span></div><div class="ddesc">Largest new developments. Very far from center. For young families with cars wanting new and cheap.</div><div class="dprice">3,000–4,200 PLN / 2-rm</div><div class="dtags"><span class="tag">Buses</span><span class="tag">Car recommended</span></div><div class="dpc"><div class="pro">Cheap and new</div><div class="con">Far from all</div><div class="pro">Green</div><div class="con">No car — bad</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Wawer<small>Wawer</small></div><span class="badge bu">Forest</span></div><div class="ddesc">Quiet, green, almost "countryside". Pine forest, river. More houses than apartments. Train to center — 25–35 min.</div><div class="dprice">3,000–4,200 PLN / 2-rm</div><div class="dtags"><span class="tag">KM/SKM</span><span class="tag">Nature</span></div><div class="dpc"><div class="pro">Quiet, forest</div><div class="con">Far away</div><div class="pro">Cheap</div><div class="con">Few apartments</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Rembertów<small>Rembertów</small></div><span class="badge bu">Cheapest</span></div><div class="ddesc">Smallest and quietest district. Mostly private housing. Minimal rental payment in Warsaw.</div><div class="dprice">2,800–3,800 PLN / 2-rm</div><div class="dtags"><span class="tag">KM</span><span class="tag">Car necessary</span></div><div class="dpc"><div class="pro">Lowest rent</div><div class="con">Smallest choice</div><div class="pro">Quiet</div><div class="con">Very far</div></div></div>
+
+  <div class="dc" data-t="budget" data-m="0"><div class="dh"><div class="dn2">Wesoła<small>Wesoła</small></div><span class="badge bu">Smallest</span></div><div class="ddesc">Smallest district with rural character. Mostly houses. Apartments for rent practically non-existent.</div><div class="dprice">2,800–3,500 PLN / 2-rm</div><div class="dtags"><span class="tag">KM</span><span class="tag">Car necessary</span></div><div class="dpc"><div class="pro">Nature, quiet</div><div class="con">Almost no apts</div><div class="pro">Lowest price</div><div class="con">Far from all</div></div></div>
+</div>
+</section>
+
+<!-- 04 -->
+<section class="section" id="types">
+<h2 class="st">04 · Building Types</h2>
+<p class="ss">Building type directly affects heating bills and sound insulation quality</p>
+<div class="type-grid">
+  <div class="tc"><div class="tera">Pre-1945</div><div class="tname">Kamienica</div><div class="tpc"><div class="p">✓ 3+ m ceilings, thick walls</div><div class="p">✓ Atmosphere, center</div><div class="c">✗ Possible humidity</div><div class="c">✗ Old pipes & wiring</div></div></div>
+  <div class="tc"><div class="tera">1950–1959</div><div class="tname">Socrealizm</div><div class="tpc"><div class="p">✓ Solid construction</div><div class="p">✓ Large apartments</div><div class="c">✗ No lift sometimes</div><div class="c">✗ High admin fee</div></div></div>
+  <div class="tc"><div class="tera">1960–1990</div><div class="tname">Blok</div><div class="tpc"><div class="p">✓ Below market price</div><div class="p">✓ District heating</div><div class="c">✗ Poor soundproofing</div><div class="c">✗ Small kitchen</div></div></div>
+  <div class="tc"><div class="tera">1990–2010</div><div class="tname">Nowe budownictwo</div><div class="tpc"><div class="p">✓ Lift, normal fee</div><div class="p">✓ Good insulation</div><div class="c">✗ Varying quality</div><div class="c">✗ Often no garage</div></div></div>
+  <div class="tc"><div class="tera">Post-2010</div><div class="tname">Apartamentowiec</div><div class="tpc"><div class="p">✓ Parking, security</div><div class="p">✓ 1 Gbit/s, ventilation</div><div class="c">✗ Highest admin fee</div><div class="c">✗ Compact plans</div></div></div>
+</div>
+<div class="box amber" style="margin-top:1.25rem">
+  <p><strong>Energy Performance Certificate (SKE)</strong> mandatory since 2023. Class A/B = low bills. Class E/F = +400–700 PLN in winter. Always ask for it.</p>
+</div>
+</section>
+
+<!-- 05 -->
+<section class="section" id="checklist">
+<h2 class="st">05 · Technical Audit Checklist</h2>
+<p class="ss">When entering an apartment — emotions are your enemy. Open the list</p>
+<ul class="cl">
+  <li><div class="ci">1</div><div><strong>Windows and Drafts.</strong> Put your hand to the frame joint. Draft in winter = +400–700 PLN to the bill. Ask for installation year.</div></li>
+  <li><div class="ci">2</div><div><strong>Mold and Mildew.</strong> Corners behind wardrobes, under sills, around bath. Black spots = fungus = problem for years. Don't believe "we'll paint it."</div></li>
+  <li><div class="ci">3</div><div><strong>Water Pressure.</strong> Turn on shower and tap together. Weak pressure in old houses — a community issue, takes years to fix.</div></li>
+  <li><div class="ci">4</div><div><strong>Electricity.</strong> Minimum 25A, better 40A. 10–15A — AC and washing machine might trip breakers together.</div></li>
+  <li><div class="ci">5</div><div><strong>Internet.</strong> ADSL (copper) = up to 100 Mbit/s. Fiber = 1 Gbit/s. For IT or home-office — ask about provider and cable type.</div></li>
+  <li><div class="ci">6</div><div><strong>Heating.</strong> District heating = stable price. Gas = usage dependent. Electric = most expensive — beware.</div></li>
+  <li><div class="ci">7</div><div><strong>Talk to a neighbor.</strong> 5 mins in the hallway = more info than 50 photos. Noisy neighbors? Renovations? Manager issues?</div></li>
+  <li><div class="ci">8</div><div><strong>Parking & Storage.</strong> Where to park? Is there a cellar / komórka? Daily comfort depends on these small things.</div></li>
+  <li><div class="ci">9</div><div><strong>Plumbing State.</strong> Check under sinks and bath — traces of leaks. Owner must fix before move-in.</div></li>
+  <li><div class="ci">10</div><div><strong>Energy Cert (SKE).</strong> Demand it. Owner is legally obliged. None? Either ignorance or a shameful E/F class.</div></li>
+</ul>
+</section>
+
+<!-- 06 -->
+<section class="section" id="prices">
+<h2 class="st">06 · Full Price Table 2026</h2>
+<p class="ss">PLN/month excluding admin fees & utilities. Sources: Investropa, NBP Q1 2026, Otodom</p>
+<div class="tw">
+  <table>
+    <thead><tr><th>District</th><th>Segment</th><th>Studio</th><th>1-room</th><th>2-room</th><th>3-room</th></tr></thead>
+    <tbody>
+      <tr><td class="tdn">Śródmieście</td><td><span class="badge bp">Premium</span></td><td class="tp">3,800–5,200</td><td class="tp">4,500–6,500</td><td class="tp">6,500–9,500+</td><td class="tp">9,000–15,000+</td></tr>
+      <tr><td class="tdn">Żoliborz</td><td><span class="badge bp">Elite</span></td><td class="tp">3,500–5,000</td><td class="tp">4,200–6,000</td><td class="tp">5,500–8,000</td><td class="tp">8,000–12,000</td></tr>
+      <tr><td class="tdn">Wilanów</td><td><span class="badge bp">Premium</span></td><td class="tp">3,800–5,500</td><td class="tp">4,500–6,500</td><td class="tp">6,000–10,000</td><td class="tp">9,000–14,000</td></tr>
+      <tr><td class="tdn">Wola</td><td><span class="badge bb">Business</span></td><td class="tp">3,400–4,800</td><td class="tp">4,000–6,000</td><td class="tp">5,500–7,500</td><td class="tp">7,500–11,000</td></tr>
+      <tr><td class="tdn">Mokotów</td><td><span class="badge bp">Premium</span></td><td class="tp">3,200–4,800</td><td class="tp">3,800–5,800</td><td class="tp">4,800–7,000</td><td class="tp">7,000–11,000</td></tr>
+      <tr><td class="tdn">Ochota</td><td><span class="badge bb">Centr.</span></td><td class="tp">2,800–4,000</td><td class="tp">3,500–5,200</td><td class="tp">4,000–5,800</td><td class="tp">5,500–8,000</td></tr>
+      <tr><td class="tdn">Praga-Północ</td><td><span class="badge bv">Bohemian</span></td><td class="tp">2,600–3,800</td><td class="tp">3,200–5,000</td><td class="tp">3,500–5,500</td><td class="tp">5,000–7,500</td></tr>
+      <tr><td class="tdn">Ursynów</td><td><span class="badge bf">Family</span></td><td class="tp">2,800–3,800</td><td class="tp">3,400–5,000</td><td class="tp">4,200–5,800</td><td class="tp">5,500–8,000</td></tr>
+      <tr><td class="tdn">Bielany</td><td><span class="badge bf">Family</span></td><td class="tp">2,500–3,500</td><td class="tp">3,000–4,500</td><td class="tp">3,500–5,000</td><td class="tp">4,800–7,000</td></tr>
+      <tr><td class="tdn">Bemowo</td><td><span class="badge bf">Family</span></td><td class="tp">2,500–3,500</td><td class="tp">3,000–4,500</td><td class="tp">3,800–5,200</td><td class="tp">5,000–7,000</td></tr>
+      <tr><td class="tdn">Praga-Południe</td><td><span class="badge bf">Family</span></td><td class="tp">2,400–3,500</td><td class="tp">3,000–4,500</td><td class="tp">3,500–5,000</td><td class="tp">4,800–7,000</td></tr>
+      <tr><td class="tdn">Włochy</td><td><span class="badge bf">Pract.</span></td><td class="tp">2,400–3,400</td><td class="tp">3,000–4,200</td><td class="tp">3,500–5,000</td><td class="tp">4,500–6,500</td></tr>
+      <tr><td class="tdn">Targówek</td><td><span class="badge bu">Budget</span></td><td class="tp">2,200–3,200</td><td class="tp">2,800–4,000</td><td class="tp">3,200–4,500</td><td class="tp">4,200–6,000</td></tr>
+      <tr><td class="tdn">Ursus</td><td><span class="badge bu">Budget</span></td><td class="tp">2,200–3,200</td><td class="tp">2,800–4,000</td><td class="tp">3,200–4,500</td><td class="tp">4,200–6,000</td></tr>
+      <tr><td class="tdn">Białołęka</td><td><span class="badge bu">Budget</span></td><td class="tp">2,000–3,000</td><td class="tp">2,600–3,800</td><td class="tp">3,000–4,200</td><td class="tp">4,000–5,500</td></tr>
+      <tr><td class="tdn">Wawer</td><td><span class="badge bu">Budget</span></td><td class="tp">1,900–2,800</td><td class="tp">2,500–3,600</td><td class="tp">3,000–4,200</td><td class="tp">4,000–5,500</td></tr>
+      <tr><td class="tdn">Rembertów</td><td><span class="badge bu">Budget</span></td><td class="tp">1,800–2,600</td><td class="tp">2,300–3,400</td><td class="tp">2,800–3,800</td><td class="tp">3,500–5,000</td></tr>
+      <tr><td class="tdn">Wesoła</td><td><span class="badge bu">Budget</span></td><td class="tp">1,700–2,500</td><td class="tp">2,200–3,200</td><td class="tp">2,800–3,500</td><td class="tp">3,200–4,500</td></tr>
+    </tbody>
+  </table>
+</div>
+<div class="box green">
+  <p><strong>Formula:</strong> Area (m²) × 85 PLN = average Warsaw market. Śródmieście: ×120 PLN. Ursynów / Bielany: ×65 PLN. Wilanów luxury: ×130–150 PLN.</p>
+</div>
+</section>
+
+<!-- 07 -->
+<section class="section" id="finance">
+<h2 class="st">07 · Finances: Czynsz & Media</h2>
+<p class="ss">Listing says "4,500 PLN". The real monthly cost is different</p>
+<p>Most listings only show <em>czynsz najmu</em> (base rent). To this, you always add <strong>czynsz administracyjny</strong> (700–1,200 PLN) and <strong>media</strong> (electricity per meter).</p>
+<div class="calc-box">
+  <h3>📊 Real Example: 2-room in Mokotów, 55 m², new build</h3>
+  <div class="cr"><span class="lb">Rent (czynsz najmu)</span><span class="vl">5,200 PLN</span></div>
+  <div class="cr"><span class="lb">Adm. fee (water, heat, lift, trash)</span><span class="vl">950 PLN</span></div>
+  <div class="cr"><span class="lb">Electricity (per meter)</span><span class="vl">180 PLN</span></div>
+  <div class="cr"><span class="lb">Internet 1 Gbit/s</span><span class="vl">70 PLN</span></div>
+  <div class="ctot"><span class="lb">Total Monthly</span><span class="vl">6,400 PLN</span></div>
+  <div class="cnote">Entry Ticket: 1st month (6,400) + Deposit 2 months (12,800) + Agent commission (6,400, if any) = up to 25,600 PLN at once. Without commission: ~19,200 PLN.</div>
+</div>
+<div class="box orange">
+  <p><strong>Never rent without knowing the admin fee.</strong> In old houses, it can reach 1,500–2,000 PLN. Ask for bill statements from the past year — summer and winter months.</p>
+</div>
+</section>
+
+<!-- 08 -->
+<section class="section" id="calculator">
+<h2 class="st">08 · Expense Calculator</h2>
+<p class="ss">Calculate your real monthly payment and entry ticket</p>
+
+<div class="calc-inter">
+  <div class="calc-inputs">
+    <div class="calc-row">
+      <label>Warsaw District</label>
+      <select id="district">
+        <option value="custom">— Custom —</option>
+        <optgroup label="Premium">
+          <option value="srodmiescie">Śródmieście</option>
+          <option value="wilanow">Wilanów</option>
+          <option value="zoliborz">Żoliborz</option>
+          <option value="mokotow">Mokotów</option>
+        </optgroup>
+        <optgroup label="Standard">
+          <option value="wola" selected>Wola</option>
+          <option value="ochota">Ochota</option>
+          <option value="bielany">Bielany</option>
+          <option value="ursynow">Ursynów</option>
+          <option value="pragapld">Praga-Południe</option>
+          <option value="wlochy">Włochy</option>
+          <option value="bemowo">Bemowo</option>
+        </optgroup>
+        <optgroup label="Budget">
+          <option value="bialoleka">Białołęka</option>
+          <option value="targowek">Targówek</option>
+          <option value="ursus">Ursus</option>
+          <option value="wawer">Wawer</option>
+          <option value="pragapln">Praga-Północ</option>
+          <option value="rembertow">Rembertów</option>
+          <option value="wesola">Wesoła</option>
+        </optgroup>
+      </select>
     </div>
-  </main>
 
+    <div class="calc-row">
+      <label>Apartment Type</label>
+      <select id="room-type">
+        <option value="studio">Studio (Kawalerka)</option>
+        <option value="1bed" selected>1-bedroom (2 pokoje)</option>
+        <option value="2bed">2-bedrooms (3 pokoje)</option>
+        <option value="3bed">3+ bedrooms (4+ pokoje)</option>
+      </select>
+    </div>
+
+    <div class="calc-row">
+      <label>Monthly Rent (PLN)</label>
+      <input type="number" id="rent" value="4000" step="100">
+    </div>
+
+    <div class="calc-flex">
+      <div class="calc-row">
+        <label>Admin Fee (PLN)</label>
+        <input type="number" id="admin" value="700">
+      </div>
+      <div class="calc-row">
+        <label>Utilities (PLN)</label>
+        <input type="number" id="media" value="300">
+      </div>
+    </div>
+
+    <div class="calc-flex">
+      <div class="calc-row">
+        <label>Deposit (months)</label>
+        <input type="number" id="deposit" value="2" step="1">
+      </div>
+      <div class="calc-row">
+        <label>Commission (months)</label>
+        <input type="number" id="commission" value="1" step="0.5">
+      </div>
+    </div>
+
+    <div class="calc-flex">
+      <label class="c-box"><input type="checkbox" id="opt_internet" data-cost="60"> Internet</label>
+      <label class="c-box"><input type="checkbox" id="opt_parking" data-cost="250"> Parking</label>
+      <label class="c-box"><input type="checkbox" id="opt_notary" data-cost="500" class="onetime"> Notary</label>
+      <label class="c-box"><input type="checkbox" id="opt_alt_address" data-cost="400" class="onetime"> Certificate</label>
+    </div>
+  </div>
+
+  <div class="calc-sidebar">
+    <div class="curr-switch">
+      <button class="curr-btn active" data-curr="PLN">PLN</button>
+      <button class="curr-btn" data-curr="USD">USD</button>
+      <button class="curr-btn" data-curr="EUR">EUR</button>
+    </div>
+
+    <div class="chart-wrap">
+      <svg class="donut-chart" viewBox="0 0 36 36">
+        <circle class="donut-segment" cx="18" cy="18" r="15.9" stroke="#635bff" id="seg-rent"></circle>
+        <circle class="donut-segment" cx="18" cy="18" r="15.9" stroke="#80e9ff" id="seg-admin"></circle>
+        <circle class="donut-segment" cx="18" cy="18" r="15.9" stroke="#f7c97e" id="seg-media"></circle>
+        <circle class="donut-segment" cx="18" cy="18" r="15.9" stroke="#a3aed0" id="seg-other"></circle>
+      </svg>
+      <div class="chart-info">
+        <span id="curr-label">PLN</span>
+        <strong id="total-monthly">0</strong>
+      </div>
+    </div>
+
+    <div class="res-item">
+      <div class="res-lb">Entry Cost (1st payment)</div>
+      <div class="res-vl" id="res-entry">0 <span>PLN</span></div>
+    </div>
+    <div class="res-item">
+      <div class="res-lb">Total for 12 months</div>
+      <div class="res-vl" id="res-yearly">0 <span>PLN</span></div>
+    </div>
+
+    <a href="/en/rent-calculator-warsaw.html" class="curr-btn" style="text-align: center; margin-bottom: 20px; display: block; background: rgba(255,255,255,0.1); color: #fff; border: none;">Full Version</a>
+
+    <p class="calc-footer-msg">Based on 2026 market data. <br> Results are approximate.</p>
+  </div>
+</div>
+</section>
+
+<!-- 09 -->
+<section class="section" id="legal">
+<h2 class="st">09 · Legal Masterclass</h2>
+<p class="ss">Three types of contracts, your rights and obligations — no jargon</p>
+<h3>Three Types of Rental Contracts in Poland</h3>
+<div class="tw">
+  <table>
+    <thead><tr><th>Type</th><th>Notary</th><th>Owner Protection</th><th>Tenant Protection</th><th>Prevalence</th></tr></thead>
+    <tbody>
+      <tr><td class="tdn">Regular Rental (Zwykła)</td><td>No</td><td>Low</td><td>Very High</td><td>Rare in 2026</td></tr>
+      <tr><td class="tdn">Occasional Rental (Okazjonalny)</td><td>Yes (App. 1)</td><td>High</td><td>Medium</td><td>~90% of market</td></tr>
+      <tr><td class="tdn">Institutional Rental</td><td>Yes</td><td>Very High</td><td>Low</td><td>PRS, agencies</td></tr>
+    </tbody>
+  </table>
+</div>
+<h3>Najem Okazjonalny: Step-by-Step for Foreigners</h3>
+<div class="steps">
+  <div class="step"><div class="snum">1</div><div class="sbody"><h4>Main Contract</h4><p>The text of the lease itself doesn't require a notary. It specifies terms, kaucja size, rights, and obligations.</p></div></div>
+  <div class="step"><div class="snum">2</div><div class="sbody"><h4>App. 1: Notarial act of voluntary eviction</h4><p>You sign that you'll leave upon termination. 2026 Cost: <strong>480–750 PLN</strong>. Without Polish — requires a sworn translator: add +300–600 PLN.</p></div></div>
+  <div class="step"><div class="snum">3</div><div class="sbody"><h4>App. 2: Substitute local address</h4><p>An address in Poland where you "move" if problems occur. Doesn't have to be yours — can be a friend's or an agency's legal address.</p></div></div>
+  <div class="step"><div class="snum">4</div><div class="sbody"><h4>App. 3: Consent of substitute address owner</h4><p>Notarized consent. <strong>Main difficulty for foreigners</strong> — where to get this address without a Polish network. STAYX provides a legal address for its clients.</p></div></div>
+  <div class="step"><div class="snum">5</div><div class="sbody"><h4>Tax Office Registration</h4><p>Owner must notify Urząd Skarbowy within 14 days. Their duty — but verify they did it.</p></div></div>
+</div>
+<h3>Key Tenant Rights</h3>
+<ul class="cl">
+  <li><div class="ci">✓</div><div><strong>Right to Privacy.</strong> Owner cannot enter without 24h notice. Put it in the contract.</div></li>
+  <li><div class="ci">✓</div><div><strong>Right to Repairs.</strong> Breakages not your fault — owner's responsibility. Document every request (SMS, email).</div></li>
+  <li><div class="ci">✓</div><div><strong>Protection from Price Hikes.</strong> Price doesn't rise during contract without your consent (unless indexation clause exists).</div></li>
+  <li><div class="ci">✓</div><div><strong>Deposit Return.</strong> Max 30 days. Delay is grounds for legal claim.</div></li>
+  <li><div class="ci">✓</div><div><strong>Right to Meldunek.</strong> Every owner must allow residence registration. Refusal is a legal violation.</div></li>
+</ul>
+</section>
+
+<!-- 10 -->
+<section class="section" id="redflags">
+<h2 class="st">10 · 12 Red Flags</h2>
+<p class="ss">Signs that it's better to turn around and walk away</p>
+<div class="flags-grid">
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">"No Deposit Needed"</div><div class="fdesc">Owner not taking a deposit — either knows of defects or wants to rent "fast and no questions."</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">No Meter Photos</div><div class="fdesc">Hidden readings = you pay the previous tenant's debts. Demand photos of all meters before signing.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">"Sign Without Contract, Cash"</div><div class="fdesc">Without a contract, you are a legal nobody. Owner can evict you any moment.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Refusal to Provide SKE</div><div class="fdesc">Legal duty since 2023. Refusal = ignorance or hiding a shameful E/F class.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Price Way Below Market</div><div class="fdesc">A "2,000 PLN" apt in Śródmieście either doesn't exist or has a severe hidden defect. Always verify.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Owner "Is Abroad"</div><div class="fdesc">Classic scam — you transfer "reservation" and they vanish. Never send money before personal viewing and signing.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Protocol Without Defects</div><div class="fdesc">"Ideal condition" with a visible stain = you pay at move-out. Document every defect in writing and photos.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">"Tylko Polacy"</div><div class="fdesc">In Poland, this is discrimination. Such an owner will likely be difficult in general. Look elsewhere.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Prohibition of Meldunek</div><div class="fdesc">No meldunek = no PESEL, no normal bank/medicine. "Bez meldunku" violates your rights.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Unclear Who Is the Owner</div><div class="fdesc">Check via Księga Wieczysta (ekw.ms.gov.pl). Name in registry and on contract must match.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Pressure "Sign Now"</div><div class="fdesc">"Three other candidates, decide in an hour" — manipulation. Don't sign without reading fully.</div></div></div>
+  <div class="flag-card"><div class="fi2">🚩</div><div><div class="ftitle">Sublease Without Consent</div><div class="fdesc">If renting from a tenant, check their right to sublease. Without it, you could both be evicted.</div></div></div>
+</div>
+</section>
+
+<!-- 11 -->
+<section class="section" id="segments">
+<h2 class="st">11 · Specifics: Families, IT, Students</h2>
+<p class="ss">Different profiles — different priorities</p>
+<div class="seg-grid">
+  <div class="sc"><div class="si">👨‍👩‍👧</div><div class="stitle">Families with children</div><ul><li>Wilanów / Ursynów — school concentration</li><li>Check rejonizacja (school zones)</li><li>Int'l schools: British, American, French</li><li>Min 3-room, yard with playground</li><li>Underground parking: stroller + car</li></ul></div>
+  <div class="sc"><div class="si">💻</div><div class="stitle">IT Specialists</div><ul><li>Wola or Mokotów — near offices</li><li>Fiber mandatory for video calls</li><li>Home office → 2 rooms or coworking</li><li>WeWork Rondo ONZ, Brain Embassy Wola</li><li>Flexible 6+6 contract for remote</li></ul></div>
+  <div class="sc"><div class="si">🎓</div><div class="stitle">Students</div><ul><li>Ochota, Bielany — universities nearby</li><li>Shared housing: from 1,200 PLN/rm</li><li>Ursynów — SGGW + M1 (5 stations)</li><li>Targówek / Praga — M2 + lower price</li><li>Check: Wi-Fi included or extra</li></ul></div>
+  <div class="sc"><div class="si">🌍</div><div class="stitle">New Relocants</div><ul><li>First contract: 6 months — lower risk</li><li>No PESEL: passport + income proof</li><li>"Tylko Polacy" is discrimination</li><li>Recommendation from previous owner</li><li>STAYX: substitute address + legal support</li></ul></div>
+</div>
+</section>
+
+<!-- 12 -->
+<section class="section" id="admin">
+<h2 class="st">12 · Admin Steps After Move-in</h2>
+<p class="ss">Signed the contract — the "paper marathon" begins</p>
+<div class="steps">
+  <div class="step"><div class="snum">1</div><div class="sbody"><h4>Meldunek</h4><p>Free, 15 mins in Urząd Dzielnicy with contract and passport. Legally mandatory. Triggers PESEL and NFZ timers.</p></div></div>
+  <div class="step"><div class="snum">2</div><div class="sbody"><h4>PESEL</h4><p>UA citizens with temporary protection — simplified. Others — via meldunek or gmina. Opens banks, NFZ, ZUS, gov services.</p></div></div>
+  <div class="step"><div class="snum">3</div><div class="sbody"><h4>Bank Account</h4><p>PESEL + passport: PKO BP, ING, Santander, mBank. Online w/o PESEL: Revolut, Wise. Most owners require transfer.</p></div></div>
+  <div class="step"><div class="snum">4</div><div class="sbody"><h4>OC Najemcy (Insurance)</h4><p>50–200 PLN/year (PZU, ERGO Hestia, Warta). Covers: flooding neighbor, fire, damage. One event pays for 10 years of policy.</p></div></div>
+  <div class="step"><div class="snum">5</div><div class="sbody"><h4>NFZ (Health Insurance)</h4><p>Via employer or JDG. For UA citizens with protection — free. Without NFZ — medicine is private and expensive.</p></div></div>
+</div>
+</section>
+
+<!-- 13 -->
+<section class="section" id="culture">
+<h2 class="st">13 · Communication with Owners</h2>
+<p class="ss">A Polish landlord is a specific type. There are codes to know</p>
+<h3>First Contact: Write to get a reply</h3>
+<p>Don't write "Is the apt available?". Write: <em>"Dzień dobry, jestem zainteresowany wynajmem. Pracuję w IT, dochód 15 000 zł netto. Czy mogę umówić się na oglądanie?"</em> Owner sees: job, money, respects time.</p>
+<h3>Viewing: "Good Tenant" signals</h3>
+<ul class="cl">
+  <li><div class="ci">✓</div><div>Came on time or warned 10 mins ahead.</div></li>
+  <li><div class="ci">✓</div><div>Took off shoes without reminder — respect for space.</div></li>
+  <li><div class="ci">✓</div><div>Ask technical questions (fees, internet) — look serious.</div></li>
+  <li><div class="ci">✓</div><div>Don't haggle aggressively at first viewing. Haggle after, separately.</div></li>
+  <li><div class="ci">✓</div><div>Documents sent via messenger immediately after.</div></li>
+</ul>
+<h3>Negotiation: When and How</h3>
+<p>Appropriate for apts sitting 2–3 weeks, or in Wola (2026 oversupply). Arguments: long contract (1.5–2 yrs), 2–3 month prepay. Range: 3–8%.</p>
+<div class="box blue">
+  <p><strong>Language:</strong> Without Polish — explain immediately and offer an agent. Negotiating via Google Translate = owner picks another candidate.</p>
+</div>
+</section>
+
+<!-- 14 -->
+<section class="section" id="season">
+<h2 class="st">14 · Market Seasonality</h2>
+<p class="ss">When to look is as important as where to look</p>
+<div class="season-grid">
+  <div class="season-c"><div class="sm2">September</div><span class="sbadge sh">Hottest</span><p style="font-size:13.5px;color:var(--muted)">Students, corporate moves. Good apts — 15–18 days. Price max, haggling min.</p></div>
+  <div class="season-c"><div class="sm2">Oct–Nov</div><span class="sbadge smi">Dip</span><p style="font-size:13.5px;color:var(--muted)">Demand drops. Apts 20–25 days. Possible to lower price by 3–5%.</p></div>
+  <div class="season-c"><div class="sm2">Dec–Feb</div><span class="sbadge sc2b">Best for Haggling</span><p style="font-size:13.5px;color:var(--muted)">Minimal demand. Apts 30–40 days. Discount 5–10% or renovation by owner.</p></div>
+  <div class="season-c"><div class="sm2">Mar–Apr</div><span class="sbadge sg2">Activation</span><p style="font-size:13.5px;color:var(--muted)">Not peak yet, but choice is there. Find an apt in 2–3 weeks.</p></div>
+  <div class="season-c"><div class="sm2">May–June</div><span class="sbadge sg2">Active Market</span><p style="font-size:13.5px;color:var(--muted)">Demand rises. Prices +3–5% from winter lows. Bills low — good time to check.</p></div>
+  <div class="season-c"><div class="sm2">July–Aug</div><span class="sbadge smi">Moderate</span><p style="font-size:13.5px;color:var(--muted)">Some owners on holiday. New apts come out before Sept. Prices rising.</p></div>
+</div>
+</section>
+
+<!-- 15 -->
+<section class="section" id="firstweek">
+<h2 class="st">15 · First Week After Move-in</h2>
+<p class="ss">A step-by-step roadmap for the first 7 days</p>
+<div class="timeline">
+  <div class="tli"><div class="tldot">1</div><div class="tlday">Day 1: Move-in</div><div class="tltitle">Protokół + Photo/Video everything</div><div class="tlbody">Don't unpack without a signed protocol. Video every room, every scratch. Photo all meters. Archive to cloud immediately.</div></div>
+  <div class="tli"><div class="tldot">2</div><div class="tlday">Day 2: Tech Check</div><div class="tltitle">Turn on all appliances, check outlets</div><div class="tlbody">Fridge, washer, dishwasher. All taps and shower. Any failure in first 48h — owner's responsibility. Report in writing.</div></div>
+  <div class="tli"><div class="tldot">3</div><div class="tlday">Day 3: Meldunek</div><div class="tltitle">Urząd Dzielnicy — registration</div><div class="tlbody">Contract + passport. Free, 15–20 mins. Some urządy — online via ePUAP.</div></div>
+  <div class="tli"><div class="tldot">4</div><div class="tlday">Day 4–5: PESEL & Bank</div><div class="tltitle">Get PESEL and open a Polish account</div><div class="tlbody">PESEL in gmina / Urząd Dzielnicy. With PESEL + passport → PKO BP or mBank. Most owners return deposit only to Polish accounts.</div></div>
+  <div class="tli"><div class="tldot">5</div><div class="tlday">Day 5–6: Insurance & NFZ</div><div class="tltitle">OC Najemcy + health insurance registration</div><div class="tlbody">OC policy bought online in 10 mins. NFZ — via employer or ZUS. Without NFZ, hospital is paid and expensive.</div></div>
+  <div class="tli"><div class="tldot">6</div><div class="tlday">Day 7: Neighbors & Utilities</div><div class="tltitle">Save manager and emergency contacts</div><div class="tlbody">Ask neighbor about trash, cleaning. Save: Gas (992), Elec (991), Water (994), Ambulance (999), Police (997), General (112).</div></div>
+</div>
+</section>
+
+<!-- 16 -->
+<section class="section" id="faq">
+<h2 class="st">16 · FAQ</h2>
+<p class="ss">Most common questions from new tenants in Warsaw</p>
+<div id="faq-list">
+  <div class="faq-item">
+    <div class="faq-q">Can I rent without a PESEL? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Yes, a foreign passport is legally sufficient. In practice, some owners ask for a PESEL — it's their preference, not a legal requirement. If rejected only for lack of PESEL — look for another owner or contact STAYX.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Where does a foreigner get a "lokal zastępczy"? <span class="faq-icon">+</span></div>
+    <div class="faq-a">It doesn't have to be yours — can be the address of a Polish friend, colleague, or an agency's legal address. STAYX provides a legal address as part of its relocation support. Without it, a notary won't process Najem Okazjonalny.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Who pays for the notarial act? <span class="faq-icon">+</span></div>
+    <div class="faq-a">By law — the parties agree. In practice: 70% tenant pays, 20% split, 10% owner pays. Costs 480–750 PLN. Always discuss this before signing to avoid surprises.</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">How to get the deposit (kaucja) back? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Owner must return it within 30 days of move-out. Any deductions must have written justification with receipts. Without documented damage — full return. If delayed without reason — written claim, then court (e-court fee is 30 PLN).</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">Can I terminate the contract early? <span class="faq-icon">+</span></div>
+    <div class="faq-a">Yes, if there's a notice period (wypowiedzenie) clause. Standard is 1–3 months. Without it in Najem Okazjonalny — only by mutual consent. Always check for this clause before signing.</div>
+  </div>
+</div>
+</section>
+
+<!-- 17 -->
+<section class="section" id="glossary">
+<h2 class="st">17 · Tenant Glossary</h2>
+<p class="ss">30+ terms found in listings and contracts</p>
+<div class="gloss-grid">
+  <div class="gi"><div class="gterm">Kaucja</div><div class="gdef">Security deposit. Usually 1–3 months' rent. Returned within 30 days after move-out minus real damages.</div></div>
+  <div class="gi"><div class="gterm">Czynsz najmu</div><div class="gdef">Base rent to the owner. The amount stated in listing titles. Does NOT include admin fees.</div></div>
+  <div class="gi"><div class="gterm">Czynsz administracyjny</div><div class="gdef">Admin fee to the building manager. Covers water, heating, trash, cleaning, lift. 700–1,500 PLN.</div></div>
+  <div class="gi"><div class="gterm">Media</div><div class="gdef">Utilities per meter: electricity, sometimes gas. Paid separately based on usage.</div></div>
+  <div class="gi"><div class="gterm">Zaliczka</div><div class="gdef">Advance / Reservation fee. Fully refundable if either party withdraws.</div></div>
+  <div class="gi"><div class="gterm">Zadatek</div><div class="gdef">Down payment. Non-refundable if tenant withdraws. Owner returns double if they withdraw.</div></div>
+  <div class="gi"><div class="gterm">Najem Okazjonalny</div><div class="gdef">Occasional rental contract with notarized eviction act. ~90% of quality market in 2026.</div></div>
+  <div class="gi"><div class="gterm">Najem Instytucjonalny</div><div class="gdef">Institutional rental. For corporate landlords (PRS). Highest owner protection.</div></div>
+  <div class="gi"><div class="gterm">Lokal zastępczy</div><div class="gdef">Alternative address where tenant "moves" upon termination. Mandatory for Okazjonalny.</div></div>
+  <div class="gi"><div class="gterm">Meldunek</div><div class="gdef">Residence registration. Free, at Urząd Dzielnicy. Grants right to PESEL.</div></div>
+  <div class="gi"><div class="gterm">PESEL</div><div class="gdef">Polish identification number. Needed for banks, NFZ, ZUS, gov services.</div></div>
+  <div class="gi"><div class="gterm">Wypowiedzenie</div><div class="gdef">Termination notice. Standard term: 1–3 months. Must be in the contract.</div></div>
+  <div class="gi"><div class="gterm">Protokół zdawczo-odbiorczy</div><div class="gdef">Acceptance protocol. Records apartment state and meter readings at move-in/out.</div></div>
+  <div class="gi"><div class="gterm">Wspólnota Mieszkaniowa</div><div class="gdef">Homeowners association. Sets admin fee and handles building repairs.</div></div>
+  <div class="gi"><div class="gterm">SKE / Energy Certificate</div><div class="gdef">Energy certificate. Classes A–G. Mandatory since 2023. Affects heating bills.</div></div>
+  <div class="gi"><div class="gterm">Kamienica</div><div class="gdef">Historical townhouse, usually pre-1945. High ceilings 3+ m.</div></div>
+  <div class="gi"><div class="gterm">Blok</div><div class="gdef">Panel or brick high-rise from the socialist era, 1960–1990.</div></div>
+  <div class="gi"><div class="gterm">Apartamentowiec</div><div class="gdef">Modern apartment building post-2010. Underground parking, security, concierge.</div></div>
+  <div class="gi"><div class="gterm">Komórka lokatorska</div><div class="gdef">Storage unit / cellar. Included or rented for 50–150 PLN.</div></div>
+  <div class="gi"><div class="gterm">OC Najemcy</div><div class="gdef">Tenant's liability insurance. 50–200 PLN/year. Covers damages to neighbors.</div></div>
+  <div class="gi"><div class="gterm">NFZ</div><div class="gdef">National Health Fund — Polish state healthcare. Via employer or ZUS.</div></div>
+  <div class="gi"><div class="gterm">Urząd Dzielnicy</div><div class="gdef">District Office. For meldunek, PESEL, and other official procedures.</div></div>
+  <div class="gi"><div class="gterm">Urząd Skarbowy</div><div class="gdef">Tax Office. Owner must register the contract here within 14 days.</div></div>
+  <div class="gi"><div class="gterm">Książka wieczysta (KW)</div><div class="gdef">Land registry. Verify owner at ekw.ms.gov.pl before signing.</div></div>
+  <div class="gi"><div class="gterm">Rejonizacja</div><div class="gdef">School zoning. Important for families: address determines the child's school.</div></div>
+  <div class="gi"><div class="gterm">PRS (Private Rented Sector)</div><div class="gdef">Institutional rental from large developers. Standard terms, English service.</div></div>
+  <div class="gi"><div class="gterm">Miejskie ciepło</div><div class="gdef">District heating. Stable price, predictable bills vs gas or electricity.</div></div>
+  <div class="gi"><div class="gterm">Odstępne</div><div class="gdef">Unofficial "extra" fee. Rare in 2026, mostly on a hot market.</div></div>
+  <div class="gi"><div class="gterm">Ryczałt za media</div><div class="gdef">Flat rate for utilities instead of meter. Convenient but not always profitable.</div></div>
+  <div class="gi"><div class="gterm">Aneks do umowy</div><div class="gdef">Contract amendment. Any changes must be in written form.</div></div>
+</div>
+</section>
+
+<div class="cta-block" id="contact">
+  <h2>Ready to move?<br>We'll do it for you.</h2>
+  <p>STAYX — your personal relocation department in Warsaw. From search to keys in hand. Legal, translation, substitute address — included.</p>
+  <a href="https://t.me/stayX_pl" class="cta-btn">Start Safe Rental →</a>
+  <div class="cta-sub">
+    <span>✓ Legal address for contract</span>
+    <span>✓ Negotiations in Polish</span>
+    <span>✓ Notarial support</span>
+    <span>✓ No hidden commissions</span>
+  </div>
+</div>
+
+<section class="section sources-section" id="sources">
+  <h2 class="st">Sources and Methodology</h2>
+  <p class="ss">Data in this guide was collected and verified as of May 2026.</p>
+  
+  <div class="sources-grid">
+    <div class="source-group">
+      <h4>Market Stats and Prices:</h4>
+      <ul>
+        <li><strong>Investropa — Warsaw Rents 2026</strong> — avg. price 85 PLN/m², +4–6% YoY, leasing time</li>
+        <li><strong>Investropa — Best Areas in Warsaw</strong> — district comparison, vacancy rate, yield</li>
+        <li><strong>NBP — Raport o rynku nieruchomości</strong> — official quarterly reports of the National Bank of Poland</li>
+        <li><strong>CBRE Poland — Warsaw Living Figures</strong> — institutional market, PRS segment, business hubs</li>
+        <li><strong>Cushman & Wakefield Poland</strong> — leasing days, vacancy, new developments</li>
+        <li><strong>Otodom Analytics</strong> — price ranges by district, seasonal dynamics</li>
+      </ul>
+    </div>
+    
+    <div class="source-group">
+      <h4>Legal Basis:</h4>
+      <ul>
+        <li><strong>Ustawa o ochronie praw lokatorów</strong> — tenant rights, kaucja, termination</li>
+        <li><strong>Kodeks cywilny — art. 394 (Zadatek)</strong> — difference between zadatek and zaliczka</li>
+        <li><strong>Ustawa o Najem Okazjonalny</strong> — notary act procedure, substitute address</li>
+        <li><strong>Rozporządzenie o świadectwie energetycznym</strong> — SKE mandate from 2023</li>
+        <li><strong>Ustawa o ewidencji ludności</strong> — meldunek and PESEL</li>
+      </ul>
+    </div>
+  </div>
+  
+  <div class="source-operational">
+    <p><strong>Practical Data</strong> (notary costs, real admin fee rates, landlord behavior) — <strong>STAYX</strong> internal database based on 2024–2026 deals.</p>
+  </div>
+</section>
+
+</main>
+</div>
+
+  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container footer__inner">
       <a href="/en/index.html" class="footer__logo"><span class="logo-text">stay<span class="x-accent">x</span></span></a>
@@ -218,6 +1009,174 @@
     </div>
   </footer>
 
-  <script src="../script.js"></script>
+<script>
+// ── Progress bar ──────────────────────────────────────────
+window.addEventListener('scroll', () => {
+  const doc = document.documentElement;
+  const scrollTop = doc.scrollTop || document.body.scrollTop;
+  const scrollHeight = doc.scrollHeight - doc.clientHeight;
+  const pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+  document.getElementById('pb').style.width = pct + '%';
+});
+
+// ── Sidebar active link ────────────────────────────────────
+const sections = document.querySelectorAll('.section[id]');
+const sideLinks = document.querySelectorAll('.sidebar a');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      sideLinks.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.sidebar a[href="#${e.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { rootMargin: '-20% 0px -70% 0px' });
+sections.forEach(s => obs.observe(s));
+
+// ── District filter ────────────────────────────────────────
+document.querySelectorAll('.fbtn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+    const f = this.dataset.f;
+    document.querySelectorAll('#dg .dc').forEach(card => {
+      const t = card.dataset.t;
+      const m = card.dataset.m;
+      const show = f === 'all' || t === f || (f === 'metro' && m === '1');
+      card.classList.toggle('hidden', !show);
+    });
+  });
+});
+
+// ── Advanced Calculator Logic ──────────────────────────────
+const calcState = {
+  inputs: ['rent', 'admin', 'media', 'deposit', 'commission'],
+  districts: {
+    srodmiescie: { rent: 5500, admin: 950, media: 450, parking: 400 },
+    wilanow: { rent: 4800, admin: 900, media: 400, parking: 300 },
+    zoliborz: { rent: 4500, admin: 850, media: 350, parking: 300 },
+    mokotow: { rent: 4200, admin: 800, media: 400, parking: 300 },
+    wola: { rent: 4300, admin: 750, media: 350, parking: 300 },
+    ochota: { rent: 4000, admin: 700, media: 350, parking: 250 },
+    bielany: { rent: 3800, admin: 700, media: 300, parking: 250 },
+    ursynow: { rent: 3900, admin: 750, media: 350, parking: 250 },
+    pragapld: { rent: 3700, admin: 700, media: 350, parking: 250 },
+    wlochy: { rent: 3600, admin: 650, media: 300, parking: 250 },
+    bemowo: { rent: 3500, admin: 650, media: 300, parking: 200 },
+    bialoleka: { rent: 2900, admin: 550, media: 250, parking: 200 },
+    targowek: { rent: 3100, admin: 600, media: 250, parking: 200 },
+    ursus: { rent: 3000, admin: 550, media: 250, parking: 200 },
+    wawer: { rent: 2800, admin: 500, media: 300, parking: 150 },
+    pragapln: { rent: 3400, admin: 650, media: 300, parking: 200 },
+    rembertow: { rent: 2700, admin: 500, media: 250, parking: 150 },
+    wesola: { rent: 2700, admin: 500, media: 250, parking: 150 }
+  },
+  multipliers: {
+    studio: { rent: 0.75, admin: 0.8, media: 0.8 },
+    '1bed': { rent: 1.0, admin: 1.0, media: 1.0 },
+    '2bed': { rent: 1.45, admin: 1.3, media: 1.3 },
+    '3bed': { rent: 1.9, admin: 1.6, media: 1.6 }
+  },
+  rates: { PLN: 1, USD: 0.25, EUR: 0.23 },
+  currentCurrency: 'PLN'
+};
+
+function format(num) {
+  const r = calcState.rates[calcState.currentCurrency];
+  return (num * r).toLocaleString('en-US', { maximumFractionDigits: 0 });
+}
+
+function updateChart(rent, admin, media, other) {
+  const total = rent + admin + media + other;
+  if (total === 0) return;
+  const segments = [
+    { id: 'seg-rent', val: rent },
+    { id: 'seg-admin', val: admin },
+    { id: 'seg-media', val: media },
+    { id: 'seg-other', val: other }
+  ];
+  let offset = 0;
+  segments.forEach(s => {
+    const el = document.getElementById(s.id);
+    if (el) {
+      const p = (s.val / total) * 100;
+      el.style.strokeDasharray = `${p} ${100 - p}`;
+      el.style.strokeDashoffset = -offset;
+      offset += p;
+    }
+  });
+}
+
+function calculate() {
+  const v = {};
+  calcState.inputs.forEach(id => {
+    const el = document.getElementById(id);
+    if (el) v[id] = parseFloat(el.value) || 0;
+  });
+  
+  let otherMonthly = 0;
+  document.querySelectorAll('.c-box input:checked:not(.onetime)').forEach(cb => {
+    otherMonthly += parseFloat(cb.getAttribute('data-cost'));
+  });
+
+  let oneTimeExtra = 0;
+  document.querySelectorAll('.c-box input.onetime:checked').forEach(cb => {
+    oneTimeExtra += parseFloat(cb.getAttribute('data-cost'));
+  });
+
+  const monthlyPLN = v.rent + v.admin + v.media + otherMonthly;
+  const entryPLN = monthlyPLN + (v.rent * v.deposit) + (v.rent * v.commission) + oneTimeExtra;
+  const yearlyPLN = entryPLN + (monthlyPLN * 11);
+
+  document.getElementById('total-monthly').textContent = format(monthlyPLN);
+  document.getElementById('res-entry').innerHTML = format(entryPLN) + ` <span>${calcState.currentCurrency}</span>`;
+  document.getElementById('res-yearly').innerHTML = format(yearlyPLN) + ` <span>${calcState.currentCurrency}</span>`;
+  
+  updateChart(v.rent, v.admin, v.media, otherMonthly);
+}
+
+function applyPresets() {
+  const d = calcState.districts[document.getElementById('district').value];
+  const m = calcState.multipliers[document.getElementById('room-type').value];
+  if (d && m) {
+    document.getElementById('rent').value = Math.round(d.rent * m.rent / 50) * 50;
+    document.getElementById('admin').value = Math.round(d.admin * m.admin / 10) * 10;
+    document.getElementById('media').value = Math.round(d.media * m.media / 10) * 10;
+    calculate();
+  }
+}
+
+// Initial Events
+calcState.inputs.forEach(id => {
+  const el = document.getElementById(id);
+  if (el) el.addEventListener('input', calculate);
+});
+document.querySelectorAll('.c-box input').forEach(cb => cb.addEventListener('change', calculate));
+document.getElementById('district').addEventListener('change', applyPresets);
+document.getElementById('room-type').addEventListener('change', applyPresets);
+
+document.querySelectorAll('.curr-btn').forEach(btn => {
+  btn.addEventListener('click', (e) => {
+    document.querySelectorAll('.curr-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    calcState.currentCurrency = btn.dataset.curr;
+    document.getElementById('curr-label').textContent = calcState.currentCurrency;
+    calculate();
+  });
+});
+
+calculate();
+
+// FAQ accordion logic
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
+  });
+});
+</script>
+<script src="../script.js"></script>
 </body>
 </html>

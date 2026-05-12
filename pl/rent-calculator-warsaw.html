@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="pl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Калькулятор оренди квартири у Варшаві 2026 | Розрахунок бюджету | STAYX</title>
-<meta name="description" content="Безкоштовний інструмент для розрахунку повних витрат на оренду житла у Варшаві. Враховує оренду, чинш, світло, інтернет, депозит та комісію. Плануйте бюджет переїзду точно.">
+<title>Kalkulator wynajmu mieszkania w Warszawie 2026 | Planowanie budżetu | STAYX</title>
+<meta name="description" content="Bezpłatne narzędzie do obliczania całkowitych kosztów wynajmu w Warszawie. Uwzględnia czynsz, opłaty administracyjne, media, kaucję i prowizję.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 <style>
 :root {
   --accent: #635bff;
@@ -30,10 +30,8 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Header Adjustments */
 .header { background: #fff; border-bottom: 1px solid var(--border-light); }
 
-/* Main Section */
 .calc-page {
   padding: 140px 24px 80px;
   max-width: 1000px;
@@ -58,7 +56,28 @@ body {
   line-height: 1.6;
 }
 
-/* Calculator Grid */
+.currency-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.currency-btn {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-light);
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+.currency-btn.active {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
 .calc-grid {
   display: grid;
   grid-template-columns: 1fr 400px;
@@ -115,7 +134,27 @@ body {
   box-shadow: 0 0 0 4px rgba(99,91,255,0.1);
 }
 
-/* Results Section */
+.checkbox-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 24px;
+}
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  background: #fcfdfe;
+  border: 1px solid var(--border-light);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.checkbox-item:hover { border-color: var(--accent); }
+.checkbox-item input { width: auto; }
+.checkbox-item label { margin: 0; font-size: 0.85rem; cursor: pointer; }
+
 .results-card {
   background: var(--text-main);
   border-radius: 20px;
@@ -124,6 +163,36 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.chart-container {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 32px;
+}
+.donut-chart { transform: rotate(-90deg); }
+.donut-segment { fill: none; stroke-width: 6; transition: stroke-dasharray 0.5s ease; }
+.chart-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.chart-info span { display: block; font-size: 0.75rem; opacity: 0.6; }
+.chart-info strong { font-size: 1.25rem; font-weight: 800; color: #fff; }
+
+.budget-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 8px;
+  background: rgba(255,255,255,0.1);
+}
+
 .results-card h3 {
   font-size: 1.1rem;
   font-weight: 600;
@@ -157,10 +226,9 @@ body {
   margin-bottom: 32px;
 }
 .result-total .result-value {
-  color: #00d4ff; /* Bright accent for total */
+  color: #00d4ff;
 }
 
-/* CTA */
 .calc-cta {
   margin-top: auto;
 }
@@ -178,82 +246,6 @@ body {
 .btn-calc-primary { background: var(--accent); color: #fff; }
 .btn-calc-primary:hover { background: var(--accent-dark); transform: translateY(-2px); }
 
-/* Responsive */
-/* Currency Toggle */
-.currency-switcher {
-  display: flex;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 32px;
-}
-.currency-btn {
-  padding: 8px 16px;
-  border-radius: 8px;
-  border: 1px solid var(--border-light);
-  background: #fff;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 0.85rem;
-  transition: all 0.2s;
-}
-.currency-btn.active {
-  background: var(--accent);
-  color: #fff;
-  border-color: var(--accent);
-}
-
-/* Checkboxes */
-.checkbox-group {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 12px;
-  margin-top: 24px;
-}
-.checkbox-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 12px;
-  background: #fcfdfe;
-  border: 1px solid var(--border-light);
-  border-radius: 10px;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-.checkbox-item:hover { border-color: var(--accent); }
-.checkbox-item input { width: auto; }
-.checkbox-item label { margin: 0; font-size: 0.85rem; cursor: pointer; }
-
-/* Chart Styling */
-.chart-container {
-  position: relative;
-  width: 180px;
-  height: 180px;
-  margin: 0 auto 32px;
-}
-.donut-chart { transform: rotate(-90deg); }
-.donut-segment { fill: none; stroke-width: 6; transition: stroke-dasharray 0.5s ease; }
-.chart-info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-.chart-info span { display: block; font-size: 0.75rem; opacity: 0.6; }
-.chart-info strong { font-size: 1.25rem; font-weight: 800; color: #fff; }
-
-.budget-badge {
-  display: inline-block;
-  padding: 4px 10px;
-  border-radius: 6px;
-  font-size: 0.7rem;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-top: 8px;
-  background: rgba(255,255,255,0.1);
-}
-
 @media (max-width: 900px) {
   .calc-grid { grid-template-columns: 1fr; padding: 24px; }
   .calc-page { padding-top: 100px; }
@@ -264,36 +256,27 @@ body {
 </head>
 <body>
 
-  <!-- ===== HEADER ===== -->
   <header class="header header--scrolled" id="header" data-keep-scrolled="true">
     <nav class="nav container container-padding">
-      <a href="/" class="nav__logo">
+      <a href="/pl/index.html" class="nav__logo">
         <span class="logo-text">stay<span class="x-accent">x</span></span>
       </a>
       <div class="nav__left">
-        <a href="/#services" class="nav__link">Послуги</a>
-        <a href="/how-it-works.html" class="nav__link">Як це працює</a>
-        <a href="/rent-calculator-warsaw.html" class="nav__link">Розрахувати витрати</a>
-        <a href="/blog/index.html" class="nav__link">Блог</a>
-        <a href="/#faq" class="nav__link">FAQ</a>
+        <a href="/pl/index.html#services" class="nav__link">Usługi</a>
+        <a href="/pl/how-it-works.html" class="nav__link">Jak to działa</a>
+        <a href="/pl/rent-calculator-warsaw.html" class="nav__link">Oblicz koszty</a>
+        <a href="/pl/blog/index.html" class="nav__link">Blog</a>
+        <a href="/pl/index.html#faq" class="nav__link">FAQ</a>
       </div>
       <div class="nav__right">
         <div class="nav__lang">
-          <a href="/rent-calculator-warsaw.html" class="active">Ua</a>
+          <a href="/rent-calculator-warsaw.html">Ua</a>
           <a href="/en/rent-calculator-warsaw.html">EN</a>
-          <a href="/pl/rent-calculator-warsaw.html">PL</a>
+          <a href="/pl/rent-calculator-warsaw.html" class="active">PL</a>
         </div>
-        <a href="https://t.me/stayX_pl" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Зв'язатись →</a>
-        <div class="nav__social nav__social-mobile">
-          <a href="https://www.instagram.com/stayx_pl?igsh=MWt5enF2b3hoN29rMA%3D%3D&amp;utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265 .069 1.645 .069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266 .058-1.644 .07-4.85 .07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204 .013-3.583 .07-4.849 .149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667 .014-4.947 .072-4.358 .2-6.78 2.618-6.98 6.98-.059 1.281 -.073 1.689 -.073 4.948 0 3.259 .014 3.668 .072 4.948 .2 4.358 2.618 6.98 6.98 6.98 1.281 .058 1.689 .072 4.948 .072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98 .059-1.28 .073-1.689 .073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </a>
-          <a href="https://www.tiktok.com/@stayx_realestate?_r=1&amp;_t=ZN-96DXaC2rZbT" target="_blank" rel="noopener" aria-label="TikTok">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02 .08 1.53 .63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79 v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92 .01 5.84 -.02 8.75 -.08 1.4 -.54 2.79 -1.35 3.94 -1.31 1.92 -3.58 3.17 -5.91 3.21 -1.43 .08 -2.86 -.31 -4.08 -1.03 -2.02 -1.19 -3.44 -3.37 -3.65 -5.71 -.02 -.5 -.03 -1 -.01 -1.49 .18 -1.9 1.12 -3.72 2.58 -4.96 1.66 -1.44 3.98 -2.13 6.15 -1.72 .02 1.48 -.04 2.96 -.04 4.44 -.99 -.32 -2.15 -.23 -3.02 .37 -.63 .41 -1.11 1.04 -1.36 1.75 -.21 .51 -.15 1.07 -.14 1.61 .24 1.64 1.82 2.89 3.5 2.53 1.53 -.3 2.7 -1.67 2.82 -3.18 .05 -3.68 -.01 -7.36 .03 -11.03 .01 -.11 0 -.22 .01 -.33z"/></svg>
-          </a>
-        </div>
+        <a href="https://t.me/stayX_pl" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Kontakt →</a>
       </div>
-      <button class="nav__burger" id="burger" aria-label="Меню">
+      <button class="nav__burger" id="burger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
     </nav>
@@ -301,9 +284,9 @@ body {
 
   <main class="calc-page">
     <div class="calc-header">
-      <span class="section-header__label">Інструменти для релокейту</span>
-      <h1>Розрахунок вартості оренди</h1>
-      <p>Дізнайтеся точну суму, яка знадобиться для першого внеску та щомісячного проживання у Варшаві 2026.</p>
+      <span class="section-header__label">Narzędzia Relokacji</span>
+      <h1>Kalkulator Kosztów Wynajmu</h1>
+      <p>Oszacuj dokładną kwotę potrzebną na pierwszy wkład i miesięczne życie w Warszawie 2026.</p>
     </div>
 
     <div class="currency-switcher">
@@ -314,19 +297,19 @@ body {
 
     <div class="calc-grid">
       <section class="inputs-section">
-        <h2>📊 Параметри житла</h2>
+        <h2>📊 Parametry mieszkania</h2>
         
         <div class="input-group">
-          <label for="district">Оберіть район (пресети)</label>
+          <label for="district">Wybierz dzielnicę (presety)</label>
           <select id="district">
-            <option value="custom">— Свій варіант —</option>
-            <optgroup label="Преміум">
-              <option value="srodmiescie">Śródmieście (Центр)</option>
+            <option value="custom">— Własny wariant —</option>
+            <optgroup label="Premium">
+              <option value="srodmiescie">Śródmieście (Centrum)</option>
               <option value="wilanow">Wilanów</option>
               <option value="zoliborz">Żoliborz</option>
               <option value="mokotow">Mokotów</option>
             </optgroup>
-            <optgroup label="Стандарт">
+            <optgroup label="Standard">
               <option value="wola" selected>Wola</option>
               <option value="ochota">Ochota</option>
               <option value="bielany">Bielany</option>
@@ -335,7 +318,7 @@ body {
               <option value="wlochy">Włochy</option>
               <option value="bemowo">Bemowo</option>
             </optgroup>
-            <optgroup label="Бюджет">
+            <optgroup label="Budżet">
               <option value="bialoleka">Białołęka</option>
               <option value="targowek">Targówek</option>
               <option value="ursus">Ursus</option>
@@ -348,17 +331,17 @@ body {
         </div>
 
         <div class="input-group">
-          <label for="room-type">Тип квартири</label>
+          <label for="room-type">Typ mieszkania</label>
           <select id="room-type">
-            <option value="studio">Студія (Kawalerka)</option>
-            <option value="1bed" selected>1-спальня (2 pokoje)</option>
-            <option value="2bed">2-спальні (3 pokoje)</option>
-            <option value="3bed">3+ спальні (4+ pokoje)</option>
+            <option value="studio">Kawalerka (Studio)</option>
+            <option value="1bed" selected>2 pokoje (1 sypialnia)</option>
+            <option value="2bed">3 pokoje (2 sypialnie)</option>
+            <option value="3bed">4+ pokoi (3+ sypialnie)</option>
           </select>
         </div>
-        
+
         <div class="input-group">
-          <label for="rent">Орендна плата (Koszt najmu)</label>
+          <label for="rent">Koszt najmu (Rent)</label>
           <div class="input-wrapper">
             <input type="number" id="rent" value="3500" step="100">
             <span>PLN</span>
@@ -366,7 +349,7 @@ body {
         </div>
 
         <div class="input-group">
-          <label for="admin">Адмін-збір (Czynsz administracyjny)</label>
+          <label for="admin">Czynsz administracyjny</label>
           <div class="input-wrapper">
             <input type="number" id="admin" value="700" step="50">
             <span>PLN</span>
@@ -374,7 +357,7 @@ body {
         </div>
 
         <div class="input-group">
-          <label for="media">Комунальні послуги (Світло, вода)</label>
+          <label for="media">Media (Prąd, woda)</label>
           <div class="input-wrapper">
             <input type="number" id="media" value="300" step="50">
             <span>PLN</span>
@@ -382,52 +365,52 @@ body {
         </div>
 
         <div class="input-group">
-          <label for="deposit">Застава (Kaucja)</label>
+          <label for="deposit">Kaucja</label>
           <select id="deposit">
-            <option value="1">1 місяць оренди</option>
-            <option value="1.5">1.5 місяці оренди</option>
-            <option value="2">2 місяці оренди</option>
-            <option value="0">Без застави</option>
+            <option value="1">1 miesiąc czynszu</option>
+            <option value="1.5">1.5 miesiąca czynszu</option>
+            <option value="2">2 miesiące czynszu</option>
+            <option value="0">Bez kaucji</option>
           </select>
         </div>
 
         <div class="input-group">
-          <label for="commission">Комісія агентства</label>
+          <label for="commission">Prowizja agencji</label>
           <select id="commission">
-            <option value="1">100% від оренди</option>
-            <option value="0.5">50% від оренди</option>
-            <option value="0">Без комісії</option>
+            <option value="1">100% czynszu</option>
+            <option value="0.5">50% czynszu</option>
+            <option value="0">Bez prowizji</option>
           </select>
         </div>
 
         <div class="checkbox-group">
           <div class="checkbox-item">
             <input type="checkbox" id="opt_internet" data-cost="60">
-            <label for="opt_internet">Інтернет (60 PLN/міс)</label>
+            <label for="opt_internet">Internet (60 PLN/mies)</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="opt_insurance" data-cost="30">
-            <label for="opt_insurance">Страховка (30 PLN/міс)</label>
+            <label for="opt_insurance">Ubezpieczenie (30 PLN/mies)</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="opt_parking" data-cost="250">
-            <label for="opt_parking">Паркінг (250 PLN/міс)</label>
+            <label for="opt_parking">Parking (250 PLN/mies)</label>
           </div>
           <div class="checkbox-item">
             <input type="checkbox" id="opt_cleaning" data-cost="200">
-            <label for="opt_cleaning">Прибирання (200 PLN/міс)</label>
+            <label for="opt_cleaning">Sprzątanie (200 PLN/mies)</label>
           </div>
         </div>
 
-        <h3 style="font-size: 1rem; margin: 32px 0 16px; opacity: 0.8;">Одноразові витрати (Договір)</h3>
+        <h3 style="font-size: 1rem; margin: 32px 0 16px; opacity: 0.8;">Koszty jednorazowe (Umowa)</h3>
         <div class="checkbox-group">
           <div class="checkbox-item checkbox-onetime">
             <input type="checkbox" id="opt_notary" data-cost="500">
-            <label for="opt_notary">Нотаріус (500 PLN)</label>
+            <label for="opt_notary">Notariusz (500 PLN)</label>
           </div>
           <div class="checkbox-item checkbox-onetime">
             <input type="checkbox" id="opt_alt_address" data-cost="400">
-            <label for="opt_alt_address">Довідка про адресу (400 PLN)</label>
+            <label for="opt_alt_address">Oświadчення o adreсі (400 PLN)</label>
           </div>
         </div>
       </section>
@@ -437,58 +420,56 @@ body {
           <svg class="donut-chart" width="100%" height="100%" viewBox="0 0 42 42">
             <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="transparent"></circle>
             <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#2a3e52" stroke-width="6"></circle>
-            
             <circle id="segment-rent" class="donut-segment" cx="21" cy="21" r="15.91549430918954" stroke="var(--chart-rent)"></circle>
             <circle id="segment-admin" class="donut-segment" cx="21" cy="21" r="15.91549430918954" stroke="var(--chart-admin)"></circle>
             <circle id="segment-media" class="donut-segment" cx="21" cy="21" r="15.91549430918954" stroke="var(--chart-media)"></circle>
             <circle id="segment-other" class="donut-segment" cx="21" cy="21" r="15.91549430918954" stroke="var(--chart-other)"></circle>
           </svg>
           <div class="chart-info">
-            <span id="budget-status-label">Бюджет</span>
+            <span id="budget-status-label">Budżet</span>
             <strong id="total-monthly-main">0</strong>
             <div id="budget-badge" class="budget-badge">Standard</div>
           </div>
         </div>
 
-        <h3>Бюджетний план</h3>
+        <h3>Plan budżetowy</h3>
         
         <div class="result-item">
-          <div class="result-label">Перший платіж (Вхід в квартиру)</div>
+          <div class="result-label">Pierwsza wpłata (Koszt wejścia)</div>
           <div class="result-value" id="entry-cost">0 <span>PLN</span></div>
         </div>
 
         <div class="result-item">
-          <div class="result-label">Щомісячні витрати</div>
+          <div class="result-label">Miesięczne wydatki</div>
           <div class="result-value" id="monthly-cost">0 <span>PLN</span></div>
         </div>
 
         <div class="result-total">
-          <div class="result-label">Витрати за перший рік</div>
+          <div class="result-label">Całkowity koszt za pierwszy rok</div>
           <div class="result-value" id="yearly-cost">0 <span>PLN</span></div>
         </div>
 
         <div class="calc-cta">
-          <a href="https://t.me/stayX_pl" target="_blank" class="btn-calc btn-calc-primary">Замовити підбір житла →</a>
-          <p style="font-size: 12px; opacity: 0.5; margin-top: 16px; text-align: center;">Розрахунки базуються на середніх цінах та актуальних даних станом на 2026 рік. Результат є приблизним і залежить від конкретних умов договору.</p>
+          <a href="https://t.me/stayX_pl" target="_blank" class="btn-calc btn-calc-primary">Pobierz listę mieszkań →</a>
+          <p style="font-size: 12px; opacity: 0.5; margin-top: 16px; text-align: center;">Obliczenia opierają się na średnich cenach i aktualnych danych na rok 2026. Wynik jest orientacyjny i zależy od konkretnych warunków umowy.</p>
         </div>
       </aside>
     </div>
   </main>
   
-  <!-- ===== FOOTER ===== -->
   <footer class="footer">
     <div class="container footer__inner">
-      <a href="/" class="footer__logo"><span class="logo-text">stay<span class="x-accent">x</span></span></a>
+      <a href="/pl/index.html" class="footer__logo"><span class="logo-text">stay<span class="x-accent">x</span></span></a>
       <div class="footer__links">
-        <a href="/#services">Послуги</a>
-        <a href="/how-it-works.html">Як це працює</a>
-        <a href="/rent-calculator-warsaw.html">Розрахувати витрати</a>
-        <a href="/blog/index.html">Блог</a>
-        <a href="/#faq">FAQ</a>
+        <a href="/pl/index.html#services">Usługi</a>
+        <a href="/pl/how-it-works.html">Jak to działa</a>
+        <a href="/pl/rent-calculator-warsaw.html">Oblicz koszty</a>
+        <a href="/pl/blog/index.html">Blog</a>
+        <a href="/pl/index.html#faq">FAQ</a>
       </div>
       <div class="footer__bottom">
         <p>2026© STAYX. All rights reserved</p>
-        <a href="/privacy.html">Політика конфіденційності</a>
+        <a href="/pl/privacy.html">Polityka prywatności</a>
       </div>
     </div>
   </footer>
@@ -518,25 +499,22 @@ body {
       rembertow: { rent: 2700, admin: 500, media: 250, parking: 150 },
       wesola: { rent: 2700, admin: 500, media: 250, parking: 150 }
     };
-    const rates = { PLN: 1, USD: 0.25, EUR: 0.23 }; // May 2026 approx rates
+    const rates = { PLN: 1, USD: 0.25, EUR: 0.23 };
     let currentCurrency = 'PLN';
 
     function updateChart(rent, admin, media, other) {
       const total = rent + admin + media + other;
       if (total === 0) return;
-
       const pRent = (rent / total) * 100;
       const pAdmin = (admin / total) * 100;
       const pMedia = (media / total) * 100;
       const pOther = (other / total) * 100;
-
       const segments = [
         { id: 'segment-rent', value: pRent },
         { id: 'segment-admin', value: pAdmin },
         { id: 'segment-media', value: pMedia },
         { id: 'segment-other', value: pOther }
       ];
-
       let offset = 0;
       segments.forEach(seg => {
         const el = document.getElementById(seg.id);
@@ -563,29 +541,21 @@ body {
       const monthlyPLN = v.rent + v.admin + v.media + otherMonthly;
       const entryPLN = monthlyPLN + (v.rent * v.deposit) + (v.rent * v.commission) + oneTimeExtra;
       const yearlyPLN = entryPLN + (monthlyPLN * 11);
-
-      // Status Badge
       const badge = document.getElementById('budget-badge');
-      if (monthlyPLN < 3500) { badge.textContent = 'Budget'; badge.style.color = '#1a7040'; }
+      if (monthlyPLN < 3500) { badge.textContent = 'Budżetowy'; badge.style.color = '#1a7040'; }
       else if (monthlyPLN < 6000) { badge.textContent = 'Standard'; badge.style.color = '#00d4ff'; }
       else { badge.textContent = 'Premium'; badge.style.color = '#ff52af'; }
-
-      // Convert
       const rate = rates[currentCurrency];
-      const format = (val) => Math.round(val * rate).toLocaleString('uk-UA');
-
+      const format = (val) => Math.round(val * rate).toLocaleString('pl-PL');
       document.getElementById('monthly-cost').innerHTML = format(monthlyPLN) + ` <span>${currentCurrency}</span>`;
       document.getElementById('entry-cost').innerHTML = format(entryPLN) + ` <span>${currentCurrency}</span>`;
       document.getElementById('yearly-cost').innerHTML = format(yearlyPLN) + ` <span>${currentCurrency}</span>`;
       document.getElementById('total-monthly-main').textContent = format(monthlyPLN);
-
       updateChart(v.rent, v.admin, v.media, otherMonthly);
     }
 
-    // Event Listeners
     inputs.forEach(id => document.getElementById(id).addEventListener('input', calculate));
     document.querySelectorAll('.checkbox-item input').forEach(cb => cb.addEventListener('change', calculate));
-
     const roomMultipliers = {
       studio: { rent: 0.75, admin: 0.8, media: 0.8 },
       '1bed': { rent: 1.0, admin: 1.0, media: 1.0 },
@@ -605,7 +575,7 @@ body {
         // Update parking cost
         const parkingInput = document.getElementById('opt_parking');
         parkingInput.setAttribute('data-cost', d.parking);
-        parkingInput.nextElementSibling.textContent = `Паркінг (${d.parking} PLN)`;
+        parkingInput.nextElementSibling.textContent = `Parking (${d.parking} PLN)`;
         
         calculate();
       }
@@ -613,7 +583,6 @@ body {
 
     document.getElementById('district').addEventListener('change', applyPresets);
     document.getElementById('room-type').addEventListener('change', applyPresets);
-
     document.querySelectorAll('.currency-btn').forEach(btn => {
       btn.addEventListener('click', (e) => {
         document.querySelectorAll('.currency-btn').forEach(b => b.classList.remove('active'));
@@ -622,9 +591,8 @@ body {
         calculate();
       });
     });
-
     calculate();
   </script>
-  <script src="script.js"></script>
+  <script src="../script.js"></script>
 </body>
 </html>
