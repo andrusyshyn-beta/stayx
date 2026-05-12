@@ -248,7 +248,21 @@ td.tp{font-weight:700;color:var(--ink);white-space:nowrap;font-size:13px}
 .ctot .vl{color:#f7c97e;font-size:1.1rem}
 .cnote{font-size:12px;color:rgba(255,255,255,.45);margin-top:1rem;line-height:1.55;border-top:1px solid rgba(255,255,255,.1);padding-top:.75rem}
 
+.tc .c::before { content: "✕"; font-weight: 800; }
+
+/* Segment cards */
+.seg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+.sc { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 2rem; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); display: flex; flex-direction: column; }
+.sc:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+.sc .si { font-size: 3rem; margin-bottom: 1.25rem; display: block; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)); }
+.sc .stitle { font-size: 1.3rem; font-weight: 800; color: var(--ink); margin-bottom: 1.25rem; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.5rem; align-self: flex-start; }
+.sc ul { list-style: none; padding: 0; margin: 0; }
+.sc ul li { font-size: 14px; color: var(--ink2); padding: 8px 0; display: flex; align-items: baseline; gap: 12px; border-bottom: 1px solid #f0f0f0; line-height: 1.5; }
+.sc ul li:last-child { border-bottom: none; }
+.sc ul li::before { content: "→"; color: var(--accent); font-weight: 800; font-size: 12px; }
+
 /* Interactive calc (Advanced) */
+
 .calc-inter { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; display: grid; grid-template-columns: 1fr 340px; margin: 2rem 0; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
 .calc-inputs { padding: 32px; }
 .calc-sidebar { background: #0a2540; color: #fff; padding: 32px; display: flex; flex-direction: column; }
@@ -833,10 +847,50 @@ footer a{color:var(--subtle)}
 <h2 class="st">11 · Specyfika: Rodziny, IT, Studenci</h2>
 <p class="ss">Różne profile — różne priorytety</p>
 <div class="seg-grid">
-  <div class="sc"><div class="si">👨‍👩‍👧</div><div class="stitle">Rodziny z dziećmi</div><ul><li>Wilanów / Ursynów — koncentracja szkół</li><li>Sprawdzaj rejonizację</li><li>Szkoły int.: British, American, French</li><li>Minimum 3-pokojowe, plac zabaw</li><li>Garaż podziemny: wózek + auto</li></ul></div>
-  <div class="sc"><div class="si">💻</div><div class="stitle">Specjaliści IT</div><ul><li>Wola lub Mokotów — blisko biur</li><li>Światłowód niezbędny do videocalli</li><li>Home office → 2 pokoje lub coworking</li><li>WeWork Rondo ONZ, Brain Embassy Wola</li><li>Elastyczna umowa 6+6 dla remote</li></ul></div>
-  <div class="sc"><div class="si">🎓</div><div class="stitle">Studenci</div><ul><li>Ochota, Bielany — uniwersytety blisko</li><li>Wspólne mieszkanie: od 1 200 PLN/pok.</li><li>Ursynów — SGGW + M1 (5 stacji)</li><li>Targówek / Praga — M2 + niższa cena</li><li>Sprawdzaj: Wi-Fi w umowie czy osobno</li></ul></div>
-  <div class="sc"><div class="si">🌍</div><div class="stitle">Nowi relokanci</div><ul><li>Pierwszy kontrakt: 6 m-cy — mniejsze ryzyko</li><li>Bez PESEL: paszport + dochody</li><li>„Tylko Polacy” — dyskryminacja</li><li>Referencje od poprzedniego właściciela</li><li>STAYX: adres lokalu zastępczego + wsparcie</li></ul></div>
+  <div class="sc">
+    <div class="si">👨‍👩‍👧‍👦</div>
+    <div class="stitle">Rodziny z dziećmi</div>
+    <ul>
+      <li>Wilanów i Ursynów — najlepszy wybór ze względu na koncentrację szkół i przedszkoli</li>
+      <li>Sprawdzaj rejonizację — przypisanie mieszkania do konkretnej szkoły publicznej</li>
+      <li>Szkoły międzynarodowe: British, American, French (rejony Sadyba / Wilanów)</li>
+      <li>Priorytet: mieszkanie 3-pokojowe, osiedle zamknięte z placem zabaw</li>
+      <li>Garaż podziemny — kluczowy dla przechowywania wózków i rowerów</li>
+    </ul>
+  </div>
+  <div class="sc">
+    <div class="si">💻</div>
+    <div class="stitle">Specjaliści IT</div>
+    <ul>
+      <li>Wola (Daszyńskiego) lub Mokotów (Mordor) — bliskość biur technologicznych</li>
+      <li>Światłowód — obowiązkowy wymóg do wpisania w treści umowy</li>
+      <li>Home office: szukaj mieszkań z gabinetem lub układów 2-pokojowych</li>
+      <li>Popularne coworkingi: WeWork Rondo ONZ, Brain Embassy Wola</li>
+      <li>Elastyczna umowa: często szukają opcji wypowiedzenia z terminem 1-2 miesięcy</li>
+    </ul>
+  </div>
+  <div class="sc">
+    <div class="si">🎓</div>
+    <div class="stitle">Studenci</div>
+    <ul>
+      <li>Ochota i Bielany — największe miasteczka uniwersyteckie w pobliżu</li>
+      <li>Wspólne lokum (Pokój): wynajem pokoju startuje od 1 400 PLN</li>
+      <li>Ursynów (SGGW) — idealny dojazd linią metra M1 (5 stacji)</li>
+      <li>Targówek i Praga-Północ — linia M2 i niższe ceny w starszym zasobie</li>
+      <li>Wi-Fi: sprawdzaj, czy jest wliczone w czynsz, czy płatne osobno</li>
+    </ul>
+  </div>
+  <div class="sc">
+    <div class="si">🌍</div>
+    <div class="stitle">Nowi relokanci</div>
+    <ul>
+      <li>Pierwszy kontrakt: 6 miesięcy — optymalny na czas adaptacji i testowania dzielnicy</li>
+      <li>Bez numeru PESEL: wystarczy paszport zagraniczny i potwierdzenie dochodów</li>
+      <li>„Tylko Polacy” — ignoruj takie ogłoszenia, to oznaka trudnego właściciela</li>
+      <li>Referencje od poprzednich wynajmujących — duży atut w procesie weryfikacji</li>
+      <li>STAYX: zapewniamy adres do Najmu Okazjonalnego i pełne wsparcie prawne</li>
+    </ul>
+  </div>
 </div>
 </section>
 

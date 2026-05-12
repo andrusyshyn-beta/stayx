@@ -185,6 +185,18 @@ hr.hdiv{max-width:900px;margin:0 auto;border:none;border-top:1px solid var(--bor
 .tc .c { color: #a31515; }
 .tc .p::before { content: "✓"; font-weight: 800; }
 .tc .c::before { content: "✕"; font-weight: 800; }
+
+/* Segment cards */
+.seg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+.sc { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 2rem; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); display: flex; flex-direction: column; }
+.sc:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+.sc .si { font-size: 3rem; margin-bottom: 1.25rem; display: block; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)); }
+.sc .stitle { font-size: 1.3rem; font-weight: 800; color: var(--ink); margin-bottom: 1.25rem; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.5rem; align-self: flex-start; }
+.sc ul { list-style: none; padding: 0; margin: 0; }
+.sc ul li { font-size: 14px; color: var(--ink2); padding: 8px 0; display: flex; align-items: baseline; gap: 12px; border-bottom: 1px solid #f0f0f0; line-height: 1.5; }
+.sc ul li:last-child { border-bottom: none; }
+.sc ul li::before { content: "→"; color: var(--accent); font-weight: 800; font-size: 12px; }
+
 .toc-card h2{font-family:'Plus Jakarta Sans', sans-serif;font-weight:700;font-size:1rem;color:var(--ink);margin-bottom:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--border)}
 .toc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem 2rem}
 .toc-grid a{font-size:13.5px;color:var(--ink2);display:flex;align-items:baseline;gap:7px;padding:4px 0;transition:color .15s}
@@ -865,10 +877,50 @@ footer a{color:var(--subtle)}
 <h2 class="st">11 · Specifics: Families, IT, Students</h2>
 <p class="ss">Different profiles — different priorities</p>
 <div class="seg-grid">
-  <div class="sc"><div class="si">👨‍👩‍👧</div><div class="stitle">Families with children</div><ul><li>Wilanów / Ursynów — school concentration</li><li>Check rejonizacja (school zones)</li><li>Int'l schools: British, American, French</li><li>Min 3-room, yard with playground</li><li>Underground parking: stroller + car</li></ul></div>
-  <div class="sc"><div class="si">💻</div><div class="stitle">IT Specialists</div><ul><li>Wola or Mokotów — near offices</li><li>Fiber mandatory for video calls</li><li>Home office → 2 rooms or coworking</li><li>WeWork Rondo ONZ, Brain Embassy Wola</li><li>Flexible 6+6 contract for remote</li></ul></div>
-  <div class="sc"><div class="si">🎓</div><div class="stitle">Students</div><ul><li>Ochota, Bielany — universities nearby</li><li>Shared housing: from 1,200 PLN/rm</li><li>Ursynów — SGGW + M1 (5 stations)</li><li>Targówek / Praga — M2 + lower price</li><li>Check: Wi-Fi included or extra</li></ul></div>
-  <div class="sc"><div class="si">🌍</div><div class="stitle">New Relocants</div><ul><li>First contract: 6 months — lower risk</li><li>No PESEL: passport + income proof</li><li>"Tylko Polacy" is discrimination</li><li>Recommendation from previous owner</li><li>STAYX: substitute address + legal support</li></ul></div>
+  <div class="sc">
+    <div class="si">👨‍👩‍👧‍👦</div>
+    <div class="stitle">Families with Children</div>
+    <ul>
+      <li>Wilanów and Ursynów — top choices due to concentration of schools and kindergartens</li>
+      <li>Check rejonizacja — the assignment of your apartment to a specific public school</li>
+      <li>International schools: British, American, French (Sadyba / Wilanów areas)</li>
+      <li>Priority: 3-room apartment, gated yard with playground, away from major roads</li>
+      <li>Underground parking — critical for stroller and bike storage</li>
+    </ul>
+  </div>
+  <div class="sc">
+    <div class="si">💻</div>
+    <div class="stitle">IT Specialists</div>
+    <ul>
+      <li>Wola (Daszyńskiego) or Mokotów (Mordor) — proximity to high-tech offices</li>
+      <li>Fiber optic (Światłowód) — mandatory requirement to specify in the contract</li>
+      <li>Home office: look for apartments with a separate study or 2-room layouts</li>
+      <li>Popular coworkings: WeWork Rondo ONZ, Brain Embassy Wola</li>
+      <li>Flexible contract: often look for a termination option with 1-2 months notice</li>
+    </ul>
+  </div>
+  <div class="sc">
+    <div class="si">🎓</div>
+    <div class="stitle">Students</div>
+    <ul>
+      <li>Ochota and Bielany — the largest university campuses nearby</li>
+      <li>Shared housing (Pokój): room rentals start from 1,400 PLN</li>
+      <li>Ursynów (SGGW) — ideal access via the M1 line (5 stations)</li>
+      <li>Targówek and Praga-Północ — M2 line and lower prices for older stock</li>
+      <li>Wi-Fi: check if it's included in czynsz or paid separately</li>
+    </ul>
+  </div>
+  <div class="sc">
+    <div class="si">🌍</div>
+    <div class="stitle">New Relocants</div>
+    <ul>
+      <li>First contract: 6 months — optimal for adaptation and testing the area</li>
+      <li>Without PESEL: foreign passport and proof of income are sufficient</li>
+      <li>"Tylko Polacy" — ignore such ads, it's a sign of a difficult landlord</li>
+      <li>Recommendation letters from previous landlords (even foreign ones) — a big plus</li>
+      <li>STAYX: we provide address for Najem Okazjonalny and full legal support</li>
+    </ul>
+  </div>
 </div>
 </section>
 

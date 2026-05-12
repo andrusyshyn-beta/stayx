@@ -241,6 +241,17 @@ td.tp{font-weight:700;color:var(--ink);white-space:nowrap;font-size:13px}
 .tc .p::before { content: "✓"; font-weight: 800; }
 .tc .c::before { content: "✕"; font-weight: 800; }
 
+/* Segment cards */
+.seg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); gap: 1.5rem; margin: 1.5rem 0; }
+.sc { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 2rem; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); display: flex; flex-direction: column; }
+.sc:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.08); }
+.sc .si { font-size: 3rem; margin-bottom: 1.25rem; display: block; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.1)); }
+.sc .stitle { font-size: 1.3rem; font-weight: 800; color: var(--ink); margin-bottom: 1.25rem; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.5rem; align-self: flex-start; }
+.sc ul { list-style: none; padding: 0; margin: 0; }
+.sc ul li { font-size: 14px; color: var(--ink2); padding: 8px 0; display: flex; align-items: baseline; gap: 12px; border-bottom: 1px solid #f0f0f0; line-height: 1.5; }
+.sc ul li:last-child { border-bottom: none; }
+.sc ul li::before { content: "→"; color: var(--accent); font-weight: 800; font-size: 12px; }
+
 /* Static calc box */
 .calc-box{background:var(--ink);color:#fff;border-radius:var(--r);padding:2rem;margin:1.5rem 0}
 .calc-box h3{color:#fff;font-size:.95rem;margin:0 0 1.25rem;letter-spacing:0;font-weight:700;}
@@ -837,10 +848,50 @@ footer a{color:var(--subtle)}
 <h2 class="st">11 · Специфіка: Сім'ї, IT, Студенти</h2>
 <p class="ss">Різні профілі — різні пріоритети</p>
 <div class="seg-grid">
-  <div class="sc"><div class="si">👨👩👧</div><div class="stitle">Сім'ї з дітьми</div><ul><li>Wilanów / Ursynów — концентрація шкіл</li><li>Перевіряйте rejonizacja</li><li>Міжнародні школи: British, American, French</li><li>Мінімум 3-кімнатна, двір з майданчиком</li><li>Підземний паркінг: коляска + авто</li></ul></div>
-  <div class="sc"><div class="si">💻</div><div class="stitle">IT-спеціалісти</div><ul><li>Wola або Mokotów — поруч офіси</li><li>Волокно обов'язково для відеоколів</li><li>Home office → 2 кімнати або коворкінг</li><li>WeWork Rondo ONZ, Brain Embassy Wola</li><li>Гнучкий договір 6+6 для remote workers</li></ul></div>
-  <div class="sc"><div class="si">🎓</div><div class="stitle">Студенти</div><ul><li>Ochota, Bielany — університети поруч</li><li>Спільне житло: від 1 200 PLN/кімн.</li><li>Ursynów — SGGW + М1 (5 станцій)</li><li>Targówek / Praga — М2 + нижча ціна</li><li>Перевіряйте: Wi-Fi у договорі чи окремо</li></ul></div>
-  <div class="sc"><div class="si">🌍</div><div class="stitle">Нові релоканти</div><ul><li>Перший контракт: 6 місяців — менший ризик</li><li>Без PESEL: паспорт + підтвердження доходів</li><li>«Tylko Polacy» — дискримінація</li><li>Рекомендація від попереднього власника</li><li>STAYX: адреса lokal zastępczy + юридичний супровід</li></ul></div>
+  <div class="sc">
+    <div class="si">👨‍👩‍👧‍👦</div>
+    <div class="stitle">Сім'ї з дітьми</div>
+    <ul>
+      <li>Wilanów та Ursynów — найкращий вибір через концентрацію шкіл та садків</li>
+      <li>Перевіряйте rejonizacja — прив’язку квартири до конкретної державної школи</li>
+      <li>Міжнародні школи: British, American, French (Sadyba / Wilanów)</li>
+      <li>Пріоритет: 3-кімнатна квартира, двір з майданчиком, подалі від магістралей</li>
+      <li>Підземний паркінг — критично для зберігання колясок та велосипедів</li>
+    </ul>
+  </div>
+  <div class="sc">
+    <div class="si">💻</div>
+    <div class="stitle">IT-спеціалісти</div>
+    <ul>
+      <li>Wola (Daszyńskiego) або Mokotów (Mordor) — близькість до офісів хай-тек</li>
+      <li>Оптоволокно (Światłowód) — обов’язково вимагайте вказати в договорі</li>
+      <li>Home office: шукайте квартири з окремим кабінетом або 2-кімнатні</li>
+      <li>Популярні коворкінги: WeWork Rondo ONZ, Brain Embassy Wola</li>
+      <li>Гнучкий договір: часто шукають опцію розірвання з терміном 1-2 місяці</li>
+    </ul>
+  </div>
+  <div class="sc">
+    <div class="si">🎓</div>
+    <div class="stitle">Студенти</div>
+    <ul>
+      <li>Ochota та Bielany — найбільші університетські містечка поруч</li>
+      <li>Спільне житло (Pokój): оренда кімнати стартує від 1 400 PLN</li>
+      <li>Ursynów (SGGW) — ідеальний доступ через лінію М1 (5 станцій)</li>
+      <li>Targówek та Praga-Północ — лінія М2 та нижчі ціни на старий фонд</li>
+      <li>Wi-Fi: перевіряйте, чи він входить у czynsz, чи оплачується окремо</li>
+    </ul>
+  </div>
+  <div class="sc">
+    <div class="si">🌍</div>
+    <div class="stitle">Нові релоканти</div>
+    <ul>
+      <li>Перший контракт: 6 місяців — оптимально для адаптації та перевірки району</li>
+      <li>Без PESEL: достатньо закордонного паспорта та підтвердження доходів</li>
+      <li>«Tylko Polacy» — ігноруйте такі оголошення, це ознака важкого власника</li>
+      <li>Рекомендаційні листи від попередніх власників — великий плюс</li>
+      <li>STAYX: надаємо адресу для Najem Okazjonalny та повний юридичний супровід</li>
+    </ul>
+  </div>
 </div>
 </section>
 
