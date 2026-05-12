@@ -197,6 +197,21 @@ hr.hdiv{max-width:900px;margin:0 auto;border:none;border-top:1px solid var(--bor
 .sc ul li:last-child { border-bottom: none; }
 .sc ul li::before { content: "→"; color: var(--accent); font-weight: 800; font-size: 12px; }
 
+/* Seasonality Timeline */
+.season-grid { display: flex; flex-direction: column; gap: 1.25rem; margin: 2rem 0; position: relative; padding-left: 10px; }
+.season-grid::before { content: ""; position: absolute; left: 24px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--accent-soft), var(--border), var(--accent-soft)); z-index: 0; }
+.season-c { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 1.5rem 1.5rem 1.5rem 4.5rem; position: relative; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); z-index: 1; }
+.season-c::after { content: ""; position: absolute; left: 18px; top: 26px; width: 14px; height: 14px; border-radius: 50%; background: #fff; border: 3px solid var(--accent); box-shadow: 0 0 0 4px var(--surface); transition: all 0.2s; }
+.season-c:hover { border-color: var(--accent); transform: translateX(10px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.season-c:hover::after { background: var(--accent); transform: scale(1.2); }
+.season-c .sm2 { font-weight: 800; font-size: 1.15rem; color: var(--ink); margin-bottom: 0.5rem; display: block; }
+.sbadge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.sbadge.sh { background: #fee2e2; color: #991b1b; } /* Hot - Red */
+.sbadge.smi { background: #fef3c7; color: #92400e; } /* Medium - Yellow */
+.sbadge.sc2b { background: #dcfce7; color: #166534; } /* Best for deal - Green */
+.sbadge.sg2 { background: #e0f2fe; color: #075985; } /* Active - Blue */
+.season-c p { line-height: 1.6; margin: 0; }
+
 .toc-card h2{font-family:'Plus Jakarta Sans', sans-serif;font-weight:700;font-size:1rem;color:var(--ink);margin-bottom:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--border)}
 .toc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem 2rem}
 .toc-grid a{font-size:13.5px;color:var(--ink2);display:flex;align-items:baseline;gap:7px;padding:4px 0;transition:color .15s}
@@ -963,12 +978,36 @@ footer a{color:var(--subtle)}
 <h2 class="st">14 · Market Seasonality</h2>
 <p class="ss">When to look is as important as where to look</p>
 <div class="season-grid">
-  <div class="season-c"><div class="sm2">September</div><span class="sbadge sh">Hottest</span><p style="font-size:13.5px;color:var(--muted)">Students, corporate moves. Good apts — 15–18 days. Price max, haggling min.</p></div>
-  <div class="season-c"><div class="sm2">Oct–Nov</div><span class="sbadge smi">Dip</span><p style="font-size:13.5px;color:var(--muted)">Demand drops. Apts 20–25 days. Possible to lower price by 3–5%.</p></div>
-  <div class="season-c"><div class="sm2">Dec–Feb</div><span class="sbadge sc2b">Best for Haggling</span><p style="font-size:13.5px;color:var(--muted)">Minimal demand. Apts 30–40 days. Discount 5–10% or renovation by owner.</p></div>
-  <div class="season-c"><div class="sm2">Mar–Apr</div><span class="sbadge sg2">Activation</span><p style="font-size:13.5px;color:var(--muted)">Not peak yet, but choice is there. Find an apt in 2–3 weeks.</p></div>
-  <div class="season-c"><div class="sm2">May–June</div><span class="sbadge sg2">Active Market</span><p style="font-size:13.5px;color:var(--muted)">Demand rises. Prices +3–5% from winter lows. Bills low — good time to check.</p></div>
-  <div class="season-c"><div class="sm2">July–Aug</div><span class="sbadge smi">Moderate</span><p style="font-size:13.5px;color:var(--muted)">Some owners on holiday. New apts come out before Sept. Prices rising.</p></div>
+  <div class="season-c">
+    <div class="sm2">September</div>
+    <span class="sbadge sh">Hottest Peak</span>
+    <p>Massive student influx and corporate relocations. Best apartments "go" in 1-2 days. Landlords organize tenant "castings". Prices are at their peak, negotiation is practically impossible.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">October – November</div>
+    <span class="sbadge smi">Gradual Decline</span>
+    <p>The hype subsides, but selection is still large. Apartments stay on the market for 2-3 weeks. You can try to lower the price by 100-200 PLN or negotiate free parking.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">December – February</div>
+    <span class="sbadge sc2b">Best Time for a Deal</span>
+    <p>Minimum activity due to holidays and cold weather. Owners with vacant apartments are ready for significant bargaining (5-10%). Ideal time to find premium housing at a lower price.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">March – April</div>
+    <span class="sbadge sg2">Spring Activation</span>
+    <p>The market "wakes up". New listings appear, competition is still moderate. Optimal balance between price and choice. Average viewing time — up to 2 weeks.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">May – June</div>
+    <span class="sbadge sg2">Active Market</span>
+    <p>Rising demand before summer. Prices start to climb (+3-5%). A big plus — low heating bills, making it easier to assess the real condition of the building.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">July – August</div>
+    <span class="sbadge smi">Preparing for the Boom</span>
+    <p>Calm before the storm. Many owners are on vacation, but those listing apartments target September prices. We recommend closing deals by mid-August.</p>
+  </div>
 </div>
 </section>
 

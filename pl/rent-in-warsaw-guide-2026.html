@@ -261,6 +261,21 @@ td.tp{font-weight:700;color:var(--ink);white-space:nowrap;font-size:13px}
 .sc ul li:last-child { border-bottom: none; }
 .sc ul li::before { content: "→"; color: var(--accent); font-weight: 800; font-size: 12px; }
 
+/* Seasonality Timeline */
+.season-grid { display: flex; flex-direction: column; gap: 1.25rem; margin: 2rem 0; position: relative; padding-left: 10px; }
+.season-grid::before { content: ""; position: absolute; left: 24px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--accent-soft), var(--border), var(--accent-soft)); z-index: 0; }
+.season-c { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 1.5rem 1.5rem 1.5rem 4.5rem; position: relative; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); z-index: 1; }
+.season-c::after { content: ""; position: absolute; left: 18px; top: 26px; width: 14px; height: 14px; border-radius: 50%; background: #fff; border: 3px solid var(--accent); box-shadow: 0 0 0 4px var(--surface); transition: all 0.2s; }
+.season-c:hover { border-color: var(--accent); transform: translateX(10px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.season-c:hover::after { background: var(--accent); transform: scale(1.2); }
+.season-c .sm2 { font-weight: 800; font-size: 1.15rem; color: var(--ink); margin-bottom: 0.5rem; display: block; }
+.sbadge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.sbadge.sh { background: #fee2e2; color: #991b1b; } /* Hot - Red */
+.sbadge.smi { background: #fef3c7; color: #92400e; } /* Medium - Yellow */
+.sbadge.sc2b { background: #dcfce7; color: #166534; } /* Best for deal - Green */
+.sbadge.sg2 { background: #e0f2fe; color: #075985; } /* Active - Blue */
+.season-c p { line-height: 1.6; margin: 0; }
+
 /* Interactive calc (Advanced) */
 
 .calc-inter { background: var(--surface); border: 1px solid var(--border); border-radius: 20px; overflow: hidden; display: grid; grid-template-columns: 1fr 340px; margin: 2rem 0; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
@@ -933,12 +948,36 @@ footer a{color:var(--subtle)}
 <h2 class="st">14 · Sezonowość rynku</h2>
 <p class="ss">Kiedy szukać — tak samo ważne jak gdzie szukać</p>
 <div class="season-grid">
-  <div class="season-c"><div class="sm2">Wrzesień</div><span class="sbadge sh">Najgorętszy</span><p style="font-size:13.5px;color:var(--muted)">Studenci, przeprowadzki korpo. Dobre mieszkania znikają w 15–18 dni. Cena max, negocjacje trudne.</p></div>
-  <div class="season-c"><div class="sm2">Październik–Listopad</div><span class="sbadge smi">Spadek</span><p style="font-size:13.5px;color:var(--muted)">Popyt maleje. Mieszkania wiszą 20–25 dni. Możliwość obniżenia ceny o 3–5%.</p></div>
-  <div class="season-c"><div class="sm2">Grudzień–Luty</div><span class="sbadge sc2b">Najlepszy czas na negocjacje</span><p style="font-size:13.5px;color:var(--muted)">Minimalny popyt. Mieszkania 30–40 dni. Zniżki 5–10% lub doposażenie przez właściciela.</p></div>
-  <div class="season-c"><div class="sm2">Marzec–Kwiecień</div><span class="sbadge sg2">Aktywizacja</span><p style="font-size:13.5px;color:var(--muted)">Jeszcze nie szczyt, ale jest już wybór. Mieszkanie znajdziesz w 2–3 tygodnie.</p></div>
-  <div class="season-c"><div class="sm2">Maj–Czerwiec</div><span class="sbadge sg2">Aktywny rynek</span><p style="font-size:13.5px;color:var(--muted)">Wzrost popytu. Ceny +3–5% od zimowych minimów. Rachunki niskie — dobry czas na testy.</p></div>
-  <div class="season-c"><div class="sm2">Lipiec–Sierpień</div><span class="sbadge smi">Umiarkowana aktywność</span><p style="font-size:13.5px;color:var(--muted)">Część właścicieli na urlopach. Nowe mieszkania pojawiają się przed wrześniem. Ceny rosną.</p></div>
+  <div class="season-c">
+    <div class="sm2">Wrzesień</div>
+    <span class="sbadge sh">Najgorętszy szczyt</span>
+    <p>Masowy napłyв studentów i relokacje korporacyjne. Najlepsze mieszkania „schodzą” w 1-2 dni. Właściciele organizują castingi lokatorów. Cena na maksimum, negocjacje praktyчно niemożliwe.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">Październik – Listopad</div>
+    <span class="sbadge smi">Stopniowy spadek</span>
+    <p>Hype opada, ale wybór jest wciąż duży. Mieszkania zostają na rynku przez 2-3 tygodnie. Można spróbować obniżyć cenę o 100-200 PLN lub wynegocjować darmowy parking.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">Grudzień – Luty</div>
+    <span class="sbadge sc2b">Najlepszy czas na okazje</span>
+    <p>Minimalna aktywność przez święta i zimę. Właściciele, których mieszkania stoją puste, są gotovi na znaczne negocjacje (5-10%). Idealny czas na znalezienie lokalu premium w niższej cenie.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">Marzec – Kwiecień</div>
+    <span class="sbadge sg2">Wiosenna aktywizacja</span>
+    <p>Rynek „budzi się”. Pojawiają się nowe oferty, konkurencja jest wciąż umiarkowana. Optymalny balans między ceną a wyborem. Czas na znalezienie lokalu — do 2 tygodni.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">Maj – Czerwiec</div>
+    <span class="sbadge sg2">Aktywny rynek</span>
+    <p>Wzrost popytu przed latem. Ceny zaczynają rosnąć (+3-5%). Duży plus — niskie rachunki za ogrzewanie, co pozwala łatwiej ocenić realny stan techniczny budynku.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">Lipiec – Sierpień</div>
+    <span class="sbadge smi">Przygotowanie do boomu</span>
+    <p>Cisza przed burzą. Wielu właścicieli jest na urlopach, ale ci, którzy wystawiają lokale, celują już w ceny wrześniowe. Rekomendujemy finalizację umów do połowy sierpnia.</p>
+  </div>
 </div>
 </section>
 

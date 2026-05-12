@@ -252,7 +252,22 @@ td.tp{font-weight:700;color:var(--ink);white-space:nowrap;font-size:13px}
 .sc ul li:last-child { border-bottom: none; }
 .sc ul li::before { content: "→"; color: var(--accent); font-weight: 800; font-size: 12px; }
 
-/* Static calc box */
+/* Seasonality Timeline */
+.season-grid { display: flex; flex-direction: column; gap: 1.25rem; margin: 2rem 0; position: relative; padding-left: 10px; }
+.season-grid::before { content: ""; position: absolute; left: 24px; top: 0; bottom: 0; width: 2px; background: linear-gradient(to bottom, var(--accent-soft), var(--border), var(--accent-soft)); z-index: 0; }
+.season-c { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 1.5rem 1.5rem 1.5rem 4.5rem; position: relative; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); z-index: 1; }
+.season-c::after { content: ""; position: absolute; left: 18px; top: 26px; width: 14px; height: 14px; border-radius: 50%; background: #fff; border: 3px solid var(--accent); box-shadow: 0 0 0 4px var(--surface); transition: all 0.2s; }
+.season-c:hover { border-color: var(--accent); transform: translateX(10px); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+.season-c:hover::after { background: var(--accent); transform: scale(1.2); }
+.season-c .sm2 { font-weight: 800; font-size: 1.15rem; color: var(--ink); margin-bottom: 0.5rem; display: block; }
+.sbadge { display: inline-block; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 700; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.5px; }
+.sbadge.sh { background: #fee2e2; color: #991b1b; } /* Hot - Red */
+.sbadge.smi { background: #fef3c7; color: #92400e; } /* Medium - Yellow */
+.sbadge.sc2b { background: #dcfce7; color: #166534; } /* Best for deal - Green */
+.sbadge.sg2 { background: #e0f2fe; color: #075985; } /* Active - Blue */
+.season-c p { line-height: 1.6; margin: 0; }
+
+/* Interactive calc (Advanced) */
 .calc-box{background:var(--ink);color:#fff;border-radius:var(--r);padding:2rem;margin:1.5rem 0}
 .calc-box h3{color:#fff;font-size:.95rem;margin:0 0 1.25rem;letter-spacing:0;font-weight:700;}
 .cr{display:flex;justify-content:space-between;align-items:center;padding:.45rem 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:14px}
@@ -934,12 +949,36 @@ footer a{color:var(--subtle)}
 <h2 class="st">14 · Сезонність ринку</h2>
 <p class="ss">Коли шукати — так само важливо, як де шукати</p>
 <div class="season-grid">
-  <div class="season-c"><div class="sm2">Вересень</div><span class="sbadge sh">Найгарячіший</span><p style="font-size:13.5px;color:var(--muted)">Студенти, корпоративні переїзди. Добрі квартири — 15–18 днів. Ціна max, торг мінімальний.</p></div>
-  <div class="season-c"><div class="sm2">Жовтень–Листопад</div><span class="sbadge smi">Спад</span><p style="font-size:13.5px;color:var(--muted)">Попит знижується. Квартири 20–25 днів. Можливість знизити ціну на 3–5%.</p></div>
-  <div class="season-c"><div class="sm2">Грудень–Лютий</div><span class="sbadge sc2b">Найкращий для торгу</span><p style="font-size:13.5px;color:var(--muted)">Мінімальний попит. Квартири 30–40 днів. Знижка 5–10% або ремонт за рахунок власника.</p></div>
-  <div class="season-c"><div class="sm2">Березень–Квітень</div><span class="sbadge sg2">Активізація</span><p style="font-size:13.5px;color:var(--muted)">Ще не пік конкуренції, але вже є вибір. Квартиру знайдете за 2–3 тижні.</p></div>
-  <div class="season-c"><div class="sm2">Травень–Червень</div><span class="sbadge sg2">Активний ринок</span><p style="font-size:13.5px;color:var(--muted)">Зростання попиту. Ціни +3–5% від зимових мінімумів. Рахунки низькі — добрий час для перевірки.</p></div>
-  <div class="season-c"><div class="sm2">Липень–Серпень</div><span class="sbadge smi">Помірна активність</span><p style="font-size:13.5px;color:var(--muted)">Частина власників у відпустках. Нові квартири виходять перед вереснем. Ціни ростуть.</p></div>
+  <div class="season-c">
+    <div class="sm2">Вересень</div>
+    <span class="sbadge sh">Найгарячіший пік</span>
+    <p>Масовий наплив студентів та корпоративні переїзди. Кращі квартири «йдуть» за 1-2 дні. Орендодавці влаштовують кастинги орендарів. Ціна на максимумі, торг практично неможливий.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">Жовтень – Листопад</div>
+    <span class="sbadge smi">Поступовий спад</span>
+    <p>Ажіотаж вщухає, але вибір ще великий. Квартири залишаються на ринку 2-3 тижні. Можна спробувати знизити ціну на 100-200 PLN або домовитися про безкоштовний паркінг.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">Грудень – Лютий</div>
+    <span class="sbadge sc2b">Найкращий час для угоди</span>
+    <p>Мінімальна активність через свята та холоди. Власники, чиї квартири пустують, готові до значного торгу (5-10%). Ідеальний час для пошуку житла преміум-класу за нижчою ціною.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">Березень – Квітень</div>
+    <span class="sbadge sg2">Весняна активізація</span>
+    <p>Ринок «прокидається». З’являються нові об’єкти, конкуренція ще помірна. Оптимальний баланс між ціною та вибором. Час огляду — до 2 тижнів.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">Травень – Червень</div>
+    <span class="sbadge sg2">Активний ринок</span>
+    <p>Зростання попиту перед літом. Ціни починають рости (+3-5%). Великий плюс — низькі рахунки за опалення, що дозволяє легше оцінити реальний стан будинку.</p>
+  </div>
+  <div class="season-c">
+    <div class="sm2">Липень – Серпень</div>
+    <span class="sbadge smi">Підготовка до буму</span>
+    <p>Спокій перед бурею. Багато власників у відпустках, але ті, хто виставляє квартири, орієнтуються на вересневі ціни. Рекомендуємо закривати угоди до середини серпня.</p>
+  </div>
 </div>
 </section>
 
