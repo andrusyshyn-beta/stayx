@@ -228,6 +228,19 @@ td.tp{font-weight:700;color:var(--ink);white-space:nowrap;font-size:13px}
 .ci{width:22px;height:22px;border-radius:50%;background:var(--green-soft);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px}
 .cl strong{color:var(--ink);font-weight:600}
 
+/* Building types grid */
+.type-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.tc { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 1.5rem; transition: all 0.2s; display: flex; flex-direction: column; }
+.tc:hover { border-color: var(--border2); box-shadow: 0 4px 20px rgba(0,0,0,0.05); transform: translateY(-2px); }
+.tera { font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 4px; }
+.tname { font-size: 1.15rem; font-weight: 800; color: var(--ink); margin-bottom: 1rem; }
+.tpc { display: grid; grid-template-columns: 1fr; gap: 10px; border-top: 1px solid var(--border); padding-top: 1rem; margin-top: auto; }
+.tc .p, .tc .c { font-size: 13px; line-height: 1.4; display: flex; gap: 8px; align-items: flex-start; }
+.tc .p { color: #1a6038; }
+.tc .c { color: #a31515; }
+.tc .p::before { content: "✓"; font-weight: 800; }
+.tc .c::before { content: "✕"; font-weight: 800; }
+
 /* Static calc box */
 .calc-box{background:var(--ink);color:#fff;border-radius:var(--r);padding:2rem;margin:1.5rem 0}
 .calc-box h3{color:#fff;font-size:.95rem;margin:0 0 1.25rem;letter-spacing:0;font-weight:700;}
@@ -520,11 +533,56 @@ footer a{color:var(--subtle)}
 <h2 class="st">04 · Типи будинків</h2>
 <p class="ss">Тип будинку напряму впливає на рахунок за опалення і якість звукоізоляції</p>
 <div class="type-grid">
-  <div class="tc"><div class="tera">До 1945 р.</div><div class="tname">Kamienica</div><div class="tpc"><div class="p">✓ Стелі 3+ м, товсті стіни</div><div class="p">✓ Атмосфера, центр</div><div class="c">✗ Можлива вологість</div><div class="c">✗ Старі труби й електрика</div></div></div>
-  <div class="tc"><div class="tera">1950–1959 рр.</div><div class="tname">Socrealizm</div><div class="tpc"><div class="p">✓ Міцна конструкція</div><div class="p">✓ Великі квартири</div><div class="c">✗ Не завжди ліфт</div><div class="c">✗ Висока ціна czynsz</div></div></div>
-  <div class="tc"><div class="tera">1960–1990 рр.</div><div class="tname">Blok</div><div class="tpc"><div class="p">✓ Дешевше за ринком</div><div class="p">✓ Централізоване тепло</div><div class="c">✗ Погана звукоізоляція</div><div class="c">✗ Мала кухня</div></div></div>
-  <div class="tc"><div class="tera">1990–2010 рр.</div><div class="tname">Nowe budownictwo</div><div class="tpc"><div class="p">✓ Ліфт, нормальний czynsz</div><div class="p">✓ Добра ізоляція</div><div class="c">✗ Різна якість</div><div class="c">✗ Без підзем. паркінгу</div></div></div>
-  <div class="tc"><div class="tera">Після 2010 р.</div><div class="tname">Apartamentowiec</div><div class="tpc"><div class="p">✓ Паркінг, охорона</div><div class="p">✓ 1 Гбіт/с, вентиляція</div><div class="c">✗ Найвищий czynsz</div><div class="c">✗ Компактні плани</div></div></div>
+  <div class="tc">
+    <div class="tera">До 1945 р.</div>
+    <div class="tname">Kamienica (Кам'яниця)</div>
+    <div class="tpc">
+      <div class="p">Високі стелі 3+ м та товсті цегляні стіни</div>
+      <div class="p">Атмосфера старої Варшави, самий центр</div>
+      <div class="c">Можлива вологість та проблеми з грибком</div>
+      <div class="c">Застарілі комунікації (труби, електрика)</div>
+    </div>
+  </div>
+  <div class="tc">
+    <div class="tera">1950–1959 рр.</div>
+    <div class="tname">Socrealizm (Соцреалізм)</div>
+    <div class="tpc">
+      <div class="p">Надзвичайно міцна конструкція та високі стелі</div>
+      <div class="p">Великі вікна та просторі кімнати</div>
+      <div class="c">Часто відсутні ліфти (навіть на 5 поверсі)</div>
+      <div class="c">Висока вартість czynsz через великі площі</div>
+    </div>
+  </div>
+  <div class="tc">
+    <div class="tera">1960–1990 рр.</div>
+    <div class="tname">Blok (Панельний будинок)</div>
+    <div class="tpc">
+      <div class="p">Найдешевша оренда на ринку</div>
+      <div class="p">Централізоване опалення (зазвичай входить у czynsz)</div>
+      <div class="c">Слабка звукоізоляція між квартирами</div>
+      <div class="c">Маленькі кухні та тісні санвузли</div>
+    </div>
+  </div>
+  <div class="tc">
+    <div class="tera">1990–2010 рр.</div>
+    <div class="tname">Nowe budownictwo</div>
+    <div class="tpc">
+      <div class="p">Сучасні ліфти та чисті під'їзди</div>
+      <div class="p">Хороша теплоізоляція та помірні рахунки</div>
+      <div class="c">Якість забудови сильно варіюється від девелопера</div>
+      <div class="c">Часто немає підземного паркінгу</div>
+    </div>
+  </div>
+  <div class="tc">
+    <div class="tera">Після 2010 р.</div>
+    <div class="tname">Apartamentowiec (Сучасні ЖК)</div>
+    <div class="tpc">
+      <div class="p">Підземний паркінг, охорона та закрита територія</div>
+      <div class="p">Високошвидкісний інтернет та сучасна вентиляція</div>
+      <div class="c">Найвищий czynsz administracyjny у місті</div>
+      <div class="c">Компактні, іноді незручні планування</div>
+    </div>
+  </div>
 </div>
 <div class="box amber" style="margin-top:1.25rem">
   <p><strong>Świadectwo charakterystyki energetycznej (SKE)</strong> обов'язковий з 2023 р. Клас A/B = низькі рахунки. Клас E/F = +400–700 PLN взимку. Вимагайте його завжди.</p>

@@ -172,6 +172,19 @@ hr.hdiv{max-width:900px;margin:0 auto;border:none;border-top:1px solid var(--bor
   .calc-sidebar { order: -1; }
   .calc-flex { grid-template-columns: 1fr; }
 }
+
+/* Building types grid */
+.type-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.tc { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 1.5rem; transition: all 0.2s; display: flex; flex-direction: column; }
+.tc:hover { border-color: var(--border2); box-shadow: 0 4px 20px rgba(0,0,0,0.05); transform: translateY(-2px); }
+.tera { font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 4px; }
+.tname { font-size: 1.15rem; font-weight: 800; color: var(--ink); margin-bottom: 1rem; }
+.tpc { display: grid; grid-template-columns: 1fr; gap: 10px; border-top: 1px solid var(--border); padding-top: 1rem; margin-top: auto; }
+.tc .p, .tc .c { font-size: 13px; line-height: 1.4; display: flex; gap: 8px; align-items: flex-start; }
+.tc .p { color: #1a6038; }
+.tc .c { color: #a31515; }
+.tc .p::before { content: "✓"; font-weight: 800; }
+.tc .c::before { content: "✕"; font-weight: 800; }
 .toc-card h2{font-family:'Plus Jakarta Sans', sans-serif;font-weight:700;font-size:1rem;color:var(--ink);margin-bottom:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--border)}
 .toc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem 2rem}
 .toc-grid a{font-size:13.5px;color:var(--ink2);display:flex;align-items:baseline;gap:7px;padding:4px 0;transition:color .15s}
@@ -548,11 +561,56 @@ footer a{color:var(--subtle)}
 <h2 class="st">04 · Building Types</h2>
 <p class="ss">Building type directly affects heating bills and sound insulation quality</p>
 <div class="type-grid">
-  <div class="tc"><div class="tera">Pre-1945</div><div class="tname">Kamienica</div><div class="tpc"><div class="p">✓ 3+ m ceilings, thick walls</div><div class="p">✓ Atmosphere, center</div><div class="c">✗ Possible humidity</div><div class="c">✗ Old pipes & wiring</div></div></div>
-  <div class="tc"><div class="tera">1950–1959</div><div class="tname">Socrealizm</div><div class="tpc"><div class="p">✓ Solid construction</div><div class="p">✓ Large apartments</div><div class="c">✗ No lift sometimes</div><div class="c">✗ High admin fee</div></div></div>
-  <div class="tc"><div class="tera">1960–1990</div><div class="tname">Blok</div><div class="tpc"><div class="p">✓ Below market price</div><div class="p">✓ District heating</div><div class="c">✗ Poor soundproofing</div><div class="c">✗ Small kitchen</div></div></div>
-  <div class="tc"><div class="tera">1990–2010</div><div class="tname">Nowe budownictwo</div><div class="tpc"><div class="p">✓ Lift, normal fee</div><div class="p">✓ Good insulation</div><div class="c">✗ Varying quality</div><div class="c">✗ Often no garage</div></div></div>
-  <div class="tc"><div class="tera">Post-2010</div><div class="tname">Apartamentowiec</div><div class="tpc"><div class="p">✓ Parking, security</div><div class="p">✓ 1 Gbit/s, ventilation</div><div class="c">✗ Highest admin fee</div><div class="c">✗ Compact plans</div></div></div>
+  <div class="tc">
+    <div class="tera">Before 1945</div>
+    <div class="tname">Kamienica (Tenement House)</div>
+    <div class="tpc">
+      <div class="p">High ceilings 3+ m and thick brick walls</div>
+      <div class="p">Atmosphere of old Warsaw, very center</div>
+      <div class="c">Possible dampness and mold issues</div>
+      <div class="c">Outdated installations (pipes, electricity)</div>
+    </div>
+  </div>
+  <div class="tc">
+    <div class="tera">1950–1959</div>
+    <div class="tname">Socrealizm (Socialist Realism)</div>
+    <div class="tpc">
+      <div class="p">Extremely solid construction and high ceilings</div>
+      <div class="p">Large windows and spacious rooms</div>
+      <div class="c">Often lack elevators (even on 5th floor)</div>
+      <div class="c">High czynsz cost due to large shared areas</div>
+    </div>
+  </div>
+  <div class="tc">
+    <div class="tera">1960–1990</div>
+    <div class="tname">Blok (Apartment Block)</div>
+    <div class="tpc">
+      <div class="p">Cheapest rent on the market</div>
+      <div class="p">District heating (usually included in czynsz)</div>
+      <div class="c">Poor sound insulation between apartments</div>
+      <div class="c">Small kitchens and cramped bathrooms</div>
+    </div>
+  </div>
+  <div class="tc">
+    <div class="tera">1990–2010</div>
+    <div class="tname">Nowe budownictwo</div>
+    <div class="tpc">
+      <div class="p">Modern elevators and clean staircases</div>
+      <div class="p">Good thermal insulation and moderate bills</div>
+      <div class="c">Build quality varies significantly by developer</div>
+      <div class="c">Often lacks underground parking</div>
+    </div>
+  </div>
+  <div class="tc">
+    <div class="tera">After 2010</div>
+    <div class="tname">Apartamentowiec (Modern Housing)</div>
+    <div class="tpc">
+      <div class="p">Underground parking, security, gated area</div>
+      <div class="p">High-speed fiber and modern ventilation</div>
+      <div class="c">Highest czynsz administracyjny in the city</div>
+      <div class="c">Compact, sometimes awkward layouts</div>
+    </div>
+  </div>
 </div>
 <div class="box amber" style="margin-top:1.25rem">
   <p><strong>Energy Performance Certificate (SKE)</strong> mandatory since 2023. Class A/B = low bills. Class E/F = +400–700 PLN in winter. Always ask for it.</p>

@@ -225,6 +225,19 @@ td.tp{font-weight:700;color:var(--ink);white-space:nowrap;font-size:13px}
 .ci{width:22px;height:22px;border-radius:50%;background:var(--green-soft);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:1px}
 .cl strong{color:var(--ink);font-weight:600}
 
+/* Building types grid */
+.type-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.tc { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 1.5rem; transition: all 0.2s; display: flex; flex-direction: column; }
+.tc:hover { border-color: var(--border2); box-shadow: 0 4px 20px rgba(0,0,0,0.05); transform: translateY(-2px); }
+.tera { font-size: 10px; font-weight: 700; text-transform: uppercase; color: var(--muted); letter-spacing: 0.05em; margin-bottom: 4px; }
+.tname { font-size: 1.15rem; font-weight: 800; color: var(--ink); margin-bottom: 1rem; }
+.tpc { display: grid; grid-template-columns: 1fr; gap: 10px; border-top: 1px solid var(--border); padding-top: 1rem; margin-top: auto; }
+.tc .p, .tc .c { font-size: 13px; line-height: 1.4; display: flex; gap: 8px; align-items: flex-start; }
+.tc .p { color: #1a6038; }
+.tc .c { color: #a31515; }
+.tc .p::before { content: "✓"; font-weight: 800; }
+.tc .c::before { content: "✕"; font-weight: 800; }
+
 /* Static calc box */
 .calc-box{background:var(--ink);color:#fff;border-radius:var(--r);padding:2rem;margin:1.5rem 0}
 .calc-box h3{color:#fff;font-size:.95rem;margin:0 0 1.25rem;letter-spacing:0;font-weight:700;}
@@ -516,11 +529,56 @@ footer a{color:var(--subtle)}
 <h2 class="st">04 · Typy budynków</h2>
 <p class="ss">Typ budynku ma bezpośredni wpływ na rachunki za ogrzewanie i jakość izolacji akustycznej</p>
 <div class="type-grid">
-  <div class="tc"><div class="tera">Do 1945 r.</div><div class="tname">Kamienica</div><div class="tpc"><div class="p">✓ Sufity 3+ m, grube ściany</div><div class="p">✓ Atmosfera, centrum</div><div class="c">✗ Możliwa wilgoć</div><div class="c">✗ Stare rury i elektryka</div></div></div>
-  <div class="tc"><div class="tera">1950–1959 r.</div><div class="tname">Socrealizm</div><div class="tpc"><div class="p">✓ Solidna konstrukcja</div><div class="p">✓ Duże mieszkania</div><div class="c">✗ Nie zawsze jest winda</div><div class="c">✗ Wysoki czynsz adm.</div></div></div>
-  <div class="tc"><div class="tera">1960–1990 r.</div><div class="tname">Blok</div><div class="tpc"><div class="p">✓ Taniej niż rynkowo</div><div class="p">✓ Ciepło miejskie</div><div class="c">✗ Słaba izolacja akustyczna</div><div class="c">✗ Mała kuchnia</div></div></div>
-  <div class="tc"><div class="tera">1990–2010 r.</div><div class="tname">Nowe budownictwo</div><div class="tpc"><div class="p">✓ Winda, normalny czynsz</div><div class="p">✓ Dobra izolacja</div><div class="c">✗ Różna jakość</div><div class="c">✗ Często brak garażu</div></div></div>
-  <div class="tc"><div class="tera">Po 2010 r.</div><div class="tname">Apartamentowiec</div><div class="tpc"><div class="p">✓ Garaż, ochrona</div><div class="p">✓ 1 Gbit/s, wentylacja</div><div class="c">✗ Najwyższy czynsz adm.</div><div class="c">✗ Kompaktowe plany</div></div></div>
+  <div class="tc">
+    <div class="tera">Przed 1945 r.</div>
+    <div class="tname">Kamienica (Kamienica)</div>
+    <div class="tpc">
+      <div class="p">Wysokie sufity 3+ m i grube ceglane ściany</div>
+      <div class="p">Atmosfera starej Warszawy, ścisłe centrum</div>
+      <div class="c">Możliwa wilgoć i problemy z grzybem</div>
+      <div class="c">Zestarzałe instalacje (rury, elektryka)</div>
+    </div>
+  </div>
+  <div class="tc">
+    <div class="tera">1950–1959 rr.</div>
+    <div class="tname">Socrealizm (Socrealizm)</div>
+    <div class="tpc">
+      <div class="p">Niezwykle solidna konstrukcja i wysokie sufity</div>
+      <div class="p">Duże okna i przestronne pokoje</div>
+      <div class="c">Częsty brak wind (nawet na 5. piętrze)</div>
+      <div class="c">Wysoki koszt czynszu przez duże powierzchnie wspólne</div>
+    </div>
+  </div>
+  <div class="tc">
+    <div class="tera">1960–1990 rr.</div>
+    <div class="tname">Blok (Blok z wielkiej płyty)</div>
+    <div class="tpc">
+      <div class="p">Najtańszy wynajem на rynku</div>
+      <div class="p">Ogrzewanie miejskie (zazwyczaj wliczone w czynsz)</div>
+      <div class="c">Słaba izolacja akustyczna między mieszkaniami</div>
+      <div class="c">Małe kuchnie i ciasne łazienki</div>
+    </div>
+  </div>
+  <div class="tc">
+    <div class="tera">1990–2010 rr.</div>
+    <div class="tname">Nowe budownictwo</div>
+    <div class="tpc">
+      <div class="p">Nowoczesne windy i czyste klatki schodowe</div>
+      <div class="p">Dobra izolacja termiczna i umiarkowane rachunki</div>
+      <div class="c">Jakość budowy silnie zależy od dewelopera</div>
+      <div class="c">Często brak parkingu podziemnego</div>
+    </div>
+  </div>
+  <div class="tc">
+    <div class="tera">Po 2010 r.</div>
+    <div class="tname">Apartamentowiec (Nowoczesne osiedla)</div>
+    <div class="tpc">
+      <div class="p">Parking podziemny, ochrona i teren zamknięty</div>
+      <div class="p">Światłowód i nowoczesna wentylacja</div>
+      <div class="c">Najwyższy czynsz administracyjny w mieście</div>
+      <div class="c">Kompaktowe, czasem nieustawne układy</div>
+    </div>
+  </div>
 </div>
 <div class="box amber" style="margin-top:1.25rem">
   <p><strong>Świadectwo charakterystyki energetycznej (SKE)</strong> jest obowiązkowe od 2023 r. Klasa A/B = niskie rachunki. Klasa E/F = +400–700 PLN zimą. Zawsze o nie pytaj.</p>
