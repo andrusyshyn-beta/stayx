@@ -1030,3 +1030,553 @@ h2.st {
     font-size: 14px !important;
   }
 }
+
+/* ==========================================================================
+   PRICE & REGIONAL REPORT PATTERNS
+   ========================================================================== */
+
+/* Price Cards Grid */
+.price-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.25rem;
+  margin: 2rem 0;
+}
+
+.pcard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 1.5rem 1.25rem;
+  transition: border-color .2s, box-shadow .2s;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.01);
+}
+
+.pcard:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+}
+
+.pcard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+}
+
+.pcard.studio::before { background: var(--accent); }
+.pcard.one::before { background: var(--accent2); }
+.pcard.two::before { background: var(--amber); }
+.pcard.three::before { background: var(--red); }
+
+.pcard-type {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.pcard-range {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--ink);
+  line-height: 1.1;
+  margin-bottom: 2px;
+}
+
+.pcard-unit {
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.pcard-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12.5px;
+  padding: 6px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.pcard-row:last-child {
+  border-bottom: none;
+}
+
+.pcard-row span:first-child {
+  color: var(--muted);
+}
+
+.pcard-row span:last-child {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* District Table Rules */
+.dtable-wrap {
+  margin: 2rem 0;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+}
+
+.dtable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.dtable thead th {
+  background: var(--surface2);
+  padding: 12px 16px;
+  text-align: left;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+}
+
+.dtable tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border);
+  color: var(--ink2);
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+.dtable tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.dtable tbody tr:hover td {
+  background: var(--surface2);
+}
+
+.dtable td:first-child {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.dtable td.accent {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.dtable td.muted {
+  color: var(--muted);
+}
+
+.tier {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  padding: 2px 8px;
+  border-radius: 6px;
+  border: 1px solid;
+}
+
+.tier.premium {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: rgba(99, 91, 255, 0.15);
+}
+
+.tier.mid {
+  background: var(--accent2-soft);
+  color: var(--accent2);
+  border-color: rgba(42, 95, 200, 0.15);
+}
+
+.tier.budget {
+  background: var(--green-soft);
+  color: var(--green);
+  border-color: rgba(26, 112, 64, 0.15);
+}
+
+/* Factors Grid */
+.factors {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.fcard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 1.25rem;
+  transition: border-color .2s, box-shadow .2s;
+}
+
+.fcard:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+}
+
+.fcard-icon {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.fcard h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.fcard p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+.fcard .impact {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+
+.impact.high { color: var(--red); }
+.impact.mid { color: var(--amber); }
+.impact.low { color: var(--muted); }
+
+/* Cost Breakdown Card */
+.cost-real {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.cost-real h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.cost-block-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+@media(max-width:580px){
+  .cost-block-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+}
+
+.cbi-group h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 4px;
+}
+
+.cbi-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13.5px;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.cbi-row:last-of-type {
+  border-bottom: none;
+}
+
+.cbi-row .l {
+  color: var(--muted);
+}
+
+.cbi-row .v {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.total-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0 0;
+  border-top: 2px solid var(--accent-soft);
+  margin-top: 8px;
+  grid-column: 1 / -1;
+}
+
+.total-row .l {
+  font-size: 15px;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.total-row .v {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--accent);
+}
+
+/* Trend Bars Chart */
+.trend-chart {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.trend-chart h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+.bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  height: 180px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.bar-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.bar-wrap {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+  transition: opacity .2s;
+  position: relative;
+}
+
+.bar:hover {
+  opacity: .85;
+}
+
+.bar-val {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.bar-year {
+  font-size: 11px;
+  color: var(--subtle);
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.bar-now {
+  background: var(--accent);
+}
+
+.bar-past {
+  background: var(--surface2);
+  border: 1px solid var(--border);
+}
+
+.trend-note {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+/* Season grid timeline styling */
+.season-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 4px;
+  margin: 2rem 0;
+}
+
+.month-cell {
+  border-radius: var(--r-sm);
+  padding: 10px 4px;
+  text-align: center;
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+.month-cell .mn {
+  font-weight: 700;
+  display: block;
+  margin-bottom: 2px;
+  font-size: 11px;
+}
+
+.month-cell .ms {
+  font-size: 9px;
+  opacity: .7;
+}
+
+.heat-1 { background: rgba(99, 91, 255, 0.05); color: var(--muted); }
+.heat-2 { background: rgba(99, 91, 255, 0.15); color: var(--accent); }
+.heat-3 { background: rgba(99, 91, 255, 0.28); color: var(--accent); }
+.heat-4 { background: rgba(158, 42, 42, 0.15); color: var(--red); }
+.heat-5 { background: rgba(158, 42, 42, 0.3); color: var(--red); }
+
+.season-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 10px;
+}
+
+.sl-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sl-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+@media(max-width:768px) {
+  .season-grid { grid-template-columns: repeat(4, 1fr); gap: 6px; }
+}
+
+/* Negotiating lists */
+.neg-tips {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 2rem 0;
+}
+
+.neg-tip {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: var(--r);
+  padding: 1.25rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.neg-num {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--accent);
+  min-width: 24px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.neg-tip h4 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+.neg-tip p {
+  font-size: 13.5px;
+  color: var(--muted);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* City compare rows */
+.city-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 2rem 0;
+}
+
+.city-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.city-name {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--ink);
+  min-width: 130px;
+  flex-shrink: 0;
+}
+
+.city-bar-wrap {
+  flex: 1;
+  height: 28px;
+  background: var(--surface2);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.city-bar {
+  height: 100%;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding-right: 12px;
+  justify-content: flex-end;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.city-val {
+  font-size: 13px;
+  color: var(--muted);
+  min-width: 85px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+@media(max-width:480px) {
+  .city-row { flex-direction: column; align-items: flex-start; gap: 4px; }
+  .city-bar-wrap { width: 100%; }
+  .city-val { text-align: left; min-width: auto; }
+}
