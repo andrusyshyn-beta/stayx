@@ -12,10 +12,9 @@
 <meta name="article:modified_time" content="2026-05-17">
 <link rel="canonical" href="https://stayx-eight.vercel.app/blog/yak-orenduvaty-kvartiru-inozemntsyu.html">
 <link rel="stylesheet" href="../styles.css">
-<link rel="stylesheet" href="../blog.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Article","headline":"Як орендувати квартиру іноземцю у Варшаві 2026","author":{"@type":"Organization","name":"STAYX"},"datePublished":"2026-05-01","dateModified":"2026-05-17","publisher":{"@type":"Organization","name":"STAYX","url":"https://stayx-eight.vercel.app"}}
 </script>
@@ -27,176 +26,246 @@
 </script>
 <style>
 :root{
-  --bg:#ffffff;
-  --surface:#f8faff;
-  --surface2:#f1f5f9;
-  --border:#e3e8ee;
-  --border-accent:rgba(99,91,255,0.2);
-  --text:#3c4257;
-  --text-muted:#697386;
-  --accent:#635bff;
-  --accent-dim:rgba(99,91,255,0.06);
-  --accent2:#f0a500;
-  --red:#df1b41;
-  --red-dim:rgba(223, 27, 65, 0.05);
-  --radius:16px;
-  --radius-lg:24px;
-  --font-display:'Plus Jakarta Sans',sans-serif;
-  --font-body:'Plus Jakarta Sans',sans-serif;
+  --ink:#1a1a1a;--ink2:#3d3d3d;--muted:#6b6b6b;--subtle:#aaa;
+  --bg:#faf9f7;--surface:#fff;--surface2:#f5f3ef;
+  --border:#e8e4dc;--border2:#d0cbc0;
+  --accent:#635bff; /* Unified with Stripe purple */
+  --accent-soft:#f5f4ff;
+  --accent2:#2a5fc8;--accent2-soft:#e6ecf5;
+  --green:#1a7040;--green-soft:#e4f2eb;
+  --amber:#956000;--amber-soft:#fdf2d8;
+  --red:#9e2a2a;--red-soft:#fce8e4;
+  --r:10px;--r-sm:6px;
 }
-body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:17px;line-height:1.75;-webkit-font-smoothing:antialiased}
-
-.breadcrumb{padding:14px 0;display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;color:var(--text-muted);border-bottom:1px solid var(--border)}
-.breadcrumb a{color:var(--text-muted);text-decoration:none;transition:color .2s}
-.breadcrumb a:hover{color:var(--accent)}
-.breadcrumb span{opacity:.4}
-
-.hero{padding:140px 0 40px;max-width:1200px;margin:0 auto}
-.hero-badge{display:inline-flex;align-items:center;gap:8px;background:var(--accent-dim);border:1px solid var(--border-accent);color:var(--accent);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:6px 14px;border-radius:100px;margin-bottom:28px}
-.hero-badge::before{content:'';width:6px;height:6px;background:var(--accent);border-radius:50%;animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.5;transform:scale(1.4)}}
-
-h1{font-family:var(--font-display);font-weight:800;font-size:clamp(32px,5vw,54px);line-height:1.1;letter-spacing:-0.03em;color:#0a2540;margin-bottom:24px}
-h1 em{font-style:normal;color:var(--accent)}
-.hero-lead{font-size:18px;line-height:1.7;color:var(--text-muted);max-width:720px;margin-bottom:32px}
-.hero-lead strong{color:#0a2540}
-.hero-meta{display:flex;flex-wrap:wrap;gap:18px;font-size:13px;color:var(--text-muted);padding-bottom:44px;border-bottom:1px solid var(--border);margin-bottom:44px}
-.hero-meta a{color:var(--accent);text-decoration:none}
-
-.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin-bottom:52px}
-@media(max-width:768px){.stats-row{grid-template-columns:repeat(2,1fr)}}
-.stat-box{background:var(--surface);padding:24px 20px;text-align:center}
-.stat-num{font-family:var(--font-display);font-size:26px;font-weight:800;color:var(--accent);line-height:1;margin-bottom:6px}
-.stat-label{font-size:12px;color:var(--text-muted)}
-
-.page-wrapper{max-width:1200px;margin:0 auto;padding:0 0 80px;display:grid;grid-template-columns:1fr 280px;gap:60px;align-items:start}
-@media(max-width:992px){.page-wrapper{grid-template-columns:1fr;gap:40px}.sidebar{display:none}}
-.article-body{padding:0}
-
-.toc{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:28px 32px;margin-bottom:52px}
-.toc-title{font-family:var(--font-display);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:16px}
-.toc ol{list-style:none;counter-reset:toc}
-.toc ol li{counter-increment:toc}
-.toc ol li a{display:flex;align-items:baseline;gap:10px;color:var(--text-muted);text-decoration:none;font-size:14.5px;padding:7px 0;border-bottom:1px solid var(--border);transition:color .2s}
-.toc ol li:last-child a{border-bottom:none}
-.toc ol li a::before{content:counter(toc,decimal-leading-zero);font-family:var(--font-display);font-size:11px;font-weight:700;color:var(--accent);min-width:22px;flex-shrink:0}
-.toc ol li a:hover{color:var(--accent)}
-
-.section{margin-bottom:60px}
-.section-label{display:inline-block;font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
-h2{font-family:var(--font-display);font-size:clamp(22px,3vw,30px);font-weight:700;letter-spacing:-0.02em;color:#0a2540;line-height:1.2;margin-bottom:18px}
-h3{font-family:var(--font-display);font-size:18px;font-weight:600;color:#0a2540;margin:30px 0 14px;letter-spacing:-0.01em}
-p{color:var(--text);margin-bottom:16px;line-height:1.8}
-strong{color:#0a2540;font-weight:600}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans', -apple-system, system-ui, sans-serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.75;overflow-x:hidden;-webkit-font-smoothing: antialiased;letter-spacing: -0.011em;}
 a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 
-.steps{display:flex;flex-direction:column;gap:12px;margin:24px 0}
-.step{display:flex;gap:18px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 22px;transition:border-color .2s}
-.step:hover{border-color:var(--border-accent)}
-.step-num{font-family:var(--font-display);font-size:12px;font-weight:800;color:var(--accent);min-width:30px;height:30px;background:var(--accent-dim);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
-.step-content h4{font-family:var(--font-display);font-size:14px;font-weight:700;color:#0a2540;margin-bottom:5px}
-.step-content p{font-size:14px;color:var(--text-muted);margin:0;line-height:1.65}
+/* Progress bar */
+#pb{position:fixed;top:0;left:0;z-index:10000;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),#8b85ff);transition:width .1s linear}
+#main-content { margin-top: 72px; }
 
-.docs-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin:24px 0}
-.doc-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;display:flex;gap:12px;align-items:flex-start;transition:border-color .2s}
-.doc-card:hover{border-color:var(--border-accent)}
-.doc-icon{font-size:20px;flex-shrink:0;margin-top:2px}
-.doc-card h4{font-family:var(--font-display);font-size:13px;font-weight:700;color:#0a2540;margin-bottom:4px}
-.doc-card p{font-size:13px;color:var(--text-muted);margin:0;line-height:1.5}
-.doc-required{font-size:11px;font-weight:600;color:var(--accent);letter-spacing:.06em;text-transform:uppercase;margin-top:6px;display:block}
-.doc-optional{color:var(--text-muted) !important}
+/* Header Sync */
+@media (max-width: 991px) {
+  .nav__left, .nav__right { display: none; }
+  .nav__burger { display: flex !important; margin-left: auto !important; z-index: 101 !important; }
+  
+  .header.open {
+    background: #fff !important;
+    height: 100vh !important;
+    overflow: auto !important;
+    position: fixed !important;
+  }
+  .header.open .nav__left,
+  .header.open .nav__right {
+    display: flex !important;
+    flex-direction: column !important;
+    position: fixed !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: #fff !important;
+    z-index: 100 !important;
+  }
+  .header.open .nav__left {
+    top: 60px !important;
+    padding: 24px 24px 8px !important;
+    gap: 0 !important;
+  }
+  .header.open .nav__right {
+    top: calc(60px + 300px) !important;
+    padding: 8px 24px 40px !important;
+    gap: 20px !important;
+    align-items: center !important;
+  }
+  .header.open .nav__link {
+    text-align: center !important;
+    font-size: 1.4rem !important;
+    font-weight: 600 !important;
+    color: #0a2540 !important;
+    padding: 10px 0 !important;
+  }
+  .header.open .nav__lang {
+    justify-content: center !important;
+    background: #f6f9fc !important;
+    padding: 8px !important;
+    border-radius: 12px !important;
+    width: fit-content !important;
+    margin: 0 auto !important;
+    border: 1px solid #edf2f7 !important;
+  }
+  .header.open .nav__lang a {
+    color: #425466 !important;
+    padding: 8px 16px !important;
+    font-size: 0.9rem !important;
+    font-weight: 600 !important;
+  }
+  .header.open .nav__lang a.active {
+    color: #0a2540 !important;
+    background: #fff !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+  }
+}
 
-.info-box{background:var(--accent-dim);border:1px solid var(--border-accent);border-radius:var(--radius);padding:18px 22px;margin:24px 0;display:flex;gap:12px}
-.info-box-icon{font-size:18px;flex-shrink:0;margin-top:2px}
-.info-box p{font-size:14px;color:var(--text);margin:0;line-height:1.7}
-.info-box strong{color:var(--accent)}
+/* Mobile responsive */
+@media (max-width: 768px) {
+  h1 { font-size: 1.8rem !important; line-height: 1.2 !important; margin-top: 20px !important; }
+  .g-hero { padding: 120px 0 60px !important; display: block !important; }
+  .hero-stats { flex-direction: row !important; max-width: 340px !important; margin: 0 auto !important; border-radius: 12px !important; overflow: hidden !important; }
+  .hero-stat { border-right: 1px solid var(--border) !important; border-bottom: none !important; padding: 10px 4px !important; flex: 1 !important; }
+  .hero-stat:last-child { border-right: none !important; }
+  .hs-n { font-size: 1rem !important; }
+  .hs-l { font-size: 9.5px !important; }
+  .page-wrap { padding: 0 24px !important; }
+  .main { padding: 0 !important; }
+  ul, ol { padding-left: 20px !important; }
+  .section { padding: 40px 0 !important; }
+  .cta-block { padding: 40px 24px !important; margin: 2rem 0 !important; }
+  .cta-block h2 { font-size: 1.5rem !important; }
+  .cta-btn { padding: 12px 24px !important; font-size: 14px !important; }
+}
 
-.warn-box{background:var(--red-dim);border:1px solid rgba(223,27,65,0.2);border-radius:var(--radius);padding:18px 22px;margin:24px 0;display:flex;gap:12px}
-.warn-box p{font-size:14px;color:var(--text);margin:0;line-height:1.7}
+/* Hero styling */
+.g-hero{max-width:860px;margin:0 auto;padding:5.5rem 2rem 3rem;text-align:center}
+.hero-tag{display:inline-block;background:var(--accent-soft);color:var(--accent);font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 16px;border-radius:20px;margin-bottom:1.5rem}
+h1{font-family:'Plus Jakarta Sans', sans-serif;font-size:clamp(1.8rem,5vw,3rem);font-weight:800;line-height:1.2;color:var(--ink);margin-bottom:1.25rem;letter-spacing:-.04em}
+h1 em{font-style:italic;color:var(--accent);font-family:'Playfair Display',serif;font-weight:600;}
+.hero-lead{font-size:1.1rem;color:var(--muted);max-width:640px;margin:0 auto 2.25rem;line-height:1.65}
+.hero-stats{display:flex;align-items:stretch;border:1px solid var(--border);border-radius:var(--r);overflow:hidden;max-width:580px;margin:0 auto;background:#fff;}
+.hero-stat{flex:1;padding:.85rem .5rem;text-align:center;border-right:1px solid var(--border);transition:background .2s}
+.hero-stat:last-child{border-right:none}
+.hero-stat:hover{background:var(--surface2)}
+.hs-n{font-size:1.15rem;font-weight:600;color:var(--ink)}
+.hs-l{font-size:11px;color:var(--subtle);margin-top:1px}
+hr.hdiv{max-width:900px;margin:0 auto;border:none;border-top:1px solid var(--border)}
 
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
-@media(max-width:560px){.two-col{grid-template-columns:1fr}}
-.col-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px 20px}
-.col-card h4{font-family:var(--font-display);font-size:13px;font-weight:700;color:#0a2540;margin-bottom:10px}
-.col-card ul{list-style:none}
-.col-card ul li{font-size:13px;color:var(--text-muted);padding:5px 0;border-bottom:1px solid var(--border);display:flex;align-items:flex-start;gap:7px;line-height:1.5}
-.col-card ul li:last-child{border-bottom:none}
-.col-card ul li::before{content:'—';color:var(--accent);flex-shrink:0}
+/* Layout grid */
+.page-wrap{max-width:1160px;margin:0 auto;padding:0 1.5rem;display:grid;grid-template-columns:216px 1fr;gap:3rem;align-items:start}
+.main{min-width:0;padding:0 0 4rem}
+.sidebar{position:sticky;top:100px;padding:1.5rem 0}
+.sidebar h3{font-size:11px;font-weight:600;letter-spacing:.07em;text-transform:uppercase;color:var(--subtle);margin-bottom:.75rem;padding-bottom:.5rem;border-bottom:1px solid var(--border)}
+.sidebar a{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);padding:.38rem .55rem;border-radius:6px;transition:all .15s;line-height:1.4}
+.sidebar a:hover{color:var(--ink);background:var(--surface2);text-decoration:none}
+.sidebar a.active{color:var(--accent);background:var(--accent-soft);font-weight:600}
+.sn{font-size:10px;color:var(--subtle);min-width:16px;flex-shrink:0}
 
-.najem-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:14px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border)}
-.najem-table thead th{background:var(--surface2);padding:12px 14px;text-align:left;font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);border-bottom:1px solid var(--border)}
-.najem-table tbody td{padding:12px 14px;border-bottom:1px solid var(--border);color:var(--text);vertical-align:top;line-height:1.6}
-.najem-table tbody tr:last-child td{border-bottom:none}
-.najem-table tbody tr:hover td{background:rgba(99,91,255,0.02)}
-.najem-table td:first-child{font-weight:600;color:#0a2540}
-.check{color:var(--accent)}.cross{color:var(--red)}
+/* TOC card */
+.toc-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.75rem 2rem;margin:2rem 0;box-shadow: 0 2px 10px rgba(0,0,0,0.02);}
+.toc-card h2{font-family:'Plus Jakarta Sans', sans-serif;font-weight:700;font-size:1rem;color:var(--ink);margin-bottom:1rem;padding-bottom:.75rem;border-bottom:1px solid var(--border)}
+.toc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:.1rem 2rem}
+.toc-grid a{font-size:13.5px;color:var(--ink2);display:flex;align-items:baseline;gap:7px;padding:4px 0;transition:color .15s}
+.toc-grid a:hover{color:var(--accent);text-decoration:none}
+.tn{color:var(--subtle);font-size:11px;min-width:18px}
 
-.cost-block{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:26px 30px;margin:24px 0}
-.cost-block h3{margin-top:0;margin-bottom:16px}
-.cost-row{display:flex;justify-content:space-between;align-items:center;padding:9px 0;border-bottom:1px solid var(--border);font-size:15px}
-.cost-row:last-of-type{border-bottom:none}
-.cost-row .label{color:var(--text-muted)}
-.cost-row .value{font-family:var(--font-display);font-weight:700;color:#0a2540}
-.cost-row.total{padding-top:16px;border-top:1px solid var(--border-accent);border-bottom:none;margin-top:6px}
-.cost-row.total .label{color:var(--text);font-weight:600}
-.cost-row.total .value{color:var(--accent);font-size:18px}
-.cost-note{font-size:13px;color:var(--text-muted);margin-top:14px}
+/* Sections */
+.section{padding:3.5rem 0 2rem}
+.section+.section{border-top:1px solid var(--border)}
+h2.st{font-family:'Plus Jakarta Sans', sans-serif;font-weight:800;font-size:clamp(1.5rem,3vw,2.1rem);color:var(--ink);margin-bottom:.4rem;letter-spacing:-.03em;line-height:1.2}
+.ss{font-size:15px;color:var(--muted);margin-bottom:2rem;line-height:1.5}
+h3{font-size:1.05rem;font-weight:700;color:var(--ink);margin:2rem 0 .65rem;letter-spacing:-.01em}
+h3:first-child{margin-top:0}
+p{margin-bottom:1rem;color:var(--ink2);line-height:1.75}
+p:last-child{margin-bottom:0}
 
-.pitfalls{display:flex;flex-direction:column;gap:12px;margin:24px 0}
-.pitfall{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--red);border-radius:var(--radius);padding:16px 18px}
-.pitfall-flag{font-size:16px;flex-shrink:0}
-.pitfall-text h4{font-family:var(--font-display);font-size:13px;font-weight:700;color:var(--red);margin-bottom:3px}
-.pitfall-text p{font-size:13px;color:var(--text-muted);margin:0;line-height:1.6}
+/* Boxes */
+.box{border-radius:var(--r);padding:1.25rem 1.5rem;margin:1.5rem 0;border-left:3px solid}
+.box.blue{background:var(--accent2-soft);border-color:var(--accent2)}
+.box.orange{background:var(--accent-soft);border-color:var(--accent)}
+.box.green{background:var(--green-soft);border-color:var(--green)}
+.box.amber{background:var(--amber-soft);border-color:var(--amber)}
+.box.red{background:var(--red-soft);border-color:var(--red)}
+.box p{font-size:14px;color:var(--ink2);margin-bottom:.5rem}
+.box p:last-child{margin-bottom:0}
+.box strong{color:var(--ink);font-weight:600}
 
-.faq-list{margin:24px 0}
-.faq-item{border:1px solid var(--border);border-radius:var(--radius);margin-bottom:8px;overflow:hidden;transition:border-color .2s}
-.faq-item:hover{border-color:var(--border-accent)}
-.faq-q{width:100%;background:var(--surface);border:none;padding:16px 20px;text-align:left;display:flex;justify-content:space-between;align-items:center;gap:14px;cursor:pointer;color:#0a2540;font-family:var(--font-display);font-size:14px;font-weight:600;line-height:1.4}
-.faq-q:hover{background:var(--surface2)}
-.faq-arrow{font-size:18px;color:var(--accent);flex-shrink:0;transition:transform .3s}
-.faq-item.open .faq-arrow{transform:rotate(45deg)}
-.faq-a{display:none;padding:0 20px 16px;background:var(--surface);font-size:14px;color:var(--text-muted);line-height:1.75}
-.faq-item.open .faq-a{display:block}
+/* Segment cards for documents */
+.seg-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+.sc { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r); padding: 1.5rem; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); display: flex; flex-direction: column; }
+.sc:hover { border-color: var(--accent); transform: translateY(-4px); box-shadow: 0 12px 40px rgba(0,0,0,0.05); }
+.sc .si { font-size: 2.2rem; margin-bottom: 0.75rem; display: block; }
+.sc .stitle { font-size: 1.05rem; font-weight: 800; color: var(--ink); margin-bottom: 0.75rem; border-bottom: 2px solid var(--accent-soft); padding-bottom: 0.25rem; align-self: flex-start; }
+.sc ul { list-style: none; padding: 0 !important; margin: 0 !important; }
+.sc ul li { font-size: 13px; color: var(--ink2); padding: 5px 0; display: flex; align-items: baseline; gap: 8px; border-bottom: 1px solid #f6f5f3; line-height: 1.4; }
+.sc ul li:last-child { border-bottom: none; }
+.sc ul li::before { content: "→"; color: var(--accent); font-weight: 800; font-size: 11px; }
 
-.related-links{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:26px 30px;margin:44px 0}
-.related-title{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px}
-.related-list{list-style:none}
+/* Steps list */
+.steps{margin:1.5rem 0; background:#0a2540; border-radius:12px; padding:2rem !important; color:#fff}
+.step{display:flex;gap:1.25rem;padding:1.25rem 0;border-bottom:1px solid rgba(255,255,255,0.1)}
+.step:last-child{border-bottom:none}
+.snum{width:36px;height:36px;border-radius:50%;background:#80e9ff;color:#0a2540;font-size:14px;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
+.sbody h4{font-size:15px;font-weight:700;color:#fff;margin-bottom:.3rem;margin-top:0}
+.sbody p{font-size:14px;color:rgba(255,255,255,0.7);margin:0;line-height:1.6}
+
+/* Tables */
+.tw{overflow-x:auto;margin:1.5rem 0;border:1px solid var(--border);border-radius:var(--r)}
+table{width:100%;border-collapse:collapse;font-size:14px}
+thead{background:var(--surface2)}
+th{font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);padding:11px 14px;text-align:left;white-space:nowrap;border-bottom:1px solid var(--border)}
+td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--ink2);vertical-align:middle}
+tr:last-child td{border-bottom:none}
+tr:hover td{background:#faf8f5}
+td.tdn{font-weight:600;color:var(--ink)}
+.check{color:var(--green);font-weight:700}
+.cross{color:var(--red);font-weight:700}
+
+/* Cost Calculator block */
+.calc-box{background:var(--ink);color:#fff;border-radius:var(--r);padding:2rem;margin:1.5rem 0}
+.calc-box h3{color:#fff;font-size:.95rem;margin:0 0 1.25rem;letter-spacing:0;font-weight:700;}
+.cr{display:flex;justify-content:space-between;align-items:center;padding:.45rem 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:14px}
+.cr .lb{color:rgba(255,255,255,.6)}
+.cr .vl{color:#fff;font-weight:500}
+
+/* Pitfalls flag cards */
+.flags-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:.85rem;margin-top:1.25rem}
+.flag-card{background:var(--red-soft);border:1px solid #f0cac4;border-radius:var(--r);padding:1.1rem 1.3rem;display:flex;gap:.75rem;align-items:flex-start}
+.fi2{font-size:1.3rem;flex-shrink:0;margin-top:.1rem}
+.ftitle{font-size:14px;font-weight:700;color:var(--red);margin-bottom:.3rem}
+.fdesc{font-size:13px;color:#6a2020;line-height:1.5}
+
+/* FAQ */
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-item:last-child{border-bottom:none}
+.faq-q{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;cursor:pointer;gap:1rem;font-size:15px;font-weight:600;color:var(--ink);transition:color .15s;user-select:none}
+.faq-q:hover{color:var(--accent)}
+.faq-icon{color:var(--subtle);font-size:20px;flex-shrink:0;transition:transform .3s;font-weight:300;line-height:1}
+.faq-item.open .faq-a{max-height:600px;padding-bottom:1rem;display:block}
+.faq-item.open .faq-icon{transform:rotate(45deg);color:var(--accent)}
+.faq-a{display:none;font-size:14px;color:var(--ink2);line-height:1.75}
+
+/* CTA styling */
+.cta-block{background:var(--ink);color:#fff;border-radius:var(--r);padding:3.5rem 2rem;text-align:center;margin:3rem 0;box-shadow: 0 10px 40px rgba(0,0,0,0.15);}
+.cta-block h2{font-family:'Plus Jakarta Sans', sans-serif;font-weight:800;color:#fff;font-size:clamp(1.4rem,3vw,2rem);margin-bottom:.75rem;letter-spacing:-.03em;}
+.cta-block p{color:rgba(255,255,255,.6);font-size:15px;max-width:460px;margin:0 auto 1.75rem}
+.cta-btn{display:inline-block;background:var(--accent);color:#fff;font-size:15px;font-weight:600;padding:14px 32px;border-radius:9999px;transition:opacity .2s;text-decoration:none}
+.cta-btn:hover{opacity:.85;text-decoration:none;color:#fff}
+.cta-sub{display:flex;justify-content:center;gap:1.5rem;margin-top:1.25rem;flex-wrap:wrap}
+.cta-sub span{font-size:12.5px;color:rgba(255,255,255,.45);display:flex;align-items:center;gap:5px}
+
+.author-line{display:flex;align-items:center;gap:12px;padding:2.22rem 0;border-top:1px solid var(--border);margin-top:40px}
+.author-avatar{width:40px;height:40px;background:var(--accent-soft);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Plus Jakarta Sans',sans-serif;font-weight:800;color:var(--accent);font-size:13px;flex-shrink:0}
+.author-info{font-size:13px}
+.author-info strong{display:block;color:var(--ink);font-weight:700}
+.author-info span{color:var(--muted)}
+.author-info a{color:var(--accent)}
+
+.related-links{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:1.75rem 2rem;margin:3rem 0}
+.related-title{font-family:'Plus Jakarta Sans', sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.related-list{list-style:none;padding:0 !important;margin:0 !important}
 .related-list li{border-bottom:1px solid var(--border)}
 .related-list li:last-child{border-bottom:none}
-.related-list a{display:flex;justify-content:space-between;align-items:center;padding:12px 0;color:var(--text);font-size:14px;transition:color .2s;text-decoration:none}
+.related-list a{display:flex;justify-content:space-between;align-items:center;padding:12px 0;color:var(--ink2);font-size:14px;transition:color .2s;text-decoration:none}
 .related-list a:hover{color:var(--accent)}
 .related-list a::after{content:'→';color:var(--accent);font-size:15px}
 
-.cta-block{background:linear-gradient(135deg,#0a2540 0%,#635bff 100%);border-radius:var(--radius-lg);padding:48px 40px;text-align:center;margin:52px 0 0;position:relative;overflow:hidden;color:#fff}
-.cta-block::before{content:'';position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:300px;height:300px;background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 70%);pointer-events:none}
-.cta-block h2{font-size:clamp(22px,3vw,30px);margin-bottom:12px;position:relative;color:#fff}
-.cta-block p{color:rgba(255,255,255,0.8);font-size:16px;max-width:460px;margin:0 auto 28px;position:relative}
-.cta-btn{display:inline-block;background:#fff;color:#635bff;font-family:var(--font-display);font-weight:700;font-size:15px;padding:14px 30px;border-radius:10px;text-decoration:none;transition:opacity .2s,transform .2s;position:relative}
-.cta-btn:hover{opacity:.95;transform:translateY(-1px);text-decoration:none;color:#635bff}
-.cta-perks{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:22px;font-size:13px;color:rgba(255,255,255,0.7);position:relative}
-.cta-perk::before{content:'✓';color:#fff;font-weight:700;margin-right:4px}
-
-.author-line{display:flex;align-items:center;gap:12px;padding:22px 0;border-top:1px solid var(--border);margin-top:60px}
-.author-avatar{width:40px;height:40px;background:var(--accent-dim);border:1px solid var(--border-accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-weight:800;color:var(--accent);font-size:13px;flex-shrink:0}
-.author-info{font-size:13px}
-.author-info strong{display:block;color:#0a2540;font-weight:600}
-.author-info span{color:var(--text-muted)}
-.author-info a{color:var(--accent)}
-
-.sidebar{padding-top:80px}
-.sidebar-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:22px;position:sticky;top:100px}
-.sidebar-card h4{font-family:var(--font-display);font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px}
-.sidebar-toc{list-style:none}
-.sidebar-toc li{border-bottom:1px solid var(--border)}
-.sidebar-toc li:last-child{border-bottom:none}
-.sidebar-toc a{display:block;padding:8px 0;font-size:12.5px;color:var(--text-muted);text-decoration:none;transition:color .2s}
-.sidebar-toc a:hover,.sidebar-toc a.active{color:var(--accent)}
-.sidebar-cta{display:block;background:var(--accent);color:#fff;font-family:var(--font-display);font-weight:700;font-size:13px;padding:11px 14px;border-radius:8px;text-align:center;text-decoration:none;transition:opacity .2s;margin-top:14px}
-.sidebar-cta:hover{opacity:.9;text-decoration:none;color:#fff}
+@media(max-width:900px){.page-wrap{grid-template-columns:1fr}.sidebar{display:none}}
 </style>
 </head>
 <body>
+
+  <!-- ===== Progress bar ===== -->
+  <div id="pb"></div>
 
   <!-- ===== HEADER ===== -->
   <header class="header header--scrolled" id="header" data-keep-scrolled="true">
@@ -225,328 +294,439 @@ a:hover{text-decoration:underline}
     </nav>
   </header>
 
-<div class="container container-padding">
-  <div class="hero">
-    <div class="breadcrumb" aria-label="breadcrumb">
-      <a href="/index.html">Головна</a><span>&nbsp;›&nbsp;</span>
-      <a href="/blog/index.html">Блог</a><span>&nbsp;›&nbsp;</span>
-      <a href="/rent-in-warsaw-guide-2026.html">Оренда квартир у Варшаві</a><span>&nbsp;›&nbsp;</span>
-      <span>Як орендувати квартиру іноземцю</span>
-    </div>
+<div id="main-content">
+
+  <div class="g-hero">
+    <span class="hero-tag">Покроковий гід · 2026</span>
+    <h1>Як орендувати квартиру<br><em>іноземцю</em> у Варшаві</h1>
+    <p class="hero-lead">Орендувати квартиру іноземцю у Варшаві — реально, навіть без польської мови та PESEL. Але є кілька підводних каменів, які коштують людям тижні часу і тисячі злотих. <strong>Цей гід проведе вас від першого оголошення до ключів у руці</strong> — з усіма документами, юридичними нюансами та реальними цифрами 2026 року.</p>
     
-    <div style="margin-top: 40px;">
-      <div class="hero-badge">Покроковий гід · 2026</div>
-      <h1>Як орендувати квартиру<br><em>іноземцю</em> у Варшаві</h1>
-      <p class="hero-lead">Орендувати квартиру іноземцю у Варшаві — реально, навіть без польської мови та PESEL. Але є кілька підводних каменів, які коштують людям тижні часу і тисячі злотих. <strong>Цей гід проведе вас від першого оголошення до ключів у руці</strong> — з усіма документами, юридичними нюансами та реальними цифрами 2026 року.</p>
-      <div class="hero-meta">
-        <span>📅 Опубліковано: 1 травня 2026</span>
-        <span>🔄 Оновлено: 17 травня 2026</span>
-        <span>✍️ <a href="/index.html#about">Команда STAYX</a></span>
-        <span>⏱ Читати: ~9 хв</span>
-      </div>
-    </div>
-    
-    <div class="stats-row">
-      <div class="stat-box"><div class="stat-num">2,5 млн</div><div class="stat-label">іноземців у Польщі</div></div>
-      <div class="stat-box"><div class="stat-num">~90%</div><div class="stat-label">ринку — Najem Okazjonalny</div></div>
-      <div class="stat-box"><div class="stat-num">480–750</div><div class="stat-label">PLN нотаріальний акт</div></div>
-      <div class="stat-box"><div class="stat-num">14 днів</div><div class="stat-label">реєстрація в US</div></div>
+    <div class="hero-stats">
+      <div class="hero-stat"><div class="hs-n">2,5 млн</div><div class="hs-l">іноземців у РП</div></div>
+      <div class="hero-stat"><div class="hs-n">~90%</div><div class="hs-l">Najem Okazjonalny</div></div>
+      <div class="hero-stat"><div class="hs-n">480 PLN</div><div class="hs-l">нотаріус від</div></div>
+      <div class="hero-stat"><div class="hs-n">2026</div><div class="hs-l">актуально</div></div>
     </div>
   </div>
 
-  <div class="page-wrapper">
-    <article class="article-body">
+  <hr class="hdiv">
 
-    <div class="toc">
-      <div class="toc-title">Зміст статті</div>
-      <ol>
-        <li><a href="#before-search">Що знати перед пошуком</a></li>
-        <li><a href="#documents">Які документи потрібні</a></li>
-        <li><a href="#steps">Покроковий процес оренди</a></li>
-        <li><a href="#najem">Najem Okazjonalny: нюанси для іноземця</a></li>
-        <li><a href="#lokal">Lokal zastępczy: головна перешкода</a></li>
-        <li><a href="#no-pesel">Оренда без PESEL: що реально</a></li>
-        <li><a href="#costs">Скільки коштує «вхідний квиток»</a></li>
-        <li><a href="#pitfalls">Підводні камені для іноземців</a></li>
-        <li><a href="#faq">FAQ</a></li>
-      </ol>
-    </div>
+  <div class="page-wrap">
+    
+    <aside class="sidebar">
+      <h3>Зміст</h3>
+      <a href="#before-search" class="active"><span class="sn">01</span>Базові правила</a>
+      <a href="#documents"><span class="sn">02</span>Документи</a>
+      <a href="#steps"><span class="sn">03</span>Алгоритм</a>
+      <a href="#najem"><span class="sn">04</span>Юридика</a>
+      <a href="#lokal"><span class="sn">05</span>Lokal zastępczy</a>
+      <a href="#no-pesel"><span class="sn">06</span>Без PESEL</a>
+      <a href="#costs"><span class="sn">07</span>Вхідний квиток</a>
+      <a href="#pitfalls"><span class="sn">08</span>Підводні камені</a>
+      <a href="#faq"><span class="sn">09</span>FAQ</a>
+    </aside>
 
-    <!-- 01 -->
-    <section class="section" id="before-search">
-      <span class="section-label">01 · Базові правила</span>
-      <h2>Що потрібно знати до початку пошуку</h2>
-      <p>Польський ринок оренди у 2026 році не ставить юридичних бар'єрів для іноземців. <strong>Громадянство не впливає на право орендувати квартиру</strong> — Цивільний кодекс і Закон про охорону прав мешканців однаково стосуються всіх. Але практика відрізняється від закону.</p>
-      <p>Частина власників опасається «чужоземців» через страх мовних непорозумінь і різне розуміння правил. Ваше завдання — прийти підготованим і розвіяти ці страхи вже на етапі першого повідомлення.</p>
-      <div class="two-col">
-        <div class="col-card" style="border-top:3px solid var(--accent)">
-          <h4>✓ Ваші права як орендаря</h4>
-          <ul>
-            <li>Укладати договір оренди на підставі закордонного паспорта</li>
-            <li>Зареєструватися (meldunek) без дозволу власника</li>
-            <li>Отримати PESEL після meldunek</li>
-            <li>Вимагати повернення kaucji протягом 30 днів</li>
-            <li>Власник не може зайти без попередження (мін. 24 год)</li>
-          </ul>
-        </div>
-        <div class="col-card" style="border-top:3px solid var(--red)">
-          <h4>✗ Що ускладнює пошук</h4>
-          <ul>
-            <li>Відсутність польської мережі контактів</li>
-            <li>Без PESEL деякі власники відмовляють (незаконно, але факт)</li>
-            <li>Lokal zastępczy для Najem Okazjonalny — потрібна польська адреса</li>
-            <li>Нотаріальний акт без перекладача неможливий</li>
-            <li>Деякі банки відкривають рахунок тільки з PESEL</li>
-          </ul>
+    <main class="main">
+
+      <div class="breadcrumb" style="margin-bottom: 2rem; font-size: 13px;">
+        <a href="/index.html">Головна</a><span>&nbsp;›&nbsp;</span>
+        <a href="/blog/index.html">Блог</a><span>&nbsp;›&nbsp;</span>
+        <a href="/rent-in-warsaw-guide-2026.html">Оренда квартир у Варшаві</a><span>&nbsp;›&nbsp;</span>
+        <span style="color: var(--muted)">Як орендувати квартиру іноземцю</span>
+      </div>
+
+      <div class="toc-card">
+        <h2>Зміст статті</h2>
+        <div class="toc-grid">
+          <a href="#before-search"><span class="tn">01</span>Що знати перед пошуком</a>
+          <a href="#documents"><span class="tn">02</span>Які документи потрібні</a>
+          <a href="#steps"><span class="tn">03</span>Покроковий процес оренди</a>
+          <a href="#najem"><span class="tn">04</span>Najem Okazjonalny</a>
+          <a href="#lokal"><span class="tn">05</span>Lokal zastępczy</a>
+          <a href="#no-pesel"><span class="tn">06</span>Оренда без PESEL</a>
+          <a href="#costs"><span class="tn">07</span>Скільки коштує «вхідний квиток»</a>
+          <a href="#pitfalls"><span class="tn">08</span>Підводні камені для іноземців</a>
+          <a href="#faq"><span class="tn">09</span>FAQ</a>
         </div>
       </div>
-      <p>Хороша новина: всі ці перешкоди вирішуються. Потрібно знати алгоритм — або мати агента, який знає його за вас.</p>
-    </section>
 
-    <!-- 02 -->
-    <section class="section" id="documents">
-      <span class="section-label">02 · Документи</span>
-      <h2>Які документи потрібні іноземцю для оренди</h2>
-      <p>Польське законодавство не встановлює закритого переліку документів для орендаря-іноземця. На практиці власники вимагають різне. Ось реальний набір, з яким ви закриєте 95% ситуацій.</p>
-      <div class="docs-grid">
-        <div class="doc-card">
-          <div class="doc-icon">🛂</div>
-          <div><h4>Закордонний паспорт</h4><p>Основний і достатній документ. Власник не може вимагати більше для укладення договору.</p><span class="doc-required">Обов'язково</span></div>
+      <!-- 01 -->
+      <section class="section" id="before-search">
+        <h2 class="st">01 · Що потрібно знати до початку пошуку</h2>
+        <p class="ss">Громадянство не впливає на ваше законне право орендувати житло в Польщі — Цивільний кодекс однаково стосується всіх.</p>
+        <p>Польський ринок оренди у 2026 році не ставить юридичних бар'єрів для іноземців. Проте частина власників опасається «чужоземців» через страх мовних непорозумінь і різне розуміння правил. Ваше завдання — прийти підготованим і розвіяти ці страхи вже на етапі першого повідомлення.</p>
+        
+        <div class="box green">
+          <p><strong>✓ Ваші права як орендаря:</strong></p>
+          <p>• Укладати договір оренди на підставі закордонного паспорта</p>
+          <p>• Зареєструватися (meldunek) без окремого дозволу власника</p>
+          <p>• Отримати PESEL після оформлення meldunek</p>
+          <p>• Вимагати повернення депозиту (kaucji) протягом 30 днів</p>
+          <p>• Власник не може заходити в житло без вашого попередження (мін. 24 год)</p>
         </div>
-        <div class="doc-card">
-          <div class="doc-icon">📄</div>
-          <div><h4>Підтвердження доходів</h4><p>Umowa o pracę або виписка рахунку B2B за 3 місяці. Правило ринку: дохід ≥ 3× орендна ставка.</p><span class="doc-required">Обов'язково (де-факто)</span></div>
+        
+        <div class="box red">
+          <p><strong>✗ Що може ускладнити пошук:</strong></p>
+          <p>• Відсутність польської мережі контактів</p>
+          <p>• Відмова деяких власників через відсутність PESEL (це незаконно, але є фактом)</p>
+          <p>• Необхідність надати адресу lokal zastępczy для Najem Okazjonalny</p>
+          <p>• Неможливість оформити нотаріальний акт без присяжного перекладача</p>
+          <p>• Труднощі з відкриттям деяких рахунків у банках без PESEL</p>
         </div>
-        <div class="doc-card">
-          <div class="doc-icon">🏛️</div>
-          <div><h4>Дозвіл на перебування</h4><p>Віза, карта побиту або довідка про тимчасовий захист (для громадян України). Підтверджує легальний статус.</p><span class="doc-required">Обов'язково для не-ЄС</span></div>
+        
+        <p>Хороша новина: всі ці перешкоди легко вирішуються. Потрібно просто знати правильний алгоритм — або доручити це STAYX.</p>
+      </section>
+
+      <!-- 02 -->
+      <section class="section" id="documents">
+        <h2 class="st">02 · Які документи потрібні іноземцю для оренди</h2>
+        <p class="ss">Польське законодавство не встановлює жорсткого закритого переліку документів для орендаря-іноземця, але на практиці власники вимагають конкретний набір.</p>
+        <p>Для того щоб ваші переговори пройшли успішно, рекомендуємо підготувати наступні документи заздалегідь.</p>
+        
+        <div class="seg-grid">
+          <div class="sc">
+            <span class="si">🛂</span>
+            <span class="stitle">Закордонний паспорт</span>
+            <ul>
+              <li>Основний документ для укладення</li>
+              <li>Власник не має права просити більше</li>
+              <li><strong>Обов'язково для всіх</strong></li>
+            </ul>
+          </div>
+          <div class="sc">
+            <span class="si">📄</span>
+            <span class="stitle">Підтвердження доходів</span>
+            <ul>
+              <li>Umowa o pracę або виписка B2B за 3 міс</li>
+              <li>Дохід має бути втричі більший за оренду</li>
+              <li><strong>Обов'язково де-факто</strong></li>
+            </ul>
+          </div>
+          <div class="sc">
+            <span class="si">🏛️</span>
+            <span class="stitle">Дозвіл на перебування</span>
+            <ul>
+              <li>Віза, карта побиту чи тимчасовий захист</li>
+              <li>Підтверджує легальний статус у Польщі</li>
+              <li><strong>Обов'язково для не-ЄС</strong></li>
+            </ul>
+          </div>
+          <div class="sc">
+            <span class="si">🔢</span>
+            <span class="stitle">PESEL (за наявності)</span>
+            <ul>
+              <li>Значно підвищує рівень довіри власника</li>
+              <li>Спрощує відкриття рахунків</li>
+              <li><strong>Бажано, але не обов'язково</strong></li>
+            </ul>
+          </div>
+          <div class="sc">
+            <span class="si">🏠</span>
+            <span class="stitle">Адреса zastępczy</span>
+            <ul>
+              <li>Для договору Najem Okazjonalny</li>
+              <li>Згода власника польського житла</li>
+              <li><strong>Обов'язково для нотаріуса</strong></li>
+            </ul>
+          </div>
+          <div class="sc">
+            <span class="si">📩</span>
+            <span class="stitle">Рекомендації</span>
+            <ul>
+              <li>Контакт попереднього власника квартири</li>
+              <li>Повністю знімає будь-які підозри</li>
+              <li><strong>Великий плюс для репутації</strong></li>
+            </ul>
+          </div>
         </div>
-        <div class="doc-card">
-          <div class="doc-icon">🔢</div>
-          <div><h4>PESEL (якщо є)</h4><p>Підвищує довіру власника. Для Najem Okazjonalny не є юридичною вимогою, але полегшує переговори.</p><span class="doc-required doc-optional">Бажано, не обов'язково</span></div>
+
+        <div class="box orange">
+          <p><strong>Порада від STAYX:</strong> Зберіть усі документи в один PDF-файл заздалегідь і надсилайте його власнику ще до перегляду. Це покаже вашу серйозність та організованість.</p>
         </div>
-        <div class="doc-card">
-          <div class="doc-icon">🏠</div>
-          <div><h4>Адреса lokal zastępczy</h4><p>Потрібна для Najem Okazjonalny. Польська адреса, куди ви «переїдете» при розірванні. Детально — в розділі 5.</p><span class="doc-required">Для Najem Okazjonalny</span></div>
+      </section>
+
+      <!-- 03 -->
+      <section class="section" id="steps">
+        <h2 class="st">03 · Покроковий процес оренди для іноземця</h2>
+        <p class="ss">Алгоритм дій від першого кліку по оголошенню до щасливого отримання ключів.</p>
+        
+        <div class="steps">
+          <div class="step">
+            <div class="snum">1</div>
+            <div class="sbody">
+              <h4>Підготуйте портфоліо орендаря</h4>
+              <p>Паспорт + доходи + дозвіл на перебування в одному готовому файлі PDF.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="snum">2</div>
+            <div class="sbody">
+              <h4>Перший контакт: пишіть, а не дзвоніть</h4>
+              <p>Коротке грамотне повідомлення польською або англійською разом з готовим PDF-файлом.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="snum">3</div>
+            <div class="sbody">
+              <h4>Перегляд квартири</h4>
+              <p>Прийдіть вчасно, задавайте технічні питання (czynsz, опалення). Якщо все підходить — пропонуйте завдаток одразу.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="snum">4</div>
+            <div class="sbody">
+              <h4>Перевірте власника через Księga Wieczysta</h4>
+              <p>На офіційному сайті ekw.ms.gov.pl безкоштовно переконайтеся, що орендодавець дійсно є власником.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="snum">5</div>
+            <div class="sbody">
+              <h4>Вирішіть питання lokal zastępczy</h4>
+              <p>Знайдіть адресу знайомого поляка або оформіть юридичну адресу через STAYX до підписання договору.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="snum">6</div>
+            <div class="sbody">
+              <h4>Нотаріальний акт (з перекладачем)</h4>
+              <p>Для оформлення акту Najem Okazjonalny обов'язково залучіть присяжного перекладача, якщо не володієте польською.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="snum">7</div>
+            <div class="sbody">
+              <h4>Підписання договору та передача ключів</h4>
+              <p>Перевірте умови та підпишіть детальний акт прийому-передачі (protokół zdawczo-odbiorczy) з фотографіями.</p>
+            </div>
+          </div>
+          <div class="step">
+            <div class="snum">8</div>
+            <div class="sbody">
+              <h4>Meldunek — реєстрація проживання</h4>
+              <p>Зареєструйтеся в Urząd Dzielnicy на основі договору оренди. Це дозволить отримати PESEL за 15 хвилин.</p>
+            </div>
+          </div>
         </div>
-        <div class="doc-card">
-          <div class="doc-icon">📩</div>
-          <div><h4>Рекомендація попереднього власника</h4><p>Контакт поляка, у якого ви вже орендували. Один дзвінок — і ваша репутація підтверджена.</p><span class="doc-required doc-optional">Великий плюс</span></div>
+      </section>
+
+      <!-- 04 -->
+      <section class="section" id="najem">
+        <h2 class="st">04 · Najem Okazjonalny: що це і чому важливо іноземцю</h2>
+        <p class="ss">Найпопулярніший формат договору в Польщі у 2026 році. Його використовують понад 90% орендодавців для захисту від недобросовісних мешканців.</p>
+        <p>Договір Najem Okazjonalny вимагає від орендаря надання додаткової нотаріальної заяви про добровільне виселення у разі порушення умов договору.</p>
+        
+        <div class="tw">
+          <table>
+            <thead>
+              <tr>
+                <th>Тип договору</th>
+                <th>Нотаріус</th>
+                <th>Захист власника</th>
+                <th>Захист орендаря</th>
+                <th>Поширеність</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tdn">Zwykła umowa najmu</td>
+                <td><span class="cross">✕</span></td>
+                <td>Низький</td>
+                <td style="color: var(--green); font-weight: 600;">Дуже високий</td>
+                <td>Рідкість</td>
+              </tr>
+              <tr>
+                <td class="tdn">Najem Okazjonalny</td>
+                <td><span class="check">✓</span></td>
+                <td style="color: var(--accent); font-weight: 600;">Високий</td>
+                <td>Середній</td>
+                <td style="font-weight: 600;">~90% ринку</td>
+              </tr>
+              <tr>
+                <td class="tdn">Najem Instytucjonalny</td>
+                <td><span class="check">✓</span></td>
+                <td style="color: var(--green); font-weight: 600;">Дуже високий</td>
+                <td style="color: var(--red); font-weight: 600;">Низький</td>
+                <td>PRS-оператори</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-      </div>
-      <div class="info-box">
-        <div class="info-box-icon">💡</div>
-        <p><strong>Порада від STAYX:</strong> Зберіть усі документи в PDF-папці заздалегідь і надсилайте власнику ще до перегляду. Це сигнал «я серйозний кандидат» — і власник не витрачає час на сумніви.</p>
-      </div>
-    </section>
 
-    <!-- 03 -->
-    <section class="section" id="steps">
-      <span class="section-label">03 · Алгоритм</span>
-      <h2>Покроковий процес оренди для іноземця</h2>
-      <p>Процес для іноземця відрізняється від польського в двох місцях: комунікація і нотаріальний крок. Решта — ідентична. Ось повний алгоритм від першого оголошення до ключів.</p>
-      <div class="steps">
-        <div class="step"><div class="step-num">01</div><div class="step-content"><h4>Підготуйте портфоліо орендаря</h4><p>Паспорт + підтвердження доходів + дозвіл на перебування — все в PDF. Якщо є PESEL і рекомендація попереднього власника — додайте. Робиться один раз і використовується на всіх переглядах.</p></div></div>
-        <div class="step"><div class="step-num">02</div><div class="step-content"><h4>Перший контакт: пишіть, не телефонуйте</h4><p>У повідомленні коротко: хто ви, де працюєте, який дохід, коли плануєте заселитися. Повідомлення польською або англійською без граматичних помилок — важливо. Додайте PDF з документами до першого повідомлення.</p></div></div>
-        <div class="step"><div class="step-num">03</div><div class="step-content"><h4>Перегляд квартири</h4><p>Прийдіть вчасно, задавайте технічні питання (czynsz administracyjny, опалення, інтернет). Якщо квартира підходить — запропонуйте завдаток одразу: 500–1 000 PLN залишає квартиру за вами.</p></div></div>
-        <div class="step"><div class="step-num">04</div><div class="step-content"><h4>Перевірте власника через Księga Wieczysta</h4><p>На сайті <strong>ekw.ms.gov.pl</strong> безкоштовно перевірте: чи є власник тим, ким представляється. ПІБ у реєстрі і ПІБ підписанта договору — мають збігатися.</p></div></div>
-        <div class="step"><div class="step-num">05</div><div class="step-content"><h4>Вирішіть питання lokal zastępczy</h4><p>Якщо у вас ще немає польської адреси для Najem Okazjonalny — вирішіть це до підписання. Адреса знайомого поляка, колеги або юридична адреса агенції. Без цього нотаріус не оформує акт.</p></div></div>
-        <div class="step"><div class="step-num">06</div><div class="step-content"><h4>Нотаріальний акт — з перекладачем</h4><p>Якщо ви не розумієте польської — присяжний перекладач при нотаріусі є обов'язковим. Вартість: 300–600 PLN. Запишіться заздалегідь — черги до нотаріусів бувають.</p></div></div>
-        <div class="step"><div class="step-num">07</div><div class="step-content"><h4>Підписання договору і передача ключів</h4><p>Перед підписанням — уважно прочитайте ключові пункти: czynsz, kaucja, умови розірвання (wypowiedzenie). Обов'язково підпишіть протокол стану квартири (protokół zdawczo-odbiorczy) з фото всіх дефектів.</p></div></div>
-        <div class="step"><div class="step-num">08</div><div class="step-content"><h4>Meldunek — реєстрація місця проживання</h4><p>В Urząd Dzielnicy з паспортом і договором. Займає 15–20 хвилин. Не потребує присутності або дозволу власника. Після цього можна отримати PESEL і відкрити польський банківський рахунок.</p></div></div>
-      </div>
-    </section>
-
-    <!-- 04 -->
-    <section class="section" id="najem">
-      <span class="section-label">04 · Юридика</span>
-      <h2>Najem Okazjonalny: що це і чому важливо іноземцю</h2>
-      <p>У 2026 році <strong>близько 90% якісних квартир на варшавському ринку здаються за Najem Okazjonalny</strong> — договором оренди з нотаріальним актом про добровільне виселення. Для власника це захист від «вічних орендарів», для орендаря — стандартний ринковий формат.</p>
-      <table class="najem-table">
-        <thead><tr><th>Тип договору</th><th>Нотаріус</th><th>Захист власника</th><th>Захист орендаря</th><th>Поширеність</th></tr></thead>
-        <tbody>
-          <tr><td>Zwykła umowa najmu</td><td><span class="cross">✗</span></td><td>Низький</td><td>Дуже високий</td><td>Рідкість</td></tr>
-          <tr><td>Najem Okazjonalny</td><td><span class="check">✓</span> (додаток)</td><td>Високий</td><td>Середній</td><td>~90% ринку</td></tr>
-          <tr><td>Najem Instytucjonalny</td><td><span class="check">✓</span></td><td>Дуже високий</td><td>Низький</td><td>PRS-оператори</td></tr>
-        </tbody>
-      </table>
-      <h3>Три документи Najem Okazjonalny</h3>
-      <div class="steps">
-        <div class="step"><div class="step-num">А</div><div class="step-content"><h4>Основний договір найму</h4><p>Сам текст умов: строк, орендна ставка, kaucja, права і обов'язки. Складається в простій письмовій формі — нотаріус не потрібен. Зазвичай на 12 місяців з можливістю продовження.</p></div></div>
-        <div class="step"><div class="step-num">Б</div><div class="step-content"><h4>Нотаріальний акт про добровільне виселення</h4><p>Ви підтверджуєте у нотаріуса готовність покинути квартиру при розірванні договору. Вартість: <strong>480–750 PLN</strong>. Без польської — обов'язковий присяжний перекладач: +300–600 PLN.</p></div></div>
-        <div class="step"><div class="step-num">В</div><div class="step-content"><h4>Декларація lokal zastępczy</h4><p>Адреса, на яку ви «переїдете» після виїзду. Плюс нотаріально завірена згода власника цієї адреси. Саме тут у більшості іноземців виникають складнощі — детально в наступному розділі.</p></div></div>
-      </div>
-      <div class="warn-box">
-        <div style="font-size: 20px; flex-shrink: 0; margin-top: 2px;">⚠️</div>
-        <p><strong>Не підписуйте нотаріальний акт без перекладача</strong>, навіть якщо власник каже «все нормально». Ви підписуєте юридично зобов'язуючий документ. Нотаріус зобов'язаний відмовити без перекладача, якщо сторона не володіє польською.</p>
-      </div>
-    </section>
-
-    <!-- 05 -->
-    <section class="section" id="lokal">
-      <span class="section-label">05 · Ключова перешкода</span>
-      <h2>Lokal zastępczy: головна проблема іноземця і як її вирішити</h2>
-      <p>Це найчастіше питання, з яким звертаються до STAYX. <strong>Lokal zastępczy — польська адреса, куди ви «переїдете» у разі розірвання договору.</strong> Ця адреса не зобов'язана бути вашою власністю і навіть реальним місцем, де ви житимете — це суто юридична вимога.</p>
-      <div class="steps">
-        <div class="step"><div class="step-num">1</div><div class="step-content"><h4>Адреса знайомого поляка або колеги</h4><p>Найпростіший варіант, якщо є. Потрібна нотаріально завірена згода власника цього помешкання. Це займає 15–20 хвилин і ~150–200 PLN за нотаріальне завірення.</p></div></div>
-        <div class="step"><div class="step-num">2</div><div class="step-content"><h4>Адреса роботодавця (для B2B)</h4><p>Деякі роботодавці або клієнти B2B погоджуються надати юридичну адресу. У багатьох компаній це стандартна послуга для іноземних співробітників.</p></div></div>
-        <div class="step"><div class="step-num">3</div><div class="step-content"><h4>Юридична адреса агенції STAYX</h4><p>STAYX надає юридичну адресу як частину послуги супроводу переїзду. Це закриває питання lokal zastępczy повністю — без пошуку знайомих і зайвих клопотів.</p></div></div>
-      </div>
-      <div class="info-box">
-        <div class="info-box-icon">📌</div>
-        <p>Lokal zastępczy <strong>не зобов'язаний бути місцем, де ви реально оселитеся.</strong> Важливо лише: адреса в Польщі і нотаріально завірена згода її власника. Закон не перевіряє, чи дійсно ви туди переїдете.</p>
-      </div>
-    </section>
-
-    <!-- 06 -->
-    <section class="section" id="no-pesel">
-      <span class="section-label">06 · PESEL</span>
-      <h2>Оренда без PESEL: що реально можливо у 2026</h2>
-      <p>Коротка відповідь: <strong>так, без PESEL орендувати квартиру юридично повністю законно.</strong> Польський Цивільний кодекс і Закон про найм не вимагають PESEL для укладення договору — достатньо закордонного паспорта. Відмова власника тільки через відсутність PESEL — його особиста перевага, а не законна вимога.</p>
-      <div class="two-col">
-        <div class="col-card" style="border-top:3px solid var(--accent)">
-          <h4>Без PESEL — можливо</h4>
-          <ul>
-            <li>Підписати будь-який договір оренди</li>
-            <li>Зробити meldunek (реєстрацію місця проживання)</li>
-            <li>Відкрити рахунок у Revolut або Wise</li>
-            <li>Платити оренду банківським переказом</li>
-            <li>Підписати Najem Okazjonalny (паспорт достатній)</li>
-          </ul>
+        <div class="box red">
+          <p><strong>Важливе застереження:</strong> Ніколи не підписуйте нотаріальну заяву, якщо ви не розумієте її змісту. Нотаріус зобов'язаний вимагати присутність присяжного перекладача, якщо ви не володієте польською мовою.</p>
         </div>
-        <div class="col-card" style="border-top:3px solid var(--accent2)">
-          <h4>З PESEL — набагато легше</h4>
-          <ul>
-            <li>Відкрити рахунок у PKO BP, mBank, ING</li>
-            <li>Підключити NFZ (державна медицина)</li>
-            <li>Отримати EKUZ — медичну картку ЄС</li>
-            <li>Реєстрація у ZUS (для ФОП/JDG)</li>
-            <li>Деякі власники надають перевагу з PESEL</li>
-          </ul>
+      </section>
+
+      <!-- 05 -->
+      <section class="section" id="lokal">
+        <h2 class="st">05 · Lokal zastępczy: головна проблема іноземця та як її вирішити</h2>
+        <p class="ss">Найскладніший пункт договору Najem Okazjonalny для людей, які щойно приїхали до Польщі.</p>
+        <p>Lokal zastępczy — це адреса іншого житлового приміщення в Польщі, власник якого дає нотаріальну згоду прийняти вас у разі розірвання договору оренди. Якщо у вас немає знайомих поляків із власним житлом, це стає серйозною перешкодою.</p>
+        
+        <h3>Способи вирішення цієї проблеми:</h3>
+        <p>1. <strong>Адреса знайомих чи родичів:</strong> Найпростіший варіант. Знайомий власник має підписати згоду у нотаріуса (вартість ~150 PLN).</p>
+        <p>2. <strong>Адреса від роботодавця:</strong> Деякі великі IT-компанії та міжнародні корпорації надають такі адреси для релокованих співробітників.</p>
+        <p>3. <strong>Послуга від STAYX:</strong> Ми надаємо офіційну перевірену юридичну адресу для вашого договору Najem Okazjonalny під ключ.</p>
+      </section>
+
+      <!-- 06 -->
+      <section class="section" id="no-pesel">
+        <h2 class="st">06 · Оренда без PESEL: що реально можливо у 2026</h2>
+        <p class="ss">Багато іноземців вважають, що без польського ідентифікаційного номера (PESEL) неможливо орендувати квартиру. Це міф.</p>
+        <p>Цивільний кодекс Польщі дозволяє укладати будь-які договори оренди на основі дійсного закордонного паспорта. PESEL не є обов'язковим реквізитом.</p>
+        
+        <div class="box green">
+          <p><strong>Що можна зробити БЕЗ PESEL:</strong></p>
+          <p>• Укласти договір оренди (навіть Najem Okazjonalny)</p>
+          <p>• Оформити meldunek (прописку) в Urząd Dzielnicy</p>
+          <p>• Відкрити рахунки в необанках (Revolut, Wise)</p>
+          <p>• Здійснювати банківські перекази для оплати оренди</p>
         </div>
-      </div>
-      <h3>Як отримати PESEL якомога швидше</h3>
-      <p>Після підписання договору і meldunek ви маєте всі підстави для отримання PESEL. Громадяни України з тимчасовим захистом (ochrona tymczasowa) мають спрощений порядок — через urząd dzielnicy або gmina. Процес займає від кількох днів до 2 тижнів. Детальніше — у нашій статті <a href="/blog/index.html">PESEL для іноземця у Польщі</a>.</p>
-      <div class="info-box">
-        <div class="info-box-icon">🇺🇦</div>
-        <p><strong>Для громадян України:</strong> якщо у вас є статус tymczasowej ochrony — PESEL можна отримати в спрощеному порядку через urząd dzielnicy навіть до meldunek. Це відкриває доступ до безкоштовного NFZ і більшості банківських послуг.</p>
-      </div>
-    </section>
+        
+        <p>Уже після заселення, на основі підписаного договору оренди, ви робите обов'язковий meldunek, і державні органи автоматично надають вам номер PESEL за 15 хвилин.</p>
+      </section>
 
-    <!-- 07 -->
-    <section class="section" id="costs">
-      <span class="section-label">07 · Фінанси</span>
-      <h2>Скільки коштує «вхідний квиток» для іноземця</h2>
-      <p>Оренда у Варшаві вимагає значних одноразових витрат при заселенні. Для іноземців вони трохи більші за рахунок нотаріальних послуг і перекладача.</p>
-      <div class="cost-block">
-        <h3>Приклад: 2-кімнатна, Mokotów, 55 м², 4 500 PLN/міс</h3>
-        <div class="cost-row"><span class="label">Перший місяць оренди</span><span class="value">4 500 PLN</span></div>
-        <div class="cost-row"><span class="label">Kaucja (депозит, 2 місяці)</span><span class="value">9 000 PLN</span></div>
-        <div class="cost-row"><span class="label">Нотаріальний акт Najem Okazjonalny</span><span class="value">480–750 PLN</span></div>
-        <div class="cost-row"><span class="label">Присяжний перекладач</span><span class="value">300–600 PLN</span></div>
-        <div class="cost-row"><span class="label">Комісія агента (якщо є)</span><span class="value">0–4 500 PLN</span></div>
-        <div class="cost-row total"><span class="label">Разом без агента</span><span class="value">14 280–14 850 PLN</span></div>
-        <p class="cost-note">* Kaucja повертається при виїзді протягом 30 днів. Нотаріальні витрати — разові. Щомісяця ще czynsz administracyjny (700–1 200 PLN) і електрика за лічильником.</p>
+      <!-- 07 -->
+      <section class="section" id="costs">
+        <h2 class="st">07 · Скільки коштує «вхідний квиток» для іноземця</h2>
+        <p class="ss">Варшава вимагає значного стартового капіталу при заселенні. Розглянемо реальні витрати на конкретному прикладі.</p>
+        
+        <div class="calc-box">
+          <h3>Приклад: 2-кімнатна, Mokotów, 55 м², 4 500 PLN/міс</h3>
+          <div class="cr"><span class="lb">Перший місяць оренди</span><span class="vl">4 500 PLN</span></div>
+          <div class="cr"><span class="lb">Kaucja (депозит, 2 місяці)</span><span class="vl">9 000 PLN</span></div>
+          <div class="cr"><span class="lb">Нотаріальний акт Najem Okazjonalny</span><span class="vl">480–750 PLN</span></div>
+          <div class="cr"><span class="lb">Присяжний перекладач</span><span class="vl">300–600 PLN</span></div>
+          <div class="cr"><span class="lb">Комісія агента (якщо є)</span><span class="vl">0–4 500 PLN</span></div>
+          <div class="cr" style="border-top:1px solid rgba(255,255,255,0.2); padding-top:1rem; margin-top:0.5rem; font-size:16px;">
+            <span class="lb" style="color:#fff; font-weight:700;">Разом без агента</span>
+            <span class="vl" style="color:#80e9ff; font-weight:700; font-size:1.2rem;">14 280–14 850 PLN</span>
+          </div>
+          <p style="font-size:12px; color:rgba(255,255,255,0.5); margin-top:1rem;">* Kaucja повертається при виїзді протягом 30 днів. Нотаріальні витрати — разові. Щомісяця ще czynsz administracyjny (700–1 200 PLN) і електрика за лічильником.</p>
+        </div>
+        
+        <p>Для точного розрахунку всіх щомісячних та стартових витрат скористайтеся нашим інтерактивним <a href="/rent-calculator-warsaw.html">Калькулятором оренди Варшави</a>.</p>
+      </section>
+
+      <!-- 08 -->
+      <section class="section" id="pitfalls">
+        <h2 class="st">08 · Підводні камені для іноземців</h2>
+        <p class="ss">Сім найпоширеніших пасток, у які потрапляють іноземні орендарі у Варшаві.</p>
+        
+        <div class="flags-grid">
+          <div class="flag-card">
+            <span class="fi2">🚩</span>
+            <div class="fcontent">
+              <div class="ftitle">«Підпишіть зараз, переклад пізніше»</div>
+              <div class="fdesc">Ніколи не підписуйте документи, яких не розумієте — особливо нотаріальні заяви про виселення.</div>
+            </div>
+          </div>
+          <div class="flag-card">
+            <span class="fi2">🚩</span>
+            <div class="fcontent">
+              <div class="ftitle">Резервація онлайн без огляду</div>
+              <div class="fdesc">Ніколи не надсилайте завдаток, не побачивши квартиру та не перевіривши власника через реєстри.</div>
+            </div>
+          </div>
+          <div class="flag-card">
+            <span class="fi2">🚩</span>
+            <div class="fcontent">
+              <div class="ftitle">Czynsz administracyjny «забули» вказати</div>
+              <div class="fdesc">В оголошенні ціна може бути 3 500 PLN, але czynsz admin додає ще 1 200 PLN щомісяця. Завжди уточнюйте повну вартість.</div>
+            </div>
+          </div>
+          <div class="flag-card">
+            <span class="fi2">🚩</span>
+            <div class="fcontent">
+              <div class="ftitle">Відмова тільки через паспорт</div>
+              <div class="fdesc">Дискримінація за національною ознакою заборонена законами Польщі. Працюйте з тими орендодавцями, які відкриті до діалогу.</div>
+            </div>
+          </div>
+          <div class="flag-card">
+            <span class="fi2">🚩</span>
+            <div class="fcontent">
+              <div class="ftitle">Протокол без опису дефектів</div>
+              <div class="fdesc">Якщо ви не зафіксуєте тріщини чи подряпини при в'їзді, власник спише їх з вашого депозиту при виїзді.</div>
+            </div>
+          </div>
+          <div class="flag-card">
+            <span class="fi2">🚩</span>
+            <div class="fcontent">
+              <div class="ftitle">Суборенда без дозволу</div>
+              <div class="fdesc">Якщо ви знімаєте кімнату в інших орендарів, переконайтеся, що власник дав офіційну згоду на суборенду.</div>
+            </div>
+          </div>
+          <div class="flag-card" style="grid-column: span 2;">
+            <span class="fi2">🚩</span>
+            <div class="fcontent">
+              <div class="ftitle">Заборона прописки (meldunek)</div>
+              <div class="fdesc">Пункт договору, який забороняє реєстрацію місця проживання, є юридично нікчемним. Ви маєте право прописатися.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RELATED -->
+      <div class="related-links">
+        <div class="related-title">Читайте також у нашому блозі</div>
+        <ul class="related-list">
+          <li><a href="/rent-in-warsaw-guide-2026.html">Повний гід з оренди у Варшаві 2026</a></li>
+          <li><a href="/rent-calculator-warsaw.html">Ціни на оренду у Варшаві 2026: актуальні дані</a></li>
+          <li><a href="/blog/rental-contracts-legal.html">Najem Okazjonalny vs звичайний договір</a></li>
+          <li><a href="/blog/index.html">Права орендаря в Польщі: що каже закон</a></li>
+          <li><a href="/blog/index.html">Кауція (depozyt): як повернути 100% при виїзді</a></li>
+        </ul>
       </div>
-      <p>Детальний розрахунок щомісячних витрат — у нашому <a href="/rent-calculator-warsaw.html">калькуляторі оренди</a>.</p>
-    </section>
 
-    <!-- 08 -->
-    <section class="section" id="pitfalls">
-      <span class="section-label">08 · Увага</span>
-      <h2>7 підводних каменів для іноземців</h2>
-      <div class="pitfalls">
-        <div class="pitfall"><div class="pitfall-flag">🚩</div><div class="pitfall-text"><h4>«Підпишіть зараз, переклад пізніше»</h4><p>Ніколи не підписуйте документи, яких не розумієте — особливо нотаріальний акт. Якщо власник поспішає без пояснень, це червоний прапорець.</p></div></div>
-        <div class="pitfall"><div class="pitfall-flag">🚩</div><div class="pitfall-text"><h4>Резервація онлайн без особистого огляду</h4><p>Платіть zadatek тільки після особистого огляду і перевірки власника через Księga Wieczysta. «Власник за кордоном, надішліть 2 000 PLN» — класичне шахрайство.</p></div></div>
-        <div class="pitfall"><div class="pitfall-flag">🚩</div><div class="pitfall-text"><h4>Czynsz administracyjny «не включений»</h4><p>Оголошення показує 3 500 PLN, але czynsz admin ще 1 200 PLN. Реальна вартість: 4 700 PLN. Завжди запитуйте точний розмір і просіть виписки рахунків за рік.</p></div></div>
-        <div class="pitfall"><div class="pitfall-flag">🚩</div><div class="pitfall-text"><h4>Відмова тільки через паспорт</h4><p>Дискримінація за ознакою походження в орендних відносинах — порушення антидискримінаційного законодавства Польщі. Власник з таким ставленням буде проблемним і надалі.</p></div></div>
-        <div class="pitfall"><div class="pitfall-flag">🚩</div><div class="pitfall-text"><h4>Протокол без опису дефектів</h4><p>Фіксуйте кожну подряпину і несправність при підписанні protokółу zdawczo-odbiorczego. Без цього власник може списати старі дефекти на вас при виїзді.</p></div></div>
-        <div class="pitfall"><div class="pitfall-flag">🚩</div><div class="pitfall-text"><h4>Суборенда без перевірки</h4><p>Якщо знімаєте у іншого орендаря — перевірте, чи є в його договорі право на суборенду. Без цього власник може виселити всіх при виявленні.</p></div></div>
-        <div class="pitfall"><div class="pitfall-flag">🚩</div><div class="pitfall-text"><h4>Заборона meldunek у договорі</h4><p>Пункт «bez zameldowania» — юридично нікчемний. Meldunek є вашим законним правом і обов'язком. Власник не може заборонити реєстрацію.</p></div></div>
-      </div>
-    </section>
-
-    <!-- RELATED -->
-    <div class="related-links">
-      <div class="related-title">Читайте також у нашому блозі</div>
-      <ul class="related-list">
-        <li><a href="/rent-in-warsaw-guide-2026.html">Повний гід з оренди у Варшаві 2026</a></li>
-        <li><a href="/rent-calculator-warsaw.html">Ціни на оренду у Варшаві 2026: актуальні дані</a></li>
-        <li><a href="/blog/rental-contracts-legal.html">Najem Okazjonalny vs звичайний договір</a></li>
-        <li><a href="/blog/index.html">Права орендаря в Польщі: що каже закон</a></li>
-        <li><a href="/blog/index.html">Кауція (depozyt): як повернути 100% при виїзді</a></li>
-      </ul>
-    </div>
-
-    <!-- FAQ -->
-    <section class="section" id="faq">
-      <span class="section-label">09 · Питання та відповіді</span>
-      <h2>Часті запитання іноземців про оренду у Варшаві</h2>
-      <div class="faq-list">
+      <!-- FAQ -->
+      <section class="section" id="faq">
+        <h2 class="st">09 · Часті запитання іноземців про оренду у Варшаві</h2>
+        
         <div class="faq-item">
-          <button class="faq-q">Чи можна орендувати квартиру у Варшаві без PESEL?<span class="faq-arrow">+</span></button>
+          <div class="faq-q">Чи можна орендувати квартиру у Варшаві без PESEL?<span class="faq-icon">+</span></div>
           <div class="faq-a">Так. Польське законодавство не вимагає PESEL для підписання договору оренди — достатньо закордонного паспорта. На практиці деякі власники просять PESEL, але це їхня особиста перевага, а не вимога закону. Після підписання договору і meldunek ви зможете отримати PESEL в Urząd Dzielnicy протягом кількох днів.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-q">Що таке lokal zastępczy і де його взяти іноземцю?<span class="faq-arrow">+</span></button>
+          <div class="faq-q">Що таке lokal zastępczy і де його взяти іноземцю?<span class="faq-icon">+</span></div>
           <div class="faq-a">Lokal zastępczy — адреса в Польщі, на яку ви офіційно «переїдете» при розірванні договору Najem Okazjonalny. Вона не зобов'язана бути вашою — підходить адреса знайомого поляка, роботодавця або юридична адреса агенції. STAYX надає юридичну адресу своїм клієнтам як частину послуги.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-q">Чи потрібен перекладач при підписанні нотаріального акту?<span class="faq-arrow">+</span></button>
+          <div class="faq-q">Чи потрібен перекладач при підписанні нотаріального акту?<span class="faq-icon">+</span></div>
           <div class="faq-a">Так, якщо ви не розумієте польської. Нотаріус зобов'язаний відмовити в оформленні акту, якщо сторона не розуміє змісту документа. Вартість присяжного перекладача — 300–600 PLN. Запишіться заздалегідь і узгодьте час із нотаріусом разом.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-q">Скільки коштує «вхідний квиток» для іноземця?<span class="faq-arrow">+</span></button>
+          <div class="faq-q">Скільки коштує «вхідний квиток» для іноземця?<span class="faq-icon">+</span></div>
           <div class="faq-a">Для квартири за 4 500 PLN/міс без агента: перший місяць + kaucja (2 місяці) + нотаріальний акт (480–750 PLN) + перекладач (300–600 PLN) = приблизно 14 280–14 850 PLN одноразово. Kaucja повертається при виїзді протягом 30 днів.</div>
         </div>
         <div class="faq-item">
-          <button class="faq-q">Чи можна орендувати дистанційно, перебуваючи в Україні?<span class="faq-arrow">+</span></button>
+          <div class="faq-q">Чи можна орендувати дистанційно, перебуваючи в Україні?<span class="faq-icon">+</span></div>
           <div class="faq-a">Частково. Попередній договір і завдаток можна оформити дистанційно — через відеодзвінок з власником і банківський переказ. Але підписання основного договору Najem Okazjonalny з нотаріальним актом вимагає особистої присутності. Рекомендуємо: домовитися дистанційно і підписати все в день приїзду.</div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- CTA -->
-    <div class="cta-block">
-      <h2>Знайдемо квартиру замість вас — безпечно</h2>
-      <p>STAYX бере на себе переговори польською, перевірку власника, нотаріальний супровід і надає юридичну адресу для договору.</p>
-      <a href="https://t.me/stayX_pl" class="cta-btn">Отримати варіанти квартир →</a>
-      <div class="cta-perks">
-        <span class="cta-perk">Юридична адреса для договору</span>
-        <span class="cta-perk">Переговори польською</span>
-        <span class="cta-perk">Нотаріальний супровід</span>
-        <span class="cta-perk">Без прихованих комісій</span>
+      <!-- CTA -->
+      <div class="cta-block">
+        <h2>Знайдемо квартиру замість вас — безпечно</h2>
+        <p>STAYX бере на себе переговори польською, перевірку власника, нотаріальний супровід і надає юридичну адресу для договору.</p>
+        <a href="https://t.me/stayX_pl" class="cta-btn">Отримати варіанти квартир →</a>
+        <div class="cta-sub">
+          <span>🔒 Юридична адреса</span>
+          <span>🗣️ Переговори польською</span>
+          <span>📜 Нотаріальний супровід</span>
+        </div>
       </div>
-    </div>
 
-    <div class="author-line">
-      <div class="author-avatar">ST</div>
-      <div class="author-info">
-        <strong>Команда STAYX</strong>
-        <span>Персональний відділ релокації у Варшаві · <a href="/index.html#about">Про нас</a></span>
+      <div class="author-line">
+        <div class="author-avatar">ST</div>
+        <div class="author-info">
+          <strong>Команда STAYX</strong>
+          <span>Персональний відділ релокації у Варшаві · <a href="/index.html#about">Про нас</a></span>
+        </div>
       </div>
-    </div>
 
-    </article>
+    </main>
 
-    <!-- SIDEBAR -->
-    <aside class="sidebar">
-      <div class="sidebar-card">
-        <h4>Зміст</h4>
-        <ul class="sidebar-toc">
-          <li><a href="#before-search">01 · Що знати перед пошуком</a></li>
-          <li><a href="#documents">02 · Документи іноземця</a></li>
-          <li><a href="#steps">03 · Покроковий процес</a></li>
-          <li><a href="#najem">04 · Najem Okazjonalny</a></li>
-          <li><a href="#lokal">05 · Lokal zastępczy</a></li>
-          <li><a href="#no-pesel">06 · Без PESEL</a></li>
-          <li><a href="#costs">07 · Вхідний квиток</a></li>
-          <li><a href="#pitfalls">08 · Підводні камені</a></li>
-          <li><a href="#faq">09 · FAQ</a></li>
-        </ul>
-        <a href="https://t.me/stayX_pl" class="sidebar-cta">Знайти квартиру →</a>
-      </div>
-    </aside>
   </div>
 </div>
 
@@ -568,24 +748,40 @@ a:hover{text-decoration:underline}
   </div>
 </footer>
 
-<script src="../script.js"></script>
 <script>
-document.querySelectorAll('.faq-q').forEach(btn=>{
-  btn.addEventListener('click',()=>{
-    const item=btn.closest('.faq-item');
-    const wasOpen=item.classList.contains('open');
-    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
-    if(!wasOpen)item.classList.add('open');
+// ── Progress bar ──────────────────────────────────────────
+window.addEventListener('scroll', () => {
+  const doc = document.documentElement;
+  const scrollTop = doc.scrollTop || document.body.scrollTop;
+  const scrollHeight = doc.scrollHeight - doc.clientHeight;
+  const pct = scrollHeight > 0 ? (scrollTop / scrollHeight) * 100 : 0;
+  document.getElementById('pb').style.width = pct + '%';
+});
+
+// ── Sidebar active link ────────────────────────────────────
+const sections = document.querySelectorAll('.section[id]');
+const sideLinks = document.querySelectorAll('.sidebar a');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      sideLinks.forEach(l => l.classList.remove('active'));
+      const active = document.querySelector(`.sidebar a[href="#${e.target.id}"]`);
+      if (active) active.classList.add('active');
+    }
+  });
+}, { rootMargin: '-20% 0px -70% 0px' });
+sections.forEach(s => obs.observe(s));
+
+// FAQ accordion logic
+document.querySelectorAll('.faq-q').forEach(q => {
+  q.addEventListener('click', () => {
+    const item = q.parentElement;
+    const wasOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!wasOpen) item.classList.add('open');
   });
 });
-const sections=document.querySelectorAll('section[id]');
-const links=document.querySelectorAll('.sidebar-toc a');
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting)links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));
-  });
-},{rootMargin:'-20% 0px -70% 0px'});
-sections.forEach(s=>obs.observe(s));
 </script>
+<script src="../script.js"></script>
 </body>
 </html>
