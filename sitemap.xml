@@ -40,12 +40,30 @@
   </url>
   <url>
     <loc>https://stayx.pl/blog/index.html</loc>
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://stayx.pl/blog/index.html"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://stayx.pl/en/blog/index.html"/>
     <xhtml:link rel="alternate" hreflang="pl" href="https://stayx.pl/pl/blog/index.html"/>
+  </url>
+  <url>
+    <loc>https://stayx.pl/blog/yak-orenduvaty-kvartiru-inozemntsyu.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stayx.pl/blog/warsaw-districts-guide.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stayx.pl/blog/rental-contracts-legal.html</loc>
+    <lastmod>2026-05-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
   <!-- EN VERSION -->
