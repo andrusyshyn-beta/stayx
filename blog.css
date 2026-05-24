@@ -518,7 +518,7 @@ h2.st {
 }
 
 /* Steps (with dark background) */
-.steps {
+.blog-steps {
   margin: 1.5rem 0;
   background: #0a2540;
   border-radius: 12px;
@@ -526,18 +526,18 @@ h2.st {
   color: #fff;
 }
 
-.step {
+.blog-step {
   display: flex;
   gap: 1.25rem;
   padding: 1.25rem 0;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
-.step:last-child {
+.blog-step:last-child {
   border-bottom: none;
 }
 
-.snum {
+.blog-snum {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -552,7 +552,7 @@ h2.st {
   margin-top: 2px;
 }
 
-.sbody h4 {
+.blog-sbody h4 {
   font-size: 15px;
   font-weight: 700;
   color: #fff;
@@ -560,7 +560,7 @@ h2.st {
   margin-top: 0;
 }
 
-.sbody p {
+.blog-sbody p {
   font-size: 14px;
   color: rgba(255,255,255,0.7);
   margin: 0;
