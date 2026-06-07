@@ -1,0 +1,1701 @@
+[
+  {
+    "name": "Mokotów",
+    "name_uk": "Mokotów",
+    "slug": "wynajem-mokotow-warszawa",
+    "key": "оренда квартири мокотув варшава",
+    "segment": "Premia",
+    "seg_color": "#63d2b4",
+    "metro": "M1 (Wilanowska, Wierzbno, Racławicka, Służew, Ursynów)",
+    "has_metro": true,
+    "price_sqm": "90–140 zł/m²",
+    "price_studio": "3 200–4 800",
+    "price_1br": "3 800–5 800",
+    "price_2br": "4 800–7 000",
+    "price_3br": "7 000–11 000",
+    "avg_rental": "6 676",
+    "avg_sqm_rental": "82",
+    "source": "Domiporta, Investropa, Q1 2026",
+    "hero_desc": "Największa centralna dzielnica Warszawy - 30% powierzchni zielonej, przez M1, od willi Górny po biura Dolny.",
+    "about": [
+      "Mokotów to największa dzielnica Warszawy pod względem liczby mieszkańców i jedna z najbardziej zróżnicowanych. Górny Mokotów (Górny) to wille, ambasady i ciche uliczki z kasztanowymi alejkami, Dolny Mokotów (Dolny) to nowoczesny klaster biurowy Domaniewska, w którym działają IKEA, Samsung, Google. Pomiędzy nimi znajduje się Pole Mokotowskie, ulubiony park warszawiaków.",
+      "Z punktu widzenia wynajmu mieszkań warszawski Mokotów jest jednym z najbardziej konkurencyjnych rynków: popyt konsekwentnie przewyższa podaż, szczególnie w segmencie 2-3 pokojowych mieszkań dla rodzin. Średnia stawka czynszu wynosi 82 ​​zł/m²/miesiąc i jest wyższa od średniej w Warszawie (źródło: Domiporta, 547 ogłoszeń, I kw. 2026).",
+      "Dzielnica przyciąga rodziny (szkoły z rejonizacją, prywatna międzynarodowa), informatyków (biura na Dolnym) oraz obcokrajowców, dla których ważna jest równowaga zieleni i dostępność centrum."
+    ],
+    "location": "Mokotuv położony jest na południe od centrum. Rondo Daszyńskiego – 15 minut metrem, Dworzec Centralny – 20 minut. Graniczy ze Śródmieściem od północy, Wilanowem od wschodu i Ursynowem od południa.",
+    "transport": [
+      "M1: 5 stacji przez (Wilanowska → Służew)",
+      "Tramwaje: 17, 33 — Nowy Świat, Śródmieście",
+      "Autobusy: ponad 150 tras",
+      "Ścieżki rowerowe wzdłuż Puławskiej i Dolin Służewieckiej"
+    ],
+    "key_areas": [
+      "Górny Mokotów — вілли, посольства, тиша",
+      "Dolny Mokotów — офіси Domaniewska, молодіжний дух",
+      "Sadyba — сімейне містечко з приватними будинками",
+      "Sielce — між центром і Мокотовом, дорого й модно"
+    ],
+    "infra": [
+      "Szkoła Podstawowa nr 30, 40+ шкіл у rejonizacji",
+      "Park Pole Mokotowskie — 100 га",
+      "Dolina Służewiecka — ліс у місті",
+      "Galeria Mokotów — 200+ магазинів",
+      "IKEA, Decathlon, Auchan — на Domaniewska"
+    ],
+    "for_whom": [
+      "Rodziny z dziećmi — szkoły, parki, podwórka",
+      "Specjaliści IT — biura Samsunga, Ringier Axel Springer, Google",
+      "Ekspaci — międzynarodowa atmosfera, szkoły anglojęzyczne",
+      "Ci, którzy cenią zieleń nie rezygnując z centrum"
+    ],
+    "pros": [
+      "5 stacji autostrady M1 przez obręb",
+      "30% powierzchni stanowią parki i lasy",
+      "Największy wybór mieszkań różnego typu",
+      "Rozwinięta infrastruktura szkolna i medyczna"
+    ],
+    "cons": [
+      "Bez M2 — trasa poprzeczna przez centrum",
+      "Korki na Puławskiej i Dolnej",
+      "Wyższa cena niż w pomieszczeniach sypialnych",
+      "Dolny Mokotów – hałaśliwy rytm biura"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajęcie mieszkania na Mokotowie w 2026 roku?",
+        "Średnia cena wynajmu na Mokotowie to 82 zł/m²/miesiąc (Domiporta, 547 ogłoszeń, I kw. 2026). Studio: 3200-4800 zł, jednopokojowe: 3800-5800 zł, dwupokojowe: 4800-7000 zł. Górny Mokotów (Górny) jest o 10–15% droższy niż Dolny."
+      ],
+      [
+        "Czy na Mokotowie jest metro?",
+        "Tak, M1 przebiega przez cały Mokotów z 5 stacjami: Wilanowska, Wierzbno, Racławicka, Służew i Ursynów. Centrum oddalone jest o 15-20 minut."
+      ],
+      [
+        "Która dzielnica Mokotowa jest najlepsza dla rodzin?",
+        "Górny Mokotów (Xaveryów, Sadyba, Służewiec) jest najlepszy dla rodzin: więcej zieleni, ciszej, szkoły w zasięgu spaceru. Dolny Mokotów jest lepszy dla informatyków i młodych ludzi."
+      ],
+      [
+        "Ile czasu zajmuje znalezienie mieszkania na Mokotowie?",
+        "Dobre mieszkanie w budżecie 5-7 tys. zł na Mokotowie „kosztuje” 7-14 dni. Obręb jest deficytowy - należy mieć przygotowany pakiet dokumentów i być gotowym do podpisania w ciągu 24-48 godzin."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Ursynów: rodzinne południe",
+        "/blog/ursynow-orenda/"
+      ],
+      [
+        "Porównanie: Mokotuv vs Volya",
+        "/blog/mokotow-vs-wola/"
+      ],
+      [
+        "Ceny wynajmu w Warszawie 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ]
+    ]
+  },
+  {
+    "name": "Śródmieście",
+    "name_uk": "Śródmieście",
+    "slug": "wynajem-srodmiescie-warszawa",
+    "key": "оренда центр варшави",
+    "segment": "Premia",
+    "seg_color": "#63d2b4",
+    "metro": "M1 + M2 (Centrum, Świętokrzyska, Nowy Świat, Rondo ONZ)",
+    "has_metro": true,
+    "price_sqm": "100–150 zł/m²",
+    "price_studio": "3 800–5 200",
+    "price_1br": "4 500–6 500",
+    "price_2br": "6 500–9 500",
+    "price_3br": "9 000–15 000+",
+    "avg_rental": "≈ 7 500",
+    "avg_sqm_rental": "110",
+    "source": "Investropa, Otodom Analytics, Q1 2026",
+    "hero_desc": "Najdroższą i najbardziej dostępną dla pieszych dzielnicą Warszawy jest Stare Miasto, Powiśle, Nowy Świat, drapacze chmur i kulturalne serce stolicy.",
+    "about": [
+      "Wynajem centrum Warszawy to najdroższy segment polskiego rynku najmu, a jednocześnie najwygodniejszy pod względem odległości spaceru od wszystkiego. Śródmieście dzieli się na Północ (dzielnica biznesowa, Rondo ONZ i drapacze chmur Daszyńskiego) i Południe (Powiśle, Nowy Świat, artystyczna Kredytowa).",
+      "Średnia cena wynajmu w centrum Warszawy wynosi 100-150 zł/m²/miesiąc i jest o 20-75% wyższa od średniej w mieście. Dwupokojowy apartament na Powiślu może kosztować 6500-9500 zł, a penthouse z widokiem na Wisłę za ponad 15 000 zł. Wskaźnik pustostanów w dobrych mieszkaniach wynosi tutaj 2–3%: dobra oferta znika w ciągu 5–10 dni.",
+      "Dla kogo? Dla tych, którzy cenią sobie „wszystko na piechotę” i są gotowi zapłacić za adres. Typowy najemca: menadżer wyższego szczebla w międzynarodowej firmie, dyplomata lub lider IT z nieograniczonym budżetem."
+    ],
+    "location": "Geograficzne i biznesowe centrum Warszawy. Graniczy z Wolą od zachodu (Rondo Daszyńskiego), Żoliborzem od północy, Pragą przez Wisłę od wschodu. Z dowolnego punktu dzielnicy do Dworca Głównego (Warszawa Centralna) - pieszo.",
+    "transport": [
+      "M1 + M2: przecięcie na Świętokrzyskiej",
+      "Tramwaje: trasy wzdłuż Marszałkowskiej, Alej Jerozolimskich",
+      "Rowery: Veturilo to najgęstsza sieć stacji",
+      "Pieszo: do większości punktów bez transportu"
+    ],
+    "key_areas": [
+      "Powiśle — найпрестижніший мікрорайон, Wisła та парки",
+      "Nowy Świat / Krakowskie Przedmieście — культурний хребет",
+      "Rondo ONZ — хмарочоси, ділові центри",
+      "Stare Miasto — туристичне, але є довгострокова оренда"
+    ],
+    "infra": [
+      "Wszystkie instytucje культури — BUW, filharmonia, teatry",
+      "Varsovie — топ-ресторани і кав'ярні",
+      "Szpital Dziecięcy, Szpital Czerniakowski",
+      "Shopping: Złote Tarasy, Arkadia (20 хв)"
+    ],
+    "for_whom": [
+      "Menedżerowie wyższego szczebla i kadra kierownicza wyższego szczebla",
+      "Dyplomaci i pracownicy organizacji międzynarodowych",
+      "Liderzy IT i dyrektorzy techniczni bez ograniczeń budżetowych",
+      "Ci, którzy chcą żyć „bez samochodu”, wszędzie mogą chodzić na piechotę"
+    ],
+    "pros": [
+      "M1 + M2 to najlepsze połączenie komunikacyjne w mieście",
+      "Wszystko jest na piechotę: restauracje, kultura, biura",
+      "Prestiżowy warszawski adres",
+      "Powiśle to najpiękniejsza dzielnica nadmorska"
+    ],
+    "cons": [
+      "Najwyższe ceny w Polsce",
+      "Hałas, ruch uliczny, napięcie w mieście 24 godziny na dobę, 7 dni w tygodniu",
+      "Niewiele zieleni i placów zabaw",
+      "Tereny turystyczne w pobliżu Starego Miasta"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajęcie mieszkania w centrum Warszawy 2026?",
+        "Czynsz w centrum Warszawy (Śródmieście) kosztuje 100-150 zł/m²/miesiąc. Studio: 3800-5200 zł, jednopokojowe: 4500-6500 zł, dwupokojowe: 6500-9500 zł. Powiśle to najdroższa dzielnica dzielnicy."
+      ],
+      [
+        "Czy w centrum Warszawy jest metro?",
+        "Tak, w Śródmieściu przecinają się obie linie metra: M1 (Świętokrzyska, Centrum, Ratusz-Arsenal) i M2 (Świętokrzyska, Nowy Świat-Uniwersytet, Rondo ONZ, Rondo Daszyńskiego)."
+      ],
+      [
+        "Która dzielnica centrum Warszawy jest najlepsza do wynajęcia?",
+        "Najbardziej pożądane jest Powiśle: widok na Wisłę, parki, ciszej niż w pozostałych częściach centrum. Nowy Świat to miejsce dla miłośników aktywnego życia kulturalnego. Tańsze są Mirów i Muranów, ale i centrum."
+      ],
+      [
+        "Czy da się znaleźć mieszkanie w centrum Warszawy bez pośrednika?",
+        "Realne, ale trudne: dobre mieszkania w centrum znikają w ciągu 5-10 dni. Bez języka polskiego i bez gotowego pakietu dokumentów praktycznie nie da się konkurować z lokalnymi kandydatami."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Wola: centrum biznesowe w pobliżu",
+        "/blog/wola-orenda/"
+      ],
+      [
+        "Ceny wynajmu Warszawa 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ],
+      [
+        "Dokumenty do wynajęcia",
+        "/blog/dokumenty-dlya-orendy-polshcha/"
+      ]
+    ]
+  },
+  {
+    "name": "Wola",
+    "name_uk": "Wola",
+    "slug": "wynajem-wola-warszawa",
+    "key": "квартира вола варшава оренда",
+    "segment": "Biznes",
+    "seg_color": "#6ab0f5",
+    "metro": "M2 (Rondo Daszyński, Rondo ONZ, Młynów, Księcia Janusza, Płocka, Ulrychów)",
+    "has_metro": true,
+    "price_sqm": "85–115 zł/m²",
+    "price_studio": "3 400–4 800",
+    "price_1br": "4 000–6 000",
+    "price_2br": "5 500–7 500",
+    "price_3br": "7 500–11 000",
+    "avg_rental": "≈ 6 200",
+    "avg_sqm_rental": "95",
+    "source": "Investropa, OnGeo.pl, Q1 2026",
+    "hero_desc": "Canary Wharf w Polsce i najbardziej dynamiczny węzeł biurowy w Warszawie — z rosnącą podażą mieszkań i najlepszym połączeniem M2.",
+    "about": [
+      "Apartament Wola Warsaw to wybór tych, którzy cenią sobie szybki dostęp do biur Rondo Daszyńskiego: to tu mieszczą się siedziby Google, Samsung, Ringier Axel Springer, WeWork i kilkudziesięciu firm IT. Wola to najbardziej przekształcona dzielnica Warszawy w ciągu ostatnich 10 lat: z przemysłowego przedmieścia zmieniła się w drugie biznesowe centrum miasta.",
+      "Lata 2025-2026 przyniosły znaczny napływ nowych nieruchomości mieszkaniowych na Wolę, dając najemcom większą siłę przetargową w porównaniu z latami 2023-2024. Pustostanów jest tu więcej (4–7%) niż na Żoliborzu czy Mokotowie, dlatego właściciele chętniej idą na ustępstwa: rabaty w wysokości 5–8% lub wliczenie czynszu admin.",
+      "Grupą docelową są specjaliści IT oraz młodzi profesjonaliści z firm fintech, medialnych i technologicznych, dla których ważniejsze jest dotarcie do biura niż posiadanie parku."
+    ],
+    "location": "Wola leży bezpośrednio na zachód od Śródmieścia. Rondo Daszyńskiego znajduje się minutę drogi od granicy z centrum. Graniczy z Bemowem od zachodu, Żoliborzem od północy i Ochotą od południa.",
+    "transport": [
+      "M2: 6 stacji na całym odcinku",
+      "Tramwaje: Wolska, Aleja Solidarności",
+      "Autobusy nocne: N22, N26 do centrum",
+      "Ścieżki rowerowe: Aleje Jerozolimskie, Wolska"
+    ],
+    "key_areas": [
+      "Rondo Daszyńskiego — бізнес-серце, хмарочоси",
+      "Mirów / Muranów — частково в межах Woli, доступніше",
+      "Wola Historyczna — старіша забудова, нижча ціна",
+      "Nowe Bemowo (межа) — нові ЖК 2022–2025"
+    ],
+    "infra": [
+      "Google, Samsung, WeWork, Regus — офіси в пішій доступності",
+      "Galeria Wola, Arkadia — торговельні центри",
+      "Park Moczydłowski, Park Szymańskiego",
+      "Szpital Wolski",
+      "WeWork Rondo ONZ, Brain Embassy"
+    ],
+    "for_whom": [
+      "Specjaliści IT i specjaliści firm technologicznych",
+      "Młodzi profesjonaliści bez dzieci",
+      "Ci, którzy chcą codziennie chodzić do biura",
+      "Poszukiwacze funduszu nowej jakości po cenie niższej niż centralna"
+    ],
+    "pros": [
+      "M2 to najszybsza trasa do centrum i na lotnisko",
+      "Najwięcej nowych funduszy czynszowych w latach 2025–2026",
+      "Więcej miejsca na negocjacje (nadwyżka podaży)",
+      "Biura światowych marek w zasięgu spaceru"
+    ],
+    "cons": [
+      "Mniej „żywy” w godzinach niemieszkalnych – czysto biurowy charakter",
+      "Zieleni i parków jest stosunkowo mało",
+      "Część Woli to dziedzictwo przemysłowe, nierówny fundusz",
+      "Większy poziom hałasu tramwajów na Wolskiej"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajem mieszkania na Woli w Warszawie w 2026 roku?",
+        "Czynsz na Woli 2026 — 85–115 zł/m²/miesiąc. Studio: 3400-4800 zł, jednopokojowe: 4000-6000 zł, dwupokojowe: 5500-7500 zł. Ze względu na nadwyżkę nowych mieszkań w latach 2025–2026 właściciele chętniej się targują — realny rabat na poziomie 5–8%."
+      ],
+      [
+        "Czy powinienem wynająć mieszkanie w Vola, jeśli pracuję w innym miejscu?",
+        "Wola jest idealnym miejscem dla osób pracujących w biurach Ronda Daszyńskiego lub centrum. Do pracy na Mokotowie lub Ursynowie najlepsze opcje to Ochota lub Bielany."
+      ],
+      [
+        "Czy w Vola są parki?",
+        "A więc: Park Moczydłowski (10 ha), Park Szymańskiego, Plac Rondo Daszyńskiego. Wola jednak znacznie ustępuje Mokotowi pod względem ilości zieleni – to dzielnica miejska dla tych, którzy transport i biura przedkładają nad naturę."
+      ],
+      [
+        "Wola czy Śródmieście – co jest lepsze?",
+        "Wola jest 15-25% tańsza od centrum z tym samym połączeniem komunikacyjnym M2. Śródmieście — jeśli chcesz „wszystko na piechotę” i adres statusowy. Wola — jeśli ważniejsza jest cena i nowe mieszkania."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Porównanie: Mokotuv vs Volya",
+        "/blog/mokotow-vs-wola/"
+      ],
+      [
+        "Śródmieście: czynsz w centrum",
+        "/blog/srodmiescie-orenda/"
+      ],
+      [
+        "Ceny wynajmu w Warszawie 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ]
+    ]
+  },
+  {
+    "name": "Żoliborz",
+    "name_uk": "Żoliborz",
+    "slug": "wynajem-zoliborz-warszawa",
+    "key": "жолібож варшава оренда",
+    "segment": "Premia",
+    "seg_color": "#63d2b4",
+    "metro": "M1 (Dworzec Gdański, Plac Wilsona, Marymont, Słodowiec, Stare Bielany)",
+    "has_metro": true,
+    "price_sqm": "95–130 zł/m²",
+    "price_studio": "3 500–5 000",
+    "price_1br": "4 200–6 000",
+    "price_2br": "5 500–8 000",
+    "price_3br": "8 000–12 000",
+    "avg_rental": "≈ 6 800",
+    "avg_sqm_rental": "105",
+    "source": "Investropa, Tabelaofert.pl, Q1 2026",
+    "hero_desc": "Najmniejsza i najbardziej prestiżowa dzielnica Warszawy – inteligentna atmosfera, kamienice z lat 30., M1 i chroniczny brak dobrych mieszkań.",
+    "about": [
+      "Żoliboż Warszawa do wynajęcia to najbardziej prestiżowa i najmniejsza z centralnych dzielnic stolicy. Żoliborz słynie z kameralnej, międzywojennej, konstruktywistycznej architektury i reputacji „inteligentnego” warszawskiego adresu. Mieszkali tu znani pisarze, osobistości kultury i dziennikarze – ta atmosfera została zachowana.",
+      "Oferta najmu jest tu chronicznie ograniczona: dobre 2-pokojowe mieszkanie znika w ciągu 7-10 dni. Ceny ustępują jedynie Śródmieściu: 95-130 zł/m²/miesiąc. Roczna dynamika cen uległa spowolnieniu (-1,7% wg Tabelaofert.pl, kwiecień 2026), ale popyt pozostaje wyższy niż podaż.",
+      "Typowy najemca: menadżer wyższego szczebla lub starszy specjalista, rodzina z dziećmi, która ceni sobie spokój i bezpieczeństwo bez oddzielenia od centrum."
+    ],
+    "location": "Żoliborz leży na północ od Śródmieścia, pomiędzy Wisłą (wschód) a Bemowem (zachód). Dworzec Centralny oddalony jest o 20 minut jazdy autostradą M1. Graniczące z Bielanami od północy to spokojniejsza zielona strefa przejściowa.",
+    "transport": [
+      "M1: 5 stacji (Dworzec Gdański → Stare Bielany)",
+      "Tramwaje: Mickiewicza, Jana Kazimierza",
+      "Autobusy: W-Z, Cytadela, Wisłostrada",
+      "Ścieżki rowerowe wzdłuż Wisły — Bulwary Wiślane"
+    ],
+    "key_areas": [
+      "Plac Wilsona — серце Żoliborzа, кав'ярні та ресторани",
+      "Marymont — тихіший, сімейніший, дещо нижча ціна",
+      "Żoliborz Artystyczny — богемна мистецька зона",
+      "Cytadela — набережна та паркова зона"
+    ],
+    "infra": [
+      "Najczęstszy adres ambasadorów i dyrektorów",
+      "Park Żeromskiego, Cytadela — парки",
+      "Szkoły: SP Żoliborz — одні з найвищих рейтингів у Варшаві",
+      "Plac Wilsona — гастрономія, ринок"
+    ],
+    "for_whom": [
+      "Rodziny ceniące bezpieczeństwo i rejonizacja szkoły",
+      "Najwyższa kadra kierownicza i specjaliści wyższego szczebla",
+      "Ludzie kultury i dziennikarze (tradycyjna publiczność)",
+      "Każdy, kto chce cichej opcji centralnej"
+    ],
+    "pros": [
+      "Najbardziej prestiżowy adres „pozacentralny” w Warszawie",
+      "M1 to linia prosta do środka",
+      "Bezpiecznie, cicho, zielono — w centralnej lokalizacji",
+      "Wysoka jakość szkół i medycyny"
+    ],
+    "cons": [
+      "Chroniczny niedobór dostaw",
+      "Cena jest wyższa niż w większości obszarów",
+      "Nowych zasobów jest niewiele – głównie kamienice i stare bloki",
+      "Brak M2 — trasa poprzeczna jest trudniejsza"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajem w Żolibożu w 2026 roku?",
+        "Czynsz na Żoliborzu — 95–130 zł/m²/miesiąc. Studio: 3500-5000 zł, jednopokojowe: 4200-6000 zł, dwupokojowe: 5500-8000 zł. Dzielnica jest drugą najdroższą po Śródmieściu. Źródło: Investropa, Tabelaofert.pl, I kwartał 2026 r."
+      ],
+      [
+        "Jak szybko znaleźć mieszkanie w Żolibożu?",
+        "Dobre mieszkania na Żoliborzu znikają w ciągu 7-10 dni. Zalecane: gotowe portfolio w formacie PDF, dowód dochodów i chęć podpisania w ciągu 24 godzin od recenzji."
+      ],
+      [
+        "Czy Żoliborz nadaje się dla rodzin z dziećmi?",
+        "Tak, to jedna z najlepszych opcji dla rodzin: oceniane szkoły, bezpieczne ulice, Plac Wilsona na spacery, Cytadela. Ale budżet powinien wynosić od 6000 zł/miesiąc na 2-3 pokoje."
+      ],
+      [
+        "Jaka jest różnica między Żoliborzem a Mokotowem?",
+        "Żoliborz jest mniejszy, bardziej kameralny, nieco droższy za m², ale za to z mniejszym wyborem. Mokotów jest większy i bardziej zróżnicowany, ma lepszy zasięg autostrady M1 i więcej do zaoferowania. Oba są świetne dla rodzin."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Bielany: cicha północ",
+        "/blog/bielany-orenda/"
+      ],
+      [
+        "Mokotów: premium południe",
+        "/blog/mokotow-orenda/"
+      ],
+      [
+        "Ceny wynajmu w Warszawie 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ]
+    ]
+  },
+  {
+    "name": "Wilanów",
+    "name_uk": "Wilanów",
+    "slug": "wynajem-wilanow-warszawa",
+    "key": "оренда виланув варшава",
+    "segment": "Premia",
+    "seg_color": "#63d2b4",
+    "metro": "Brak (autobusy E-1, 519, 709)",
+    "has_metro": false,
+    "price_sqm": "95–130 zł/m²",
+    "price_studio": "3 500–5 500",
+    "price_1br": "4 500–6 500",
+    "price_2br": "6 000–10 000",
+    "price_3br": "9 000–14 000",
+    "avg_rental": "≈ 7 200",
+    "avg_sqm_rental": "105",
+    "source": "Investropa, Cushman & Wakefield, Q1 2026",
+    "hero_desc": "Najbardziej prestiżowy adres poza centrum: pałac, rezydencje dyplomatyczne, międzynarodowe szkoły i luksusowe apartamenty - ale bez metra.",
+    "about": [
+      "Wynajem Wilanowa Warszawa to wybór korpusu dyplomatycznego, najwyższej kadry menadżerskiej międzynarodowych korporacji oraz zamożnych rodzin, które cenią sobie elitarne budynki i ciszę. Wilanów kojarzony jest z Pałacem w Wilanowie (polskim Wersalem), rezydencjami dyplomatycznymi i kompleksami mieszkaniowymi premium.",
+      "Mocną stroną są nowe, wysokiej jakości kompleksy mieszkaniowe z parkingiem podziemnym, concierge i ochroną: Miasteczko Wilanów, Nowe Wilanów, luksusowe wille z ogrodami. Słabe - całkowity brak metra. Dojazd autobusem E-1 do centrum zajmuje 30-45 minut, w zależności od natężenia ruchu na ulicy Puławskiej.",
+      "Rozpiętość cenowa jest najszersza w Warszawie: od 6 000 zł za skromne dwupokojowe mieszkanie do 14 000+ zł za willę z ogrodem lub penthouse. Segment luksusowy jest tu najgłębszy spośród wszystkich dzielnic Warszawy."
+    ],
+    "location": "Wilanów to skrajne południe od Warszawy, graniczące z Ursynowem i Konstancinem-Jeziorną. Centrum oddalone jest o 12–15 km. Bez samochodu lub wysokiej jakości usług autobusowych miejsce jest odizolowane.",
+    "transport": [
+      "Autobusy: E-1 (szybkie do Centrum), 519, 709",
+      "Auto: S79 / Puławska — główne arterie",
+      "Korki: Puławska w szczycie — 40–60 min",
+      "Brak metra to podstawowe ograniczenie"
+    ],
+    "key_areas": [
+      "Miasteczko Wilanów — найбільший ЖК-квартал",
+      "Stary Wilanów — тихіший, виллова забудова",
+      "Port Wilanów — елітний квартал над водою",
+      "Powsin — на межі міста, природа"
+    ],
+    "infra": [
+      "Pałac Wilanów — парк, музей, прогулянки",
+      "American School of Warsaw, Montessori School",
+      "Centrum Wilanów — торговий центр",
+      "Szpital Medicover, LuxMed — преміум медицина"
+    ],
+    "for_whom": [
+      "Dyplomaci i menedżerowie najwyższego szczebla TNK",
+      "Rodziny z dziećmi w szkołach międzynarodowych",
+      "Ci, którzy jeżdżą i nie są uzależnieni od metra",
+      "Pary bez dzieci ceniące spokój i luksus"
+    ],
+    "pros": [
+      "Najwyższy standard nowego budownictwa w Warszawie",
+      "Najlepsze szkoły międzynarodowe",
+      "Spokój, bezpieczeństwo, bez miejskiego zgiełku",
+      "Pałac i park znajdują się w odległości krótkiego spaceru"
+    ],
+    "cons": [
+      "Całkowity brak metra - obowiązkowo samochód",
+      "Korki na Puławskiej w godzinach szczytu — do 60 min",
+      "Droższe niż w obszarach centralnych od metra",
+      "Ograniczony wybór w budżecie do 5000 zł"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajem w Wilanów 2026?",
+        "Czynsz w Wilanowie — 95-130 zł/m²/miesiąc. Willa z dwiema sypialniami: 6 000-10 000 zł, willa z trzema sypialniami: 9 000-14 000+. Wilanów to segment premium o najszerszym przedziale cenowym wśród dzielnic Warszawy."
+      ],
+      [
+        "Czy w Wilanowie jest metro?",
+        "Nie. Wilanów nie ma metra. Głównymi środkami transportu są autobusy (szybka linia E-1) i samochody osobowe. Czas do centrum: 30-45 minut bez ruchu, ponad 60 minut na godzinę. szczyt."
+      ],
+      [
+        "Czy Wilanów jest dobry dla rodzin?",
+        "Tak, to jeden z najlepszych obszarów dla rodzin z dziećmi: międzynarodowe szkoły, nowe inwestycje z placami zabaw, bezpieczeństwo. Ale potrzebny jest budżet w wysokości 7 000-8 000 zł miesięcznie na 2-3 pokoje."
+      ],
+      [
+        "Wilanów czy Ursynów – co jest lepsze?",
+        "Wilanów to premium, drożej, bez metra, nowa inwestycja. Ursynów — klasa średnia, M1, taniej, lepiej do pracy w centrum. Dla rodzin bez samochodu — wygrywa Ursynów. Dla zamożnych z samochodem – Wilanów."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Ursynów: przyjazny rodzinom z metrem",
+        "/blog/ursynow-orenda/"
+      ],
+      [
+        "Mokotów: premia z metra",
+        "/blog/mokotow-orenda/"
+      ],
+      [
+        "Ceny wynajmu w Warszawie 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ]
+    ]
+  },
+  {
+    "name": "Ursynów",
+    "name_uk": "Ursynów",
+    "slug": "wynajem-ursynow-warszawa",
+    "key": "урсинув оренда квартири",
+    "segment": "Rodzina",
+    "seg_color": "#f0c060",
+    "metro": "M1 (Imielin, Stokłosy, Ursynów, Kabaty, Natolin, Służew — 6 stacji)",
+    "has_metro": true,
+    "price_sqm": "78–105 zł/m²",
+    "price_studio": "2 800–3 800",
+    "price_1br": "3 400–5 000",
+    "price_2br": "4 200–5 800",
+    "price_3br": "5 500–8 000",
+    "avg_rental": "≈ 4 800",
+    "avg_sqm_rental": "88",
+    "source": "Investropa, Otodom Analytics, Q1 2026",
+    "hero_desc": "Najlepsza „sypialnia rodzinna” w Warszawie: 6 stacji M1, Las Kabacki, oceniane szkoły i cena o 20% niższa niż w centrum.",
+    "about": [
+      "Wynajem mieszkania na Ursynowie to typowy wybór warszawskich rodzin, które chcą jakości życia bez przepłacania za centralny adres. 6 stacji M1 czyni Ursynów jednym z najlepiej skomunikowanych miejsc noclegowych: ze Stokłosu do Centrum – 25 minut metrem.",
+      "Okolica ma opinię „dobrze zorganizowanej sypialni”: w pobliżu znajduje się infrastruktura szkolna, place zabaw, Las Kabacki (300 ha). Zabudowa to głównie bloki mieszkalne z lat 80-tych oraz nowe budynki mieszkalne z lat 2010-tych. Cena wynajmu jest o 20-25% niższa niż na Mokotowie przy porównywalnej dostępności komunikacyjnej.",
+      "Dla kogo: rodziny z dziećmi, młode pary przeprowadzające się z obszarów o mniejszym natężeniu ruchu oraz osoby szukające równowagi pomiędzy ceną i jakością bez kompromisów w metrze."
+    ],
+    "location": "Ursynów to skrajne południe od centralnej części Warszawy. Z terminala Kabaty do centrum - 30 minut. Graniczy z Mokotowem od północy, Wilanowem od wschodu, Mysiadłem i Piasecznie od południa.",
+    "transport": [
+      "M1: 6 stacji (Służew → Kabaty) — pełne pokrycie",
+      "Autobusy: 131, 139, 175 — na Mokotów i do centrum",
+      "Ekspresowy autobus 521 — na lotnisko",
+      "Ścieżki rowerowe: Las Kabaty to doskonała infrastruktura"
+    ],
+    "key_areas": [
+      "Natolin — тихіший, зеленіший, biurowy квартал ЄС",
+      "Stokłosy / Imielin — нові ЖК, молодь",
+      "Kabaty — кінцева M1, природа, сімейно",
+      "Wyczółki — середина, найпопулярніший для оренди"
+    ],
+    "infra": [
+      "Szkoła Podstawowa nr 349 — рейтингова",
+      "Las Kabacki — 300 га лісу, велодоріжки",
+      "Centrum Ursynów, Galeria Ursynów",
+      "Szpital Ursynów, LuxMed"
+    ],
+    "for_whom": [
+      "Rodziny z dziećmi — szkoły, las, place zabaw",
+      "Młode pary szukające równowagi pomiędzy ceną i jakością",
+      "Studenci SGGW (Ursynów - powiat)",
+      "Ci, którzy chcą metra, ale bez dopłaty do centrum"
+    ],
+    "pros": [
+      "6 stacji M1 — najlepsze pokrycie wśród części sypialnych",
+      "Las Kabacki to wyjątkowy obszar przyrodniczy",
+      "20-25% taniej niż Mokotów",
+      "Rozwinięta infrastruktura szkolna i handlowa"
+    ],
+    "cons": [
+      "Głównie bloki z lat 80-tych — mniej wygodne, stary czynsz",
+      "Daleko od biur Woli i Śródmieścia",
+      "Mniej życia kulturalnego i restauracyjnego",
+      "Najdalszy koniec M1 od Lotniska Chopina"
+    ],
+    "faq": [
+      [
+        "Ile wynosi czynsz na Ursynowie w 2026 roku?",
+        "Wynajmij mieszkanie na Ursynowie 2026: 78–105 zł/m²/miesiąc. Studio: 2800-3800 zł, jednopokojowe: 3400-5000 zł, dwupokojowe: 4200-5800 zł. Źródło: Investropa, Otodom Analytics."
+      ],
+      [
+        "Ile czasu zajmuje dojazd z Ursynowa do centrum?",
+        "Na M1: ze Stokłos lub Imielina do Centrum — 20–25 minut. Z Kabat — 28–32 minut. Jest to jeden z najlepszych wskaźników wśród miejsc do spania."
+      ],
+      [
+        "Czy na Ursynowie są dobre szkoły?",
+        "Tak: SP nr 349, SP nr 301, kilka gimnazjów z dobrymi ocenami. Ursynów posiada rozwiniętą sieć szkół i jest popularny wśród rodzin z dziećmi."
+      ],
+      [
+        "Ursynów czy Bielany – co jest lepsze dla rodziny?",
+        "Obydwa są obszarami rodzinnymi z M1. Ursynów ma większy wybór mieszkań, jest las i jest nieco droższy. Bielany są mniejsze, spokojniejsze, nieco bardziej dostępne. Ursynów lepiej nadaje się dla tych, którzy często jeżdżą do centrum."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Mokotów: premia centralna",
+        "/blog/mokotow-orenda/"
+      ],
+      [
+        "Wilanów: apartament bez metra",
+        "/blog/wilanow-orenda/"
+      ],
+      [
+        "Bielany: zielona północ",
+        "/blog/bielany-orenda/"
+      ]
+    ]
+  },
+  {
+    "name": "Praga Południe",
+    "name_uk": "Praga Południe",
+    "slug": "wynajem-praga-poludnie-warszawa",
+    "key": "прага полудне варшава оренда",
+    "segment": "Rodzina",
+    "seg_color": "#f0c060",
+    "metro": "M2 (częściowo: Stadion Narodowy — granica)",
+    "has_metro": false,
+    "price_sqm": "70–105 zł/m²",
+    "price_studio": "2 400–3 500",
+    "price_1br": "3 000–4 500",
+    "price_2br": "3 500–5 000",
+    "price_3br": "4 800–7 000",
+    "avg_rental": "≈ 4 200",
+    "avg_sqm_rental": "82",
+    "source": "Investropa, Otodom Analytics, Q1 2026",
+    "hero_desc": "Urozmaicony prawobrzeżny teren z perełką Saskiej Kępy, nową zabudową wzdłuż M2 i przystępnymi cenami dla rodzin.",
+    "about": [
+      "Praga Południe Warszawa do wynajęcia to jeden z największych i najbardziej zróżnicowanych obszarów stolicy: od eleganckiej Saskiej Kępy z domami z lat 30-tych XX wieku po duże apartamentowce z czasów sowieckich. Dzielnica położona jest na prawym brzegu Wisły i jest tradycyjnie tańsza od lewobrzeżnej, przy porównywalnych połączeniach komunikacyjnych.",
+      "Wyjątkiem jest Saska Kępa: niewielka dzielnica z willami, kameralnymi uliczkami, ambasadami i kawiarniami. Tutaj ceny zbliżają się do Żoliborzy. Pozostała część Pragi Południe jest bardziej robotnicza, ale szybko się unowocześnia dzięki nowym kompleksom mieszkaniowym i bliskości autostrady M2.",
+      "Dla kogo: rodziny z dziećmi poszukujące nowej bazy w niższej cenie, młodzi ludzie chcący prawobrzeżnej alternatywy dla Woli oraz lubiący „autentyczną Warszawę” bez turystycznego połysku."
+    ],
+    "location": "Praga Południe to prawy brzeg Wisły, na południe od Pragi Północ. Przez most Łazienkowski — 10–15 minut na Mokotową. Metro M2 (Stadion Narodowy) znajduje się na granicy z Saską Kępą.",
+    "transport": [
+      "Tramwaje: 9, 24 - przez mosty do Śródmieścia",
+      "Autobusy: 102, 122, 138 — do centrum",
+      "M2 (Stadion Narodowy) — na granicy z Saską Kępą",
+      "Ścieżki rowerowe: Bulwary Wiślane - doskonałe"
+    ],
+    "key_areas": [
+      "Saska Kępa — найдорожче і найпрестижніше",
+      "Gocław — нові ЖК, сімейний мікрорайон",
+      "Kamionek — оновлюється, артистичні простори",
+      "Grochów — доступніше, старий фонд"
+    ],
+    "infra": [
+      "Park Skaryszewski — 58 га",
+      "Stadion Narodowy — поруч",
+      "Galeria Mozaika",
+      "Szpital Praski",
+      "Szkoły: SP nr 81, 231"
+    ],
+    "for_whom": [
+      "Rodziny poszukujące nowego mieszkania w niższej cenie",
+      "Młodzi ludzie, którzy kochają „niekomercyjną” Warszawę",
+      "Kibice Saskiej Kępy - premia za kamerę",
+      "Rowerzyści — Bulwary Wiślane k."
+    ],
+    "pros": [
+      "15–20% taniej niż dzielnice lewobrzeżne",
+      "Saska Kępa — niepowtarzalny klimat lat 30.",
+      "Nowe mieszkania na Gocławiu i Kamionku",
+      "Park Skaryszewski i Bulwary Wiślane"
+    ],
+    "cons": [
+      "Po drugiej stronie rzeki — transport jest wolniejszy na godzinę. szczyt",
+      "Nierówny fundusz: nowe osiedla obok starych bloków",
+      "M2 - tylko na granicy, a nie w centrum obrębu",
+      "Mniej szkół i ośrodków kultury niż po lewej stronie"
+    ],
+    "faq": [
+      [
+        "Ile wynosi czynsz na Pradze Południe w 2026 roku?",
+        "Praga Południe 2026: 70-105 zł/m²/miesiąc. Kawalerka: 2400-3500 zł, dwupokojowa: 3500-5000 zł. Saska Kępa jest droższa (90-120 zł/m²), Grochów i Gocław są tańsze."
+      ],
+      [
+        "Czy na Pradze Południe jest metro?",
+        "M2 (Stadion Narodowy) położony jest na granicy z Saską Kępą. Pozostałą część stacji obsługują tramwaje i autobusy. Do centrum - 15-20 minut tramwajem przez most."
+      ],
+      [
+        "Co wyróżnia Saską Kępę?",
+        "Saska Kępa to warszawska „zmniejszona kopia” Żoliborza: domy z lat 30. XX wieku, ciche uliczki, ambasady, kawiarnie. Ceny są tu o 20-30% wyższe niż na pozostałej części Pragi Południe i sięgają 5-7 000 zł za dwupokojowe mieszkanie."
+      ],
+      [
+        "Praga Południe czy Praga Północ?",
+        "Praga Południe to większa, bardziej różnorodna, Saska Kępa i nowe osiedla. Praga Północ jest mniejsza, bardziej „artystyczna”, z M2 w centrum dzielnicy. Dla rodzin — Praga Południe. Dla młodych ludzi i artystów — Praga Północ."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Praga Północ: artystyczna alternatywa",
+        "/blog/praga-polnich-orenda/"
+      ],
+      [
+        "Ceny wynajmu Warszawa 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ],
+      [
+        "Dokumenty do wynajęcia",
+        "/blog/dokumenty-dlya-orendy-polshcha/"
+      ]
+    ]
+  },
+  {
+    "name": "Bielany",
+    "name_uk": "Bielany",
+    "slug": "wynajem-bielany-warszawa",
+    "key": "білани варшава оренда квартири",
+    "segment": "Rodzina",
+    "seg_color": "#f0c060",
+    "metro": "M1 (Wawrzyszew, Młociny — terminal)",
+    "has_metro": true,
+    "price_sqm": "68–95 zł/m²",
+    "price_studio": "2 200–3 200",
+    "price_1br": "3 000–4 500",
+    "price_2br": "3 500–5 000",
+    "price_3br": "4 800–7 000",
+    "avg_rental": "≈ 4 100",
+    "avg_sqm_rental": "78",
+    "source": "Investropa, Otodom Analytics, Q1 2026",
+    "hero_desc": "Zielona, ​​cicha północ od Warszawy z Lasem Belian, M1 i przystępnymi cenami jest idealna dla rodzin kochających naturę.",
+    "about": [
+      "Wynajem apartamentów Bilany w Warszawie to propozycja dla tych, którzy chcą połączyć dogodną komunikację miejską z niemal wiejską atmosferą. Bielany to najbardziej zielona dzielnica w centralnej części Warszawy: Las Bielański (150 ha), Kampinos na wyciągnięcie ręki.",
+      "M1 obejmuje koniec (Młociny) i środek (Wawrzyszew), zapewniając dojazd do centrum w 25-35 minut. Cena wynajmu jest o 25-30% niższa niż na Żoliborzu przy jednakowym spokoju i jakości powietrza. Dominują bloki z lat 70. i 90. oraz nowe osiedla w pobliżu metra.",
+      "Uniwersytet UKSW (Kardynała Wyszyńskiego) wnosi ducha akademickiego i stabilny popyt na pokoje i małe mieszkania do wynajęcia."
+    ],
+    "location": "Bielany to najdalej na północ od Warszawy, graniczy z Żoliborzem na południu, Bemowem na zachodzie i Łomiankami poza granicami miasta. M1 na Młocinach to główny węzeł autobusowy.",
+    "transport": [
+      "M1: Wawrzyszew i Młociny (finał)",
+      "Autobusy: 136, 181 — do Żoliborza i centrum",
+      "SKM z Młocina na Pragi i poza miasto",
+      "Ścieżki rowerowe do Lasu Bielańskiego"
+    ],
+    "key_areas": [
+      "Młociny — новіший, нові ЖК, М1 кінцева",
+      "Wawrzyszew — старіший, тихіший",
+      "Chomiczówka — найзеленіша частина",
+      "Śródmieście Bielany (межа) — жвавіший"
+    ],
+    "infra": [
+      "Las Bielański — 150 га лісу в місті",
+      "UKSW (Університет ім. Кард. Вишинського)",
+      "Szpital Bielański — обласна лікарня",
+      "Galeria Wola (10 хв автобусом)"
+    ],
+    "for_whom": [
+      "Rodziny ceniące zieleń i ciszę",
+      "Studenci UKSW",
+      "Pary bez dzieci szukające niedrogiego i spokojnego miejsca",
+      "Ci, którzy chcą natury, a jednocześnie metra"
+    ],
+    "pros": [
+      "Najbardziej zieloną dzielnicą Warszawy jest Las Bielski",
+      "25-30% taniej niż Żoliborz",
+      "M1 do centrum — 25–35 minut",
+      "Cisza, bezpieczeństwo, czyste powietrze"
+    ],
+    "cons": [
+      "Głównie stary fundusz blokowy",
+      "Mniej restauracji, barów, miejsc kulturalnych",
+      "Dalej od centrów biurowych Woli i Mokotowa",
+      "Nowa konstrukcja - tylko w pobliżu M1"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajęcie mieszkania w Bilanach w 2026 roku?",
+        "Czynsz na Bielanach: 68-95 zł/m²/miesiąc. Kawalerka: 2200-3200 zł, dwupokojowa: 3500-5000 zł. Najbardziej dostępna z dzielnic od strony M1 w Warszawie."
+      ],
+      [
+        "Ile czasu zajmuje dojazd z Bielan do centrum?",
+        "M1: z Wawrzyszewa do Centrum — 25–30 minut. Z Młocin — 30–35 minut."
+      ],
+      [
+        "Czy Bielany są odpowiednie dla studentów?",
+        "Tak, szczególnie dla studentów UKSW. Ceny pokoi od 1200-1800 zł/miesiąc lub kawalerek od 2200 zł. Dobre połączenie metrem ze wszystkimi uczelniami w centrum."
+      ],
+      [
+        "Bielany czy Ursynów?",
+        "Obydwa są rodzinne, z M1, zielone. Ursynów to większy wybór, bliżej Mokotowa i biur, Las Kabacki jest większy. Na Bielanach jest ciszej, taniej, bliżej Żoliborza. Dla studentów Bielany są lepsze."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Żoliborz: sąsiad premium",
+        "/blog/zoliborz-orenda/"
+      ],
+      [
+        "Ursynów: rodzinne południe",
+        "/blog/ursynow-orenda/"
+      ],
+      [
+        "Bemowo: dostępne wydarzenie",
+        "/blog/bemowo-orenda/"
+      ]
+    ]
+  },
+  {
+    "name": "Ochota",
+    "name_uk": "Ochota",
+    "slug": "wynajem-ochota-warszawa",
+    "key": "охота варшава оренда квартира",
+    "segment": "Biznes",
+    "seg_color": "#6ab0f5",
+    "metro": "Nie (tramwaje, autobusy)",
+    "has_metro": false,
+    "price_sqm": "80–110 zł/m²",
+    "price_studio": "2 700–3 800",
+    "price_1br": "3 500–5 200",
+    "price_2br": "4 000–5 800",
+    "price_3br": "5 500–8 000",
+    "avg_rental": "≈ 4 900",
+    "avg_sqm_rental": "92",
+    "source": "Investropa, OnGeo.pl, Q1 2026",
+    "hero_desc": "Spokojna, zielona okolica pomiędzy centrum a Mokotowem – Uniwersytetem Warszawskim, akademicka atmosfera i najlepszy stosunek ceny do lokalizacji bez metra.",
+    "about": [
+      "Okhota Warszawa wynajmę mieszkanie — złota klasa średnia polskiego rynku wynajmu. Okolice Śródmieścia i Mokotowa tradycyjnie przyciągają środowisko akademickie (Uniwersytet Warszawski, Politechnika), najemców rodzinnych oraz osoby poszukujące cichej, centralnej lokalizacji bez konieczności dopłacania za adres.",
+      "Pomimo braku metra dostępność komunikacyjna jest doskonała: tramwaje i autobusy dojeżdżają do Centrum w 10-15 minut. Cena wynajmu jest przyjemnie niższa niż na Mokotowie przy podobnej lokalizacji i poziomie życia.",
+      "Ochota – akademicki i rodzinny charakter, zielone podwórka, małe parki i szczególna cisza, na którą jest rzut beretem od Alei Jerozolimskich."
+    ],
+    "location": "Ochota leży pomiędzy Śródmieściem (północ), Mokotowem (południe) i Wolą (wschód). Z Alej Jerozolimskich 2 — 15 minut pieszo do Centrum Warszawy.",
+    "transport": [
+      "Tramwaje: 7, 9, 15 - bezpośrednio do Centrum",
+      "Autobusy: 106, 128, 171 — na Mokotów i Woli",
+      "Varsovie Zachodnia to stacja kolejowa niedaleko",
+      "Ścieżki rowerowe wzdłuż Alej Jerozolimskich"
+    ],
+    "key_areas": [
+      "Stara Ochota — передвоєнні кам'яниці, тихо",
+      "Rakowiec — новіший, сімейний",
+      "Szczęśliwice — парк, активний відпочинок",
+      "Filtry — між Ochotою і центром, найближче"
+    ],
+    "infra": [
+      "Politechnika Warszawska (факультети)",
+      "Szpital Dziecięcy, Medicover",
+      "Park Szczęśliwicki — великий міський парк",
+      "Pasta i Basta, ринок Ochoty"
+    ],
+    "for_whom": [
+      "Środowisko akademickie — nauczyciele, absolwenci",
+      "Rodziny ceniące sobie centralną lokalizację",
+      "Chętni między Śródmieściem a Mokotowem w niższej cenie",
+      "Młode małżeństwa z pierwszym mieszkaniem"
+    ],
+    "pros": [
+      "Centralna lokalizacja bez dodatku centralnego",
+      "Cisza, zielone podwórka, akademicka atmosfera",
+      "W pobliżu znajduje się Dworzec Zachodni Chore Warszawa - pociągi",
+      "Dobra dostępność komunikacyjna tramwajami"
+    ],
+    "cons": [
+      "Brak metra to największy minus",
+      "Dominuje stary zasób mieszkaniowy",
+      "Mniej rozwinięta infrastruktura handlowa i restauracyjna",
+      "Alergia na hałas: Aleje Jerozolimskie są głośne"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajem na Ochocie Warszawa?",
+        "Ochota 2026: 80-110 zł/m²/miesiąc. Kawalerka: 2700-3800 zł, dwupokojowa: 4000-5800 zł. 15–20% niższy od Mokotowa przy podobnym centralnym położeniu."
+      ],
+      [
+        "Jak dojechać z Ochoty do centrum bez metra?",
+        "Tramwaje 7 i 9 do Centrum dojeżdżają w 10-15 minut. Autobus 128 — na Mokotów w 10 minut. Aleje Jerozolimskie znajdują się w odległości 5-10 minut spacerem."
+      ],
+      [
+        "Ochota czy Mokotów – co się bardziej opłaca?",
+        "Ochota jest o 15–20% tańsza w podobnej odległości od centrum. Mokotów – metro M1, więcej zieleni i wyższy standard nowego funduszu. Na bardziej budżetową opcję w centrum - Ochota."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Mokotów: sąsiad premium",
+        "/blog/mokotow-orenda/"
+      ],
+      [
+        "Wola: centrum biznesowe w pobliżu",
+        "/blog/wola-orenda/"
+      ],
+      [
+        "Ceny wynajmu w Warszawie 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ]
+    ]
+  },
+  {
+    "name": "Praga Północ",
+    "name_uk": "Praga Północ",
+    "slug": "wynajem-praga-polnoc-warszawa",
+    "key": "прага північ варшава оренда",
+    "segment": "Biznes",
+    "seg_color": "#6ab0f5",
+    "metro": "M2 (Dworzec Wileński, Szwedzka)",
+    "has_metro": true,
+    "price_sqm": "75–105 zł/m²",
+    "price_studio": "2 600–3 800",
+    "price_1br": "3 200–5 000",
+    "price_2br": "3 500–5 500",
+    "price_3br": "5 000–7 500",
+    "avg_rental": "≈ 4 300",
+    "avg_sqm_rental": "85",
+    "source": "Investropa, Otodom Analytics, Q1 2026",
+    "hero_desc": "Najbardziej artystyczna dzielnica Warszawy – gentryfikacja, lofty, galerie sztuki, M2 i niższa cena za prawobrzeżną lokalizację.",
+    "about": [
+      "Wynajem Praga Północ Warszawa to warszawski Kreuzberg: dzielnica, która zmienia się na Twoich oczach. Budynki przemysłowe stają się loftami i przestrzeniami artystycznymi, stare kamienice są odnawiane, niezależne kawiarnie i galerie wypełniają pierwsze piętra. Praga Północ to najbardziej dynamiczna dzielnica miasta pod względem rozwoju kulturalnego.",
+      "M2 (Dworzec Wileński, Szwedzka) zapewnia doskonałe połączenie z centrum i Wolą w 10-15 minut. Cena wynajmu jest o 20-30% niższa niż w Śródmieściu w tej samej odległości od centrum. Ale okolica jest nierówna: obok eleganckiego loftu może stać dom z problemami.",
+      "Typowy najemca roku 2026: młody profesjonalista z branży kreatywnej, projektant, dziennikarz czy informatyk, który ceni atmosferę i cenę, ale nie potrzebuje rodzinnego komfortu."
+    ],
+    "location": "Praga Północ to prawy brzeg Wisły, naprzeciwko Śródmieścia. Przez Most Gdański lub M2 — 10 minut do centrum.",
+    "transport": [
+      "M2: Dworzec Wileński i Szwedzka",
+      "Tramwaje: 4, 23 — przez mosty do centrum",
+      "Dworzec Wileński to dworzec kolejowy",
+      "Trasa rowerowa wzdłuż Wisły"
+    ],
+    "key_areas": [
+      "Szmulowizna — найбільш джентрифікований",
+      "Stara Praga — кам'яниці, атмосфера",
+      "Targówek Mieszkaniowy (межа)",
+      "Nowa Praga — нові проєкти"
+    ],
+    "infra": [
+      "Bar Studio, арт-простори Pragi",
+      "Park Praski, Zoo Warszawskie",
+      "Dworzec Wileński — великий транзитний вузол",
+      "Szpital Praski"
+    ],
+    "for_whom": [
+      "Kreatywni eksperci ds. młodzieży i branży kulturalnej",
+      "Specjaliści IT, którzy chcą opcji „nietrywialnej”",
+      "Ci, którzy cenią atmosferę i nie boją się nierównego podłoża",
+      "Inwestorzy na wczesnym etapie gentryfikacji"
+    ],
+    "pros": [
+      "M2 — 10 minut do centrum",
+      "Wyjątkowa atmosfera, sztuka i kawiarnie",
+      "20–30% taniej niż centrum przy tej samej M2",
+      "Dynamiczna transformacja — obszar rośnie"
+    ],
+    "cons": [
+      "Nierówny fundusz: obok poddasza może pojawić się problematyczny dom",
+      "Część ulic to niedokończona gentryfikacja",
+      "Mniej szkół i infrastruktury rodzinnej",
+      "Postrzeganie bezpieczeństwa jest niższe niż w obszarach centralnych"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajem na Pradze Północ?",
+        "Praga Północ 2026: 75-105 zł/m²/miesiąc. Kawalerka: 2600-3800 zł, dwupokojowa: 3500-5500 zł. Lofty i nowe mieszkania są o 10-20% droższe od rynku dzielnicy."
+      ],
+      [
+        "Czy bezpiecznie jest mieszkać na Pradze Północ?",
+        "Bezpieczeństwo znacznie się poprawiło od 2010 roku. Szmulowizna i Stara Praga w 2026 roku są w miarę wygodne. Zalecamy sprawdzenie konkretnej ulicy i domu."
+      ],
+      [
+        "Praga Północ czy Praga Południe?",
+        "Praga Północ jest mniejsza, bardziej artystyczna, M2 w centrum dzielnicy, niższa cena. Praga Południe jest większa, bardziej rodzinna, Saska Kępa jak perła. Dla młodych ludzi - Północ. Dla rodzin - Południe."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Praga Południe: rodzinna alternatywa",
+        "/blog/praga-poludnie-orenda/"
+      ],
+      [
+        "Targówek: budżet wschód",
+        "/blog/targowek-orenda/"
+      ],
+      [
+        "Ceny wynajmu w Warszawie 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ]
+    ]
+  },
+  {
+    "name": "Bemowo",
+    "name_uk": "Bemowo",
+    "slug": "wynajem-bemowo-warszawa",
+    "key": "бемово варшава оренда квартири",
+    "segment": "Rodzina",
+    "seg_color": "#f0c060",
+    "metro": "M2 (2026 nowych stacji: Łazurowa, Chrzanów, Karolin)",
+    "has_metro": true,
+    "price_sqm": "72–98 zł/m²",
+    "price_studio": "2 400–3 400",
+    "price_1br": "3 000–4 500",
+    "price_2br": "3 800–5 200",
+    "price_3br": "5 000–7 000",
+    "avg_rental": "≈ 4 400",
+    "avg_sqm_rental": "82",
+    "source": "Investropa, Otodom Analytics, Q1 2026",
+    "hero_desc": "Nowe stacje M2 odmienią Bemowo w 2026 roku: nowe mieszkania, rosnące ceny i najlepszy w Warszawie współczynnik „nowe mieszkanie + metro”.",
+    "about": [
+      "Bemovo Warszawa na wynajem to jedna z najbardziej przekształconych dzielnic w 2026 roku. Przedłużenie linii M2 w kierunku zachodnim (nowe stacje Łazurowa, Chrzanów, Karolin) otworzyło Bemowo dla osób poszukujących nowego mieszkania z połączeniem metra w cenie niższej niż na Woli czy Mokotowie.",
+      "Teren jest aktywnie zagospodarowany: nowe osiedla mieszkaniowe 2022-2026 oferują standard podziemnego parkingu, balkony i nowoczesny wystrój. Ceny za m² rosną szybciej niż w większości rejonów – co sprawia, że ​​wynajem tutaj jest atrakcyjną inwestycją dla właścicieli.",
+      "Dla najemców jest to szansa na zdobycie nowego mieszkania niedaleko metra w cenie, która nie została jeszcze „porównana” z obszarami bardziej centralnymi."
+    ],
+    "location": "Bemowo leży na zachód od Warszawy, graniczy z Wolą na wschodzie i Ursusem na zachodzie. Przez środek osiedla przebiega M2 (nowe stacje 2026).",
+    "transport": [
+      "M2: nowe stacje Łazurowa, Chrzanów, Karolin (2026)",
+      "Tramwaje: Połczyńska, Lazurowa",
+      "Autobusy: 116, 178 — do Woli i centrum",
+      "Lotnisko Chopina — 15–20 min"
+    ],
+    "key_areas": [
+      "Nowe Bemowo (центр) — нові ЖК, М2",
+      "Jelonki — старіший, спокійніший",
+      "Chrzanów — новий розвиток поблизу М2",
+      "Lotnisko Bemowo (північ) — промислова межа"
+    ],
+    "infra": [
+      "Nowe Bemowo — школи, дитячі садки нові",
+      "Park Bemowo",
+      "Auchan Bemowo, Focus Mall Wola (5 хв)",
+      "Szpital Wolski (межа Woli)"
+    ],
+    "for_whom": [
+      "Młode rodziny poszukujące nowego funduszu z metra",
+      "Ci, którzy chcą nowe mieszkanie taniej niż Wola",
+      "Ci, którzy często latają - lotnisko znajduje się blisko",
+      "Wynajem jako inwestycja — dzielnica się rozwija"
+    ],
+    "pros": [
+      "M2 (2026 nowych stacji) to zasadniczy przełom",
+      "Nowe mieszkania są o 15-20% tańsze niż Wola",
+      "Lotnisko Chopina - 15-20 minut",
+      "Szybki wzrost jakości infrastruktury"
+    ],
+    "cons": [
+      "Do 2026 r. część obrębu będzie pozbawiona metra",
+      "Mniej rozwinięta infrastruktura kulturalna",
+      "Większość nowego funduszu — układy kompaktowe",
+      "Daleko od biurowców Śródmieścia i Mokotowa"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajem na Bemowie w 2026 roku?",
+        "Bemowo 2026: 72–98 zł/m²/miesiąc. Kawalerka: 2400-3400 zł, dwupokojowa: 3800-5200 zł. Wraz z otwarciem M2 w 2026 roku ceny rosną – zalecamy ustalenie kursu na dłuższy okres."
+      ],
+      [
+        "Kiedy otwarto metro na Bemowie?",
+        "Nowe stacje M2: Łazurowa, Chrzanów i Karolin zostały otwarte w 2026 roku, znacząco zwiększając dostępność komunikacyjną dzielnicy i podnosząc ceny najmu."
+      ],
+      [
+        "Bemowo czy Wola?",
+        "Wola jest bardziej centralna, biura Google/Samsung w odległości spaceru, cena jest wyższa. Bemowo to nowe osiedle mieszkaniowe o spokojniejszym, rodzinnym charakterze, tańsze o 10-15%. Dzięki nowemu M2 różnica w transporcie została zredukowana do minimum."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Wola: centrum biznesowe w pobliżu",
+        "/blog/wola-orenda/"
+      ],
+      [
+        "Bielany: zielona północ",
+        "/blog/bielany-orenda/"
+      ],
+      [
+        "Ceny wynajmu w Warszawie 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ]
+    ]
+  },
+  {
+    "name": "Targówek",
+    "name_uk": "Targówek",
+    "slug": "wynajem-targowek-warszawa",
+    "key": "таргувек варшава оренда",
+    "segment": "Budżet",
+    "seg_color": "#888882",
+    "metro": "M2 (częściowo: Zacisze, Kondratowicza — w planach)",
+    "has_metro": false,
+    "price_sqm": "63–85 zł/m²",
+    "price_studio": "2 200–3 200",
+    "price_1br": "2 800–4 000",
+    "price_2br": "3 200–4 500",
+    "price_3br": "4 200–6 000",
+    "avg_rental": "≈ 3 700",
+    "avg_sqm_rental": "72",
+    "source": "Investropa, Otodom Analytics, Q1 2026",
+    "hero_desc": "Budżetowy obszar prawobrzeżny z potencjałem: stary fundusz, niższa cena i oczekiwana ekspansja M2.",
+    "about": [
+      "Targuvek Warszawa najmu to jeden z najtańszych rejonów prawobrzeża. Okolica tradycyjnie postrzegana jako „klasa robotnicza”: domy z prefabrykatów, stare zasoby, ale stały popyt ze strony osób poszukujących taniego mieszkania w pobliżu M2 (granica Pragi Północ).",
+      "Oczekiwana rozbudowa autostrady M2 (stacje Zacisze i Kondratowicza) zapewni Targówkowi znaczącą przewagę transportową i spowoduje wzrost cen – podobnie jak miało to miejsce w przypadku Bemowa po otwarciu nowych stacji w 2026 roku.",
+      "Dla najemców dysponujących ograniczonym budżetem do 3500 zł za dwupokojowe mieszkanie Targówek jest jedną z niewielu opcji w samym sercu miasta."
+    ],
+    "location": "Targówek to północna część prawego brzegu, granicząca z Pragą Północ (południe) i Białołęką (północ). Tramwaje i autobusy do centrum - 20-30 minut.",
+    "transport": [
+      "Tramwaje: 2, 6, 26 - do Pragi i centrum",
+      "Autobusy: 138, 125 — do Dworca Wileńskiego",
+      "SKM Targówek — stacja kolejowa",
+      "M2 (w planach): Zacisze i Kondratowicza"
+    ],
+    "key_areas": [
+      "Targówek Mieszkaniowy — основний житловий масив",
+      "Bródno — найзеленіший мікрорайон",
+      "Zacisze — тихіший, ближче до природи"
+    ],
+    "infra": [
+      "Park Bródnowski — великий парк",
+      "Galeria Północna — 5 хв",
+      "Szkoły SP nr 235, 282",
+      "Szpital Bielański (сусідній)"
+    ],
+    "for_whom": [
+      "Najemcy z budżetem do 3 500-4 000 zł",
+      "Ci, którzy planują przeprowadzkę po otwarciu M2",
+      "Studenci z ograniczonym budżetem",
+      "Rodziny szukające najtańszej opcji"
+    ],
+    "pros": [
+      "Najniższe ceny wśród dzielnic z tramwajem",
+      "Park Bródnowski to duży zielony masyw",
+      "Galeria Północna obok",
+      "Potencjał wzrostu po M2"
+    ],
+    "cons": [
+      "Głównie stare płyty",
+      "Choć metra nie ma, tramwaj jest rekompensatą",
+      "Mniej rozwinięta infrastruktura handlowa",
+      "Reputacja „pracującego” — niektórzy unikają"
+    ],
+    "faq": [
+      [
+        "Ile wynosi czynsz na Targówku w 2026 roku?",
+        "Targówek 2026: 63–85 zł/m²/miesiąc. Mieszkanie dwupokojowe: 3200–4500 zł. Jedna z najbardziej dostępnych dzielnic Warszawy z regularną komunikacją tramwajową."
+      ],
+      [
+        "Czy na Targówku jest metro?",
+        "Jeszcze nie. Planowane jest przedłużenie M2 do stacji Zacisze i Kondratowicza, ale konkretne terminy nie zostały potwierdzone. Tramwaje łączą okolicę z M2 (Praga Północ) w 10-15 minut."
+      ],
+      [
+        "Czy na Targówku jest bezpiecznie?",
+        "Ogólnie bezpiecznie, zwłaszcza Targówek Mieszkaniowy i Bródno. Zalecamy sprawdzenie konkretnej ulicy."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Praga Północ: artystyczna alternatywa",
+        "/blog/praga-polnich-orenda/"
+      ],
+      [
+        "Białołęka: dostępny nowy budynek",
+        "/blog/bialoleka-orenda/"
+      ],
+      [
+        "Ceny wynajmu w Warszawie 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ]
+    ]
+  },
+  {
+    "name": "Białołęka",
+    "name_uk": "Białołęka",
+    "slug": "wynajem-bialoleka-warszawa",
+    "key": "бялоленка варшава оренда",
+    "segment": "Budżet",
+    "seg_color": "#888882",
+    "metro": "Nie ma",
+    "has_metro": false,
+    "price_sqm": "65–88 zł/m²",
+    "price_studio": "2 000–2 900",
+    "price_1br": "2 600–3 800",
+    "price_2br": "3 000–4 200",
+    "price_3br": "4 000–5 500",
+    "avg_rental": "≈ 3 400",
+    "avg_sqm_rental": "70",
+    "source": "Investropa, Otodom Analytics, Q1 2026",
+    "hero_desc": "Największy nowy budynek w Warszawie w najniższej cenie — dla tych, którzy wybierają między nowym mieszkaniem a wygodnym transportem.",
+    "about": [
+      "Wynajem Byalolenko Warsaw to wybór tych, którzy chcą nowego mieszkania w Warszawie za minimalną cenę i są gotowi poświęcić dostępność komunikacyjną. Białołęka to największy rynek nowych budynków w Warszawie: tysiące mieszkań w nowych osiedlach z placami zabaw, parkingiem podziemnym i nowoczesnym wystrojem.",
+      "Główną wadą jest odległość. Bez samochodu Białołęka jest praktycznie odcięta: dojazd autobusem do centrum zajmuje 45-60 minut. Dla rodziny posiadającej samochód, gdzie jeżdżą oboje partnerzy, jest to akceptowalny kompromis.",
+      "Pozycja cenowa jest najniższa wśród obszarów z pełnoprawną zabudową mieszkaniową. Dwupokojowe nowe mieszkanie za 3000-4200 zł to w Warszawie rzadkość."
+    ],
+    "location": "Białołęka leży na północy Warszawy, po drugiej stronie rzeki Wisły (prawy brzeg). Centrum oddalone jest od obiektu o 18–22 km. Samochód jest praktycznie obowiązkowy.",
+    "transport": [
+      "Autobusy: 132, 181, 147 — 45–60 minut do centrum",
+      "SKM Białołęka — stacja kolejowa (nieregularna)",
+      "Samochodem: S8, droga ekspresowa do centrum — 25 min",
+      "Nie ma metra, nie ma tramwaju"
+    ],
+    "key_areas": [
+      "Białołęka Dworska — новий масив ЖК",
+      "Brzeziny — тихіше, більше зелені",
+      "Płochocin / Henryków — межа міста"
+    ],
+    "infra": [
+      "Нові ЖК з власними placami zabaw та sklepami",
+      "Galeria Northgate — 10 хв авто",
+      "Szkoły нові — відкриваються разом з ЖК",
+      "Centrum medyczne LUX MED Białołęka"
+    ],
+    "for_whom": [
+      "Rodziny posiadające samochód szukają nowego mieszkania taniej",
+      "Pary z dziećmi, które nie chodzą do ośrodka na co dzień",
+      "Ci, którzy wynajmują tymczasowo przed zakupem",
+      "Pracownicy zdalni bez konieczności podróżowania"
+    ],
+    "pros": [
+      "Najtańsze nowe mieszkania w Warszawie",
+      "Nowoczesny fundusz: parking, balkon, nowoczesny wystrój",
+      "Cisza, zieleń - klimat niemal wiejski",
+      "Jest więcej placów zabaw i szkół"
+    ],
+    "cons": [
+      "Bez samochodu jest bardzo niewygodnie",
+      "45-60 minut autobusem do centrum",
+      "Brak metra i tramwaju to zasadniczy minus",
+      "Niewiele miejsc rozrywkowych i kulturalnych w pobliżu"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajem na Białołęce w 2026 roku?",
+        "Białołęka 2026: 65–88 zł/m²/miesiąc. Nowe dwupokojowe mieszkanie: 3 000-4 200 zł - najniższa cena wśród nowych mieszkań w Warszawie."
+      ],
+      [
+        "Czy da się żyć na Białołęce bez samochodu?",
+        "Technicznie tak, ale bardzo niewygodnie: autobusy do centrum jeżdżą 45-60 minut i są przepełnione. W przypadku codziennych dojazdów do centrum samochód lub motocykl znacząco poprawia jakość życia."
+      ],
+      [
+        "Czy Białołęka jest dobra dla rodzin?",
+        "Tak, jeśli masz samochód: nowe osiedle z placami zabaw, nowe szkoły, zieleń, cisza. Ale logistyka bez samochodu jest problematyczna."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Targówek: taniej tramwajem",
+        "/blog/targowek-orenda/"
+      ],
+      [
+        "Bemowo: nowość z metra",
+        "/blog/bemowo-orenda/"
+      ],
+      [
+        "Ceny wynajmu w Warszawie 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ]
+    ]
+  },
+  {
+    "name": "Włochy",
+    "name_uk": "Włochy",
+    "slug": "wynajem-wlochy-warszawa",
+    "key": "влохи варшава оренда квартири",
+    "segment": "Rodzina",
+    "seg_color": "#f0c060",
+    "metro": "Brak (SKM, KM, WKD)",
+    "has_metro": false,
+    "price_sqm": "68–90 zł/m²",
+    "price_studio": "2 400–3 400",
+    "price_1br": "3 000–4 200",
+    "price_2br": "3 500–5 000",
+    "price_3br": "4 500–6 500",
+    "avg_rental": "≈ 4 000",
+    "avg_sqm_rental": "76",
+    "source": "Investropa, Otodom Analytics, Q1 2026",
+    "hero_desc": "3 minuty od Lotniska Chopina, nowe połączenia mieszkaniowe i kolejowe - praktyczny wybór dla osób często podróżujących.",
+    "about": [
+      "Wynajem apartamentów Vlohy Warsaw to wyjątkowa oferta dla osób regularnie latających lub podróżujących pociągiem po Polsce. Włochy bezpośrednio graniczą z Lotniskiem Chopina: z apartamentu do terminalu - 3-5 minut samochodem lub SKM.",
+      "Warszawa Zachodnia (Warszawski Centralny Węzeł Kolejowy) również znajduje się w sąsiedztwie lub w odległości spaceru. Połączenia ze wszystkimi polskimi miastami znajdują się w odległości 5 minut spacerem. To sprawia, że ​​Włochy są wyjątkowym wyborem dla tych, którzy mieszkają „między miastami”.",
+      "Nowe mieszkania 2018-2024 oferują nowoczesny wystrój w niższej cenie niż na Woli czy Mokotowie. Hałas samolotów jest nieuniknionym kompromisem."
+    ],
+    "location": "Włochy leżą na zachód-południe od Warszawy, tuż obok Lotniska Chopina. Centrum oddalone jest od obiektu o 8–12 km.",
+    "transport": [
+      "SKM/KM Okęcie — 15 minut do centrum, 3 minuty do lotniska",
+      "WKD do Pruszkowa i przedmieścia",
+      "Autobusy: 148, 175 — do centrum",
+      "S79 to obwodnica"
+    ],
+    "key_areas": [
+      "Nowe Włochy — нові ЖК",
+      "Okęcie — поряд з аеропортом",
+      "Stare Włochy — старіший і тихіший"
+    ],
+    "infra": [
+      "Lotnisko Chopina — 3–5 хв",
+      "Warszawa Zachodnia — залізниця",
+      "Blue City — торговий центр",
+      "Szkoły SP nr 30, 304"
+    ],
+    "for_whom": [
+      "Osoby regularnie latające lub podróżujące pociągiem",
+      "Piloty z wyjazdami służbowymi",
+      "Rodziny poszukujące nowych mieszkań w niższej cenie",
+      "Ci, którzy tolerują hałas dla wygody"
+    ],
+    "pros": [
+      "3-5 minut do Lotniska Chopina",
+      "Warszawa Zachodnia — pociągi we wszystkich kierunkach",
+      "Nowe mieszkania są o 15-20% tańsze niż Wola",
+      "SKM do centrum — 15 minut"
+    ],
+    "cons": [
+      "Hałas samolotów — szczególnie w nocy",
+      "Brak metra",
+      "Mniej infrastruktury kulturalnej i restauracyjnej",
+      "Strefy przemysłowe w pobliżu lotniska"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajem we Włochach w Warszawie?",
+        "Włochy 2026: 68–90 zł/m²/miesiąc. Mieszkanie dwupokojowe: 3 500–5 000 zł. Stosunkowo spokojniejszy rynek, bez szczytowego popytu sezonowego."
+      ],
+      [
+        "Słychać samoloty w mieszkaniach Włochy?",
+        "Tak, w rejonie pasa startowego hałas jest znaczny, szczególnie w nocy. Polecamy sprawdzić strefy hałasu na maps.google.pl i wybrać apartamenty z dźwiękoszczelnymi oknami."
+      ],
+      [
+        "Łącznie z lotniskiem - jak dojechać z Włoch?",
+        "SKM: 3 minuty do stacji Lotnisko Chopina. Autobus 148 — 10 minut. Taksówka - 5 minut."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Ochota: Centralna Alternatywa",
+        "/blog/ochota-orenda/"
+      ],
+      [
+        "Mokotów: premia z metra",
+        "/blog/mokotow-orenda/"
+      ],
+      [
+        "Ceny wynajmu w Warszawie 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ]
+    ]
+  },
+  {
+    "name": "Ursus",
+    "name_uk": "Ursus",
+    "slug": "wynajem-ursus-warszawa",
+    "key": "урсус варшава оренда",
+    "segment": "Budżet",
+    "seg_color": "#888882",
+    "metro": "Brak (KM/SKM, planowane M2)",
+    "has_metro": false,
+    "price_sqm": "63–85 zł/m²",
+    "price_studio": "2 200–3 200",
+    "price_1br": "2 800–4 000",
+    "price_2br": "3 200–4 500",
+    "price_3br": "4 200–6 000",
+    "avg_rental": "≈ 3 700",
+    "avg_sqm_rental": "72",
+    "source": "Investropa, Awentin.pl, Q1 2026",
+    "hero_desc": "Dawne miasto przemysłowe z nowymi kompleksami mieszkaniowymi — najlepszy stosunek ceny do jakości wśród budżetowych, przy oczekiwanym M2.",
+    "about": [
+      "Ursus Warsaw Rental to dawne miasteczko fabryczne (słynny traktor „Ursus”), które zostało przekształcone w dzielnicę mieszkaniową z nowymi dzielnicami. Przyłączony do Warszawy w 1977 roku Ursus nadal zachowuje pewien „podmiejski” charakter.",
+      "Kolej KM/SKM dojeżdża do centrum (Warszawa Zachodnia) w 20-25 minut - lepiej niż autobus. Planowane przedłużenie autostrady M2 w kierunku zachodnim mogłoby znacząco podnieść ceny w nadchodzących latach, ale termin nie został jeszcze potwierdzony.",
+      "Nowe mieszkania 2018-2024 oferują nowoczesny standard w cenie, która nie dogoniła jeszcze Bemowa czy Woli. Dla tych, którzy szukają nowych mieszkań w mieście za minimalną cenę, jest to najlepsza opcja."
+    ],
+    "location": "Ursus to skrajny zachód od Warszawy, graniczący z Włochami (na wschodzie), Bemowem (na północy) i Pruszkowem poza granicami miasta.",
+    "transport": [
+      "KM/SKM Ursus — do Warszawy Zachodniej w 20 min",
+      "Autobusy: 147, 156 — na Bemowo i Woli",
+      "S8 to tor dużych prędkości w Łodzi",
+      "Planowane jest M2 – warunki nie zostały potwierdzone"
+    ],
+    "key_areas": [
+      "Nowe Włochy (межа) — нові ЖК",
+      "Stary Ursus — старіший фонд",
+      "Czechowice — тихіший, природний"
+    ],
+    "infra": [
+      "Nowe ЖК з placami zabaw та małą infrastrukturą",
+      "Galeria Ursus (невелика)",
+      "Szkoły нові при ЖК",
+      "Las Bemowo — зелена зона поруч"
+    ],
+    "for_whom": [
+      "Młode rodziny z samochodem lub rowerem",
+      "Pracownicy zdalni bez codziennych wyjazdów",
+      "Ci, którzy szukają nowych i najtańszych w mieście",
+      "Najemcy czekają na otwarcie M2"
+    ],
+    "pros": [
+      "Nowy kompleks mieszkaniowy o nowoczesnym standardzie",
+      "Najniższa cena wśród nowego funduszu z koleją",
+      "KM/SKM — 20 min do Centrum",
+      "Oczekiwane M2 może zwiększyć wartość"
+    ],
+    "cons": [
+      "Bez metra kolej nie zawsze jest wygodna",
+      "Mniej rozwinięta infrastruktura",
+      "Dziedzictwo przemysłowe — niektóre strefy",
+      "Daleko od centrów biurowych"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajem Ursusa 2026?",
+        "Ursus 2026: 63–85 zł/m²/miesiąc. Nowe dwupokojowe mieszkanie: 3200-4500 zł - jedna z najniższych cen nowych mieszkań w Warszawie."
+      ],
+      [
+        "Jak dojechać z Ursusa do centrum Warszawy?",
+        "KM/SKM: 20-25 minut do Warszawy Zachodniej. Autobus — 30–40 minut. Samochodem S8 — 15–20 minut bez korków."
+      ],
+      [
+        "Ursus czy Białołęka?",
+        "Obydwa są najtańszymi nowymi mieszkaniami w Warszawie. Ursus jest bliżej centrum (na zachód), jest linia kolejowa. Białołęka to północ, tylko autobusy, ale przyroda jest lepsza."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Bemowo: Nowość od M2",
+        "/blog/bemowo-orenda/"
+      ],
+      [
+        "Włochy: lotnisko w pobliżu",
+        "/blog/wlochy-orenda/"
+      ],
+      [
+        "Ceny wynajmu w Warszawie 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ]
+    ]
+  },
+  {
+    "name": "Wawer",
+    "name_uk": "Wawer",
+    "slug": "wynajem-wawer-warszawa",
+    "key": "вавер варшава оренда",
+    "segment": "Budżet",
+    "seg_color": "#888882",
+    "metro": "Brak (KM/SKM)",
+    "has_metro": false,
+    "price_sqm": "62–82 zł/m²",
+    "price_studio": "1 900–2 800",
+    "price_1br": "2 500–3 600",
+    "price_2br": "3 000–4 200",
+    "price_3br": "4 000–5 500",
+    "avg_rental": "≈ 3 300",
+    "avg_sqm_rental": "68",
+    "source": "Investropa, Otodom Analytics, Q1 2026",
+    "hero_desc": "Leśne przedmieście w mieście - lasy sosnowe, rzeka Wisła i najniższa cena za m² wśród dzielnic Warszawy.",
+    "about": [
+      "Wynajem Wawer Warszawa to wyjątkowa opcja dla metropolii: las, rzeka i cisza w granicach administracyjnych Warszawy. Wawer to najbardziej zalesiony obszar miasta: lasy sosnowe, rozlewisko wiślane i ścieżki spacerowe nie są przedmieściem, są dosłownie w mieście.",
+      "Przeważają tu domy prywatne i małe mieszkania. Mieszkania na wynajem mają stosunkowo ograniczony wybór, ale cena jest najniższa spośród wszystkich dzielnic Warszawy. KM/SKM dostarcza do Centrum w 25-35 minut.",
+      "Dla kogo: rodziny gotowe poświęcić dostępność na rzecz natury i ciszy, letni mieszkańcy Warszawy i ci, którzy szukają „domowego” stylu życia bez wyjeżdżania z miasta."
+    ],
+    "location": "Wawer to skrajny wschód i południe od Warszawy, prawy brzeg Wisły. Centrum oddalone jest o 15–20 km.",
+    "transport": [
+      "KM/SKM Wawer, Międzylesie - do Centrum w 25-35 min",
+      "Autobusy: 115, 138 — nieregularne",
+      "Samochodem: Trasa 801, S8 — do centrum 20–30 min",
+      "Rower — lasy i nasypy"
+    ],
+    "key_areas": [
+      "Radość — найпопулярніший мікрорайон",
+      "Falenica — лісовий, спокійний",
+      "Międzylesie — залізнична станція, менш природній",
+      "Zerzeń — більше будинків"
+    ],
+    "infra": [
+      "Ліси Mazowieckiego Parku Krajobrazowego",
+      "Jezioro Czerniakowskie (недалеко)",
+      "Szkoły локальні, невеликі"
+    ],
+    "for_whom": [
+      "Rodziny pragnące \"domowej\" atmosfery w mieście",
+      "Emeryci i renciści oraz osoby ceniące spokój",
+      "Piloty, które nie muszą sterować",
+      "Rowerzyści i miłośnicy przyrody"
+    ],
+    "pros": [
+      "Najtańsza dzielnica Warszawy",
+      "Las i przyroda znajdują się w odległości spaceru",
+      "Cisza zasadniczo różni się od atmosfery miasta",
+      "KM/SKM — do centrum 25–35 min"
+    ],
+    "cons": [
+      "Mieszkań do wynajęcia jest niewiele - głównie domy",
+      "Bez samochodu jest bardzo niewygodnie",
+      "Mała infrastruktura i sklepy",
+      "Bardzo daleko od urzędów i ośrodków kultury"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajem w Wawrze 2026?",
+        "Wawer 2026: 62-82 zł/m²/miesiąc. Mieszkanie dwupokojowe: 3 000–4 200 zł. Najniższa cena spośród wszystkich dzielnic Warszawy według Investropy."
+      ],
+      [
+        "Czy na Wawrze jest metro?",
+        "Nie. KM/SKM to główny transport do centrum (25-35 minut). Samochód znacząco poprawia jakość życia."
+      ],
+      [
+        "Wawer czy Białołęka – co jest tańsze i bardziej ekologiczne?",
+        "Obydwa są tanie i ekologiczne. Wawer to prawy brzeg, więcej lasu, więcej domów, mniej mieszkań. Białołęka — lewy brzeg, coraz więcej nowych osiedli i mieszkań do wynajęcia."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Praga Południe: bliżej prawego brzegu",
+        "/blog/praga-poludnie-orenda/"
+      ],
+      [
+        "Rembertów: spokojny wschód",
+        "/blog/rembertow-orenda/"
+      ],
+      [
+        "Ceny wynajmu w Warszawie 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ]
+    ]
+  },
+  {
+    "name": "Rembertów",
+    "name_uk": "Rembertów",
+    "slug": "wynajem-rembertow-warszawa",
+    "key": "рембертув варшава оренда",
+    "segment": "Budżet",
+    "seg_color": "#888882",
+    "metro": "Brak (KM)",
+    "has_metro": false,
+    "price_sqm": "58–78 zł/m²",
+    "price_studio": "1 800–2 600",
+    "price_1br": "2 300–3 400",
+    "price_2br": "2 800–3 800",
+    "price_3br": "3 500–5 000",
+    "avg_rental": "≈ 3 000",
+    "avg_sqm_rental": "64",
+    "source": "Investropa, Otodom Analytics, Q1 2026",
+    "hero_desc": "Najmniejsza i najcichsza dzielnica Warszawy - najniższa stawka czynszu w mieście i spokojny, prywatny charakter.",
+    "about": [
+      "Rembertów Warszawa do wynajęcia to jedna z najmniejszych i najmniej znanych dzielnic Warszawy. Dominuje tu zabudowa prywatna, jest kilka bloków i bardzo mało mieszkań na wynajem długoterminowy. Ale te, które są dostępne, są najtańsze w Warszawie.",
+      "Kolej KM zapewnia połączenie z centrum w 30-40 minut. Samochód jest praktycznie obowiązkowy dla komfortowego pobytu. Okolica zachowała swój półradziecki charakter „miasta” z lokalnymi sklepami i cichymi uliczkami.",
+      "Dla kogo: ci, którzy mają bardzo ograniczony budżet i szukają najtańszego mieszkania w Warszawie, lub ci, którzy potrzebują ciszy i bliskości Lasu Michuryn."
+    ],
+    "location": "Rembertów leży na dalekim wschodzie Warszawy, graniczy z Targówkiem (zachód) i Wesołą (wschód). Do centrum jest 20 km.",
+    "transport": [
+      "KM Rembertów — do Centrum 30–40 min",
+      "Autobusy: 146 — na Targówek",
+      "Samochodem: Trasa 637, S17 — do centrum 20–25 min",
+      "Rower — trasy leśne i naturalne"
+    ],
+    "key_areas": [
+      "Stary Rembertów — центр, блоки і приватні будинки",
+      "Nowy Rembertów — новіший мікрорайон"
+    ],
+    "infra": [
+      "Las Miczurina — лісові прогулянки",
+      "Lokalne sklepy і small businesses",
+      "Szkoła Podstawowa nr 213"
+    ],
+    "for_whom": [
+      "Ci, którzy potrzebują najniższej ceny w Warszawie",
+      "Pary bez dzieci szukające ciszy i taniości",
+      "Emeryci i osoby starsze",
+      "Przekładki z rzadkimi wyjazdami"
+    ],
+    "pros": [
+      "Najniższa stawka czynszu w Warszawie",
+      "Absolutna cisza i naturalny charakter",
+      "Las Miczurina - leśne spacery",
+      "km do centrum — 30–40 min"
+    ],
+    "cons": [
+      "Minimalny wybór mieszkań do wynajęcia",
+      "Bez samochodu – ograniczony transport",
+      "Brak infrastruktury kulturalnej",
+      "Daleko od wszystkiego co jest w Warszawie"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajem w Rembertowie 2026?",
+        "Rembertów 2026: 58–78 zł/m²/miesiąc. Mieszkanie dwupokojowe: 2800–3800 zł. Najniższa cena w Warszawie, ale i najmniejszy wybór."
+      ],
+      [
+        "Czy w Rembertowie są sklepy i kawiarnie?",
+        "Istnieje podstawowa infrastruktura: supermarkety, apteka, targ. Do restauracji i większy wybór - Targówek lub Praga (20-30 min)."
+      ],
+      [
+        "Rembertów czy Wesoła?",
+        "Obydwa są małe i budżetowe. Rembertów jest trochę bliżej Pragi. Wesoła jest jeszcze mniejsza i cichsza. Obydwa są odpowiednie tylko dla tych, którzy są gotowi na całkowite oderwanie się od rytmu miasta."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Targówek: więcej możliwości",
+        "/blog/targowek-orenda/"
+      ],
+      [
+        "Wawer: las i rzeka",
+        "/blog/wawer-orenda/"
+      ],
+      [
+        "Ceny wynajmu w Warszawie 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ]
+    ]
+  },
+  {
+    "name": "Wesoła",
+    "name_uk": "Wesoła",
+    "slug": "wynajem-wesola-warszawa",
+    "key": "весола варшава оренда",
+    "segment": "Budżet",
+    "seg_color": "#888882",
+    "metro": "Brak (KM)",
+    "has_metro": false,
+    "price_sqm": "56–75 zł/m²",
+    "price_studio": "1 700–2 500",
+    "price_1br": "2 200–3 200",
+    "price_2br": "2 800–3 500",
+    "price_3br": "3 200–4 500",
+    "avg_rental": "≈ 2 900",
+    "avg_sqm_rental": "62",
+    "source": "Investropa, Otodom Analytics, Q1 2026",
+    "hero_desc": "Najmniejsza dzielnica Warszawy o wiejskim charakterze — absolutna cisza i najniższe ceny, niemal bez rynku mieszkaniowego.",
+    "about": [
+      "Vesola Warszawa do wynajęcia to najmniejsza dzielnica Warszawy z przewagą prywatnej zabudowy dworskiej i prawdziwie „wiejskim” charakterem. Wesoła dołączył do Warszawy w 2002 roku, nigdy jednak nie nabył cech miejskich. Jest więcej domów niż mieszkań, więcej ogrodów niż chodników.",
+      "Mieszkań na wynajem długoterminowy praktycznie nie ma – większość ogłoszeń dotyczy pokoi w domach lub małych domkach letniskowych. To zasadniczo komplikuje poszukiwania tych, którzy są przyzwyczajeni do rynku mieszkań.",
+      "Ceny w Warszawie to absolutne minimum: dwupokojowe mieszkanie za 2800–3500 zł. Ale jest to raczej rzadkość niż reguła. km do centrum — 35–45 minut."
+    ],
+    "location": "Wesoła to najbardziej wysunięta na wschód część Warszawy, granicząca z Rembertowem (na zachodzie) i Mińskiem Mazowieckim poza miastem. Do centrum jest 22-25 km.",
+    "transport": [
+      "KM Wesoła, Stara Miłosna — do Centrum 35–45 min",
+      "Autobusy: 121 — nieregularne",
+      "Samochodem: S17/E67 — do centrum 25–30 min",
+      "Rower po leśnych ścieżkach"
+    ],
+    "key_areas": [
+      "Wesoła Centrum — основна зупинка",
+      "Stara Miłosna — залізнична станція",
+      "Zielona — тихіший, садибний"
+    ],
+    "infra": [
+      "Lis Mazovian Park Landscape — природа",
+      "Lokalne sklepy i usługi",
+      "Школа і дитячий садок"
+    ],
+    "for_whom": [
+      "Ci, którzy są gotowi poświęcić wszystko za cenę minimalną",
+      "Emeryci i osoby poszukujące absolutnego spokoju",
+      "Właściciele samochodów bez codziennych podróży",
+      "Miłośnicy przyrody i lasu"
+    ],
+    "pros": [
+      "Najniższa cena wynajmu w Warszawie",
+      "Przyroda, cisza, wiejski charakter",
+      "km do centrum — 35–45 minut",
+      "Bardzo mało osób - maksymalna prywatność"
+    ],
+    "cons": [
+      "Mieszkań do wynajęcia praktycznie nie ma",
+      "Bez samochodu nie da się żyć komfortowo",
+      "Najmniejsza infrastruktura ze wszystkich 18 dzielnic",
+      "Odcięty od rytmu miasta"
+    ],
+    "faq": [
+      [
+        "Ile kosztuje wynajem w Wesoła 2026?",
+        "Wesoła 2026: 56–75 zł/m²/miesiąc. Mieszkanie dwupokojowe (jeśli uda Ci się je znaleźć): 2800-3500 zł. Ale oferta mieszkań tutaj jest minimalna."
+      ],
+      [
+        "Czy na Wesołej są mieszkania do wynajęcia?",
+        "Bardzo mało. Większość nieruchomości to domy prywatne i osiedla. Otodom wyświetla pojedyncze reklamy miesięcznie. Jeśli potrzebujesz mieszkania, rozważ Rembertów lub Wawer."
+      ],
+      [
+        "Czy Wesoła jest odpowiednia dla rodzin?",
+        "Tylko jeśli masz samochód i chcesz mieszkać w półwiejskiej atmosferze. Jest szkoła i przedszkole, ale wybór jest minimalny."
+      ]
+    ],
+    "nearby": [
+      [
+        "Kompletny przewodnik po wynajmie w Warszawie",
+        "/blog/orenda-kvartir-u-varshavi/"
+      ],
+      [
+        "Rembertów: trochę bliżej",
+        "/blog/rembertow-orenda/"
+      ],
+      [
+        "Wawer: las i więcej możliwości",
+        "/blog/wawer-orenda/"
+      ],
+      [
+        "Ceny wynajmu w Warszawie 2026",
+        "/blog/tsiny-na-orendu-varshava-2026/"
+      ]
+    ]
+  }
+]

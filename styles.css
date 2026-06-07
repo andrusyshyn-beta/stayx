@@ -110,7 +110,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .hero__galaxy-img {
   position: absolute;
   inset: 0;
-  background: url('images/galaxy-bg.png') center/cover no-repeat;
+  background: url('images/galaxy-bg.webp') center/cover no-repeat;
   opacity: 0.22; /* Slightly more visible */
   z-index: 1;
   mix-blend-mode: screen;
@@ -1219,7 +1219,7 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .footer__links a{color:rgba(255,255,255,.4);font-size:.85rem;font-weight:500;transition:color .2s}
 .footer__links a:hover{color:#fff}
 .footer__bottom{display:flex;gap:20px;align-items:center}
-.footer__bottom p{color:rgba(255,255,255,.25);font-size:.78rem}
+.footer__bottom p{color:rgba(255,255,255,.25);font-size:.78rem;margin:0}
 .footer__bottom a{color:rgba(255,255,255,.25);font-size:.78rem;transition:color .2s}
 .footer__bottom a:hover{color:rgba(255,255,255,.6)}
 
@@ -1621,4 +1621,5 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
   box-shadow: 0 0 0 4px rgba(255, 77, 77, 0.15) !important;
   background-color: #fff8f8 !important;
 }
+
 

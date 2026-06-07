@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Блог | StayX - Корисні статті про нерухомість</title>
@@ -10,12 +11,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="alternate" type="application/rss+xml" title="STAYX Blog RSS" href="https://stayx-eight.vercel.app/rss.xml">
-  <style>
-    .blog-search { max-width: 600px; margin: 0 auto 60px; }
-    .blog-search form { display: flex; gap: 10px; background: #fff; padding: 6px; border-radius: 99px; border: 1px solid #e3e8ee; }
-    .blog-search input { border: none; padding: 12px 24px; flex: 1; border-radius: 99px; font-family: inherit; font-size: 1rem; outline: none; }
-    .blog-search button { background: #635bff; color: #fff; border: none; padding: 12px 24px; border-radius: 99px; font-weight: 600; cursor: pointer; }
-  </style>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -28,6 +23,10 @@
     }
   }
   </script>
+
+<script type="application/ld+json" id="breadcrumb-schema">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Головна","item":"https://stayx.estate/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://stayx.estate/blog/"}]}
+</script>
 </head>
 <body>
   <header class="header header--scrolled" id="header" data-keep-scrolled="true">
@@ -44,9 +43,9 @@
       </div>
       <div class="nav__right">
         <div class="nav__lang">
-          <a href="/index.html" class="active">Ua</a>
-          <a href="/en/index.html">EN</a>
-          <a href="/pl/index.html">PL</a>
+          <a href="/blog/index.html" class="active">Ua</a>
+          <a href="/en/blog/index.html">EN</a>
+          <a href="/pl/blog/index.html">PL</a>
         </div>
         <a href="https://t.me/stayX_pl" target="_blank" rel="noopener" class="btn btn--primary btn--sm">Зв'язатись →</a>
         <div class="nav__social nav__social-mobile">
@@ -80,9 +79,24 @@
         </div>
         
         <div class="blog-grid">
+          <a href="dokumenty-dlya-orendy-polshcha.html" class="blog-card">
+            <div class="blog-card__image">
+              <img src="../images/hero-keys.webp" alt="Документи для оренди квартири в Польщі 2026" loading="lazy">
+            </div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Юридичний гід</span>
+                <span class="blog-card__date">15 Травня, 2026</span>
+              </div>
+              <h3>Документи для оренди квартири в Польщі 2026: повний перелік</h3>
+              <p>Що потрібно орендарю-іноземцю, пакет Najem Okazjonalny, protokół, meldunek, US — з посиланнями на законодавство.</p>
+              <div class="blog-card__footer">Читати статтю →</div>
+            </div>
+          </a>
+
           <a href="../rent-in-warsaw-guide-2026.html" class="blog-card">
             <div class="blog-card__image">
-              <img src="../images/blog-1.jpg" alt="Оренда квартири у Варшаві 2026" loading="lazy">
+              <img src="../images/blog-1.webp" alt="Оренда квартири у Варшаві 2026" loading="lazy">
             </div>
             <div class="blog-card__content">
               <div class="blog-card__meta">
@@ -97,7 +111,7 @@
 
           <a href="tsiny-na-orendu-varshava-2026.html" class="blog-card">
             <div class="blog-card__image">
-              <img src="../images/blog-2.jpg" alt="Ціни на оренду у Варшаві 2026" loading="lazy">
+              <img src="../images/blog-2.webp" alt="Ціни на оренду у Варшаві 2026" loading="lazy">
             </div>
             <div class="blog-card__content">
               <div class="blog-card__meta">
@@ -112,7 +126,7 @@
 
           <a href="yak-orenduvaty-kvartiru-inozemntsyu.html" class="blog-card">
             <div class="blog-card__image">
-              <img src="../images/blog-3.jpg" alt="Як орендувати квартиру іноземцю у Варшаві" loading="lazy">
+              <img src="../images/blog-3.webp" alt="Як орендувати квартиру іноземцю у Варшаві" loading="lazy">
             </div>
             <div class="blog-card__content">
               <div class="blog-card__meta">
@@ -125,8 +139,215 @@
             </div>
           </a>
         </div>
+
+      <div class="section-header" style="margin-top: 80px;">
+        <p class="section-header__label">Локації</p>
+        <h2 class="section-header__title">Гіди по районах Варшави</h2>
       </div>
+      <div class="blog-grid" id="districts-grid">
+
+        <a href="mokotow-orenda.html" class="blog-card" style="border-top: 4px solid #63d2b4;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #63d2b4">Преміум</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Мокотув (Mokotów)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Найбільша центральна дільниця Варшави — 30% зеленої площі, М1 наскрізь, від вілл Górny до офісного D...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="srodmiescie-orenda.html" class="blog-card" style="border-top: 4px solid #63d2b4;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #63d2b4">Преміум</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Центр (Śródmieście)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Найдорожчий і найбільш доступний для пішоходів район Варшави — Старе Місто, Powiśle, Nowy Świat, хма...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="wola-orenda.html" class="blog-card" style="border-top: 4px solid #6ab0f5;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #6ab0f5">Бізнес</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Воля (Wola)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Польський Canary Wharf і найдинамічніший офісний хаб Варшави — зі зростаючою пропозицією квартир і н...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="zoliborz-orenda.html" class="blog-card" style="border-top: 4px solid #63d2b4;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #63d2b4">Преміум</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Жолібож (Żoliborz)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Найменший і найпрестижніший район Варшави — інтелігентна атмосфера, кам'яниці 30-х, М1 і хронічний д...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="wilanow-orenda.html" class="blog-card" style="border-top: 4px solid #63d2b4;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #63d2b4">Преміум</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Вілянув (Wilanów)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Найпрестижніший адрес за межами центру: палац, дипломатичні резиденції, міжнародні школи та люкс-ЖК ...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="ursynow-orenda.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #f0c060">Сімейний</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Урсинів (Ursynów)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Найкраща 'сімейна спальня' Варшави: 6 станцій М1, Ліс Кабацький, рейтингові школи і ціна на 20% нижч...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="praga-poludnie-orenda.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #f0c060">Сімейний</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Прага Південь (Praga Południe)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Різноманітний правобережний район із перлиною Saska Kępa, новим розвитком вздовж M2 і доступними цін...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="bielany-orenda.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #f0c060">Сімейний</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Білани (Bielany)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Зелений тихий північ Варшави з Лісом Белянським, М1 і доступними цінами — ідеальний для сімей, що лю...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="ochota-orenda.html" class="blog-card" style="border-top: 4px solid #6ab0f5;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #6ab0f5">Бізнес</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Охота (Ochota)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Тихий зелений район між центром і Мокотовом — Варшавський університет, академічна атмосфера і найкра...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="praga-polnich-orenda.html" class="blog-card" style="border-top: 4px solid #6ab0f5;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #6ab0f5">Бізнес</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Прага Північ (Praga Północ)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Найбогемніший район Варшави — джентрифікація, лофти, арт-галереї, М2 і нижча ціна за правобережну ло...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="bemowo-orenda.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #f0c060">Сімейний</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Бемово (Bemowo)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Нові станції М2 у 2026 трансформують Bemowo: нові ЖК, зростаючі ціни і найкраще співвідношення 'нова...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="targowek-orenda.html" class="blog-card" style="border-top: 4px solid #888882;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #888882">Бюджетний</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Таргувек (Targówek)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Бюджетний правобережний район з потенціалом: старий фонд, нижча ціна і очікуване розширення М2....</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="bialoleka-orenda.html" class="blog-card" style="border-top: 4px solid #888882;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #888882">Бюджетний</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Бялоленка (Białołęka)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Наймасштабніший новобуд Варшави за найнижчою ціною — для тих, хто обирає між новою квартирою та тран...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="wlochy-orenda.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #f0c060">Сімейний</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Влохи (Włochy)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">3 хвилини від аеропорту Шопена, нові ЖК і залізничне сполучення — практичний вибір для тих, хто част...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="ursus-orenda.html" class="blog-card" style="border-top: 4px solid #888882;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #888882">Бюджетний</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Урсус (Ursus)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Колишнє промислове місто з новими ЖК — найкраще ціна/якість серед бюджетних, з очікуваним М2....</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="wawer-orenda.html" class="blog-card" style="border-top: 4px solid #888882;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #888882">Бюджетний</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Вавер (Wawer)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Лісовий 'передмістя в місті' — соснові бори, річка Wisła і найнижча ціна за м² серед районів Варшави...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="rembertow-orenda.html" class="blog-card" style="border-top: 4px solid #888882;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #888882">Бюджетний</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Рембертув (Rembertów)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Найменший і найтихіший район Варшави — мінімальна орендна ставка в місті і тихий приватний характер....</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+        <a href="wesola-orenda.html" class="blog-card" style="border-top: 4px solid #888882;">
+          <div class="blog-card__content">
+            <div class="blog-card__meta">
+              <span class="blog-card__category" style="color: #888882">Бюджетний</span>
+            </div>
+            <h3 style="font-size: 1.3rem;">Оренда в Весола (Wesoła)</h3>
+            <p style="font-size: 0.9rem; margin-bottom: 16px;">Найменший район Варшави з сільським характером — абсолютна тиша і найнижчі ціни, майже без квартирно...</p>
+            <div class="blog-card__footer">Читати гід →</div>
+          </div>
+        </a>
+  
+      </div>
+    </div> <!-- close container -->
     </section>
+
   </main>
 
   <!-- ===== FOOTER ===== -->
@@ -141,11 +362,15 @@
         <a href="/#faq">FAQ</a>
       </div>
       <div class="footer__bottom">
-        <p>2026© STAYX. All rights reserved</p>
+        <p>© 2026 STAYX. All rights reserved</p>
         <a href="/privacy.html">Політика конфіденційності</a>
       </div>
     </div>
   </footer>
   <script src="../script.js"></script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/148599762.js"></script>
+<!-- End of HubSpot Embed Code -->
 </body>
 </html>

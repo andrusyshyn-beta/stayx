@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog | STAYX - Przydatne artykuły o nieruchomościach</title>
@@ -9,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json" id="breadcrumb-schema">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Strona Główna","item":"https://stayx.estate/pl/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://stayx.estate/pl/blog/"}]}
+</script>
 </head>
 <body>
   <header class="header header--scrolled" id="header" data-keep-scrolled="true">
@@ -53,10 +58,32 @@
           <h2 class="section-header__title">Twój przewodnik po świecie nieruchomości w Warszawie</h2>
         </div>
         
+        <div class="blog-search">
+          <form action="#" method="GET">
+            <input type="text" name="q" placeholder="Szukaj artykułów (np. 'dzielnice' lub 'umowa')..." aria-label="Szukaj na blogu">
+            <button type="submit">Szukaj</button>
+          </form>
+        </div>
+        
         <div class="blog-grid">
+          <a href="dokumenty-do-wynajecia-polska.html" class="blog-card">
+            <div class="blog-card__image">
+              <img src="/images/hero-keys.webp" alt="Dokumenty do wynajęcia mieszkania w Polsce 2026" loading="lazy">
+            </div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Przewodnik Prawny</span>
+                <span class="blog-card__date">15 Maja, 2026</span>
+              </div>
+              <h3>Dokumenty do wynajęcia mieszkania w Polsce 2026: pełna lista</h3>
+              <p>Czego potrzebuje obcokrajowiec-najemca, pakiet Najem Okazjonalny, protokół, meldunek, US — z linkami do ustaw.</p>
+              <div class="blog-card__footer">Czytaj artykuł →</div>
+            </div>
+          </a>
+
           <a href="/pl/rent-in-warsaw-guide-2026.html" class="blog-card">
             <div class="blog-card__image">
-              <img src="/images/blog-1.jpg" alt="Wynajem mieszkania w Warszawie 2026" loading="lazy">
+              <img src="/images/blog-1.webp" alt="Wynajem mieszkania w Warszawie 2026" loading="lazy">
             </div>
             <div class="blog-card__content">
               <div class="blog-card__meta">
@@ -68,9 +95,251 @@
               <div class="blog-card__footer">Czytaj encyklopedię →</div>
             </div>
           </a>
+
+          <a href="ceny-wynajmu-warszawa-2026.html" class="blog-card">
+            <div class="blog-card__image">
+              <img src="/images/blog-2.webp" alt="Ceny wynajmu w Warszawie 2026" loading="lazy">
+            </div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Analiza</span>
+                <span class="blog-card__date">14 Maja, 2026</span>
+              </div>
+              <h3>Ceny wynajmu w Warszawie 2026: aktualne dane wg dzielnic</h3>
+              <p>Ile kosztuje wynajęcie mieszkania w Warszawie w 2026 r. — wg typów, dzielnic i pór roku. Zaufane dane.</p>
+              <div class="blog-card__footer">Czytaj artykuł →</div>
+            </div>
+          </a>
+
+          <a href="jak-wynajac-mieszkanie-cudzoziemcowi.html" class="blog-card">
+            <div class="blog-card__image">
+              <img src="/images/blog-3.webp" alt="Jak wynająć mieszkanie cudzoziemcowi" loading="lazy">
+            </div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Instrukcja</span>
+                <span class="blog-card__date">12 Maja, 2026</span>
+              </div>
+              <h3>Jak wynająć mieszkanie cudzoziemcowi w Warszawie 2026</h3>
+              <p>Dokumenty, Najem Okazjonalny bez PESEL, lokal zastępczy, pułapki — pełny przewodnik od STAYX.</p>
+              <div class="blog-card__footer">Czytaj instrukcję →</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div> <!-- close container -->
+    </section>
+
+    <section class="blog-preview">
+      <div class="container">
+        <div class="section-header" style="margin-top: 80px;">
+          <p class="section-header__label">Lokalizacje</p>
+          <h2 class="section-header__title">Przewodniki po dzielnicach Warszawy</h2>
+        </div>
+        <div class="blog-grid" id="districts-grid">
+
+          <a href="wynajem-mokotow-warszawa.html" class="blog-card" style="border-top: 4px solid #63d2b4;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #63d2b4">Premia</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Mokotów</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Największa centralna dzielnica Warszawy - 30% powierzchni zielonej, przez M1, od willi Górny po biur...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-srodmiescie-warszawa.html" class="blog-card" style="border-top: 4px solid #63d2b4;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #63d2b4">Premia</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Śródmieście</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Najdroższą i najbardziej dostępną dla pieszych dzielnicą Warszawy jest Stare Miasto, Powiśle, Nowy Ś...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-wola-warszawa.html" class="blog-card" style="border-top: 4px solid #6ab0f5;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #6ab0f5">Biznes</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Wola</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Canary Wharf w Polsce i najbardziej dynamiczny węzeł biurowy w Warszawie — z rosnącą podażą mieszkań...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-zoliborz-warszawa.html" class="blog-card" style="border-top: 4px solid #63d2b4;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #63d2b4">Premia</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Żoliborz</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Najmniejsza i najbardziej prestiżowa dzielnica Warszawy – inteligentna atmosfera, kamienice z lat 30...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-wilanow-warszawa.html" class="blog-card" style="border-top: 4px solid #63d2b4;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #63d2b4">Premia</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Wilanów</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Najbardziej prestiżowy adres poza centrum: pałac, rezydencje dyplomatyczne, międzynarodowe szkoły i ...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-ursynow-warszawa.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #f0c060">Rodzina</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Ursynów</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Najlepsza „sypialnia rodzinna” w Warszawie: 6 stacji M1, Las Kabacki, oceniane szkoły i cena o 20% n...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-praga-poludnie-warszawa.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #f0c060">Rodzina</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Praga Południe</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Urozmaicony prawobrzeżny teren z perełką Saskiej Kępy, nową zabudową wzdłuż M2 i przystępnymi cenami...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-bielany-warszawa.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #f0c060">Rodzina</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Bielany</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Zielona, ​​cicha północ od Warszawy z Lasem Belian, M1 i przystępnymi cenami jest idealna dla rodzin...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-ochota-warszawa.html" class="blog-card" style="border-top: 4px solid #6ab0f5;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #6ab0f5">Biznes</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Ochota</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Spokojna, zielona okolica pomiędzy centrum a Mokotowem – Uniwersytetem Warszawskim, akademicka atmos...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-praga-polnoc-warszawa.html" class="blog-card" style="border-top: 4px solid #6ab0f5;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #6ab0f5">Biznes</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Praga Północ</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Najbardziej artystyczna dzielnica Warszawy – gentryfikacja, lofty, galerie sztuki, M2 i niższa cena ...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-bemowo-warszawa.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #f0c060">Rodzina</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Bemowo</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Nowe stacje M2 odmienią Bemowo w 2026 roku: nowe mieszkania, rosnące ceny i najlepszy w Warszawie ws...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-targowek-warszawa.html" class="blog-card" style="border-top: 4px solid #888882;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #888882">Budżet</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Targówek</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Budżetowy obszar prawobrzeżny z potencjałem: stary fundusz, niższa cena i oczekiwana ekspansja M2....</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-bialoleka-warszawa.html" class="blog-card" style="border-top: 4px solid #888882;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #888882">Budżet</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Białołęka</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Największy nowy budynek w Warszawie w najniższej cenie — dla tych, którzy wybierają między nowym mie...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-wlochy-warszawa.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #f0c060">Rodzina</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Włochy</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">3 minuty od Lotniska Chopina, nowe połączenia mieszkaniowe i kolejowe - praktyczny wybór dla osób cz...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-ursus-warszawa.html" class="blog-card" style="border-top: 4px solid #888882;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #888882">Budżet</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Ursus</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Dawne miasto przemysłowe z nowymi kompleksami mieszkaniowymi — najlepszy stosunek ceny do jakości wś...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-wawer-warszawa.html" class="blog-card" style="border-top: 4px solid #888882;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #888882">Budżet</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Wawer</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Leśne przedmieście w mieście - lasy sosnowe, rzeka Wisła i najniższa cena za m² wśród dzielnic Warsz...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-rembertow-warszawa.html" class="blog-card" style="border-top: 4px solid #888882;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #888882">Budżet</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Rembertów</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Najmniejsza i najcichsza dzielnica Warszawy - najniższa stawka czynszu w mieście i spokojny, prywatn...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
+          <a href="wynajem-wesola-warszawa.html" class="blog-card" style="border-top: 4px solid #888882;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #888882">Budżet</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Wynajem w Wesoła</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Najmniejsza dzielnica Warszawy o wiejskim charakterze — absolutna cisza i najniższe ceny, niemal bez...</p>
+              <div class="blog-card__footer">Czytaj przewodnik →</div>
+            </div>
+          </a>
+  
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
@@ -84,11 +353,15 @@
         <a href="/pl/index.html#faq">FAQ</a>
       </div>
       <div class="footer__bottom">
-        <p>2026© STAYX. All rights reserved</p>
+        <p>© 2026 STAYX. All rights reserved</p>
         <a href="/pl/privacy.html">Polityka prywatności</a>
       </div>
     </div>
   </footer>
   <script src="/script.js"></script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/148599762.js"></script>
+<!-- End of HubSpot Embed Code -->
 </body>
 </html>

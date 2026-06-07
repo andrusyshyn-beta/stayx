@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@iamtraction/google-translate": "^2.0.1",
+    "@vitalets/google-translate-api": "^9.2.1"
+  }
+}

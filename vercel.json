@@ -1,1 +1,15 @@
-{}
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "stayx-eight.vercel.app"
+        }
+      ],
+      "destination": "https://stayx.estate/$1",
+      "permanent": true
+    }
+  ]
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="icon" type="image/png" href="/images/favicon.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Blog | STAYX - Useful Real Estate Articles</title>
@@ -9,6 +10,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script type="application/ld+json" id="breadcrumb-schema">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://stayx.estate/en/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://stayx.estate/en/blog/"}]}
+</script>
 </head>
 <body>
   <header class="header header--scrolled" id="header" data-keep-scrolled="true">
@@ -53,10 +58,32 @@
           <h2 class="section-header__title">Your Guide to the World of Warsaw Real Estate</h2>
         </div>
         
+        <div class="blog-search">
+          <form action="#" method="GET">
+            <input type="text" name="q" placeholder="Search articles (e.g., 'districts' or 'contract')..." aria-label="Search blog">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        
         <div class="blog-grid">
+          <a href="documents-for-renting-poland.html" class="blog-card">
+            <div class="blog-card__image">
+              <img src="/images/hero-keys.webp" alt="Documents for Renting an Apartment in Poland 2026" loading="lazy">
+            </div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Legal Guide</span>
+                <span class="blog-card__date">May 15, 2026</span>
+              </div>
+              <h3>Documents for Renting an Apartment in Poland 2026: Full List</h3>
+              <p>What a foreign tenant needs, Najem Okazjonalny package, protokół, meldunek, US — with legal references.</p>
+              <div class="blog-card__footer">Read article →</div>
+            </div>
+          </a>
+
           <a href="/en/rent-in-warsaw-guide-2026.html" class="blog-card">
             <div class="blog-card__image">
-              <img src="/images/blog-1.jpg" alt="Renting in Warsaw 2026" loading="lazy">
+              <img src="/images/blog-1.webp" alt="Renting in Warsaw 2026" loading="lazy">
             </div>
             <div class="blog-card__content">
               <div class="blog-card__meta">
@@ -68,9 +95,251 @@
               <div class="blog-card__footer">Read encyclopedia →</div>
             </div>
           </a>
+
+          <a href="rent-prices-warsaw-2026.html" class="blog-card">
+            <div class="blog-card__image">
+              <img src="/images/blog-2.webp" alt="Rent Prices in Warsaw 2026" loading="lazy">
+            </div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Analysis</span>
+                <span class="blog-card__date">May 14, 2026</span>
+              </div>
+              <h3>Rent Prices in Warsaw 2026: Latest Data by District</h3>
+              <p>How much does it cost to rent an apartment in Warsaw in 2026 — by types, districts, and seasons. Reliable data.</p>
+              <div class="blog-card__footer">Read article →</div>
+            </div>
+          </a>
+
+          <a href="how-to-rent-apartment-foreigner.html" class="blog-card">
+            <div class="blog-card__image">
+              <img src="/images/blog-3.webp" alt="How to Rent an Apartment as a Foreigner" loading="lazy">
+            </div>
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category">Guide</span>
+                <span class="blog-card__date">May 12, 2026</span>
+              </div>
+              <h3>How to Rent an Apartment as a Foreigner in Warsaw 2026</h3>
+              <p>Documents, Najem Okazjonalny without PESEL, alternative address, pitfalls — full guide from STAYX.</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div> <!-- close container -->
+    </section>
+
+    <section class="blog-preview">
+      <div class="container">
+        <div class="section-header" style="margin-top: 80px;">
+          <p class="section-header__label">Locations</p>
+          <h2 class="section-header__title">Warsaw District Guides</h2>
+        </div>
+        <div class="blog-grid" id="districts-grid">
+
+          <a href="rent-mokotw-warsaw.html" class="blog-card" style="border-top: 4px solid #63d2b4;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #63d2b4">Premium</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Mokotów</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">The largest central district of Warsaw - 30% green space, M1 through, from Górny villas to Dolny off...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-rdmiecie-warsaw.html" class="blog-card" style="border-top: 4px solid #63d2b4;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #63d2b4">Premium</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Śródmieście</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">The most expensive and most accessible district of Warsaw for pedestrians is the Old Town, Powiśle, ...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-wola-warsaw.html" class="blog-card" style="border-top: 4px solid #6ab0f5;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #6ab0f5">Business</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Wola</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Poland's Canary Wharf and Warsaw's most dynamic office hub — with a growing supply of apartments and...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-oliborz-warsaw.html" class="blog-card" style="border-top: 4px solid #63d2b4;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #63d2b4">Premium</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Żoliborz</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">The smallest and most prestigious district of Warsaw - an intelligent atmosphere, tenement houses of...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-wilanw-warsaw.html" class="blog-card" style="border-top: 4px solid #63d2b4;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #63d2b4">Premium</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Wilanów</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">The most prestigious address outside the center: a palace, diplomatic residences, international scho...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-ursynw-warsaw.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #f0c060">Family</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Ursynów</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">The best "family bedroom" in Warsaw: 6 M1 stations, Kabacki Forest, rated schools and a price 20% lo...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-praga-poudnie-warsaw.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #f0c060">Family</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Praga Południe</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">A diverse right bank area with the gem of Saska Kępa, new development along the M2 and affordable pr...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-bielany-warsaw.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #f0c060">Family</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Bielany</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">The green, quiet north of Warsaw with Belian Forest, M1 and affordable prices is ideal for nature-lo...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-ochota-warsaw.html" class="blog-card" style="border-top: 4px solid #6ab0f5;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #6ab0f5">Business</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Ochota</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">A quiet green area between the center and Mokotów - the University of Warsaw, an academic atmosphere...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-praga-pnoc-warsaw.html" class="blog-card" style="border-top: 4px solid #6ab0f5;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #6ab0f5">Business</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Praga Północ</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">The most bohemian district of Warsaw - gentrification, lofts, art galleries, M2 and a lower price fo...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-bemowo-warsaw.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #f0c060">Family</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Bemowo</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">The new M2 stations will transform Bemowo in 2026: new residential apartments, rising prices and the...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-targwek-warsaw.html" class="blog-card" style="border-top: 4px solid #888882;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #888882">Budget</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Targówek</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Budget right bank area with potential: old fund, lower price and expected expansion of M2....</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-biaoka-warsaw.html" class="blog-card" style="border-top: 4px solid #888882;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #888882">Budget</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Białołęka</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">The largest new building in Warsaw at the lowest price — for those who choose between a new apartmen...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-wochy-warsaw.html" class="blog-card" style="border-top: 4px solid #f0c060;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #f0c060">Family</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Włochy</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">3 minutes from Chopin Airport, new residential and rail connections - a practical choice for frequen...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-ursus-warsaw.html" class="blog-card" style="border-top: 4px solid #888882;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #888882">Budget</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Ursus</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">A former industrial city with new residential complexes — the best price/quality among budget ones, ...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-wawer-warsaw.html" class="blog-card" style="border-top: 4px solid #888882;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #888882">Budget</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Wawer</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">Forest 'suburb in the city' - pine forests, the Wisła river and the lowest price per m² among the di...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-rembertw-warsaw.html" class="blog-card" style="border-top: 4px solid #888882;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #888882">Budget</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Rembertów</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">The smallest and quietest district in Warsaw - the lowest rental rate in the city and a quiet privat...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
+          <a href="rent-wesoa-warsaw.html" class="blog-card" style="border-top: 4px solid #888882;">
+            <div class="blog-card__content">
+              <div class="blog-card__meta">
+                <span class="blog-card__category" style="color: #888882">Budget</span>
+              </div>
+              <h3 style="font-size: 1.3rem;">Rent in Wesoła</h3>
+              <p style="font-size: 0.9rem; margin-bottom: 16px;">The smallest district of Warsaw with a rural character — absolute silence and the lowest prices, alm...</p>
+              <div class="blog-card__footer">Read guide →</div>
+            </div>
+          </a>
+  
         </div>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
@@ -84,11 +353,15 @@
         <a href="/en/index.html#faq">FAQ</a>
       </div>
       <div class="footer__bottom">
-        <p>2026© STAYX. All rights reserved</p>
+        <p>© 2026 STAYX. All rights reserved</p>
         <a href="/en/privacy.html">Privacy Policy</a>
       </div>
     </div>
   </footer>
   <script src="/script.js"></script>
+
+<!-- Start of HubSpot Embed Code -->
+<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/148599762.js"></script>
+<!-- End of HubSpot Embed Code -->
 </body>
 </html>
