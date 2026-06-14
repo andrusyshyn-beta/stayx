@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Перехід в Telegram...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #0a2540;
+      color: white;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .btn {
+      background: #2AABEE;
+      color: white;
+      padding: 16px 32px;
+      border-radius: 24px;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+      display: inline-block;
+    }
+    .instructions {
+      background: rgba(255,255,255,0.1);
+      padding: 20px;
+      border-radius: 16px;
+      margin-top: 30px;
+      max-width: 400px;
+    }
+  </style>
+  <script>
+    window.onload = function() {
+      var urlParams = new URLSearchParams(window.location.search);
+      var user = urlParams.get('u');
+      if (!user) return;
+
+      var ua = navigator.userAgent || navigator.vendor || window.opera;
+      var isAndroid = /Android/i.test(ua);
+
+      var tgLink = isAndroid 
+        ? "intent://resolve?domain=" + user + "#Intent;package=org.telegram.messenger;scheme=tg;end"
+        : "tg://resolve?domain=" + user;
+      
+      var webLink = "https://t.me/" + user;
+
+      document.getElementById('openBtn').href = tgLink;
+      
+      // Attempt to open Telegram app directly
+      window.location.href = tgLink;
+    };
+  </script>
+</head>
+<body>
+  <h2>Перехід в Telegram...</h2>
+  <a href="#" id="openBtn" class="btn">Відкрити додаток Telegram</a>
+  
+  <div class="instructions">
+    <p><b>Якщо Telegram не відкрився автоматично:</b></p>
+    <p>Ймовірно, ваш вбудований браузер (TikTok/Instagram) блокує перехід.</p>
+    <p>Натисніть на три крапки <b>(⋮)</b> або <b>(⋯)</b> у верхньому правому куті та виберіть:<br><br><b>«Відкрити в браузері»</b> або <b>«Open in browser»</b></p>
+  </div>
+</body>
+</html>

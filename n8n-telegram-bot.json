@@ -1,0 +1,150 @@
+{
+  "name": "STAYX Telegram AI Bot",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": [
+          "message"
+        ]
+      },
+      "id": "1",
+      "name": "Telegram Trigger",
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        250,
+        300
+      ],
+      "webhookId": "",
+      "credentials": {
+        "telegramApi": {
+          "id": "",
+          "name": "Telegram Bot API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.message.text }}",
+        "options": {
+          "systemMessage": "Ти привітний, емпатичний і професійний експерт з нерухомості з агентства STAYX у Варшаві. Твоя мета - допомогти клієнту і зібрати інформацію для підбору квартири.\nСпілкуйся природно, як людина з людиною. Використовуй дружній тон, але без зайвого фамільярства. Можеш використовувати 1-2 доречних емодзі, але не перебільшуй.\n\nТвоє завдання - м'яко дізнатися у клієнта 5 параметрів (якщо він не вказав їх сам):\n1. Бюджет (у злотих / PLN)\n2. Район Варшави\n3. Кількість кімнат\n4. Термін заїзду (коли планують переїзд)\n5. Наявність документів (наприклад, чи є PESEL)\n\nПРАВИЛА РОБОТИ:\n- Задавай лише ОДНЕ запитання за раз. Не вивалюй список з 5 питань одразу.\n- Веди діалог плавно: відповідай на запитання клієнта, якщо вони є, а потім непомітно переходь до свого наступного питання.\n\nКРИТИЧНЕ ПРАВИЛО (БЮДЖЕТ):\nЯкщо клієнт каже, що його бюджет МЕНШЕ 4000 PLN (наприклад, 3000, 3500, 2500) — ти повинен одразу ввічливо сказати, що на жаль, квартири в нашому агентстві (і загалом хороші варіанти у Варшаві зараз) починаються від 4000 PLN, тому ми не зможемо підібрати для нього варіант. Побажай успіхів у пошуку і заверши кваліфікацію."
+        }
+      },
+      "id": "2",
+      "name": "AI Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.6,
+      "position": [
+        500,
+        300
+      ]
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-1.5-flash",
+        "options": {}
+      },
+      "id": "3",
+      "name": "Google Gemini Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        500,
+        500
+      ],
+      "credentials": {
+        "googleApi": {
+          "id": "",
+          "name": "Google API"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "4",
+      "name": "Window Buffer Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.2,
+      "position": [
+        650,
+        500
+      ]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $('Telegram Trigger').item.json.message.chat.id }}",
+        "text": "={{ $json.output }}",
+        "additionalFields": {}
+      },
+      "id": "5",
+      "name": "Telegram Send Message",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.1,
+      "position": [
+        850,
+        300
+      ],
+      "credentials": {
+        "telegramApi": {
+          "id": "",
+          "name": "Telegram Bot API"
+        }
+      }
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Buffer Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Telegram Send Message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "f1f9a2e3-2e45-42d4-ba5f-2b36b412431c",
+  "id": "bot-workflow-1",
+  "tags": []
+}

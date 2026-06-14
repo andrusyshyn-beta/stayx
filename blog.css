@@ -174,7 +174,7 @@
 html{scroll-behavior:smooth}
 body{font-family:'Plus Jakarta Sans', -apple-system, system-ui, sans-serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.75;overflow-x:hidden;-webkit-font-smoothing: antialiased;letter-spacing: -0.011em;}
 a{color:var(--accent);text-decoration:none}
-a:hover{text-decoration:underline}
+a:hover{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
 
 /* Progress bar */
 #pb{position:fixed;top:0;left:0;z-index:10000;height:3px;width:0%;background:linear-gradient(90deg,var(--accent),#8b85ff);transition:width .1s linear}

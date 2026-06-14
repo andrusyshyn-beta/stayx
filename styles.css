@@ -50,7 +50,8 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .section-header--light .section-header__title{color:#fff}
 
 /* ===== BUTTONS ===== */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 28px;border-radius:9999px;font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:transform .2s cubic-bezier(.16,1,.3,1),box-shadow .2s,opacity .15s,background .2s;text-align:center;letter-spacing:-.01em;font-family:inherit;line-height:1.4}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:12px 28px;border-radius:9999px;font-weight:600;font-size:.9rem;cursor:pointer;border:none;transition:transform .2s cubic-bezier(.16,1,.3,1),box-shadow .2s,opacity .15s,background .2s;text-align:center;letter-spacing:-.01em;font-family:inherit;line-height:1.4;text-decoration:none !important}
+.btn:hover{text-decoration:none !important}
 .btn--primary{background:#635bff;color:#fff}
 .btn--primary:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(99,91,255,.3)}
 .btn--primary:active{transform:translateY(0);box-shadow:0 2px 8px rgba(99,91,255,.2)}
@@ -71,11 +72,11 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 
 .nav__left, .nav__right { display: flex; align-items: center; gap: 32px; }
 
-.nav__link{color:rgba(255,255,255,.85);font-size:.875rem;font-weight:500;letter-spacing:-.01em;position:relative;transition:color .2s}
+.nav__link{color:rgba(255,255,255,.85);font-size:.875rem;font-weight:500;letter-spacing:-.01em;position:relative;transition:color .2s;text-decoration:none !important}
 .header--scrolled .nav__link{color:#425466}
 .nav__link::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1.5px;background:#635bff;transition:width .25s cubic-bezier(.16,1,.3,1)}
-.nav__link:hover{color:#fff}
-.header--scrolled .nav__link:hover{color:#0a2540}
+.nav__link:hover{color:#fff;text-decoration:none !important}
+.header--scrolled .nav__link:hover{color:#0a2540;text-decoration:none !important}
 .nav__link:hover::after{width:100%}
 
 .nav__logo{display:flex;align-items:center}
@@ -532,8 +533,13 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
   backdrop-filter: blur(4px);
+}
+.tg-card__icon svg {
+  display: block;
+  margin: auto;
+  transform: translate(2px, 2px);
 }
 .tg-card h3 {
   font-size: 1.25rem;
@@ -1070,6 +1076,63 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 .budget-btn.minus{border-right:1px solid #e3e8ee}
 .budget-btn.plus{border-left:1px solid #e3e8ee}
 .contacts__form input:focus,.contacts__form select:focus,.contacts__form textarea:focus{border-color:#635bff;box-shadow:0 0 0 3px rgba(99,91,255,.12);background:#fff}
+
+/* Hide number spinners */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Range Slider Styling */
+.budget-slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #e3e8ee;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 !important;
+  border: none !important;
+  margin: 15px 0 5px 0 !important;
+  min-height: 10px !important;
+}
+
+.budget-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #635bff;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(99, 91, 255, 0.4);
+  border: 4px solid #fff;
+  transition: transform 0.1s;
+}
+
+.budget-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.1);
+}
+
+.budget-slider::-moz-range-thumb {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #635bff;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(99, 91, 255, 0.4);
+  border: 4px solid #fff;
+  transition: transform 0.1s;
+}
+
+.budget-slider::-moz-range-thumb:hover {
+  transform: scale(1.1);
+}
+
 @media(max-width:768px){
   .contacts__wrapper{flex-direction:column;min-height:auto}
   .contacts__left{padding:60px 24px}
@@ -1251,6 +1314,8 @@ a{text-decoration:none;color:inherit;transition:all .2s ease}
 }
 
 .bento-card {
+  text-decoration: none !important;
+  color: inherit !important;
   border-radius: 20px;
   padding: 28px;
   position: relative;
