@@ -703,7 +703,7 @@
                     </div>
                     <span style="color: #6b7c93;">25 000+</span>
                   </div>
-                  <input type="range" id="budgetSliderPL" class="budget-slider" min="4000" max="25000" step="100" value="4000" oninput="
+                  <input type="range" id="budgetSliderPL" class="budget-slider" min="4000" max="25000" step="100" value="4000" aria-label="Suwak wyboru budżetu" oninput="
                     document.getElementById('budget').value = this.value;
                     const percentage = ((this.value - this.min) / (this.max - this.min)) * 100;
                     this.style.background = `linear-gradient(to right, #635bff 0%, #635bff ${percentage}%, #e3e8ee ${percentage}%, #e3e8ee 100%)`;
