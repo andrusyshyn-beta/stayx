@@ -1,0 +1,127 @@
+{
+  "name": "ManyChat to OLX Scraper",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "manychat-olx-search",
+        "options": {}
+      },
+      "id": "webhook",
+      "name": "Webhook from ManyChat",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1.1,
+      "position": [0, 300]
+    },
+    {
+      "parameters": {
+        "url": "https://api.scraperapi.com/",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "api_key",
+              "value": "ВСТАВТЕ_КЛЮЧ_SCRAPERAPI"
+            },
+            {
+              "name": "url",
+              "value": "={{ 'https://www.olx.pl/api/v1/offers?region_id=2&city_id=19701&query=wynajem%20' + $json.body.district + '&search[filter_float_price:to]=' + $json.body.max_price }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "scraper",
+      "name": "OLX ScraperAPI",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.item.json.data;\nlet clientText = 'Ось 3 найкращі варіанти квартир з нашої бази:\\n\\n';\nlet managerText = '';\n\nif (data && data.length > 0) {\n  for (let i = 0; i < Math.min(3, data.length); i++) {\n    const item = data[i];\n    clientText += `${i+1}. ${item.title}\\n💰 Ціна: ${item.params.find(p => p.key === 'price')?.value?.label || 'Не вказана'}\\n📍 Район: ${item.location.city.name}\\n\\n`;\n    managerText += `${i+1}. ${item.url}\\n`;\n  }\n  clientText += 'Якщо вам подобається якийсь із цих варіантів, напишіть його номер сюди, і наш менеджер організує перегляд!';\n} else {\n  clientText = 'На жаль, за вашими критеріями зараз немає вільних квартир. Менеджер зв\\'яжеться з вами, щоб запропонувати інші варіанти.';\n  managerText = 'Не знайдено результатів';\n}\n\nreturn {\n  clientText: clientText,\n  managerText: managerText,\n  telegramId: $('Webhook from ManyChat').item.json.body.telegram_id,\n  username: $('Webhook from ManyChat').item.json.body.username,\n  budget: $('Webhook from ManyChat').item.json.body.max_price,\n  district: $('Webhook from ManyChat').item.json.body.district\n};"
+      },
+      "id": "parser",
+      "name": "Format Results",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [500, 300]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $json.telegramId }}",
+        "text": "={{ $json.clientText }}",
+        "additionalFields": {}
+      },
+      "id": "send_client",
+      "name": "Send to Client",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.1,
+      "position": [750, 200],
+      "credentials": {
+        "telegramApi": {
+          "id": "",
+          "name": "Telegram Bot API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "ВСТАВТЕ_ID_МЕНЕДЖЕРА",
+        "text": "=💬 ЛІД З MANYCHAT 💬\nКлієнт: @{{ $json.username }} (ID: {{ $json.telegramId }})\nШукає: {{ $json.district }}, Бюджет: до {{ $json.budget }} PLN\n\n🤖 Клієнту надіслано ці квартири:\n{{ $json.clientText }}\n\n🔗 ПРИХОВАНІ ПОСИЛАННЯ (ДЛЯ ВАС):\n{{ $json.managerText }}",
+        "additionalFields": {}
+      },
+      "id": "send_manager",
+      "name": "Send to Manager",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.1,
+      "position": [750, 400],
+      "credentials": {
+        "telegramApi": {
+          "id": "",
+          "name": "Telegram Bot API"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Webhook from ManyChat": {
+      "main": [
+        [
+          {
+            "node": "OLX ScraperAPI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OLX ScraperAPI": {
+      "main": [
+        [
+          {
+            "node": "Format Results",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format Results": {
+      "main": [
+        [
+          {
+            "node": "Send to Client",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Send to Manager",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

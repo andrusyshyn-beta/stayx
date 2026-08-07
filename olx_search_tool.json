@@ -1,0 +1,34 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "name": "search_apartments_olx",
+        "description": "Викликай цей інструмент ТІЛЬКИ ПІСЛЯ ТОГО, як збереш всі параметри (бюджет, район, тварини, мешканці, документи). Повертає список квартир у Варшаві з ціною та описом.",
+        "method": "GET",
+        "url": "https://api.scraperapi.com/",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "api_key",
+              "value": "ВСТАВТЕ_ВАШ_КЛЮЧ_SCRAPERAPI"
+            },
+            {
+              "name": "url",
+              "value": "={{ 'https://www.olx.pl/api/v1/offers?region_id=2&city_id=19701&query=wynajem%20' + $fromAI('district') }}"
+            }
+          ]
+        }
+      },
+      "id": "1001",
+      "name": "Пошук OLX (Tool)",
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [
+        500,
+        500
+      ]
+    }
+  ],
+  "connections": {}
+}

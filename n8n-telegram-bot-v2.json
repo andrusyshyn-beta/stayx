@@ -1,0 +1,200 @@
+{
+  "name": "STAYX Pro AI Bot (with OLX & Manager Routing)",
+  "nodes": [
+    {
+      "parameters": {
+        "updates": ["message"]
+      },
+      "id": "trigger",
+      "name": "Telegram Trigger",
+      "type": "n8n-nodes-base.telegramTrigger",
+      "typeVersion": 1.1,
+      "position": [0, 300],
+      "credentials": {
+        "telegramApi": {
+          "id": "",
+          "name": "Telegram Bot API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $json.message.text }}",
+        "options": {
+          "systemMessage": "ВСТАВТЕ ПРОМПТ СЮДИ"
+        }
+      },
+      "id": "agent",
+      "name": "AI Agent",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.6,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-1.5-flash"
+      },
+      "id": "model",
+      "name": "AI Model (Claude/Gemini)",
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [250, 500]
+    },
+    {
+      "parameters": {
+        "sessionId": "={{ $('Telegram Trigger').item.json.message.chat.id }}"
+      },
+      "id": "memory",
+      "name": "Window Buffer Memory",
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.2,
+      "position": [400, 500]
+    },
+    {
+      "parameters": {
+        "name": "search_apartments_olx",
+        "description": "Викликай ТІЛЬКИ ПІСЛЯ ТОГО, як збереш всі параметри (бюджет, район, тварини, мешканці, документи, побажання). Повертає список квартир у Варшаві.",
+        "method": "GET",
+        "url": "https://api.scraperapi.com/",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "api_key",
+              "value": "YOUR_SCRAPERAPI_KEY"
+            },
+            {
+              "name": "url",
+              "value": "={{ 'https://www.olx.pl/api/v1/offers?region_id=2&city_id=19701&query=wynajem%20' + $fromAI('district') }}"
+            }
+          ]
+        }
+      },
+      "id": "olx_tool",
+      "name": "OLX Tool",
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [550, 500]
+    },
+    {
+      "parameters": {
+        "jsCode": "const output = $input.item.json.output || '';\nconst parts = output.split('###MANAGER_DATA###');\n\nreturn {\n  clientText: parts[0] ? parts[0].trim() : '',\n  managerText: parts[1] ? parts[1].trim() : '',\n  userMessage: $('Telegram Trigger').item.json.message.text,\n  username: $('Telegram Trigger').item.json.message.from.username || 'Без_Username',\n  userId: $('Telegram Trigger').item.json.message.from.id,\n  chatId: $('Telegram Trigger').item.json.message.chat.id\n};"
+      },
+      "id": "parser",
+      "name": "Split Logic",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [600, 300]
+    },
+    {
+      "parameters": {
+        "chatId": "={{ $json.chatId }}",
+        "text": "={{ $json.clientText }}",
+        "additionalFields": {}
+      },
+      "id": "send_user",
+      "name": "Send to Client",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.1,
+      "position": [850, 200],
+      "credentials": {
+        "telegramApi": {
+          "id": "",
+          "name": "Telegram Bot API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "chatId": "ВСТАВТЕ_ID_МЕНЕДЖЕРА",
+        "text": "=💬 ДІАЛОГ З КЛІЄНТОМ 💬\nКлієнт: @{{ $json.username }} (ID: {{ $json.userId }})\nНаписав: {{ $json.userMessage }}\n\n🤖 Бот відповів клієнту:\n{{ $json.clientText }}\n\n🔗 ПРИХОВАНІ ПОСИЛАННЯ (ДЛЯ МЕНЕДЖЕРА):\n{{ $json.managerText ? $json.managerText : 'Посилання ще не шукались' }}",
+        "additionalFields": {}
+      },
+      "id": "send_manager",
+      "name": "Send to Manager",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.1,
+      "position": [850, 400],
+      "credentials": {
+        "telegramApi": {
+          "id": "",
+          "name": "Telegram Bot API"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Telegram Trigger": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        [
+          {
+            "node": "Split Logic",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Split Logic": {
+      "main": [
+        [
+          {
+            "node": "Send to Client",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Send to Manager",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Model (Claude/Gemini)": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Window Buffer Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "OLX Tool": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

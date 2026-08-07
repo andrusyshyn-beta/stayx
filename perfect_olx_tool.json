@@ -1,0 +1,42 @@
+{
+  "nodes": [
+    {
+      "parameters": {
+        "name": "search_apartments",
+        "description": "Call this tool to search for apartments on OLX. You must provide the district.",
+        "method": "GET",
+        "url": "https://api.scraperapi.com/",
+        "sendQuery": true,
+        "specifyQueryParameters": "usingFields",
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "api_key",
+              "value": "YOUR_SCRAPERAPI_KEY"
+            },
+            {
+              "name": "url",
+              "value": "={{ 'https://www.olx.pl/api/v1/offers?region_id=2&city_id=19701&query=wynajem%20' + $parameter.district }}"
+            }
+          ]
+        },
+        "specifyInputRules": "usingFields",
+        "inputRules": {
+          "rules": [
+            {
+              "name": "district",
+              "type": "string",
+              "description": "District in Warsaw in English"
+            }
+          ]
+        }
+      },
+      "id": "olx_tool_final",
+      "name": "OLX Tool",
+      "type": "@n8n/n8n-nodes-langchain.toolHttpRequest",
+      "typeVersion": 1.1,
+      "position": [600, 600]
+    }
+  ],
+  "connections": {}
+}
