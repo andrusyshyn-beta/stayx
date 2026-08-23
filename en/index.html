@@ -47,7 +47,8 @@
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"></noscript>
   
   <!-- Optimization: Critical Path CSS -->
   <style>
@@ -412,28 +413,28 @@
          <div class="ecosystem__mobile-item">
            <div class="node__icon">🔍</div>
            <div>
-             <h4>Online Selection</h4>
+             <h3>Online Selection</h3>
              <p>We find the best options matching your criteria before you even arrive.</p>
            </div>
          </div>
          <div class="ecosystem__mobile-item">
            <div class="node__icon">📹</div>
            <div>
-             <h4>Video Viewings</h4>
+             <h3>Video Viewings</h3>
              <p>We conduct detailed online broadcasts from properties in real-time.</p>
            </div>
          </div>
          <div class="ecosystem__mobile-item">
            <div class="node__icon">⚖️</div>
            <div>
-             <h4>Legal Audit</h4>
+             <h3>Legal Audit</h3>
              <p>We check owners and contracts for compliance with Polish law.</p>
            </div>
          </div>
          <div class="ecosystem__mobile-item">
            <div class="node__icon">✍️</div>
            <div>
-             <h4>Remote Contract</h4>
+             <h3>Remote Contract</h3>
              <p>Sign documents online from anywhere in the world.</p>
            </div>
          </div>
@@ -692,7 +693,7 @@
                 <label for="budget">Your Budget (PLN)</label>
                 <div class="budget-slider-wrapper" style="position: relative; margin-top: 10px;">
                   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; font-size: 0.95rem; font-weight: 600; color: var(--stripe-dark);">
-                    <span style="color: #6b7c93;">4 000</span>
+                    <span style="color: #4b5563;">4 000</span>
                     <div style="display: flex; align-items: center; background: #f6f9fc; padding: 4px 12px; border-radius: 8px; border: 1px solid #e3e8ee; transition: border-color 0.2s;" onfocusin="this.style.borderColor='#635bff'; this.style.boxShadow='0 0 0 3px rgba(99,91,255,.12)'" onfocusout="this.style.borderColor='#e3e8ee'; this.style.boxShadow='none'">
                       <input type="number" id="budget" value="4000" min="4000" step="100" required style="width: 70px; background: transparent; border: none !important; padding: 0 !important; margin: 0 !important; text-align: right; color: var(--stripe-blue); font-size: 1.1rem; font-weight: 700; box-shadow: none !important; min-height: auto !important;" oninput="
                         document.getElementById('budgetSliderEN').value = this.value;
@@ -701,7 +702,7 @@
                       ">
                       <span style="margin-left: 6px; color: var(--stripe-blue);">PLN</span>
                     </div>
-                    <span style="color: #6b7c93;">25 000+</span>
+                    <span style="color: #4b5563;">25 000+</span>
                   </div>
                   <input type="range" id="budgetSliderEN" class="budget-slider" min="4000" max="25000" step="100" value="4000" aria-label="Budget range slider" oninput="
                     document.getElementById('budget').value = this.value;
