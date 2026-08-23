@@ -79,7 +79,6 @@
 
   <link rel="stylesheet" href="/styles.css">
   <link rel="stylesheet" href="/blog.css" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/css/intlTelInput.css" media="print" onload="this.media='all'">
 
 
 <script type="application/ld+json" id="breadcrumb-schema">
@@ -799,15 +798,44 @@
   </footer>
 
   <script src="../script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/intlTelInput.min.js"></script>
   <script>
-    const input = document.querySelector("#phone");
-    window.iti = window.intlTelInput(input, {
-      initialCountry: "pl",
-      preferredCountries: ["pl", "ua", "us", "gb"],
-      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/utils.js",
-    });
-    function stepBudget(amount) {
+    // Lazy load intl-tel-input CSS and JS when phone input is focused/clicked
+    (function() {
+      const phoneInput = document.querySelector("#phone");
+      if (!phoneInput) return;
+      
+      let itiLoaded = false;
+      function loadIti() {
+        if (itiLoaded) return;
+        itiLoaded = true;
+        
+        phoneInput.removeEventListener('focus', loadIti);
+        phoneInput.removeEventListener('click', loadIti);
+        
+        // 1. Load CSS
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/css/intlTelInput.css';
+        document.head.appendChild(link);
+        
+        // 2. Load JS
+        const script = document.createElement('script');
+        script.src = 'https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/intlTelInput.min.js';
+        script.onload = function() {
+          window.iti = window.intlTelInput(phoneInput, {
+            initialCountry: "pl",
+            preferredCountries: ["pl", "ua", "us", "gb"],
+            utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.10/build/js/utils.js",
+          });
+          phoneInput.focus();
+        };
+        document.body.appendChild(script);
+      }
+      
+      phoneInput.addEventListener('focus', loadIti);
+      phoneInput.addEventListener('click', loadIti);
+    })();
+function stepBudget(amount) {
       const budgetInput = document.getElementById('budget');
       budgetInput.value = Math.max(500, (parseInt(budgetInput.value) || 0) + amount);
     }
