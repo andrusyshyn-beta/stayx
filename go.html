@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LE3BY89Z30"></script>
+<!-- Google tag (gtag.js) Lazy Optimized -->
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LE3BY89Z30');
+  (function() {
+    let gaLoaded = false;
+    function loadGA() {
+      if (gaLoaded) return;
+      gaLoaded = true;
+      
+      const script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://www.googletagmanager.com/gtag/js?id=G-LE3BY89Z30';
+      document.head.appendChild(script);
+      
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function() { window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-LE3BY89Z30');
+    }
+    
+    const triggerEvents = ['mouseover', 'keydown', 'touchstart', 'scroll'];
+    triggerEvents.forEach(event => {
+      window.addEventListener(event, loadGA, { passive: true, once: true });
+    });
+    setTimeout(loadGA, 4000);
+  })();
 </script>
   <meta charset="UTF-8">
   <title>Перехід в Telegram...</title>
