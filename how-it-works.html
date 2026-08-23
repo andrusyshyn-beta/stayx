@@ -393,8 +393,36 @@
 
   <script src="script.js"></script>
 
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/148599762.js"></script>
-<!-- End of HubSpot Embed Code -->
+<!-- Start of HubSpot Embed Code (Deferred Optimization) -->
+  <script type="text/javascript">
+    (function() {
+      let hsLoaded = false;
+      function loadHubSpot() {
+        if (hsLoaded) return;
+        hsLoaded = true;
+        
+        // Remove event listeners to clean up
+        const events = ['mouseover', 'keydown', 'touchstart', 'scroll'];
+        events.forEach(e => window.removeEventListener(e, loadHubSpot, { passive: true }));
+        
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.id = 'hs-script-loader';
+        script.async = true;
+        script.defer = true;
+        script.src = '//js-eu1.hs-scripts.com/148599762.js';
+        document.body.appendChild(script);
+      }
+      
+      const events = ['mouseover', 'keydown', 'touchstart', 'scroll'];
+      events.forEach(e => window.addEventListener(e, loadHubSpot, { passive: true }));
+      
+      // Fallback timer: load after 4 seconds if no interaction occurs
+      window.addEventListener('load', () => {
+        setTimeout(loadHubSpot, 4000);
+      });
+    })();
+  </script>
+  <!-- End of HubSpot Embed Code -->
 </body>
 </html>
